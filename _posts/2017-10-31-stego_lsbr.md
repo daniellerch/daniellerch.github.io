@@ -4,7 +4,7 @@ title: Steganography and Steganalysis in Images II - LSB replacement and the SPA
 author: sal
 categories: [ Steganography, Steganalysis, Images ]
 image: images/hns_lena.png
-featured: true
+featured: false
 hidden: true
 ---
 
