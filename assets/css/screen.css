@@ -8,11 +8,11 @@ License: https://www.wowthemes.net/freebies-license/
      padding:1rem 0rem;
 }
  a {
-     color: #ffa500;
+     color: #c31313;
      transition:all 0.2s;
 }
  a:hover {
-     color: #ffcc6e;
+     color: #ff0e0e;
      text-decoration:none;
 }
  pre {
