@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Steganography and Steganalysis in Images I - Naive techniques
+title:  Naive techniques in Image Steganography
 author: 
 categories: [ Steganography, Steganalysis, Images ]
 image: images/hns_groot.gif
