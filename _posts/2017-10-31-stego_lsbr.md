@@ -5,7 +5,7 @@ author: sal
 categories: [ Steganography, Steganalysis, Images ]
 image: images/hns_lena.png
 featured: false
-hidden: true
+hidden: false
 ---
 
 
