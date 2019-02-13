@@ -5,7 +5,7 @@ author: sal
 categories: [ Steganography, Steganalysis, Images ]
 image: images/hns_f16.png
 featured: true
-hidden: true
+hidden: false
 ---
 
 
