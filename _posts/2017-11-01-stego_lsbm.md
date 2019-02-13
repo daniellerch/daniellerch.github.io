@@ -1,6 +1,10 @@
 ---
 layout: post
-title: Steganography and Steganalysis in Images III - LSB Matching and Matrix Embedding
+title: Steganography and Steganalysis in Images III - LSB Matching and Matrix Embeddingauthor: sal
+categories: [ Steganography, Steganalysis, Images ]
+image: images/hns_lena.png
+featured: true
+hidden: true
 ---
 
 ## Steganography and Steganalysis in Images III
