@@ -16,7 +16,7 @@ But first, let me give you a brief introduction to the field using **the prisone
 The prisoners problem is an example of the need of techniques for sending information in a cover manner. This is frequently used for presenting Data Hiding. Data hiding is a collection of techniques to embed secret data into digital media such that its existence becomes undetectable. These techniques can be used in different application scenarios, such as secret communications (Steganography) or copyright protection (Watermarking), among others. 
 </td>
 <td>
- 
+![prisoner]({{ site.baseurl }}/images/prisoner.jpg)
 </td>
 </tr></table>
   
