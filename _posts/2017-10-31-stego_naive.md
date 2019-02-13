@@ -4,7 +4,7 @@ title:  Steganography and Steganalysis in Images I - Naive techniques
 author: sal
 categories: [ Steganography, Steganalysis, Images ]
 image: images/hns_groot.gif
-featured: true
+featured: false
 hidden: true
 ---
 
