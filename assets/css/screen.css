@@ -555,6 +555,7 @@ License: https://www.wowthemes.net/freebies-license/
 }
  img {
     max-width:100%;
+    width: 100%;
 }
  .bottompagination span.navigation {
      display:block;
