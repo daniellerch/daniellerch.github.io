@@ -12,9 +12,10 @@ hiding a safe behind a picture: it is not exactly the safest option. In this blo
 
 But first, let me give you a brief introduction to the field using **the prisoners' problem**. The prisoners' problem was first introduced by G. J. Simmons in 1983 [[1](#references)] and tells the history of Alice and Bob, two prisoners working on an escape plan. They are allowed to communicate, but their communications pass through the warden, Eve. Eve will attempt to find any hidden communication between Alice and Bob, and if she finds one, she will cut the communication channel. 
 
-The prisoners problem is an example of the need of techniques for sending information in a cover manner. This is frequently used for presenting Data Hiding. Data hiding is a collection of techniques to embed secret data into digital media such that its existence becomes undetectable. These techniques can be used in different application scenarios, such as secret communications (Steganography) or copyright protection (Watermarking), among others. 
-
 <img style="width:50%;display:block;margin-left:auto;margin-right:auto" src='{{ site.baseurl }}/images/prisoner.png'>
+
+
+The prisoners problem is an example of the need of techniques for sending information in a cover manner. This is frequently used for presenting Data Hiding. Data hiding is a collection of techniques to embed secret data into digital media such that its existence becomes undetectable. These techniques can be used in different application scenarios, such as secret communications (Steganography) or copyright protection (Watermarking), among others. 
   
 The criteria for deciding whether a method is adequate or not is its detectability. In steganography if a method is detectable we consider it broken. Imagine you use a cryptographic algorithm to perform your online financial transactions that can be decrypted by an attacker: this is unacceptable. Therefore, the same can be applied to steganography: its main objective is undetectability so if a steganographic method is detectable it is useless. 
 
