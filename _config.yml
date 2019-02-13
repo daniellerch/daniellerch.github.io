@@ -2,8 +2,8 @@
 name: "Covert Channel"
 description: "The Art and Science of Covert Communications"
 meta_description: "Covert Channels, Steganography, Data Hiding, Information Hiding."
-logo: 
-favicon: 
+logo: assets/images/logo.png
+favicon: favicon.ico
 baseurl: /
 google_analytics: 
 disqus: 
