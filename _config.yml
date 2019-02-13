@@ -5,7 +5,7 @@ meta_description: "Covert Channels, Covert Communications, Steganography, Data H
 logo: assets/images/logo.png
 favicon: favicon.png
 baseurl: /
-google_analytics: 
+google_analytics: UA-134495322-1
 disqus: 
 mailchimp-list: 
 include: ["_pages"]
