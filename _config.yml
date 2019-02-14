@@ -13,13 +13,13 @@ permalink: /:title/
 
 # Authors
 authors:
-  sal:
-    name: x
-    display_name: x
-    gravatar: e56154546cf4be74e393c62d1ae9f9d4
-    email: x@gmail.com
-    web: https://www.x.net
-    twitter: https://twitter.com/x
+  dlerch:
+    name: Daniel Lerch
+    display_name: Daniel Lerch
+    gravatar: 1b647b431c864b13c659830bf5ce4b00
+    email: dlerch@gmail.com
+    web: https://www.daniellerch.me
+    twitter: https://twitter.com/daniel_lerch
     description: "Author of  blah blah."
 
 # Plugins
