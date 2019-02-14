@@ -27,7 +27,7 @@ post_class: post-template
 		<div class="col-md-9 flex-first flex-md-unordered">
 			<div class="mainheading">
 
-                <!-- Author Box -->
+                <!-- Author Box 
                 {% if page.author %}				
 				<div class="row post-top-meta">
 					<div class="col-md-2">
@@ -39,6 +39,17 @@ post_class: post-template
 					</div>
 				</div>				
                 {% endif %}
+		-->
+				
+                {% if post.author %}
+                <span class="meta-footer-thumb">
+                <img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.display_name }}">
+                </span>                
+                <span class="author-meta">
+                <span class="post-name"><a target="_blank" href="{{ author.web }}">{{ author.display_name }}</a></span><br/>
+		<span class="post-name"><a target="_blank" href="{{ author.twitter }}" class="btn follow">Follow</a></a></span>
+                {% endif %}
+				
                 
                 <!-- Post Title -->
 				<h1 class="posttitle">{{ page.title }}</h1> 
