@@ -62,8 +62,9 @@ ga('send', 'pageview');
        
         <!-- Begin Menu -->
         
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav" style='margin-right:30%'>
             
+		<!--
                 {% if page.url == "/" %}
                 <li class="nav-item active">
                 {% else %}
@@ -72,6 +73,7 @@ ga('send', 'pageview');
                 <a class="nav-link" href="{{ site.baseurl }}/index.html">Blog</a>
                 </li>
                 
+		
                 {% if page.url == "/about.html" %}
                 <li class="nav-item active">
                 {% else %}
@@ -80,7 +82,7 @@ ga('send', 'pageview');
                 <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
                 </li>
                 
-                <!--
+                
                 <li class="nav-item">
                 <a target="_blank" class="nav-link" href="https://"><i class="fab fa-x"></i> x</a>
                 </li>
