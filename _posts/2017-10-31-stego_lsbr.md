@@ -3,6 +3,7 @@ layout: post
 title: "Image Steganography: LSB replacement and the SPA attack"
 author: 
 categories: [ Steganography, Steganalysis, Images ]
+comments: true
 image: images/hns_lena.png
 featured: true
 hidden: false
