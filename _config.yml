@@ -6,7 +6,7 @@ logo: assets/images/logo.png
 favicon: favicon.png
 baseurl: /
 google_analytics: UA-134495322-1
-disqus: covert-channel
+disqus: daniellerch_me
 mailchimp-list: 
 include: ["_pages"]
 permalink: /:title/
