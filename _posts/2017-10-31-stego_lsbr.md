@@ -190,8 +190,8 @@ Let's try our program with the cover image:
 ```bash
 $ python spa.py hns_lena.png
 R: cover
-G: stego
-B: stego
+G: cover
+B: cover
 ```
 
 And now, let's try with the stego image.
