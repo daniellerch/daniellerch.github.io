@@ -7,7 +7,10 @@ License: https://www.wowthemes.net/freebies-license/
  .mainheading {
      padding:1rem 0rem;
 }
- a {
+h1 {
+     font-size: 2.2rem;
+}
+a {
      color: #c31313;
      transition:all 0.2s;
 }
