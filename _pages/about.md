@@ -6,7 +6,7 @@ comments: true
 ---
 
 
-You can find a lot of tools on the Internet for hidding information inside another media (**Steganography**) and for creating a hidden communication mechanism (**covert channel**). Unfortunately, most of them are like hiding a safe behind a picture: it is not exactly the safest option. In this blog I will try to shed some light on it writing about these tools and their weaknesses, steganography and steganalysis techniques and some state of the art results.
+You can find a lot of tools on the Internet for hidding information inside another media (**Steganography**) and for creating a hidden communication mechanism (**covert channel**). Unfortunately, most of them are like hiding a safe behind a picture: it is not exactly the safest option. In this blog I will try to shed some light on it by writing about these tools and their weaknesses, steganography and steganalysis techniques and some state of the art results.
 
 
 But first, let me give you a brief introduction to the field using **the prisoners' problem**. The prisoners' problem was first introduced by G. J. Simmons in 1983 [[1](#references)] and tells the history of Alice and Bob, two prisoners working on an escape plan. They are allowed to communicate, but their communications pass through the warden, Eve. Eve will attempt to find any hidden communication between Alice and Bob, and if she finds one, she will cut the communication channel. 
