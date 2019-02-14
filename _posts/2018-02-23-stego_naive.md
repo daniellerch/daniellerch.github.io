@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Naive techniques in Image Steganography
-author: 
+author: dlerch
 categories: [ Steganography, Steganalysis, Images ]
 comments: true
 image: images/hns_groot.gif
