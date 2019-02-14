@@ -1,6 +1,6 @@
 # Site
-name: "Blog"
-description: ""
+name: "daniellerch.me"
+description: "Steganography, Steganalysis and Covert Channels"
 meta_description: "Covert Channels, Covert Communications, Steganography, Data Hiding, Information Hiding."
 logo: assets/images/logo.png
 favicon: favicon.png
