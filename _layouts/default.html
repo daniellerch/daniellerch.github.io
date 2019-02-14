@@ -47,8 +47,8 @@ ga('send', 'pageview');
     <div class="container pr-0">    
     
     <!-- Begin Logo -->
-    <a class="navbar-brand" href="{{ site.baseurl }}/">
-	<!--span>{{ site.name }}</span-->
+    <a class="navbar-brand" href="http://daniellerch.me">
+	<span>Home</span>
         <!--img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}"-->
     </a>
     <!-- End Logo -->
@@ -65,6 +65,8 @@ ga('send', 'pageview');
             <ul class="navbar-nav" style='margin-right:auto;margin-left:auto'>
             
 		
+		
+		<!--
                 {% if page.url == "/" %}
                 <li class="nav-item active">
                 {% else %}
@@ -72,6 +74,7 @@ ga('send', 'pageview');
                 {% endif %}
                 <a class="nav-link" href="{{ site.baseurl }}/index.html">Blog</a>
                 </li>
+                -->
                 
 		<!--
                 {% if page.url == "/about.html" %}
@@ -87,8 +90,16 @@ ga('send', 'pageview');
                 <a target="_blank" class="nav-link" href="https://"><i class="fab fa-x"></i> x</a>
                 </li>
                 -->
-		    
-		<div style='width:200px;'></div>
+		
+		<li class="nav-item">
+			<a class="nav-link" href="{{ site.baseurl }}/">blog</a>
+		</li>
+	
+		<li class="nav-item">
+			<a class="nav-link" href="https://scholar.google.es/citations?user=5ggVkxMAAAAJ&hl=es/">publications</a>
+		</li>
+		   
+		<div style='width:100px;'></div>
 		    
 		<li class="nav-item">
 		    	<a class="nav-link" href="https://github.com/daniellerch" title="Follow on GitHub">
