@@ -40,6 +40,9 @@ a {
 }
  .main-content {
     min-height:300px;
+    max-width:800px;
+    margin-left:auto;
+    margin-right:auto;
 }
  .site-content {
      min-height: 60vh;
