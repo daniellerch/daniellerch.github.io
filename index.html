@@ -12,24 +12,29 @@ title: Home
 {% endif %}
 -->
 
-<section class="recent-posts">
-    
-    <!--div class="section-title">
-        
-        <h2><span>Latest</span></h2>
-        
-    </div-->
-    
-    <div class="row listrecent">
 
-        {% for post in paginator.posts %}
-
-               {% include postlist.html %}          
-
-        {% endfor %}
-        
+<section class="featured-posts">
+    <div class="section-title">
+        <h2><span>Featured</span></h2>
     </div>
-    
+    <div class="row listrecent">
+        {% for post in site.posts %}
+            {% if post.featured == true %}
+                {% include postlist.html %}
+            {% endif %}
+        {% endfor %}
+    </div>
+</section>
+
+<section class="recent-posts">
+    <div class="section-title">
+        <h2><span>Latest</span></h2>
+    </div>
+    <div class="row listrecent">
+        {% for post in paginator.posts %}
+               {% include postlist.html %}          
+        {% endfor %}
+    </div>
 </section>
 
 
