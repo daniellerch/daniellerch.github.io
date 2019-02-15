@@ -5,7 +5,7 @@ author: dlerch
 categories: [ Steganography, Steganalysis, Images ]
 comments: true
 image: images/hns_lena.png
-featured: true
+featured: false
 hidden: false
 ---
 
