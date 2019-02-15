@@ -40,8 +40,6 @@ a {
 }
  .main-content {
     min-height:300px;
-    margin-left:auto;
-    margin-right:auto;
 }
  .site-content {
      min-height: 60vh;
@@ -55,7 +53,16 @@ a {
  section.recent-posts {
      margin-bottom:0;
      max-width:800px;
+     margin-left:auto;
+     margin-right:auto;
 }
+
+ .listrecent {
+     max-width:800px;
+     margin-left:auto;
+     margin-right:auto;
+}
+
  .section-title h2 {
      border-bottom:1px solid rgba(0,0,0,.125);
      margin-bottom:25px;
