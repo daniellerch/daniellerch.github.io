@@ -128,11 +128,11 @@ The presented program has some limitations. The first one is we are hiding infor
 <br>
 #### 2. Matrix embedding
 
-To minimize the distortion introduced hiding data a common approach is to use matrix embedding to hide the same data modifying less pixels of the image. It can seem a little bit strange at the beginning, but this is possible with a simple trick. 
+To minimize the distortion introduced hiding data a common approach is to use matrix embedding to hide the same data modifying less pixels of the image. This is possible with a simple trick. 
 
 Let's suppose you want to hide two bits. Using LSB matching as we shown before we have to modify the pixel 50% of the time, because the other 50% of the time the value of the LSB is already the same we want to hide. This means the effectiveness of our method is 1/2.
 
-Suppose now we use LSB matching by hiding two bits in groups of three pixels:
+Let's suppose now we use LSB matching by hiding two bits in groups of three pixels:
 
 | P1 | P2 | P3 |
 
