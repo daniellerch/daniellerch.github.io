@@ -221,7 +221,7 @@ We only want the LSBs:
 
 | 0 | 1 | 1 | 0 | 1 | 1 | 0 | 0 |
 
-So, in the example the value of c is:
+So, in the example the value of $$c$$ is:
 
 $$ c=(0,1,1,0,1,1,0,0) $$
 
@@ -231,7 +231,7 @@ $$ m = Mc = (1, 0, 0) $$
 
 This is not the message we want to hide, so we want to hide m=(1,1,0). We need to find how to modify $$c$$, that is, we need to find the stego version in which $$ m = Mc = (1, 1, 0) $$.
 
-Ee need to find the column of M that is different. We can do this with a simple substraction $$ m-Mc $$. After that, we only have to change the value of the corresponding pixel.
+So we need to find the column of M that is different. We can do this with a simple substraction $$ m-Mc $$. After that, we only have to change the value of the corresponding pixel.
 
 Following our example:
 
