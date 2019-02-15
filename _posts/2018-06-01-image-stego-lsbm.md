@@ -213,7 +213,7 @@ Now, our formula to calculate the message is:
 
 $$ m = Mc $$
 
-where $$c$$ is the vector of bits in the cover image. Lets suppose we want to hide the message m=(1,1,0) in the following pixels:
+where $$c$$ is the vector of bits in the cover image. Lets suppose we want to hide the message m=(1,1,0) in the following 7 pixels:
 
 | 11011010 | 11011011 | 11011011 | 11011010 | 11011011 | 11011010 | 11011010 |
 
