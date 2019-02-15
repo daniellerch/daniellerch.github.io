@@ -40,7 +40,7 @@ Let's suppose now we want to hide the 'A' letter in ASCII code. This, in binary 
 <br>
 By this way we can hide at most one bit per pixel, so the capacity of this method is the eighth part of the number of pixels.
 
-In this example We are going to use the Lena image, a common image in steganography and watermarking:
+In this example we are going to use the Lena image, a common image in steganography and watermarking:
 
 ![lena]({{ site.baseurl }}/images/hns_lena.png)
 
