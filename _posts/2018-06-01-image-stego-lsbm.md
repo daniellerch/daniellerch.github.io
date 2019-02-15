@@ -122,7 +122,7 @@ f.close()
 <br>
 As usual there is no difference for the human eye between the cover and the stego images. 
 
-The presented program has some limitations. The first one is we are hiding information in a sequential manner and consequently we hide all the information in the beginning of the image. Second, we are hiding information in all the pixels. This is very disruptive but can be easily improved. For example, we can choose part of the pixels where we want to hide information using a key known only by the sender and the receiver. We can do this using a low bitrate because this is harder to detect than a higher bitrate. But his unfortunately decreases the capacity. we can deal with this problem thanks to different techniques that try to minimize distortion.
+The presented program has some limitations. The first one is we are hiding information in a sequential manner and consequently we hide all the information in the beginning of the image. Second, we are hiding information in all the pixels. This is very disruptive but can be easily improved. For example, we can choose part of the pixels where we want to hide information using a key known only by the sender and the receiver. We can do this using a low bitrate because this is harder to detect than a higher bitrate. But his unfortunately decreases the capacity. We can deal with this problem thanks to different techniques that try to minimize distortion.
 
 
 <br>
