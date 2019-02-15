@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Image Steganography: LSB replacement and the SPA attack"
+title: "LSB replacement and the SPA attack"
 author: dlerch
 categories: [ Steganography, Steganalysis, Images ]
 comments: true
