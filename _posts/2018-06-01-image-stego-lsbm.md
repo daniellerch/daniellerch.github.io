@@ -178,7 +178,7 @@ $$ M=\begin{pmatrix} 0001111\\0110011\\1010101 \end{pmatrix} $$
 
 Note that each column has a different value and that all possible combinations are present. 
 
-We can use this python code to generate the $$N$$ matrix:
+We can use this python code to generate the $$M$$ matrix:
 
 ```python
 import numpy
