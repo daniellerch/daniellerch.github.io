@@ -31,7 +31,7 @@ If we obtain its binary code, that is:
 | 10100000 | 00111100 | 00110101 | 10000000 | 
 | 01101111 | 00101011 | 01010100 | 01111101 |
 
-Let's suppose now we want to hide the A letter in ASCII code. This, in binary code, is the number 01000001. So we need to replace the LSB of each pixel whit each one of the bits we want to hide. The result is:
+Let's suppose now we want to hide the 'A' letter in ASCII code. This, in binary code, is the number 01000001. So we need to replace the LSB of each pixel whit each one of the bits we want to hide. The result is:
 
 
 | 1010000**0** | 0011110**1** | 0011010**0** | 1000000**0** | 
