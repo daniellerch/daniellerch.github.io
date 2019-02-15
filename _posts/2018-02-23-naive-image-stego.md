@@ -10,7 +10,7 @@ hidden: false
 ---
 
 
-This is the first of several articles about steganalysis in images. In this article we are going to deal with some techniques too naive to be taken seriously but still being used frequently.
+In this article we are going to deal with some techniques too naive to be taken seriously but still being used frequently.
 
 
 1. [Append one file to another](#1-append-one-file-to-another)
