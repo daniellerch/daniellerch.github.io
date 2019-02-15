@@ -11,7 +11,7 @@ hidden: false
 
 
 
-As we saw before, [LSB replacement is not a secure technique](http://daniellerch.me/image-stego-lsbr). Nevertheless, there is a very simple modification to the insertion technique that makes the operation simmetrical. If we do this, the method becomes very difficult to detect.
+As we saw before, [LSB replacement is not a secure technique](http://daniellerch.me/image-stego-lsbr). Nevertheless, there is a very simple modification to the insertion technique that makes the operation simmetrical. If we do this, the method becomes a little harder to detect.
 
 Instead of replacing the LSB of the pixel the right thing to do is to increase or to decrease randomly by 1. The effect on the LSB is the same but the operation does not introduce so evident anomalies. 
 
