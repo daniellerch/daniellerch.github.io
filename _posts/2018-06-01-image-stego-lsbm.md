@@ -5,7 +5,7 @@ author: dlerch
 categories: [ Steganography, Steganalysis, Images ]
 comments: true
 image: images/hns_f16.png
-featured: true
+featured: false
 hidden: false
 ---
 
