@@ -20,7 +20,9 @@ title: Home
     <div class="row listrecent">
         {% for post in site.posts %}
             {% if post.featured == true %}
-                {% include postlist.html %}
+                {% if post.hidden == false %}
+                    {% include postlist.html %}
+                {% endif %}
             {% endif %}
         {% endfor %}
     </div>
