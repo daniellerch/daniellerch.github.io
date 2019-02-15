@@ -65,8 +65,8 @@ for i in xrange(I.shape[0]):
     for j in xrange(I.shape[1]):
         for k in xrange(3):
             if idx<len(bits):
-                I[i][j][k]&=0xFE
-                I[i][j][k]+=bits[idx]
+                I[i][j][k] &= 0xFE
+                I[i][j][k] += bits[idx]
                 idx+=1
 
 misc.imsave('hns_lena_stego.png', I)
@@ -77,8 +77,8 @@ The first we do is to get secret data from 'secret_data.txt'. Then we split each
 Finally we get each pixel and remove the LSB. Then we put into the LSB the bit of the message. This is done by these operations:
 
 ```python
-I[i][j][k]&=0xFE
-I[i][j][k]+=bits[idx]
+I[i][j][k] &= 0xFE
+I[i][j][k] += bits[idx]
 ```
 
 As a result, we get the following image:
