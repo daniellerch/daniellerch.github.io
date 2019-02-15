@@ -94,7 +94,7 @@ The result after embedding is this:
 
 
 <br>
-To extract the message we can use the same program we used with LSB replacement:
+To extract the message we can use the same program we used with [LSB replacement](http://daniellerch.me/image-stego-lsbr).:
 
 ```python
 import sys
