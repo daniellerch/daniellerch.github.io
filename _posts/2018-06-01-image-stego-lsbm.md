@@ -181,7 +181,7 @@ Note that each column has a different value and that all possible combinations a
 We can use this python code to generate the $$M$$ matrix:
 
 ```python
-import numpy
+import numpy as np
 import sys
 
 def prepare_M(n_bits):
@@ -193,7 +193,7 @@ def prepare_M(n_bits):
         for c in string:
             V.append(int(c))
         M.append(V)
-    M=numpy.array(M).T
+    M=np.array(M).T
     return M
  ```
 
@@ -266,6 +266,8 @@ As a summary, we have hidden three bits in a block of seven pixels by modifying 
 These operation can be easily automated in Python using the following functions to hide and to unhide data:
 
 ```python
+import numpy as np
+
 def ME_hide_block(M, c, m):
     r=m-M.dot(c)
     r=r%2
@@ -273,7 +275,7 @@ def ME_hide_block(M, c, m):
     idx=0
     found=False
     for i in M.T:
-        if numpy.array_equal(i, r):
+        if np.array_equal(i, r):
             found=True
             break
         idx+=1
@@ -282,7 +284,7 @@ def ME_hide_block(M, c, m):
     if not found:
         return c
 
-    s=numpy.array(c)
+    s=np.array(c)
     if s[idx]==0: s[idx]=1
     else: s[idx]=0
 
@@ -299,12 +301,12 @@ Let's suppose now we want to hide 4 bits in blocs of $$2^4-1=15$$ pixels. For ex
 ```python
 n_bits=4
 M=prepare_M(n_bits)
-m=numpy.array([1, 1, 0, 0])
-c=numpy.array([0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0])
+m=np.array([1, 1, 0, 0])
+c=np.array([0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0])
 s=ME_hide_block(M, c, m)
 print s
 m_recovered=ME_unhide_block(M, s)
-print m_recovered
+print(m_recovered)
 ```
 
 We can use blocks of different sizes but if the number of bit we want to hide in each block is too high the number of pixels we need en each block could be prohibitive (remember we need $$2^p-1$$ pixels). As a consequence, a high undetectability suppose a very low capacity because the big size of the blocks.
