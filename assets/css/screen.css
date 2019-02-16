@@ -717,3 +717,132 @@ table tr {
     table tr th :last-child, table tr td :last-child {
       margin-bottom: 0; 
 }
+
+
+
+/* ------ Navbar Styling Starts ----- */
+
+
+.navbar {
+	font-size: 14px;
+  font-family: Open Sans;
+	font-weight: 400;
+	text-transform: capitalize;
+	padding-top: 25px;
+	letter-spacing: 1px;
+	height: 80px;
+	-webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+	-o-transition: all 0.6s;
+	transition: all 0.6s;
+	-webkit-backface-visibility: hidden;
+}
+
+.navbar-default {
+  transition: all 0.6s ease;
+	border-color: transparent;
+  /* background-color: transparent; */ 
+  background-color: #3a4659;
+}
+
+.navbar-default .navbar-toggle {
+  border-radius: 0px;
+  border-color: transparent;
+}
+
+.navbar-default .navbar-toggle:hover {
+  background-color: transparent;
+}
+
+.navbar-default .navbar-toggle:focus {
+  background-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #111111;
+}
+
+.navbar-default .navbar-brand .navbar-toggle .collapsed {
+    padding: 4px 6px;
+    font-size: 14px;
+  }
+
+.navbar-default .navbar-brand {
+   color: #fff !important;
+}
+
+.navbar-default .navbar-brand {
+	padding-top: 5px;
+	/* color: #111111; */
+   color: #fff;
+	-webkit-transition: 200ms;
+	-moz-transition: 200ms;
+	-o-transition: 200ms;
+	transition: 200ms;
+}
+
+.navbar-default .navbar-brand:hover {
+  transition: 1s;
+  color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+  font-weight: bold;
+  -webkit-transition: all 0.5s;
+	-moz-transition: all 0.5;
+  transition: all 0.5s;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: orange;
+}
+
+.navbar-default .navbar-nav > li > a:focus {
+  color: orange;
+}
+
+.navbar-default .navbar-nav > .active > a {
+  background: transparent;
+  color: orange;
+  }
+
+
+.navbar-default .navbar-nav > .active > a:hover {
+    background: transparent;
+    color: orange;
+}
+
+.navbar-default .navbar-nav > .active > a:focus {
+	background: transparent;
+  color: orange;
+}
+
+.navbar-default .navbar-collapse {
+	border-color: transparent;
+  background-color: transparent;
+}
+
+.navbar-default .navbar-nav .open .dropdown-toggle {
+  color: #111111
+}
+
+.navbar-default .nav-white > li > a {
+	color: #FFFFFF;
+}
+
+.navbar-default .nav-white > li > a:hover {
+	color: orange;
+}
+
+.navbar-default .navbar-brand.nav-white {
+	padding-top: 15px;
+	color: #FFFFFF;
+	font-size: 21px;
+	letter-spacing: 1px;
+	-webkit-transition: 200ms;
+	-moz-transition: 200ms;
+	-o-transition: 200ms;
+	transition: 200ms;
+}
+
