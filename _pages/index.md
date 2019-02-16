@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Index
-permalink: /index
+title: Index of articles
+permalink: /idx
 comments: false
 ---
 
