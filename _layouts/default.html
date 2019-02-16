@@ -39,25 +39,112 @@ ga('send', 'pageview');
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
 <body class="{{layout}}">
 
-    <div class='wrapper'>
-      <div class='container'>
-         <nav class='navbar navbar-default navbar-fixed-top'>
-          <div class='container'> 
-            <div class='navbar-header page-scroll'>
-              <button aria-expanded='false' class='navbar-toggle' data-target='#bs-example-navbar-collapse-1' data-toggle='collapse' type='button'> <span class='sr-only'>Toggle navigation</span> <span class='icon-bar'/> <span class='icon-bar'/> <span class='icon-bar'/> </button>
-              <a class='navbar-brand page-scroll' href='http://daniellerch.me'>
-             <div style='font-weight:bold; font-size:20px'>DANIEL<span style='color:orange'>LERCH</span></div>
-              </a> </div>
-            <div class='collapse navbar-collapse navbar-right' id='bs-example-navbar-collapse-1'>
-              <ul class='nav navbar-nav'>
-                <li><a class='page-scroll' href='http://daniellerch.me'>HOME</a></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </div>
 	
+
+<!-- Begin Menu Navigation
+================================================== -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
+    
+    <div class="container pr-0">    
+    
+    <!-- Begin Logo -->
+    <a class="navbar-brand" href="http://daniellerch.me">
+        <!--img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}"-->
+    </a>
+    <!-- End Logo -->
+  
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    
+    <div class="collapse navbar-collapse" id="navbarMediumish" style='max-width:700px;margin-left:auto;margin-right:auto'>
+       
+        <!-- Begin Menu -->
+        
+            <ul class="navbar-nav" style="margin-right:auto">
+            	
+		<!--
+                {% if page.url == "/" %}
+                <li class="nav-item active">
+                {% else %}
+                <li class="nav-item">
+                {% endif %}
+                <a class="nav-link" href="{{ site.baseurl }}/index.html">Blog</a>
+                </li>
+                -->
+                
+		<!--
+                {% if page.url == "/about.html" %}
+                <li class="nav-item active">
+                {% else %}
+                <li class="nav-item">
+                {% endif %}
+                <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
+                </li>
+                
+                
+                <li class="nav-item">
+                <a target="_blank" class="nav-link" href="https://"><i class="fab fa-x"></i> x</a>
+                </li>
+                -->
+		
+		<li class="nav-item">
+			<a class="nav-link" href="{{ site.baseurl }}/">Blog</a>
+		</li>
+	
+		<li class="nav-item">
+			<a class="nav-link" href="https://scholar.google.es/citations?user=5ggVkxMAAAAJ&hl=es/">Papers</a>
+		</li>
+
+		
+		    
+		<!--
+		<li class="nav-item">
+			<a class="nav-link" href="https://github.com/daniellerch/aletheia">Aletheia</a>
+		</li>
+
+		<li class="nav-item">
+			<a class="nav-link" href="https://github.com/daniellerch/stego-retweet">Stego-retweet</a>
+		</li>
+		-->	    
+	<!--/ul>
+	    
+	<ul class="navbar-nav" style="margin-left:auto"-->
+		
+                <li class="nav-item">
+			<a class="nav-link" href="https://es.linkedin.com/in/daniellerch" title="Follow on LinkedIn">
+				<i class="fab fa-linkedin"></i>
+			</a>
+		</li>
+		    
+		<li class="nav-item">
+		    	<a class="nav-link" href="https://github.com/daniellerch" title="Follow on GitHub">
+				<i class="fab fa-github"></i>
+			</a>
+		</li>
+		    
+                <li class="nav-item">
+			<a class="nav-link" href="https://twitter.com/daniel_lerch" title="Follow on Twitter">
+				<i class="fab fa-twitter"></i>
+			</a>
+		</li>
+	
+                <!--{% include search-lunr.html %}-->        
+            </ul>		
+        
+        
+  
+        <!-- End Menu -->
+
+    </div>
+        
+    </div>
+</nav>
+
+    
+<!-- End Navigation
+================================================== -->
 
 	
 	
