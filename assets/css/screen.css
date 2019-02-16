@@ -718,13 +718,10 @@ table tr {
       margin-bottom: 0; 
 }
 
-.nav-link {
+.nav-link, .navbar-toggler {
    color: rgba(255,255,255,.75) !important;
 }
 
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.95)'") !important;
-}
 
 
 
