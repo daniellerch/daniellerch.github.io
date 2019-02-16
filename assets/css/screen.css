@@ -719,7 +719,8 @@ table tr {
 }
 
 .nav-link {
-   color: #eee !important;
+   color: #fff !important;
+   font-weight: bold;
 }
 
 
