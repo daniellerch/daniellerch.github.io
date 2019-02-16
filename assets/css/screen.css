@@ -78,6 +78,9 @@ a {
 }
  .article-post ol, .article-post ul {
      margin-bottom:1.5rem;
+     max-width:800px;
+     margin-left:auto;
+     margin-right:auto;
 }
  .article-post ol ol, .article-post ul ul {
      list-style: disc;
