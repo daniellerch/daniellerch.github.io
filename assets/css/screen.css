@@ -846,3 +846,116 @@ table tr {
 	transition: 200ms;
 }
 
+
+
+/*---------- Media Queries ---------*/
+
+@media only screen and (max-width: 767px) {
+
+	.navbar {
+		padding-top: 5px;
+		height: 60px;
+	}
+
+  .navbar-default {
+    border: 0px;
+    background-color: #3a4659;
+  }
+
+	.navbar-default .navbar-collapse {
+	  text-align: center;
+	  border-color: transparent;
+	  background-color: #FFFFFF;
+	}
+
+  .navbar-default .navbar-collapse {
+    border: 0;
+    border-color: transparent;
+  }
+
+  .navbar-default .navbar-nav > li> a {
+    color: #222222;
+    margin-top: 10px;
+  }
+
+	.navbar-default .navbar-nav > li> a:hover {
+		color: orange;
+	}
+
+  .navbar-default .navbar-brand {
+    color: #FFFFFF;
+    padding: 16px 15px !important;
+  }
+
+	.navbar-default .navbar-brand.nav-white {
+		color: #FFFFFF;
+	}
+
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: orange;
+  }
+}
+
+@media only screen and (min-width: 240px) {
+
+
+.navbar.past-main {
+	font-size: 14px;
+	height: 80px;
+	/* background-color: rgba(255, 255, 255, 0.99); */
+   background-color: #3a4659;
+	-webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+	-o-transition: all 0.6s;
+	transition: all 0.6s;
+}
+
+
+.navbar-default.past-main .navbar-brand {
+	color: #fff;
+}
+
+.navbar-default.past-main .navbar-toggle .icon-bar {
+	background-color: #111111;
+}
+
+.navbar-default.past-main .navbar-nav > li > a {
+  color: #fff;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.navbar-default.past-main .navbar-nav > li > a:hover {
+  color: orange;
+}
+
+.navbar-default.past-main .navbar-nav > .active > a {
+  background: transparent;
+  color: orange;
+  }
+
+
+.navbar-default.past-main .navbar-nav > .active > a:hover {
+  background: transparent;
+  color: orange;
+}
+
+.navbar-default.past-main .navbar-nav > li > a:focus {
+  color: orange;
+}
+
+.navbar-default.past-main .navbar-nav > .active > a:focus {
+	background: transparent;
+  color: orange;
+}
+
+}
+
+.navbar-default .nav-white .navbar-toggle .icon-bar {
+	background-color: #FFFFFF;
+}
+
+.navbar-default.past-main .nav-white .navbar-toggle .icon-bar {
+	background-color: #111111;
+}
+
