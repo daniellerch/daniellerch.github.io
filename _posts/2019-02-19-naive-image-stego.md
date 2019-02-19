@@ -109,7 +109,11 @@ As you can see in the result image a simple filter can detect the hidden message
 
 ![bender]({{ site.baseurl }}/images/hns_bender_stego_broken.png)
 
+The same operation can be done using the [Aletheia](https://github.com/daniellerch/aletheia) tool. 
 
+```bash
+$ ./aletheia.py hpf hns_bender_stego.png hns_bender_stego_broken.png
+```
 
 
 
@@ -162,6 +166,8 @@ for i in xrange(I.shape[0]):
 misc.imsave('hns_homer_stego.png', I)
 ```
 
+
+
 <br>
 As a result, we obtain the following image:
 
@@ -173,15 +179,19 @@ We do not see the message. But again, this is not a secure option. We can unhide
 ```python
 from scipy import ndimage, misc
 I = misc.imread('hns_homer_stego.png')
-for i in xrange(I.shape[0]):
-    for j in xrange(I.shape[1]):
-        I[i,j][3]=255
-
+I[:,:,3] = 255;
 misc.imsave('hns_homer_stego_broken.png', I)
 ```
 
+The same operation can be done using the [Aletheia](https://github.com/daniellerch/aletheia) tool. 
+
+```bash
+$ ./aletheia.py rm-alpha hns_homer_stego.png hns_homer_stego.png
+```
+
+
 <br>
-After executing this script we obtain the following image:
+After executing this we obtain the following image:
 
 ![bender]({{ site.baseurl }}/images/hns_homer_stego_broken.png)
 
