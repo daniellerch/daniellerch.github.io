@@ -24,8 +24,9 @@ De momento, he decidido no habilitar los comentarios en el blog, por lo que para
 ### Mi libro
 En el 2014 publiqué mi libro de esteganografía y estegoanálisis, junto a Jordi Serra y con la colaboración de Alfonso Muñoz. Puedes encontrarlo en [0xWord](https://0xword.com/es/libros/64-esteganografia-y-estegoanalisis.html).
 
+<center>
 ![Libro stego]({{ site.baseurl }}/images/book.jpg)
-
+</center>
 
 ### Fotos
 En esta sección puedes encontrar fotos de diferentes eventos en los que he presentado mis investigaciones y que recuerdo con cariño.
