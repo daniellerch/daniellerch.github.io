@@ -8,11 +8,11 @@ subtitle: Investigador en esteganografía y estegoanálisis
 
 Tambien pertenezco al grupo [CUING](https://cuing.org/) (Criminal Use of Information Hiding), con el que he participado como revisor de los trabajos enviados a las conferencias del [2018](https://2018.ares-conference.eu/workshops/cuing-2018/index.html) y del [2019](https://www.ares-conference.eu/workshops/cuing-2019/).
 
-Aunque este blog está dedicado a la esteganografía y al estegoanálisis, cabe mencionar que esta no es mi actividad principal. Soy emprendedor, lo que me ha llevado a crear diferentes empresas. Actualmente, dedico la mayor parte de mis esfuerzos a mi última creación: [Neuron4](http://neuron4.com/), una empresa dedicada a roporcionar servicios relacionados con la Inteligencia Artificial.
+Aunque este blog está dedicado a la esteganografía y al estegoanálisis, cabe mencionar que esta no es mi actividad principal. Soy emprendedor, lo que me ha llevado a crear diferentes empresas. Actualmente, dedico la mayor parte de mis esfuerzos a mi última creación: [Neuron4](http://neuron4.com/), una empresa dedicada a proporcionar servicios relacionados con la Inteligencia Artificial.
 
 
 ### Sobre el Blog
-Desde que me puse en serio con la esteganografía, allà por el 2010, he ido observando una brecha enorme entre lo que se investiga en el mundo académico y lo que ocurre en el mundo real. Quizás lo más destacado es el hecho de que prácticamente todo el software disponible sobre esteganografía usa técnicas que se rompieron hace años. Sin embargo, tampoco existen herramientas fuera de los entornos académicos que permitan explotar estos fallos. Es como si nadie se dedicase a llevar los conocimientos científicos sobre esteganografía y estegoanálisis al mundo real. Esto, no ocurre en otras disciplinas afines como, por ejemplo, la criptografía.
+Desde que me puse en serio con la esteganografía, allá por el 2010, he ido observando una brecha enorme entre lo que se investiga en el mundo académico y lo que ocurre en el mundo real. Quizás lo más destacado es el hecho de que prácticamente todo el software disponible sobre esteganografía usa técnicas que se rompieron hace años. Sin embargo, tampoco existen herramientas fuera de los entornos académicos que permitan explotar estos fallos. Es como si nadie se dedicase a llevar los conocimientos científicos sobre esteganografía y estegoanálisis al mundo real. Esto, no ocurre en otras disciplinas afines como, por ejemplo, la criptografía.
 
 Así pues, mi objetivo con este blog, es aportar mi granito de arena para reducir esta brecha. Espero poder proporcionar información avanzada a programadores y profesionales de la seguridad informática, para que puedan aprovechar los últimos avances en esteganografía y estegoanálisis.
 
