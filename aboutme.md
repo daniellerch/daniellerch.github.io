@@ -23,7 +23,7 @@ He decidido no habilitar los comentarios en el blog, por lo que para contactar c
 
 
 ### Fotos
-En esta sección puedes encontrar fotos de diferentes congresos en los que he estado presentando mi trabajo y que recuerdo con cariño. 
+En esta sección puedes encontrar fotos de diferentes eventos en los que he estado presentando mi trabajo y que recuerdo con cariño. 
 
 <center>[IH&MMSec 2019, París]()</center>
 ![IH&MMSec 2019, París]({{ site.baseurl }}/images/workshops/ihmmsec_paris_2019_small.jpg)
