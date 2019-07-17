@@ -18,7 +18,7 @@ Así pues, mi objetivo con este blog, es aportar mi granito de arena para reduci
 
 
 ### Contacto
-De momento, he decidido no habilitar los comentarios en el blog, por lo que para contactar conmigo lo mejor es hacerlo a través de e-mail (dlerch at gmail dot com) o [https://twitter.com/daniel_lerch](twitter). Si quieres comentar un artículo o algo relacionado con el blog, hazlo en twitter. Para cualquier otra cosa envíame un e-mail.
+De momento, he decidido no habilitar los comentarios en el blog, por lo que para contactar conmigo lo mejor es hacerlo a través de e-mail (dlerch at gmail dot com) o [twitter](https://twitter.com/daniel_lerch). Si quieres comentar un artículo o algo relacionado con el blog, hazlo en twitter. Para cualquier otra cosa envíame un e-mail.
 
 
 
