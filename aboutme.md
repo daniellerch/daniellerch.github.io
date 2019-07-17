@@ -57,7 +57,7 @@ En esta sección puedes encontrar fotos de diferentes eventos en los que he pres
 ![RECSI 2012, San Sebastián]({{ site.baseurl }}/images/workshops/recsi_2012_grupo.jpg)
 <br><br>
 ![RECSI 2012, San Sebastián]({{ site.baseurl }}/images/workshops/recsi_2012_presentacion.jpg)
-<center>XII Reunión Española sobre Criptología y Seguridad de la Información 2012, San Sebastián</center>
+<center>XII Reunión Española sobre Criptología y Seguridad de la Información 2012, Donostia</center>
 
 
 
