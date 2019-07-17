@@ -12,7 +12,7 @@ Aunque este blog está dedicado a la esteganografía y al estegoanálisis, cabe 
 
 
 ### Sobre el Blog
-Desde que me puse en serio con la esteganografía, allà por el 2010, he ido obsercando una brecha enorme entre lo que se investiga en el mundo académico y lo que ocurre en el mundo real. Quizás lo más destacado es el hecho de que prácticamente todo el software disponible sobre esteganografía usa técnicas que se rompieron hace años. Sin embargo, tampoco existen herramientas fuera de los entornos académicos que permitan explotar estos fallos. Es como si nadie se dedicase a llevar los conocimientos científicos sobre esteganografía y estegoanálisis al mundo real. Esto, no ocurre en otras disciplinas afines como, por ejemplo, la criptografía.
+Desde que me puse en serio con la esteganografía, allà por el 2010, he ido observando una brecha enorme entre lo que se investiga en el mundo académico y lo que ocurre en el mundo real. Quizás lo más destacado es el hecho de que prácticamente todo el software disponible sobre esteganografía usa técnicas que se rompieron hace años. Sin embargo, tampoco existen herramientas fuera de los entornos académicos que permitan explotar estos fallos. Es como si nadie se dedicase a llevar los conocimientos científicos sobre esteganografía y estegoanálisis al mundo real. Esto, no ocurre en otras disciplinas afines como, por ejemplo, la criptografía.
 
 Así pues, mi objetivo con este blog, es aportar mi granito de arena para reducir esta brecha. Espero poder proporcionar información avanzada a programadores y profesionales de la seguridad informática, para que puedan aprovechar los últimos avances en esteganografía y estegoanálisis.
 
@@ -20,6 +20,11 @@ Así pues, mi objetivo con este blog, es aportar mi granito de arena para reduci
 ### Contacto
 De momento, he decidido no habilitar los comentarios en el blog, por lo que para contactar conmigo lo mejor es hacerlo a través de e-mail (dlerch at gmail dot com) o [twitter](https://twitter.com/daniel_lerch). Si quieres comentar un artículo o algo relacionado con el blog, hazlo en twitter. Para cualquier otra cosa envíame un e-mail.
 
+
+### Mi libro
+En el 2014 publiqué mi libro de esteganografía y estegoanálisis, junto a Jordi Serra y con la colaboración de Alfonso Muñoz. Puedes encontrarlo en [0xWord](https://0xword.com/es/libros/64-esteganografia-y-estegoanalisis.html).
+
+![Libro stego]({{ site.baseurl }}/images/book.jpg)
 
 
 ### Fotos
