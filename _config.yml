@@ -1,7 +1,7 @@
 # --- General options --- #
 
 # Name of website
-title: daniellerch.me
+title: Home
 
 # Short description of your site
 description: ???
@@ -20,7 +20,8 @@ description: ???
 
 # List of links in the navigation bar
 navbar-links:
-#  About Me: "aboutme"
+  Blog: "https://daniellerch.me"
+  Acerca de: "aboutme"
 #  Resources:
 #    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
 #    - Learn markdown: "http://www.markdowntutorial.com/"
@@ -67,7 +68,7 @@ author:
 # You can reorder the items to define the link order.
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
-  rss: true
+  rss: false
 #  email: "dlerch@gmail.com"
 #  facebook: 
   github: daniellerch
@@ -75,7 +76,7 @@ social-network-links:
 #  reddit: yourname
   linkedin: daniellerch
 #  xing: yourname
-#  stackoverflow: "3943160/daattali"
+  stackoverflow: "1503039/daniel-lerch"
 #  snapchat: deanat78
 #  instagram: deanat78
 #  youtube: user/deanat78
