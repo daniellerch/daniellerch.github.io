@@ -15,13 +15,18 @@ asd
 asasd
 sad
 
+
 ### Contacto
+He decidido no habilitar los comentarios en el blog, por lo que para contactar conmigo lo mejor es hacerlo a través de e-mail (dlerch at gmail dot com) o [https://twitter.com/daniel_lerch](twitter). Si quieres comentar un artículo o algo relacionado con el blog, hazlo en twitter. Todo lo demás por e-mail.
 
 
 
 ### Fotos de congresos
 asd
 asasd
-sad
+
+![IH&MMSec 2019, París]({{ site.baseurl }}/images/workshops/ihmmsec_paris_2019_small.jpg)
+
+
 
 
