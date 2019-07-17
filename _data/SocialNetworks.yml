@@ -42,7 +42,7 @@ xing:
   icon: "fa-xing"
 
 stackoverflow:
-  name: "StackOverflow"
+  name: "Crypto.StackExchange"
   baseURL: "https://crypto.stackexchange.com/users/"
   icon: "fa-stack-exchange"
 
