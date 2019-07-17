@@ -2,7 +2,7 @@
 layout: post
 title: "LSB Matching and Matrix Embedding"
 author: dlerch
-categories: [ Steganography, Steganalysis, Images ]
+tags: [ Steganography, Steganalysis, Images ]
 comments: true
 image: images/hns_f16.png
 featured: false
