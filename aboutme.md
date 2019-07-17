@@ -41,8 +41,7 @@ En esta sección puedes encontrar fotos de diferentes eventos en los que he pres
 <br>
 
 ![UOC 2017, Castelldefels]({{ site.baseurl }}/images/workshops/phd_2017.jpg)
-<center>UOC 2017, Castelldefels. Presentación de mi tesis doctoral</center><br> 
-<center>"Image Steganalysis and Steganography in the Spatial Domain</center>
+<center>UOC 2017, Castelldefels. Presentación de mi tesis doctoral</center><br>"Image Steganalysis and Steganography in the Spatial Domain</center>
 <br>
 
 ![RECSI 2016, Menorca]({{ site.baseurl }}/images/workshops/uocrw_2016_presentacion.jpeg)
