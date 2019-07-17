@@ -36,7 +36,8 @@ En esta sección puedes encontrar fotos de diferentes eventos en los que he pres
 <br>
 
 ![UOC 2017, Castelldefels]({{ site.baseurl }}/images/workshops/phd_2017.jpg)
-<center>UOC 2017, Castelldefels. Presentación de mi tesis doctoral "Image Steganalysis and Steganography in the Spatial Domain</center>
+<center>UOC 2017, Castelldefels. Presentación de mi tesis doctoral</center><br> 
+<center>"Image Steganalysis and Steganography in the Spatial Domain</center>
 <br>
 
 ![RECSI 2016, Menorca]({{ site.baseurl }}/images/workshops/uocrw_2016_presentacion.jpeg)
@@ -48,13 +49,13 @@ En esta sección puedes encontrar fotos de diferentes eventos en los que he pres
 <br>
 
 ![RECSI 2014, Menorca]({{ site.baseurl }}/images/workshops/recsi_2014_grupo.jpg)
-<br>
+<br><br>
 ![RECSI 2012, Menorca]({{ site.baseurl }}/images/workshops/recsi_2014_presentacion_color.jpg)
 <center>XIII Reunión Española sobre Criptología y Seguridad de la Información 2014, Menorca</center>
 <br>
 
 ![RECSI 2012, San Sebastián]({{ site.baseurl }}/images/workshops/recsi_2012_grupo.jpg)
-<br>
+<br><br>
 ![RECSI 2012, San Sebastián]({{ site.baseurl }}/images/workshops/recsi_2012_presentacion.jpg)
 <center>XII Reunión Española sobre Criptología y Seguridad de la Información 2012, San Sebastián</center>
 
