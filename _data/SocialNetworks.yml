@@ -44,14 +44,7 @@ xing:
 stackoverflow:
   name: "StackOverflow"
   baseURL: "https://stackoverflow.com/users/"
-  icon: "fa-stack-overflow"
-
-cryptostackexchange:
-  name: "CryptoStackExchange"
-  baseURL: "https://crypto.stackexchange.com/users/"
   icon: "fa-stack-exchange"
-
-
 
 snapchat:
   name: "Snapchat"
