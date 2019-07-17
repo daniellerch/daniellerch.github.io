@@ -25,12 +25,14 @@ He decidido no habilitar los comentarios en el blog, por lo que para contactar c
 ### Fotos
 En esta sección puedes encontrar fotos de diferentes eventos en los que he presentado mis investigaciones y que recuerdo con cariño.
 
-<center>IH&MMSec 2019, París</center>
+<center>7th ACM Workshop on Information Hiding and Multimedia Security 2019, París</center>
 ![IH&MMSec 2019, París]({{ site.baseurl }}/images/workshops/ihmmsec_paris_2019_small.jpg)
 
-
-<center>RECSI 2018, Granada</center>
+<center>XV Reunión Española sobre Criptología y Seguridad de la Información 2018, Granada</center>
 ![RECSI 2018, Granada]({{ site.baseurl }}/images/workshops/recsi_2018_grupo_small.jpg)
+
+<center>UOC 2017, Castelldefels. Presentación de mi tesis doctoral "Image Steganalysis and Steganography in the Spatial Domain</center>
+![UOC 2017, Castelldefels]({{ site.baseurl }}/images/workshops/phd_2017.jpg)
 
 
 
