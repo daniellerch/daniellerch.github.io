@@ -1,0 +1,264 @@
+/* Reset
+--------------------------------------------------------*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+/* change colours to suit your needs */
+ins {
+/*background-color:#ff9;*/
+    background-color:#000;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+
+input, select {
+    vertical-align:middle;
+}
+/* End Reset
+--------------------------------------------------------*/
+
+
+@font-face {
+ 
+    font-family: 'courier';
+    font-weight: normal;
+    font-style: normal;
+}
+body, html {
+	width: 100%;
+	height: 100%;
+	font: 100%/100% courier;
+	padding: 0;
+	margin: 0;
+/*color: #b9c1cb;*/
+        color: #555555;
+       	background-color: #000000;
+/*
+
+        background-image:url('img/bg.jpg');
+        background-repeat:no-repeat;
+        background-attachment:fixed;
+        background-position:center top; 
+*/
+}
+
+
+
+
+
+
+#wrapper {
+	height: 0px;
+
+	/* required */
+	position: absolute;
+	overflow: visible;
+	display: block;
+	width: 100%;
+	left: 0px;
+	top: 50%;
+	
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	-moz-opacity:0;
+	-khtml-opacity: 0;
+	opacity: 0;
+}
+
+
+
+.screen {
+	/*background-color: #666;
+	border: 3px solid #FFF;*/
+
+	overflow: hidden;
+
+	position: absolute;
+	left: 50%;
+
+	margin-left: -497px; 
+	width: 995px;
+
+	height: 500px;
+	top: -250px;
+	
+
+}
+
+
+
+
+
+#divVariousways,
+#divS19,
+#divBarrett,
+#divHanlon,
+#divJulia,
+#divLocanda,
+#divGecko,
+#divSarah,
+#divAmeri,
+#divSparks,
+#divArtisan {
+  	display:none;
+	position:absolute;
+	z-index:2;
+	background: #E3E6EA;
+	width: 995px;
+	height: 500px;
+	/*opacity: 0.6;*/
+	padding: 0px;
+	margin: 0px;
+
+}
+
+
+
+
+
+
+.goUrl {
+	text-transform: uppercase;
+	float: left;
+	letter-spacing: 20px;	
+	margin: 7px 0 0 7px;
+
+}
+.goUrl a:hover {
+	opacity: 0.6;
+}
+
+
+li
+{
+	margin-bottom: .6em;
+}
+
+
+hr
+{
+	position:relative;
+	width:800px;
+	height: 1px;
+	color: white;
+}
+
+
+
+div.content
+{
+font-family: arial;
+	width:800px;
+	text-align:justify;
+   margin-left:auto; 
+   margin-right:auto;
+}
+
+.screen span span {
+	width: 31px;
+	padding: 0 0 15px 0;
+}
+.screen span {
+	display: table-cell;
+	text-transform: uppercase;
+	text-align: center;
+	float: left;
+}
+a:link, a:visited, a:active {
+	text-decoration: none;
+	/*font-weight:bold;*/
+color: #4a8fff;
+	/*color: #33B231;*/
+}
+
+.screen a:hover {
+	text-decoration: none;
+}
+a span:hover {
+	opacity: 0.6;
+}
+
+
+
+table.links
+{
+	width:350px;
+	height:250px;
+        margin-left:auto; 
+        margin-right:auto;
+	text-align: left;
+}
+
+table.menu
+{
+        margin-left:auto; 
+        margin-right:auto;
+}
+
+
+
+
