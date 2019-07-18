@@ -37,7 +37,7 @@ De estas manera, podemos ocultar un bit en cada píxel de la imagen, por lo que 
 
 En este ejemplo vamos a usar la imagen de Lena, una imagen usada habitualmente en ejemplos de esteganografía y *watermarking*.
 
-![lena]({{ site.baseurl }}/images/hns_lena.png)
+![lena]({{ site.baseurl }}/images/hns_lena.png?style=centerme)
 
 
 Vamos a ver como implementar esta técnica en Python:
@@ -78,7 +78,7 @@ I[i][j][k] += bits[idx]
 
 Como resultado, obtenemos la siguiente imagen:
 
-![lena-stego]({{ site.baseurl }}/images/hns_lena_stego.png)
+![lena-stego]({{ site.baseurl }}/images/hns_lena_stego.png?style=centerme)
 
 
 No hay diferencia para el ojo humano. Pero, ¿podemos saber si hay un mensaje oculto?. Lo vemos en la siguiente sección.
@@ -116,19 +116,21 @@ Lo que estamos haciendo es extraer cada uno de los píxeles leyendo su LSB. Cada
 
 #### 2. El ataque SPA
 
-LSB replacement seems a good steganographic technique. An attacker can extract and read the message but this is easy to solve. we only have to encrypt it and if the attacker extracts the message he/she will think this is garbage. Other option is to use a [PRNG](https://en.wikipedia.org/wiki/Pseudorandom_number_generator) to choose which pixels we want to use to hide information. In this case we do not use all the pixels, we are embedding information using a bitrate smaller than one. For example, if we hide information using a 25% of the pixels we say we are using a bitrate 0.25. This reduces capacity increasing security, because less information is more difficult to detect.
+El *LSB replacement* puede parecer una buena técnica de esteganografía. Un atacante podría extraer el mensaje y leerlo, pero este se puede resolver fácilmente cifrando el mensaje. De esta manera el contenido que extraería el atacante no parecería un mensaje. Otra opción seria usar un [PRNG](https://es.wikipedia.org/wiki/Generador_de_n%C3%BAmeros_aleatorios) para elegir en que píxeles esconder información, en base a una clave acordada entre emisor y receptor. En este caso, al no usar todos los píxeles, tendríamos que escoger un ratio de inserción. Por ejemplo, del 25%, es decir, que ocultaríamos información únicamente usando el 25% de los píxeles de la imagen. Se estaría reduciendo la capacidad, pero al mismo tiempo se estaría mejorando la seguridad, puesto que menos información es más difícil de detectar.
 
-So, we have a  mostly secure steganongraphic method. Isn't it? 
+Así pues, parece que hemos conseguido un método bastante seguro. ¿No es así?
 
-No!, it is not. LSB replacement is an asymmetrical operation and it can be detected. To see what it means an asymmetrical operation, let's analyze what is happening when we replace the LSB.
+¡Pues no!, no lo es. 
 
-When we replace the LSB of a pixel with an even value this produces the same effect of adding one when we replace by one or does not produce any effect when we replace by zero. Similarly, when we replace the LSB of a pixel with an odd value this produces the same effect of subtracting one when we replace by zero or does not produce any effect when we replace by one. 
+El *LSB replacement* es una operación asimétrica y puede ser detectada. Para entender que significa que sea una operación asimétrica, analicemos que ocurre al sustituir el LSB de los píxeles. 
 
-Think a litle bit about this. When we hide data, the value of the even pixels increases or remains the same and the value of odd pixels decrease or remains the same. This is the asymmetrical operation I said before and this type of operation introduces statistical anomalies into the image. This fact was exploited first by the histogram attack [[1](#references)] and later by the RS attack [[2](#references)] and the SPA attack [[3](#references)].
+Cuando sustituimos el LSB de un píxel par (un LSB con valor 0) por un bit del mensaje con valor 1, el efecto que se produce es el mismo que el de añadir uno al valor del pixel. De la misma manera, cuando sustituimos el LSB de un píxel con valor impar (un LSB con valor 1) por un bit del mensaje con valor 0, el efecto que se produce es el mismo que el de restar uno al valor del pixel. 
 
-The Sample Pair Analysis (SPA) is detailed in [[3](#references)] so we refer the reader to the original paper for a detailed explanation and its corresponding maths. 
+En consecuencia, cuando ocultamos datos el valor de los píxeles pares incrementa o se queda igual, mientras que el valor de los píxeles impares decrementa o se queda igual. Este comportamiento asimétrico introduce importantes anomalías estadísticas en la imagen. Estas anomalías fueron explotadas inicialmente por el Ataque del Histograma [[1](#references)] y posteriormente por el ataque RS [[2](#references)] y por el ataque SPA[[3](#references)].
 
-The following code implements the SPA attack:
+A continuación implementamos el ataque SPA en Python:
+
+
 
 ```python
 import sys
@@ -178,11 +180,12 @@ for ch in range(3):
 
 ```
 
-This SPA implementation provides the estimated embedding rate. If the predicted bit rate is too low we consider the analyzed image as cover. Otherwise we consider it as stego.
+Esta implementación del ataque SPA proporciona una estimación de ratio de inserción. Si el ratio de inserción que se predice es demasiaado bajo consideraremos que la imagen no contiene información oculta. De otra manera, consideraremos es una imagen *stego* y que contiene un mensaje oculto.
 
-Note we analize each channel (R, G and B) separately. So we can detect if there is information only in one channel.
+Ten en cuenta que, dado que se trata de una imagen en color, se analiza cada canal de color por separado.
 
-Let's try our program with the cover image:
+Veamos que tal funciona el programa con una imagen *cover*, es decir, sin mensaje oculto:
+
 
 ```bash
 $ python spa.py hns_lena.png
@@ -191,7 +194,7 @@ G: cover
 B: cover
 ```
 
-And now, let's try with the stego image.
+Ahora, veamos que ocurre con una imagen *stego*:
 
 ```bash
 $ python spa.py hns_lena_stego.png 
@@ -253,7 +256,7 @@ Let's suppose now we want to hide the 'A' letter in ASCII code. This, in the bin
 
 In this example we are going to use the F16 image:
 
-![f16]({{ site.baseurl }}/images/hns_f16.png)
+![f16]({{ site.baseurl }}/images/hns_f16.png?style=centerme)
 
 <br>
 See an example program in Python to hide information:
@@ -294,7 +297,7 @@ misc.imsave('hns_f16_stego.png', I)
 <br>
 The result after embedding is this:
 
-![f16-stego]({{ site.baseurl }}/images/hns_f16_stego.png)
+![f16-stego]({{ site.baseurl }}/images/hns_f16_stego.png?style=centerme)
 
 
 <br>
