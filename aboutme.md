@@ -12,9 +12,9 @@ Aunque este blog está dedicado a la esteganografía y al estegoanálisis, cabe 
 
 
 ### Sobre el Blog
-Desde que me puse en serio con la esteganografía, allá por el 2010, he ido observando una brecha enorme entre lo que se investiga en el mundo académico y lo que ocurre en el mundo real. Quizás lo más destacado es el hecho de que prácticamente todo el software disponible sobre esteganografía usa técnicas que se rompieron hace años. Sin embargo, tampoco existen herramientas fuera de los entornos académicos que permitan explotar estos fallos. Es como si nadie se dedicase a llevar los conocimientos científicos sobre esteganografía y estegoanálisis al mundo real. Esto, no ocurre en otras disciplinas afines como, por ejemplo, la criptografía.
+Este blog es sobre esteganografía y estegoanálisis. Desde que empecé a investigar en este area, allá por el 2010, he ido observando una brecha enorme entre lo que se investiga en el mundo académico y lo que ocurre en el mundo real. Quizás lo más destacado es el hecho de que prácticamente todo el software disponible sobre esteganografía en imágenes (la más común) usa técnicas que se rompieron hace años. Sin embargo, tampoco existen herramientas fuera de los entornos académicos que permitan explotar estos fallos. Es como si nadie se dedicase a llevar los conocimientos científicos sobre esteganografía y estegoanálisis al mundo real. Esto, no ocurre en otras disciplinas afines como, por ejemplo, la criptografía.
 
-Así pues, mi objetivo con este blog, es aportar mi granito de arena para reducir esta brecha. Espero poder proporcionar información avanzada a programadores y profesionales de la seguridad informática, para que puedan aprovechar los últimos avances en esteganografía y estegoanálisis.
+Así pues, mi objetivo con este blog, es aportar mi granito de arena para reducir esta brecha. Espero poder proporcionar información avanzada a programadores, entusiastas y profesionales de la seguridad informática, para que puedan aprovechar los últimos avances en esteganografía y estegoanálisis.
 
 
 ### Contacto
@@ -28,7 +28,7 @@ En el 2014 publiqué mi libro de esteganografía y estegoanálisis, junto a Jord
 <br><br>
 
 ### Fotos
-En esta sección puedes encontrar fotos de diferentes eventos en los que he presentado mis investigaciones y que recuerdo con cariño.
+En esta sección iré dejando las fotos de los diferentes eventos en los que he presentado mis investigaciones.
 <br>
 
 
