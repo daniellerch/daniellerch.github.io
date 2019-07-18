@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Dominio espacial
 subtitle: Inserción de información en imágenes
 tags: [Esteganografía, Estegoanálisis, Imágenes]
@@ -10,9 +10,7 @@ En este post vamos a ver como ocultar información en el dominio espacial, es de
 En esteganografía en el dominio espacial es habitual esconder información modificando ligeramente el valor de los píxeles, normalmente en una unidad. A continuación veremos una técnica conocida como *LSB replacement*, de las primeras en ser usadas. Esta técnica fue rota hace muchos años aunque todavía existen muchas herramientas que lo usan. Por lo que posteriormente, veremos uno de los ataques más potentes contra esta técnica. Finalmente, veremos una técnica conocida como *LSB Matching*, igual de sencilla que la primera pero mucho más difícil de detectar.
 
 1. [LSB replacement](#1-lsb-replacement)
-
 2. [El ataque SPA](#2-el-ataque-spa)
-
 3. [LSB Matching](#1-lsb-matching)
 <br>
 
@@ -22,9 +20,7 @@ Una de las primeras técnicas de ocultación de información en imágenes de tip
 
 Supongamos que tenemos ocho píxeles con los siguientes valores:
 
-<center>
 | 160 | 60 | 53 | 128 | 111 | 43 | 84 | 125 |
-<center>
 
 Si obtenemos su código binario, tenemos:
 
@@ -33,10 +29,8 @@ Si obtenemos su código binario, tenemos:
 
 Supongamos ahora que queremos ocultar la letra 'A' en código ASCII. En código binario es el número 01000001. Por lo que tendremos que sustituir el LSB de cada píxel por cada uno de los bits que queremos esconder. El resultado es el siguiente:
 
-<center>
 | 1010000**0** | 0011110**1** | 0011010**0** | 1000000**0** | 
 | 0110111**0** | 0010101**0** | 0101010**0** | 0111110**1** | 
-</center>
 
 <br>
 De estas manera, podemos ocultar un bit en cada píxel de la imagen, por lo que la capacidad de este método es de la octava parte de la cantidad de píxeles de la imagen.
