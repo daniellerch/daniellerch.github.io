@@ -7,6 +7,9 @@ subtitle: Índice de contenido
 
 ## Esteganografía en imágenes
 
+#### Introducción
+- El problema del prisionero
+
 #### Inserción de información en la imagen
 - Cómo incrustar información en el dominio espacial.
 - Cómo incrustar información en el dominio transformado.
@@ -22,13 +25,20 @@ subtitle: Índice de contenido
 - Wet Paper Codes
 - Sindrome Trellis Codes.
 
-
 #### Dónde ocultar la información
 - UED
 - HUGO.
 - WOW. 
 - HILL.
 
+
+#### Análisis de Stego Malware
+- ???
+
+#### Análisis de herramientas
+- Estegoanálisis de OpenStego.
+- Estegoanálisis de OpenPuff.
+- Estegoanálisis de StegHide.
 
 
 ## Esteganografía en audio
