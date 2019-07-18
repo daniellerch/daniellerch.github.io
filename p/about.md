@@ -28,7 +28,7 @@ En el 2014 publiqué mi libro de esteganografía y estegoanálisis, junto a Jord
 <br><br>
 
 ### Fotos
-En esta sección iré dejando las fotos de los diferentes eventos en los que he presentado mis investigaciones.
+En esta sección iré dejando las fotos de los diferentes eventos en los que voy presentado mis investigaciones.
 <br>
 
 
