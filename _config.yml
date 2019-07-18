@@ -20,8 +20,8 @@ description: daniellerch.me
 
 # List of links in the navigation bar
 navbar-links:
-  Blog: "https://daniellerch.me/blog"
-  Acerca de: "aboutme"
+#  Blog: "p/blog"
+  Acerca de: "p/about"
 #  Resources:
 #    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
 #    - Learn markdown: "http://www.markdowntutorial.com/"
