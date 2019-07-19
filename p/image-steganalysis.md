@@ -30,7 +30,7 @@ The analysis of the tools was performed using [Aletheia](https://github.com/dani
 
 
 
-
+[]: # {{{ OpenStego
 <br>
 #### OpenStego
 
@@ -52,25 +52,25 @@ With Aletheia we can check the modifications performed by OpenStego in the stego
 $ ./aletheia.py print-diffs lena.png stego.png
 
 Channel 1:
-[(226, 227, 1), (223, 222, -1), (221, 220, -1), (223, 222, -1), (221, 220, -1)]
-[(229, 228, -1), (234, 235, 1), (174, 175, 1), (180, 181, 1), (178, 179, 1)]
-[(190, 191, 1), (204, 205, 1), (202, 203, 1), (204, 205, 1), (202, 203, 1)]
-[(210, 211, 1), (208, 209, 1), (207, 206, -1), (204, 205, 1), (205, 204, -1)]
+[(226, 227, 1), (223, 222, -1), (221, 220, -1), (223, 222, -1)]
+[(229, 228, -1), (234, 235, 1), (174, 175, 1), (180, 181, 1)]
+[(190, 191, 1), (204, 205, 1), (202, 203, 1), (204, 205, 1)]
+[(210, 211, 1), (208, 209, 1), (207, 206, -1), (204, 205, 1)]
 ...
 
 
 Channel 2:                                                                                                                            
-[(226, 227, 1), (223, 222, -1), (221, 220, -1), (223, 222, -1), (221, 220, -1)]                                                       
-[(229, 228, -1), (234, 235, 1), (174, 175, 1), (180, 181, 1), (178, 179, 1)]                                                          
-[(190, 191, 1), (204, 205, 1), (202, 203, 1), (204, 205, 1), (202, 203, 1)]                                                           
-[(210, 211, 1), (208, 209, 1), (207, 206, -1), (204, 205, 1), (205, 204, -1)]                                                         
+[(226, 227, 1), (223, 222, -1), (221, 220, -1), (223, 222, -1)] 
+[(229, 228, -1), (234, 235, 1), (174, 175, 1), (180, 181, 1)]
+[(190, 191, 1), (204, 205, 1), (202, 203, 1), (204, 205, 1)]
+[(210, 211, 1), (208, 209, 1), (207, 206, -1), (204, 205, 1)]
 ...
 
 Channel 3:                                                                                                                            
-[(226, 227, 1), (223, 222, -1), (221, 220, -1), (223, 222, -1), (221, 220, -1)]                                                       
-[(229, 228, -1), (234, 235, 1), (174, 175, 1), (180, 181, 1), (178, 179, 1)]                                                          
-[(190, 191, 1), (204, 205, 1), (202, 203, 1), (204, 205, 1), (202, 203, 1)]                                                           
-[(210, 211, 1), (208, 209, 1), (207, 206, -1), (204, 205, 1), (205, 204, -1)]     
+[(226, 227, 1), (223, 222, -1), (221, 220, -1), (223, 222, -1)]
+[(229, 228, -1), (234, 235, 1), (174, 175, 1), (180, 181, 1)]
+[(190, 191, 1), (204, 205, 1), (202, 203, 1), (204, 205, 1)]
+[(210, 211, 1), (208, 209, 1), (207, 206, -1), (204, 205, 1)]
 ...
 ```
 
@@ -79,7 +79,7 @@ As you can see in the results, when a pixel of the cover image is even the perfo
 Let's try a RS attack:
 
 ```bash
-./aletheia.py rs stego.png 
+$ ./aletheia.py rs stego.png 
 Hiden data found in channel R 0.25
 Hiden data found in channel G 0.24
 Hiden data found in channel B 0.27
@@ -90,7 +90,7 @@ Let's try now with less data:
 ```bash
 $ head -100 /dev/urandom | tr -dc A-Za-z0-9 > secret.txt
 $ openstego embed -mf secret.txt -cf lena.png -sf stego.png
-./aletheia.py rs stego.png 
+$ ./aletheia.py rs stego.png 
 Hiden data found in channel R 0.06
 Hiden data found in channel G 0.06
 Hiden data found in channel B 0.07
@@ -99,11 +99,12 @@ Hiden data found in channel B 0.07
 Obviously, with the original Lena image, the tool does not detect any hidden data:
 
 ```bash
-./aletheia.py rs lena.png 
-Hiden data found in channel R 0.
-Hiden data found in channel G 0.
-Hiden data found in channel B 0.
+$ ./aletheia.py rs lena.png 
+No hiden data found
 ```
+
+[]: # }}}
+
 
 
 <br>
