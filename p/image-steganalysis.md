@@ -6,51 +6,33 @@ tags: [steganography, steganalysis, images]
 ---
 
 
-Here you can find an stegoanalysis of popular image steganography tools that you can find in the Internet.The purpose of this page is to provide a comparative study performed with the state of the art techniques
-so that the user knows which tools are safe and which are not.
+Here you can find an stegoanalysis of popular image steganography tools that you can find in the Internet.The purpose of this page is to provide a comparative study performed with the state of the art techniques so that the user knows which tools are safe and which are not.
 
-I have separated the steganography tools in two groups. The first group uses techniques for embedding information that can be broken using old statistical attacks. These tools are:
+I have separated the steganography tools in two groups. The first group uses techniques for embedding information that can be broken using old statistical attacks or that contain some important error that makes them detectable. I will not include these tools en the final comparison table. These tools are:
 
-
-- [OpenStego](#openstego)
+- [Hide and Seek](#hide-and-seek)
 - [OpenStego](#openstego)
 
+The second group contains tools that use more advanced techniques and that are difficult to detect. In this case we will use machine learning based attacks. This allows us to compare which of these techinques is more difficult to detect in laboratory conditions, but it does not allow us to ensure that these tools can be detected reliably in the real world. These tools are:
 
-The analysis was performed using [https://github.com/daniellerch/aletheia](Aletheia).
+- [OpenPuff](#openpuff)
+- [StegHide](#steghide)
+<br>
+
+
+
+I maintain this list to be updated about the status of the tools available and the level of security they provide. If you know another tool that should be in the list, please let [me](http://daniellerch.me) know. 
+
+The analysis of the tools was performed using [Aletheia](https://github.com/daniellerch/aletheia).
 
 [ *Last updated on 2019-08-01* ]
 
 
-1.- [Results](#1-results)
-2.- [OpenStego](#2-openstego)
-3.- [OpenPuff](#3-openpuff)
-4.- [Others](#4-others)
-5.- [References](#5-references)
-<br>
-
 
 
 
 <br>
-#### 1. Results
-
-
-Firs I present the results obtained with the different attacks performed. In this way the reader who does not want to dig deeper can get a quick look. Later, I present the details of the experiments for each of the tools steganalyzed.
-
-
-
-as
-dsa
-ds
-ad
-sad
-as
-d
-
-
-
-<br>
-#### 2. OpenStego
+#### OpenStego
 
 as
 dsa
@@ -62,7 +44,7 @@ d
 
 
 <br>
-#### 3. OpenPuff
+#### OpenPuff
 as
 dsa
 ds
@@ -70,19 +52,6 @@ ad
 sad
 as
 d
-
-
-<br>
-#### 4. Others
-
-I maintain this list to be updated about the status of the tools available and the level of security they provide. If you know another tool that should be in the list, please let [me](http://daniellerch.me) know. 
-
-
-
-
-
-#### References
-[ 1 ]. 4. XXX
 
 
 
