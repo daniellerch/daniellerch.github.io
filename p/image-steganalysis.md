@@ -29,8 +29,7 @@ The analysis of the tools was performed using [Aletheia](https://github.com/dani
 
 
 
-<!-- {{{ OpenStego -->
-
+<!--- {{{ OpenStego --->
 <br>
 #### OpenStego
 
@@ -104,7 +103,7 @@ $ ./aletheia.py rs lena.png
 No hiden data found
 ```
 
-<!-- }}} -->
+<!--- }}} --->
 
 
 
