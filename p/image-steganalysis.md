@@ -28,7 +28,10 @@ The analysis of the tools was performed using [Aletheia](https://github.com/dani
 [ *Last updated on 2019-08-01* ]
 
 
+
 [//]: # ({{{ OpenStego)
+
+
 <br>
 #### OpenStego
 
@@ -107,14 +110,10 @@ No hiden data found
 
 
 <br>
-#### OpenPuff
-as
-dsa
-ds
-ad
-sad
-as
-d
+#### StegHide
+
+TODO
+
 
 ### References
 [1]. Attacks on Steganographic Systems. A. Westfeld and A. Pfitzmann. Lecture Notes in Computer Science, vol.1768, Springer-Verlag, Berlin, 2000, pp. 61−75. 
