@@ -29,9 +29,8 @@ The analysis of the tools was performed using [Aletheia](https://github.com/dani
 
 
 
-
-<!-- {{{ OpenStego -->
 <br>
+{% {{{ OpenStego %}
 #### OpenStego
 
 [OpenStego](https://www.openstego.com/) is a Java tool for hiding information in the spatial domain (steganography and watermarking). At the moment of writing these lines the las version available is v0.7.3.
@@ -104,7 +103,7 @@ $ ./aletheia.py rs lena.png
 No hiden data found
 ```
 
-<!-- }}} -->
+{% }}} %}
 
 
 
