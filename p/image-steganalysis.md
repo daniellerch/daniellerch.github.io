@@ -32,7 +32,7 @@ The analysis of the tools was performed using [Aletheia](https://github.com/dani
 
 
 <br>
-#### OpenStego
+## OpenStego
 
 [OpenStego](https://www.openstego.com/) is a Java tool for hiding information in the spatial domain (steganography and watermarking). At the moment of writing these lines the las version available is v0.7.3.
 
@@ -107,12 +107,12 @@ No hiden data found
 
 
 <br>
-#### StegHide
+## StegHide
 
 TODO
 
 
-### References
+## References
 [1]. Attacks on Steganographic Systems. A. Westfeld and A. Pfitzmann. Lecture Notes in Computer Science, vol.1768, Springer-Verlag, Berlin, 2000, pp. 61−75. 
 
 [2]. Reliable Detection of LSB Steganography in Color and Grayscale Images. Jessica Fridrich, Miroslav Goljan and Rui Du.
