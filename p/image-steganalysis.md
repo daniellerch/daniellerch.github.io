@@ -15,10 +15,10 @@ sad
 [ *Last updated on 2019-08-01* ]
 
 
-- [OpenStego](#openstego)
-- [OpenPuff](#openpuff)
-- [Others](#others)
-- [References](#references)
+1.- [OpenStego](#1-openstego)
+2.- [OpenPuff](#2-openpuff)
+3.- [Others](#3-others)
+4.- [References](#4-references)
 <br>
 
 
@@ -28,7 +28,7 @@ sad
 
 
 <br>
-#### OpenStego
+#### 1. OpenStego
 
 as
 dsa
@@ -40,7 +40,7 @@ d
 
 
 <br>
-#### OpenPuff
+#### 2. OpenPuff
 as
 dsa
 ds
@@ -51,7 +51,7 @@ d
 
 
 <br>
-#### Others
+#### 3. Others
 
 I maintain this list to be updated about the status of the tools available and the level of security they provide. If you know another tool that should be in the list, please let [me](http://daniellerch.me) know. 
 
@@ -60,7 +60,7 @@ I maintain this list to be updated about the status of the tools available and t
 
 
 #### References
-[1]. XXX
+[ 1 ]. 4. XXX
 
 
 
