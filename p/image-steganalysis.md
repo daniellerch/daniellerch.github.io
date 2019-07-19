@@ -18,7 +18,7 @@ sad
 1. [OpenStego](#1-openstego)
 2. [OpenPuff](#2-openpuff)
 3. [Others](#3-others)
-4. [References](#4-references)
+*. [References](#*-references)
 <br>
 
 
@@ -27,15 +27,30 @@ sad
 
 
 
+<br>
 #### 1. OpenStego
 
+as
+dsa
+ds
+ad
+sad
+as
+d
 
 
-
+<br>
 #### 2. OpenPuff
+as
+dsa
+ds
+ad
+sad
+as
+d
 
 
-
+<br>
 #### 3. Others
 
 I maintain this list to be updated about the status of the tools available and the level of security they provide. If you know another tool that should be in the list, please let [me](http://daniellerch.me) know. 
@@ -44,8 +59,8 @@ I maintain this list to be updated about the status of the tools available and t
 
 
 
-#### 4. References
-
+#### *. References
+    [1]. XXX
 
 
 
