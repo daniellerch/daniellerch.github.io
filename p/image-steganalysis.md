@@ -30,7 +30,7 @@ The analysis of the tools was performed using [Aletheia](https://github.com/dani
 
 
 
-[]: # {{{ OpenStego
+[comment]: # {{{ OpenStego
 <br>
 #### OpenStego
 
@@ -47,6 +47,7 @@ $ openstego embed -mf secret.txt -cf lena.png -sf stego.png
 ```
 
 With Aletheia we can check the modifications performed by OpenStego in the stego image:
+
 
 ```bash
 $ ./aletheia.py print-diffs lena.png stego.png
@@ -103,7 +104,7 @@ $ ./aletheia.py rs lena.png
 No hiden data found
 ```
 
-[]: # }}}
+[comment]: # }}}
 
 
 
