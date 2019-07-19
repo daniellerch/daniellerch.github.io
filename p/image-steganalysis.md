@@ -15,10 +15,10 @@ sad
 [ *Last updated on 2019-08-01* ]
 
 
--. [OpenStego](#openstego)
--. [OpenPuff](#openpuff)
--. [Others](#others)
--. [References](#references)
+- [OpenStego](#openstego)
+- [OpenPuff](#openpuff)
+- [Others](#others)
+- [References](#references)
 <br>
 
 
