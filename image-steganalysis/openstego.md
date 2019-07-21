@@ -6,7 +6,7 @@ tags: [steganography, steganalysis, images]
 ---
 
 
-## OpenStego
+## Steganalysis of OpenStego
 
 [OpenStego](https://www.openstego.com/) is a Java tool for hiding information in the spatial domain (steganography and watermarking). At the moment of writing these lines the las version available is v0.7.3.
 

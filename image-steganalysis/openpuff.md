@@ -1,12 +1,12 @@
 ---
 layout: page
-title: OpenPuff
-subtitle: Image Steganalysis
+title: Attack to OpenPuff
+subtitle: Image Steganalysis of OpenPuff
 tags: [steganography, steganalysis, images]
 ---
 
 
-## OpenPuff
+## Steganalysis of OpenPuff
 
 [OpenPuff](https://embeddedsw.net/OpenPuff_Steganography_Home.html) is a propietary tool for hiding information. At the moment of writing these lines the las version available is v4.0.1
 
