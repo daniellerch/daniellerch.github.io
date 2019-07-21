@@ -9,6 +9,8 @@ tags: [steganography, steganalysis, images]
 
 [OpenStego](https://www.openstego.com/) is a Java tool for hiding information in the spatial domain (steganography and watermarking). At the moment of writing these lines the las version available is v0.7.3.
 
+The analysis this tool was performed using [Aletheia](https://github.com/daniellerch/aletheia).
+
 With a simple experiment we can see that the method used for embedding is LSB replacement. That is, we hide the bits of the message by replacing the least significant bit (LSB) of the pixel. Actually, the tool supports using several pixels per channel, but this is even more detectable.
 
 First we download a copy of the Lena image, then we prepare a file with some secret data and finally we hide the message:
