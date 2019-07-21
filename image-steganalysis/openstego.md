@@ -1,6 +1,7 @@
 ---
 layout: page
-subtitle: Image Steganalysis
+title: Attack to OpenStego
+subtitle: Image Steganalysis of OpenStego
 tags: [steganography, steganalysis, images]
 ---
 
