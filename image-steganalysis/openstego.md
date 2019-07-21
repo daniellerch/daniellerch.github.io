@@ -1,6 +1,6 @@
 ---
 layout: page
-title: OpenStego
+title: Steganalysis of OpenStego
 subtitle: Image Steganalysis
 tags: [steganography, steganalysis, images]
 ---
