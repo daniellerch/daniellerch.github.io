@@ -313,17 +313,29 @@
 
 
 	$(document).ready(function(){
-		init_span('#r4w2', '#52ac45'); // linkedin
-		init_span('#r6w3', '#52ac45'); // publications
-		init_span('#r9w2', '#52ac45'); // twitter
-		init_span('#r11w3', '#52ac45'); // github
 
-		setInterval(function(){
-			setTimeout(function(){ blink('#r4w2', '#52ac45'); }, 0); // linkedin
-			setTimeout(function(){ blink('#r6w3', '#52ac45'); }, 300); // publications
-			setTimeout(function(){ blink('#r9w2', '#52ac45'); }, 600); // twitter
-			setTimeout(function(){ blink('#r11w3', '#52ac45'); }, 900); // github
-		}, 5000);
+		var is_mobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+		if (is_mobile) {
+			screen.orientation.lock("landskape");
+			$('.screen').css('color', '#555');
+			blink_on('#r4w2', '#52ac45'); // linkedin
+			blink_on('#r6w3', '#52ac45'); // publications
+			blink_on('#r9w2', '#52ac45'); // twitter
+			blink_on('#r11w3', '#52ac45'); // github
+		}
+		else{
+			init_span('#r4w2', '#52ac45'); // linkedin
+			init_span('#r6w3', '#52ac45'); // publications
+			init_span('#r9w2', '#52ac45'); // twitter
+			init_span('#r11w3', '#52ac45'); // github
+
+			setInterval(function(){
+				setTimeout(function(){ blink('#r4w2', '#52ac45'); }, 0); // linkedin
+				setTimeout(function(){ blink('#r6w3', '#52ac45'); }, 300); // publications
+				setTimeout(function(){ blink('#r9w2', '#52ac45'); }, 600); // twitter
+				setTimeout(function(){ blink('#r11w3', '#52ac45'); }, 900); // github
+			}, 5000);
+		}
 	});
 
 </script>
