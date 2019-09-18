@@ -11,6 +11,8 @@
 <meta name="robots" content="index, follow" />
 <meta name="robots" content="all" />
 <meta name="author" content="Daniel Lerch Hostalot">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style type="text/css">
 
 #r2w2 span, #r2w4 span, #r2w6 span, #r15w2 span, #r15w3 span, #r15w4 span, #r15w5 span, #r15w6 span {
@@ -316,6 +318,8 @@
 
 		var is_mobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 		if (is_mobile) {
+			$(document).css('style', '-webkit-transform: rotate(-90deg);-moz-transform: rotate(-90deg);-o-transform: rotate(-90deg);');
+
 			$('.screen').css('color', '#555');
 			blink_on('#r4w2', '#52ac45'); // linkedin
 			blink_on('#r6w3', '#52ac45'); // publications
