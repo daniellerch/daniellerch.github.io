@@ -26,11 +26,7 @@ body {
 }
 
 
-@media (max-width : 320px) {
-	-webkit-transform: rotate(-90deg);
-	-moz-transform: rotate(-90deg);
-	-o-transform: rotate(-90deg);
-}
+
 
 
 article,aside,details,figcaption,figure,
