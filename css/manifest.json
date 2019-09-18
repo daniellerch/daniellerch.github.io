@@ -1,4 +1,6 @@
 {
+   "name": "daniellerch",
    "display": "standalone",
-   "orientation":  "landscape"
+   "orientation":  "landscape",
+   "start_url": "/?utm_source=homescreen"
 }
