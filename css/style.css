@@ -25,6 +25,14 @@ body {
     line-height:1;
 }
 
+
+@media (max-width : 320px) {
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+}
+
+
 article,aside,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section { 
     display:block;
