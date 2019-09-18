@@ -95,7 +95,7 @@ body, html {
 	padding: 0;
 	margin: 0;
 /*color: #b9c1cb;*/
-        color: #888;
+        color: #ccc;
        	background-color: #000000;
 /*
 
@@ -231,16 +231,18 @@ font-family: arial;
 a:link, a:visited, a:active {
 	text-decoration: none;
 	/*font-weight:bold;*/
-color: #4a8fff;
+	/*color: #4a8fff;*/
 	/*color: #33B231;*/
 }
 
 .screen a:hover {
 	text-decoration: none;
 }
-a span:hover {
-	opacity: 0.6;
+.screen a {
+	color: #ccc;
 }
+
+
 
 
 
