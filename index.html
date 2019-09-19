@@ -19,11 +19,12 @@
 body {
 	background-color:#000;
 	overflow: hidden;
-	color:#aaa;
+	color:#222;
 }
 
 a, a:hover, a:visited {
 	color:#aaa;
+   font-weight:900;
 	text-decoration:none;
 }
 
@@ -216,6 +217,8 @@ a, a:hover, a:visited {
 		var g_mouseover = false;
 		function blink_on(search, color){
 			if(!g_mouseover){
+				//$('.word').css('font-weight', 'normal');
+				$('.word').css('color', '#333');
 				$(search).css('color', color);
 				$(search).css('font-weight', '900');
 			}
@@ -223,6 +226,8 @@ a, a:hover, a:visited {
 
 		function blink_off(search){
 			if(!g_mouseover){
+				//$('.word').css('font-weight', '');
+				$('.word').css('color', '');
 				$(search).css('color', '');
 				$(search).css('font-weight', '');
 			}
@@ -237,7 +242,6 @@ a, a:hover, a:visited {
 
 		function init_span(search, color){
 			$(search).mouseover(function(){
-				$('.container').css('color', '#444');
 				blink_on(search, color);
 				g_mouseover=true;
 			});
@@ -266,13 +270,14 @@ a, a:hover, a:visited {
 			init_span('#r9w2', '#52ac45'); // twitter
 			init_span('#r11w3', '#52ac45'); // github
 
+         /*
 			setInterval(function(){
 				setTimeout(function(){ blink('#r4w2', '#52ac45'); }, 0); // linkedin
 				setTimeout(function(){ blink('#r6w3', '#52ac45'); }, 300); // publications
 				setTimeout(function(){ blink('#r9w2', '#52ac45'); }, 600); // twitter
 				setTimeout(function(){ blink('#r11w3', '#52ac45'); }, 900); // github
 			}, 5000);
-
+         */
 		}
 	});
 
