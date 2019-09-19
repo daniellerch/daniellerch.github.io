@@ -254,13 +254,7 @@ a, a:hover, a:visited {
 		}
 
 	        var is_mobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-      	        if (is_mobile) {
-                   blink_on('#r4w2', '#52ac45'); // linkedin
-                   blink_on('#r6w3', '#52ac45'); // publications
-                   blink_on('#r9w2', '#52ac45'); // twitter
-                   blink_on('#r11w3', '#52ac45'); // github
-               }
-               else{
+      	        if (!is_mobile) {
 	          init_span('#r4w2', '#52ac45'); // linkedin
 		  init_span('#r6w3', '#52ac45'); // publications
 		  init_span('#r9w2', '#52ac45'); // twitter
