@@ -20,7 +20,7 @@
 				
 			spans = longest;
 			while(spans--)
-				$(this).prepend("<span class='c" + spans + "'></span>");
+				$(this).prepend("<div class='char c" + spans + "'></div>");
 				
 			
 			function testChar(a,b,c,d){
