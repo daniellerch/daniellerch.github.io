@@ -316,9 +316,9 @@ a, a:hover, a:visited {
 			else{
 				landscape_version();
 			}
-			$(window).resize(function(){
+			window.addEventListener("orientationchange", function() {
 				location.reload();
-			});
+			}, false);
 		}
 		else{
 			landscape_version();
