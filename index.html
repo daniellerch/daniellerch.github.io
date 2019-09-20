@@ -276,16 +276,8 @@ a, a:hover, a:visited {
          });
       }
 
-      var is_mobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-      if (!is_mobile){
-         init_span('#r4w2', '#52ac45'); // linkedin
-         init_span('#r6w3', '#52ac45'); // publications
-         init_span('#r9w2', '#52ac45'); // twitter
-         init_span('#r11w3', '#52ac45'); // github
-			$('#r15w4b').hide();
-      }
-		else{
-			$(".container .word .char").css("font-size", "7vw");
+		function portrait_version(){
+			$(".container .word .char").css("font-size", "6.5vw");
 			$('#r1w2').hide();
 			$('#r2w6').hide();
 			$('#r2w7').hide();
@@ -310,6 +302,33 @@ a, a:hover, a:visited {
 			$('#r16w4').addClass('highlight');
 			$('#r16w6').hide();
 		}
+
+		function landscape_version(){
+			$('#r15w4b').hide();
+		}
+
+
+      var is_mobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+      if (is_mobile){
+			if(window.innerWidth<window.innerHeight){
+				portrait_version();
+			}
+			else{
+				landscape_version();
+			}
+			$(window).resize(function(){
+				location.reload();
+			});
+		}
+		else{
+			landscape_version();
+         init_span('#r4w2', '#52ac45'); // linkedin
+         init_span('#r6w3', '#52ac45'); // publications
+         init_span('#r9w2', '#52ac45'); // twitter
+         init_span('#r11w3', '#52ac45'); // github
+      }
+
+
    });
 
 
