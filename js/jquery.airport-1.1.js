@@ -26,10 +26,10 @@
 			function testChar(a,b,c,d){
 				if (repeat < array.length) {
 				if(c >= array.length)
-					setTimeout(function() { testChar(0,0,0,0); }, 30);				
+					setTimeout(function() { testChar(0,0,0,0); }, 50);				
 				else if(d >= longest) {
-					repeat = repeat + 2;
-					setTimeout(function() { testChar(0,0,c+1,0); }, 30);
+					repeat = repeat + 1;
+					setTimeout(function() { testChar(0,0,c+1,0); }, 50);
 				}
 				else {
 					$(self).find('.c'+a).html((chars[b]==" ")?"&nbsp;":chars[b]);
