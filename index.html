@@ -137,7 +137,6 @@ a, a:hover, a:visited {
          <div class='word highlight' id="r15w2"></div>
          <div class='word highlight' id="r15w3"></div>
          <div class='word highlight' id="r15w4"></div>
-         <div class='word' id="r15w4b"></div>
          <div class='word highlight' id="r15w5"></div>
          <div class='word highlight' id="r15w6"></div>
          <div class='word' id="r15w7"></div>
@@ -222,7 +221,6 @@ a, a:hover, a:visited {
       $('#r15w1').airport(['act']);
       $('#r15w2').airport(['dlerch']);
       $('#r15w3').airport(['@']);
-      $('#r15w4b').airport(['gkti']);
       $('#r15w4').airport(['gmail']);
       $('#r15w5').airport(['.']);
       $('#r15w6').airport(['com']);
@@ -276,54 +274,9 @@ a, a:hover, a:visited {
          });
       }
 
-		function portrait_version(){
-			$(".container .word .char").css("font-size", "6.5vw");
-			$(".container").css("padding-left", "2vw");
-			$('#r1w2').hide();
-			$('#r2w6').hide();
-			$('#r2w7').hide();
-			$('#r3w2').hide();
-			$('#r4w4').hide();
-			$('#r5w2').hide();
-			$('#r6w1').hide();
-			$('#r6w2').hide();
-			$('#r7w2').hide();
-			$('#r8w2').hide();
-			$('#r9w4').hide();
-			$('#r10w2').hide();
-			$('#r11w1').hide();
-			$('#r12w2').hide();
-			$('#r13w1').hide();
-			$('#r14w4').hide();
-			$('#r15w4').hide();
-			$('#r15w4b').show();
-			$('#r15w5').hide();
-			$('#r15w6').hide();
-			$('#r15w7').hide();
-			$('#r16w3').addClass('highlight');
-			$('#r16w4').addClass('highlight');
-			$('#r16w6').hide();
-		}
-
-		function landscape_version(){
-			$('#r15w4b').hide();
-		}
-
 
       var is_mobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-      if (is_mobile){
-			if(window.innerWidth<window.innerHeight){
-				portrait_version();
-			}
-			else{
-				landscape_version();
-			}
-			window.addEventListener("orientationchange", function() {
-				location.reload();
-			}, false);
-		}
-		else{
-			landscape_version();
+		if(!is_mobile){
          init_span('#r4w2', '#52ac45'); // linkedin
          init_span('#r6w3', '#52ac45'); // publications
          init_span('#r9w2', '#52ac45'); // twitter
