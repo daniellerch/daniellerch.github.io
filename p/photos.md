@@ -1,5 +1,6 @@
 ---
 layout: page
+title: Photos
 subtitle: Pictures from different research envents
 ---
 
