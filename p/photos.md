@@ -18,7 +18,7 @@ Welcome to my pictures section! Here you can find some pictures from different e
 <br/><br/>
 
 ![UOC 2017, Castelldefels]({{ site.baseurl }}/images/workshops/phd_2017.jpg)
-<center>Thesis defense<br>"Image Steganalysis and Steganography in the Spatial Domain". Universitat Obertade Catalunya 2017, Castelldefels</center>
+<center>Thesis defense<br/>"Image Steganalysis and Steganography in the Spatial Domain". <br/>Universitat Oberta de Catalunya 2017, Castelldefels</center>
 <br/><br/>
 
 ![RECSI 2016, Menorca]({{ site.baseurl }}/images/workshops/uocrw_2016_presentacion.jpeg)
