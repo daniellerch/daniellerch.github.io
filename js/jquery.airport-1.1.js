@@ -24,12 +24,12 @@
 				
 			
 			function testChar(a,b,c,d){
-				if (repeat != array.length) {
+				if (repeat < array.length) {
 				if(c >= array.length)
-					setTimeout(function() { testChar(0,0,0,0); }, 1);				
+					setTimeout(function() { testChar(0,0,0,0); }, 30);				
 				else if(d >= longest) {
-					repeat = repeat + 1;
-					setTimeout(function() { testChar(0,0,c+1,0); }, 1);
+					repeat = repeat + 2;
+					setTimeout(function() { testChar(0,0,c+1,0); }, 30);
 				}
 				else {
 					$(self).find('.c'+a).html((chars[b]==" ")?"&nbsp;":chars[b]);
