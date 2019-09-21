@@ -6,7 +6,7 @@ subtitle: Pictures from different research envents
 
 
 Welcome to my pictures section! Here you can find some pictures from different events related with my research in the fields of steganography and steganalysis.
-<br/><br/>
+<br/><br/><br/>
 
 
 ![IH&MMSec 2019, París]({{ site.baseurl }}/images/workshops/ihmmsec_paris_2019_small.jpg)

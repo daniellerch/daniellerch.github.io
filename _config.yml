@@ -71,10 +71,10 @@ social-network-links:
 #  rss: false
 #  email: "dlerch@gmail.com"
 #  facebook: 
-#  github: daniellerch
+  github: daniellerch
 #  stackoverflow: "29743/daniel-lerch"
-#  linkedin: daniellerch
-#  twitter: daniel_lerch
+  linkedin: daniellerch
+  twitter: daniel_lerch
 #  reddit: yourname
 #  xing: yourname
 
