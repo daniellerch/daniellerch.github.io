@@ -123,7 +123,7 @@ a, a:hover, a:visited {
        </p>
        <p>  
          <div class='word' id="r13w1"></div>
-         <div class='word' id="r13w2"></div>
+         <a href="http://github.com/daniellerch/aletheia/blob/master/README.md" target="_blank"><div class='word' id="r13w2"></div></a>
          <div class='word' id="r13w3"></div>
        </p>
        <p>  
@@ -209,9 +209,9 @@ a, a:hover, a:visited {
       $('#r12w1').airport(['nslyusxipinmrg']);
       $('#r12w2').airport(['hid3tiolo']);
 
-      $('#r13w1').airport(['oribdgrte']);
-      $('#r13w2').airport(['steganography']);
-      $('#r13w3').airport(['t']);
+      $('#r13w1').airport(['ori']);
+      $('#r13w2').airport(['aletheia']);
+      $('#r13w3').airport(['trapbdgrtehy']);
 
       $('#r14w1').airport(['exrene']);
       $('#r14w2').airport(['hduwl']);
@@ -276,15 +276,16 @@ a, a:hover, a:visited {
 
 
       var is_mobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-		if(!is_mobile){
+      if(!is_mobile){
          init_span('#r4w2', '#52ac45'); // linkedin
          init_span('#r6w3', '#52ac45'); // publications
          init_span('#r9w2', '#52ac45'); // twitter
          init_span('#r11w3', '#52ac45'); // github
+         init_span('#r13w2', '#52ac45'); // github
       }
 
-		$('#r6w1').click(function(){
-			window.open("https://daniellerch.me/p/photos", "_blank");
+      $('#r6w1').click(function(){
+         window.open("https://daniellerch.me/p/photos", "_blank");
       });
       
    });
