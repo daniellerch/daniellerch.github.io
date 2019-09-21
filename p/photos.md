@@ -5,7 +5,7 @@ subtitle: Pictures from different research envents
 ---
 
 
-Welcome to my pictures section! Here you can find som pictures from different events related with my research in the fields of steganography and steganalysis.
+Welcome to my pictures section! Here you can find some pictures from different events related with my research in the fields of steganography and steganalysis.
 <br>
 
 
