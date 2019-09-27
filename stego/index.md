@@ -7,7 +7,7 @@ subtitle: Índice de contenido
 
 
 <hr/>
-## Parte I: Introducción
+# Parte I: Introducción
 
 ### Primeros métodos de esteganografía
 - ...
@@ -23,7 +23,7 @@ subtitle: Índice de contenido
 
 
 <hr/>
-## Parte II: Esteganografía en imágenes
+# Parte II: Esteganografía en imágenes
 
 ### Introducción
 - Algunos métodos sencillos
@@ -77,34 +77,34 @@ subtitle: Índice de contenido
 
 
 <hr/>
-## Parte III: Esteganografía en audio
+# Parte III: Esteganografía en audio
 - ...
 
 
 
 
 <hr/>
-## Parte IV: Esteganografía en redes
+# Parte IV: Esteganografía en redes
 - ...
 
 
 
 
 <hr/>
-## Parte V: Esteganografía en texto
+# Parte V: Esteganografía en texto
 - ...
 
 
 
 <hr/>
-## Apéndice
+# Apéndice
 - Estadística
 - Teoría de códigos
 - ...
 
 
 <hr/>
-## Referencias
+# Referencias
 
 
 
