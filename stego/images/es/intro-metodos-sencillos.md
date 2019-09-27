@@ -25,11 +25,11 @@ Una técnica muy sencilla consiste en dibujar texto sobre la imagen usando un co
 
 Aquí podemos ver la imagen original:
 
-![bender]({{ site.baseurl }}/images/hns_bender.png)
+<img class='image-center' src="{{ site.baseurl }}/images/hns_bender.png"/>
 
 Y aquí la imagen con información oculta:
 
-![bender]({{ site.baseurl }}/images/hns_bender_stego.png)
+<img class='image-center' src="{{ site.baseurl }}/images/hns_bender_stego.png"/>
 
 No podemos percibir la diferencia, puesto que el texto oculto se ha dibujado usando un color con una diferencia de un solo píxel.
 
@@ -58,7 +58,7 @@ misc.imsave('hns_bender_stego_broken.png', highpass_3x3)
 
 A continuación podemos ver el resultado de aplicar el filtro:
 
-![bender]({{ site.baseurl }}/images/hns_bender_stego_broken.png)
+<img class='image-center' src="{{ site.baseurl }}/images/hns_bender_stego_broken.png"/>
 
 La misma operación puede ser realizada usando [Aletheia](https://github.com/daniellerch/aletheia).
 
@@ -123,7 +123,7 @@ Otra técnica bastante sencilla consiste en ocultar información en el canal alf
 
 La siguiente imagen de Homer tiene el fondo transparente.
 
-![bender]({{ site.baseurl }}/images/hns_homer.png)
+<img class='image-center' src="{{ site.baseurl }}/images/hns_homer.png"/>
 
 Si leemos, usando Python, el píxel de la esquina superior izquierda, podemos ver como se estructura la información relativa al valor del píxel:
 
