@@ -4,8 +4,10 @@ title: Esteganografía
 subtitle: Índice de contenido
 ---
 
+
+
 <hr/>
-## Parte I: Esteganografía clásica
+## Parte I: Introducción
 
 ### Primeros métodos de esteganografía
 - ...
@@ -15,18 +17,32 @@ subtitle: Índice de contenido
 - Gerolamo Cardano (1501 - 1576)
 - ...
 
+### Esteganografía moderna
+- El problema del prisionero
+- ...
+
+
 <hr/>
 ## Parte II: Esteganografía en imágenes
 
 ### Introducción
-- El problema del prisionero
+- Algunos métodos sencillos
+- Inserción de datos en imágenes
+- Algunas definiciones.
 - ...
 
 ### Inserción de información en la imagen
-- Cómo incrustar información en el dominio espacial.
-- Cómo incrustar información en el dominio transformado.
-- Cómo incrustar información en imágenes JPEG.
+- Mapas de bits.
+- Imágenes JPEG.
+- Transformación del dominio.
+- Paleta de colores.
 - ...
+
+### Estegoanálisis
+- Sustitución del LSB en mapas de bits.
+- Sustitución del LSB en coeficientes DCT.
+- Inserción mediante $\pm k$
+- El problema del CSM.
 
 ### Minimizando el impacto de la inserción
 - Códigos binarios
@@ -48,9 +64,23 @@ subtitle: Índice de contenido
 - ...
 
 
+### Estegoanálisis usando *machine learning*
+- Extracción de características
+- Métodos de clasificación.
+- *Deep Learning* en estegoanálisis.
+- El problema del CSM (II).
+- Métodos no supervisados.
+- Detección de inconsistencias en la clasificación.
+- ...
+
+
+
+
 <hr/>
 ## Parte III: Esteganografía en audio
 - ...
+
+
 
 
 <hr/>
@@ -58,28 +88,25 @@ subtitle: Índice de contenido
 - ...
 
 
+
+
 <hr/>
 ## Parte V: Esteganografía en texto
 - ...
 
+
+
 <hr/>
-## Appendice
+## Apéndice
 - Estadística
 - Teoría de códigos
 - ...
+
 
 <hr/>
 ## Referencias
 
 
-
-### Análisis de Stego Malware
-- ???
-
-### Análisis de herramientas
-- Estegoanálisis de OpenStego.
-- Estegoanálisis de OpenPuff.
-- Estegoanálisis de StegHide.
 
 
 
