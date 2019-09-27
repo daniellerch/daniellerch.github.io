@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title:  Naive techniques in Image Steganography
 author: dlerch
 tags: [ Steganography, Steganalysis, Images ]

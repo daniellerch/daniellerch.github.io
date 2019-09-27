@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Introducción
 subtitle: Algunos métodos sencillos
 author: dlerch
