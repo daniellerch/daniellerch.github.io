@@ -26,7 +26,7 @@ subtitle: Índice de contenido
 # Parte II: Esteganografía en imágenes
 
 ### Introducción
-- [Algunos métodos sencillos](/stego/images/es/intro-metodos-sencillos.md)
+- [Algunos métodos sencillos](/stego/images/es/intro-metodos-sencillos)
 - Inserción de datos en imágenes
 - Algunas definiciones.
 - ...

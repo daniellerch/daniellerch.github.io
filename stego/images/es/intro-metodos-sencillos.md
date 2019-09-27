@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  Algunos métodos sencillos
+title: Introducción
+subtitle: Algunos métodos sencillos
 author: dlerch
 tags: [ Steganography, Steganalysis, Images ]
 comments: true
