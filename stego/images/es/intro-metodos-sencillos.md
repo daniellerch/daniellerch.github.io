@@ -21,21 +21,20 @@ Vamos a ver las siguientes:
 <br>
 #### 1. Dibujar texto con colores similares
 
-Other naive technique consist of writing text with a similar color, for example using 1px of difference from the original color. This can't be detected by the human eye.
+Una técnica muy sencilla consiste en dibujar texto sobre la imagen usando un color similar al color del fondo. Si es suficientemente similar el ojo humano no lo percibirá. Esto resulta complicado en imágenes naturales, sin embargo en imágenes artificiales como la siguiente, funciona perfectamente. 
 
-
-See for example this image of Bender:
+Aquí podemos ver la imagen original:
 
 ![bender]({{ site.baseurl }}/images/hns_bender.png)
 
-
-And, the same image with some extra information:
+Y aquí la imagen con información oculta:
 
 ![bender]({{ site.baseurl }}/images/hns_bender_stego.png)
 
-Do you see any difference? I don't think so. But it is not difficult to uncover the secret. 
+No podemos percibir la diferencia, puesto que el texto oculto se ha dibujado usando un color con una diferencia de un solo píxel.
 
-The following Python code applies a high-pass-filter using [convolution](https://en.wikipedia.org/wiki/Kernel_(image_processing)). Usually, this filter is used to detect edges. This is adequate for our purposes because we want to highlight these parts of the image with a change in the color. 
+Sin embargo, está técnica no resulta difícil de detectar. Se puede hacer, por ejemplo, usando un filtro que resalte los bordes, ideal para nuestro caso, dado que queremos buscar cambios en el color. El siguiente código en Python aplica un filtro de paso alto mediante [convolución](https://en.wikipedia.org/wiki/Kernel_(image_processing). 
+
 
 
 ```python
@@ -57,11 +56,11 @@ highpass_3x3 = ndimage.convolve(I, kernel)
 misc.imsave('hns_bender_stego_broken.png', highpass_3x3)
 ```
 
-As you can see in the result image a simple filter can detect the hidden message. 
+A continuación podemos ver el resultado de aplicar el filtro:
 
 ![bender]({{ site.baseurl }}/images/hns_bender_stego_broken.png)
 
-The same operation can be done using the [Aletheia](https://github.com/daniellerch/aletheia) tool. 
+La misma operación puede ser realizada usando [Aletheia](https://github.com/daniellerch/aletheia).
 
 ```bash
 $ ./aletheia.py hpf hns_bender_stego.png hns_bender_stego_broken.png
