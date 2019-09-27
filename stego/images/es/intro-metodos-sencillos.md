@@ -202,6 +202,9 @@ El resultado después de modificar la opacidad es el siguiente:
 [bender]({{ site.baseurl }}/images/hns_homer_stego_broken.png)
 </p>
 
+<img align="center" width="100" height="100" src="{{ site.baseurl }}/images/hns_homer_stego_broken.png">
+
+
 En general, el fondo de la imagen es negro. Pero existe una sección al principio en la que los píxeles tienen colores extraños. Esta sección corresponde a los datos que hemos ocultado. Un atacante, solo tiene que leerlos.
 
 
