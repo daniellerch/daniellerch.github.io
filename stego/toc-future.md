@@ -19,19 +19,15 @@ subtitle: Índice de contenido
 
 ### Esteganografía moderna
 - El problema del prisionero
+- Algunas definiciones.
 - ...
 
 
 <br/><hr/>
 # Parte II: Esteganografía en imágenes
 
-### Introducción
-- [Algunos métodos sencillos](/stego/images/es/intro-metodos-sencillos)
-- Inserción de datos en imágenes
-- Algunas definiciones.
-- ...
-
 ### Inserción de información en la imagen
+- [Algunos métodos sencillos](/stego/images/es/inser-metodos-sencillos)
 - Mapas de bits.
 - Imágenes JPEG.
 - Transformación del dominio.
