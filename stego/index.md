@@ -5,6 +5,13 @@ subtitle: Índice de contenido
 ---
 
 
+## Esteganografía clásica
+
+### La Esteganografía de Johannes Trithemius
+- xxx
+
+<hr/>
+
 ## Esteganografía en imágenes
 
 ### Introducción
