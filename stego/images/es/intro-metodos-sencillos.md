@@ -2,73 +2,24 @@
 layout: page
 title: Introducción
 subtitle: Algunos métodos sencillos
-author: dlerch
-tags: [ Steganography, Steganalysis, Images ]
 comments: true
 image: images/hns_groot.gif
-featured: false
 hidden: false
 ---
 
+Existen multitud de técnicas para ocultar información en imágenes. Aunque algunas de ellas resultan demasiado sencillas para ser tomadas en serio. Sin embargo, no por ello son menos usadas. Existen diferentes herramientas en Internet que usan este tipo de técnicas, lo que lleva inevitablemente a que haya quien las use. Llama la atención, por ejemplo, que algunas de estas técnicas sean usadas por *malware*, para ocultar parte de su código. Conviene pues, conocerlas.
 
-In this article we are going to deal with some techniques too naive to be taken seriously but still being used frequently.
+Vamos a ver las siguientes:
 
-
-1. [Append one file to another](#1-append-one-file-to-another)
-   
-2. [Writing text with similar colors](#2-writing-text-with-similar-colors)
-   
-3. [Using the alpha channel](#3-using-the-alpha-channel)
-
-
-<br>
-#### 1. Append one file to another
-
-One of these techniques is to hide one file at the end of other file. Some image formats allow this operation without breaking things. For example the GIF image format. If we hide a ZIP file at the end of a GIF file, we can view the image without noticing any different.
-
-We can do this in Linux/Mac with:
-
-```bash
-cat file.zip >> file.gif
-```
-
-Or in Windows:
-
-```bash
-copy /B file.gif+file.zip file.gif
-```
-
-See for example a GIF image of Groot:
-
-![groot]({{ site.baseurl }}/images/hns_groot.gif)
-
-
-And, the same GIF image with a ZIP file at the end:
-
-![groot-stego]({{ site.baseurl }}/images/hns_groot_stego.gif)
-
-Do you see any difference? I'm sure you do not. But it doesn't mean the method is secure. Actually, this is like hiding a safe behind a picture in the real world. 
-
-
-Obviously, the ZIP file can be extracted. For example, using Linux:
-
-```bash
-$ unzip hns_groot_stego.gif
-Archive:  hns_groot_stego.gif
-warning [hns_groot_stego.gif]:  4099685 extra bytes at beginning or within zipfile
-  (attempting to process anyway)
- extracting: hw.txt                  
-$ cat hw.txt 
-Hello World!
-```
-
-The same method can be used using different file formats which could be images or not. For example, you can do this with PNG, JPEG and others.
+1. [Dibujar texto con colores similares](#1-dibujar-texto-con-colores-similares)
+2. [Concatenar ficheros](#2-concatenar-ficheros)  
+3. [Uso del canal alfa](#3-uso-del-canal-alfa)
 
 
 
 
 <br>
-#### 2. Writing text with similar colors
+#### 1. Dibujar texto con colores similares
 
 Other naive technique consist of writing text with a similar color, for example using 1px of difference from the original color. This can't be detected by the human eye.
 
@@ -118,8 +69,55 @@ $ ./aletheia.py hpf hns_bender_stego.png hns_bender_stego_broken.png
 
 
 
+
+
 <br>
-#### 3. Using the alpha channel
+#### 2. Concatenar ficheros
+
+One of these techniques is to hide one file at the end of other file. Some image formats allow this operation without breaking things. For example the GIF image format. If we hide a ZIP file at the end of a GIF file, we can view the image without noticing any different.
+
+We can do this in Linux/Mac with:
+
+```bash
+cat file.zip >> file.gif
+```
+
+Or in Windows:
+
+```bash
+copy /B file.gif+file.zip file.gif
+```
+
+See for example a GIF image of Groot:
+
+![groot]({{ site.baseurl }}/images/hns_groot.gif)
+
+
+And, the same GIF image with a ZIP file at the end:
+
+![groot-stego]({{ site.baseurl }}/images/hns_groot_stego.gif)
+
+Do you see any difference? I'm sure you do not. But it doesn't mean the method is secure. Actually, this is like hiding a safe behind a picture in the real world. 
+
+
+Obviously, the ZIP file can be extracted. For example, using Linux:
+
+```bash
+$ unzip hns_groot_stego.gif
+Archive:  hns_groot_stego.gif
+warning [hns_groot_stego.gif]:  4099685 extra bytes at beginning or within zipfile
+  (attempting to process anyway)
+ extracting: hw.txt                  
+$ cat hw.txt 
+Hello World!
+```
+
+The same method can be used using different file formats which could be images or not. For example, you can do this with PNG, JPEG and others.
+
+
+
+<br>
+#### 3. Uso del canal alfa
 
 Other naive technique consist of hiding information into the alpha channel. That is, the channel dedicated to transparency. 
 
