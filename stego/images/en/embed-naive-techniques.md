@@ -1,11 +1,9 @@
 ---
 layout: page
-title:  Naive techniques in Image Steganography
-author: dlerch
-tags: [ Steganography, Steganalysis, Images ]
+title: Embedding data into images
+subtitle:  Naive techniques
 comments: true
 image: images/hns_groot.gif
-featured: false
 hidden: false
 ---
 

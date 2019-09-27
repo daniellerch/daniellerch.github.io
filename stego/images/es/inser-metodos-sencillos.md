@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Introducción
+title: Inserción de información en imágenes
 subtitle: Algunos métodos sencillos
 comments: true
 image: images/hns_groot.gif

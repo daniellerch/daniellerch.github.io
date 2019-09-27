@@ -26,7 +26,7 @@ subtitle: Índice de contenido
 <br/><hr/>
 # Parte II: Esteganografía en imágenes
 
-### Inserción de información en la imagen
+### Inserción de información en imágenes
 - [Algunos métodos sencillos](/stego/images/es/inser-metodos-sencillos)
 - Mapas de bits.
 - Imágenes JPEG.
