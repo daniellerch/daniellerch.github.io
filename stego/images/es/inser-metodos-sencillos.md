@@ -90,11 +90,11 @@ copy /B file.gif+file.zip file.gif
 
 Tomemos como ejemplo la siguiente imagen GIF de Groot:
 
-<img class='image-center' src="{{ site.baseurl }}/images/hns_groot.png"/>
+<img class='image-center' src="{{ site.baseurl }}/images/hns_groot.gif"/>
 
 Después de añadir un fichero ZIP al final obtenemos la siguiente imagen:
 
-<img class='image-center' src="{{ site.baseurl }}/images/hns_groot_stego.png"/>
+<img class='image-center' src="{{ site.baseurl }}/images/hns_groot_stego.gif"/>
 
 
 Para extraer el fichero oculto basta con ejecutar el siguiente comando:
