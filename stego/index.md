@@ -41,7 +41,7 @@ subtitle: Índice de contenido
 ### Estegoanálisis
 - Sustitución del LSB en mapas de bits.
 - Sustitución del LSB en coeficientes DCT.
-- Inserción mediante $\pm k$
+- Inserción mediante $$\pm k$$
 - El problema del CSM.
 
 ### Minimizando el impacto de la inserción
