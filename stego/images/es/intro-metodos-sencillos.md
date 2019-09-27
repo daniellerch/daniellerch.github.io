@@ -25,11 +25,15 @@ Una técnica muy sencilla consiste en dibujar texto sobre la imagen usando un co
 
 Aquí podemos ver la imagen original:
 
+<center>
 ![bender]({{ site.baseurl }}/images/hns_bender.png)
+</center>
 
 Y aquí la imagen con información oculta:
 
+<center>
 ![bender]({{ site.baseurl }}/images/hns_bender_stego.png)
+</center>
 
 No podemos percibir la diferencia, puesto que el texto oculto se ha dibujado usando un color con una diferencia de un solo píxel.
 
@@ -58,7 +62,9 @@ misc.imsave('hns_bender_stego_broken.png', highpass_3x3)
 
 A continuación podemos ver el resultado de aplicar el filtro:
 
+<center>
 ![bender]({{ site.baseurl }}/images/hns_bender_stego_broken.png)
+</center>
 
 La misma operación puede ser realizada usando [Aletheia](https://github.com/daniellerch/aletheia).
 
@@ -90,11 +96,15 @@ copy /B file.gif+file.zip file.gif
 
 Tomemos como ejemplo la siguiente imagen GIF de Groot:
 
+<center>
 ![groot]({{ site.baseurl }}/images/hns_groot.gif)
+</center>
 
 Después de añadir un fichero ZIP al final obtenemos la siguiente imagen:
 
+<center>
 ![groot-stego]({{ site.baseurl }}/images/hns_groot_stego.gif)
+</center>
 
 
 Para extraer el fichero oculto basta con ejecutar el siguiente comando:
@@ -123,7 +133,9 @@ Otra técnica bastante sencilla consiste en ocultar información en el canal alf
 
 La siguiente imagen de Homer tiene el fondo transparente.
 
+<center>
 ![bender]({{ site.baseurl }}/images/hns_homer.png)
+</center>
 
 Si leemos, usando Python, el píxel de la esquina superior izquierda, podemos ver como se estructura la información relativa al valor del píxel:
 
@@ -172,7 +184,9 @@ misc.imsave('hns_homer_stego.png', I)
 <br>
 Como resultado, obtenemos la siguiente imagen:
 
+<center>
 ![bender]({{ site.baseurl }}/images/hns_homer_stego.png)
+</center>
 
 Efectivamente, el mensaje queda oculta a la vista. Sin embargo, de nuevo esta no es una técnica segura. Pues simplemente modificando la opacidad del píxel podemos ver que algo ocurre.
 
@@ -194,7 +208,9 @@ $ ./aletheia.py rm-alpha hns_homer_stego.png hns_homer_stego.png
 <br>
 El resultado después de modificar la opacidad es el siguiente:
 
+<center>
 ![bender]({{ site.baseurl }}/images/hns_homer_stego_broken.png)
+</center>
 
 En general, el fondo de la imagen es negro. Pero existe una sección al principio en la que los píxeles tienen colores extraños. Esta sección corresponde a los datos que hemos ocultado. Un atacante, solo tiene que leerlos.
 
