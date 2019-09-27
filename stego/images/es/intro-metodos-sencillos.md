@@ -33,7 +33,7 @@ Y aquí la imagen con información oculta:
 
 No podemos percibir la diferencia, puesto que el texto oculto se ha dibujado usando un color con una diferencia de un solo píxel.
 
-Sin embargo, está técnica no resulta difícil de detectar. Se puede hacer, por ejemplo, usando un filtro que resalte los bordes, ideal para nuestro caso, dado que queremos buscar cambios en el color. El siguiente código en Python aplica un filtro de paso alto mediante [convolución](https://en.wikipedia.org/wiki/Kernel_(image_processing). 
+Sin embargo, está técnica no resulta difícil de detectar. Se puede hacer, por ejemplo, usando un filtro que resalte los bordes, ideal para nuestro caso, dado que queremos buscar cambios en el color. El siguiente código en Python aplica un filtro de paso alto mediante [convolución](https://en.wikipedia.org/wiki/Kernel_(image_processing)). 
 
 
 
@@ -73,33 +73,31 @@ $ ./aletheia.py hpf hns_bender_stego.png hns_bender_stego_broken.png
 <br>
 #### 2. Concatenar ficheros
 
-One of these techniques is to hide one file at the end of other file. Some image formats allow this operation without breaking things. For example the GIF image format. If we hide a ZIP file at the end of a GIF file, we can view the image without noticing any different.
+Algunos formatos de fichero permiten tener información concatenada al final sin que nada se rompa. Uno de esos formatos de fichero son las imágenes GIF. Por lo que si concatenamos, por ejemplo, un fichero en formato ZIP al final de un fichero en formato GIF, todo continuara funcionando de la forma habitual. Cualquier visor de imágenes nos mostrará la imagen GIF de la forma habitual.
 
-We can do this in Linux/Mac with:
+En Linux/Mac podemos concatenar un fichero ZIP a un fichero GIF con el siguiente comando:
+
 
 ```bash
 cat file.zip >> file.gif
 ```
 
-Or in Windows:
+Y en Windows:
 
 ```bash
 copy /B file.gif+file.zip file.gif
 ```
 
-See for example a GIF image of Groot:
+Tomemos como ejemplo la siguiente imagen GIF de Groot:
 
 ![groot]({{ site.baseurl }}/images/hns_groot.gif)
 
-
-And, the same GIF image with a ZIP file at the end:
+Después de añadir un fichero ZIP al final obtenemos la siguiente imagen:
 
 ![groot-stego]({{ site.baseurl }}/images/hns_groot_stego.gif)
 
-Do you see any difference? I'm sure you do not. But it doesn't mean the method is secure. Actually, this is like hiding a safe behind a picture in the real world. 
 
-
-Obviously, the ZIP file can be extracted. For example, using Linux:
+Para extraer el fichero oculto basta con ejecutar el siguiente comando:
 
 ```bash
 $ unzip hns_groot_stego.gif
@@ -111,39 +109,44 @@ $ cat hw.txt
 Hello World!
 ```
 
-The same method can be used using different file formats which could be images or not. For example, you can do this with PNG, JPEG and others.
+De nuevo, no es una técnica demasiado segura. Simplemente usando el comando de extracción, veremos que hay información oculta. Quizás el mejor símil sea el de ocultar la caja fuerte detrás de un cuadro. Nadie sabrá que está ahí, a menos que mire, claro!
+
+Este método puede ser usado en diferentes formatos, que pueden ser imágenes, o no. Algunos ejemplos comunes son los formatos de archivo PNG o JPEG, entre otros.
+
 
 
 
 <br>
 #### 3. Uso del canal alfa
 
-Other naive technique consist of hiding information into the alpha channel. That is, the channel dedicated to transparency. 
+Otra técnica bastante sencilla consiste en ocultar información en el canal alfa. El canal alfa es el que se encarga de regular la transparencia de la imagen. Normalmente, consiste en un byte adicional a los bytes usados para el color del píxel que indica el grado de transparencia de ese píxel. 
 
-This example image of Homer has a transparent background:
+La siguiente imagen de Homer tiene el fondo transparente.
 
 ![bender]({{ site.baseurl }}/images/hns_homer.png)
 
-If we read, for example, the data from the upper left corner we can see how the information data is organized:
+Si leemos, usando Python, el píxel de la esquina superior izquierda, podemos ver como se estructura la información relativa al valor del píxel:
+
 
 ```python
-from scipy import ndimage, misc
+from scipy import misc
 I = misc.imread('hns_homer.png')
 print I[0,0]
 ```
 
 <br>
-After executing the script we see this:
+Que al ejecutarlo, nos da la siguiente salida:
 
 ```bash
 [0, 0, 0, 0]
 ```
 
-Every pixel is represented by four values: RGBA. The first byte corresponds to red color, the second byte to green color, the third byte to blue color and the fourth byte represents the alpha channel (the opacity). Zero opacity means a transparent pixel. If the value was 255 the pixel would not be transparent. 
+Cada píxel se representa con cuatro valores: RGBA. El primero corresponde a la cantidad de color rojo, el segundo a la cantidad de color verde, el tercero a la cantidad de azul, y finalmente, el cuarto corresponde al canal alfa, es decir, el grado de transparencia.
 
-The upper left corner pixel is transparent, so the value of RGB bytes is ignored. This provides an easy way to hide data. 
+El valor cero del cuarto byte nos indica que el píxel es totalmente transparente, por lo que el valor de los tres bytes que especifian el color, se ignoran. Esto nos ofrece pues, una forma sencilla de ocultar información. Podemos escribir lo que queramos en los primeros tres bytes de cada píxel, siempre que el cuarto esté a cero.
 
-The following code reads secret data from file "secret_data.txt" and hide it into an image called "hns_homer_stego.png". Every secret byte is hidden in every pixel with zero opacity. In this way we only overwrite invisible pixels. 
+El siguiente código Python lee los datos que queremos ocultar de un fichero "secret_data.txt" y los esconde en la imagen "hns_groot_stego.png". Cada byte de información se oculta en un píxel en el que la opacidad esté a cero. Solo se sobreescriben bytes "invisibles".
+
 
 ```python
 from scipy import ndimage, misc
@@ -167,12 +170,12 @@ misc.imsave('hns_homer_stego.png', I)
 
 
 <br>
-As a result, we obtain the following image:
+Como resultado, obtenemos la siguiente imagen:
 
 ![bender]({{ site.baseurl }}/images/hns_homer_stego.png)
 
+Efectivamente, el mensaje queda oculta a la vista. Sin embargo, de nuevo esta no es una técnica segura. Pues simplemente modificando la opacidad del píxel podemos ver que algo ocurre.
 
-We do not see the message. But again, this is not a secure option. We can unhide the data, simply by removing the transparency. This is a very easy operation that can be done with the following script:
 
 ```python
 from scipy import ndimage, misc
@@ -181,7 +184,7 @@ I[:,:,3] = 255;
 misc.imsave('hns_homer_stego_broken.png', I)
 ```
 
-The same operation can be done using the [Aletheia](https://github.com/daniellerch/aletheia) tool. 
+La misma operación puede realizarse usando [Aletheia](https://github.com/daniellerch/aletheia). 
 
 ```bash
 $ ./aletheia.py rm-alpha hns_homer_stego.png hns_homer_stego.png
@@ -189,12 +192,12 @@ $ ./aletheia.py rm-alpha hns_homer_stego.png hns_homer_stego.png
 
 
 <br>
-After executing this we obtain the following image:
+El resultado después de modificar la opacidad es el siguiente:
 
 ![bender]({{ site.baseurl }}/images/hns_homer_stego_broken.png)
 
-This image has a black background. But there is a section at the beginning where we see random colors. This is the result of hiding our secret bytes as a pixels. 
+En general, el fondo de la imagen es negro. Pero existe una sección al principio en la que los píxeles tienen colores extraños. Esta sección corresponde a los datos que hemos ocultado. Un atacante, solo tiene que leerlos.
 
-If an attacker performs this operation he/she has enough information to detect and extract the secret data.
+
 
 
