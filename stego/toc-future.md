@@ -28,7 +28,7 @@ subtitle: Índice de contenido
 
 ### Inserción de información en imágenes
 - [Algunos métodos sencillos](/stego/images/embed/es/metodos-sencillos)
-- Mapas de bits.
+- [Mapas de bits](/stego/images/embed/es/mapas-de-bits)
 - Imágenes JPEG.
 - Transformación del dominio.
 - Paleta de colores.
