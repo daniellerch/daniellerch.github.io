@@ -74,7 +74,7 @@ Con esta técnica estamos ocultando un bit en cada píxel, por lo que la capacid
 
 Vamos a ver como ocultar información usando Python en la siguiente imagen:
 
-![f16]({{ site.baseurl }}/images/f16.png)
+![f16]({{ site.baseurl }}/stego/images/img/f16.png)
 
 El siguiente código lee un archivo "secret_data.txt" que contiene los datos a ocultar y esconde su contenido bit a bit en la imagen:
 
@@ -112,7 +112,7 @@ misc.imsave('f16_stego.png', I)
 
 El resultado es el siguiente:
 
-![f16]({{ site.baseurl }}/images/stego_f16.png)
+![f16]({{ site.baseurl }}/stego/images/img/stego_f16.png)
 
 
 Para leer el mensaje, el código Python necesario únicamente tiene que recopilar los bits menos significativos y agruparlos en bytes. El resultado lo almacena en el fichero "output_secret_data.txt".
