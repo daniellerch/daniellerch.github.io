@@ -5,7 +5,7 @@ subtitle: Índice de contenido
 ---
 
 
-<br/><br/>
+<br/>
 # Parte I: Introducción
 
 ### Esteganografía a lo largo de la historia
@@ -20,7 +20,7 @@ subtitle: Índice de contenido
 
 
 
-<br/><br/>
+<br/>
 # Parte II: Esteganografía en imágenes
 
 ### Inserción de información en imágenes
@@ -63,34 +63,34 @@ subtitle: Índice de contenido
 
 
 
-<br/><br/>
+<br/>
 # Parte III: Esteganografía en audio
 - ...
 
 
 
 
-<br/><br/>
+<br/>
 # Parte IV: Esteganografía en redes
 - ...
 
 
 
 
-<br/><br/>
+<br/>
 # Parte V: Esteganografía en texto
 - ...
 
 
 
-<br/><br/>
+<br/>
 # Apéndice
 - Estadística
 - Teoría de códigos
 - ...
 
 
-<br/><br/>
+<br/>
 # Referencias
 
 
