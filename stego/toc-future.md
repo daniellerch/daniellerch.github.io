@@ -5,25 +5,22 @@ subtitle: Índice de contenido
 ---
 
 
-
-<br/>
+<br/><br/>
 # Parte I: Introducción
 
-### Primeros métodos de esteganografía
-- ...
-
-### Personajes históricos
+### Esteganografía a lo largo de la historia
+- Heródoto (484 a.C. - 425 a.C.)
 - Johannes Trithemius (1462 - 1516)
 - Gerolamo Cardano (1501 - 1576)
-- ...
+- Segunda guerra mundial
 
 ### Esteganografía moderna
 - El problema del prisionero
 - Algunas definiciones.
-- ...
 
 
-<br/>
+
+<br/><br/>
 # Parte II: Esteganografía en imágenes
 
 ### Inserción de información en imágenes
@@ -32,7 +29,6 @@ subtitle: Índice de contenido
 - Imágenes JPEG.
 - Transformación del dominio.
 - Paleta de colores.
-- ...
 
 ### Estegoanálisis
 - Sustitución del LSB en mapas de bits.
@@ -45,20 +41,16 @@ subtitle: Índice de contenido
 - Códigos q-arios.
 - SDCS
 - La construcción ZZW.
-- ...
 
 ### Inserción en canales no compartidos
 - Wet Paper Codes
 - Sindrome Trellis Codes.
-- ...
 
 ### Dónde ocultar la información
 - UED
 - HUGO.
 - WOW. 
 - HILL.
-- ...
-
 
 ### Estegoanálisis usando *machine learning*
 - Extracción de características
@@ -67,39 +59,38 @@ subtitle: Índice de contenido
 - El problema del CSM (II).
 - Métodos no supervisados.
 - Detección de inconsistencias en la clasificación.
-- ...
 
 
 
 
-<br/>
+<br/><br/>
 # Parte III: Esteganografía en audio
 - ...
 
 
 
 
-<br/>
+<br/><br/>
 # Parte IV: Esteganografía en redes
 - ...
 
 
 
 
-<br/>
+<br/><br/>
 # Parte V: Esteganografía en texto
 - ...
 
 
 
-<br/>
+<br/><br/>
 # Apéndice
 - Estadística
 - Teoría de códigos
 - ...
 
 
-<br/>
+<br/><br/>
 # Referencias
 
 
