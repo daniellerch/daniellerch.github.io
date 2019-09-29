@@ -3,7 +3,7 @@ layout: page
 title: Inserción de información en imágenes
 subtitle: Algunos métodos sencillos
 comments: true
-image: images/hns_groot.gif
+image: stego/images/groot.gif
 hidden: false
 ---
 
@@ -25,11 +25,11 @@ Una técnica muy sencilla consiste en dibujar texto sobre la imagen usando un co
 
 Aquí podemos ver la imagen original:
 
-<img class='image-center' src="{{ site.baseurl }}/images/hns_bender.png"/>
+<img class='image-center' src="{{ site.baseurl }}/stego/images/bender.png"/>
 
 Y aquí la imagen con información oculta:
 
-<img class='image-center' src="{{ site.baseurl }}/images/hns_bender_stego.png"/>
+<img class='image-center' src="{{ site.baseurl }}/stego/images/bender_stego.png"/>
 
 No podemos percibir la diferencia, puesto que el texto oculto se ha dibujado usando un color con una diferencia de un solo píxel.
 
@@ -41,7 +41,7 @@ Sin embargo, está técnica no resulta difícil de detectar. Se puede hacer, por
 import numpy as np
 from scipy import ndimage, misc
 
-I = misc.imread('hns_bender_stego.png')
+I = misc.imread('bender_stego.png')
 kernel = np.array([[[-1, -1, -1],
                     [-1,  8, -1],
                     [-1, -1, -1]],
@@ -53,17 +53,17 @@ kernel = np.array([[[-1, -1, -1],
                     [-1, -1, -1]]])
 
 highpass_3x3 = ndimage.convolve(I, kernel)
-misc.imsave('hns_bender_stego_broken.png', highpass_3x3)
+misc.imsave('bender_stego_broken.png', highpass_3x3)
 ```
 
 A continuación podemos ver el resultado de aplicar el filtro:
 
-<img class='image-center' src="{{ site.baseurl }}/images/hns_bender_stego_broken.png"/>
+<img class='image-center' src="{{ site.baseurl }}/stego/images/bender_stego_broken.png"/>
 
 La misma operación puede ser realizada usando [Aletheia](https://github.com/daniellerch/aletheia).
 
 ```bash
-$ ./aletheia.py hpf hns_bender_stego.png hns_bender_stego_broken.png
+$ ./aletheia.py hpf bender_stego.png bender_stego_broken.png
 ```
 
 
@@ -90,19 +90,19 @@ copy /B file.gif+file.zip file.gif
 
 Tomemos como ejemplo la siguiente imagen GIF de Groot:
 
-<img class='image-center' src="{{ site.baseurl }}/images/hns_groot.gif"/>
+<img class='image-center' src="{{ site.baseurl }}/stego/images/groot.gif"/>
 
 Después de añadir un fichero ZIP al final obtenemos la siguiente imagen:
 
-<img class='image-center' src="{{ site.baseurl }}/images/hns_groot_stego.gif"/>
+<img class='image-center' src="{{ site.baseurl }}/stego/images/groot_stego.gif"/>
 
 
 Para extraer el fichero oculto basta con ejecutar el siguiente comando:
 
 ```bash
-$ unzip hns_groot_stego.gif
-Archive:  hns_groot_stego.gif
-warning [hns_groot_stego.gif]:  4099685 extra bytes at beginning or within zipfile
+$ unzip groot_stego.gif
+Archive:  groot_stego.gif
+warning [groot_stego.gif]:  4099685 extra bytes at beginning or within zipfile
   (attempting to process anyway)
  extracting: hw.txt                  
 $ cat hw.txt 
@@ -123,15 +123,15 @@ Otra técnica bastante sencilla consiste en ocultar información en el canal alf
 
 La siguiente imagen de Homer tiene el fondo transparente.
 
-<img class='image-center' src="{{ site.baseurl }}/images/hns_homer.png"/>
+<img class='image-center' src="{{ site.baseurl }}/stego/images/homer.png"/>
 
 Si leemos, usando Python, el píxel de la esquina superior izquierda, podemos ver como se estructura la información relativa al valor del píxel:
 
 
 ```python
 from scipy import misc
-I = misc.imread('hns_homer.png')
-print I[0,0]
+I = misc.imread('homer.png')
+print(I[0,0])
 ```
 
 <br>
@@ -145,7 +145,7 @@ Cada píxel se representa con cuatro valores: RGBA. El primero corresponde a la 
 
 El valor cero del cuarto byte nos indica que el píxel es totalmente transparente, por lo que el valor de los tres bytes que especifian el color, se ignoran. Esto nos ofrece pues, una forma sencilla de ocultar información. Podemos escribir lo que queramos en los primeros tres bytes de cada píxel, siempre que el cuarto esté a cero.
 
-El siguiente código Python lee los datos que queremos ocultar de un fichero "secret_data.txt" y los esconde en la imagen "hns_groot_stego.png". Cada byte de información se oculta en un píxel en el que la opacidad esté a cero. Solo se sobreescriben bytes "invisibles".
+El siguiente código Python lee los datos que queremos ocultar de un fichero "secret_data.txt" y los esconde en la imagen "groot_stego.png". Cada byte de información se oculta en un píxel en el que la opacidad esté a cero. Solo se sobreescriben bytes "invisibles".
 
 
 ```python
@@ -154,7 +154,7 @@ from scipy import ndimage, misc
 f=open('secret_data.txt', 'r')
 blist = [ord(b) for b in f.read()]
 
-I = misc.imread('hns_homer.png')
+I = misc.imread('homer.png')
 
 idx=0
 for i in xrange(I.shape[0]):
@@ -164,7 +164,7 @@ for i in xrange(I.shape[0]):
                 I[i][j][k]=blist[idx]
                 idx+=1
 
-misc.imsave('hns_homer_stego.png', I)
+misc.imsave('homer_stego.png', I)
 ```
 
 
@@ -172,29 +172,29 @@ misc.imsave('hns_homer_stego.png', I)
 <br>
 Como resultado, obtenemos la siguiente imagen:
 
-<img class='image-center' src="{{ site.baseurl }}/images/hns_homer_stego.png"/>
+<img class='image-center' src="{{ site.baseurl }}/stego/images/homer_stego.png"/>
 
 Efectivamente, el mensaje queda oculta a la vista. Sin embargo, de nuevo esta no es una técnica segura. Pues simplemente modificando la opacidad del píxel podemos ver que algo ocurre.
 
 
 ```python
 from scipy import ndimage, misc
-I = misc.imread('hns_homer_stego.png')
+I = misc.imread('homer_stego.png')
 I[:,:,3] = 255;
-misc.imsave('hns_homer_stego_broken.png', I)
+misc.imsave('homer_stego_broken.png', I)
 ```
 
 La misma operación puede realizarse usando [Aletheia](https://github.com/daniellerch/aletheia). 
 
 ```bash
-$ ./aletheia.py rm-alpha hns_homer_stego.png hns_homer_stego.png
+$ ./aletheia.py rm-alpha homer_stego.png homer_stego.png
 ```
 
 
 <br>
 El resultado después de modificar la opacidad es el siguiente:
 
-<img class='image-center' src="{{ site.baseurl }}/images/hns_homer_stego_broken.png"/>
+<img class='image-center' src="{{ site.baseurl }}/stego/images/homer_stego_broken.png"/>
 
 
 En general, el fondo de la imagen es negro. Pero existe una sección al principio en la que los píxeles tienen colores extraños. Esta sección corresponde a los datos que hemos ocultado. Un atacante, solo tiene que leerlos.
