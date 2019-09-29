@@ -3,7 +3,7 @@ layout: page
 title: Embedding data into images
 subtitle:  Naive techniques
 comments: true
-image: images/hns_groot.gif
+image: images/embed/img/groot.gif
 hidden: false
 ---
 
@@ -37,12 +37,12 @@ copy /B file.gif+file.zip file.gif
 
 See for example a GIF image of Groot:
 
-![groot]({{ site.baseurl }}/images/hns_groot.gif)
+![groot]({{ site.baseurl }}/images/embed/img/groot.gif)
 
 
 And, the same GIF image with a ZIP file at the end:
 
-![groot-stego]({{ site.baseurl }}/images/hns_groot_stego.gif)
+![groot-stego]({{ site.baseurl }}/images/embed/img/groot_stego.gif)
 
 Do you see any difference? I'm sure you do not. But it doesn't mean the method is secure. Actually, this is like hiding a safe behind a picture in the real world. 
 
@@ -50,9 +50,9 @@ Do you see any difference? I'm sure you do not. But it doesn't mean the method i
 Obviously, the ZIP file can be extracted. For example, using Linux:
 
 ```bash
-$ unzip hns_groot_stego.gif
-Archive:  hns_groot_stego.gif
-warning [hns_groot_stego.gif]:  4099685 extra bytes at beginning or within zipfile
+$ unzip groot_stego.gif
+Archive:  groot_stego.gif
+warning [groot_stego.gif]:  4099685 extra bytes at beginning or within zipfile
   (attempting to process anyway)
  extracting: hw.txt                  
 $ cat hw.txt 
@@ -72,12 +72,12 @@ Other naive technique consist of writing text with a similar color, for example 
 
 See for example this image of Bender:
 
-![bender]({{ site.baseurl }}/images/hns_bender.png)
+![bender]({{ site.baseurl }}/images/embed/img/bender.png)
 
 
 And, the same image with some extra information:
 
-![bender]({{ site.baseurl }}/images/hns_bender_stego.png)
+![bender]({{ site.baseurl }}/images/embed/img/bender_stego.png)
 
 Do you see any difference? I don't think so. But it is not difficult to uncover the secret. 
 
@@ -88,7 +88,7 @@ The following Python code applies a high-pass-filter using [convolution](https:/
 import numpy as np
 from scipy import ndimage, misc
 
-I = misc.imread('hns_bender_stego.png')
+I = misc.imread('bender_stego.png')
 kernel = np.array([[[-1, -1, -1],
                     [-1,  8, -1],
                     [-1, -1, -1]],
@@ -100,17 +100,17 @@ kernel = np.array([[[-1, -1, -1],
                     [-1, -1, -1]]])
 
 highpass_3x3 = ndimage.convolve(I, kernel)
-misc.imsave('hns_bender_stego_broken.png', highpass_3x3)
+misc.imsave('bender_stego_broken.png', highpass_3x3)
 ```
 
 As you can see in the result image a simple filter can detect the hidden message. 
 
-![bender]({{ site.baseurl }}/images/hns_bender_stego_broken.png)
+![bender]({{ site.baseurl }}/images/embed/img/bender_stego_broken.png)
 
 The same operation can be done using the [Aletheia](https://github.com/daniellerch/aletheia) tool. 
 
 ```bash
-$ ./aletheia.py hpf hns_bender_stego.png hns_bender_stego_broken.png
+$ ./aletheia.py hpf bender_stego.png bender_stego_broken.png
 ```
 
 
@@ -122,13 +122,13 @@ Other naive technique consist of hiding information into the alpha channel. That
 
 This example image of Homer has a transparent background:
 
-![bender]({{ site.baseurl }}/images/hns_homer.png)
+![bender]({{ site.baseurl }}/images/embed/img/homer.png)
 
 If we read, for example, the data from the upper left corner we can see how the information data is organized:
 
 ```python
 from scipy import ndimage, misc
-I = misc.imread('hns_homer.png')
+I = misc.imread('homer.png')
 print I[0,0]
 ```
 
@@ -143,7 +143,7 @@ Every pixel is represented by four values: RGBA. The first byte corresponds to r
 
 The upper left corner pixel is transparent, so the value of RGB bytes is ignored. This provides an easy way to hide data. 
 
-The following code reads secret data from file "secret_data.txt" and hide it into an image called "hns_homer_stego.png". Every secret byte is hidden in every pixel with zero opacity. In this way we only overwrite invisible pixels. 
+The following code reads secret data from file "secret_data.txt" and hide it into an image called "homer_stego.png". Every secret byte is hidden in every pixel with zero opacity. In this way we only overwrite invisible pixels. 
 
 ```python
 from scipy import ndimage, misc
@@ -151,7 +151,7 @@ from scipy import ndimage, misc
 f=open('secret_data.txt', 'r')
 blist = [ord(b) for b in f.read()]
 
-I = misc.imread('hns_homer.png')
+I = misc.imread('homer.png')
 
 idx=0
 for i in xrange(I.shape[0]):
@@ -161,7 +161,7 @@ for i in xrange(I.shape[0]):
                 I[i][j][k]=blist[idx]
                 idx+=1
 
-misc.imsave('hns_homer_stego.png', I)
+misc.imsave('homer_stego.png', I)
 ```
 
 
@@ -169,29 +169,29 @@ misc.imsave('hns_homer_stego.png', I)
 <br>
 As a result, we obtain the following image:
 
-![bender]({{ site.baseurl }}/images/hns_homer_stego.png)
+![bender]({{ site.baseurl }}/images/embed/img/homer_stego.png)
 
 
 We do not see the message. But again, this is not a secure option. We can unhide the data, simply by removing the transparency. This is a very easy operation that can be done with the following script:
 
 ```python
 from scipy import ndimage, misc
-I = misc.imread('hns_homer_stego.png')
+I = misc.imread('homer_stego.png')
 I[:,:,3] = 255;
-misc.imsave('hns_homer_stego_broken.png', I)
+misc.imsave('homer_stego_broken.png', I)
 ```
 
 The same operation can be done using the [Aletheia](https://github.com/daniellerch/aletheia) tool. 
 
 ```bash
-$ ./aletheia.py rm-alpha hns_homer_stego.png hns_homer_stego.png
+$ ./aletheia.py rm-alpha homer_stego.png homer_stego.png
 ```
 
 
 <br>
 After executing this we obtain the following image:
 
-![bender]({{ site.baseurl }}/images/hns_homer_stego_broken.png)
+![bender]({{ site.baseurl }}/images/embed/img/homer_stego_broken.png)
 
 This image has a black background. But there is a section at the beginning where we see random colors. This is the result of hiding our secret bytes as a pixels. 
 

@@ -3,7 +3,7 @@ layout: page
 title: Inserción de información en imágenes
 subtitle: Algunos métodos sencillos
 comments: true
-image: stego/images/groot.gif
+image: stego/images/embed/img/groot.gif
 hidden: false
 ---
 
@@ -25,11 +25,11 @@ Una técnica muy sencilla consiste en dibujar texto sobre la imagen usando un co
 
 Aquí podemos ver la imagen original:
 
-<img class='image-center' src="{{ site.baseurl }}/stego/images/bender.png"/>
+<img class='image-center' src="{{ site.baseurl }}/stego/images/embed/img/bender.png"/>
 
 Y aquí la imagen con información oculta:
 
-<img class='image-center' src="{{ site.baseurl }}/stego/images/bender_stego.png"/>
+<img class='image-center' src="{{ site.baseurl }}/stego/images/embed/img/bender_stego.png"/>
 
 No podemos percibir la diferencia, puesto que el texto oculto se ha dibujado usando un color con una diferencia de un solo píxel.
 
@@ -58,7 +58,7 @@ misc.imsave('bender_stego_broken.png', highpass_3x3)
 
 A continuación podemos ver el resultado de aplicar el filtro:
 
-<img class='image-center' src="{{ site.baseurl }}/stego/images/bender_stego_broken.png"/>
+<img class='image-center' src="{{ site.baseurl }}/stego/images/embed/img/bender_stego_broken.png"/>
 
 La misma operación puede ser realizada usando [Aletheia](https://github.com/daniellerch/aletheia).
 
@@ -90,11 +90,11 @@ copy /B file.gif+file.zip file.gif
 
 Tomemos como ejemplo la siguiente imagen GIF de Groot:
 
-<img class='image-center' src="{{ site.baseurl }}/stego/images/groot.gif"/>
+<img class='image-center' src="{{ site.baseurl }}/stego/images/embed/img/groot.gif"/>
 
 Después de añadir un fichero ZIP al final obtenemos la siguiente imagen:
 
-<img class='image-center' src="{{ site.baseurl }}/stego/images/groot_stego.gif"/>
+<img class='image-center' src="{{ site.baseurl }}/stego/images/embed/img/groot_stego.gif"/>
 
 
 Para extraer el fichero oculto basta con ejecutar el siguiente comando:
@@ -123,7 +123,7 @@ Otra técnica bastante sencilla consiste en ocultar información en el canal alf
 
 La siguiente imagen de Homer tiene el fondo transparente.
 
-<img class='image-center' src="{{ site.baseurl }}/stego/images/homer.png"/>
+<img class='image-center' src="{{ site.baseurl }}/stego/images/embed/img/homer.png"/>
 
 Si leemos, usando Python, el píxel de la esquina superior izquierda, podemos ver como se estructura la información relativa al valor del píxel:
 
@@ -172,7 +172,7 @@ misc.imsave('homer_stego.png', I)
 <br>
 Como resultado, obtenemos la siguiente imagen:
 
-<img class='image-center' src="{{ site.baseurl }}/stego/images/homer_stego.png"/>
+<img class='image-center' src="{{ site.baseurl }}/stego/images/embed/img/homer_stego.png"/>
 
 Efectivamente, el mensaje queda oculta a la vista. Sin embargo, de nuevo esta no es una técnica segura. Pues simplemente modificando la opacidad del píxel podemos ver que algo ocurre.
 
@@ -194,7 +194,7 @@ $ ./aletheia.py rm-alpha homer_stego.png homer_stego.png
 <br>
 El resultado después de modificar la opacidad es el siguiente:
 
-<img class='image-center' src="{{ site.baseurl }}/stego/images/homer_stego_broken.png"/>
+<img class='image-center' src="{{ site.baseurl }}/stego/images/embed/img/homer_stego_broken.png"/>
 
 
 En general, el fondo de la imagen es negro. Pero existe una sección al principio en la que los píxeles tienen colores extraños. Esta sección corresponde a los datos que hemos ocultado. Un atacante, solo tiene que leerlos.

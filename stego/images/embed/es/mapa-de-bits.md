@@ -3,7 +3,7 @@ layout: page
 title: Inserción de información en imágenes
 subtitle: Mapas de bits
 comments: true
-image: images/hns_lena.png
+image: images/embed/img/lena.png
 hidden: false
 ---
 
@@ -14,7 +14,7 @@ Si usamos Python para leer el valor de un píxel
 
 ```python
 from scipy import misc
-I = misc.imread('hns_lena.png')
+I = misc.imread('lena.png')
 print(I[0,0])
 ```
 
