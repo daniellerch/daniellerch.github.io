@@ -10,9 +10,6 @@ Tambien pertenezco al grupo [CUING](https://cuing.org/) (Criminal Use of Informa
 
 Aunque este blog está dedicado a la esteganografía y al estegoanálisis, cabe mencionar que esta no es mi actividad principal. Soy emprendedor, lo que me ha llevado a crear diferentes empresas. Actualmente, dedico la mayor parte de mis esfuerzos a mi última creación: [Neuron4](http://neuron4.com/), una empresa dedicada a proporcionar servicios relacionados con la Inteligencia Artificial.
 
-### Contacto
-De momento, he decidido no habilitar los comentarios en el blog, por lo que para contactar conmigo lo mejor es hacerlo a través de e-mail (dlerch at gmail dot com) o [twitter](https://twitter.com/daniel_lerch). Si quieres comentar un artículo o algo relacionado con el blog, hazlo en twitter. Para cualquier otra cosa envíame un e-mail.
-
 
 ### Mi libro
 En el 2014 publiqué mi libro de esteganografía y estegoanálisis, junto a Jordi Serra y con la colaboración de Alfonso Muñoz. Puedes encontrarlo en [0xWord](https://0xword.com/es/libros/64-esteganografia-y-estegoanalisis.html).

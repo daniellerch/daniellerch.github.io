@@ -50,7 +50,7 @@ De manera que nos quedarán los siguientes valores de píxeles:
 
 En los inicios de la esteganografía en imágenes digitales se pensó (erróneamente) que esta era la forma más apropiada de esconder información en los píxeles: modificando únicamente el bit menos significativo. Desde un punto de vista intuitivo tiene mucho sentido, puesto que esta técnica nos permite insertar un bit de información modificando el valor del píxel lo mínimo posible. Sin embargo esta operación introduce cambios significativos en la distribución estadística de los píxeles de la imagen, lo que la hace muy detectable. 
 
-Existe, por otra parte, una operación parecida que no introduce estas anomalías estadísticas. Esta operación consiste en sumar o restar uno. El efecto sobre el bit menos significativo es exactamente el mismo, pero en este caso la técnica es mucho más difícil de detectar.
+Existe, por otra parte, una operación parecida que no introduce estas anomalías estadísticas. Esta operación consiste en sumar o restar uno. El efecto sobre el bit menos significativo es exactamente el mismo, pero en este caso la técnica es mucho más difícil de detectar. Esta técnica se conoce como *LSB matching* o $$\pm 1$$.
 
 Volvamos al ejemplo anterior, en código binario:
 
