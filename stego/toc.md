@@ -8,7 +8,6 @@ subtitle: Índice de contenido
 
 
 
-<br/>
 # Historia de la esteganografía
 
 ### Esteganografía clásica
@@ -23,7 +22,6 @@ subtitle: Índice de contenido
 - Esteganografía en la era de la información
 
 
-<br/>
 # Esteganografía en imágenes
 
 ### Inserción de información en imágenes
@@ -69,34 +67,29 @@ subtitle: Índice de contenido
 
 
 
-<br/>
 # Esteganografía en audio
 - ...
 
 
 
 
-<br/>
 # Esteganografía en redes
 - ...
 
 
 
 
-<br/>
 # Esteganografía en texto
 - ...
 
 
 
-<br/>
 # Apéndice
 - Estadística
 - Teoría de códigos
 - ...
 
 
-<br/>
 # Referencias
 
 
