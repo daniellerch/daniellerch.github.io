@@ -5,7 +5,6 @@ subtitle: Listado de artículos
 ---
 
 
-<br/>
 ### Inserción de información en imágenes
 - [Concatenar ficheros](/stego/images/embed/es/concat) (29/09/2019)
 - [Dibujar texto con colores similares](/stego/images/embed/es/dibujar-texto) (29/09/2019)
