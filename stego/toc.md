@@ -9,7 +9,7 @@ subtitle: Índice de contenido
 
 
 <br/>
-# Parte I: Historia de la esteganografía
+# Historia de la esteganografía
 
 ### Esteganografía clásica
 - Heródoto (484 a.C. - 425 a.C.)
@@ -24,7 +24,7 @@ subtitle: Índice de contenido
 
 
 <br/>
-# Parte II: Esteganografía en imágenes
+# Esteganografía en imágenes
 
 ### Inserción de información en imágenes
 - [Concatenar ficheros](/stego/images/embed/es/concat)
@@ -70,21 +70,21 @@ subtitle: Índice de contenido
 
 
 <br/>
-# Parte III: Esteganografía en audio
+# Esteganografía en audio
 - ...
 
 
 
 
 <br/>
-# Parte IV: Esteganografía en redes
+# Esteganografía en redes
 - ...
 
 
 
 
 <br/>
-# Parte V: Esteganografía en texto
+# Esteganografía en texto
 - ...
 
 
