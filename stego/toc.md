@@ -9,18 +9,18 @@ subtitle: Índice de contenido
 
 
 <br/>
-# Parte I: Introducción
+# Parte I: Historia de la esteganografía
 
-### Esteganografía a lo largo de la historia
+### Esteganografía clásica
 - Heródoto (484 a.C. - 425 a.C.)
 - Johannes Trithemius (1462 - 1516)
 - Gerolamo Cardano (1501 - 1576)
+- Primera guerra mundial
 - Segunda guerra mundial
 
 ### Esteganografía moderna
 - El problema del prisionero
-- Algunas definiciones.
-
+- Esteganografía en la era de la información
 
 
 <br/>
