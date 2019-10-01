@@ -5,6 +5,10 @@ subtitle: Índice de contenido
 ---
 
 
+
+
+--
+
 <br/>
 # Parte I: Introducción
 
@@ -24,7 +28,9 @@ subtitle: Índice de contenido
 # Parte II: Esteganografía en imágenes
 
 ### Inserción de información en imágenes
-- [Algunos métodos sencillos](/stego/images/embed/es/metodos-sencillos)
+- [Concatenar ficheros](/stego/images/embed/es/concat)
+- [Dibujar texto con colores similares](/stego/images/embed/es/dibjuar-texto)
+- [Oculto en el canal alfa](/stego/images/embed/es/canal-alfa)
 - [Mapas de bits](/stego/images/embed/es/mapas-de-bits)
 - Imágenes JPEG.
 - Transformación del dominio.
