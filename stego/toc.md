@@ -36,10 +36,11 @@ subtitle: Índice de contenido
 - Paleta de colores.
 
 ### Estegoanálisis
-- Sustitución del LSB en mapas de bits.
-- Sustitución del LSB en coeficientes DCT.
-- Inserción mediante $$\pm k$$
-- El problema del CSM.
+- Ataque SPA.
+- Ataque del histograma.
+- Ataque chi square.
+- Ataque de calibración.
+
 
 ### Minimizando el impacto de la inserción
 - Códigos binarios
