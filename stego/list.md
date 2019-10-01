@@ -1,18 +1,16 @@
 ---
 layout: page
 title: Esteganografía
-subtitle: Lista de artículos
+subtitle: Listado de artículos
 ---
 
 
+<br/>
 
-# Esteganografía en imágenes
-
-### Inserción de información en imágenes
-- [Concatenar ficheros](/stego/images/embed/es/concat)
-- [Dibujar texto con colores similares](/stego/images/embed/es/dibujar-texto)
-- [Oculto en el canal alfa](/stego/images/embed/es/canal-alfa)
-- [Mapas de bits](/stego/images/embed/es/mapas-de-bits)
+- [Inserción de información en imágenes: Concatenar ficheros](/stego/images/embed/es/concat)
+- [Inserción de información en imágenes: Dibujar texto con colores similares](/stego/images/embed/es/dibujar-texto)
+- [Inserción de información en imágenes: Oculto en el canal alfa](/stego/images/embed/es/canal-alfa)
+- [Inserción de información en imágenes: Mapas de bits](/stego/images/embed/es/mapas-de-bits)
 
 
 
