@@ -11,6 +11,8 @@ subtitle: Índice de contenido
 - [Oculto en el canal alfa](/stego/images/embed/es/canal-alfa) (30/09/2019)
 - [Mapas de bits](/stego/images/embed/es/mapas-de-bits) (31/09/2019)
 
+### Minimizando el impacto de la inserción
+- [Códigos binarios](/stego/images/impact/es/codigos-binarios) (02/09/2019)
 
 
 

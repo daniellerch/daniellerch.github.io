@@ -41,7 +41,7 @@ subtitle: Índice de contenido
 
 
 ### Minimizando el impacto de la inserción
-- Códigos binarios
+- [Códigos binarios](/stego/images/impact/es/codigos-binarios)
 - Códigos q-arios.
 - SDCS
 - La construcción ZZW.
