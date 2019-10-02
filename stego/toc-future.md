@@ -17,8 +17,8 @@ subtitle: Índice de contenido
 - Primera guerra mundial
 - Segunda guerra mundial
 
-### Esteganografía moderna
-- El problema del prisionero
+### Inicio de la esteganografía moderna
+- [El problema del prisionero](/stego/history/modern/es/problema-prisionero)
 - Esteganografía en la era de la información
 
 
@@ -60,7 +60,7 @@ subtitle: Índice de contenido
 - Extracción de características
 - Métodos de clasificación.
 - *Deep Learning* en estegoanálisis.
-- El problema del CSM (II).
+- El problema del CSM.
 - Métodos no supervisados.
 - Detección de inconsistencias en la clasificación.
 
