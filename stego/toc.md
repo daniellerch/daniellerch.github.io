@@ -4,6 +4,8 @@ title: Esteganografía
 subtitle: Índice de contenido
 ---
 
+### Inicio de la esteganografía moderna
+- [El problema del prisionero](/stego/history/modern/es/problema-prisionero) (02/09/2019)
 
 ### Inserción de información en imágenes
 - [Concatenar ficheros](/stego/images/embed/es/concat) (29/09/2019)
