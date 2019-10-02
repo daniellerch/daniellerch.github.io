@@ -43,7 +43,7 @@ $ cat hw.txt
 Hello World!
 ```
 
-De nuevo, no es una técnica demasiado segura. Simplemente usando el comando de extracción, veremos que hay información oculta. Quizás el mejor símil sea el de ocultar la caja fuerte detrás de un cuadro. Nadie sabrá que está ahí, a menos que mire, claro!
+No podemos decir que sea una técnica demasiado segura. Simplemente usando el comando de extracción, veremos que hay información oculta. Quizás el mejor símil sea el de ocultar la caja fuerte detrás de un cuadro. Nadie sabrá que está ahí, a menos que mire, claro!
 
 Este método puede ser usado en diferentes formatos, que pueden ser imágenes, o no. Algunos ejemplos comunes son los formatos de archivo PNG o JPEG, entre otros.
 
