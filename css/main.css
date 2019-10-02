@@ -47,6 +47,33 @@ hr.small {
   border-radius: 3px;
 }
 
+
+h1 {
+  font-size: 5vw;
+}
+
+h2 {
+  font-size: 4vw;
+}
+
+h3 {
+  font-size: 3vw;
+}
+
+
+@media only screen and (min-width: 768px) {
+	h1 {
+	  font-size: 4vw;
+	}
+	h2 {
+	  font-size: 3vw;
+	}
+
+	h3 {
+	  font-size: 2vw;
+	}
+}
+
 .image-center {
   display: block;
   margin-left: auto;
