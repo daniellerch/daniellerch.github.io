@@ -112,7 +112,7 @@ misc.imsave('f16_stego.png', I)
 
 El resultado es el siguiente:
 
-![f16]({{ site.baseurl }}/stego/images/img/stego_f16.png)
+![f16]({{ site.baseurl }}/stego/images/img/f16_stego.png)
 
 
 Para leer el mensaje, el código Python necesario únicamente tiene que recopilar los bits menos significativos y agruparlos en bytes. El resultado lo almacena en el fichero "output_secret_data.txt".
