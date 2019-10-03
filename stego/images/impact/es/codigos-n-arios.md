@@ -153,7 +153,13 @@ recovered= [3 0 4]
 
 El mismo proceso puede seguirse con diferentes valores para $$n$$ y de $$p$$. No está claro hasta que punto incrementar el valor de $$\pm k$$ afecta a la detectabilidad, aunque conviene mantener un valor pequeño. Por otra parte, dado que con el aumente de $$k$$ aumenta también la capacidad, podremos ocultar la misma información realizando menos cambios en la imagen. Por lo que habrá que elegir con cuidado los parámetros para minimizar la probabilidad de detección de la inserción realizada.
 
-En la siguiente gráfica puede verse una comparativa de diferentes códigos n-arios. 
+En la siguiente gráfica puede verse una comparativa de diferentes códigos n-arios. Es necesario ajustar las fórmulas para calcular el *payload* y la eficiencia con el valor de $$n$$:
+
+$${\alpha}_p = \frac{p \log_2 n}{(n^p-1)/(n-1)}$$
+
+$$e_p = \frac{p \log_2 n}{1-n^(-p))}$$
+
+
 
 
 <img class='image-center' style='width:100%' src="/stego/images/impact/img/n-ary-codes.png"/>
