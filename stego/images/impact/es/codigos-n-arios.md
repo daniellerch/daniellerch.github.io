@@ -13,7 +13,7 @@ La teoría detrás de los códigos n-arios es la misma que para los códigos bin
 
 Por otra parte, para ocultar información en un píxel necesitaremos trabajar con el valor del píxel módulo $n$. Es decir, para un código ternario ($$n=3$$), un píxel con valor 233 pasaría a ser un píxel con valor $$235 (mod 3) = 2$$. 
 
-Veamos un ejemplo de códigos ternarios ($$n=3$$). Vamos a usar $$p=3$$, es decir, que queremos insertar un símbolo ternario por cada modificación. Para ello, necesitaremos trabajar con bloques de $$n^p-1 = 3^3-1 = 26$ píxeles.
+Veamos un ejemplo de códigos ternarios ($$n=3$$). Vamos a usar $$p=3$$, es decir, que queremos insertar un símbolo ternario por cada modificación. Para ello, necesitaremos trabajar con bloques de $$n^p-1 = 3^3-1 = 26$$ píxeles.
 
 Supongamos que después de seleccionar un bloque de 26 píxels de la imagen, donde vamos a ocultar la información, y realizar la operación módulo 3 del valor de los píxeles, obtenemos el siguiente vector:
 
