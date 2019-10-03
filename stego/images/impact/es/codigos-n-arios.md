@@ -17,7 +17,7 @@ Veamos un ejemplo de códigos ternarios ($$n=3$$). Vamos a usar $$p=3$$, es deci
 
 Supongamos que después de seleccionar un bloque de 26 píxels de la imagen, donde vamos a ocultar la información, y realizar la operación módulo 3 del valor de los píxeles, obtenemos el siguiente vector:
 
-$$,c=(0,1,0,0,2,1,2,2,2,0,1,0,2,0,2,1,1,2,0,1,1,1,2,2,0,2),$$
+$$c=(0,1,0,0,2,1,2,2,2,0,1,0,2,0,2,1,1,2,0,1,1,1,2,2,0,2)$$
 
 Recordemos que también necesitamos una matriz que contenga en sus columnas todas las posibles combinaciones, excepto el cero. Sería la siguiente:
 
@@ -41,7 +41,7 @@ $$ m-Mc = (1, 2, 2) $$
 
 Que es la columna 17 de la matriz M. Por lo que tenemos que sumar 1 a dicha columna.
 
-$$,s=(0,1,0,0,2,1,2,2,2,0,1,0,2,0,2,1,2,2,0,1,1,1,2,2,0,2),$$
+$$s=(0,1,0,0,2,1,2,2,2,0,1,0,2,0,2,1,2,2,0,1,1,1,2,2,0,2)$$
 
 Veamos el código Python que nos permite realizar estas operaciones:
 
