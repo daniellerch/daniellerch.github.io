@@ -205,7 +205,7 @@ Por ejemplo, si usamos $$p=3$$, necesitaremos bloques de $$2^3-1=7$$ píxels. Lo
 
 El siguiente parámetro que nos interesa es la eficiencia de la inserción, que podemos calcularla como:
 
-$$e_p = p / {1-2^{-p}}$$
+$$e_p = p / (1-2^{-p})$$
 
 Siguiendo con nuestro ejemplo, la eficiencia para $$p=3$$ es de 3.429.
 
