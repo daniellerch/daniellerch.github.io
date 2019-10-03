@@ -211,9 +211,12 @@ Siguiendo con nuestro ejemplo, la eficiencia para $$p=3$$ es de 3.429.
 
 En el siguiente gráfico podemos ver la relación entre el *payload* y la eficiencia.
 
-<div style='position:relative;height:0;overflow:hidden;padding-bottom:50%'>
-<iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSfY_jXetf83wUUeUaN9lHrS4J7IZsHF-L8SE_qCXZKPWSNjsZ0raMkA7HKY8_ofeA4y8QTkJ4QdZPa/pubchart?oid=1252755003&format=interactive" width="100%" height="400px" frameborder="0" scrolling="no" padding="0" margin="0"/>
-</div>
+
+https://docs.google.com/spreadsheets/d/e/2PACX-1vSfY_jXetf83wUUeUaN9lHrS4J7IZsHF-L8SE_qCXZKPWSNjsZ0raMkA7HKY8_ofeA4y8QTkJ4QdZPa/pubchart?oid=1252755003&format=image
+
+
+<img class='image-center' src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSfY_jXetf83wUUeUaN9lHrS4J7IZsHF-L8SE_qCXZKPWSNjsZ0raMkA7HKY8_ofeA4y8QTkJ4QdZPa/pubchart?oid=1252755003&format=image"/>
+
 
 Como se puede ver en la gráfica, cuando la eficiencia supera el 5 el *payload* decrece muy rápidamente
 
