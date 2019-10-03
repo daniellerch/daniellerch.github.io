@@ -103,7 +103,8 @@ Donde $$c$$ es un vector que contiene los bits de la imagen *cover*.
 
 Continuemos con nuestro ejemplo. Vamos a ocultar el mensaje m=(1,1,0) en el siguiente bloque de 7 píxeles:
 
-| 11011010 | 11011011 | 11011011 | 11011010 | 11011011 | 11011010 | 11011010 |
+| 11011010 | 11011011 | 11011011 | 11011010 | 
+| 11011011 | 11011010 | 11011010 |
 
 Nos quedamos con los bits menos significativos:
 
@@ -143,7 +144,8 @@ $$ m = Ms = (1, 1, 0) $$
 Obtenemos el mensaje que queremos ocultar, por lo que ahora nuestros píxeles stego quedan como:
 
 
-| 11011010 | 11011010(-1) | 11011011 | 11011010 | 11011011 | 11011010 | 11011010 |
+| 11011010 | 11011010(-1) | 11011011 | 11011010 | 
+| 11011011 | 11011010 | 11011010 |
 
 
 Como podemos ver, hemos sido capaces de ocultar 3 bits, modificando uno solo. Para ello, hemos necesitado un bloque de 7 píxeles.
@@ -199,13 +201,13 @@ Cuanto más grande sea $$p$$, más información podremos ocultar con menos modif
 
 Nos interesa tener en cuenta dos parámetros. El primero es el *payload*, es decir, que porcentaje de información podemos almacenar por píxel. Esto podemos calcularlo con la siguiente fórmula:
 
-$${\alpha}_p = p / {2^p-1}$$
+$${\alpha}_p = \frac{p}{ {2^p-1} }$$
 
 Por ejemplo, si usamos $$p=3$$, necesitaremos bloques de $$2^3-1=7$$ píxels. Lo que nos da una capacidad de $$0,429$$ bits por píxel.
 
 El siguiente parámetro que nos interesa es la eficiencia de la inserción, que podemos calcularla como:
 
-$$e_p = p / (1-2^{-p})$$
+$$e_p = \frac{p}{ 1-2^{-p} }$$
 
 Siguiendo con nuestro ejemplo, la eficiencia para $$p=3$$ es de 3.429.
 
