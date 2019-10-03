@@ -17,7 +17,7 @@ Veamos un ejemplo de códigos ternarios ($$n=3$$). Vamos a usar $$p=3$$, es deci
 
 Supongamos que después de seleccionar un bloque de 26 píxels de la imagen, donde vamos a ocultar la información, y realizar la operación módulo 3 del valor de los píxeles, obtenemos el siguiente vector:
 
-$$ c=(0 1 0 0 2 1 2 2 2 0 1 0 2 0 2 1 1 2 0 1 1 1 2 2 0 2) $$
+$$,c=(0,1,0,0,2,1,2,2,2,0,1,0,2,0,2,1,1,2,0,1,1,1,2,2,0,2),$$
 
 Recordemos que también necesitamos una matriz que contenga en sus columnas todas las posibles combinaciones, excepto el cero. Sería la siguiente:
 
@@ -29,7 +29,7 @@ $$ M=\begin{pmatrix}
 
 Y finalmente, el mensaje que queremos ocultar. Ocultemos por ejemplo:
 
-$$ m=(2 0 2) $$
+$$ m=(2,0,2) $$
 
 Si calculamos el mensaje que se esconde en nuestro vector $c$ vemos que es:
 
@@ -41,7 +41,7 @@ $$ m-Mc = (1, 2, 2) $$
 
 Que es la columna 17 de la matriz M. Por lo que tenemos que sumar 1 a dicha columna.
 
-$$ s=(0 1 0 0 2 1 2 2 2 0 1 0 2 0 2 1 2 2 0 1 1 1 2 2 0 2) $$
+$$,s=(0,1,0,0,2,1,2,2,2,0,1,0,2,0,2,1,2,2,0,1,1,1,2,2,0,2),$$
 
 Veamos el código Python que nos permite realizar estas operaciones:
 
@@ -134,10 +134,10 @@ n = 5
 p = 3
 m = [3, 0, 4]
 c=[0,1,3,0,3,3,3,0,3,4,3,1,1,2,3,3,1,4,2,4,0,2,2,1,2,
-	3,4,0,1,2,1,4,2,2,3,0,2,4,3,0,3,2,3,1,2,1,1,0,4,2,
-	1,0,3,4,3,3,0,0,3,4,4,1,1,1,1,1,1,0,4,1,3,2,4,2,2,
-	0,3,2,1,2,4,2,4,1,3,4,2,1,3,2,3,3,4,2,3,3,0,1,1,0,
-	4,4,4,0,1,4,4,4,0,2,4,1,3,0,0,0,0,2,3,2,0,3,2,4]
+   3,4,0,1,2,1,4,2,2,3,0,2,4,3,0,3,2,3,1,2,1,1,0,4,2,
+   1,0,3,4,3,3,0,0,3,4,4,1,1,1,1,1,1,0,4,1,3,2,4,2,2,
+   0,3,2,1,2,4,2,4,1,3,4,2,1,3,2,3,3,4,2,3,3,0,1,1,0,
+   4,4,4,0,1,4,4,4,0,2,4,1,3,0,0,0,0,2,3,2,0,3,2,4]
 M=prepare_M(p, n)
 s=ME_hide_block(M, c, m, n)
 m_recovered=ME_unhide_block(M, s, n)
@@ -160,7 +160,7 @@ $${\alpha}_p = \frac{p \log_2 n}{(n^p-1)/(n-1)}$$
 
 Y para calcular la eficiencia:
 
-$$e_p = \frac{p \log_2 n}{1-n^{-p})}$$
+$$e_p = \frac{p \log_2 n}{1-n^{-p}}$$
 
 
 
