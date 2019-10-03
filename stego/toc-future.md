@@ -43,7 +43,6 @@ subtitle: Índice de contenido
 ### Minimizando el impacto de la inserción
 - [Códigos binarios](/stego/images/impact/es/codigos-binarios)
 - [Códigos n-arios](/stego/images/impact/es/n-arios-binarios)
-
 - SDCS
 - La construcción ZZW.
 
