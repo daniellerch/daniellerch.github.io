@@ -10,6 +10,8 @@ Tambien pertenezco al grupo [CUING](https://cuing.org/) (Criminal Use of Informa
 
 Aunque este blog está dedicado a la esteganografía y al estegoanálisis, cabe mencionar que esta no es mi actividad principal. Soy emprendedor, lo que me ha llevado a crear diferentes empresas. Actualmente, dedico la mayor parte de mis esfuerzos a mi última creación: [Neuron4](http://neuron4.com/), una empresa dedicada a proporcionar servicios relacionados con la Inteligencia Artificial.
 
+Adicionalmente, también soy profesor colaborador de la asignatura de [criptografía](https://estudios.uoc.edu/es/asignaturas-libres/informatica-multimedia-telecomunicacion/criptografia/presentacion) en el grado de Ingeniería Informática de la [Universitat Oberta de Catalunya](http://uoc.edu).
+
 
 ### Mi libro
 En el 2014 publiqué mi libro de esteganografía y estegoanálisis, junto a Jordi Serra y con la colaboración de Alfonso Muñoz. Puedes encontrarlo en [0xWord](https://0xword.com/es/libros/64-esteganografia-y-estegoanalisis.html).
