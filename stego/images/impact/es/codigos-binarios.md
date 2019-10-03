@@ -212,7 +212,6 @@ Siguiendo con nuestro ejemplo, la eficiencia para $$p=3$$ es de 3.429.
 En el siguiente gráfico podemos ver la relación entre el *payload* y la eficiencia.
 
 
-https://docs.google.com/spreadsheets/d/e/2PACX-1vSfY_jXetf83wUUeUaN9lHrS4J7IZsHF-L8SE_qCXZKPWSNjsZ0raMkA7HKY8_ofeA4y8QTkJ4QdZPa/pubchart?oid=1252755003&format=image
 
 
 <img class='image-center' style="width:100%" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSfY_jXetf83wUUeUaN9lHrS4J7IZsHF-L8SE_qCXZKPWSNjsZ0raMkA7HKY8_ofeA4y8QTkJ4QdZPa/pubchart?oid=1252755003&format=image"/>
