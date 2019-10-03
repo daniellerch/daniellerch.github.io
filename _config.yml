@@ -21,7 +21,7 @@ description: daniellerch.me
 # List of links in the navigation bar
 navbar-links:
    Home: "https://daniellerch.me"
-#  Blog: "p/blog"
+   Blog: "stego/toc"
    Acerca de: "p/about"
 #  Resources:
 #    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
