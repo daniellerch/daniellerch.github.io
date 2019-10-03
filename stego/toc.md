@@ -15,7 +15,7 @@ subtitle: Índice de contenido
 
 ### Minimizando el impacto de la inserción
 - [Códigos binarios](/stego/images/impact/es/codigos-binarios) (02/09/2019)
-- [Códigos n-arios](/stego/images/impact/es/n-arios-binarios) (03/09/2009)
+- [Códigos n-arios](/stego/images/impact/es/codigos-n-arios) (03/09/2009)
 
 
 
