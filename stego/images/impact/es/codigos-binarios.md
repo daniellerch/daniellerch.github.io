@@ -214,7 +214,7 @@ En el siguiente gráfico podemos ver la relación entre el *payload* y la eficie
 
 
 
-<img class='image-center' style="width:100%" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSfY_jXetf83wUUeUaN9lHrS4J7IZsHF-L8SE_qCXZKPWSNjsZ0raMkA7HKY8_ofeA4y8QTkJ4QdZPa/pubchart?oid=1252755003&format=image"/>
+<img class='image-center' src="/stego/images/impact/img/binary-codes.png"/>
 
 
 Como se puede ver en la gráfica, cuando la eficiencia supera el 5 el *payload* decrece muy rápidamente
