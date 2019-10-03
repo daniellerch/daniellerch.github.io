@@ -195,10 +195,27 @@ m_recovered=ME_unhide_block(M, s)
 print(m_recovered)
 ```
 
-Cuanto más grande sea $$p$$, más información podremos ocultar con menos modificaciones. Pero si usamos un $$p$$ demasiado grande nos encontraremos con que se los bloques son tan grandes que nos quedamos rápidamente sin píxeles en la imagen. Por ejemplo, en una imagen de 512x512 píxeles podemos esconder 18 bits modificando un solo bit. Sin embargo, ya no podemos ocultar nada más. Conviene pues seleccionar una tamaño de bloque adecuado, que nos permita ocultar información sin modificar mucho la imagen pero que al mismo tiempo nos ofrezca una capacidad aceptable.
+Cuanto más grande sea $$p$$, más información podremos ocultar con menos modificaciones. Pero si usamos un $$p$$ demasiado grande nos encontraremos con que los bloques son tan grandes que nos quedamos rápidamente sin píxeles en la imagen. Por ejemplo, en una imagen de 512x512 píxeles podemos esconder 18 bits modificando un solo bit. Sin embargo, ya no podemos ocultar nada más. Conviene pues seleccionar una tamaño de bloque adecuado, que nos permita ocultar información sin modificar mucho la imagen pero que al mismo tiempo nos ofrezca una capacidad aceptable.
+
+Nos interesa tener en cuenta dos parámetros. El primero es el *payload*, es decir, que porcentaje de información podemos almacenar por píxel. Esto podemos calcularlo con la siguiente fórmula:
+
+$${\alpha}_p = p / {2^p-1}$$
+
+Por ejemplo, si usamos $$p=3$$, necesitaremos bloques de $$2^3-1=7$$ píxels. Lo que nos da una capacidad de $$0,429$$ bits por píxel.
+
+El siguiente parámetro que nos interesa es la eficiencia de la inserción, que podemos calcularla como:
+
+$$e_p = p / {1-2^{-p}}$$
+
+Siguiendo con nuestro ejemplo, la eficiencia para $$p=3$$ es de 3.429.
+
+En el siguiente gráfico podemos ver la relación entre el *payload* y la eficiencia.
+
+
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSfY_jXetf83wUUeUaN9lHrS4J7IZsHF-L8SE_qCXZKPWSNjsZ0raMkA7HKY8_ofeA4y8QTkJ4QdZPa/pubchart?oid=1252755003&format=interactive" width="100%" height="2000" frameborder="0" scrolling="no" padding="0" margin= "0"/>
 
 
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSfY_jXetf83wUUeUaN9lHrS4J7IZsHF-L8SE_qCXZKPWSNjsZ0raMkA7HKY8_ofeA4y8QTkJ4QdZPa/pubchart?oid=1252755003&format=interactive"/>
+
 
 
