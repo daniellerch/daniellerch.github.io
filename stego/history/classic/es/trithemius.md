@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Esteganografía clásica
-subtitle: La *Seganographia* de Johannes Trithemius
+subtitle: La Seganographia de Johannes Trithemius
 comments: true
 image: stego/history/classic/img/trithemius.jpg
 hidden: false
