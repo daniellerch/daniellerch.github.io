@@ -12,7 +12,7 @@ subtitle: Índice de contenido
 
 ### Esteganografía clásica
 - Heródoto (484 a.C. - 425 a.C.)
-- [La *Seganographia* de Johannes Trithemius](/stego/history/classic/es/trithemius).
+- [La *Steganographia* de Johannes Trithemius](/stego/history/classic/es/trithemius).
 - Gerolamo Cardano (1501 - 1576)
 - Primera guerra mundial
 - Segunda guerra mundial
