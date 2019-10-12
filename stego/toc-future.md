@@ -12,10 +12,12 @@ subtitle: Índice de contenido
 
 ### Esteganografía clásica
 - Heródoto (484 a.C. - 425 a.C.)
-- Johannes Trithemius (1462 - 1516)
+- [La *Seganographia* de Johannes Trithemius](/stego/history/classic/es/trithemius).
 - Gerolamo Cardano (1501 - 1576)
 - Primera guerra mundial
 - Segunda guerra mundial
+
+
 
 ### Inicio de la esteganografía moderna
 - [El problema del prisionero](/stego/history/modern/es/problema-prisionero)

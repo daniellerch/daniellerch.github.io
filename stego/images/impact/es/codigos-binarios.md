@@ -27,9 +27,6 @@ $$ M_2 = LSB(P_2) \oplus LSB(P_3) 1$$
 Aquí $$LSB()$$ hace referencia al bit menos significativo del píxel.
 
 
-###This means the effectiveness of our method is 1/2.
-
-
 Este método es muy sencillo de aplicar. Si $$M_1$$ y $$M_2$$ ya tienen los valores que queremos ocultar, no tenemos que hacer nada. Si ninguno de los valores de $$M_1$$ y $$M_2$$ coincide cambiaremos el valor de $$P_2$$. Si $$M_1$$ coincide pero $$M_2$$ no, cambiaremos el valor de $$P_3$$ y si $$M_2$$ coincide per $$M_1$$ no, cambiaremos el valor de $$P_1$$. Con esta sencilla técnica, somos capaces de ocultar dos bits modificando solo uno.
 
 Veamos un ejemplo. Tenemos los siguientes píxeles:
