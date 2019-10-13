@@ -140,7 +140,7 @@ Que significa:
 > Ten cuidado las primeras letras de cada palabra le devuelven al lector el significado secreto.
 
 
-A continuación el libro nos presenta un texto, que no voy a reproducir aquí, del que podemos extraer un mensaje usando la primera letra de cada palabra. El lector interesado puede encontrar el texto completo en la edición digital [Trithemius1499archive](/stego/es/referencias).
+A continuación el libro nos presenta un texto, que no voy a reproducir aquí, del que podemos extraer un mensaje usando la primera letra de cada palabra. El lector interesado puede encontrar el texto completo en la edición digital [[Trithemius1499archive](/stego/es/referencias)].
 
 Cabe destacar que, tanto el mensaje introductorio, como el conjuro que debe realizar el receptor, contienen también un mensaje oculto similar. Lo dejamos como ejercicio para el lector que desee adentrarse en la esteganografía de Trithemius.
 
