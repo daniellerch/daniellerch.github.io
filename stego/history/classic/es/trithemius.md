@@ -125,10 +125,10 @@ Sin embargo, como veremos a continuación, el libro de Trithemius contiene mucho
 Veamos el supuesto conjuro que nos permite convocar a los espíritus. Si tomamos únicamente la segunda de cada par de palabras, y de esas palabras, tomamos únicamente la segunda letra de cada par, encontramos un mensaje oculto: 
 
 
-   Pamerſiel o*s*h*u*r*m*y delmuſon *T*h*a*f*l*o*y*n peano *c*h*a*r*u*ſ*t*e*a* melany, *l*y*a*m*i*n*t*o colchan, *p*a*r*o*y*s, 
-   madyn, *m*o*e*r*l*a*y*, bulre † a*t*l*o*o*r* don m*e*l*c*o*u*e peloin, *i*b*u*t*ſ*y*l* meon m*y*s*b*r*e*a*t*h alini *d*r*i*a*c*o 
-   perſon. *C*r*i*ſ*o*l*n*a*y*, lemon a*ſ*o*s*l*e* mydar, i*c*o*r*i*e*l pean *t*h*a*l*m*ō, aſophiel *i*l *n*o*t*r*e*o*n* banyel o*c*r*i*m*o*s 
-   eſteuor *n*a*e*l*m*a beſrona *t*h*u*l*a*o*m*o*r* fronian b*e*l*d*o*d*r*a*y*n* bon o*t*a*l*m*e*ſ*g*o mero fas *e*l*n*a*t*h*y*n 
+   Pamerſiel o**s**h**u**r**m**y delmuſon **T**h**a**f**l**o**y**n peano **c**h**a**r**u**ſ**t**e**a** melany, **l**y**a**m**i**n**t**o colchan, **p**a**r**o**y**s, 
+   madyn, **m**o**e**r**l**a**y**, bulre † a**t**l**o**o**r** don m**e**l**c**o**u**e peloin, **i**b**u**t**ſ**y**l** meon m**y**s**b**r**e**a**t**h alini **d**r**i**a**c**o 
+   perſon. **C**r**i**ſ**o**l**n**a**y**, lemon a**ſ**o**s**l**e** mydar, i**c**o**r**i**e**l pean **t**h**a**l**m**ō, aſophiel **i**l **n**o**t**r**e**o**n** banyel o**c**r**i**m**o**s 
+   eſteuor **n**a**e**l**m**a beſrona **t**h**u**l**a**o**m**o**r** fronian b**e**l**d**o**d**r**a**y**n** bon o**t**a**l**m**e**ſ**g**o mero fas **e**l**n**a**t**h**y**n 
    boſramothdiv. 
 
 El mensaje, en latín, es el siguiente:
