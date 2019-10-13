@@ -38,15 +38,17 @@ Trithemius nombró a este arte **esteganografía** (del griego στεγανος 
    Trithemius también destacó en el área de la criptografía, con su libro *Polygraphia*, publicado en 1518.
 
    En 1996-7 Thomas Ernst y Jim Reeds, de forma independiente, descodificaron el Libro III de la Steganographia.
+
+intro
+[[Tritemio1499](/stego/es/referencias)]
+blah blah
+
 </div>
 
 
 
 
 
-intro
-[[Tritemio1499](/stego/es/referencias)]
-blah blah
 
 
 
