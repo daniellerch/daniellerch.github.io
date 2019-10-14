@@ -145,6 +145,9 @@ A continuación el libro nos presenta un texto, que no voy a reproducir aquí, d
 Cabe destacar que, tanto el mensaje introductorio, como el conjuro que debe realizar el receptor, contienen también un mensaje oculto similar. Lo dejamos como ejercicio para el lector que desee adentrarse en la esteganografía de Trithemius.
 
 
+Llegados a este punto, y ya con una perspectiva del libro de Trithemius un poco más alejada de los espíritus y la magia, quizás podemos darle otro significado a sus palabras. De hecho, el texto está lleno de pistas que nos hablan de la seguridad del método propuesto, aunque siempre en referencia a los espíritus. Vemos, por ejemplo, que se habla del *peligro debido a la arrogancia y la rebelión* de operar con estos espíritus, o de que son *indignos de confianza*, que a menudo, *revelan infielmente a otros el secreto que les ha confiado*, o que *Los espíritus [...] gritarán de manera tal que, en general, los demás presentes también podrán percibir el secreto del remitente*, entre muchos otros. Ahora, parece obvio, que Trithemius nos alerta del peligro de ocultar un mensaje con este método (usando la primera letra de cada palabra), pues puede resultar bastante sencillo, para un tercero, descifrar nuestro mensaje oculto.
+
+
 
 
 ### Volumen 2
