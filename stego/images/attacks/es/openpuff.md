@@ -1,13 +1,13 @@
 ---
 layout: page
 title: Ataques a herramientas de esteganografía en imágenes
-subtitle: OpenPuff
+subtitle: OpenPuff (maps de bits)
 comments: true
 hidden: false
 ---
 
 
-[OpenPuff](https://embeddedsw.net/OpenPuff_Steganography_Home.html) es una herramienta propietaria para Windows que permite esconder información en archivos con diferentes formatos. Aunque en este caso nos ocuparemos de la inserción en imágenes. En el momento de escribir estas líneas la versión disponible es la v4.0.1.
+[OpenPuff](https://embeddedsw.net/OpenPuff_Steganography_Home.html) es una herramienta propietaria para Windows que permite esconder información en archivos con diferentes formatos. Aunque en este caso nos ocuparemos de la inserción en imágenes de tipo *bitmap*. En el momento de escribir estas líneas la versión disponible es la v4.0.1.
 
 
 La herramiento nos pregunta tres passwords diferentes, la imagen que queremos usar para ocultar la información (usaremos una imagen PNG) y el tamaño del *payload*. Para este último escogemos el mínimo, que es un 12%, con la intención de que el resultado sea el menos detectable que ofrece OpenPuff. Para el experimento hemous usado la imagen de [Lena](/stego/images/attacks/img/lena.png). 

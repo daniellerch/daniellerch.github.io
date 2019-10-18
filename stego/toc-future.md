@@ -67,8 +67,8 @@ noindex: true
 
 
 ### Ataques a herramientas de esteganografía en imágenes
-- Ataque a OpenPuff
-- Ataque a OpenStego
+- [Ataque a OpenPuff](/stego/images/attacks/es/openpuff)
+- [Ataque a OpenStego](/stego/images/attacks/es/openstego)
 - Ataque a F5
 
 

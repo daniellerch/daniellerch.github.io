@@ -1,21 +1,26 @@
+---
+layout: page
+title: Ataques a herramientas de esteganografía en imágenes
+subtitle: OpenStego
+comments: true
+hidden: false
+---
 
-### Steganalysis of OpenStego
 
 
-[OpenStego](https://www.openstego.com/) is a Java tool for hiding information in the spatial domain (steganography and watermarking). At the moment of writing these lines the last version available is v0.7.3.
+[OpenStego](https://www.openstego.com/) es una herramienta *open source* escrita en Java para ocultar información en imágenes de tipo *bitmap*. En el momento de escribir estas lineas la última versión dispoible es la v0.7.3.
 
-First we download a copy of the Lena image, then we prepare a file with some secret data and finally we hide the message.
+Para el experimento hemous usado la imagen de [Lena](/stego/images/attacks/img/lena.png). 
 
-With a simple experiment we can see that the method used for embedding is LSB replacement. That is, we hide the bits of the message by replacing the least significant bit (LSB) of the pixel. Actually, the tool supports using several pixels per channel, but this is even more detectable.
 
+Una vez instalado OpenStego, generamos un mensaje aleatorio y lo ocultamos en la imagen Lena. Loa hacemos (en Linux) de la forma siguiente:
 
 ```bash
-$ wget http://daniellerch.me/images/lena.png
 $ head -500 /dev/urandom | tr -dc A-Za-z0-9 > secret.txt
 $ openstego embed -mf secret.txt -cf lena.png -sf stego.png
 ```
 
-With Aletheia we can check the modifications performed by OpenStego in the stego image:
+Dado que OpenStego es una herramienta libre, podríamos descargar y analizar el código para ver como maneja la inserción de datos en la imagen. Sin embargo, en ocasiones puede resultar más rápido y sencillo comparar dos imágenes, una sin información oculta y otra con un mensaje oculto. Lo podemos hacer con la herramienta [Aletheia](https://github.com/daniellerch/aletheia), con la opción "print-diffs" que nos permite ver los píxels diferentes y qué cambios se han realizado.
 
 
 ```bash
@@ -45,9 +50,33 @@ Channel 3:
 ```
 
 
-As you can see in the results, when a pixel of the cover image is even the performed operation is +1 and when a pixel of the cover image is odd the performed operation is -1. This is what happens when the embedding operation is LSB replacement. This anomaly has been exploited by several attacks [[1, 2, 3](/doc/REFERENCES.md)].
+Existen dos técnicas principales para incrustar información en un mapa de bits: LSB *matching* y LSB *replacement*. La primera oculta información sumando o restando uno, mientras la segunda sustituye el bit menos significativo del píxel. La segunda es tremendamente insegura y puede ser explotada usando, entre otros, los ataques RS [[Fridrich2001](/stego/references)] y SPA [[Dumitrescu2003](/stego/references)].
 
-Let's try a RS attack:
+
+Si nos fijamos bien en las diferencias que nos muestra Aletheia, vemos que los valores impares modificados siempre decrecen, mientras que los valores pares siempre crecen. Esto es una consecuencia de la sustitución del bit menos significativo. Veamos algunos ejemplos de valores pares que crecen:
+
+
+```bash
+$ ./aletheia.py print-diffs lena.png stego.png
+(226, 227, 1)
+(234, 235, 1)
+(174, 175, 1)
+(180, 181, 1)
+```
+
+Y algunos ejemplos de valores impares que decrecen:
+
+```bash
+(223, 222, -1)
+(221, 220, -1)
+(223, 222, -1)
+(229, 228, -1)
+
+```
+
+
+Vamos ahora a probar el ataque RS a través de la herramienta Aletheia:
+
 
 ```bash
 $ ./aletheia.py rs stego.png 
@@ -56,7 +85,7 @@ Hidden data found in channel G 0.24
 Hidden data found in channel B 0.27
 ```
 
-Let's try now with less data:
+Probamos ahora con un poco menos de datos escondidios:
 
 ```bash
 $ head -100 /dev/urandom | tr -dc A-Za-z0-9 > secret.txt
@@ -67,18 +96,15 @@ Hidden data found in channel G 0.06
 Hidden data found in channel B 0.07
 ```
 
-Obviously, with the original Lena image, the tool does not detect any hidden data:
+En ambos casos hemos podido detectar la esteganografía de OpenStego sin problemas.
+
+
+Lógicamente, si usamos la imagen Lena origina, Aletheia no encuentra información oculta:
 
 ```bash
-$ ./aletheia.py rs lena.png 
+$ ./aletheia.py spa lena.png 
 No hidden data found
 ```
-
-
-
-
-
-
 
 
 
