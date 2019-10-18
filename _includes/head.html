@@ -11,6 +11,12 @@
   <meta name="description" content="{{ page.subtitle }}">
   {% endif %}
 
+
+  {% if page.noindex %}
+  <meta name="robots" content="noindex">
+  {% endif %}
+
+
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }} {{ site.title-separator }} {{ site.description }}" href="{{ '/feed.xml' | absolute_url }}" />
 
   {% include gtag.html %}
