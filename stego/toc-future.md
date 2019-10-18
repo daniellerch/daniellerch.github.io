@@ -66,6 +66,10 @@ noindex: true
 - Detección de inconsistencias en la clasificación.
 
 
+### Ataques a herramientas de esteganografía en imágenes
+- Ataque a OpenPuff
+- Ataque a OpenStego
+- Ataque a F5
 
 
 ## Esteganografía en audio

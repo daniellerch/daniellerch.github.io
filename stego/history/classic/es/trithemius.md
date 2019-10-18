@@ -22,7 +22,7 @@ Un acróstico célebre de la lengua española está formado por los versos que a
 > **E**l aire gozando, ajeno y extraño,<br/>
 > **r**apiña es ya hecha de aves que vuelan;<br/>
 
-A partir de este inocente pasatiempo, el abad alemán Johannes Trithemius (1462 - 1516) creó una completa disciplina que plasmó en su libro *Steganographia* [[Trithemius1499, Trithemius1499archive](/stego/es/referencias)] en el año 1499. Sin embargo, no lo hizo de una forma clara e instructiva, si no que ocultó sus conocimientos dentro de un texto en forma de tratado para la invocación de espíritus. Tal fue el éxito de Trithemius ocultando el objetivo real de su obra, que incluso hoy en día se debate si Trithemius fue un pionero en el arte de ocultar información o una especie de brujo renacentista. De hecho, en 1609 su manuscrito fue incluido en el *Index Librorum Prohibitorum*, una lista de publicaciones que la iglesia católica catalogó como libros perniciosos para la fe y que los católicos no estaban autorizados a leer. Una consecuencia de esto fue que la Steganographia de Trithemius no se tradujo a idiomas modernos hasta recientemente y no recibió el análisis histórico merecido. De hecho, todavía hoy es considerado por muchos un libro de espiritismo. *Steganographia* estuvo en el *Index Librorum Prohibitorum* hasta el 1900.
+A partir de este inocente pasatiempo, el abad alemán Johannes Trithemius (1462 - 1516) creó una completa disciplina que plasmó en su libro *Steganographia* [[Trithemius1499, Trithemius1499archive](/stego/references)] en el año 1499. Sin embargo, no lo hizo de una forma clara e instructiva, si no que ocultó sus conocimientos dentro de un texto en forma de tratado para la invocación de espíritus. Tal fue el éxito de Trithemius ocultando el objetivo real de su obra, que incluso hoy en día se debate si Trithemius fue un pionero en el arte de ocultar información o una especie de brujo renacentista. De hecho, en 1609 su manuscrito fue incluido en el *Index Librorum Prohibitorum*, una lista de publicaciones que la iglesia católica catalogó como libros perniciosos para la fe y que los católicos no estaban autorizados a leer. Una consecuencia de esto fue que la Steganographia de Trithemius no se tradujo a idiomas modernos hasta recientemente y no recibió el análisis histórico merecido. De hecho, todavía hoy es considerado por muchos un libro de espiritismo. *Steganographia* estuvo en el *Index Librorum Prohibitorum* hasta el 1900.
 
 
 <img style="width:50%;display:block;margin-left:auto;margin-right:auto" src='/stego/history/classic/img/steganographia.jpg'>
@@ -40,7 +40,7 @@ Cabe destacar que Johannes Trithemius es también autor de *Polygraphia* (1518),
 
 ### *Steganographia*
 
-El libro *Steganographia* consisten en tres volúmenes, aparentemente sobre magia, y más concretamente sobre el uso de espíritus para comunicarse a largas distancias. Sin embargo, desde la publicación, en 1606, de la clave de descifrado de los dos primeros volúmenes se sabe que en realidad se trata de un libro de criptografía (no usaremos la palabra esteganografía aquí, puesto que nació con el libro que nos ocupa). Hasta hace poco, se creía que el tercer volumen trataba únicamente aspectos mágicos, aunque finalmente se ha podido ver que contenían más contenido criptográfico: En 1996-7 Thomas Ernst y Jim Reeds [[Reeds1998](/stego/es/referencias)], de forma independiente, descodificaron el tercer volumen.
+El libro *Steganographia* consisten en tres volúmenes, aparentemente sobre magia, y más concretamente sobre el uso de espíritus para comunicarse a largas distancias. Sin embargo, desde la publicación, en 1606, de la clave de descifrado de los dos primeros volúmenes se sabe que en realidad se trata de un libro de criptografía (no usaremos la palabra esteganografía aquí, puesto que nació con el libro que nos ocupa). Hasta hace poco, se creía que el tercer volumen trataba únicamente aspectos mágicos, aunque finalmente se ha podido ver que contenían más contenido criptográfico: En 1996-7 Thomas Ernst y Jim Reeds [[Reeds1998](/stego/references)], de forma independiente, descodificaron el tercer volumen.
 
 
 
@@ -140,7 +140,7 @@ Que significa:
 > Ten cuidado las primeras letras de cada palabra le devuelven al lector el significado secreto.
 
 
-A continuación el libro nos presenta un texto, que no voy a reproducir aquí, del que podemos extraer un mensaje usando la primera letra de cada palabra. El lector interesado puede encontrar el texto completo en la edición digital [[Trithemius1499archive](/stego/es/referencias)].
+A continuación el libro nos presenta un texto, que no voy a reproducir aquí, del que podemos extraer un mensaje usando la primera letra de cada palabra. El lector interesado puede encontrar el texto completo en la edición digital [[Trithemius1499archive](/stego/references)].
 
 Cabe destacar que, tanto el mensaje introductorio, como el conjuro que debe realizar el receptor, contienen también un mensaje oculto similar. Lo dejamos como ejercicio para el lector que desee adentrarse en la esteganografía de Trithemius.
 
