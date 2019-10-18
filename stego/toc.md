@@ -5,7 +5,7 @@ subtitle: Índice de contenido
 ---
 
 ### Inicio de la esteganografía moderna
-- [El problema del prisionero](/stego/history/modern/es/problema-prisionero) (02/09/2019)
+- [El problema del prisionero](/stego/history/modern/es/problema-prisionero) (10/09/2019)
 
 ### Inserción de información en imágenes
 - [Concatenar ficheros](/stego/images/embed/es/concat) (29/09/2019)
@@ -14,8 +14,8 @@ subtitle: Índice de contenido
 - [Mapas de bits](/stego/images/embed/es/mapas-de-bits) (31/09/2019)
 
 ### Minimizando el impacto de la inserción
-- [Códigos binarios](/stego/images/impact/es/codigos-binarios) (02/09/2019)
-- [Códigos n-arios](/stego/images/impact/es/codigos-n-arios) (03/09/2009)
+- [Códigos binarios](/stego/images/impact/es/codigos-binarios) (02/10/2019)
+- [Códigos n-arios](/stego/images/impact/es/codigos-n-arios) (03/10/2009)
 
 
 
