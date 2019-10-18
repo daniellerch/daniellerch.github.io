@@ -4,7 +4,7 @@ title: Esteganografía clásica
 subtitle: La Steganographia de Johannes Trithemius
 comments: true
 image: stego/history/classic/img/steganographia.jpg
-noindex: true
+noindex: false
 ---
 
 Una de las formas más simples de esteganografía, para la que hay muchos ejemplos antiguos, son los textos acrósticos, en los que se usa la primera letra de cada frase para formar un texto oculto. 
@@ -40,12 +40,12 @@ Cabe destacar que Johannes Trithemius es también autor de *Polygraphia* (1518),
 
 ### *Steganographia*
 
-El libro *Steganographia* consisten en tres volúmenes, aparentemente sobre magia, y más concretamente sobre el uso de espíritus para comunicarse a largas distancias. Sin embargo, desde la publicación, en 1606, de la clave de descifrado de los dos primeros volúmenes se sabe que en realidad se trata de un libro de criptografía (no usaremos la palabra esteganografía aquí, puesto que nació con el libro que nos ocupa). Hasta hace poco, se creía que el tercer volumen trataba únicamente aspectos mágicos, aunque finalmente se ha podido ver que contenían más contenido criptográfico: En 1996-7 Thomas Ernst y Jim Reeds, de forma independiente, descodificaron el tercer volumen.
+El libro *Steganographia* consisten en tres volúmenes, aparentemente sobre magia, y más concretamente sobre el uso de espíritus para comunicarse a largas distancias. Sin embargo, desde la publicación, en 1606, de la clave de descifrado de los dos primeros volúmenes se sabe que en realidad se trata de un libro de criptografía (no usaremos la palabra esteganografía aquí, puesto que nació con el libro que nos ocupa). Hasta hace poco, se creía que el tercer volumen trataba únicamente aspectos mágicos, aunque finalmente se ha podido ver que contenían más contenido criptográfico: En 1996-7 Thomas Ernst y Jim Reeds [[Reeds1998](/stego/es/referencias)], de forma independiente, descodificaron el tercer volumen.
 
 
 
 
-### Volumen 1
+
 
 El primer capítulo del primer libro de *Steganographia* se titula "Operación y clave realizadas por el espíritu principal Parmesiel". En este capítulo se nos introduce al uso de espíritus para la realización de comunicaciones a distancia. Valga un trozo de texto del libro para ver a qué nos enfrentamos. Concretamente, el inicio del primer capítulo:
 
@@ -148,17 +148,6 @@ Cabe destacar que, tanto el mensaje introductorio, como el conjuro que debe real
 Llegados a este punto, y ya con una perspectiva del libro de Trithemius un poco más alejada de los espíritus y la magia, quizás podemos darle otro significado a sus palabras. De hecho, el texto está lleno de pistas que nos hablan de la seguridad del método propuesto, aunque siempre en referencia a los espíritus. Vemos, por ejemplo, que se habla del *peligro debido a la arrogancia y la rebelión* de operar con estos espíritus, o de que son *indignos de confianza*, que a menudo, *revelan infielmente a otros el secreto que les ha confiado*, o que *Los espíritus [...] gritarán de manera tal que, en general, los demás presentes también podrán percibir el secreto del remitente*, entre muchos otros. Ahora, parece obvio, que Trithemius nos alerta del peligro de ocultar un mensaje con este método (usando la primera letra de cada palabra), pues puede resultar bastante sencillo, para un tercero, descifrar nuestro mensaje oculto.
 
 
-
-
-### Volumen 2
-
-blah
-blah
-
-### Volumen 3
-
-blah
-blah
 
 
 

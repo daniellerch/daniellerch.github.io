@@ -4,6 +4,10 @@ title: Esteganografía
 subtitle: Índice de contenido
 ---
 
+
+### Esteganografía clásica
+- [La *Steganographia* de Johannes Trithemius](/stego/history/classic/es/trithemius) (18/09/2019)
+
 ### Inicio de la esteganografía moderna
 - [El problema del prisionero](/stego/history/modern/es/problema-prisionero) (10/09/2019)
 
