@@ -117,7 +117,7 @@ El primer capítulo del primer libro de *Steganographia* se titula "Operación y
 > secreto del remitente [...] 
 
 
-No cabe duda, que un lector despistado que se encuentre con este texto, va a tomarlo irremediablemente por un libro de magia, espiritismo, brujería o similar. Un libro orientado, como en él se explica,al uso del poder de los espíritus para comunicar mensajes de forma secreta. Uno puede entender como, en su momento, pudo ser prohibido por la iglesia. 
+No cabe duda, que un lector despistado que se encuentre con este texto, va a tomarlo irremediablemente por un libro de magia, espiritismo, brujería o similar. Un libro orientado, como en él se explica, al uso del poder de los espíritus para comunicar mensajes de forma secreta. Uno puede entender como, en su momento, pudo ser prohibido por la iglesia. 
 
 Sin embargo, como veremos a continuación, el libro de Trithemius contiene mucho más que conjuros y espíritus.
 

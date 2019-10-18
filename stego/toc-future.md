@@ -18,8 +18,6 @@ noindex: true
 - Primera guerra mundial
 - Segunda guerra mundial
 
-
-
 ### Inicio de la esteganografía moderna
 - [El problema del prisionero](/stego/history/modern/es/problema-prisionero)
 - Esteganografía en la era de la información
