@@ -66,7 +66,7 @@ noindex: true
 - Detección de inconsistencias en la clasificación.
 
 
-### Ataques a herramientas de esteganografía en imágenes
+### Estegoanálisis práctico
 - [Ataque a OpenPuff](/stego/images/attacks/es/openpuff)
 - [Ataque a OpenStego](/stego/images/attacks/es/openstego)
 - [Ataque a F5](/stego/images/attacks/es/f5)

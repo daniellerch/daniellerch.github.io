@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Ataques a herramientas de esteganografía en imágenes
+title: Estegoanálisis práctico
 subtitle: OpenStego
 comments: true
 hidden: false
