@@ -47,15 +47,29 @@ Channel 3:
 Existen dos técnicas principales para incrustar información en un mapa de bits: LSB *matching* y LSB *replacement*. La primera oculta información sumando o restando uno, mientras la segunda sustituye el bit menos significativo del píxel. La segunda es tremendamente insegura y puede ser explotada usando, entre otros, los ataques RS [[Fridrich2001](/stego/references)] y SPA [[Dumitrescu2003](/stego/references)].
 
 
+Si nos fijamos bien en las diferencias que nos muestra Aletheia, vemos que los valores impares modificados siempre decrecen, mientras que los valores pares siempre crecen. Esto es una consecuencia de la sustitución del bit menos significativo. Veamos algunos ejemplos de valores pares que crecen:
 
 
+```bash
+$ ./aletheia.py print-diffs lena.png stego.png
+(226, 227, 1) 
+(228, 229, 1)
+(226, 227, 1)
+(170, 171, 1)
+```
+
+Y algunos ejemplos de valores impares que decrecen:
+
+```bash
+(229, 228, -1)
+(231, 230, -1)
+(235, 234, -1)
+(203, 202, -1)
+```
 
 
-With a simple experiment we can see that the method used for embedding is LSB replacement. That is, the tool hides the bits of the message by replacing the least significant bit (LSB) of the pixel. 
+Vamos ahora a probar el ataque SPA a través de la herramienta Aletheia:
 
-As you can see in the results, when a pixel of the cover image is even the performed operation is +1 and when a pixel of the cover image is odd the performed operation is -1. This is what happens when the embedding operation is LSB replacement. This anomaly has been exploited by several attacks [[1, 2, 3](/doc/REFERENCES.md)].
-
-Let's try the SPA attack:
 
 ```bash
 $ ./aletheia.py spa stego.png 
@@ -63,11 +77,16 @@ Hidden data found in channel R 0.15
 Hidden data found in channel G 0.15
 Hidden data found in channel B 0.14
 ```
+Vemos que detectamos un *payload* aproximado del 15%, cercano al 12% usado.
 
-Obviously, with the original Lena image, the tool does not detect any hidden data:
+
+
+Lógicamente, si usamos la imagen Lena origina, Aletheia no encuentra información oculta:
 
 ```bash
 $ ./aletheia.py spa lena.png 
 No hidden data found
 ```
+
+
 
