@@ -1,16 +1,16 @@
 ---
 layout: page
 title: Estegoanálisis práctico
-subtitle: Ataque a OpenPuff (maps de bits)
+subtitle: Ataque a OpenPuff (mapas de bits)
 comments: true
 hidden: false
 ---
 
 
-[OpenPuff](https://embeddedsw.net/OpenPuff_Steganography_Home.html) es una herramienta propietaria para Windows que permite esconder información en archivos con diferentes formatos. Aunque en este caso nos ocuparemos de la inserción en imágenes de tipo *bitmap*. En el momento de escribir estas líneas la versión disponible es la v4.0.1.
+[OpenPuff](https://embeddedsw.net/OpenPuff_Steganography_Home.html) es una herramienta propietaria para Windows que permite esconder información en archivos de diferentes formatos. Aunque en este caso nos ocuparemos de la inserción en imágenes de tipo *bitmap*. En el momento de escribir estas líneas la versión disponible es la v4.0.1.
 
 
-La herramiento nos pregunta tres passwords diferentes, la imagen que queremos usar para ocultar la información (usaremos una imagen PNG) y el tamaño del *payload*. Para este último escogemos el mínimo, que es un 12%, con la intención de que el resultado sea el menos detectable que ofrece OpenPuff. Para el experimento hemous usado la imagen de [Lena](/stego/images/attacks/img/lena.png). 
+La herramienta nos pregunta tres passwords diferentes, la imagen que queremos usar para ocultar la información (usaremos una imagen PNG) y el tamaño del *payload*. Para este último escogemos el mínimo, que es un 12%, con la intención de que el resultado sea el menos detectable que ofrece OpenPuff. Para el experimento hemous usado la imagen de [Lena](/stego/images/attacks/img/lena.png). 
 
 
 Una vez guardada la imagen *stego* podemos proceder a su análisis. Dado que se trata de un algoritmo "secreto", necesitamos observar los cambios realizados en la imagen *stego* para saber cómo se oculta la información. En un escenario real, esto lo tendremos que hacer con una imagen propia, puesto que para la imagen que queremos estegoanalizar no disponemos de su versión original para comparar cambios.
