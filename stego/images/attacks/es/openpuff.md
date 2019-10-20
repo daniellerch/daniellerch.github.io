@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Estegoanálisis práctico
-subtitle: OpenPuff (maps de bits)
+subtitle: Ataque a OpenPuff (maps de bits)
 comments: true
 hidden: false
 ---

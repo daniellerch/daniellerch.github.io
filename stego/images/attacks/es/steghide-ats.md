@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Estegoanálisis práctico
-subtitle: Ataque a OpenStego
+subtitle: Ataque ATS a steghide
 comments: true
 hidden: false
 ---
