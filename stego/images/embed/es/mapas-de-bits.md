@@ -5,6 +5,7 @@ subtitle: Mapas de bits
 comments: true
 image: images/embed/img/f16.png
 hidden: false
+noindex: true
 ---
 
 Una forma común de representar la información de una imagen es el mapa de bits. El mapa de bits consiste en una matriz o tabla en la que cada elemento es un píxel. En las imágenes en escala de grises el valor del píxel suele ser un byte. En las imágenes en color (RGB) el valor del píxel suele representarse por tres bytes, la cantidad de rojo, la cantidad de verde y la cantidad de azul.

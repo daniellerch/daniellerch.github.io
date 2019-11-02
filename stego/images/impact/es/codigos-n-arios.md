@@ -4,6 +4,7 @@ title: Minimizando el impacto de la inserción
 subtitle: Códigos n-arios
 comments: true
 hidden: false
+noindex: true
 ---
 
 Teniendo en cuenta que, como hemos explicado en "[Inserción de información en imágenes: Mapas de bits](/stego/embed/es/mapas-de-bits)", las operaciones que realizaremos para ocultar información en los píxeles son de tipo $$\pm 1$$, podríamos decir que no estamos aprovechando al máximo este sistema de inserción. Si en lugar de reemplazar el bit menos significativo de cada píxel, optamos por realizar una operación $$\pm 1$$ estamos trabajando con tres posibles valores: +1, -1 y 0 (dejamos el píxel como estaba). Con lo que, en lugar de usar un [código binario](/stego/images/impact/es/codigos-binarios), podemos usar un código ternario.

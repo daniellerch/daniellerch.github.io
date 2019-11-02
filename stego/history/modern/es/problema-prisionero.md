@@ -5,6 +5,7 @@ subtitle: El problema del prisionero
 comments: true
 image: stego/history/modern/img/prisoner.png
 hidden: false
+noindex: true
 ---
 
 El problema del prisionero fue introducido por primera vez por G. J. Simmons en 1983 [[Simmons1983](/stego/es/referencias)] y cuenta la historia de Alice y Bob, dos prisioneros que planean escapar de prisión. Se les permite comunicarse, perso siempre bajo la atenta mirada de Eve, el guardián. Eve intentará encontrar cualquier tipo de comunicación oculta entre Alice y Bob, y si la encuentra, cortará su comunicación.

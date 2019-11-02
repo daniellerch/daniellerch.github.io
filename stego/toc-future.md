@@ -7,8 +7,6 @@ noindex: true
 
 
 
-
-
 ## Historia de la esteganografía
 
 ### Esteganografía clásica

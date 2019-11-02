@@ -5,6 +5,7 @@ subtitle: Dibujar texto con colores similares
 comments: true
 image: stego/images/embed/img/bender.gif
 hidden: false
+noindex: true
 ---
 
 

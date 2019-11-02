@@ -1,3 +1,7 @@
+---
+layout: page
+noindex: true
+---
 ### Referencias: 
 
 [Dumitrescu2003]. Detection of LSB steganography via sample pair analysis. S. Dumitrescu, X. Wu and Z. Wang. IEEE Transactions on Signal Processing, 51 (7), 1995-2007.

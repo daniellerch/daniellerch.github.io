@@ -5,6 +5,7 @@ subtitle: La Steganographia de Johannes Trithemius
 comments: true
 image: stego/history/classic/img/steganographia.jpg
 noindex: false
+noindex: true
 ---
 
 Una de las formas más simples de esteganografía, para la que hay muchos ejemplos antiguos, son los textos acrósticos, en los que se usa la primera letra de cada frase para formar un texto oculto. 

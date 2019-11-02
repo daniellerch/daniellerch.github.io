@@ -4,6 +4,7 @@ title: Estegoanálisis práctico
 subtitle: Ataque a OpenStego
 comments: true
 hidden: false
+noindex: true
 ---
 
 

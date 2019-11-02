@@ -4,6 +4,7 @@ title: Estegoanálisis práctico
 subtitle: Ataque a OpenPuff (mapas de bits)
 comments: true
 hidden: false
+noindex: true
 ---
 
 

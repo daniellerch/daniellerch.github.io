@@ -4,6 +4,7 @@ title: Minimizando el impacto de la inserción
 subtitle: Códigos binarios
 comments: true
 hidden: false
+noindex: true
 ---
 
 

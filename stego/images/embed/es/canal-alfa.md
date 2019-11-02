@@ -5,6 +5,7 @@ subtitle: Oculto en el canal alfa
 comments: true
 image: stego/images/embed/img/groot.gif
 hidden: false
+noindex: true
 ---
 
 

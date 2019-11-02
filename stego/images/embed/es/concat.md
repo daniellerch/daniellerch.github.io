@@ -5,6 +5,7 @@ subtitle: Concatenar ficheros
 comments: true
 image: stego/images/embed/img/groot.gif
 hidden: false
+noindex: true
 ---
 
 Algunos formatos de fichero permiten tener información concatenada al final sin que nada se rompa. Uno de esos formatos de fichero son las imágenes GIF. Por lo que si concatenamos, por ejemplo, un fichero en formato ZIP al final de un fichero en formato GIF, todo continuara funcionando de la forma habitual. Cualquier visor de imágenes nos mostrará la imagen GIF de la forma habitual.

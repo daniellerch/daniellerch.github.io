@@ -5,6 +5,7 @@ subtitle:  Naive techniques
 comments: true
 image: images/embed/img/groot.gif
 hidden: false
+noindex: true
 ---
 
 
