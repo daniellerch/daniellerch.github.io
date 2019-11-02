@@ -1,0 +1,298 @@
+<!doctype html>
+<!--[if lt IE 7 ]><html lang="en" class="no-js ie6"><![endif]-->
+<!--[if (gt IE 6)|!(IE)]><!--><html lang="en" class="no-js"><!--<![endif]-->
+
+<head>
+<meta charset="utf-8">
+<title>Daniel Lerch's Homepage</title>
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<meta name="description" content="Daniel lerch hostalot's Home Page" />
+<meta name="keywords" content="daniel lerch hostalot, steganography, steganalysis, covert channels" />
+<meta name="googlebot" content="index" />
+<meta name="robots" content="index, follow" />
+<meta name="robots" content="all" />
+<meta name="author" content="Daniel Lerch Hostalot">
+<script src="js/jquery-1.2.6.min.js"></script>
+<script src="js/jquery.airport-1.1.js"></script>
+
+<style type="text/css">
+body {
+   background-color:#000;
+   overflow: hidden;
+   color:#555;
+}
+
+a, a:hover, a:visited {
+   color:#aaa;
+   font-weight:900;
+   text-decoration:none;
+}
+
+.container{
+   padding-top: 2vw;
+   padding-left: 3.5vw;
+   font-size: 0px;
+   font-family: monospace;
+   text-transform: uppercase;
+}
+
+.container .word {
+   display: inline;
+   text-align: center;
+}
+
+.container .word .char {
+   font-size: 2.3vw;
+   display: inline;
+   padding-left: 2.5vw;
+}
+
+.highlight{
+  font-weight: bold;
+  color: orange;
+}
+
+
+</style>
+
+<body>
+
+   <div class='container'>
+
+      <p>
+         <div class='word' id="r1w1"></div>
+         <div class='word' id="r1w2"></div>
+      </p>
+      <p>
+         <div class='word' id="r2w1"></div>
+         <div class='word highlight' id="r2w2"></div>
+         <div class='word' id="r2w3"></div>
+         <div class='word highlight' id="r2w4"></div>
+         <div class='word' id="r2w5"></div>
+         <div class='word highlight' id="r2w6"></div>
+         <div class='word' id="r2w7"></div>
+      </p>
+       <p>  
+         <div class='word' id="r3w1"></div>
+         <div class='word' id="r3w2"></div>
+       </p>
+       <p>   
+         <div class='word' id="r4w1"></div>
+         <a href="https://www.linkedin.com/in/daniellerch" class="play" target="_blank"><div class='word' id="r4w2"></div></a>
+         <div class='word' id="r4w3"></div>
+         <div class='word' id="r4w4"></div>
+       </p>
+       <p>  
+         <div class='word' id="r5w1"></div>
+         <div class='word' id="r5w2"></div>
+       </p>
+       <p>
+         <div class='word' id="r6w1"></div>
+         <div class='word' id="r6w2"></div>
+         <a href="https://scholar.google.es/citations?user=5ggVkxMAAAAJ&hl=es" target="_blank"><div class='word' id="r6w3"></div></a>
+         <div class='word' id="r6w4"></div>
+       </p>
+       <p>  
+         <div class='word' id="r7w1"></div>
+         <div class='word' id="r7w2"></div>
+       </p>
+       <p>  
+         <div class='word' id="r8w1"></div>
+         <div class='word' id="r8w2"></div>
+       </p>
+       <p>  
+         <div class='word' id="r9w1"></div>
+         <a href="http://twitter.com/Daniel_Lerch" target="_blank"><div class='word' id="r9w2"></div></a>
+         <div class='word' id="r9w3"></div>
+         <div class='word' id="r9w4"></div>
+       </p>
+       <p>  
+         <div class='word' id="r10w1"></div>
+         <div class='word' id="r10w2"></div>
+       </p>
+       <p>  
+         <div class='word' id="r11w1"></div>
+         <a href="https://daniellerch.me/stego/toc" target="_blank"><div class='word' id="r11w2"></div></a>
+         <div class='word' id="r11w4"></div>
+         <a href="https://github.com/daniellerch" target="_blank"><div class='word' id="r11w3"></div></a>
+         <div class='word' id="r11w5"></div>
+       </p>
+       <p>  
+         <div class='word' id="r12w1"></div>
+         <div class='word' id="r12w2"></div>
+       </p>
+       <p>  
+         <div class='word' id="r13w1"></div>
+         <a href="http://github.com/daniellerch/aletheia/blob/master/README.md" target="_blank"><div class='word' id="r13w2"></div></a>
+         <div class='word' id="r13w3"></div>
+       </p>
+       <p>  
+         <div class='word' id="r14w1"></div>
+         <div class='word' id="r14w2"></div>
+         <div class='word' id="r14w3"></div>
+         <div class='word' id="r14w4"></div>
+       </p>
+       <p>
+         <div class='word' id="r15w1"></div>
+         <div class='word highlight' id="r15w2"></div>
+         <div class='word highlight' id="r15w3"></div>
+         <div class='word highlight' id="r15w4"></div>
+         <div class='word highlight' id="r15w5"></div>
+         <div class='word highlight' id="r15w6"></div>
+         <div class='word' id="r15w7"></div>
+       </p>
+       <p>  
+         <div class='word' id="r16w1"></div>
+         <div class='word' id="r16w2"></div>
+         <div class='word' id="r16w3"></div> 
+         <div class='word' id="r16w4"></div> 
+         <div class='word' id="r16w5"></div> 
+         <div class='word' id="r16w6"></div> 
+       </p>
+
+   </div>
+
+</body>
+</html>
+
+
+<script> 
+   $(document).ready(function(){  
+
+      $('#r1w1').airport(['orydn7eolg0pma']);
+      $('#r1w2').airport(['qtyfumblp']);
+
+      $('#r2w1').airport(['a']);
+      $('#r2w2').airport(['daniel']);
+      $('#r2w3').airport(['l']);
+      $('#r2w4').airport(['lerch']);
+      $('#r2w5').airport(['h']);
+      $('#r2w6').airport(['hostalot']);
+      $('#r2w7').airport(['s']);
+
+      $('#r3w1').airport(['s9dmgpnjdifjir']);
+      $('#r3w2').airport(['rtaaiicil']);
+
+      $('#r4w1').airport(['nr']);
+      $('#r4w2').airport(['linkedin']);
+      $('#r4w3').airport(['tdgo'])
+      $('#r4w4').airport(['opagsengi']);
+
+      $('#r5w1').airport(['udplhkirnvmbba']);
+      $('#r5w2').airport(['us77r2sji']);
+
+      $('#r6w1').airport(['photos']);
+      $('#r6w2').airport(['dss']);
+      $('#r6w3').airport(['publications']);
+      $('#r6w4').airport(['es']);
+
+      $('#r7w1').airport(['yktossdjfdjuie']);
+      $('#r7w2').airport(['ngneeirng']);
+
+      $('#r8w1').airport(['pa0poimrnzweol']);
+      $('#r8w2').airport(['fmhdslpgs']);
+
+      $('#r9w1').airport(['nfsdtr']);
+      $('#r9w2').airport(['twitter']);
+      $('#r9w3').airport(['c']);
+      $('#r9w4').airport(['odrsste00']);
+
+      $('#r10w1').airport(['ssad97shfkosgb']);
+      $('#r10w2').airport(['mkkduywgr']);
+
+      $('#r11w1').airport(['st']);
+      $('#r11w2').airport(['blog']);
+      $('#r11w4').airport(['stegodes']);
+      $('#r11w3').airport(['github']);
+      $('#r11w5').airport(['aes']);
+
+      $('#r12w1').airport(['nslyusxipinmrg']);
+      $('#r12w2').airport(['hid3tiolo']);
+
+      $('#r13w1').airport(['ori']);
+      $('#r13w2').airport(['aletheia']);
+      $('#r13w3').airport(['trapbdgrtehy']);
+
+      $('#r14w1').airport(['exrene']);
+      $('#r14w2').airport(['hduwl']);
+      $('#r14w3').airport(['bra']);
+      $('#r14w4').airport(['nodsledeo']);
+
+      $('#r15w1').airport(['act']);
+      $('#r15w2').airport(['dlerch']);
+      $('#r15w3').airport(['@']);
+      $('#r15w4').airport(['gmail']);
+      $('#r15w5').airport(['.']);
+      $('#r15w6').airport(['com']);
+      $('#r15w7').airport(['eyrx']);
+
+      $('#r16w1').airport(['m']);
+      $('#r16w2').airport(['vo']);
+      $('#r16w3').airport(['mgalix']);
+      $('#r16w4').airport(['ocm']);
+      $('#r16w5').airport(['si']);
+      $('#r16w6').airport(['9rmitdurs']);
+
+
+
+      var g_mouseover = false;
+      function blink_on(search, color){
+         if(!g_mouseover){
+            //$('.word').css('font-weight', 'normal');
+            $('.word').css('color', '#555');
+            $(search).css('color', color);
+            $(search).css('font-weight', '900');
+         }
+      }
+
+      function blink_off(search){
+         if(!g_mouseover){
+            //$('.word').css('font-weight', '');
+            $('.word').css('color', '');
+            $(search).css('color', '');
+            $(search).css('font-weight', '');
+         }
+      }
+
+      function blink(search, color){
+         blink_on(search, color);
+         setTimeout(function(){
+            blink_off(search);
+         }, 500);
+      }
+
+      function init_span(search, color){
+         $(search).mouseover(function(){
+            blink_on(search, color);
+            g_mouseover=true;
+         });
+
+         $(search).mouseout(function(){
+            $('.container').css('color', '');
+            g_mouseover=false;
+            blink_off(search);
+         });
+      }
+
+
+      var is_mobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+      if(!is_mobile){
+         init_span('#r4w2', '#52ac45'); // linkedin
+         init_span('#r6w3', '#52ac45'); // publications
+         init_span('#r9w2', '#52ac45'); // twitter
+         init_span('#r11w2', '#52ac45'); // blog
+         init_span('#r11w3', '#52ac45'); // github
+         init_span('#r13w2', '#52ac45'); // github
+      }
+
+      $('#r6w1').click(function(){
+         window.open("https://daniellerch.me/p/photos", "_blank");
+      });
+      
+   });
+
+
+</script>
+
+
+
