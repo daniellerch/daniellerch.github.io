@@ -4,7 +4,7 @@ title: Daniel Lerch
 subtitle: Investigador en esteganografía y estegoanálisis
 ---
 
-¡Hola!, me llamo Daniel Lerch y soy un apasionado de la esteganografía y el estegoanálisis. Por ello, desde que terminé el doctorado colaboro con el grupo de investigación KISON (K-riptography and Information Security for Open Networks), de la [Universitat Oberta de Catalunya](https://www.uoc.edu/), en la investigación en estas áreas. Puedes acceder a mis publicaciones científicas a través de [Google Scholar](https://scholar.google.es/citations?user=5ggVkxMAAAAJ&hl=es).
+Me llamo Daniel Lerch y soy investigador en esteganografía y el estegoanálisis. Por ello, desde que terminé el doctorado colaboro con el grupo de investigación KISON (K-riptography and Information Security for Open Networks), de la [Universitat Oberta de Catalunya](https://www.uoc.edu/), en la investigación en estas áreas. Puedes acceder a mis publicaciones científicas a través de [Google Scholar](https://scholar.google.es/citations?user=5ggVkxMAAAAJ&hl=es).
 
 Tambien pertenezco al grupo [CUING](https://cuing.org/) (Criminal Use of Information Hiding Initiative), creado en cooperación con el Europol European Cybercrime Centre (EC3). Con el que he participado como revisor de los trabajos enviados a las conferencias del [2018](https://2018.ares-conference.eu/workshops/cuing-2018/index.html) y del [2019](https://www.ares-conference.eu/workshops/cuing-2019/).
 
