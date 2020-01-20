@@ -5,13 +5,14 @@ noindex: true
 ---
 
 
-### Description:
+### Description: 
 Query for k-nearest neighbors, neighbors within a given radius, etc.
 
-References:
+### References:
 - [https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KDTree.html](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KDTree.html)
 
 
+<br/>
 ### Code:
 ```python
 import numpy as np 
@@ -32,6 +33,7 @@ print(len(indices[0]), "neighbors within distance", radius)
 ```
 
 
+<br/>
 ### Output:
 ```bash
 distances: [[ 0.         16.0970999  16.99995447 18.40100218 18.73017253]]
