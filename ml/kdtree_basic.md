@@ -5,9 +5,11 @@ noindex: true
 ---
 
 
-**Description:** Query for k-nearest neighbors, neighbors within a given radius, etc.
+### Description:
+Query for k-nearest neighbors, neighbors within a given radius, etc.
 
-**Reference:** [https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KDTree.html](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KDTree.html)
+References:
+- [https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KDTree.html](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KDTree.html)
 
 
 ### Code:
