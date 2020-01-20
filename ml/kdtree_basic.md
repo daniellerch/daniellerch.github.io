@@ -1,6 +1,6 @@
 ---
 layout: page
-title: KDTree basic example
+title: Query for (cached) nearest neighbors,
 noindex: true
 ---
 

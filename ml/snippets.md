@@ -5,5 +5,5 @@ noindex: true
 ---
 
 
-- [KDTree basic example](/ml/kdtree_basic)
+- [Query for (cached) nearest neighbors](/ml/kdtree_basic)
 
