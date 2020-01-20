@@ -19,3 +19,10 @@ distances, indices = kdt.query(X[0:1], k=5)
 print("distances:", distances) 
 print("indices:", indices) 
 ```
+
+
+```bash
+distances: [[ 0.         16.0970999  16.99995447 18.40100218 18.73017253]]
+indices: [[  0 241  62  81  60]]
+```
+
