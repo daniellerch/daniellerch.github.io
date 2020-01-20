@@ -6,7 +6,7 @@ noindex: true
  
  
 ### Description: 
-- Clustering using a custom distance. It uses ```pairwise_distances()``` to prepare the distance matrix.
+- Clustering using a custom distance. It uses ```pairwise_distances()``` to build the distance matrix.
  
 ### References: 
 - [sklearn.cluster.DBSCAN](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.DBSCAN.html) 
