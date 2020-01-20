@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Query for (cached) nearest neighbors,
+title: Query for (cached) nearest neighbors
 noindex: true
 ---
 
