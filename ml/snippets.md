@@ -1,8 +1,9 @@
 ---
 layout: page
-noindex: true
+title: Machine Learning Snippets
+noindex: false
 ---
-### Machine Learning Snippets: 
+
 
 XXX
 
