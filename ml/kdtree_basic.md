@@ -5,6 +5,10 @@ noindex: true
 ---
 
 
+**Description:** Query for k-nearest neighbors, neighbors within a given radius, etc.
+**Reference:** [https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KDTree.html]
+               (https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KDTree.html)
+
 
 ```python
 import numpy as np 
@@ -18,11 +22,16 @@ distances, indices = kdt.query(X[0:1], k=5)
  
 print("distances:", distances) 
 print("indices:", indices) 
+
+radius = 50
+indices = kdt.query_radius(X[:1], r=radius)
+print(len(indices[0]), "neighbors within distance", radius)
 ```
 
 
 ```bash
 distances: [[ 0.         16.0970999  16.99995447 18.40100218 18.73017253]]
 indices: [[  0 241  62  81  60]]
+139 neighbors within distance 50
 ```
 
