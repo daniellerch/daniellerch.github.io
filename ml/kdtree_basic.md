@@ -10,6 +10,7 @@ noindex: true
                (https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KDTree.html)
 
 
+### Code:
 ```python
 import numpy as np 
 from sklearn.neighbors import KDTree 
@@ -29,6 +30,7 @@ print(len(indices[0]), "neighbors within distance", radius)
 ```
 
 
+### Output:
 ```bash
 distances: [[ 0.         16.0970999  16.99995447 18.40100218 18.73017253]]
 indices: [[  0 241  62  81  60]]
