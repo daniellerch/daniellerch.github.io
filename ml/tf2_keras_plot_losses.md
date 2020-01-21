@@ -16,7 +16,7 @@ noindex: true
 ### Code:
 ```python
 import numpy as np
-import matplotlib.pyplot as plt 
+import matplotlib.pyplot as plt
 from tensorflow.keras import models
 from tensorflow.keras import losses
 from tensorflow.keras import layers
@@ -67,15 +67,15 @@ score = model.evaluate(X_valid, Y_valid, verbose=0)
 
 print('Accuracy:', score[1])
 
-# Plot training & validation loss values                                                                                 
-plt.plot(history.history['loss'])                                                                                        
-plt.plot(history.history['val_loss'])                                                                                    
-plt.title('Model loss')                                                                                                  
-plt.ylabel('Loss')                                                                                                       
-plt.xlabel('Epoch')                                                                                                      
-plt.legend(['Train', 'Test'], loc='upper left')                                                                          
-#plt.savefig('losses.png')                                                                                                
-plt.show()  
+# Plot training & validation loss values
+plt.plot(history.history['loss'])
+plt.plot(history.history['val_loss'])
+plt.title('Model loss')
+plt.ylabel('Loss')
+plt.xlabel('Epoch')
+plt.legend(['Train', 'Test'], loc='upper left')
+#plt.savefig('losses.png')
+plt.show()
 ```
 
 
