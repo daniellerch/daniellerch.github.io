@@ -1,29 +1,61 @@
 ---
 layout: page
-title: TF2/Keras using multiple GPUs
+title: TF2/Keras callbacks.
 noindex: true
 ---
 
 
 ### Description:
-- Implementation of a basic Convolutional Neural Network using TensorFlow 2 / Keras using multiple GPUs.
+- Implementation of a basic Convolutional Neural Network using TensorFlow 2 / Keras using callbacks for early stopping, model checkpoint and TensorBoard.
 
 ### References:
 - [TF2/Keras](https://www.tensorflow.org/api_docs/python/tf/keras)
-- [distribute.MirroredStrategy](https://www.tensorflow.org/api_docs/python/tf/distribute/MirroredStrategy)
+- [TF2/Keras Callbacks](https://www.tensorflow.org/api_docs/python/tf/keras/callbacks)
+- [TensorBoard](https://www.tensorflow.org/tensorboard)
 
 
 <br/>
 ### Code:
 ```python
 import numpy as np
-from tensorflow import distribute
+import datetime
 from tensorflow.keras import models
 from tensorflow.keras import losses
 from tensorflow.keras import layers
 from tensorflow.keras import utils
 from tensorflow.keras import optimizers
+from tensorflow.keras import callbacks
 from tensorflow.keras.datasets import mnist
+
+
+cb_checkpoint = callbacks.ModelCheckpoint(
+    'mymodel-{epoch:03d}-{accuracy:.4f}-{val_accuracy:.4f}.h5',
+    save_best_only=True,
+    monitor='val_accuracy',
+    mode='max'
+)
+
+cb_earlystopping = callbacks.EarlyStopping(
+    monitor='val_accuracy',
+    mode='max',
+    verbose=1,
+    patience=100
+)
+
+cb_tensorboard = callbacks.TensorBoard(
+    log_dir="tensorboard/"+datetime.datetime.now().strftime("%Y%m%d-%H%M%S"),
+    update_freq = 'epoch',
+    write_graph = True,
+    write_images = True,
+    histogram_freq=1
+)
+
+callbacks = [
+    cb_checkpoint,
+    cb_earlystopping,
+    cb_tensorboard
+]
+
 
 batch_size = 128
 num_classes = 10
@@ -56,19 +88,18 @@ X_valid = X_valid[:,:,:,np.newaxis]
 Y_train = utils.to_categorical(y_train, num_classes)
 Y_valid = utils.to_categorical(y_valid, num_classes)
 
-strategy = distribute.MirroredStrategy()
-with strategy.scope(): 
-   model = create_model()
-   model.compile(loss=losses.categorical_crossentropy,
-                 optimizer=optimizers.Adam(),
-                 metrics=['accuracy'])
+model = create_model()
+model.compile(loss=losses.categorical_crossentropy,
+              optimizer=optimizers.Adam(),
+              metrics=['accuracy'])
 
-   history = model.fit(X_train, Y_train, batch_size=batch_size,
-                       epochs=epochs, verbose=1,
-                       validation_data=(X_valid, Y_valid))
-   score = model.evaluate(X_valid, Y_valid, verbose=0)
+history = model.fit(X_train, Y_train, batch_size=batch_size,
+                    epochs=epochs, verbose=1,
+						  callbacks=callbacks,
+                    validation_data=(X_valid, Y_valid))
+score = model.evaluate(X_valid, Y_valid, verbose=0)
 
-   print('Accuracy:', score[1])
+print('Accuracy:', score[1])
 ```
 
 
