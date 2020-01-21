@@ -6,7 +6,7 @@ noindex: true
 
 
 ### Description:
-- Implementation of a basic Convolutional Neural Network using TensorFlow 2 / Keras using multiple GPUs.
+- Strategies in TensorFlow 2 / Keras for multiple GPUs.
 
 ### References:
 - [TF2/Keras](https://www.tensorflow.org/api_docs/python/tf/keras)

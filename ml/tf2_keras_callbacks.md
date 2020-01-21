@@ -6,7 +6,7 @@ noindex: true
 
 
 ### Description:
-- Implementation of a basic Convolutional Neural Network using TensorFlow 2 / Keras using callbacks for early stopping, model checkpoint and TensorBoard.
+- Usage of callbacks with TensorFlow 2 / Keras. Examples of early stopping, model checkpoint and TensorBoard.
 
 ### References:
 - [TF2/Keras](https://www.tensorflow.org/api_docs/python/tf/keras)
@@ -95,7 +95,7 @@ model.compile(loss=losses.categorical_crossentropy,
 
 history = model.fit(X_train, Y_train, batch_size=batch_size,
                     epochs=epochs, verbose=1,
-						  callbacks=callbacks,
+                    callbacks=callbacks,
                     validation_data=(X_valid, Y_valid))
 score = model.evaluate(X_valid, Y_valid, verbose=0)
 
