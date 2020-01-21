@@ -1,38 +1,41 @@
 --- 
 layout: page 
-title: DBSCAN clustering using a custom distance function
+title: DBSCAN clustering using a distance matrix
 noindex: true 
 --- 
  
  
 ### Description: 
-- Clustering using a custom distance.
+- Clustering using a distance matrix. It uses ```pairwise_distances()``` to build the distance matrix.
  
 ### References: 
 - [sklearn.cluster.DBSCAN](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.DBSCAN.html) 
+- [sklearn.metrics.pairwise_distances](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise_distances.html) 
  
  
 <br/> 
 ### Code: 
 ```python 
-import numpy as np
-from sklearn.cluster import DBSCAN
-from sklearn.datasets import load_boston
-
-
-def custom_distance(a, b):
+import numpy as np 
+from scipy import sparse 
+from sklearn.cluster import DBSCAN 
+from sklearn.datasets import load_boston 
+from sklearn.metrics import pairwise_distances 
+ 
+ 
+def custom_distance(a, b): 
     # TODO: implement custom distance 
-    d = np.linalg.norm(a-b)
-    return d
-
-
-X, y = load_boston(return_X_y=True)
-
-dbs = DBSCAN(eps=3, min_samples=2, metric=custom_distance)
-clusters = dbs.fit(X)
-
-print(dbs.labels_)
-~                   
+    d = np.linalg.norm(a-b) 
+    return d 
+ 
+ 
+X, y = load_boston(return_X_y=True) 
+ 
+distance_matrix = pairwise_distances(X, X, metric=custom_distance) 
+dbs = DBSCAN(eps=3, min_samples=2, metric='precomputed') 
+clusters = dbs.fit(sparse.csr_matrix(distance_matrix)) 
+ 
+print(dbs.labels_) 
  
 ``` 
  

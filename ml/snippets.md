@@ -6,5 +6,6 @@ noindex: true
 
 
 - [Query for (cached) nearest neighbors](/ml/kdtree_basic)
-- [DBSCAN clustering with custom distance](/ml/dbscan_custom_distance)
+- [DBSCAN clustering using a distance matrix](/ml/dbscan_distance_matrix)
+- [DBSCAN clustering using a custom distance function](/ml/dbscan_custom_distance)
 
