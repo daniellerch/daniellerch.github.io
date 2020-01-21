@@ -1,16 +1,16 @@
 ---
 layout: page
-title: TF2/Keras basic Convolutional Neural Network
+title: TF2/Keras plot losses from history
 noindex: true
 ---
 
 
 ### Description:
-- Implementation of a basic Convolutional Neural Network using TensorFlow 2 / Keras.
+- Implementation of a basic Convolutional Neural Network using TensorFlow 2 / Keras with a plot of the losses using Matplotlib.
 
 ### References:
 - [TF2/Keras](https://www.tensorflow.org/api_docs/python/tf/keras)
-
+- [Matplotlib](https://matplotlib.org/)
 
 <br/>
 ### Code:
