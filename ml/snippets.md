@@ -13,7 +13,7 @@ noindex: true
 
 
 
-### Unupervised Learning
+### Unsupervised Learning
 - [Sklearn: Query for (cached) nearest neighbors](/ml/sklearn_kdtree_basic)
 - [Sklearn: DBSCAN clustering using a distance matrix](/ml/sklearn_dbscan_distance_matrix)
 - [Sklearn: DBSCAN clustering using a custom distance function](/sklearn_ml/dbscan_custom_distance)
