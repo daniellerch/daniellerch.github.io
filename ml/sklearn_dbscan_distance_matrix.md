@@ -1,6 +1,6 @@
 --- 
 layout: page 
-title: Sklearn: DBSCAN clustering using a distance matrix
+title: Sklearn DBSCAN clustering using a distance matrix
 noindex: true 
 --- 
  
