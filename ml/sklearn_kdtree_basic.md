@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Sklearn\: query for (cached) nearest neighbors
+title: "Sklearn: query for (cached) nearest neighbors"
 noindex: true
 ---
 
