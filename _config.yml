@@ -21,6 +21,7 @@ description: daniellerch.me
 # List of links in the navigation bar
 navbar-links:
    Home: "https://daniellerch.me"
+   ML-Snippets: "ml/snippets"
    Blog: "stego/toc"
 #   Acerca de: "p/about"
 #  Resources:
