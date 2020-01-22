@@ -1,6 +1,6 @@
 ---
 layout: page
-title: TF2/Keras: plot losses from history
+title: "TF2/Keras: plot losses from history"
 noindex: true
 ---
 

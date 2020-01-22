@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Sklearn: K-Fold Cross Validation
+title: "Sklearn: K-Fold Cross Validation"
 noindex: true
 ---
 

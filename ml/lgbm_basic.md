@@ -1,6 +1,6 @@
 ---
 layout: page
-title: LightGBM basic example using Sklearn API
+title: "LightGBM: basic example using Sklearn API"
 noindex: true
 ---
 
