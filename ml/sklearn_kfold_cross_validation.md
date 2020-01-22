@@ -27,7 +27,8 @@ seed = 42
 
 def cross_val_estimators(base_estimator, X, y, cv=5, random_state=None):
     estimators = []
-    folds = model_selection.KFold(n_splits=cv, shuffle=True, random_state=random_state)
+    folds = model_selection.KFold(n_splits=cv, shuffle=True, 
+                                  random_state=random_state)
     oof = np.zeros(X.shape[0])
     for n_fold, (train_idx, valid_idx) in enumerate(folds.split(X, y)):
         train_x, train_y = X[train_idx], y[train_idx]
@@ -54,8 +55,10 @@ print(X_train.shape, X_test.shape)
 
 
 clf = ensemble.RandomForestClassifier(n_estimators=10, random_state=seed)
-estimators, oof = cross_val_estimators(clf, X_train, y_train, 5, random_state=seed)
-print("Cross validation accuracy:", metrics.accuracy_score(y_train, np.round(oof)))
+estimators, oof = cross_val_estimators(clf, X_train, y_train, 5, 
+                                       random_state=seed)
+print("Cross validation accuracy:", 
+      metrics.accuracy_score(y_train, np.round(oof)))
 
 pred = predict(estimators, X_test)
 print("Test accuracy:", metrics.accuracy_score(y_test, np.round(pred)))
