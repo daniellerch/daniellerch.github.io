@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Machine Learning Snippets
+title: Machine Learning Code Snippets
 noindex: true
 ---
 
