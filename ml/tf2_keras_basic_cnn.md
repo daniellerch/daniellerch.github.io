@@ -1,6 +1,6 @@
 ---
 layout: page
-title: TF2/Keras basic Convolutional Neural Network
+title: TF2/Keras: basic Convolutional Neural Network
 noindex: true
 ---
 

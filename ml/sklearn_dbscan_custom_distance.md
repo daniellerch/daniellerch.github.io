@@ -1,6 +1,6 @@
 --- 
 layout: page 
-title: DBSCAN clustering using a custom distance function
+title: Sklearn: DBSCAN clustering using a custom distance function
 noindex: true 
 --- 
  

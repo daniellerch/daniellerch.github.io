@@ -1,6 +1,6 @@
 ---
 layout: page
-title: TF2/Keras using multiple GPUs
+title: TF2/Keras: using multiple GPUs
 noindex: true
 ---
 
