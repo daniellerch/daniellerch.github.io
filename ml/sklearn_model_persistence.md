@@ -17,7 +17,6 @@ noindex: true
 <br/>
 ### Code:
 ```python
-
 import numpy as np
 import joblib
 from sklearn import metrics
