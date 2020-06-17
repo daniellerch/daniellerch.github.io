@@ -11,5 +11,8 @@ noindex: true
 
 ### The JPEG Standard
 
+<!-- {{{ This is a comment -->
+
+<!-- }}} -->
 
 ### F5 Algorithm
