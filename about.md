@@ -13,40 +13,48 @@ Daniel Lerch holds a BSc degree in Computer Science, a MSc degree in Free and Op
 Daniel Lerch is the founder of <a href='http://neuron4.com'>Neuron4 Tech</a>, a company dedicated to developing innovative products powered by Artificial Intelligence. He is also associate professor of cryptography at the <a href="https://uoc.edu">Universitat Oberta de Catalunya</a> (UOC).
 
 ### Social / Contact
-      <ul>
-         <li><a href="javascript:location='mailto:\u0064\u006c\u0065\u0072\u0063\u0068\u0040\u0067\u006d\u0061\u0069\u006c\u002e\u0063\u006f\u006d';void 0"><script type="text/javascript">document.write('\u0064\u006c\u0065\u0072\u0063\u0068\u0040\u0067\u006d\u0061\u0069\u006c\u002e\u0063\u006f\u006d')</script></a></li>
-         <li><a href="https://es.linkedin.com/in/daniellerch">LinkedIn</a></li>
-         <li><a href="http://twitter.com/Daniel_Lerch">Twitter</a></li>
-         <li><a href='https://github.com/daniellerch'>Github Page</a></li>
-         <li><a href='https://scholar.google.es/citations?user=5ggVkxMAAAAJ&hl=es'>Google Scholar</a></li>
-      </ul>
+- <a href="javascript:location='mailto:\u0064\u006c\u0065\u0072\u0063\u0068\u0040\u0067\u006d\u0061\u0069\u006c\u002e\u0063\u006f\u006d';void 0"><script type="text/javascript">document.write('\u0064\u006c\u0065\u0072\u0063\u0068\u0040\u0067\u006d\u0061\u0069\u006c\u002e\u0063\u006f\u006d')</script></a>
+- <a href="https://es.linkedin.com/in/daniellerch">LinkedIn</a>
+- <a href="http://twitter.com/Daniel_Lerch">Twitter</a>
+- <a href='https://github.com/daniellerch'>Github Page</a>
+- <a href='https://scholar.google.es/citations?user=5ggVkxMAAAAJ&hl=es'>Google Scholar</a>
 
 ### Tools
-      <ul>
-         <li><a href='https://github.com/daniellerch/aletheia'>Aletheia</a>:
-             Image steganalysis using state-of-the-art machine learning techniques </li>
-         <li><a href='https://github.com/daniellerch/stego-retweet'>Stego-retweet</a>:
-             Steganography in Twitter using retweets</li>
-         <li><a href='https://github.com/daniellerch/python-jpeg-toolbox'>python-jpeg-toolbox</a>:
-             The JPEG Toolbox for Python</li>
-      </ul>
+<a href='https://github.com/daniellerch/aletheia'>Aletheia</a>:
+Image steganalysis using state-of-the-art machine learning techniques
+<a href='https://github.com/daniellerch/stego-retweet'>Stego-retweet</a>:
+Steganography in Twitter using retweets
+<a href='https://github.com/daniellerch/python-jpeg-toolbox'>python-jpeg-toolbox:
+             The JPEG Toolbox for Python
+
 
 ### Publications
-      <ul>
-         <li>Detection of Classifier Inconsistencies in Image Steganalysis. July 2019. Proceedings of the ACM Workshop on Information Hiding and Multimedia Security. [<a href='https://github.com/daniellerch/papers/raw/master/dlerch2019.pdf'>pdf</a>] [<a href='https://github.com/daniellerch/papers/raw/master/dlerch2019_slides.pdf'>slides</a>].</li>
-         <li>Diagnóstico de CSM en estegoanálisis. Octubre 2018. Reunión Española de Criptografía y Seguridad XV [<a href="https://github.com/daniellerch/papers/raw/master/dlerch2018.pdf">pdf</a>] [<a href="https://github.com/daniellerch/papers/raw/master/dlerch2018.pdf">slides</a>].</li>
-         <li>Manifold alignment approach to cover source mismatch in steganalysis. October 2016. Reunión Española de Criptografía y Seguridad XIV [<a href="https://github.com/daniellerch/papers/raw/master/dlerch2016ma.pdf">pdf</a>] [<a href="https://github.com/daniellerch/papers/raw/master/dlerch2016ma_slides.pdf">slides</a>] [<a href="https://github.com/daniellerch/papers_code">code</a>].</li>
-         <li>Unsupervised steganalysis based on artificial training sets. UOC Research Week 2016,18 April 2016. [<a href="https://github.com/daniellerch/papers/raw/master/dlerch_UOCRW2016_showcase.pdf">slides</a>].</li>
-         <li>Unsupervised steganalysis based on artificial training sets, with Megías. D.Engineering Applications of Artificial Intelligence, April 2016. [<a href="http://www.sciencedirect.com/science/article/pii/S0952197616000026">10.1016/j.engappai.2015.12.013</a>] [<a href="https://arxiv.org/abs/1703.00796">arxiv</a>] [<a href="https://github.com/daniellerch/papers_code">code</a>].</li>
-         <li>Esteganografía en zonas ruidosas de la imagen, con David Megías. Septiembre 2014. Reunión Española de Criptografía y Seguridad XIII [<a href="https://github.com/daniellerch/papers/raw/master/dlerch2014.pdf">pdf</a>] [<a href="https://github.com/daniellerch/papers/raw/master/dlerchRECSI2014_slides.pdf">slides</a>].</li>
-         <li>Esteganografía y Estegoanálisis, con Jordi Serra y la colaboración de Alfonso Muñoz. Mayo 2014. Editorial 0xWord, ISBN: 978-84-617-0021-9 [<a href="http://0xword.com/es/libros/64-esteganografia-y-estegoanalisis.html">0xWord</a>].</li>
-         <li>LSB Matching Steganalysis Based on Patterns of Pixel Differences and Random Embedding, with Megías. D. Computers & Security, February 2013 [<a href="http://dx.doi.org/10.1016/j.cose.2012.11.005">10.1016/j.cose.2012.11.005</a>] [<a href="https://arxiv.org/abs/1703.00817">arxiv</a>] [<a href="https://github.com/daniellerch/papers_code">code</a>].</li>
-         <li>Steganalytic Methods for the Detection of Histogram Shifting Data Hiding Schemes, with Megías. D. In: Actas de la XII Reunión Española sobre Criptología y Seguridad de la Información (RECSI 2012). Pag. 381-386. ISBN. 978-84-615-9933-2 [<a href="https://github.com/daniellerch/papers/raw/master/dlerch2012hs.pdf">pdf</a>] [<a href="https://github.com/daniellerch/papers/raw/master/dlerch2012hs_press.pdf">slides</a>].</li>
-         <li>Steganalytic methods for the detection of histogram shifting data-hiding schemes. Jun. 2011. Master Thesis (UOC) [<a href="http://hdl.handle.net/10609/8159">pdf</a>].</li>
-         <li>Criptografía de curva Elíptica, Ataque Rho de Pollard. Jun. 2007. Hakin9 Magazine [<a href="https://github.com/daniellerch/papers/raw/master/dlh2007_hakin9_ec_es.pdf">pdf</a>].</li>
-         <li>Factorization Attack to RSA. Mar. 2007. Hakin9 Magazine [<a href="https://github.com/daniellerch/papers/raw/master/dlh2007_hakin9_rsa_en.pdf">english</a>] [<a href="https://github.com/daniellerch/papers/raw/master/dlh2006_hakin9_rsa_es.pdf">spanish</a>] [<a href="https://github.com/daniellerch/papers/raw/master/dlh2007_hakin9_rsa_fr.pdf">french</a>].</li>
-      </ul>
-      <br>
+
+Detection of Classifier Inconsistencies in Image Steganalysis. July 2019. Proceedings of the ACM Workshop on Information Hiding and Multimedia Security. [<a href='https://github.com/daniellerch/papers/raw/master/dlerch2019.pdf'>pdf</a>] [<a href='https://github.com/daniellerch/papers/raw/master/dlerch2019_slides.pdf'>slides</a>].
+
+Diagnóstico de CSM en estegoanálisis. Octubre 2018. Reunión Española de Criptografía y Seguridad XV [<a href="https://github.com/daniellerch/papers/raw/master/dlerch2018.pdf">pdf</a>] [<a href="https://github.com/daniellerch/papers/raw/master/dlerch2018.pdf">slides</a>].
+
+Manifold alignment approach to cover source mismatch in steganalysis. October 2016. Reunión Española de Criptografía y Seguridad XIV [<a href="https://github.com/daniellerch/papers/raw/master/dlerch2016ma.pdf">pdf</a>] [<a href="https://github.com/daniellerch/papers/raw/master/dlerch2016ma_slides.pdf">slides</a>] [<a href="https://github.com/daniellerch/papers_code">code</a>].
+
+Unsupervised steganalysis based on artificial training sets. UOC Research Week 2016,18 April 2016. [<a href="https://github.com/daniellerch/papers/raw/master/dlerch_UOCRW2016_showcase.pdf">slides</a>].
+
+Unsupervised steganalysis based on artificial training sets, with Megías. D.Engineering Applications of Artificial Intelligence, April 2016. [<a href="http://www.sciencedirect.com/science/article/pii/S0952197616000026">10.1016/j.engappai.2015.12.013</a>] [<a href="https://arxiv.org/abs/1703.00796">arxiv</a>] [<a href="https://github.com/daniellerch/papers_code">code</a>].
+
+Esteganografía en zonas ruidosas de la imagen, con David Megías. Septiembre 2014. Reunión Española de Criptografía y Seguridad XIII [<a href="https://github.com/daniellerch/papers/raw/master/dlerch2014.pdf">pdf</a>] [<a href="https://github.com/daniellerch/papers/raw/master/dlerchRECSI2014_slides.pdf">slides</a>].
+
+Esteganografía y Estegoanálisis, con Jordi Serra y la colaboración de Alfonso Muñoz. Mayo 2014. Editorial 0xWord, ISBN: 978-84-617-0021-9 [<a href="http://0xword.com/es/libros/64-esteganografia-y-estegoanalisis.html">0xWord</a>].
+
+LSB Matching Steganalysis Based on Patterns of Pixel Differences and Random Embedding, with Megías. D. Computers & Security, February 2013 [<a href="http://dx.doi.org/10.1016/j.cose.2012.11.005">10.1016/j.cose.2012.11.005</a>] [<a href="https://arxiv.org/abs/1703.00817">arxiv</a>] [<a href="https://github.com/daniellerch/papers_code">code</a>].
+
+Steganalytic Methods for the Detection of Histogram Shifting Data Hiding Schemes, with Megías. D. In: Actas de la XII Reunión Española sobre Criptología y Seguridad de la Información (RECSI 2012). Pag. 381-386. ISBN. 978-84-615-9933-2 [<a href="https://github.com/daniellerch/papers/raw/master/dlerch2012hs.pdf">pdf</a>] [<a href="https://github.com/daniellerch/papers/raw/master/dlerch2012hs_press.pdf">slides</a>].
+
+Steganalytic methods for the detection of histogram shifting data-hiding schemes. Jun. 2011. Master Thesis (UOC) [<a href="http://hdl.handle.net/10609/8159">pdf</a>].</li>
+
+Criptografía de curva Elíptica, Ataque Rho de Pollard. Jun. 2007. Hakin9 Magazine [<a href="https://github.com/daniellerch/papers/raw/master/dlh2007_hakin9_ec_es.pdf">pdf</a>].
+
+Factorization Attack to RSA. Mar. 2007. Hakin9 Magazine [<a href="https://github.com/daniellerch/papers/raw/master/dlh2007_hakin9_rsa_en.pdf">english</a>] [<a href="https://github.com/daniellerch/papers/raw/master/dlh2006_hakin9_rsa_es.pdf">spanish</a>] [<a href="https://github.com/daniellerch/papers/raw/master/dlh2007_hakin9_rsa_fr.pdf">french</a>].
+
+
 
 ### Photos
 
