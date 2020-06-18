@@ -12,7 +12,7 @@ Daniel Lerch holds a BSc degree in Computer Science, a MSc degree in Free and Op
 
 Daniel Lerch is the founder of <a href='http://neuron4.com'>Neuron4 Tech</a>, a company dedicated to developing innovative products powered by Artificial Intelligence. He is also associate professor of cryptography at the <a href="https://uoc.edu">Universitat Oberta de Catalunya</a> (UOC).
 
-<br/>
+
 ### Social / Contact
 - <a href="javascript:location='mailto:\u0064\u006c\u0065\u0072\u0063\u0068\u0040\u0067\u006d\u0061\u0069\u006c\u002e\u0063\u006f\u006d';void 0"><script type="text/javascript">document.write('\u0064\u006c\u0065\u0072\u0063\u0068\u0040\u0067\u006d\u0061\u0069\u006c\u002e\u0063\u006f\u006d')</script></a>
 - <a href="https://es.linkedin.com/in/daniellerch">LinkedIn</a>
@@ -20,14 +20,13 @@ Daniel Lerch is the founder of <a href='http://neuron4.com'>Neuron4 Tech</a>, a 
 - <a href='https://github.com/daniellerch'>Github Page</a>
 - <a href='https://scholar.google.es/citations?user=5ggVkxMAAAAJ&hl=es'>Google Scholar</a>
 
-<br/>
+
 ### Tools
 - <a href='https://github.com/daniellerch/aletheia'>Aletheia</a>: Image steganalysis using state-of-the-art machine learning techniques
 - <a href='https://github.com/daniellerch/stego-retweet'>Stego-retweet</a>: Steganography in Twitter using retweets
 - <a href='https://github.com/daniellerch/python-jpeg-toolbox'>python-jpeg-toolbox: The JPEG Toolbox for Python
 
 
-<br/>
 ### Publications
 
 - Detection of Classifier Inconsistencies in Image Steganalysis. July 2019. Proceedings of the ACM Workshop on Information Hiding and Multimedia Security. [<a href='https://github.com/daniellerch/papers/raw/master/dlerch2019.pdf'>pdf</a>] [<a href='https://github.com/daniellerch/papers/raw/master/dlerch2019_slides.pdf'>slides</a>].
@@ -55,7 +54,7 @@ Daniel Lerch is the founder of <a href='http://neuron4.com'>Neuron4 Tech</a>, a 
 - Factorization Attack to RSA. Mar. 2007. Hakin9 Magazine [<a href="https://github.com/daniellerch/papers/raw/master/dlh2007_hakin9_rsa_en.pdf">english</a>] [<a href="https://github.com/daniellerch/papers/raw/master/dlh2006_hakin9_rsa_es.pdf">spanish</a>] [<a href="https://github.com/daniellerch/papers/raw/master/dlh2007_hakin9_rsa_fr.pdf">french</a>].
 
 
-<br/>
+
 ### Photos
 
 Some pictures from different events related with my research in the fields of steganography and steganalysis. <br/><br/>
