@@ -24,7 +24,7 @@ noindex: true
 
 - Steganalytic Methods for the Detection of Histogram Shifting Data Hiding Schemes, with Megías. D. In: Actas de la XII Reunión Española sobre Criptología y Seguridad de la Información (RECSI 2012). Pag. 381-386. ISBN. 978-84-615-9933-2 [<a href="https://github.com/daniellerch/papers/raw/master/dlerch2012hs.pdf">pdf</a>] [<a href="https://github.com/daniellerch/papers/raw/master/dlerch2012hs_press.pdf">slides</a>].
 
-- Steganalytic methods for the detection of histogram shifting data-hiding schemes. Jun. 2011. Master Thesis (UOC) [<a href="http://hdl.handle.net/10609/8159">pdf</a>].</li>
+- Steganalytic methods for the detection of histogram shifting data-hiding schemes. Jun. 2011. Master Thesis (UOC) [<a href="http://hdl.handle.net/10609/8159">pdf</a>].
 
 - Criptografía de curva Elíptica, Ataque Rho de Pollard. Jun. 2007. Hakin9 Magazine [<a href="https://github.com/daniellerch/papers/raw/master/dlh2007_hakin9_ec_es.pdf">pdf</a>].
 
