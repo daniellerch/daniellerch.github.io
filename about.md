@@ -99,9 +99,9 @@ Universitat Oberta de Catalunya 2017, Castelldefels
 <br/><br/>
 
 <img width='750px'  src='/images/workshops/recsi_2014_grupo.jpg'>
-<br>
-<img width='750px'  src='/images/workshops/daniel_lerch_recsi_2014_presentacion_color.jpg'/>
 <br/><br/>
+<img width='750px'  src='/images/workshops/daniel_lerch_recsi_2014_presentacion_color.jpg'/>
+<br>
 <blockquote>XIII Reunión Española sobre Criptología y Seguridad de la Información 2014, Alicante</blockquote>
 <br/><br/>
 
