@@ -7,7 +7,22 @@ noindex: true
 ---
 
 
+### Contact / Social Networks
+
 <div style="border:1px solid black;width:500px;position:relative;left:20%">
+
+   <a href="javascript:location='mailto:\u0064\u006c\u0065\u0072\u0063\u0068\u0040\u0067\u006d\u0061\u0069\u006c\u002e\u0063\u006f\u006d';void 0"
+      style='color:#333' title="GitHub">
+      <span class="fa-stack fa-lg">
+         <i class="fa fa-circle fa-stack-2x"></i>
+         <i class="fa fa-email fa-stack-1x fa-inverse"></i>
+      </span>
+         <script type="text/javascript">document.write('\u0064\u006c\u0065\u0072\u0063\u0068\u0040\u0067\u006d\u0061\u0069\u006c\u002e\u0063\u006f\u006d')</script>
+      <span>
+
+      </span>
+   </a><br/>
+
    <a href="https://github.com/daniellerch" style='color:#333' title="GitHub">
       <span class="fa-stack fa-lg">
          <i class="fa fa-circle fa-stack-2x"></i>
