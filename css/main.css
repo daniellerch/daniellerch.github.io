@@ -248,6 +248,10 @@ img {
   }
 }
 
+.nav>li>a:hover{
+   background-color:#fff
+}
+
 /* Multi-level navigation links */
 .navbar-custom .nav .navlinks-container {
   position: relative;
