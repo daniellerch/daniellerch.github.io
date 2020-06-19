@@ -23,8 +23,8 @@ navbar-links:
 #   Home: "https://daniellerch.me"
 #   Stego: "stego/toc"
 #   ML-Snippets: "ml/snippets"
-   Blog: "/"
-   Tools: "https://github.com/daniellerch"
+#   Blog: "/"
+#   Tools: "https://github.com/daniellerch"
    Publications: "/publications"
    About: "/about"
 
