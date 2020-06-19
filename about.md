@@ -10,7 +10,7 @@ Daniel Lerch holds a BSc degree in Computer Science, a MSc degree in Free and Op
 Daniel Lerch is the founder of <a href='http://neuron4.com'>Neuron4 Tech</a>, a company dedicated to developing innovative products powered by Artificial Intelligence. He is also associate professor of cryptography at the <a href="https://uoc.edu">Universitat Oberta de Catalunya</a> (UOC).
 
 
-Daniel Lerch can be reached at:
+You can find Daniel Lerch at:
 
 <div style="width:500px;position:relative;left:50px">
 
