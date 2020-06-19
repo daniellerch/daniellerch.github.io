@@ -8,7 +8,7 @@ noindex: true
 
 
 <div style="border:1px solid black;width:400px;position:relative;left:50%">
-   <a href="https://github.com/daniellerch" title="GitHub">
+   <a href="https://github.com/daniellerch" style='color:#333' title="GitHub">
       <span class="fa-stack fa-lg">
          <i class="fa fa-circle fa-stack-2x"></i>
          <i class="fa fa-github fa-stack-1x fa-inverse"></i>
@@ -17,7 +17,7 @@ noindex: true
    </a><br/>
 
 
-   <a href="https://linkedin.com/in/daniellerch" title="LinkedIn">
+   <a href="https://linkedin.com/in/daniellerch" style='color:#333' title="LinkedIn">
       <span class="fa-stack fa-lg">
          <i class="fa fa-circle fa-stack-2x"></i>
          <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
@@ -25,7 +25,7 @@ noindex: true
       <span>LinkedIn</span>
    </a><br/>
 
-   <a href="https://twitter.com/daniel_lerch" title="Twitter">
+   <a href="https://twitter.com/daniel_lerch" style='color:#333' title="Twitter">
       <span class="fa-stack fa-lg">
          <i class="fa fa-circle fa-stack-2x"></i>
          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
