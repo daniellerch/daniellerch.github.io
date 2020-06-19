@@ -1,14 +1,13 @@
 ---
 layout: page
-title: About me
+title: 
 subtitle: 
-tags: [steganography, steganalysis, images, JPEG]
 noindex: true
 ---
 
 
 ### Contact / Social Networks
-
+<!-- {{{ -->
 <div style="width:500px;position:relative;left:20%">
 
    <a href="javascript:location='mailto:\u0064\u006c\u0065\u0072\u0063\u0068\u0040\u0067\u006d\u0061\u0069\u006c\u002e\u0063\u006f\u006d';void 0"
@@ -58,19 +57,18 @@ noindex: true
 
 </div>
 
+<!-- }}} -->
 
 ### Bio
+<!-- {{{ -->
 Daniel Lerch holds a BSc degree in Computer Science, a MSc degree in Free and Open Source Software (FOSS) and a <a href="https://github.com/daniellerch/papers/raw/master/dlerch2017thesis.pdf">PhD</a> in Network and Information Technologies from <a href="https://uoc.edu">Universitat Oberta de Catalunya</a> (UOC). He is member of KISON (K-ryptography and Information Security for Open Networks) research group and his research focuses on Steganography, Steganalysis, Image Processing and Machine learning. He is also an expert member at Criminal Use of Information Hiding (<a href="https://cuing.org/">CUIng</a>) Initiative (<a href="https://www.europol.europa.eu/about-europol/european-cybercrime-centre-ec3">Europol European Cybercrime Centre - EC3</a>).
 
 Daniel Lerch is the founder of <a href='http://neuron4.com'>Neuron4 Tech</a>, a company dedicated to developing innovative products powered by Artificial Intelligence. He is also associate professor of cryptography at the <a href="https://uoc.edu">Universitat Oberta de Catalunya</a> (UOC).
+<!-- }}} -->
 
 
-### Social / Contact
-- <a href="javascript:location='mailto:\u0064\u006c\u0065\u0072\u0063\u0068\u0040\u0067\u006d\u0061\u0069\u006c\u002e\u0063\u006f\u006d';void 0"><script type="text/javascript">document.write('\u0064\u006c\u0065\u0072\u0063\u0068\u0040\u0067\u006d\u0061\u0069\u006c\u002e\u0063\u006f\u006d')</script></a>
-- <a href="https://es.linkedin.com/in/daniellerch">LinkedIn</a>
-- <a href="http://twitter.com/Daniel_Lerch">Twitter</a>
-- <a href='https://github.com/daniellerch'>Github Page</a>
-- <a href='https://scholar.google.es/citations?user=5ggVkxMAAAAJ&hl=es'>Google Scholar</a>
+
+--
 
 
 ### Tools
