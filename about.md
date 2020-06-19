@@ -70,47 +70,47 @@ Some pictures from different events related with my research in the fields of st
 
 <center>
 
-<img width='600px' src='/images/workshops/ihmmsec_paris_2019_small.jpg'/>
+<img width='750px' src='/images/workshops/ihmmsec_paris_2019_small.jpg'/>
 <br/>
 <blockquote>7th ACM Workshop on Information Hiding and Multimedia Security 2019, París</blockquote>
-<br/><br/><br/>
+<br/><br/>
 
-<img width='600px'  src='/images/workshops/recsi_2018_grupo_small.jpg'/>
+<img width='750px'  src='/images/workshops/recsi_2018_grupo_small.jpg'/>
 <br/>
+<blockquote>XV Reunión Española sobre Criptología y Seguridad de la Información 2018, Granada</blockquote>
+<br/><br/>
 
-> XV Reunión Española sobre Criptología y Seguridad de la Información 2018, Granada
-
-<br/><br/><br/><br/>
-
-<img width='600px'  src='/images/workshops/phd_2017.jpg'/>
+<img width='750px'  src='/images/workshops/phd_2017.jpg'/>
 <br/>
->Thesis defense "Image Steganalysis and Steganography in the Spatial Domain". <br/>
->Universitat Oberta de Catalunya 2017, Castelldefels
-<br/><br/><br/><br/>
+<blockquote>
+Thesis defense "Image Steganalysis and Steganography in the Spatial Domain". <br/>
+Universitat Oberta de Catalunya 2017, Castelldefels
+</blockquote>
+<br/><br/>
 
-<img width='600px'  src='/images/workshops/uocrw_2016_presentacion.jpeg'/>
+<img width='750px'  src='/images/workshops/uocrw_2016_presentacion.jpeg'/>
 <br/>
->UOC Research Week 2016, Castelldefels
-<br/><br/><br/><br/>
+<blockquote>UOC Research Week 2016, Castelldefels</blockquote>
+<br/><br/>
 
-<img width='600px'  src='/images/workshops/recsi_2016_grupo.jpg'/>
+<img width='750px'  src='/images/workshops/recsi_2016_grupo.jpg'/>
 <br/>
->XIV Reunión Española sobre Criptología y Seguridad de la Información 2016, Menorca
-<br/><br/><br/><br/>
+<blockquote>XIV Reunión Española sobre Criptología y Seguridad de la Información 2016, Menorca</blockquote>
+<br/><br/>
 
-<img width='600px'  src='/images/workshops/recsi_2014_grupo.jpg'>
+<img width='750px'  src='/images/workshops/recsi_2014_grupo.jpg'>
 <br>
-<img width='600px'  src='/images/workshops/daniel_lerch_recsi_2014_presentacion_color.jpg'/>
-<br><br>
->XIII Reunión Española sobre Criptología y Seguridad de la Información 2014, Alicante
-<br/><br/><br/><br/>
+<img width='750px'  src='/images/workshops/daniel_lerch_recsi_2014_presentacion_color.jpg'/>
+<br>
+<blockquote>XIII Reunión Española sobre Criptología y Seguridad de la Información 2014, Alicante</blockquote>
+<br/><br/>
 
-<img width='600px'  src='/images/workshops/recsi_2012_grupo.jpg'/>
+<img width='750px'  src='/images/workshops/recsi_2012_grupo.jpg'/>
 <br>
-<img width='600px'  src='/images/workshops/daniel_lerch_recsi_2012_presentacion.jpg'/>
+<img width='750px'  src='/images/workshops/daniel_lerch_recsi_2012_presentacion.jpg'/>
 <br>
->XII Reunión Española sobre Criptología y Seguridad de la Información 2012, Donostia
-<br/><br/><br/><br/>
+<blockquote>XII Reunión Española sobre Criptología y Seguridad de la Información 2012, Donostia</blockquote>
+<br/><br/>
 </center>
 
 
