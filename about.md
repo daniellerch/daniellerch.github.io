@@ -8,7 +8,7 @@ noindex: true
 
 ### Contact / Social Networks
 <!-- {{{ -->
-<div style="width:500px;position:relative;left:20%">
+<div style="width:500px;position:relative;left:50px;top:15px">
 
    <a href="javascript:location='mailto:\u0064\u006c\u0065\u0072\u0063\u0068\u0040\u0067\u006d\u0061\u0069\u006c\u002e\u0063\u006f\u006d';void 0"
       style='color:#333' title="e-mail">
@@ -59,6 +59,7 @@ noindex: true
 
 <!-- }}} -->
 
+<br/>
 ### Bio
 <!-- {{{ -->
 Daniel Lerch holds a BSc degree in Computer Science, a MSc degree in Free and Open Source Software (FOSS) and a <a href="https://github.com/daniellerch/papers/raw/master/dlerch2017thesis.pdf">PhD</a> in Network and Information Technologies from <a href="https://uoc.edu">Universitat Oberta de Catalunya</a> (UOC). He is member of KISON (K-ryptography and Information Security for Open Networks) research group and his research focuses on Steganography, Steganalysis, Image Processing and Machine learning. He is also an expert member at Criminal Use of Information Hiding (<a href="https://cuing.org/">CUIng</a>) Initiative (<a href="https://www.europol.europa.eu/about-europol/european-cybercrime-centre-ec3">Europol European Cybercrime Centre - EC3</a>).
