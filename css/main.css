@@ -169,8 +169,10 @@ img {
 .navbar-custom .navbar-brand:focus ,
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
+  background-color: {{ site.navbar-col }};
   color: {{ site.hover-col }};
 }
+
 
 .navbar-custom .navbar-brand-logo {
   padding-top: 0;
@@ -246,11 +248,6 @@ img {
   .navbar-custom .avatar-container  .avatar-img {
     width: 100%;
   }
-}
-
-.nav>li>a:hover{
-   background-color: {{ site.navbar-col }};
-   color: {{ site.navbar-text-col }};
 }
 
 /* Multi-level navigation links */
