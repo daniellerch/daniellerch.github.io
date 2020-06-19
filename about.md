@@ -1,7 +1,7 @@
 ---
 layout: page
-title: ""
-subtitle: "About me" 
+title: "About"
+subtitle: "" 
 noindex: true
 ---
 
