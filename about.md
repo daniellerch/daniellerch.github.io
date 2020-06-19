@@ -7,7 +7,7 @@ noindex: true
 ---
 
 
-<div style="border:1px solid black;width:400px;position:relative;left:50%">
+<div style="border:1px solid black;width:500px;position:relative;left:20%">
    <a href="https://github.com/daniellerch" style='color:#333' title="GitHub">
       <span class="fa-stack fa-lg">
          <i class="fa fa-circle fa-stack-2x"></i>
