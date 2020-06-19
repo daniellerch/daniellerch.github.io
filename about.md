@@ -14,7 +14,7 @@ Daniel Lerch is the founder of <a href='http://neuron4.com'>Neuron4 Tech</a>, a 
 
 <br/>
 ### Contact / Social Networks
-<div style="width:500px;position:relative;left:50px">
+<div style="width:500px;position:relative;left:50px;top:15px">
 
    <a href="javascript:location='mailto:\u0064\u006c\u0065\u0072\u0063\u0068\u0040\u0067\u006d\u0061\u0069\u006c\u002e\u0063\u006f\u006d';void 0"
       style='color:#333' title="e-mail">
@@ -71,44 +71,44 @@ Some pictures from different events related with my research in the fields of st
 <center>
 
 <img width='600px' src='/images/workshops/ihmmsec_paris_2019_small.jpg'/>
-<br/><br/>
+<br/>
 7th ACM Workshop on Information Hiding and Multimedia Security 2019, París
-<br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/>
 
 <img width='600px'  src='/images/workshops/recsi_2018_grupo_small.jpg'/>
-<br/><br/>
+<br/>
 XV Reunión Española sobre Criptología y Seguridad de la Información 2018, Granada
-<br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/>
 
 <img width='600px'  src='/images/workshops/phd_2017.jpg'/>
-<br/><br/>
+<br/>
 Thesis defense "Image Steganalysis and Steganography in the Spatial Domain". <br/>
 Universitat Oberta de Catalunya 2017, Castelldefels
-<br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/>
 
 <img width='600px'  src='/images/workshops/uocrw_2016_presentacion.jpeg'/>
-<br/><br/>
+<br/>
 UOC Research Week 2016, Castelldefels
-<br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/>
 
 <img width='600px'  src='/images/workshops/recsi_2016_grupo.jpg'/>
-<br/><br/>
+<br/>
 XIV Reunión Española sobre Criptología y Seguridad de la Información 2016, Menorca
-<br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/>
 
 <img width='600px'  src='/images/workshops/recsi_2014_grupo.jpg'>
-<br><br>
+<br>
 <img width='600px'  src='/images/workshops/daniel_lerch_recsi_2014_presentacion_color.jpg'/>
 <br><br>
 XIII Reunión Española sobre Criptología y Seguridad de la Información 2014, Alicante
-<br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/>
 
 <img width='600px'  src='/images/workshops/recsi_2012_grupo.jpg'/>
-<br><br>
+<br>
 <img width='600px'  src='/images/workshops/daniel_lerch_recsi_2012_presentacion.jpg'/>
-<br><br>
+<br>
 XII Reunión Española sobre Criptología y Seguridad de la Información 2012, Donostia
-<br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/>
 </center>
 
 
