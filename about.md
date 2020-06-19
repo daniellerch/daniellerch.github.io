@@ -64,7 +64,7 @@ Daniel Lerch is the founder of <a href='http://neuron4.com'>Neuron4 Tech</a>, a 
 </div>
 
 
-
+<br/>
 ### Photos
 
 Some pictures from different events related with my research in the fields of steganography and steganalysis. <br/><br/>
