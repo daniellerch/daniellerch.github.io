@@ -11,19 +11,3 @@ permalink: /404.html
 </div>
 
 
-
-<ul>
-    {% for post in paginator.posts %}
-      <li>
-          <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}"><h2>{{ post.title }}</h2></a>
-          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
-          <p>{{ post.content }}</p>
-          {% if post.hn %}
-          <hr>
-          <hr>
-          {% endif %}
-          <br>
-      </li>
-    {% endfor %}
-</ul>
-
