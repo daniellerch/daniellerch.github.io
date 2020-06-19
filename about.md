@@ -7,27 +7,31 @@ noindex: true
 ---
 
 
-<ul class="text-center footer-links">
 
-<li><a href="https://github.com/daniellerch" title="GitHub"><span class="fa-stack fa-lg" aria-hidden="true">
-<i class="fa fa-circle fa-stack-2x"></i>
-<i class="fa fa-github fa-stack-1x fa-inverse"></i>
-</span>
-<span class="sr-only">GitHub</span>
+<a href="https://github.com/daniellerch" title="GitHub">
+   <span class="fa-stack fa-lg" aria-hidden="true">
+      <i class="fa fa-circle fa-stack-2x"></i>
+      <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+   </span>
+   <span class="sr-only">GitHub</span>
 </a>
-</li><li><a href="https://linkedin.com/in/daniellerch" title="LinkedIn"><span class="fa-stack fa-lg" aria-hidden="true">
-<i class="fa fa-circle fa-stack-2x"></i>
-<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-</span>
-<span class="sr-only">LinkedIn</span>
+
+
+<a href="https://linkedin.com/in/daniellerch" title="LinkedIn">
+   <span class="fa-stack fa-lg" aria-hidden="true">
+      <i class="fa fa-circle fa-stack-2x"></i>
+      <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+   </span>
+   <span class="sr-only">LinkedIn</span>
 </a>
-</li><li><a href="https://twitter.com/daniel_lerch" title="Twitter"><span class="fa-stack fa-lg" aria-hidden="true">
-<i class="fa fa-circle fa-stack-2x"></i>
-<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-</span>
-<span class="sr-only">Twitter</span>
+
+<a href="https://twitter.com/daniel_lerch" title="Twitter">
+   <span class="fa-stack fa-lg" aria-hidden="true">
+      <i class="fa fa-circle fa-stack-2x"></i>
+      <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+   </span>
+   <span class="sr-only">Twitter</span>
 </a>
-</li></ul>
 
 
 
