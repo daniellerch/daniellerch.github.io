@@ -26,16 +26,7 @@ noindex: true
          <i class="fa fa-circle fa-stack-2x"></i>
          <i class="fa fa-github fa-stack-1x fa-inverse"></i>
       </span>
-      <span>GitHub: github.com/daniellerch</span>
-   </a><br/>
-
-
-   <a href="https://linkedin.com/in/daniellerch" style='color:#333' title="LinkedIn">
-      <span class="fa-stack fa-lg">
-         <i class="fa fa-circle fa-stack-2x"></i>
-         <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-      </span>
-      <span>LinkedIn: linkedin.com/in/daniellerch</span>
+      <span>github.com/daniellerch</span>
    </a><br/>
 
    <a href="https://twitter.com/daniel_lerch" style='color:#333' title="Twitter">
@@ -43,7 +34,15 @@ noindex: true
          <i class="fa fa-circle fa-stack-2x"></i>
          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
       </span>
-      <span>Twitter: twitter.com/daniel_lerch</span>
+      <span>twitter.com/daniel_lerch</span>
+   </a><br/>
+
+   <a href="https://linkedin.com/in/daniellerch" style='color:#333' title="LinkedIn">
+      <span class="fa-stack fa-lg">
+         <i class="fa fa-circle fa-stack-2x"></i>
+         <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+      </span>
+      <span>linkedin.com/in/daniellerch</span>
    </a><br/>
 
    <a href="https://scholar.google.es/citations?user=5ggVkxMAAAAJ&hl" style='color:#333' title="Scholar">
@@ -64,14 +63,6 @@ Daniel Lerch holds a BSc degree in Computer Science, a MSc degree in Free and Op
 Daniel Lerch is the founder of <a href='http://neuron4.com'>Neuron4 Tech</a>, a company dedicated to developing innovative products powered by Artificial Intelligence. He is also associate professor of cryptography at the <a href="https://uoc.edu">Universitat Oberta de Catalunya</a> (UOC).
 
 
-
---
-
-
-### Tools
-- <a href='https://github.com/daniellerch/aletheia'>Aletheia</a>: Image steganalysis using state-of-the-art machine learning techniques
-- <a href='https://github.com/daniellerch/stego-retweet'>Stego-retweet</a>: Steganography in Twitter using retweets
-- <a href='https://github.com/daniellerch/python-jpeg-toolbox'>python-jpeg-toolbox: The JPEG Toolbox for Python
 
 
 ### Publications
