@@ -249,7 +249,8 @@ img {
 }
 
 .nav>li>a:hover{
-   background-color:#fff
+   background-color: {{ site.navbar-col }};
+   color: {{ site.navbar-text-col }};
 }
 
 /* Multi-level navigation links */
