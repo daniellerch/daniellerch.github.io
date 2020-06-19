@@ -72,10 +72,8 @@ Some pictures from different events related with my research in the fields of st
 
 <img width='600px' src='/images/workshops/ihmmsec_paris_2019_small.jpg'/>
 <br/>
-
-> 7th ACM Workshop on Information Hiding and Multimedia Security 2019, París
-
-<br/><br/><br/><br/>
+<blockquote>7th ACM Workshop on Information Hiding and Multimedia Security 2019, París</blockquote>
+<br/><br/><br/>
 
 <img width='600px'  src='/images/workshops/recsi_2018_grupo_small.jpg'/>
 <br/>
