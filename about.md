@@ -5,6 +5,14 @@ subtitle: ""
 noindex: true
 ---
 
+Daniel Lerch holds a BSc degree in Computer Science, a MSc degree in Free and Open Source Software (FOSS) and a <a href="https://github.com/daniellerch/papers/raw/master/dlerch2017thesis.pdf">PhD</a> in Network and Information Technologies from <a href="https://uoc.edu">Universitat Oberta de Catalunya</a> (UOC). He is member of KISON (K-ryptography and Information Security for Open Networks) research group and his research focuses on Steganography, Steganalysis, Image Processing and Machine learning. He is also an expert member at Criminal Use of Information Hiding (<a href="https://cuing.org/">CUIng</a>) Initiative (<a href="https://www.europol.europa.eu/about-europol/european-cybercrime-centre-ec3">Europol European Cybercrime Centre - EC3</a>).
+
+Daniel Lerch is the founder of <a href='http://neuron4.com'>Neuron4 Tech</a>, a company dedicated to developing innovative products powered by Artificial Intelligence. He is also associate professor of cryptography at the <a href="https://uoc.edu">Universitat Oberta de Catalunya</a> (UOC).
+
+
+
+
+
 
 ### Contact / Social Networks
 <div style="width:500px;position:relative;left:50px;top:15px">
@@ -57,14 +65,6 @@ noindex: true
 
 
 
-<br/>
-### Bio
-Daniel Lerch holds a BSc degree in Computer Science, a MSc degree in Free and Open Source Software (FOSS) and a <a href="https://github.com/daniellerch/papers/raw/master/dlerch2017thesis.pdf">PhD</a> in Network and Information Technologies from <a href="https://uoc.edu">Universitat Oberta de Catalunya</a> (UOC). He is member of KISON (K-ryptography and Information Security for Open Networks) research group and his research focuses on Steganography, Steganalysis, Image Processing and Machine learning. He is also an expert member at Criminal Use of Information Hiding (<a href="https://cuing.org/">CUIng</a>) Initiative (<a href="https://www.europol.europa.eu/about-europol/european-cybercrime-centre-ec3">Europol European Cybercrime Centre - EC3</a>).
-
-Daniel Lerch is the founder of <a href='http://neuron4.com'>Neuron4 Tech</a>, a company dedicated to developing innovative products powered by Artificial Intelligence. He is also associate professor of cryptography at the <a href="https://uoc.edu">Universitat Oberta de Catalunya</a> (UOC).
-
-
-
 
 ### Publications
 
@@ -110,32 +110,32 @@ Some pictures from different events related with my research in the fields of st
 XV Reunión Española sobre Criptología y Seguridad de la Información 2018, Granada
 <br/><br/><br/><br/><br/><br/>
 
-<img width='600px'  src='/images/workshops/phd_2017.jpg'></img>
+<img width='600px'  src='/images/workshops/phd_2017.jpg'/>
 <br/><br/>
 Thesis defense "Image Steganalysis and Steganography in the Spatial Domain". <br/>
 Universitat Oberta de Catalunya 2017, Castelldefels
 <br/><br/><br/><br/><br/><br/>
 
-<img width='600px'  src='/images/workshops/uocrw_2016_presentacion.jpeg'></img>
+<img width='600px'  src='/images/workshops/uocrw_2016_presentacion.jpeg'/>
 <br/><br/>
 UOC Research Week 2016, Castelldefels
 <br/><br/><br/><br/><br/><br/>
 
-<img width='600px'  src='/images/workshops/recsi_2016_grupo.jpg'></img>
+<img width='600px'  src='/images/workshops/recsi_2016_grupo.jpg'/>
 <br/><br/>
 XIV Reunión Española sobre Criptología y Seguridad de la Información 2016, Menorca
 <br/><br/><br/><br/><br/><br/>
 
 <img width='600px'  src='/images/workshops/recsi_2014_grupo.jpg'>
 <br><br>
-<img width='600px'  src='/images/workshops/daniel_lerch_recsi_2014_presentacion_color.jpg'></img>
+<img width='600px'  src='/images/workshops/daniel_lerch_recsi_2014_presentacion_color.jpg'/>
 <br><br>
 XIII Reunión Española sobre Criptología y Seguridad de la Información 2014, Alicante
 <br/><br/><br/><br/><br/><br/>
 
-<img width='600px'  src='/images/workshops/recsi_2012_grupo.jpg'></img>
+<img width='600px'  src='/images/workshops/recsi_2012_grupo.jpg'/>
 <br><br>
-<img width='600px'  src='/images/workshops/daniel_lerch_recsi_2012_presentacion.jpg'></img>
+<img width='600px'  src='/images/workshops/daniel_lerch_recsi_2012_presentacion.jpg'/>
 <br><br>
 XII Reunión Española sobre Criptología y Seguridad de la Información 2012, Donostia
 <br/><br/><br/><br/><br/><br/>
