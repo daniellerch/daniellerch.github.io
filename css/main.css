@@ -171,6 +171,7 @@ img {
 .navbar-custom .nav li a:focus {
   background-color: {{ site.navbar-col }};
   color: {{ site.hover-col }};
+  text-decoration: underline;
 }
 
 
