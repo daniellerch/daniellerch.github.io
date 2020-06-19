@@ -1,7 +1,7 @@
 # --- General options --- #
 
 # Name of website
-title: ""
+title: "daniellerch"
 
 # Short description of your site
 description: daniellerch.me
@@ -20,7 +20,7 @@ description: daniellerch.me
 
 # List of links in the navigation bar
 navbar-links:
-   Home: "https://daniellerch.me"
+#   Home: "https://daniellerch.me"
 #   Stego: "stego/toc"
 #   ML-Snippets: "ml/snippets"
    Publications: "/publications"

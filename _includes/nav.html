@@ -14,11 +14,6 @@
       {%- else -%}
         <a class="navbar-brand" href="{{ '' | absolute_url }}">{{ site.title }}</a>
       {%- endif -%}
-
-        <a class="navbar-brand" href="{{ '' | absolute_url }}">xxxA</a>
-        <a class="navbar-brand" href="{{ '' | absolute_url }}">xxxB</a>
-        <a class="navbar-brand" href="{{ '' | absolute_url }}">xxxC</a>
-
     </div>
 
     <div class="collapse navbar-collapse" id="main-navbar">
@@ -39,11 +34,6 @@
           <li><a href="{{ link[1] | relative_url }}">{{ link[0] }}</a></li>
         {%- endif -%}
       {%- endfor -%}
-
-      <a href="{{ linkparts[1] | relative_url }}">xxxA</a>
-      <a href="{{ linkparts[1] | relative_url }}">xxxB</a>
-      <a href="{{ linkparts[1] | relative_url }}">xxxC</a>
-
       </ul>
     </div>
 
