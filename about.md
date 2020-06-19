@@ -13,7 +13,7 @@ noindex: true
          <i class="fa fa-circle fa-stack-2x"></i>
          <i class="fa fa-github fa-stack-1x fa-inverse"></i>
       </span>
-      <span>GitHub</span>
+      <span>GitHub: github.com/daniellerch</span>
    </a><br/>
 
 
@@ -22,7 +22,7 @@ noindex: true
          <i class="fa fa-circle fa-stack-2x"></i>
          <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
       </span>
-      <span>LinkedIn</span>
+      <span>LinkedIn: linkedin.com/in/daniellerch</span>
    </a><br/>
 
    <a href="https://twitter.com/daniel_lerch" style='color:#333' title="Twitter">
@@ -30,7 +30,7 @@ noindex: true
          <i class="fa fa-circle fa-stack-2x"></i>
          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
       </span>
-      <span>Twitter</span>
+      <span>Twitter: twitter.com/daniel_lerch</span>
    </a><br/>
 </div>
 
