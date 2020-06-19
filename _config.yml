@@ -20,10 +20,12 @@ description: daniellerch.me
 
 # List of links in the navigation bar
 navbar-links:
-#   Home: "https://daniellerch.me"
+   Home: "https://daniellerch.me"
 #   Stego: "stego/toc"
 #   ML-Snippets: "ml/snippets"
-#   Acerca de: "p/about"
+   Publications: "/publications"
+   About: "/about"
+
 #  Resources:
 #    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
 #    - Learn markdown: "http://www.markdowntutorial.com/"
