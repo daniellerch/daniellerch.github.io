@@ -19,7 +19,7 @@ You can find Daniel Lerch at:
       <span class="fa-stack fa-lg">
          <i class="fa fa-circle fa-stack-2x"></i>
          <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-      </span>
+      </span> &nbsp; 
          E-mail: <script type="text/javascript">document.write('\u0064\u006c\u0065\u0072\u0063\u0068\u0040\u0067\u006d\u0061\u0069\u006c\u002e\u0063\u006f\u006d')</script>
       <span>
 
@@ -31,7 +31,7 @@ You can find Daniel Lerch at:
          <i class="fa fa-circle fa-stack-2x"></i>
          <i class="fa fa-github fa-stack-1x fa-inverse"></i>
       </span>
-      <span>github.com/daniellerch</span>
+      <span> &nbsp; github.com/daniellerch</span>
    </a><br/>
 
    <a href="https://twitter.com/daniel_lerch" style='color:#333' title="Twitter">
@@ -39,7 +39,7 @@ You can find Daniel Lerch at:
          <i class="fa fa-circle fa-stack-2x"></i>
          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
       </span>
-      <span>twitter.com/daniel_lerch</span>
+      <span> &nbsp; twitter.com/daniel_lerch</span>
    </a><br/>
 
    <a href="https://linkedin.com/in/daniellerch" style='color:#333' title="LinkedIn">
@@ -47,7 +47,7 @@ You can find Daniel Lerch at:
          <i class="fa fa-circle fa-stack-2x"></i>
          <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
       </span>
-      <span>linkedin.com/in/daniellerch</span>
+      <span> &nbsp; linkedin.com/in/daniellerch</span>
    </a><br/>
 
    <a href="https://scholar.google.es/citations?user=5ggVkxMAAAAJ&hl" style='color:#333' title="Scholar">
@@ -55,7 +55,7 @@ You can find Daniel Lerch at:
          <i class="fa fa-circle fa-stack-2x"></i>
          <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
       </span>
-      <span>Google Scholar</span>
+      <span> &nbsp; Google Scholar</span>
    </a><br/>
 
 </div>
