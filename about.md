@@ -7,14 +7,14 @@ noindex: true
 ---
 
 
-<div style="border:1px solid black;width:400px;left:50%">
+<div style="border:1px solid black;width:400px;position:relative;left:50%">
    <a href="https://github.com/daniellerch" title="GitHub">
       <span class="fa-stack fa-lg">
          <i class="fa fa-circle fa-stack-2x"></i>
          <i class="fa fa-github fa-stack-1x fa-inverse"></i>
       </span>
       <span>GitHub</span>
-   </a>
+   </a><br/>
 
 
    <a href="https://linkedin.com/in/daniellerch" title="LinkedIn">
@@ -23,7 +23,7 @@ noindex: true
          <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
       </span>
       <span>LinkedIn</span>
-   </a>
+   </a><br/>
 
    <a href="https://twitter.com/daniel_lerch" title="Twitter">
       <span class="fa-stack fa-lg">
@@ -31,7 +31,7 @@ noindex: true
          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
       </span>
       <span>Twitter</span>
-   </a>
+   </a><br/>
 </div>
 
 
