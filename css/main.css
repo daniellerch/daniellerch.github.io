@@ -161,8 +161,13 @@ img {
 
 .navbar-custom .navbar-brand,
 .navbar-custom .nav li a {
-  font-weight: 700;
+  font-weight: 600;
   color: {{ site.navbar-text-col }};
+}
+
+
+.navbar-custom .navbar-brand {
+  font-weight: 700;
 }
 
 .navbar-custom .navbar-brand:hover,
