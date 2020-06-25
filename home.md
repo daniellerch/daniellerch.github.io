@@ -33,9 +33,9 @@ mainly dedicated to **steganography**, the ancient art and science of hidden com
 
 <div style='heigth:25px'>&nbsp;</div>
 #### Code snippets (steganography)
-- Hiding information into a JPEG image [[JPEG-embed.py](https://github.com/daniellerch/stegolab/blob/master/jpeg/jpeg-embed.py)].
-- Hiding information into a bitmap image [[bitmap-embed.py](https://github.com/daniellerch/stegolab/blob/master/bitmap/bitmap-embed.py)].
-- Hiding information into a sound WAV file [[WAV-embed.py](https://github.com/daniellerch/stegolab/blob/master/sound/wav-embed.py)].
+- Hiding information into a JPEG image [[JPEG-hide.py](https://github.com/daniellerch/stegolab/blob/master/jpeg/jpeg-embed.py)].
+- Hiding information into a bitmap image [[bitmap-hide.py](https://github.com/daniellerch/stegolab/blob/master/bitmap/bitmap-embed.py)].
+- Hiding information into a sound WAV file [[WAV-hide.py](https://github.com/daniellerch/stegolab/blob/master/sound/wav-embed.py)].
 - Binary matrix embedding  [[binary-codes.py](https://github.com/daniellerch/stegolab/blob/master/codes/binary-codes.py)].
 - N-ary matrix embedding  [[n-codes.py](https://github.com/daniellerch/stegolab/blob/master/codes/n-codes.py)].
 
@@ -54,7 +54,7 @@ mainly dedicated to **steganography**, the ancient art and science of hidden com
 - A tool/library for image steganalysis [[Aletheia](https://github.com/daniellerch/aletheia)].
 - Steganography in Twitter using retweets[[Stego-retweet](https://github.com/daniellerch/stego-retweet)].
 - The JPEG Toolbox for Python [[python-jpeg-toolbox](https://github.com/daniellerch/python-jpeg-toolbox)].
-- A Python interface to Ensemble Classifiers [[pyEC](https://github.com/daniellerch/pySTC)].
+- A Python interface to Ensemble Classifiers [[pyEC](https://github.com/daniellerch/stegolab/blob/master/pyEC)].
 - A Python interface to Syndrome Trellis Codes Steganography [[pySTC](https://github.com/daniellerch/pySTC)].
 - Calibration attack to F5 like steganography [[calibration.py](https://github.com/daniellerch/stegolab/blob/master/calibration/calibration.py)].
 
