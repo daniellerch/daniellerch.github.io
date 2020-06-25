@@ -19,10 +19,9 @@ mainly dedicated to **steganography**, the ancient art and science of hidden com
 </center><br/-->
 
 
-#### Posts:
-- [Steganalysis of Steghide]() - 2020-xx-xx.
-- [Steganalysis of OpenStego using Aletheia]() - 2020-xx-xx.
-- [Steganalysis of OpenPuff using Aletheia]() - 2020-xx-xx.
+<!-- #### Posts: -->
+<!-- - [Steganalysis of OpenStego using Aletheia]() - 2020-xx-xx. -->
+<!-- - [Steganalysis of OpenPuff using Aletheia]() - 2020-xx-xx. -->
 <!-- - [J-UNIWARD cost function for steganography in JPEG]() - 2020-xx-xx. -->
 <!-- - [HILL cost function for steganography in spatial domain]() - 2020-xx-xx. -->
 <!-- - [Non shared selection channels]() - 2020-xx-xx. -->
@@ -33,28 +32,31 @@ mainly dedicated to **steganography**, the ancient art and science of hidden com
 
 
 <div style='heigth:25px'>&nbsp;</div>
-#### Steanography code
-- Hiding information into a JPEG image [[jpeg-embed.py](https://github.com/daniellerch/stegolab/blob/master/jpeg/jpeg-embed.py)]
-- Hiding information into a bitmap image [[bitmap-embed.py](https://github.com/daniellerch/stegolab/blob/master/bitmap/bitmap-embed.py)]
-- Hiding information into a sound WAV file [[wav-embed.py](https://github.com/daniellerch/stegolab/blob/master/sound/wav-embed.py)]
-- Binary matrix embedding  [[binary-codes.py](https://github.com/daniellerch/stegolab/blob/master/codes/binary-codes.py)]
-- N-ary matrix embedding  [[N-codes.py](https://github.com/daniellerch/stegolab/blob/master/codes/n-codes.py)]
+#### Code snippets (steganography)
+- Hiding information into a JPEG image [[JPEG-embed.py](https://github.com/daniellerch/stegolab/blob/master/jpeg/jpeg-embed.py)].
+- Hiding information into a bitmap image [[bitmap-embed.py](https://github.com/daniellerch/stegolab/blob/master/bitmap/bitmap-embed.py)].
+- Hiding information into a sound WAV file [[WAV-embed.py](https://github.com/daniellerch/stegolab/blob/master/sound/wav-embed.py)].
+- Binary matrix embedding  [[binary-codes.py](https://github.com/daniellerch/stegolab/blob/master/codes/binary-codes.py)].
+- N-ary matrix embedding  [[n-codes.py](https://github.com/daniellerch/stegolab/blob/master/codes/n-codes.py)].
 
 
 <div style='heigth:25px'>&nbsp;</div>
-#### Steanalysis code
+#### Code snippets (steganalysis)
+- SRNet (deep learning) for color images [[srnet.py](https://github.com/daniellerch/stegolab/blob/master/calibration/srnet.py)].
+- XuNet (deep learning) for color images [[xunet.py](https://github.com/daniellerch/stegolab/blob/master/calibration/srnet.py)].
+<!-- - Deep steganalysis using EfficientNet B0 [[effnet-b0.py](https://github.com/daniellerch/stegolab/blob/master/calibration/calibration.py)]. -->
+<!-- - ATS Attack [[ats.py](https://github.com/daniellerch/stegolab/blob/master/calibration/calibration.py)]. -->
+<!-- - Detection of classification inconsistencies [[dci.py](https://github.com/daniellerch/stegolab/blob/master/calibration/calibration.py)]. -->
+
+
+<div style='heigth:25px'>&nbsp;</div>
+#### Tools & Libraries
+- A tool/library for image steganalysis [[Aletheia](https://github.com/daniellerch/aletheia)].
+- Steganography in Twitter using retweets[[Stego-retweet](https://github.com/daniellerch/stego-retweet)].
+- The JPEG Toolbox for Python [[python-jpeg-toolbox](https://github.com/daniellerch/python-jpeg-toolbox)].
+- A Python interface to Ensemble Classifiers [[pyEC](https://github.com/daniellerch/pySTC)].
+- A Python interface to Syndrome Trellis Codes Steganography [[pySTC](https://github.com/daniellerch/pySTC)].
 - Calibration attack to F5 like steganography [[calibration.py](https://github.com/daniellerch/stegolab/blob/master/calibration/calibration.py)].
 - Modified calibration attack to detect Steghide [[calibration-steghide.py](https://github.com/daniellerch/stegolab/blob/master/calibration/calibration.py)].
-- Deep steganalysis using SRNet [[srnet.py](https://github.com/daniellerch/stegolab/blob/master/calibration/calibration.py)].
-- Deep steganalysis using EfficientNet B0 [[effnet-b0.py](https://github.com/daniellerch/stegolab/blob/master/calibration/calibration.py)].
-- ATS Attack [[ats.py](https://github.com/daniellerch/stegolab/blob/master/calibration/calibration.py)].
-- Detection of classification inconsistencies [[dci.py](https://github.com/daniellerch/stegolab/blob/master/calibration/calibration.py)].
-
-
-<div style='heigth:25px'>&nbsp;</div>
-#### Tools
-- [Aletheia](https://github.com/daniellerch/aletheia): Image steganalysis using state-of-the-art machine learning techniques.
-- [Stego-retweet](https://github.com/daniellerch/stego-retweet): Steganography in Twitter using retweets
-- [python-jpeg-toolbox](https://github.com/daniellerch/python-jpeg-toolbox) The JPEG Toolbox for Python
 
 
