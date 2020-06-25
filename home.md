@@ -33,11 +33,13 @@ mainly dedicated to **steganography**, the ancient art and science of hidden com
 
 <div style='heigth:25px'>&nbsp;</div>
 #### Code snippets (steganography)
-- Hiding information into a JPEG image [[JPEG-hide.py](https://github.com/daniellerch/stegolab/blob/master/jpeg/jpeg-embed.py)].
-- Hiding information into a bitmap image [[bitmap-hide.py](https://github.com/daniellerch/stegolab/blob/master/bitmap/bitmap-embed.py)].
-- Hiding information into a sound WAV file [[WAV-hide.py](https://github.com/daniellerch/stegolab/blob/master/sound/wav-embed.py)].
+- Hiding a bit into a JPEG image [[JPEG-hide.py](https://github.com/daniellerch/stegolab/blob/master/jpeg/JPEG-hide.py)].
+- Hiding a bit into a bitmap image [[bitmap-hide.py](https://github.com/daniellerch/stegolab/blob/master/bitmap/bitmap-hide.py)].
+- Hiding a bit into a sound WAV file [[WAV-hide.py](https://github.com/daniellerch/stegolab/blob/master/sound/WAV-hide.py)].
 - Binary matrix embedding  [[binary-codes.py](https://github.com/daniellerch/stegolab/blob/master/codes/binary-codes.py)].
-- N-ary matrix embedding  [[n-codes.py](https://github.com/daniellerch/stegolab/blob/master/codes/n-codes.py)].
+- N-ary matrix embedding  [[n-ari-codes.py](https://github.com/daniellerch/stegolab/blob/master/codes/n-ari-codes.py)].
+- Binary wet paper codes  [[binary-wet-paper-codes.py](https://github.com/daniellerch/stegolab/blob/master/codes/binary-wet-paper-codes.py)].
+- N-ary wet paper codes  [[n-ari-wet-paper-codes.py](https://github.com/daniellerch/stegolab/blob/master/codes/n-ary-wet-paper-codes.py)].
 
 
 <div style='heigth:25px'>&nbsp;</div>
