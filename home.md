@@ -57,6 +57,5 @@ mainly dedicated to **steganography**, the ancient art and science of hidden com
 - A Python interface to Ensemble Classifiers [[pyEC](https://github.com/daniellerch/pySTC)].
 - A Python interface to Syndrome Trellis Codes Steganography [[pySTC](https://github.com/daniellerch/pySTC)].
 - Calibration attack to F5 like steganography [[calibration.py](https://github.com/daniellerch/stegolab/blob/master/calibration/calibration.py)].
-- Modified calibration attack to detect Steghide [[calibration-steghide.py](https://github.com/daniellerch/stegolab/blob/master/calibration/calibration.py)].
 
 
