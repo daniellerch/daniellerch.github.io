@@ -11,8 +11,9 @@ mainly dedicated to **steganography**, the ancient art and science of hidden com
 
 
 > "[...] I have uncovered certain ways, both numerous and varied, that are not to be entirely spurned whereby I can intimate my most secret thoughts to another who knows this art, however far away I wish, securely and free from the deceit, suspicion, or detection by anyone, using writing or openly through messengers."
-> <div style='text-align:right;position:relative;top:-30px'>Steganographia<br>Johanes Trithemius (1462 - 1516)</div><hr>
+> <div style='text-align:right;position:relative;top:-10px'>Steganographia<br>Johanes Trithemius (1462 - 1516)</div>
 
+<br>
 
 ### Latest updates
 
