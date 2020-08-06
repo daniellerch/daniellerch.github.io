@@ -5,59 +5,47 @@ subtitle: ""
 noindex: true
 ---
 
-
 Hello and welcome to my page. My name is Daniel Lerch and this is a personal site
 mainly dedicated to **steganography**, the ancient art and science of hidden communication.
 
 
 
-> "Pleasure to me is wonder—the unexplored, the unexpected, the thing that is hidden and the changeless thing that lurks behind superficial mutability."  
-> <div style='text-align:right;position:relative;top:-30px'>H.P. Lovecraft</div>
-
-<!--center>
-<img width='500px' src='/images/xkcd-security.png'/>
-</center><br/-->
+> "[...] I have uncovered certain ways, both numerous and varied, that are not to be entirely spurned whereby I can intimate my most secret thoughts to another who knows this art, however far away I wish, securely and free from the deceit, suspicion, or detection by anyone, using writing or openly through messengers."
+> <div style='text-align:right;position:relative;top:-30px'>Steganographia<br>Johanes Trithemius (1462 - 1516)</div><hr>
 
 
-<!-- #### Posts: -->
-<!-- - [Steganalysis of OpenStego using Aletheia]() - 2020-xx-xx. -->
-<!-- - [Steganalysis of OpenPuff using Aletheia]() - 2020-xx-xx. -->
-<!-- - [J-UNIWARD cost function for steganography in JPEG]() - 2020-xx-xx. -->
-<!-- - [HILL cost function for steganography in spatial domain]() - 2020-xx-xx. -->
-<!-- - [Non shared selection channels]() - 2020-xx-xx. -->
-<!-- - [Minimizing the embedding impact]() - 2020-xx-xx. -->
-<!-- - [Hiding information in JPEG images]() - 2020-xx-xx. -->
-<!-- - [Johannes Trithemius and the Steganographia]() - 2020-xx-xx. -->
+### Latest updates
+
+<!--
+
+- **[J-UNIWARD]()**: 
+  A Python implementation of the steganography method for hidden information into **JPEG images**, proposed in the paper "[Universal Distortion Function for Steganography in an Arbitrary Domain](https://link.springer.com/article/10.1186/1687-417X-2014-1)" by Vojtěch Holub, Jessica Fridrich and Tomáš Denemark. 
+  <br>[ *Updated on 2020-10-01* ]
+
+- **[HILL]()**: 
+  A Python implementation of the steganography method for hiding information into **bitmap images**, proposed in the paper "[A New Cost Function for Spatial Image Steganography](https://ieeexplore.ieee.org/document/7025854)" by Bin Li, Ming Wang, Jiwu Huang and Xiaolong Li.
+  <br>[ *Updated on 2020-10-01* ]
+
+- **[Calibration Attack]()**: blah blah 
+  <br>[ *Updated on 2020-10-01* ]
 
 
-
-<div style='heigth:25px'>&nbsp;</div>
-#### Code snippets (steganography)
-- Hiding a bit into a JPEG image [[JPEG-hide.py](https://github.com/daniellerch/stegolab/blob/master/jpeg/JPEG-hide.py)].
-- Hiding a bit into a bitmap image [[bitmap-hide.py](https://github.com/daniellerch/stegolab/blob/master/bitmap/bitmap-hide.py)].
-- Hiding a bit into a sound WAV file [[WAV-hide.py](https://github.com/daniellerch/stegolab/blob/master/sound/WAV-hide.py)].
-- Binary matrix embedding  [[binary-codes.py](https://github.com/daniellerch/stegolab/blob/master/codes/binary-codes.py)].
-- N-ary matrix embedding  [[n-ari-codes.py](https://github.com/daniellerch/stegolab/blob/master/codes/n-ari-codes.py)].
-- Binary wet paper codes  [[binary-wet-paper-codes.py](https://github.com/daniellerch/stegolab/blob/master/codes/binary-wet-paper-codes.py)].
-- N-ary wet paper codes  [[n-ari-wet-paper-codes.py](https://github.com/daniellerch/stegolab/blob/master/codes/n-ary-wet-paper-codes.py)].
+<hr>
+-->
 
 
-<div style='heigth:25px'>&nbsp;</div>
-#### Code snippets (steganalysis)
-- SRNet (deep learning) for color images [[srnet.py](https://github.com/daniellerch/stegolab/blob/master/calibration/srnet.py)].
-- XuNet (deep learning) for color images [[xunet.py](https://github.com/daniellerch/stegolab/blob/master/calibration/srnet.py)].
-<!-- - Deep steganalysis using EfficientNet B0 [[effnet-b0.py](https://github.com/daniellerch/stegolab/blob/master/calibration/calibration.py)]. -->
-<!-- - ATS Attack [[ats.py](https://github.com/daniellerch/stegolab/blob/master/calibration/calibration.py)]. -->
-<!-- - Detection of classification inconsistencies [[dci.py](https://github.com/daniellerch/stegolab/blob/master/calibration/calibration.py)]. -->
+- **[Aletheia]()**: Aletheia is an open source image steganalysis tool for the detection of hidden messages in images. To achieve its objectives, Aletheia uses state-of-the-art machine learning techniques. It is capable of detecting different steganographic methods as for example LSB replacement, LSB matching and some kind of adaptive schemes.
+  <br>[ *Updated on 2020-04-13* ]
+
+- **[Python JPEG Toolbox](https://github.com/daniellerch/python-jpeg-toolbox)**: Toolbox for accessing low level JPEG information (DCT coefficients, quantization tables, ...) with Python. Its interface is similar to the well-known Matlab JPEG Toolbox. 
+  <br>[ *Updated on 2020-03-23* ]
+
+- **[PySTC](https://github.com/daniellerch/pySTC)**: Python interface to Syndrome Trellis Codes (C++), presented in the paper "[Minimizing Additive Distortion in Steganography using Syndrome-Trellis Codes](https://ieeexplore.ieee.org/document/5740590)" by Tomas Filler, Jan Judas and Jessica Fridrich".
+  <br>[ *Updated on 2019-03-18* ]
+
+- **[Stego Retweet](https://github.com/daniellerch/stego-retweet)**: A tool for hiding messages in Twitter using retweets. Using a list of hashtags provided by the user, this tool finds and retweets some tweets containing especial words. This allows to hide a message that can be read by the user who has the password. The capacity is of two characters per retweet. 
+  <br>[ *Updated on 2018-03-27* ]
 
 
-<div style='heigth:25px'>&nbsp;</div>
-#### Tools & Libraries
-- A tool/library for image steganalysis [[Aletheia](https://github.com/daniellerch/aletheia)].
-- Steganography in Twitter using retweets[[Stego-retweet](https://github.com/daniellerch/stego-retweet)].
-- The JPEG Toolbox for Python [[python-jpeg-toolbox](https://github.com/daniellerch/python-jpeg-toolbox)].
-- A Python interface to Ensemble Classifiers [[pyEC](https://github.com/daniellerch/stegolab/blob/master/pyEC)].
-- A Python interface to Syndrome Trellis Codes Steganography [[pySTC](https://github.com/daniellerch/pySTC)].
-- Calibration attack to F5 like steganography [[calibration.py](https://github.com/daniellerch/stegolab/blob/master/calibration/calibration.py)].
 
 

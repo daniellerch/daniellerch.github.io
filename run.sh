@@ -1,3 +1,4 @@
+#!/bin/bash
 
 #gem update --system
-bundle exec jekyll serve
+bundle2.5 exec jekyll serve
