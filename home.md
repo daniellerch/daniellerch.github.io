@@ -27,15 +27,13 @@ mainly dedicated to **steganography**, the ancient art and science of hidden com
   A Python implementation of the steganography method for hiding information into **bitmap images**, proposed in the paper "[A New Cost Function for Spatial Image Steganography](https://ieeexplore.ieee.org/document/7025854)" by Bin Li, Ming Wang, Jiwu Huang and Xiaolong Li.
   <br>[ *Updated on 2020-10-01* ]
 
-- **[Calibration Attack]()**: blah blah 
-  <br>[ *Updated on 2020-10-01* ]
-
-
 <hr>
 -->
 
+- **[Calibration Attack](https://github.com/daniellerch/stegolab/tree/master/calibration)**: Implementation of the attack to F5 algorithm (JPEG steganography) proposed in the paper [Steganalysis of JPEG Images: Breaking the F5 Algorithm](https://link.springer.com/chapter/10.1007/3-540-36415-3_20) by Jessica Fridrich, Miroslav Goljan and Dorin Hogea.
+  <br>[ *Updated on 2020-06-25* ]
 
-- **[Aletheia]()**: Aletheia is an open source image steganalysis tool for the detection of hidden messages in images. To achieve its objectives, Aletheia uses state-of-the-art machine learning techniques. It is capable of detecting different steganographic methods as for example LSB replacement, LSB matching and some kind of adaptive schemes.
+- **[Aletheia](https://github.com/daniellerch/aletheia)**: Aletheia is an open source image steganalysis tool for the detection of hidden messages in images. To achieve its objectives, Aletheia uses state-of-the-art machine learning techniques. It is capable of detecting different steganographic methods as for example LSB replacement, LSB matching and some kind of adaptive schemes.
   <br>[ *Updated on 2020-04-13* ]
 
 - **[Python JPEG Toolbox](https://github.com/daniellerch/python-jpeg-toolbox)**: Toolbox for accessing low level JPEG information (DCT coefficients, quantization tables, ...) with Python. Its interface is similar to the well-known Matlab JPEG Toolbox. 
@@ -46,6 +44,10 @@ mainly dedicated to **steganography**, the ancient art and science of hidden com
 
 - **[Stego Retweet](https://github.com/daniellerch/stego-retweet)**: A tool for hiding messages in Twitter using retweets. Using a list of hashtags provided by the user, this tool finds and retweets some tweets containing especial words. This allows to hide a message that can be read by the user who has the password. The capacity is of two characters per retweet. 
   <br>[ *Updated on 2018-03-27* ]
+
+- **[pyEC](https://github.com/daniellerch/stegolab/tree/master/pyEC)**: Python Interface to the Matlab version of Ensemble Classifiers for Steganalysis, presented in the paper "[Ensemble Classifiers for Steganalysis of Digital Media](https://ieeexplore.ieee.org/document/6081929)" by Jan Kodovsky, Jessica Fridrich and Vojtěch Holub.
+  <br>[ *Updated on 2017-04-02* ]
+
 
 
 
