@@ -45,6 +45,16 @@ mainly dedicated to **steganography**, the ancient art and science of hidden com
 - **[Stego Retweet](https://github.com/daniellerch/stego-retweet)**: A tool for hiding messages in Twitter using retweets. Using a list of hashtags provided by the user, this tool finds and retweets some tweets containing especial words. This allows to hide a message that can be read by the user who has the password. The capacity is of two characters per retweet. 
   <br>[ *Updated on 2018-03-27* ]
 
+
+- **[ATS](https://github.com/daniellerch/papers_code/blob/master/ATS/)**: Implementation of the ATS attack, presented in the paper "[Unsupervised steganalysis based on artificial training sets](https://www.sciencedirect.com/science/article/abs/pii/S0952197616000026)" by Daniel Lerch-Hostalot and David Megías.
+  <br>[ *Updated on 2017-05-10* ]
+
+- **[MA](https://github.com/daniellerch/papers_code/blob/master/MA_PPD/)**: Implementation of the *manifold alignment* technique, presented in the paper "[Manifold alignment approach to cover source mismatch in steganalysis](https://github.com/daniellerch/papers/raw/master/dlerch2016ma.pdf)" by Daniel Lerch-Hostalot and David Megías.
+  <br>[ *Updated on 2017-04-02* ]
+
+- **[PPD](https://github.com/daniellerch/papers_code/blob/master/PPD/)**: Implementation of the PPD feature extractor, presented in the paper "[LSB matching steganalysis based on patterns of pixel differences and random embedding](https://www.sciencedirect.com/science/article/pii/S0167404812001745)" by Daniel Lerch-Hostalot and David Megías.
+  <br>[ *Updated on 2017-04-02* ]
+
 - **[pyEC](https://github.com/daniellerch/stegolab/tree/master/pyEC)**: Python Interface to the Matlab version of Ensemble Classifiers for Steganalysis, presented in the paper "[Ensemble Classifiers for Steganalysis of Digital Media](https://ieeexplore.ieee.org/document/6081929)" by Jan Kodovsky, Jessica Fridrich and Vojtěch Holub.
   <br>[ *Updated on 2017-04-02* ]
 
