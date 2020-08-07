@@ -55,7 +55,7 @@ mainly dedicated to **steganography**, the ancient art and science of hidden com
 - **[PPD](https://github.com/daniellerch/papers_code/blob/master/PPD/)**: Implementation of the PPD feature extractor, presented in the paper "[LSB matching steganalysis based on patterns of pixel differences and random embedding](https://www.sciencedirect.com/science/article/pii/S0167404812001745)" by Daniel Lerch-Hostalot and David Megías.
   <br>[ *Updated on 2017-04-02* ]
 
-- **[pyEC](https://github.com/daniellerch/stegolab/tree/master/pyEC)**: Python Interface to the Matlab version of Ensemble Classifiers for Steganalysis, presented in the paper "[Ensemble Classifiers for Steganalysis of Digital Media](https://ieeexplore.ieee.org/document/6081929)" by Jan Kodovsky, Jessica Fridrich and Vojtěch Holub.
+- **[pyEC](https://github.com/daniellerch/stegolab/tree/master/pyEC)**: Python Interface to the Matlab version of Ensemble Classifiers for Steganalysis, presented in the paper "[Ensemble Classifiers for Steganalysis of Digital Media](https://ieeexplore.ieee.org/document/6081929)" by Jan Kodovský, Jessica Fridrich and Vojtěch Holub.
   <br>[ *Updated on 2017-04-02* ]
 
 
