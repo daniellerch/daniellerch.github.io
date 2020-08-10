@@ -2,7 +2,7 @@
 layout: page
 title: Welcome
 subtitle: ""
-noindex: true
+noindex: false
 ---
 
 Hello and welcome to my page. My name is Daniel Lerch and this is a personal site

@@ -2,7 +2,7 @@
 layout: page
 title: Publications
 subtitle: "" 
-noindex: true
+noindex: false
 ---
 
 
