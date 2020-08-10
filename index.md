@@ -27,7 +27,7 @@ mainly dedicated to **steganography**, the ancient art and science of hidden com
 -->
 
 - **[HILL](https://github.com/daniellerch/stegolab/tree/master/HILL)**: 
-  A Python implementation of the steganography method for hiding information into **bitmap images**, proposed in the paper "[A New Cost Function for Spatial Image Steganography](https://ieeexplore.ieee.org/document/7025854)" by Bin Li, Ming Wang, Jiwu Huang and Xiaolong Li.
+  A Python implementation of the steganography method for hiding information into bitmap images, proposed in the paper "[A New Cost Function for Spatial Image Steganography](https://ieeexplore.ieee.org/document/7025854)" by Bin Li, Ming Wang, Jiwu Huang and Xiaolong Li.
   <br>[ *Updated on 2020-08-10* ]
 
 - **[Calibration Attack](https://github.com/daniellerch/stegolab/tree/master/calibration)**: Implementation of the attack to F5 algorithm (JPEG steganography) proposed in the paper [Steganalysis of JPEG Images: Breaking the F5 Algorithm](https://link.springer.com/chapter/10.1007/3-540-36415-3_20) by Jessica Fridrich, Miroslav Goljan and Dorin Hogea.
