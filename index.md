@@ -17,14 +17,10 @@ mainly dedicated to **steganography**, the ancient art and science of hidden com
 
 ### Latest updates
 
-<!--
 
-- **[J-UNIWARD]()**: 
-  A Python implementation of the steganography method for hidden information into **JPEG images**, proposed in the paper "[Universal Distortion Function for Steganography in an Arbitrary Domain](https://link.springer.com/article/10.1186/1687-417X-2014-1)" by Vojtěch Holub, Jessica Fridrich and Tomáš Denemark. 
-  <br>[ *Updated on 2020-10-01* ]
-
-<hr>
--->
+- **[J-UNIWARD](https://github.com/daniellerch/stegolab/tree/master/J-UNIWARD)**: 
+  A Python implementation of the steganography method for hidden information into JPEG images, proposed in the paper "[Universal Distortion Function for Steganography in an Arbitrary Domain](https://link.springer.com/article/10.1186/1687-417X-2014-1)" by Vojtěch Holub, Jessica Fridrich and Tomáš Denemark. 
+  <br>[ *Updated on 2020-08-24* ]
 
 - **[HILL](https://github.com/daniellerch/stegolab/tree/master/HILL)**: 
   A Python implementation of the steganography method for hiding information into bitmap images, proposed in the paper "[A New Cost Function for Spatial Image Steganography](https://ieeexplore.ieee.org/document/7025854)" by Bin Li, Ming Wang, Jiwu Huang and Xiaolong Li.
