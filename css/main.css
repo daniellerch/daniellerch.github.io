@@ -49,29 +49,35 @@ hr.small {
 
 
 h1 {
-  font-size: 6vw;
+  /*font-size: 6vw;*/
+  font-size: 30px;
 }
 
 h2 {
-  font-size: 5vw;
+  /*font-size: 5vw;*/
+  font-size: 22px;
 }
 
 h3 {
-  font-size: 4vw;
+  /*font-size: 4vw;*/
+  font-size: 18px;
 }
 
 
 @media only screen and (min-width: 768px) {
 	h1 {
-	  font-size: 4vw;
+	  /*font-size: 4vw;*/
+	  font-size: 30px;
 	}
 	h2 {
-	  font-size: 3vw;
+	  /*font-size: 3vw;*/
+	  font-size: 22px;
 	}
 
 	h3 {
-     margin-top: 35px;
-	  font-size: 2vw;
+      margin-top: 35px;
+	  /*font-size: 2vw;*/
+	  font-size: 18px;
 	}
 }
 
@@ -481,7 +487,8 @@ footer .theme-by {
 /* --- Post and page headers --- */
 
 .intro-header {
-  margin: 80px 0 20px;
+  /*margin: 80px 0 20px;*/
+  margin: 200px 0 20px;
   position: relative;
 }
 .intro-header.big-img {
@@ -518,15 +525,18 @@ footer .theme-by {
 }
 .intro-header .page-heading h1 {
   margin-top: 0;
-  font-size: 6vw;
+  /*font-size: 6vw;*/
+  font-size: 30px;
 }
 .intro-header .post-heading h1 {
   margin-top: 0;
-  font-size: 35px;
+  /*font-size: 35px;*/
+  font-size: 30px;
 }
 .intro-header .page-heading .page-subheading,
 .intro-header .post-heading .post-subheading {
-  font-size: 5vw;
+  /*font-size: 5vw;*/
+  font-size: 22px;
   line-height: 1.1;
   display: block;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -571,10 +581,12 @@ footer .theme-by {
     padding: 150px 0;
   }
   .intro-header .page-heading h1 {
-    font-size: 3.5vw;
+    /*font-size: 3.5vw;*/
+    font-size: 30px;
   }
   .intro-header .page-subheading {
-    font-size: 2.5vw !important;
+    /*font-size: 2.5vw !important;*/
+    font-size: 22px !important;
   }
   .intro-header .post-heading h1 {
     font-size: 50px;

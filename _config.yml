@@ -262,3 +262,8 @@ plugins:
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
+
+
+# deployment
+host: 0.0.0.0
+port: 4000
