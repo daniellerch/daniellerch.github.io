@@ -18,7 +18,7 @@ mainly dedicated to **steganography**, the ancient art and science of hidden com
 ### Latest updates
 
 
-- **[Syndrome Trellis Codes](https://github.com/daniellerch/stegolab/tree/master/codes/STC.py)**: A Python implementation of the steganography embedding technique presented in the paper "[Minimizing embedding impact in steganography using trellis-coded quantization](https://doi.org/10.1117/12.838002)" by Tomáš Filler, Jan Judas and Jessica Fridrich".
+- **[Syndrome Trellis Codes](https://github.com/daniellerch/stegolab/tree/master/codes/STC.py)**: A Python implementation of the steganography embedding technique presented in the paper "[Minimizing embedding impact in steganography using trellis-coded quantization](https://doi.org/10.1117/12.838002)" by Tomáš Filler, Jan Judas and Jessica Fridrich.
   <br>[ *Updated on 2020-10-08* ]
 
 - **[J-UNIWARD](https://github.com/daniellerch/stegolab/tree/master/J-UNIWARD)**: 
@@ -38,7 +38,7 @@ mainly dedicated to **steganography**, the ancient art and science of hidden com
 - **[Python JPEG Toolbox](https://github.com/daniellerch/python-jpeg-toolbox)**: Toolbox for accessing low level JPEG information (DCT coefficients, quantization tables, ...) with Python. Its interface is similar to the well-known Matlab JPEG Toolbox. 
   <br>[ *Updated on 2020-03-23* ]
 
-- **[PySTC](https://github.com/daniellerch/pySTC)**: Python interface to Syndrome Trellis Codes (C++), presented in the paper "[Minimizing Additive Distortion in Steganography using Syndrome-Trellis Codes](https://ieeexplore.ieee.org/document/5740590)" by Tomáš Filler, Jan Judas and Jessica Fridrich".
+- **[PySTC](https://github.com/daniellerch/pySTC)**: Python interface to Syndrome Trellis Codes (C++), presented in the paper "[Minimizing Additive Distortion in Steganography using Syndrome-Trellis Codes](https://ieeexplore.ieee.org/document/5740590)" by Tomáš Filler, Jan Judas and Jessica Fridrich.
   <br>[ *Updated on 2019-03-18* ]
 
 - **[Stego Retweet](https://github.com/daniellerch/stego-retweet)**: A tool for hiding messages in Twitter using retweets. Using a list of hashtags provided by the user, this tool finds and retweets some tweets containing especial words. This allows to hide a message that can be read by the user who has the password. The capacity is of two characters per retweet. 
