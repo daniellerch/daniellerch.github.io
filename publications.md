@@ -8,7 +8,7 @@ noindex: false
 
 - Detection of Classifier Inconsistencies in Image Steganalysis. July 2019. Proceedings of the ACM Workshop on Information Hiding and Multimedia Security. [<a href='https://github.com/daniellerch/papers/raw/master/dlerch2019.pdf'>pdf</a>] [<a href='https://github.com/daniellerch/papers/raw/master/dlerch2019_slides.pdf'>slides</a>].
 
-- Diagnóstico de CSM en estegoanálisis. Octubre 2018. Reunión Española de Criptografía y Seguridad XV [<a href="https://github.com/daniellerch/papers/raw/master/dlerch2018.pdf">pdf</a>] [<a href="https://github.com/daniellerch/papers/raw/master/dlerch2018.pdf">slides</a>].
+- Diagnóstico de CSM en estegoanálisis. Octubre 2018. Reunión Española de Criptografía y Seguridad XV [<a href="https://github.com/daniellerch/papers/raw/master/dlerch2018.pdf">pdf</a>] [<a href="https://github.com/daniellerch/papers/raw/master/dlerch2018_slides.pdf">slides</a>].
 
 - Manifold alignment approach to cover source mismatch in steganalysis. October 2016. Reunión Española de Criptografía y Seguridad XIV [<a href="https://github.com/daniellerch/papers/raw/master/dlerch2016ma.pdf">pdf</a>] [<a href="https://github.com/daniellerch/papers/raw/master/dlerch2016ma_slides.pdf">slides</a>] [<a href="https://github.com/daniellerch/papers_code">code</a>].
 
