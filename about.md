@@ -7,7 +7,7 @@ noindex: false
 
 Daniel Lerch holds a BSc degree in Computer Science, a MSc degree in Free and Open Source Software (FOSS) and a <a href="https://github.com/daniellerch/papers/raw/master/dlerch2017thesis.pdf">PhD</a> in Network and Information Technologies from <a href="https://uoc.edu">Universitat Oberta de Catalunya</a> (UOC). He is member of KISON (K-ryptography and Information Security for Open Networks) research group and his research focuses on Steganography, Steganalysis, Image Processing and Machine learning. He is also an expert member at Criminal Use of Information Hiding (<a href="https://cuing.org/">CUIng</a>) Initiative (<a href="https://www.europol.europa.eu/about-europol/european-cybercrime-centre-ec3">Europol European Cybercrime Centre - EC3</a>).
 
-Daniel Lerch is the founder of <a href='http://neuron4.com'>Neuron4 Tech</a>, a company dedicated to developing innovative products powered by Artificial Intelligence. He is also associate professor of cryptography at the <a href="https://uoc.edu">Universitat Oberta de Catalunya</a> (UOC).
+Daniel Lerch is the founder of <a href='http://neuron4.com'>Neuron4 Tech</a>, a company dedicated to developing innovative products powered by Artificial Intelligence. He is also associate professor of <a href='http://cv.uoc.edu/tren/trenacc/web/GAT_EXP.PLANDOCENTE?any_academico=20202&cod_asignatura=M1.878&idioma=CAS&pagina=PD_PREV_PORTAL'>Data Hiding</a> and <a href='http://cv.uoc.edu/tren/trenacc/web/GAT_EXP.PLANDOCENTE?any_academico=20202&cod_asignatura=75.601&idioma=CAS&pagina=PD_PREV_PORTAL'>Cryptography</a> at the <a href="https://uoc.edu">Universitat Oberta de Catalunya</a> (UOC).
 
 
 You can find Daniel Lerch at:
