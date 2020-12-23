@@ -44,6 +44,17 @@ noindex: false
 <div style='height:16px'></div>
 
 
+## Watermarking
+
+- **[Watermarking examples](https://github.com/daniellerch/stegolab/tree/master/watermarking)**: Implementation of some watermarking schemes proposed in the book [Digital Watermarking and Steganography](https://www.elsevier.com/books/digital-watermarking-and-steganography/cox/978-0-12-372585-1)  by I. J. Cox, M. L. Miller, J. A. Bloom, J. Fridrich and T. Kalker.
+    - System 1: [E_BLIND](https://github.com/daniellerch/stegolab/tree/master/watermarking/E_BLIND.py) / [D_LC](https://github.com/daniellerch/stegolab/tree/master/watermarking/D_LC.py)
+    - System 2: [E_FIXED_LC](https://github.com/daniellerch/stegolab/tree/master/watermarking/E_FIXED_LC.py) / [D_LC](https://github.com/daniellerch/stegolab/tree/master/watermarking/D_LC.py)
+    - System 3: [E_BLK_BLIND](https://github.com/daniellerch/stegolab/tree/master/watermarking/E_BLK_BLIND.py) / [D_BLK_CC](https://github.com/daniellerch/stegolab/tree/master/watermarking/D_BLK_CC.py)
+    - System 4: [E_SIMPLE_8](https://github.com/daniellerch/stegolab/tree/master/watermarking/E_SIMPLE_8.py) / [D_SIMPLE_8](https://github.com/daniellerch/stegolab/tree/master/watermarking/D_SIMPLE_8.py)
+<div style='height:16px'></div>
+
+
+
 
 
 ## Tools & libraries
