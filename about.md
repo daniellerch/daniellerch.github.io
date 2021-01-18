@@ -12,7 +12,7 @@ Daniel Lerch is the founder of <a href='http://neuron4.com'>Neuron4 Tech</a>, a 
 
 You can find Daniel Lerch at:
 
-<div style="width:500px;position:relative;left:50px">
+<div style="width:90%;position:relative;left:50px">
 
    <a href="javascript:location='mailto:\u0064\u006c\u0065\u0072\u0063\u0068\u0040\u0067\u006d\u0061\u0069\u006c\u002e\u0063\u006f\u006d';void 0"
       style='color:#333' title="e-mail">
