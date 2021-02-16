@@ -47,11 +47,11 @@ noindex: false
 ## Watermarking
 
 - **[Watermarking examples](https://github.com/daniellerch/stegolab/tree/master/watermarking)**: Implementation of some watermarking schemes proposed in the book [Digital Watermarking and Steganography](https://www.elsevier.com/books/digital-watermarking-and-steganography/cox/978-0-12-372585-1)  by I. J. Cox, M. L. Miller, J. A. Bloom, J. Fridrich and T. Kalker.
-    - System 1: [E_BLIND](https://github.com/daniellerch/stegolab/tree/master/watermarking/E_BLIND.py) / [D_LC](https://github.com/daniellerch/stegolab/tree/master/watermarking/D_LC.py)
-    - System 2: [E_FIXED_LC](https://github.com/daniellerch/stegolab/tree/master/watermarking/E_FIXED_LC.py) / [D_LC](https://github.com/daniellerch/stegolab/tree/master/watermarking/D_LC.py)
-    - System 3: [E_BLK_BLIND](https://github.com/daniellerch/stegolab/tree/master/watermarking/E_BLK_BLIND.py) / [D_BLK_CC](https://github.com/daniellerch/stegolab/tree/master/watermarking/D_BLK_CC.py)
-    - System 4: [E_SIMPLE_8](https://github.com/daniellerch/stegolab/tree/master/watermarking/E_SIMPLE_8.py) / [D_SIMPLE_8](https://github.com/daniellerch/stegolab/tree/master/watermarking/D_SIMPLE_8.py)
-    - System 5: [E_TRELLIS_8](https://github.com/daniellerch/stegolab/tree/master/watermarking/E_TRELLIS_8.py) / [D_TRELLIS_8](https://github.com/daniellerch/stegolab/tree/master/watermarking/D_TRELLIS_8.py)
+    - System 1: [E_BLIND](https://github.com/daniellerch/stegolab/tree/master/watermarking/E_BLIND.py) / [D_LC](https://github.com/daniellerch/stegolab/tree/master/watermarking/D_LC.py). Blind Embedding (E_BLIND) and Linear Correlation Detection (L_LC).
+    - System 2: [E_FIXED_LC](https://github.com/daniellerch/stegolab/tree/master/watermarking/E_FIXED_LC.py) / [D_LC](https://github.com/daniellerch/stegolab/tree/master/watermarking/D_LC.py). Fixed Linear Correlation Embedder (E_FIXED_LC) and Linear Correlation Detection (L_LC).
+    - System 3: [E_BLK_BLIND](https://github.com/daniellerch/stegolab/tree/master/watermarking/E_BLK_BLIND.py) / [D_BLK_CC](https://github.com/daniellerch/stegolab/tree/master/watermarking/D_BLK_CC.py). Block-Based, Blind Embedding (E_BLK_BLIND), and Correlation Coefficient Detection (D_BLK_CC).
+    - System 4: [E_SIMPLE_8](https://github.com/daniellerch/stegolab/tree/master/watermarking/E_SIMPLE_8.py) / [D_SIMPLE_8](https://github.com/daniellerch/stegolab/tree/master/watermarking/D_SIMPLE_8.py). 8-Bit Blind Embedder (E_SIMPLE_8) and 8-Bit Detector (D_SIMPLE_8).
+    - System 5: [E_TRELLIS_8](https://github.com/daniellerch/stegolab/tree/master/watermarking/E_TRELLIS_8.py) / [D_TRELLIS_8](https://github.com/daniellerch/stegolab/tree/master/watermarking/D_TRELLIS_8.py). Trellis-Coding Embedder (E_TRELLIS_8) and Viterbi Detector (D_TRELLIS_8).
 <div style='height:16px'></div>
 
 
