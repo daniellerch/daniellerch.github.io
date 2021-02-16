@@ -5,6 +5,29 @@ subtitle: ""
 noindex: false
 ---
 
+<style>
+    [id]::before {
+        content: '';
+        display: block;
+        height:      75px;
+        margin-top: -75px;
+        visibility: hidden;
+    }
+</style>
+
+<div class='menu'></div>
+
+## Table of contents
+* [Matrix embedding](#matrix-embedding)
+* [Cost functions](#cost-functions)
+* [Machine/Deep Learning attacks](#machinedeep-learning-attacks)
+* [Statistical attacks](#statistical-attacks)
+* [Watermarking](#watermarking)
+* [Tools & libraries](#tools--libraries)
+
+<br>
+<hr>
+
 
 ## Matrix embedding
 
@@ -13,6 +36,7 @@ noindex: false
 
 - **[PySTC](https://github.com/daniellerch/pySTC)**: Python interface to Syndrome Trellis Codes (C++), presented in the paper "[Minimizing Additive Distortion in Steganography using Syndrome-Trellis Codes](https://ieeexplore.ieee.org/document/5740590)" by Tomáš Filler, Jan Judas and Jessica Fridrich.
 
+<hr>
 
 
 ## Cost functions
@@ -22,6 +46,8 @@ noindex: false
 
 - **[HILL](https://github.com/daniellerch/stegolab/tree/master/HILL)**: 
   A Python implementation of the steganography method for hiding information into bitmap images, proposed in the paper "[A New Cost Function for Spatial Image Steganography](https://ieeexplore.ieee.org/document/7025854)" by Bin Li, Ming Wang, Jiwu Huang and Xiaolong Li.
+
+<hr>
 
 
 ## Machine/Deep Learning attacks
@@ -34,6 +60,7 @@ noindex: false
 
 - **[pyEC](https://github.com/daniellerch/stegolab/tree/master/pyEC)**: Python Interface to the Matlab version of Ensemble Classifiers for Steganalysis, presented in the paper "[Ensemble Classifiers for Steganalysis of Digital Media](https://ieeexplore.ieee.org/document/6081929)" by Jan Kodovský, Jessica Fridrich and Vojtěch Holub.
 
+<hr>
 
 
 
@@ -43,6 +70,7 @@ noindex: false
 - **[Calibration Attack](https://github.com/daniellerch/stegolab/tree/master/calibration)**: Implementation of the attack to F5 algorithm (JPEG steganography) proposed in the paper [Steganalysis of JPEG Images: Breaking the F5 Algorithm](https://link.springer.com/chapter/10.1007/3-540-36415-3_20) by Jessica Fridrich, Miroslav Goljan and Dorin Hogea.
 <div style='height:16px'></div>
 
+<hr>
 
 ## Watermarking
 
@@ -58,6 +86,7 @@ noindex: false
       Trellis-Coding Embedder ([E_TRELLIS_8](https://github.com/daniellerch/stegolab/tree/master/watermarking/E_TRELLIS_8.py)) and Viterbi Detector ([D_TRELLIS_8](https://github.com/daniellerch/stegolab/tree/master/watermarking/D_TRELLIS_8.py)).
 <div style='height:16px'></div>
 
+<hr>
 
 
 
@@ -70,6 +99,7 @@ noindex: false
 
 - **[Stego Retweet](https://github.com/daniellerch/stego-retweet)**: A tool for hiding messages in Twitter using retweets. Using a list of hashtags provided by the user, this tool finds and retweets some tweets containing especial words. This allows to hide a message that can be read by the user who has the password. The capacity is of two characters per retweet. 
 
+<hr>
 
 
 
