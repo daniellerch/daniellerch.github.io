@@ -9,8 +9,8 @@ noindex: false
     [id]::before {
         content: '';
         display: block;
-        height:      75px;
-        margin-top: -75px;
+        height:      70px;
+        margin-top: -70px;
         visibility: hidden;
     }
 </style>
