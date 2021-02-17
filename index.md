@@ -9,9 +9,9 @@ Hello and welcome to my page. My name is Daniel Lerch and this is a personal sit
 mainly dedicated to **steganography**, the ancient art and science of hidden communication.
 
 
+> "Two accomplices in a crime have been arrested and are about to be locked in widely separated cells. Their only means of communication after they are locked up will be by way of messages conveyed for them by trustees -- who are known to be agents of the warden. (...). The prisoners, (...) are willing to accept these conditions (...) to be able to communicate at all, since they need to coordinate their plans. To do this they will have to deceive the  warden by finding a way of communicating secretly (...)"
+> <div style='text-align:right;position:relative;top:-10px'>The Prisoners' Problem and the Subliminal Channel<br>Gustavus J. Simmons</div>
 
-> "[...] I have uncovered certain ways, both numerous and varied, that are not to be entirely spurned whereby I can intimate my most secret thoughts to another who knows this art, however far away I wish, securely and free from the deceit, suspicion, or detection by anyone, using writing or openly through messengers."
-> <div style='text-align:right;position:relative;top:-10px'>Steganographia<br>Johanes Trithemius (1462 - 1516)</div>
 
 <br>
 
