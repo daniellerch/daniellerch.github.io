@@ -14,22 +14,13 @@ A continuación, se muestran diferentes casos de estudio en los que se analizan 
 - [Stegoanalisis de OpenStego](/aletheia/case-studies/OpenStego-es)
 <br>
 
-## LSB replacement en imágenes JPEG
-- Estegoanálisis de Hide & Seek (???)
-- Estegoanálisis de Jsteg (???)
-<br>
-
 ## Ataques de calibración
 - Ataque de calibración a F5
 - Ataque de calibración a Steghide
 <br>
 
-## LSB matching
-- Estegoanálisis de XXX
-<br>
-
-
-## Esquemas adaptativos
+## Detección usando *deep learning*. 
+- Estegoanálisis de LSB matching
 - Estegoanálisis de HILL
 - Estegoanálisis de J-UNNIWARD
 <br>
