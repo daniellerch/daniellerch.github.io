@@ -39,7 +39,7 @@ $ java Embed -e secret.txt lena3.jpg lena3_f5.jpg
 ```
 
 
-### Tećnica de inserción
+### Técnica de inserción
 
 F5 oculta información modificando los coeficientes 
 [DCT](https://en.wikipedia.org/wiki/Discrete_cosine_transform) de las imágenes 
