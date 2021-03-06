@@ -15,7 +15,7 @@ A continuación, se muestran diferentes casos de estudio en los que se analizan 
 <br>
 
 ## Ataques de calibración
-- Ataque de calibración a F5
+- [Ataque de calibración a F5](/aletheia/case-studies/F5-es)
 - Ataque de calibración a Steghide
 <br>
 
