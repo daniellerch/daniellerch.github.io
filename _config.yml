@@ -25,9 +25,9 @@ navbar-links:
 #   ML-Snippets: "ml/snippets"
 #   Blog: "/"
 #   Tools: "https://github.com/daniellerch"
-   Code: "/code"
-   Publications: "/publications"
-   About: "/about"
+   code: "/code"
+   publications: "/publications"
+   about: "/about"
 
 #  Resources:
 #    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
