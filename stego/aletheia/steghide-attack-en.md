@@ -291,16 +291,16 @@ Let's start with actor A1:
 ```bash
 /aletheia.py dci steghide-sim actors/A1
 ...
-actors/A1/2.jpg 0
-actors/A1/4.jpg 0
-actors/A1/10.jpg 0
-actors/A1/6.jpg 0
-actors/A1/7.jpg 0
-actors/A1/8.jpg 0
-actors/A1/9.jpg 0
-actors/A1/1.jpg 0
-actors/A1/3.jpg 0
-actors/A1/5.jpg 0
+actors/A1/2.jpg          0
+actors/A1/4.jpg          0
+actors/A1/10.jpg         0
+actors/A1/6.jpg          0
+actors/A1/7.jpg          0
+actors/A1/8.jpg          0
+actors/A1/9.jpg          0
+actors/A1/1.jpg          0
+actors/A1/3.jpg          0
+actors/A1/5.jpg          0
 DCI prediction score: 1.0
 ```
 
@@ -313,23 +313,23 @@ Let's continue with actor A2:
 ```bash
 ./aletheia.py dci steghide-sim actors/A2
 ...
-actors/A2/2.jpg 1
-actors/A2/4.jpg 1
-actors/A2/10.jpg INC
-actors/A2/6.jpg INC
-actors/A2/7.jpg INC
-actors/A2/8.jpg 1
-actors/A2/9.jpg 1
-actors/A2/1.jpg 1
-actors/A2/3.jpg 1
-actors/A2/5.jpg INC
-DCI prediction score: 0.8
-``` 
+actors/A2/2.jpg          1
+actors/A2/4.jpg          1
+actors/A2/10.jpg         1 (inc)
+actors/A2/6.jpg          1 (inc)
+actors/A2/7.jpg          1 (inc)
+actors/A2/8.jpg          1
+actors/A2/9.jpg          1 (inc)
+actors/A2/1.jpg          1
+actors/A2/3.jpg          1
+actors/A2/5.jpg          0 (inc)
+DCI prediction score: 0.75
+```
 
-We see images with INC as a result, which are **inconsistencies** in 
-classification detected by DCI, for which no prediction occurs. Aletheia 
-detects the rest of the images and tells us that the prediction 
-reliability is 80%.
+We see images marked "inc", which are **classification inconsistencies** 
+detected by DCI. In these cases the prediction is not reliable. 
+Aletheia detects almost all images as *stego* and a DCI prediction 
+of 75% tells us that the quality of the model is acceptable.
 
 Let's now see what happens in CSM cases. Now we are going to use the actors 
 B1 and B2, which come from the image database **Imagenet**, and which, 
@@ -345,20 +345,20 @@ Let's start with B1, an innocent actor:
 ```bash
 ./aletheia.py dci steghide-sim actors/B1
 ...
-actors/B1/2.jpg 0
-actors/B1/4.jpg 0
-actors/B1/10.jpg 0
-actors/B1/6.jpg INC
-actors/B1/7.jpg INC
-actors/B1/8.jpg 0
-actors/B1/9.jpg 0
-actors/B1/1.jpg 0
-actors/B1/3.jpg INC
-actors/B1/5.jpg INC
-DCI prediction score: 0.8
+actors/B1/2.jpg          0
+actors/B1/4.jpg          0
+actors/B1/10.jpg         0
+actors/B1/6.jpg          0 (inc)
+actors/B1/7.jpg          1 (inc)
+actors/B1/8.jpg          0
+actors/B1/9.jpg          0
+actors/B1/1.jpg          0 (inc)
+actors/B1/3.jpg          0 (inc)
+actors/B1/5.jpg          1 (inc)
+DCI prediction score: 0.75
 ```
 
-For this set of images the prediction is quite reliable (80%), even with CSM.
+For this set of images the prediction is quite reliable (75%), even with CSM.
 
 
 Now let's see what happens with B2, a guilty actor using Steghide:
@@ -366,21 +366,22 @@ Now let's see what happens with B2, a guilty actor using Steghide:
 ```bash
 ./aletheia.py dci steghide-sim actors/B2/
 ...
-actors/B2/2.jpg INC
-actors/B2/4.jpg 0
-actors/B2/10.jpg INC
-actors/B2/6.jpg 1
-actors/B2/7.jpg INC
-actors/B2/8.jpg INC
-actors/B2/9.jpg INC
-actors/B2/1.jpg INC
-actors/B2/3.jpg 1
-actors/B2/5.jpg INC
-DCI prediction score: 0.65
+actors/B2/2.jpg          0 (inc)
+actors/B2/4.jpg          0 (inc)
+actors/B2/10.jpg         1 (inc)
+actors/B2/6.jpg          1 (inc)
+actors/B2/7.jpg          0 (inc)
+actors/B2/8.jpg          0 (inc)
+actors/B2/9.jpg          1 (inc)
+actors/B2/1.jpg          1 (inc)
+actors/B2/3.jpg          1 (inc)
+actors/B2/5.jpg          1 (inc)
+DCI prediction score: 0.5
 ```
 
-We see that the model does not work well. Most of the images are 
-inconsistent and DCI tells us that the reliability is only about 65%.
+In this case, the DCI prediction tells us that the model is not reliable,
+so we should not trust their predictions.
+
 
 Faced with this type of scenario, two important questions arise:
 
