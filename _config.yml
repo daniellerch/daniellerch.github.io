@@ -26,6 +26,7 @@ navbar-links:
 #   Blog: "/"
 #   Tools: "https://github.com/daniellerch"
    code: "/code"
+   blog: "/blog"
    publications: "/publications"
    about: "/about"
 
