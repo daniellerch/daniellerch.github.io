@@ -6,6 +6,7 @@ noindex: false
 submenu: true
 submenuitem1: "en |"
 submenuitem2: "<a href='/stego/aletheia/f5-attack-es'>es</a>"
+comments: true
 ---
 
 > In this article we are going to talk about how to detect the steganography 

@@ -6,6 +6,7 @@ noindex: false
 submenu: true
 submenuitem1: "<a href='/stego/aletheia/steghide-attack-en'>en</a>"
 submenuitem2: "| es"
+comments: true
 ---
 
 > En este artículo vamos a ver como detectar **imagenes JPEG** en las que se

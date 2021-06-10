@@ -6,6 +6,7 @@ noindex: false
 submenu: true
 submenuitem1: "<a href='/stego/aletheia/f5-attack-en'>en</a>"
 submenuitem2: "| es"
+comments: true
 ---
 
 > En este artículo vamos a ver como detectar el esquema de esteganografía para
