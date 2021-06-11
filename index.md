@@ -18,7 +18,10 @@ mainly dedicated to **steganography**, the ancient art and science of hidden com
 ### Latest updates
 
 - **[Aletheia](https://github.com/daniellerch/aletheia)**: Aletheia is an open source image steganalysis tool for the detection of hidden messages in images. To achieve its objectives, Aletheia uses state-of-the-art machine learning techniques. It is capable of detecting different steganographic methods as for example LSB replacement, LSB matching and some kind of adaptive schemes.
-  <br>[ *Updated on 2021-06-04* ]
+  <br>[ *Updated on 2021-06-12* ]
+
+- **[Introduction to steganalysis with Aletheia](https://daniellerch.me/stego/aletheia/intro-en/)**: Blog post about the basic usage of the Aletheia steganalysis tool.
+  <br>[ *Updated on 2021-06-12* ]
 
 - **[Practical attack on F5](https://daniellerch.me/stego/aletheia/f5-attack-en/)**: Blog post about the detection of JPEG images embedded with F5, using the Aletheia steganalysis tool.
   <br>[ *Updated on 2021-06-04* ]

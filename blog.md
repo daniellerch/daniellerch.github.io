@@ -5,6 +5,10 @@ subtitle: ""
 noindex: false
 ---
 
+- Introduction to steganalysis with Aletheia.
+  ( [en](/stego/aletheia/intro-en) | [es](/stego/aletheia/intro-es) ). 
+  <br>[ *Updated on 2021-06-12* ]
+
 - Practical attack on Steghide.
   ( [en](/stego/aletheia/steghide-attack-en) | [es](/stego/aletheia/steghide-attack-es) ).
   <br>[ *Updated on 2021-06-03* ]
