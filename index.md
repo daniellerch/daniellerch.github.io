@@ -21,7 +21,7 @@ mainly dedicated to **steganography**, the ancient art and science of hidden com
   <br>[ *Updated on 2021-06-04* ]
 
 - **[Practical attack on F5](https://daniellerch.me/stego/aletheia/f5-attack-en/)**: Blog post about the detection of JPEG images embedded with F5, using the Aletheia steganalysis tool.
-  <br>[ *Updated on 2021-06-03* ]
+  <br>[ *Updated on 2021-06-04* ]
 
 - **[Practical attack on Steghide](https://daniellerch.me/stego/aletheia/steghide-attack-en/)**: Blog post about the detection of JPEG images embedded with Steghide, using the Aletheia steganalysis tool.
   <br>[ *Updated on 2021-06-03* ]
