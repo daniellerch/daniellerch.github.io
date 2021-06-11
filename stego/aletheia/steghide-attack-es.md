@@ -9,7 +9,7 @@ submenuitem2: "| es"
 comments: true
 ---
 
-> En este artículo vamos a ver como detectar **imagenes JPEG** en las que se
+> En este artículo vamos a ver cómo detectar **imagenes JPEG** en las que se
 > ha ocultado información usando la herramienta **Steghide**. Para ello, 
 > usaremos la herramienta de estegoanálisis 
 > [Aletheia](https://github.com/daniellerch/aletheia).

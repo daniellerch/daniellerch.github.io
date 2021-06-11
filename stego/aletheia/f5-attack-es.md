@@ -9,7 +9,7 @@ submenuitem2: "| es"
 comments: true
 ---
 
-> En este artículo vamos a ver como detectar el esquema de esteganografía para
+> En este artículo vamos a ver cómo detectar el esquema de esteganografía para
 > imágenes JPEG conocido como F5. Para ello, usaremos la herramienta 
 > de estegoanálisis [Aletheia](https://github.com/daniellerch/aletheia).
 
