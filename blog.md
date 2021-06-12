@@ -9,6 +9,10 @@ noindex: false
   ( [en](/stego/aletheia/intro-en) | [es](/stego/aletheia/intro-es) ). 
   <br>[ *Updated on 2021-06-12* ]
 
+- Identifying the steganography scheme. 
+  ( [en](/stego/aletheia/identify-en) | [es](/stego/aletheia/identify-es) ).
+  <br>[ *Updated on 2021-06-12* ]
+
 - Practical attack on Steghide.
   ( [en](/stego/aletheia/steghide-attack-en) | [es](/stego/aletheia/steghide-attack-es) ).
   <br>[ *Updated on 2021-06-03* ]

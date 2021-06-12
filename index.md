@@ -23,6 +23,9 @@ mainly dedicated to **steganography**, the ancient art and science of hidden com
 - **[Introduction to steganalysis with Aletheia](https://daniellerch.me/stego/aletheia/intro-en/)**: Blog post about the basic usage of the Aletheia steganalysis tool.
   <br>[ *Updated on 2021-06-12* ]
 
+- **[Identifying the steganography scheme](https://daniellerch.me/stego/aletheia/identify-en/)**: Blog post about the identification of the steganography scheme using the Aletheia steganalysis tool.
+  <br>[ *Updated on 2021-06-12* ]
+
 - **[Practical attack on F5](https://daniellerch.me/stego/aletheia/f5-attack-en/)**: Blog post about the detection of JPEG images embedded with F5, using the Aletheia steganalysis tool.
   <br>[ *Updated on 2021-06-04* ]
 
