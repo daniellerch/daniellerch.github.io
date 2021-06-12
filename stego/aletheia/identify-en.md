@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Identifying the steganography scheme
+title: Identifying the steganographic scheme
 subtitle: "" 
 noindex: true
 submenu: true
