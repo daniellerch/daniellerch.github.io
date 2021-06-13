@@ -21,5 +21,8 @@ noindex: false
   ( [en](/stego/aletheia/f5-attack-en) | [es](/stego/aletheia/f5-attack-es) ).
   <br>[ *Updated on 2021-06-04* ]
 
+- Practical attack on LSB replacement: OpenStego and OpenPuff. 
+  ( [en](/stego/aletheia/lsbr-attack-en) | [es](/stego/aletheia/lsbr-attack-es) ). 
+  <br>[ *Updated on 2021-06-13* ]
 
 
