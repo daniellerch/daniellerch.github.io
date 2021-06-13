@@ -9,7 +9,7 @@ noindex: false
   ( [en](/stego/aletheia/intro-en) | [es](/stego/aletheia/intro-es) ). 
   <br>[ *Updated on 2021-06-12* ]
 
-- Identifying the steganography scheme. 
+- Identifying the steganographic scheme. 
   ( [en](/stego/aletheia/identify-en) | [es](/stego/aletheia/identify-es) ).
   <br>[ *Updated on 2021-06-12* ]
 
