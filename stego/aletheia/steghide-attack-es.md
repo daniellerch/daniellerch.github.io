@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Ataque práctico a Steghide
-subtitle: "" 
 noindex: false
 submenu: true
 submenuitem1: "<a href='/stego/aletheia/steghide-attack-en'>en</a>"

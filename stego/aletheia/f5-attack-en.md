@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Practical attack on F5
-subtitle: "" 
 noindex: false
 submenu: true
 submenuitem1: "en |"

@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Introduction to steganalysis with Aletheia
-subtitle: "" 
 noindex: true
 submenu: true
 submenuitem1: "en |"

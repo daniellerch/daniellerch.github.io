@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Identifying the steganographic scheme
-subtitle: "" 
 noindex: true
 submenu: true
 submenuitem1: "en |"
