@@ -529,7 +529,7 @@ Faced with this type of scenario, two important questions arise:
 
 
 
-#### **What can we do if DCI tells us that the model is unreliable?**. 
+#### **What can we do if DCI tells us that the model is unreliable?**
 One way to proceed is to improve the model, that is, 
 to train a new model with more images. But finding enough images of the 
 same type to improve the database is not an easy task. For this reason 
