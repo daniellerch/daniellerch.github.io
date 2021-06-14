@@ -436,12 +436,13 @@ Password found: 12345ab
 3. Detection of LSB steganography via sample pair analysis. S. Dumitrescu, 
    X. Wu and Z. Wang. IEEE Transactions on Signal Processing, 51 (7), 1995-2007.
 
-4. Steganalysis of JPEG Images: Breaking the F5 Algorithm, with M. Goljan and 
+4. Steganalysis of JPEG Images: Breaking the F5 Algorithm, J. Fridrich, M. Goljan and 
    D. Hogea, 5th Information Hiding Workshop, Noordwijkerhout, The Netherlands, 
    7-9 October 2002, pp. 310-323.
 
-5. Detection of Classifier Inconsistencies in Image Steganalysis. July 2019. 
-   Proceedings of the ACM Workshop on Information Hiding and Multimedia Security.
+5. Detection of Classifier Inconsistencies in Image Steganalysis. Daniel Lerch-Hostalot,
+   David Megías. July 2019. Proceedings of the ACM Workshop on Information Hiding and 
+   Multimedia Security.
 
 
 

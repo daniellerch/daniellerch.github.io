@@ -570,15 +570,16 @@ the image to be analyzed.
    and J. Fridrich, editors, Proceedings of the 9th ACM Multimedia & Security 
    Workshop, pages 3-14, Dallas, TX, September 20-21, 2007.
 
-3. Steganalysis of JPEG Images: Breaking the F5 Algorithm, with M. Goljan and 
+3. Steganalysis of JPEG Images: Breaking the F5 Algorithm, J. Fridrich, M. Goljan and 
    D. Hogea, 5th Information Hiding Workshop, Noordwijkerhout, The Netherlands, 
    7-9 October 2002, pp. 310-323.
 
 4. EfficientNet: Rethinking model scaling for convolutional neural networks. 
    Mingxing Tan and Quoc V Le. In International Conference on Machine Learning, 2019.
 
-5. Detection of Classifier Inconsistencies in Image Steganalysis. July 2019. 
-   Proceedings of the ACM Workshop on Information Hiding and Multimedia Security.
+5. Detection of Classifier Inconsistencies in Image Steganalysis. Daniel Lerch-Hostalot,
+   David Megías. July 2019. Proceedings of the ACM Workshop on Information Hiding and 
+   Multimedia Security.
 
 
 
