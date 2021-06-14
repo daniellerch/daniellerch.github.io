@@ -2,6 +2,8 @@
 layout: page
 title: Blog
 noindex: false
+meta-title: "Blog"
+meta-description: "Blog posts about steganography and steganalysis"
 ---
 
 - Introduction to steganalysis with Aletheia.

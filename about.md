@@ -2,6 +2,8 @@
 layout: page
 title: "About"
 noindex: false
+meta-title: "About Daniel Lerch Hostalot"
+meta-description: "Some information about Daniel Lerch Hostalot related to steganography"
 ---
 
 Daniel Lerch holds a BSc degree in Computer Science, a MSc degree in Free and Open Source Software (FOSS) and a <a href="https://github.com/daniellerch/papers/raw/master/dlerch2017thesis.pdf">PhD</a> in Network and Information Technologies from <a href="https://uoc.edu">Universitat Oberta de Catalunya</a> (UOC). He is member of KISON (K-ryptography and Information Security for Open Networks) research group and his research focuses on Steganography, Steganalysis, Image Processing and Machine learning. He is also an expert member at Criminal Use of Information Hiding (<a href="https://cuing.org/">CUIng</a>) Initiative (<a href="https://www.europol.europa.eu/about-europol/european-cybercrime-centre-ec3">Europol European Cybercrime Centre - EC3</a>).

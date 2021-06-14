@@ -6,6 +6,8 @@ submenu: true
 submenuitem1: "en |"
 submenuitem2: "<a href='/stego/aletheia/f5-attack-es'>es</a>"
 comments: true
+meta-title: "Practical attack on F5"
+meta-description: "Blog post about the detection of JPEG images embedded with F5, using the Aletheia steganalysis tool"
 ---
 
 > In this article we are going to talk about how to detect the steganography 

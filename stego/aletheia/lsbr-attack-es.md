@@ -6,6 +6,8 @@ noindex: true
 submenu: true
 submenuitem1: "<a href='/stego/aletheia/lsbr-attack-en'>en</a>"
 submenuitem2: "| es"
+meta-title: "Ataque práctico a LSB-R: OpenStego y OpenPuff"
+meta-description: "Artículo sobre cómo detectar herramientas que usan la técnica LSB replacement en imágenes de tipo bitmap, usando la herramienta Aletheia"
 ---
 
 > En este artículo vamos a ver cómo detectar herramientas que usan la técnica LSB-R o 

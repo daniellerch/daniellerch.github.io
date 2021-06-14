@@ -5,6 +5,8 @@ noindex: true
 submenu: true
 submenuitem1: "en |"
 submenuitem2: "<a href='/stego/aletheia/identify-es'>es</a>"
+meta-title: "Identifying the steganographic scheme"
+meta-description: "Blog post about the identification of the steganography scheme using the Aletheia steganalysis tool"
 ---
 
 > In this article we are going to talk about how to identify the steganography 

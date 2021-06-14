@@ -5,6 +5,8 @@ noindex: true
 submenu: true
 submenuitem1: "<a href='/stego/aletheia/intro-en'>en</a>"
 submenuitem2: "| es"
+meta-title: "Introducción al estegoanálisis con Aletheia"
+meta-description: "Artículo acerca del uso básico de la herramienta para estegoanálisis Aletheia"
 ---
 
 > En este artículo vamos a ver cómo usar los comandos que ofrece la herramienta 

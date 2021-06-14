@@ -2,6 +2,8 @@
 layout: page
 title: Publications
 noindex: false
+meta-title: "Daniel Lerch's publications"
+meta-description: "Papers about image steganography and steganalysis"
 ---
 
 

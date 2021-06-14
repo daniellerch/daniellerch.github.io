@@ -5,6 +5,8 @@ noindex: true
 submenu: true
 submenuitem1: "<a href='/stego/aletheia/identify-en'>en</a>"
 submenuitem2: "| es"
+meta-title: "Cómo identificar el esquema de esteganografía"
+meta-description: "Artículo acerca de cómo identificar el esquema de esteganografía que se ha usado para ocultar información, usando la herramienta Aletheia"
 ---
 
 > En este artículo vamos a ver cómo identificar el esquema de esteganografía 

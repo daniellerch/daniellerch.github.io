@@ -1,8 +1,9 @@
 ---
 layout: page
 title: Index of code
-subtitle: ""
 noindex: false
+meta-title: "Index of code"
+meta-description: "Steganography and steganalysis programs and resources"
 ---
 
 <style>

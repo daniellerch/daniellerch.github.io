@@ -5,9 +5,11 @@ noindex: true
 submenu: true
 submenuitem1: "en |"
 submenuitem2: "<a href='/stego/aletheia/intro-es'>es</a>"
+meta-title: "Introduction to steganalysis with Aletheia"
+meta-description: "Blog post about the basic usage of the Aletheia steganalysis tool"
 ---
 
-> In this article we are going to talk about  how to use the commands offered by 
+> In this article we are going to talk about how to use the commands offered by 
 > the [Aletheia](https://github.com/daniellerch/aletheia) tool for image stegaanalysis.
 
 <style>
