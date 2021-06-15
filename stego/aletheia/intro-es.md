@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Introducción al estegoanálisis con Aletheia
+title: "Introducción al estegoanálisis con Aletheia"
 subtitle: "" 
 noindex: true
 submenu: true

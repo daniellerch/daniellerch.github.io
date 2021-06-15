@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Introduction to steganalysis with Aletheia
+title: "Introduction to steganalysis with Aletheia"
 subtitle: "" 
 noindex: true
 submenu: true
