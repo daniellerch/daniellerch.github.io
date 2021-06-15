@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "About"
+subtitle: "" 
 noindex: false
 meta-title: "About Daniel Lerch Hostalot"
 meta-description: "Some information about Daniel Lerch Hostalot related to steganography"

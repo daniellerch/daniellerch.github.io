@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Blog
+subtitle: "" 
 noindex: false
 meta-title: "Blog"
 meta-description: "Blog posts about steganography and steganalysis"

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Welcome
+subtitle: "" 
 noindex: false
 meta-title: "Daniel Lerch's personal page"
 meta-description: "Image steganography and steganalysis"
