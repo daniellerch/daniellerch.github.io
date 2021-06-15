@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Practical attack on Steghide
+subtitle: "" 
 noindex: false
 submenu: true
 submenuitem1: "en |"
