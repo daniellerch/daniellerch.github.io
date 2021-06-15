@@ -5,7 +5,7 @@
 
 
   {% if page.meta-title %}
-    <title>{{ page.meta-title }}</title>
+    <title>{{ page.meta-title }}{{ site.title-separator }}</title>
   {% else %}
   <title>{% if page.use-site-title %}{{ site.title }} {{ site.title-separator }} {{ site.description }}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   {% endif %}
