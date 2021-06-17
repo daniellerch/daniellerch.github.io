@@ -2,7 +2,7 @@
 layout: page
 title: Ataque práctico a esquemas LSB-R
 subtitle: "OpenStego y OpenPuff" 
-noindex: true
+noindex: false
 submenu: true
 submenuitem1: "<a href='/stego/aletheia/lsbr-attack-en'>en</a>"
 submenuitem2: "| es"

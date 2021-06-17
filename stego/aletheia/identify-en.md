@@ -2,7 +2,7 @@
 layout: page
 title: Identifying the steganographic scheme
 subtitle: "" 
-noindex: true
+noindex: false
 submenu: true
 submenuitem1: "en |"
 submenuitem2: "<a href='/stego/aletheia/identify-es'>es</a>"

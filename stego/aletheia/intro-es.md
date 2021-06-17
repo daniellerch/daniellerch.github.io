@@ -2,7 +2,7 @@
 layout: page
 title: "Introducción al estegoanálisis con Aletheia"
 subtitle: "" 
-noindex: true
+noindex: false
 submenu: true
 submenuitem1: "<a href='/stego/aletheia/intro-en'>en</a>"
 submenuitem2: "| es"

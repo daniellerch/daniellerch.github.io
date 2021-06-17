@@ -2,7 +2,7 @@
 layout: page
 title: "Introduction to steganalysis with Aletheia"
 subtitle: "" 
-noindex: true
+noindex: false
 submenu: true
 submenuitem1: "en |"
 submenuitem2: "<a href='/stego/aletheia/intro-es'>es</a>"

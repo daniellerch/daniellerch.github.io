@@ -2,7 +2,7 @@
 layout: page
 title: Practical attack on LSB-R
 subtitle: "OpenStego and OpenPuff" 
-noindex: true
+noindex: false
 submenu: true
 submenuitem1: "en |"
 submenuitem2: "<a href='/stego/aletheia/lsbr-attack-es'>es</a>"
