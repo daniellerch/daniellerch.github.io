@@ -25,6 +25,7 @@ navbar-links:
 #   ML-Snippets: "ml/snippets"
 #   Blog: "/"
 #   Tools: "https://github.com/daniellerch"
+   code: "/tools"
    code: "/code"
    blog: "/blog"
    publications: "/publications"
