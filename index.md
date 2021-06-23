@@ -19,6 +19,9 @@ mainly dedicated to **steganography**, the ancient art and science of hidden com
 
 ### Latest updates
 
+- **[HStego](https://github.com/daniellerch/hstego)**: HStego is a tool for hiding data in bitmap and JPEG images. This tool uses some of the most advanced steganography methods known today, along with an upper limit on the amount of data that can be hidden so that it cannot be reliably detected by modern steganography tools.
+  <br>[ *Updated on 2021-06-23* ]
+
 - **[Aletheia](https://github.com/daniellerch/aletheia)**: Aletheia is an open source image steganalysis tool for the detection of hidden messages in images. To achieve its objectives, Aletheia uses state-of-the-art machine learning techniques. It is capable of detecting different steganographic methods as for example LSB replacement, LSB matching and some kind of adaptive schemes.
   <br>[ *Updated on 2021-06-13* ]
 
