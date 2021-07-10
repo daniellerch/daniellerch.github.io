@@ -81,7 +81,7 @@ meta-description: "Steganography and steganalysis programs and resources"
       Fixed Linear Correlation Embedder ([E_FIXED_LC](https://github.com/daniellerch/stegolab/tree/master/watermarking/E_FIXED_LC.py)) amd Linear Correlation Detection ([D_LC](https://github.com/daniellerch/stegolab/tree/master/watermarking/D_LC.py)).
     - **System 3: E_BLK_BLIND/D_BLK_CC**<br>
       Block-Based, Blind Embedding ([E_BLK_BLIND](https://github.com/daniellerch/stegolab/tree/master/watermarking/E_BLK_BLIND.py)) and Correlation Coefficient Detection ([D_BLK_CC](https://github.com/daniellerch/stegolab/tree/master/watermarking/D_BLK_CC.py))
-    - **System 4: E_SIMPLE_8**<br>
+    - **System 4: E_SIMPLE_8/D_SIMPLE_8**<br>
       8-Bit Blind Embedder ([E_SIMPLE_8](https://github.com/daniellerch/stegolab/tree/master/watermarking/E_SIMPLE_8.py)) and 8-Bit Detector ([D_SIMPLE_8](https://github.com/daniellerch/stegolab/tree/master/watermarking/D_SIMPLE_8.py)).
     - **System 5: E_TRELLIS_8/D_TRELLIS_8**<br>
       Trellis-Coding Embedder ([E_TRELLIS_8](https://github.com/daniellerch/stegolab/tree/master/watermarking/E_TRELLIS_8.py)) and Viterbi Detector ([D_TRELLIS_8](https://github.com/daniellerch/stegolab/tree/master/watermarking/D_TRELLIS_8.py)).
