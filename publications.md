@@ -7,6 +7,7 @@ meta-title: "Daniel Lerch's publications"
 meta-description: "Papers about image steganography and steganalysis"
 ---
 
+- Subsequent embedding in image steganalysis: Theoretical framework and practical applications. July 2021. Publication pending. [<a href='https://arxiv.org/abs/2107.13862'>pdf</a>].
 
 - Detection of Classifier Inconsistencies in Image Steganalysis. July 2019. Proceedings of the ACM Workshop on Information Hiding and Multimedia Security. [<a href='https://github.com/daniellerch/papers/raw/master/dlerch2019.pdf'>pdf</a>] [<a href='https://github.com/daniellerch/papers/raw/master/dlerch2019_slides.pdf'>slides</a>].
 
