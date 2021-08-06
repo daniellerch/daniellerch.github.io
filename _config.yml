@@ -1,5 +1,7 @@
 # --- General options --- #
 
+disablechache: true
+
 # Name of website
 title: "daniel<span style='color:#0074D9'>lerch</span>"
 
