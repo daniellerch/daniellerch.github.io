@@ -859,5 +859,42 @@ img[src$="centerme"] {
 }
 
 
+/* CSS for printing */
+@media print{
+
+   body{
+      margin: 25mm 5mm 25mm 5mm;
+      font-size: 12pt; /* 16px aprox */
+      text-align: justify;
+      text-justify: inter-word;
+   }
+   blockquote{
+      border-left: 5px solid #000;;
+   }
+
+   .no-print{
+      display: none !important;
+   }
+   .page-break{
+      page-break-after: always;
+   }
+
+   /* Do not break after title */
+   h2{
+       page-break-inside: avoid;
+   }
+   h2::after {
+      content: "";
+      display: block;
+      height: 100px;
+      margin-bottom: -100px;
+   }
+
+   /* do not show links */
+   a[href]:after{
+      content: none !important;
+   }
+}
+
 
 
