@@ -79,14 +79,17 @@ $$p(A|B) = \frac{ p(A,B) }{ p(B) } \label{conditional-probability}$$
 Partiendo de la definición de **probabilidad condicional** y de la **probabilidad conjunta**, obtenemos:
 
 <p>
-$$
-\begin{align}
-   p(A|B) = \frac{ p(B|A)p(A) }{ p(B) }
-   \label{bayes}
-\end{align}
-$$
+$$p(A|B) = \frac{ p(B|A)p(A) }{ p(B) } \label{bayes}$$
+</p>
 
-Referencia $\ref{bayes}$.
+Llamaremos **posterior** a $p(A\|B)$, **likelihood** a $(B\|A)$ y **prior** a $p(B)$.
+
+
+
+Expresaremos como $p(X=x)$ la probabilidad de que una **variable aleatoria** $X$ tome como valor $x$. Llamando a $p()$ la **función de masa de probabilidad** (PMF), que cumple que $0 \le p(x) \le 1$ y $\sum_x p(x)=1$. Por lo que, dadas dos variables aleatorias $X$ e $Y$, podemos reescribir el teorema de Bayes como:
+
+<p>
+$$p(Y=y|X=x) = \frac{ p(X=x|Y=y)p(Y=y) }{ p(X=x) } \label{bayes2}$$
 </p>
 
 
@@ -94,13 +97,29 @@ Referencia $\ref{bayes}$.
 
 
 
-<hr>
-Llamamos **likelihood** a $p(X\|Y)$, **prior** a $p(Y)$ y **posterior** a $p(Y\|X)$.
-<hr>
+### Ejemplo de clasificación
 
-Expresaremos como $p(X=x)$ la probabilidad de que una **variable aleatoria** $X$ tome como valor $x$. Llamamos a $p()$ la **función de masa de probabilidad** (PMF), que cumple que $0 \le p(x) \le 1$ y $\sum_x p(x)=1$.
+Supongamos que tenemos los siguientes datos, en los que $X$ representa las muestras de una variable unidimensional e $Y$ su etiqueta o clase a la que pertenece.
+
+| **X** | 0 | 1 | 2 | 0 | 0 | 1 | 2 | 2 | 0 | 2 | 0 | 1 | 1 | 2 |
+| **Y** | 0 | 1 | 1 | 1 | 1 | 1 | 0 | 0 | 1 | 1 | 0 | 1 | 1 | 0 |
 
 
+Si queremos saber la probabilidad de que una nueva muestra $x=0$ tenga $y=1$, es decir $p(Y=1\|X=0)$, podemos usar el teorema de Bayes:
+
+<p>
+$$p(Y=1|X=0) = \frac{ p(X=0|Y=1) p(Y=1) }{ p(X=0) } \nonumber $$
+</p>
+
+Tal y como vemos en la tabla de datos, de los 14 casos hay 5 casos en los que $X=0$. Por lo tanto $p(X=0)=5/14=0.3571$.
+
+De forma similar, calculamos el *prior* sabiendo que de los 14 casos, hay 9 en los que $Y=1$: $p(Y=1)=9/14=6428$.
+
+Para calcular el *likelihood*, vemos que hay 9 casos en los que $Y=1$. De ellos, hay 3 casos en los que $X=0$. Por lo tanto $p(X=0\|Y=1)=3/9=0.3333$.
+
+Finalmente, podemos calcular la probabilidad de que $p(Y=1\|X=0)$ usando el teorema de Bayes: 
+
+<p>$$p(Y=1|X=0)=\frac{0.3333 \times 0.6428}{0.3571}=0.5998 \nonumber$$</p>
 
 
 
