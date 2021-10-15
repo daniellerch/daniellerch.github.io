@@ -11,10 +11,13 @@ meta-description: "Steganograpy and steganalysis tools"
 
 - **[HStego](https://github.com/daniellerch/hstego)**: HStego is a tool for hiding data in bitmap and JPEG images. This tool uses some of the most advanced steganography methods known today, along with an upper limit on the amount of data that can be hidden so that it cannot be reliably detected by modern steganography tools.
 
-- **[Python JPEG Toolbox](https://github.com/daniellerch/python-jpeg-toolbox)**: Toolbox for accessing low level JPEG information (DCT coefficients, quantization tables, ...) with Python. Its interface is similar to the well-known Matlab JPEG Toolbox. 
-
 - **[Stego Retweet](https://github.com/daniellerch/stego-retweet)**: A tool for hiding messages in Twitter using retweets. Using a list of hashtags provided by the user, this tool finds and retweets some tweets containing especial words. This allows to hide a message that can be read by the user who has the password. The capacity is of two characters per retweet. 
 
+<hr class='small'>
+
+- **[Python JPEG Toolbox](https://github.com/daniellerch/python-jpeg-toolbox)**: Toolbox for accessing low level JPEG information (DCT coefficients, quantization tables, ...) with Python. Its interface is similar to the well-known Matlab JPEG Toolbox. 
+
+- **[PySTC](https://github.com/daniellerch/pySTC)**: Python interface to Syndrome Trellis Codes (C++), presented in the paper "[Minimizing Additive Distortion in Steganography using Syndrome-Trellis Codes](https://ieeexplore.ieee.org/document/5740590)" by Tomáš Filler, Jan Judas and Jessica Fridrich.
 
 
 
