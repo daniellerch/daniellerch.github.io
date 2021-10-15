@@ -3,44 +3,14 @@ layout: page
 title: Index of code
 subtitle: "" 
 noindex: false
-meta-title: "Index of code"
-meta-description: "Steganography and steganalysis programs and resources"
+meta-title: "StegoLab"
+meta-description: "Steganography, steganalysis and watermarking laboratory"
 ---
 
-<style>
-    [id]::before {
-        content: '';
-        display: block;
-        height:      70px;
-        margin-top: -70px;
-        visibility: hidden;
-    }
-</style>
-
-<div class='menu'></div>
-
-### Table of contents
-* [Matrix embedding](#matrix-embedding)
-* [Cost functions](#cost-functions)
-* [Machine/Deep Learning attacks](#machinedeep-learning-attacks)
-* [Statistical attacks](#statistical-attacks)
-* [Watermarking](#watermarking)
-
-<br>
-<hr>
-
-
-### Matrix embedding
+### Steganography
 
 - **[Syndrome Trellis Codes](https://github.com/daniellerch/stegolab/tree/master/codes/STC.py)**: A Python implementation of the steganography embedding technique presented in the paper "[Minimizing embedding impact in steganography using trellis-coded quantization](https://doi.org/10.1117/12.838002)" by Tomáš Filler, Jan Judas and Jessica Fridrich.
 
-
-- **[PySTC](https://github.com/daniellerch/pySTC)**: Python interface to Syndrome Trellis Codes (C++), presented in the paper "[Minimizing Additive Distortion in Steganography using Syndrome-Trellis Codes](https://ieeexplore.ieee.org/document/5740590)" by Tomáš Filler, Jan Judas and Jessica Fridrich.
-
-<hr>
-
-
-### Cost functions
 
 - **[J-UNIWARD](https://github.com/daniellerch/stegolab/tree/master/J-UNIWARD)**: 
   A Python implementation of the steganography method for hidden information into JPEG images, proposed in the paper "[Universal Distortion Function for Steganography in an Arbitrary Domain](https://link.springer.com/article/10.1186/1687-417X-2014-1)" by Vojtěch Holub, Jessica Fridrich and Tomáš Denemark. 
@@ -48,30 +18,11 @@ meta-description: "Steganography and steganalysis programs and resources"
 - **[HILL](https://github.com/daniellerch/stegolab/tree/master/HILL)**: 
   A Python implementation of the steganography method for hiding information into bitmap images, proposed in the paper "[A New Cost Function for Spatial Image Steganography](https://ieeexplore.ieee.org/document/7025854)" by Bin Li, Ming Wang, Jiwu Huang and Xiaolong Li.
 
-<hr>
-
-
-### Machine/Deep Learning attacks
-
-- **[ATS](https://github.com/daniellerch/papers_code/blob/master/ATS/)**: Implementation of the ATS attack, presented in the paper "[Unsupervised steganalysis based on artificial training sets](https://www.sciencedirect.com/science/article/abs/pii/S0952197616000026)" by Daniel Lerch-Hostalot and David Megías.
-
-- **[MA](https://github.com/daniellerch/papers_code/blob/master/MA_PPD/)**: Implementation of the *manifold alignment* technique, presented in the paper "[Manifold alignment approach to cover source mismatch in steganalysis](https://github.com/daniellerch/papers/raw/master/dlerch2016ma.pdf)" by Daniel Lerch-Hostalot and David Megías.
-
-- **[PPD](https://github.com/daniellerch/papers_code/blob/master/PPD/)**: Implementation of the PPD feature extractor, presented in the paper "[LSB matching steganalysis based on patterns of pixel differences and random embedding](https://www.sciencedirect.com/science/article/pii/S0167404812001745)" by Daniel Lerch-Hostalot and David Megías.
-
 - **[pyEC](https://github.com/daniellerch/stegolab/tree/master/pyEC)**: Python Interface to the Matlab version of Ensemble Classifiers for Steganalysis, presented in the paper "[Ensemble Classifiers for Steganalysis of Digital Media](https://ieeexplore.ieee.org/document/6081929)" by Jan Kodovský, Jessica Fridrich and Vojtěch Holub.
-
-<hr>
-
-
-
-
-### Statistical attacks
 
 - **[Calibration Attack](https://github.com/daniellerch/stegolab/tree/master/calibration)**: Implementation of the attack to F5 algorithm (JPEG steganography) proposed in the paper [Steganalysis of JPEG Images: Breaking the F5 Algorithm](https://link.springer.com/chapter/10.1007/3-540-36415-3_20) by Jessica Fridrich, Miroslav Goljan and Dorin Hogea.
 <div style='height:16px'></div>
 
-<hr>
 
 
 ### Watermarking
