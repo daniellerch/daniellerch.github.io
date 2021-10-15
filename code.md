@@ -81,7 +81,7 @@ meta-description: "Steganography and steganalysis programs and resources"
     - **System 1: E_BLIND/L_LC**<br>Blind Embedding ([E_BLIND](https://github.com/daniellerch/stegolab/tree/master/watermarking/E_BLIND.py)) and Linear Correlation Detection ([D_LC](https://github.com/daniellerch/stegolab/tree/master/watermarking/D_LC.py)). E_BLIND simply adds a pattern to an image.
 
     - **System 2: E_FIXED_LC/L_LC**<br>
-      Fixed Linear Correlation Embedder ([E_FIXED_LC](https://github.com/daniellerch/stegolab/tree/master/watermarking/E_FIXED_LC.py)) and Linear Correlation Detection ([D_LC](https://github.com/daniellerch/stegolab/tree/master/watermarking/D_LC.py)). E_FIXED_LC implements a type of informed embedding. It adjusts the strength of the watermark to ensure that the watermarked work has a specified linear correlation.
+      Fixed Linear Correlation Embedder ([E_FIXED_LC](https://github.com/daniellerch/stegolab/tree/master/watermarking/E_FIXED_LC.py)) and Linear Correlation Detection ([D_LC](https://github.com/daniellerch/stegolab/tree/master/watermarking/D_LC.py)). E_FIXED_LC adjusts the strength of the watermark to ensure that the watermarked image has a specified linear correlation (informed embedding). 
 
     - **System 3: E_BLK_BLIND/D_BLK_CC**<br>
       Block-Based, Blind Embedding ([E_BLK_BLIND](https://github.com/daniellerch/stegolab/tree/master/watermarking/E_BLK_BLIND.py)) and Correlation Coefficient Detection ([D_BLK_CC](https://github.com/daniellerch/stegolab/tree/master/watermarking/D_BLK_CC.py)). E_BLK_BLIND adds a pattern by block averaging.
