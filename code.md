@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Index of code
+title: StegoLab
 subtitle: "" 
 noindex: false
 meta-title: "StegoLab"
