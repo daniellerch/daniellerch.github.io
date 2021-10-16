@@ -9,6 +9,8 @@ meta-description: "Steganography, steganalysis and watermarking laboratory"
 
 ### Steganography
 
+- **[Binary Hamming Codes](https://github.com/daniellerch/stegolab/tree/master/codes/HammingCodes.py)**: A Python implementation of matrix embedding using binary Hamming codes.
+
 - **[Syndrome Trellis Codes](https://github.com/daniellerch/stegolab/tree/master/codes/STC.py)**: A Python implementation of the steganography embedding technique presented in the paper "[Minimizing embedding impact in steganography using trellis-coded quantization](https://doi.org/10.1117/12.838002)" by Tomáš Filler, Jan Judas and Jessica Fridrich.
 
 
