@@ -7,7 +7,7 @@ meta-title: "Daniel Lerch's publications"
 meta-description: "Papers about image steganography and steganalysis"
 ---
 
-- Subsequent embedding in targeted image steganalysis: Theoretical framework and practical applications. IEEE Transactions on Dependable and Secure Computing. February 2022. [<a href='https://ieeexplore.ieee.org/document/9722958'>10.1109/TDSC.2022.3154967</a>] [<a href='https://arxiv.org/abs/2107.13862'>arXiv</a>].
+- Subsequent embedding in targeted image steganalysis: Theoretical framework and practical applications. IEEE Transactions on Dependable and Secure Computing, February 2022. [<a href='https://ieeexplore.ieee.org/document/9722958'>10.1109/TDSC.2022.3154967</a>] [<a href='https://arxiv.org/abs/2107.13862'>arXiv</a>].
 
 - Detection of Classifier Inconsistencies in Image Steganalysis. July 2019. Proceedings of the ACM Workshop on Information Hiding and Multimedia Security. [<a href='https://github.com/daniellerch/papers/raw/master/dlerch2019.pdf'>pdf</a>] [<a href='https://github.com/daniellerch/papers/raw/master/dlerch2019_slides.pdf'>slides</a>].
 
