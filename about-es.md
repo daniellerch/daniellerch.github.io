@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "About"
+title: "Acerca de"
 subtitle: "" 
 noindex: false
 meta-title: "Sobre Daniel Lerch Hostalot"
