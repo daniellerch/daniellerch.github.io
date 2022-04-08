@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Publications
+title: Papers
 subtitle: "" 
 noindex: false
 meta-title: "Daniel Lerch's publications"
