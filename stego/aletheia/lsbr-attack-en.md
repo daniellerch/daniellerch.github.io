@@ -3,9 +3,6 @@ layout: page
 title: Practical attack on LSB-R
 subtitle: "OpenStego and OpenPuff" 
 noindex: false
-submenu: true
-submenuitem1: "en |"
-submenuitem2: "<a href='/stego/aletheia/lsbr-attack-es'>es</a>"
 meta-title: "Practical attack on LSB replacement: OpenStego and OpenPuff"
 meta-description: "Blog post about the detection of images embedded using LSB replacement (OpenStego and OpenPufF), using the Aletheia steganalysis tool."
 ---

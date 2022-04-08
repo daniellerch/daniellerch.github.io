@@ -3,9 +3,6 @@ layout: page
 title: Ataque práctico a F5
 subtitle: "" 
 noindex: false
-submenu: true
-submenuitem1: "<a href='/stego/aletheia/f5-attack-en'>en</a>"
-submenuitem2: "| es"
 comments: true
 meta-title: "Ataque práctico a F5"
 meta-description: "Artículo sobre cómo detectar el esquema de esteganografía para imágenes JPEG conocido como F5, usando la herramienta Aletheia."

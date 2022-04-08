@@ -3,9 +3,6 @@ layout: page
 title: Identifying the steganographic scheme
 subtitle: "" 
 noindex: false
-submenu: true
-submenuitem1: "en |"
-submenuitem2: "<a href='/stego/aletheia/identify-es'>es</a>"
 meta-title: "Identifying the steganographic scheme"
 meta-description: "Blog post about the identification of the steganography scheme using the Aletheia steganalysis tool"
 ---

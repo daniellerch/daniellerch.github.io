@@ -3,9 +3,6 @@ layout: page
 title: Fundamentos de Probabilidad y Estadística
 subtitle: "" 
 noindex: true
-submenu: true
-submenuitem1: "<a href='/stego/aletheia/probstats-en'>en</a>"
-submenuitem2: "| es"
 meta-title: "Fundamentos de Probabilidad y Estadística"
 meta-description: "Artículo que explica algunos conceptos básicos de probabilidad y estadística útiles para la esteganografía"
 ---
