@@ -30,7 +30,7 @@ navbar-links:
    tools: "/tools"
    stegolab: "/code"
    blog: "/blog"
-   publications: "/publications"
+   publications: "/papers"
    about: "/about"
 
 #  Resources:

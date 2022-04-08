@@ -13,7 +13,7 @@
               {%- if site.title-img -%}
                 <a class="navbar-brand navbar-brand-logo navbar-collapse collapse" href="{{ '' | absolute_url }}"><img src="{{ site.title-img }}"/></a>
               {%- else -%}
-                <a class="navbar-brand navbar-collapse_ collapse_" href="{{ '/' | absolute_url }}">{{ site.title }}</a>
+              <a class="navbar-brand navbar-collapse_ collapse_" href="/index{{ page.lang-suffix }}">{{ site.title }}</a>
               {%- endif -%}
             </div>
 
@@ -32,9 +32,17 @@
                     </div>
                   </li>
                 {% else %}
-                  <li><a href="{{ link[1] | relative_url }}">{{ link[0] }}</a></li>
+                  <li><a href="{{ link[1] | relative_url }}{{ page.lang-suffix}}">{{ link[0] }}</a></li>
                 {%- endif -%}
               {%- endfor -%}
+
+              <li style='font-weight:normal'>
+                 <div style='padding:13px'>
+                    (<a style='color:#0074D9;font-weight:normal' href="/index">en</a>|
+                     <a style='color:#0074D9;font-weight:normal' href="/index-es">es</a>)
+                 </div>
+              </li>
+            
               </ul>
             </div>
 
