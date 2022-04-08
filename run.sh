@@ -1,5 +1,5 @@
 #!/bin/bash
 
-#gem update --system
-#bundle2.5 install
-bundle2.5 exec jekyll serve
+#gem2.7 update --system
+#bundle2.7 install
+bundle2.7 exec jekyll serve

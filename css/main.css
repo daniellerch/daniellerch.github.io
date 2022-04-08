@@ -898,3 +898,17 @@ img[src$="centerme"] {
 
 
 
+.lang
+{
+   padding:13px;
+}
+.lang.a
+{
+   color:#808080 !important;
+}
+.lang-sel
+{
+   color:#0074D9 !important;
+}
+
+
