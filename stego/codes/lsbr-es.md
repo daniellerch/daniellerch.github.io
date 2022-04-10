@@ -1,14 +1,21 @@
 ---
 layout: page
-title: "Introducción al estegoanálisis con Aletheia"
+title: "Incrustación de información mediante LSB replacement"
 subtitle: "" 
 noindex: false
-meta-title: "Introducción al estegoanálisis con Aletheia"
-meta-description: "Artículo acerca del uso básico de la herramienta para estegoanálisis Aletheia"
+meta-title: "Incrustación de información mediante LSB replacement"
+meta-description: "Artículo acerca del uso de la técnica LSB replacement en esteganografía"
 ---
 
-> En este artículo vamos a ver cómo usar los comandos que ofrece la herramienta 
-> [Aletheia](https://github.com/daniellerch/aletheia) para el estegoanálisis de imágenes.
+> En este artículo vamos a ver cómo se usa la técnica LSB *replacement* en esteganografía y
+> cuáles son los peligros de esta **insegura** técnica.
+
+Este artículo pertenece al bloque: [Técnicas de codificación en esteganografía](/blog-es).
+
+
+<p style='color:red;font-weight:bold'>
+    Este artículo está en desarrollo. Vuelve otro día ;)
+</p>
 
 
 
