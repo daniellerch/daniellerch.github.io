@@ -157,7 +157,7 @@ de los valores enteres que representan a los bytes:
 
 ```python
 message_bits = []
-message = [ord('A')] # data = [65]
+message = [ord('A')] # message = [65]
 for m in message:
     message_bits += [ (m>>i)&1 for i in range(8) ]
 ```
