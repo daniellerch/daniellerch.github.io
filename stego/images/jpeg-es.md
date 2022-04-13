@@ -5,6 +5,7 @@ subtitle: ""
 noindex: false
 meta-title: "Cómo ocultar información en imágenes JPEG"
 meta-description: "Artículo acerca de la ocultación de datos en imágenes JPEG"
+lang-suffix: "-es"
 ---
 
 > En este artículo vamos a ver cómo funcionan las imágenes JPEG 

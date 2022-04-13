@@ -5,6 +5,7 @@ subtitle: ""
 noindex: false
 meta-title: "Cómo ocultar información en archivos WAV"
 meta-description: "Artículo acerca de la ocultación de información en archivos de audio WAV."
+lang-suffix: "-es"
 ---
 
 > En este artículo vamos a ver cómo funcionan laos archivos de audio WAV

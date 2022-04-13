@@ -5,6 +5,7 @@ subtitle: ""
 noindex: false
 meta-title: "Incrustación de información en el LSB"
 meta-description: "Artículo acerca del uso de esteganografía incrustando información en el LSB"
+lang-suffix: "-es"
 ---
 
 > En este artículo vamos a ver cómo incrustar información en el bit menos significativo (LSB)

@@ -5,6 +5,7 @@ subtitle: ""
 noindex: false
 meta-title: "Cómo ocultar información en imágenes de tipo bitmap"
 meta-description: "Artículo acerca de la ocultación de datos en imágenes de tipo bitmap"
+lang-suffix: "-es"
 ---
 
 > En este artículo vamos a ver cómo funcionan las imágenes de tipo *bitmap* o mapas de bits

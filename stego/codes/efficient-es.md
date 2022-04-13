@@ -5,17 +5,13 @@ subtitle: ""
 noindex: false
 meta-title: "Técnicas de incrustación eficiente"
 meta-description: "Artículo acerca del uso de códigos eficientes en esteganografía. Estos códigos permiten incrustar más información con menos modificaciones."
+lang-suffix: "-es"
 ---
 
 > En este artículo vamos a ver diferentes técnicas que nos permiten incrustar más información 
 > realizando menos modificaciones.
 
 Este artículo pertenece al bloque: [Técnicas de codificación en esteganografía](/blog-es).
-
-
-<p style='color:red;font-weight:bold'>
-    Este artículo está en desarrollo. Vuelve otro día ;)
-</p>
 
 
 
@@ -35,14 +31,15 @@ Este artículo pertenece al bloque: [Técnicas de codificación en esteganograf�
 
 1. [Eficiencia de la incrustación](#eficiencia-de-la-incrustación)
 2. [Códigos de Hamming binarios](#códigos-de-hamming-binarios)
+3. [Códigos de Hamming n-arios](#códigos-de-hamming-n-arios)
 
 
 <br>
 ## Eficiencia de la incrustación
 
-Decimos que la eficiencia de la inserción es 1 cuando necesitamos hacer una
-modificación cada vez que incrustamos un bit. Sin embargo, Cuando ocultamos 
-información en el LSB 
+En esteganografía decimos que la eficiencia de la inserción es 1 cuando 
+necesitamos hacer una modificación cada vez que incrustamos un bit. Sin 
+embargo, Cuando ocultamos información en el LSB 
 (ver [Incrustación de información en el LSB](/stego/codes/lsb-es))
 la eficiencia de la inserción es de 2. Esto es así debido a que, 
 estadísticamente, la mitad de los bytes en los que queremos ocultar información
@@ -226,36 +223,22 @@ operación +1, puesto que lo que nos interesa es el valor del LSB:
 Veamos ahora como realizar estas operaciones usando el lenguaje de 
 programación Python.
 
-Empezaremos con la generación de la matriz M:
+Lo primero que necesitamos es la matriz $M$:
+
 
 ```python
 import numpy as np
-def prepare_M(n_bits):
-    M=[]
-    l=len(bin(2**n_bits-1)[2:])
-    for i in range(1, 2**n_bits):
-        V=[ int(c) for c in bin(i)[2:].zfill(l) ]
-        M.append(V)
-    M = np.array(M).T
-    return M
- ```
-
-Podemos generar matriz de $p=3$ mediante:
-
-
-```bash
->>> prepare_M(3)
-array([[0, 0, 0, 1, 1, 1, 1],
-       [0, 1, 1, 0, 0, 1, 1],
-       [1, 0, 1, 0, 1, 0, 1]])
+M = np.array([
+    [0, 0, 0, 1, 1, 1, 1],
+    [0, 1, 1, 0, 0, 1, 1],
+    [1, 0, 1, 0, 1, 0, 1]
+])
 ```
 
 Para incrustar el mensaje $m$ en el vector *cover* $c$ únicamente tenemos
 que buscar la posición de $Mc-m$ en la matriz $M$ y modificarla:
 
-
 ```python
-import numpy as np
 def embed(M, c, m):
     s = c.copy()
     vector_to_change = (M.dot(c)-m)%2
@@ -323,6 +306,177 @@ En el siguiente gráfico podemos ver la relación entre el *payload* y la eficie
 
 Como se puede ver en la gráfica, la mayor eficiencia se consigue con *payloads* 
 muy pequeños. 
+
+
+<br>
+## Códigos de Hamming n-arios
+
+Teniendo en cuenta que las operaciones que realizamos son de tipo $\pm 1$, 
+podríamos decir que no estamos aprovechando al máximo este sistema de inserción. 
+Si en lugar de reemplazar el bit menos significativo de cada byte, optamos por 
+realizar una operación $\pm 1$ estamos trabajando con tres posibles valores: 
++1, -1 y 0 (dejamos el valor como estaba). Con lo que, en lugar de usar un 
+código binario, podemos usar un código ternario.
+
+La teoría detrás de los códigos de Hamming n-arios es la misma que la de los 
+códigos binarios. La única diferencia es que en lugar de realizar operaciones 
+módulo $2$, para quedarnos con el LSB, las haremos módulo $n$, para quedarnos
+con un valor n-ario (0, 1, ..., n-1).
+
+Por otra parte, para ocultar información en un byte necesitaremos trabajar con 
+el valor del byte módulo $n$. Es decir, para un código ternario ($n=3$), un 
+byte con valor 233 correspondería aun valor ternario $235\pmod 3 = 2$. 
+
+Veamos un ejemplo de incrustación, similar al del apartado anterior, usando
+códigos ternarios ($n=3$). Vamos a usar $p=3$, es decir, que queremos insertar 
+un símbolo ternario por cada modificación. Para ello, trabajaremos con  
+grupos de $ \frac{n^p-1}{n-1} = \frac{3^3-1}{2} = 13$ bytes.
+
+Nótese que en lugar de usar $2^p-1$ como en los códigos binarios, estamos 
+usando $\frac{3^3-1}{3-1}$. Ambos casos proceden de la siguiente fórmula
+que nos permite calcular el tamaño de los grupos de bytes en los que vamos
+a ocultar la información:
+
+$ \frac{n^p-1}{n-1} $
+
+
+Supongamos que después de seleccionar un grupo de 13 bytes del medio en el
+que queremos incrustar el mensaje, y de realizar la operación módulo 3,
+obtenemos el siguiente vector *cover*:
+
+$c=(0,1,0,0,2,1,2,2,2,0,1,0,2)$
+
+Recordemos que también necesitamos una matriz que contenga en sus columnas 
+todas las posibles combinaciones, excepto el vector de ceros. En este caso,
+además, tendremos que eliminar los vectores linealmente dependientes.
+
+Una opción sería la siguiente:
+
+<small>
+$ M=\begin{pmatrix} 
+1 & 0 & 0& 0& 1& 1& 1& 0& 2& 1& 2& 1& 1\\\
+0 & 1 & 0& 1& 0& 1& 1& 1& 0& 2& 1& 2& 1\\\
+0 & 0 & 1& 1& 1& 0& 1& 2& 1& 0& 1& 1& 2
+\end{pmatrix} $
+</small>
+
+Y finalmente, el mensaje que queremos ocultar. Ocultemos por ejemplo:
+
+$ m=(2, 0, 2) $
+
+Si calculamos el mensaje oculto en nuestro vector $c$ vemos que es:
+
+$ m = Mc = (1, 1, 0) $
+
+Lógicamente, no es el que queremos ocultar. Buscamos pues que 
+columna de M es la responsable:
+
+$$ Mc-m = (1, 2, 2) $$
+
+Es la columna 17 de la matriz M. Por lo que, para obtener el vector *stego*
+$s$ tenemos que sumar 1 al valor de esa posición en el vector $c$:
+
+$c=(0,1,0,0,2,1,2,2,2,0,1,0,2,0,2,1,1,2,0,1,1,1,2,2,0,2)$
+$s=(0,1,0,0,2,1,2,2,2,0,1,0,2,0,2,1,2,2,0,1,1,1,2,2,0,2)$
+
+
+Por lo tanto, cuando el receptor del mensaje obtenga el vector *stego* del
+medio, podrá extraer el mensaje mediante:
+
+$m=Ms=(2,0,2)$
+
+
+Veamos el código Python que nos permite realizar estas operaciones. Primero
+necesitamos preparar la matriz $M$:
+
+
+```python
+M = np.array([
+    [1, 0, 0, 0, 1, 1, 1, 0, 2, 1, 2, 1, 1],
+    [0, 1, 0, 1, 0, 1, 1, 1, 0, 2, 1, 2, 1],
+    [0, 0, 1, 1, 1, 0, 1, 2, 1, 0, 1, 1, 2]
+])
+```
+
+Para incrustar el mensaje $m$ en el vector *cover* $c$ únicamente tenemos
+que buscar la posición de $Mc-m$ en la matriz $M$ y modificarla:
+
+
+```python
+import numpy as np
+def embed(M, c, m, n):
+    s = c.copy()
+    vector_to_change = (M.dot(c)-m)%n
+    position = 0
+    for v in M.T: 
+        if np.array_equal(v, vector_to_change):
+            s[position] = (s[position] + 1) % 2
+            break
+        position += 1
+    return s
+```
+
+Para extraer el mensaje incrustado bastará con realizar la operación $Ms$:
+
+```python
+def extract(M, s, n):
+    return M.dot(s)%n
+```
+
+Repitamos ahora el ejemplo usando Python:
+
+```python
+m = [2, 0, 2]
+M = prepare_M(3, 3)
+c = [0,1,0,0,2,1,2,2,2,0,1,0,2]
+s = embed(M, c, m, 3)
+new_m = extract(M, s, 3)
+```
+
+```bash
+>>> new_m
+array([2, 0, 2])
+```
+
+
+
+Además de usar técnicas de inserción $$\pm 1$$, podemos usar técnicas 
+$$\pm k$$ siendo $k$ cualquier valor que nos interese. Sin embargo, 
+cuanto mayor sea $k$ mayor será la distorsión introducida, por lo que 
+puede no ser apropiado seleccionar valores demasiado grandes. 
+
+Si hemos usado códigos ternarios para la inserción $\pm 1$, con la 
+inserción $\pm 2$ tendremos que usar códigos quintarios, puesto que 
+tenemos cinco operaciones posibles: -2, -1, 0, +1 y +2. 
+
+En este caso el proceso sería es el mismo que antes, cambiando el valor del 
+módulo a $n=5$. Sin embargo, si usamos $p=3$ tendríamos que usar grupos de 
+$\frac{n^p-1}{n-1}=\frac{5^3-1}{4}=31$ bytes. 
+
+La misma idea serviría para otros valores de $k$ y $n$.
+
+
+En la siguiente gráfica puede verse una comparativa de diferentes códigos 
+n-arios. Es necesario ajustar las fórmulas para calcular el *payload* y 
+la eficiencia con el valor de $n$. Para calcular el *payload* tenemos:
+
+${\alpha}_p = \frac{p \log_2 n}{(n^p-1)/(n-1)}$
+
+Y para calcular la eficiencia:
+
+$e_p = \frac{p \log_2 n}{1-n^{-p}}$
+
+Esto nos permite dibujar una gráfica para ver la eficiencia respecto el
+*payload* para diferentes valores de $p$ y $n$:
+
+![efficiency](/stego/codes/resources/n-ary-codes.png?style=centerme)
+
+
+Como se puede ver en las gráficas, cuanto mayor es $n$ mayor es la eficiencia 
+del método. Sin embargo, aumentar demasiado $n$ implica trabajar con valores
+de $k$ quizás demasiado grandes, que  pueden distorsionar mucho el medio y 
+hacer que el método esteganográfico sea más detectable.
+
 
 
 
