@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Tools and libraries
+title: Tools
 subtitle: "" 
 noindex: false
-meta-title: "Tools and libraries"
+meta-title: "Tools"
 meta-description: "Steganograpy and steganalysis tools"
 ---
 
