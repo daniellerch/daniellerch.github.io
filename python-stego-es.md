@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Blog
+title: Esteganografía en Python
 subtitle: "" 
 noindex: false
-meta-title: "Blog"
-meta-description: "Blog sobre esteganografía y estegoanálisis"
+meta-title: "Esteganografía en Python"
+meta-description: "Esteganografía en Python"
 lang-suffix: "-es"
 ---
 
@@ -45,14 +45,6 @@ lang-suffix: "-es"
 
 
 
-## Estegoanálisis de imágenes con Aletheia
-
-- [Introducción al estegoanálisis con Aletheia](/stego/aletheia/intro-es).
-- [Cómo identificar el esquema de esteganografía](/stego/aletheia/identify-es).
-- [Ataque práctico a Steghide](/stego/aletheia/steghide-attack-es).
-- [Ataque práctico a F5](/stego/aletheia/f5-attack-es).
-- [Ataque práctico a esquemas LSB-R: OpenStego y OpenPuff](/stego/aletheia/lsbr-attack-es).
-<br><br>
 
 
 
