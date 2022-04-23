@@ -32,6 +32,7 @@ Este artículo pertenece al bloque: [Técnicas de codificación en esteganograf�
 1. [Eficiencia de la incrustación](#eficiencia-de-la-incrustación)
 2. [Códigos de Hamming binarios](#códigos-de-hamming-binarios)
 3. [Códigos de Hamming n-arios](#códigos-de-hamming-n-arios)
+4. [Referencias](#referencias)
 
 
 <br>
@@ -478,7 +479,11 @@ de $k$ quizás demasiado grandes, que  pueden distorsionar mucho el medio y
 hacer que el método esteganográfico sea más detectable.
 
 
+<br>
+## Referencias
 
+1. Fridrich, J. (2009). Steganography in Digital Media: Principles, Algorithms, 
+   and Applications. Cambridge University Press.
 
 
 

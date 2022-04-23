@@ -13,7 +13,8 @@ lang-suffix: "-es"
 
 - [Incrustación de información en el LSB](/stego/codes/lsb-es).
 - [Técnicas de incrustación eficiente](/stego/codes/efficient-es).
-- Códigos adaptativos mediante Sindrome Trellis Codes.
+- Códificación adaptativa.
+- Códificación robusta.
 - La esteganografía negable y los métodos reversibles.
 <br><br>
 
