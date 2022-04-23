@@ -9,6 +9,7 @@ lang-suffix: "-es"
 ---
 
 
+
 ## Técnicas de codificación en esteganografía
 
 - [Incrustación de información en el LSB](/stego/codes/lsb-es).

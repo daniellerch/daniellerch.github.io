@@ -909,6 +909,7 @@ img[src$="centerme"] {
 .lang-sel
 {
    color:#0074D9 !important;
+   pointer-events: none;
 }
 
 

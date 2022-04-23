@@ -29,7 +29,7 @@ navbar-links:
 #   Tools: "https://github.com/daniellerch"
    tools: "/tools"
    stegolab: "/code"
-   blog: "/blog"
+   #blog: "/blog"
    papers: "/papers"
    about: "/about"
 
