@@ -8,10 +8,9 @@ meta-description: "Artículo acerca del uso de esteganografía incrustando infor
 lang-suffix: "-es"
 ---
 
-> En este artículo vamos a ver cómo incrustar información en el bit menos significativo (LSB)
-> de un byte. 
+> En este artículo vamos a ver cómo incrustar información en imágenes usando el bit menos 
+> significativo (LSB) de cada byte. 
 
-Este artículo pertenece al bloque: [Técnicas de codificación en esteganografía](/blog-es).
 
 
 <style>
@@ -35,6 +34,10 @@ Este artículo pertenece al bloque: [Técnicas de codificación en esteganograf�
 5. [Extracción de la información](#extraccion-de-la-información)
 6. [Los peligros del LSB *replacement*](#los-peligros-del-lsb-replacement)
 7. [Hacia una incrustación más eficiente](#hacia-una-incrustación-más-eficiente)
+8. [Incrustación en imágenes de tipo mapa de bits](#incrustación-en-imágenes-de-tipo-mapa-de-bits)
+9. [Incrustación en imágenes JPEG](#incrustación-en-imágenes-jpeg)
+10. [Incrustación en ficheros de audio WAV](#incrustación-en-ficheros-de-audio-wav)
+
 
 
 
@@ -346,13 +349,13 @@ barra representa la cantidad de valores iguales.
 La siguiente grafica corresponde a una imagen que no ha sido alterada usando
 LSB *replacement*. 
 
-![cover](/stego/codes/resources/cover_hist.png?style=centerme)
+![cover](/stego/blog/resources/cover_hist.png?style=centerme)
 
 
 En cambio, la siguiente grafica corresponde a una imagen a la que se le ha 
 incrustado un mensaje usando LBB *replacement*. 
 
-![stego](/stego/codes/resources/stego_hist.png?style=centerme)
+![stego](/stego/blog/resources/stego_hist.png?style=centerme)
 
 
 En el histograma se puede apreciar que los pares de barras consecutivos tienden
@@ -397,8 +400,20 @@ modificación. Nuestra eficiencia sería en este caso de 3.429.
 
 Existen muchas famílias de códigos que nos permiten realizar este tipo de
 incrustaciones eficientes. Estos temas se tratan con cierto detalle en
-[Técnicas de incrustación eficiente](/stego/codes/efficient-es).
+[Técnicas de incrustación eficiente](/stego/blog/efficient-es).
 
+
+
+<br>
+## Incrustación en imágenes de tipo mapa de bits
+
+
+<br>
+## Incrustación en imágenes JPEG
+
+
+<br>
+## Incrustación en ficheros de audio WAV
 
 
 
