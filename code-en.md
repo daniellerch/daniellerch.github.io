@@ -5,6 +5,7 @@ subtitle: ""
 noindex: false
 meta-title: "StegoLab"
 meta-description: "Steganography, steganalysis and watermarking laboratory"
+lang-suffix: "-en"
 ---
 
 ### Steganography

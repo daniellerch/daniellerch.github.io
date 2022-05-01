@@ -27,11 +27,11 @@ navbar-links:
 #   ML-Snippets: "ml/snippets"
 #   Blog: "/"
 #   Tools: "https://github.com/daniellerch"
-   tools: "/tools"
-   stegolab: "/code"
-   blog: "/blog"
-   papers: "/papers"
-   about: "/about"
+   tools: "/tools-en"
+   stegolab: "/code-en"
+   blog: "/blog-en"
+   papers: "/papers-en"
+   about: "/about-en"
 
 #  Resources:
 #    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"

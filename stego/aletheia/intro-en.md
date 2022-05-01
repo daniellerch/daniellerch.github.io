@@ -5,6 +5,7 @@ subtitle: ""
 noindex: false
 meta-title: "Introduction to steganalysis with Aletheia"
 meta-description: "Blog post about the basic usage of the Aletheia steganalysis tool"
+lang-suffix: "-en"
 ---
 
 > In this article we are going to talk about how to use the commands offered by 

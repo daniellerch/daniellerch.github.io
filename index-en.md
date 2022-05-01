@@ -5,6 +5,7 @@ subtitle: ""
 noindex: false
 meta-title: "Daniel Lerch's personal page"
 meta-description: "Image steganography and steganalysis"
+lang-suffix: "-en"
 ---
 
 Hello and welcome to my page. My name is Daniel Lerch and this is a personal site

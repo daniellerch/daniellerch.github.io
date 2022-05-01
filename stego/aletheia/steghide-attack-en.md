@@ -6,6 +6,7 @@ noindex: false
 comments: true
 meta-title: "Practical attack on Steghide"
 meta-description: "Blog post about the detection of JPEG images embedded with Steghide, using the Aletheia steganalysis tool"
+lang-suffix: "-en"
 ---
 
 > In this article we are going to talk about how to detect **JPEG images** 
