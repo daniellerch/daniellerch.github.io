@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Incrustación de información en el LSB"
+title: "Esteganografía LSB en imágenes y audio"
 subtitle: "" 
 noindex: false
 meta-title: "Incrustación de información en el LSB"
@@ -247,13 +247,13 @@ medio y la ocultación de un bit en cada byte como una capacidad del 100%. Por
 lo tanto, diremos que una técnica tiene una capacidad o un *payload* del 100% 
 si esconde un bit en cada valor. Así, un método que incruste un bit en cada cuatro
 bytes tendrá una capacidad del 25%, mientras que un método que incruste dos bits
-en cada byte tendrà una capacidad del 200%. Sin embargo, lo habitual será
+en cada byte tendrá una capacidad del 200%. Sin embargo, lo habitual será
 trabajar con capacidad pequeñas, dado que cuanto más alta es la capacidad mas
 inseguro (detectable) es el método.
 
 
 Veamos ahora cómo incrustar un mensaje usando el lenguaje de programación Python. 
-De la misma forma que en el apartado anterior, empezaremos conviertiendo los
+De la misma forma que en el apartado anterior, empezaremos convirtiendo los
 valores que representan el mensaje en unos y ceros:
 
 
@@ -301,7 +301,7 @@ Para extraer el mensaje únicamente tenemos que leer el LSB de los valores de
 los bytes correspondientes al medio que contiene el mensaje. El mismo procedimiento
 es válido para leer datos incrustados con LSB *replacement* y con LSB *matching*.
 
-Veamos como realizar esta operacion usando Python. Primero extraemos los bits:
+Veamos como realizar esta operación usando Python. Primero extraemos los bits:
 
 ```python
 message_bits = [ s%2 for s in stego ]
@@ -346,13 +346,13 @@ Para ver qué implica incrustar información de esta manera es muy ilustrativo
 dibujar un histograma de valores. Es decir, un gráfico de barras en el que cada
 barra representa la cantidad de valores iguales.
 
-La siguiente grafica corresponde a una imagen que no ha sido alterada usando
+La siguiente gráfica corresponde a una imagen que no ha sido alterada usando
 LSB *replacement*. 
 
 ![cover](/stego/blog/resources/cover_hist.png?style=centerme)
 
 
-En cambio, la siguiente grafica corresponde a una imagen a la que se le ha 
+En cambio, la siguiente gráfica corresponde a una imagen a la que se le ha 
 incrustado un mensaje usando LBB *replacement*. 
 
 ![stego](/stego/blog/resources/stego_hist.png?style=centerme)
@@ -398,45 +398,460 @@ en $2^p-1$ bytes realizando una sola modificación. Si usásemos, por ejemplo,
 $p=3$ podríamos incrustar 3 bits en cada bloque de 7 bytes con una sola 
 modificación. Nuestra eficiencia sería en este caso de 3.429.
 
-Existen muchas famílias de códigos que nos permiten realizar este tipo de
+Existen muchas familias de códigos que nos permiten realizar este tipo de
 incrustaciones eficientes. Estos temas se tratan con cierto detalle en
-[Técnicas de incrustación eficiente](/stego/blog/efficient-es).
+[Técnicas de incrustación eficiente en esteganografía](/stego/blog/efficient-es).
 
 
 
 <br>
 ## Incrustación en imágenes de tipo mapa de bits
 
+Las imágenes de tipo mapa de bits son aquellas que representan el valor de 
+los píxeles en una matriz. Si la imagen es en escala de grises, cada valor
+de la matriz es un byte, es decir, un número de 0 a 255 que representa la
+intensidad del píxel. El valor 0 nos indicaría el color negro, mientras
+que un valor 255 nos indicaría el color blanco. Asó, todos los valores 
+intermedios representarían los diferentes tonos de gris. 
+
+Sin embargo, lo más habitual es que las imágenes sean en color, y que 
+representen los píxeles con un conjunto de tres bytes: la cantidad
+de rojo (R), la cantidad de verde (G) y la cantidad de azul (B). Este
+tipo de representación (RGB) es muy común, aunque también es habitual
+el RGBA, que usa un byte adicional para almacenar el nivel de transparencia
+del píxel.
+
+
+Veamos como podemos leer una imagen usando Python:
+
+```python
+import imageio
+I = imageio.imread("cover-image.png")
+```
+
+En una imagen en escala de grises nos encontraríamos con algo similar a lo
+que vemos a continuación:
+
+```bash
+>>> I.shape
+(512, 512)
+>>> I[:10, :10]
+Array([[155, 155, 155, 154, 155, 149, 156, 153, 158, 154],
+       [155, 155, 155, 154, 155, 149, 156, 153, 158, 154],
+       [155, 155, 155, 154, 155, 149, 156, 153, 158, 154],
+       [155, 155, 155, 154, 155, 149, 156, 153, 158, 154],
+       [155, 155, 155, 154, 155, 149, 156, 153, 158, 154],
+       [157, 157, 150, 148, 154, 152, 151, 152, 153, 153],
+       [153, 153, 157, 151, 153, 155, 151, 148, 152, 155],
+       [151, 151, 148, 150, 151, 151, 148, 150, 151, 154],
+       [148, 148, 151, 151, 152, 153, 149, 150, 156, 150],
+       [148, 148, 151, 151, 147, 147, 148, 150, 154, 146]], dtype=uint8)
+```
+
+Sin embargo, si realizamos la misma operación en una imagen en color, nos
+encontraremos con tres canales (el R, el G y el B):
+
+
+```bash
+>>> I.shape
+(512, 512, 3)
+
+>>> I[:10,:10, 0]
+Array([[226, 226, 223, 223, 226, 226, 228, 227, 227, 225],
+       [226, 226, 223, 223, 226, 226, 228, 227, 227, 225],
+       [226, 226, 223, 223, 226, 226, 228, 227, 227, 225],
+       [226, 226, 223, 223, 226, 226, 228, 227, 227, 225],
+       [226, 226, 223, 223, 226, 226, 228, 227, 227, 225],
+       [227, 227, 227, 222, 226, 228, 226, 230, 225, 228],
+       [228, 228, 225, 224, 225, 229, 229, 229, 227, 227],
+       [223, 223, 226, 221, 227, 225, 226, 228, 226, 224],
+       [225, 225, 224, 224, 225, 224, 229, 225, 226, 225],
+       [223, 223, 224, 222, 227, 225, 224, 227, 228, 223]], dtype=uint8)
+
+>>> I[:10,:10, 1]
+Array([[137, 137, 137, 136, 138, 129, 138, 134, 140, 136],
+       [137, 137, 137, 136, 138, 129, 138, 134, 140, 136],
+       [137, 137, 137, 136, 138, 129, 138, 134, 140, 136],
+       [137, 137, 137, 136, 138, 129, 138, 134, 140, 136],
+       [137, 137, 137, 136, 138, 129, 138, 134, 140, 136],
+       [140, 140, 131, 130, 136, 133, 132, 133, 136, 134],
+       [134, 134, 141, 133, 134, 137, 132, 128, 134, 137],
+       [133, 133, 129, 132, 131, 133, 129, 131, 131, 137],
+       [129, 129, 133, 133, 134, 134, 130, 132, 139, 131],
+       [130, 130, 133, 134, 128, 127, 129, 130, 135, 128]], dtype=uint8)
+
+>>> I[:10,:10, 2]
+Array([[125, 125, 133, 128, 120, 116, 123, 124, 127, 119],
+       [125, 125, 133, 128, 120, 116, 123, 124, 127, 119],
+       [125, 125, 133, 128, 120, 116, 123, 124, 127, 119],
+       [125, 125, 133, 128, 120, 116, 123, 124, 127, 119],
+       [125, 125, 133, 128, 120, 116, 123, 124, 127, 119],
+       [123, 123, 113, 111, 120, 115, 120, 113, 109, 117],
+       [119, 119, 116, 115, 125, 112, 116, 105, 113, 120],
+       [121, 121, 106, 114, 120, 116, 112, 106, 124, 116],
+       [106, 106, 112, 110, 118, 127, 108, 110, 125, 113],
+       [104, 104, 109, 117, 102, 109, 108, 115, 120, 104]], dtype=uint8)
+
+```
+
+Una vez tenemos acceso al *array* de Numpy que contiene los datos, podemos 
+incrustar un mensaje usando las técnicas que se han descrito en los 
+apartados anteriores. Si llamamos ```Is``` a nuestro *array* modificado con el
+mensaje oculta, podemos guardar la imagen en Python mediante:
+
+```python
+imageio.imwrite("stego-image.png", Is)
+```
+
+Para finalizar, veamos un ejemplo completo en el que guardamos la cadena 
+```"Hello World``` en una imagen. Primero obtenemos la representación del
+mensaje en bits. A continuación obtenemos un vector ```cover```de 128 píxeles 
+en el que vamos a ocultar el mensaje. Después, modificamos el vector 
+```cover``` obteniendo el vector ```stego``` modificando el LSB de cada 
+byte para incrustar el bit del mensaje. Finalmente, guardamos la imagen con
+los datos modificados.
+
+
+```python
+import imageio
+import random
+I = imageio.imread("cover-image.png")
+
+message_bits = []
+for l in "Hello World":
+    message_bits += [ (ord(l)>>i)&1 for i in range(8) ]
+
+cover = I[:128, 0, 0]
+stego = cover.copy()
+
+for i in range(len(message_bits)):
+    if cover[i]%2 != message_bits[i]:
+        if cover[i] == 255:
+            s = -1
+        elif cover[i] == 0:
+            s = +1
+        else:
+            s = random.choice([-1, +1])
+        stego[i] = cover[i] + s
+
+I[:128, 0, 0] = stego
+imageio.imwrite("stego-image.png", I)
+```
+
+A continuación, vamos a extraer el mensaje oculto:
+
+```python
+
+import imageio
+Is = imageio.imread("stego-image.png")
+
+stego = Is[:128, 0, 0]
+
+message_bits = [ s%2 for s in stego ]
+
+message_ex = []
+value = 0
+for i in range(len(message_bits)):
+    if i%8==0 and i!=0:
+        message_ex.append(value)
+        value = 0
+    value |= message_bits[i] << i%8
+```
+
+```bash
+>>> ''.join([chr(l) for l in message_ex])
+'Hello Worlde7<¢'
+>>> 
+
+```
+
+Podemos ver algunos caracteres extraños al final de la cadena extraída. Esto 
+es debido a que hemos extraído todos los bits del vector seleccionado, que 
+contiene 128 píxeles, aunque los últimos no se usan. Una herramienta de 
+esteganografía podría evitar el problema indicando la longitud del mensaje 
+en una cabecera también oculta.
+
+En este ejemplo no se controlan los desbordamientos. Es decir, no se controla
+que si sumamos 1 a 255 o restamos 1 a 0, vamos a producir cambios drásticos
+en el valor del byte, lo que hará que la incrustación sea muy detectable.
+
+sdas
 
 <br>
 ## Incrustación en imágenes JPEG
+
+Las imágenes [JPEG](https://en.wikipedia.org/wiki/JPEG) tienen un 
+funcionamiento bastante más complejo que el de las imágenes de tipo mapa de 
+bits. No vamos a entrar en detalle de cómo funciona todo el proceso de 
+compresión y descompresión que se realiza. En el enlace indicado es un buen 
+punto de partida para ampliar información en este aspecto. Sí que realizaremos, 
+sin embargo, una breve descripción del proceso, centrándonos en las partes que 
+nos interesan desde el punto de vista de la esteganografía.
+
+Para comprimir una imagen usando el estándar JPEG, partimos del mapa de bits 
+que representa la imagen. Dividimos dicho mapa de bits en bloques de 
+$8 \times 8$ píxeles y aplicamos la 
+[Transformada Discreta del Coseno (DCT)](https://en.wikipedia.org/wiki/Discrete_cosine_transform) 
+después de restar 128 al valor de los píxeles. Como resultado, obtenemos un 
+nuevo bloque de $8 \times 8$ valores, a los que llamamos **coeficientes DCT**. 
+Estos valores se dividen por unas matrices predefinidas llamadas **matrices de 
+cuantización**, redondeando al entero más cercano. Estas matrices están 
+diseñadas para reducir la información en los componentes de alta frecuencia, 
+que son los que peor distingue el ojo humano. Este tipo de operación es una 
+operación con pérdida de información, por lo que una vez comprimida la imagen 
+no se podrá recuperar su estado original. Es el resultado de estos coeficientes
+DCT cuantizados lo que se almacena en el fichero JPEG, por lo que, desde el
+punto de vista de la esteganografía, nos interesará ocultar información en
+dichos coeficientes.
+
+Habitualmente, las librerías de procesamiento de imágenes no proporcionan
+acceso a los coeficientes DCT, por lo que tendremos que usar una librería
+especial que nos proporcione dicho acceso. Usaremos el
+[JPEG Toolbox](https://github.com/daniellerch/python-jpeg-toolbox).
+
+Una vez instalada la librería, podemos leer la imagen de la siguiente manera:
+
+```python
+import jpeg_toolbox
+img = jpeg_toolbox.load('cover-image.jpg')
+```
+```bash
+>>> img['image_height']
+512
+>>> img['image_width']
+512
+>>> img['image_components']
+3
+```
+
+De la información que nos proporciona esta librería, estaremos interesados
+principalmente en el acceso a los coeficientes DCT. Veamos cómo acceder a
+los tres canales disponibles:
+
+
+```bash
+>>> img['coef_arrays'][0].shape
+(512, 512)
+
+>>> img['coef_arrays'][0]
+array([[86.,  2.,  2., ...,  0., -1.,  0.],
+       [ 4.,  0.,  0., ..., -1.,  0., -1.],
+       [-3.,  0., -1., ...,  0.,  0.,  0.],
+       ...,
+       [ 1.,  0.,  0., ...,  0.,  0.,  0.],
+       [ 0.,  0.,  0., ...,  0.,  0.,  0.],
+       [ 0.,  0.,  0., ...,  0.,  0.,  0.]])
+
+>>> img['coef_arrays'][1]
+array([[-60.,   3.,   0., ...,   0.,   0.,   0.],
+       [  4.,   0.,   0., ...,   0.,   0.,   0.],
+       [ -1.,   0.,   0., ...,   0.,   0.,   0.],
+       ...,
+       [  0.,   0.,   0., ...,   0.,   0.,   0.],
+       [  0.,   0.,   0., ...,   0.,   0.,   0.],
+       [  0.,   0.,   0., ...,   0.,   0.,   0.]])
+
+>>> img['coef_arrays'][2]
+array([[124.,  -3.,   1., ...,   0.,   0.,   0.],
+       [ -3.,   0.,   0., ...,   0.,   0.,   0.],
+       [  1.,   0.,   0., ...,   0.,   0.,   0.],
+       ...,
+       [  0.,   0.,   0., ...,   0.,   0.,   0.],
+       [  0.,   0.,   0., ...,   0.,   0.,   0.],
+       [  0.,   0.,   0., ...,   0.,   0.,   0.]])
+```
+
+Debido a la cuantización, la cantidad de coeficientes con valor cero suele ser
+muy grande. No es buena idea ocultar información en esos coeficientes, puesto
+esto podría se sospechoso. El primer problema que nos encontraríamos es que el
+tamaño del fichero crecería. Esto es debido a que la forma en la que JPEG 
+almacena los datos evita guardar los ceros, y si ocultamos información en esos
+coeficientes, el algoritmo JPEG tendría que almacenarlos. Adicionalmente, la 
+existencia de valores en coeficientes donde, debido a la cuantización, debería 
+haber ceros, también sería algo muy sospechoso.
+
+Así pues, en esteganografía JPEG, es habitual evitar modificar los coeficientes
+con valor cero.
+
+Una vez hemos modificado los coeficientes DCT y hemos ocultado el mensaje,
+podemos guardar la nueva imagen de la siguiente manera:
+
+```python
+>>> jpeg_toolbox.save(img, 'stego-image.jpg')
+```
+
+Esquivar los ceros para ocultar información tiene cierta complejidad, pues si 
+simplemente los ignoramos, el receptor del mensaje tendrá que hacer lo mismo. 
+Pero esto implica que no podremos hacer ninguna operación de incrustado que 
+genere un nuevo cero, puesto que el receptor no sabría que ese cero no lo tiene 
+que ignorar. Intentar no generar nuevos ceros podría llevar a introducir serias 
+anomalías estadísticas que harían nuestro sistema muy detectable. 
+Existen diferentes técnicas para lidiar con este tipo de problemas, aunque
+no las vamos a tratar en este artículo. 
+
+
+A continuación vamos a ver un ejemplo completo en el que ocultaremos la cadena 
+```"Hello World"```. Úsaremos únicamente el coeficiente DC, es decir, el 
+coeficiente de arriba a la izquierda de cada bloque de $8 \times 8$. De esta
+manera no afectaremos a los ceros y el receptor sabrá donde leer.
+
+Primero representamos el mensaje a incrustar como lista de bits. A continuación
+extraemos el coefficiente de la esquina superior izquierda de cada bloque de
+$8 \times 8$. Esto lo hacemos usando la indexación de Numpy ```[::8,::8]```.
+Para el ejemplo, únicamente extraemos datos del primer canal. Puesto que los 
+datos extraídos estan representados como una matriz de dos dimensiones, usamos
+la ```flatten()``` para representarlos como un vector. A continuación 
+incrustamos el mensaje y representamos de nuevo los datos del vector como matriz
+de dos dimensiones. Finalemente, guardamos los datos en un fichero JPEG.
+
+
+```python
+import jpeg_toolbox
+
+img = jpeg_toolbox.load('cover-image.jpg')
+
+message_bits = []
+for l in "Hello World":
+    message_bits += [ (ord(l)>>i)&1 for i in range(8) ]
+
+cover = img['coef_arrays'][0][::8,::8]
+shape = cover.shape
+cover = cover.flatten()
+stego = cover.copy()
+
+for i in range(len(message_bits)):
+    if cover[i]%2 != message_bits[i]:
+        stego[i] = cover[i] + random.choice([-1, +1])
+
+img['coef_arrays'][0][::8,::8] = stego.reshape(shape)
+jpeg_toolbox.save(img, 'stego-image.jpg')
+```
+
+A continuación, vamos a extraer el mensaje oculto:
+
+```python
+import jpeg_toolbox
+
+img = jpeg_toolbox.load('stego-image.jpg')
+
+stego = img['coef_arrays'][0][::8,::8].flatten()
+
+message_bits = [ int(s)%2 for s in stego ]
+
+message_ex = []
+value = 0
+for i in range(len(message_bits)):
+    if i%8==0 and i!=0:
+        message_ex.append(value)
+        value = 0
+    value |= message_bits[i] << i%8
+
+```
+
+
+```bash
+>>> ''.join([chr(l) for l in message_ex])[:20]
+'Hello World\x84iî\x94Ïøó¿Ø'
+```
+
+Igual que en el caso anterior, podemos ver algunos caracteres extraños al final
+de la cadena extraída, debido a que hemos extraído bits que no se usan.
 
 
 <br>
 ## Incrustación en ficheros de audio WAV
 
+Los archivos de audio [WAV](https://en.wikipedia.org/wiki/WAV) 
+(ver [formato WAV](http://soundfile.sapp.org/doc/WaveFormat/)) 
+son ficheros que almacenan las muestras que forman el sonido sin usar 
+compresión con pérdida, como en el caso de otros formatos como MP3.
+
+De manera similar a como hemos hecho con las imágenes, podemos leer las 
+muestras que forman el sonido y modificar su LSB para ocultar información.
+
+Python nos proporciona un módulo que nos permite leer y escribir las 
+muestras de audio de forma sencilla: el módulo ```wav```.
+
+Podemos leer los frames de la siguiente manera:
+
+```python 
+cover_wav = wave.open("cover-sound.wav", mode='rb')
+frames = bytearray(cover_wav.readframes(cover.getnframes()))
+```
+
+Y podemos modificarlos y guardarlos en un nuevo archivo de forma igualmente
+sencilla. Por ejemplo, sumemos una unidad a la primera muestra y guardemos
+el archivo modificado:
+
+```python
+frames[0] += 1
+
+stego_wav = with wave.open('stego-sound.wav', 'wb')
+stego_wav.setparams(cover_wav.getparams())
+stego_wav.writeframes(bytes(frames))
+```
+
+El proceso es bastante sencillo. Ahora, como en los casos anteriores vamos
+a ver un ejemplo completo en el que ocultaremos la cadena ```Hello World```.
 
 
+```python
+import wave
+import random
+
+cover_wav = wave.open("cover-sound.wav", mode='rb')
+frames = bytearray(cover_wav.readframes(cover_wav.getnframes()))
+
+message_bits = []
+for l in "Hello World":
+    message_bits += [ (ord(l)>>i)&1 for i in range(8) ]
+
+for i in range(len(message_bits)):
+    if frames[i]%2 != message_bits[i]:
+        if frames[i] == 255:
+            s = -1
+        elif frames[i] == 0:
+            s = +1
+        else:
+            s = random.choice([-1, +1])
+        frames[i] = frames[i] + s
+
+stego_wav = wave.open('stego-sound.wav', 'wb')
+stego_wav.setparams(cover_wav.getparams())
+stego_wav.writeframes(bytes(frames))
+
+cover_wav.close()
+stego_wav.close()
+```
 
 
+A continuación, vamos a extraer el mensaje oculto:
 
+```python
+import wave
 
+cover_wav = wave.open("stego-sound.wav", mode='rb')
+frames = bytearray(cover_wav.readframes(cover_wav.getnframes()))
 
+message_bits = [ int(f)%2 for f in frames ]
 
+message_ex = []
+value = 0
+for i in range(len(message_bits)):
+    if i%8==0 and i!=0:
+        message_ex.append(value)
+        value = 0
+    value |= message_bits[i] << i%8
 
+```
 
+```bash
+>>> ''.join([chr(l) for l in message_ex])[:20]
+Hello World¡GhÓ
+```
 
-
-
-
-
-
-
-
-
-
-
-
+Igual que en los casos anteriores, podemos ver algunos caracteres extraños al 
+final de la cadena extraída, debido a que hemos extraído bits que no se usan.
 
 
 

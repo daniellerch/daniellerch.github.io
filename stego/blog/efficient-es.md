@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Técnicas de incrustación eficiente"
+title: "Técnicas de incrustación eficiente en esteganografía"
 subtitle: "" 
 noindex: false
 meta-title: "Técnicas de incrustación eficiente"
@@ -11,7 +11,6 @@ lang-suffix: "-es"
 > En este artículo vamos a ver diferentes técnicas que nos permiten incrustar más información 
 > realizando menos modificaciones.
 
-Este artículo pertenece al bloque: [Técnicas de codificación en esteganografía](/blog-es).
 
 
 
@@ -41,7 +40,7 @@ Este artículo pertenece al bloque: [Técnicas de codificación en esteganograf�
 En esteganografía decimos que la eficiencia de la inserción es 1 cuando 
 necesitamos hacer una modificación cada vez que incrustamos un bit. Sin 
 embargo, Cuando ocultamos información en el LSB 
-(ver [Incrustación de información en el LSB](/stego/codes/lsb-es))
+(ver [Incrustación de información en el LSB](/stego/blog/lsb-es))
 la eficiencia de la inserción es de 2. Esto es así debido a que, 
 estadísticamente, la mitad de los bytes en los que queremos ocultar información
 ya tendrán como valor del LSB el bit del mensaje que queremos incrustar, por 
@@ -303,7 +302,7 @@ Siguiendo con nuestro ejemplo, la eficiencia para $p=3$ es de 3.429.
 En el siguiente gráfico podemos ver la relación entre el *payload* y la eficiencia.
 
 
-![efficiency](/stego/codes/resources/binary-codes.png?style=centerme)
+![efficiency](/stego/blog/resources/binary-codes.png?style=centerme)
 
 Como se puede ver en la gráfica, la mayor eficiencia se consigue con *payloads* 
 muy pequeños. 
@@ -470,7 +469,7 @@ $e_p = \frac{p \log_2 n}{1-n^{-p}}$
 Esto nos permite dibujar una gráfica para ver la eficiencia respecto el
 *payload* para diferentes valores de $p$ y $n$:
 
-![efficiency](/stego/codes/resources/n-ary-codes.png?style=centerme)
+![efficiency](/stego/blog/resources/n-ary-codes.png?style=centerme)
 
 
 Como se puede ver en las gráficas, cuanto mayor es $n$ mayor es la eficiencia 
