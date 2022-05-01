@@ -6,6 +6,7 @@ noindex: false
 comments: true
 meta-title: "Ataque práctico a F5"
 meta-description: "Artículo sobre cómo detectar el esquema de esteganografía para imágenes JPEG conocido como F5, usando la herramienta Aletheia."
+lang-suffix: "-es"
 ---
 
 > En este artículo vamos a ver cómo detectar el esquema de esteganografía para

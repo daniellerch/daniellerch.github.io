@@ -6,6 +6,7 @@ noindex: false
 comments: true
 meta-title: "Ataque práctico a Steghide"
 meta-description: "Artículo sobre cómo detectar el esquema de esteganografía para imágenes JPEG conocido como Steghide, usando la herramienta Aletheia."
+lang-suffix: "-es"
 ---
 
 > En este artículo vamos a ver cómo detectar **imagenes JPEG** en las que se
