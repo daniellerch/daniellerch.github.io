@@ -40,7 +40,6 @@ lang-suffix: "-es"
 
 
 
-
 <br>
 ## Información en el bit menos significativo
 
@@ -52,7 +51,7 @@ puede conocer el valor original, cuando este no coincida con el valor del medio
 se sabrá que ha sido modificado, lanzando fuertes sospechas del uso de 
 esteganografía. Por ello, aquellos medios que contienen información cuyo valor
 es difícil de modelar estadísticamente son especialmente aptos para esconder
-información. Algunos medios de uso habitual en esteganografía son la
+información. Algunos medios de uso habitual en esteganografía son las
 imágenes, el audio o el vídeo.
 Incluso disponiendo de un medio con valores difíciles de modelar, conviene
 realizar las mínimas modificaciones posibles. Y la modificación mínima que
@@ -154,9 +153,9 @@ esta operación introduce cambios significativos en la distribución estadístic
 de los bytes, lo que la hace muy detectable. 
 
 Veamos cómo incrustar un mensaje usando el lenguaje de programación Python. 
-La primero que tenemos que hacer es convertir el mensaje en una lista de 
+Lo primero que tenemos que hacer es convertir el mensaje en una lista de 
 unos y ceros. Supongamos para este ejemplo, que ya disponemos de una lista
-de los valores enteres que representan a los bytes:
+de los valores enteros que representan a los bytes:
 
 
 ```python
@@ -203,9 +202,7 @@ for i in range(len(message_bits)):
 
 El contenido de la variable ```cover``` procederá del medio en el que 
 queremos incrustar información, que podrá ser una imagen, un archivo
-de audio, un vídeo, etc. Se puede ampliar esta parte en las secciones
-de [Esteganografía en imágenes](/blog-es) o de [Esteganografía en audio](/blog-es).
-
+de audio, un vídeo, etc. 
 
 
 
@@ -248,7 +245,7 @@ lo tanto, diremos que una técnica tiene una capacidad o un *payload* del 100%
 si esconde un bit en cada valor. Así, un método que incruste un bit en cada cuatro
 bytes tendrá una capacidad del 25%, mientras que un método que incruste dos bits
 en cada byte tendrá una capacidad del 200%. Sin embargo, lo habitual será
-trabajar con capacidad pequeñas, dado que cuanto más alta es la capacidad mas
+trabajar con capacidad pequeñas, dado que cuanto más alta es la capacidad más
 inseguro (detectable) es el método.
 
 
