@@ -43,31 +43,37 @@ lang-suffix: "-es"
 <br>
 ## Información en el bit menos significativo
 
-El objetivo principal de la esteganografía es el de no ser detectado. Es por
-ello que siempre se intentará modificar la información del medio de forma que
-la modificación pase desapercibida. Además, será necesario modificar valores
-que un estegoanalista no pueda predecir de forma sencilla. Dado que si se
-puede conocer el valor original, cuando este no coincida con el valor del medio
-se sabrá que ha sido modificado, lanzando fuertes sospechas del uso de 
-esteganografía. Por ello, aquellos medios que contienen información cuyo valor
-es difícil de modelar estadísticamente son especialmente aptos para esconder
-información. Algunos medios de uso habitual en esteganografía son las
-imágenes, el audio o el vídeo.
-Incluso disponiendo de un medio con valores difíciles de modelar, conviene
+El objetivo principal de la esteganografía es el de no ser detectado. Por lo
+tanto, siempre intentaremos modificar la información del medio en el que
+queremos ocultar un mensaje, de forma que dicha  modificación pase 
+desapercibida. 
+
+También nos interesará modificar valores que un estegoanalista no pueda 
+predecir de forma sencilla. Puesto que si se puede deducir su valor original,
+bastará con compararlo con el valor del medio analizado para saber que ha
+sido alterado. O como mínimo, para lanzar fuertes sospechas sobre el uso de 
+esteganografía. 
+
+Por ello, aquellos medios digitales formados por datos difíciles de modelar 
+estadísticamente, son especialmente aptos para esconder información. Algunos 
+medios de este tipo, de uso habitual en esteganografía, son las imágenes, 
+el audio y el vídeo.
+
+Incluso disponiendo de un medio formado por datos difíciles de modelar, conviene
 realizar las mínimas modificaciones posibles. Y la modificación mínima que
 podemos realizar sobre un byte es una modificación en una unidad.
 
-Tomemos como ejemplo un byte con valor 160. Su representación en binario es 
+Tomemos como ejemplo un byte de valor 160. Su representación en binario es 
 la siguiente:
 
 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | **0** |
 
 Se ha marcado en negrita el bit menos significativo (LSB), que en este caso
-tiene el valor 0. Es decir, que este byte, representa el valor del mensaje 0. 
-Si este es el valor que queremos incrustar, no será necesario realizar
-ninguna operación. Pero si el valor del mensaje que queremos incrustar es
-el 1, tendremos que realizar una operación sobre el valor del byte que 
-cambie el LSB.
+tiene el valor 0. Es decir, que este byte, tiene incrustado un bit de mensaje
+de valor 0. Si este es el valor que queremos incrustar, no será necesario 
+realizar ninguna operación. Pero si el valor del bit del mensaje que queremos 
+incrustar es el 1, tendremos que realizar una operación sobre el valor del byte 
+que cambie su LSB.
 
 
 
@@ -77,7 +83,7 @@ cambie el LSB.
 Cuando se trata de incrustar información en el bit menos significativo de 
 un byte existen dos técnicas habituales: el LSB *replacement* y el LSB
 *matching*. La primera de ellas y más frecuente es una técnica **insegura**,
-para la que existen múltiples ataques y consiste, simplemente, en sustituir 
+para la que existen múltiples ataques y que consiste, simplemente, en sustituir 
 el valor del LSB por el valor del mensaje.
 
 Continuando con el ejemplo anterior, para incrustar un 1 en un byte con
@@ -108,9 +114,10 @@ Mientras que al restar uno obtendremos:
 En ambos casos hemos modificado el LSB, por lo que ambos casos llevan 
 incrustado un 1 como valore del mensaje. El segundo caso, sin embargo,
 ha supuesto modificar 5 bits. Pero esto no debe considerarse más inseguro,
-puesto que en ambos casos hemos modificado en valor del byte en una unidad.
+puesto que en ambos casos hemos modificado el valor del byte en una unidad.
 
-Esta técnica se conoce como **LSB matching** o como incrustación &#177;1.
+Esta técnica se conoce como **LSB matching** o incrustación &#177;1 y es 
+mucho más segura que la anterior.
 
 
 
@@ -118,7 +125,8 @@ Esta técnica se conoce como **LSB matching** o como incrustación &#177;1.
 ## Incrustación de la información con LSB *replacement*
 
 Supongamos que disponemos de los siguientes valores, correspondientes a un 
-grupo de bytes obtenidos del medio en el que queremos ocultar el mensaje:
+grupo de bytes obtenidos del medio digital en el que queremos ocultar el 
+mensaje:
 
 | 160 | 60 | 53 | 128 | 111 | 43 | 84 | 125 |
 
@@ -145,7 +153,7 @@ De manera que nos quedarán los siguientes valores:
 
 
 En los inicios de la esteganografía en imágenes digitales se pensó 
-(erróneamente) que esta era la forma más apropiada de esconder información 
+erróneamente que esta era la forma más apropiada de esconder información, 
 puesto que modificaba únicamente un bit. Desde un punto de vista intuitivo 
 tiene mucho sentido, puesto que esta técnica nos permite insertar un bit de 
 información modificando el valor del byte lo mínimo posible. Sin embargo 
@@ -154,7 +162,7 @@ de los bytes, lo que la hace muy detectable.
 
 Veamos cómo incrustar un mensaje usando el lenguaje de programación Python. 
 Lo primero que tenemos que hacer es convertir el mensaje en una lista de 
-unos y ceros. Supongamos para este ejemplo, que ya disponemos de una lista
+unos y ceros. Supongamos, para este ejemplo, que ya disponemos de una lista
 de los valores enteros que representan a los bytes:
 
 
@@ -176,7 +184,7 @@ message = [ord(b) for b in f.read()]
 Una vez disponemos de los bits del mensaje que queremos incrustar, solo
 tenemos que recorrer los bytes correspondientes al medio en el que queremos
 incrustar el mensaje (imagen, audio, vídeo, ...) e ir modificando su LSB
-con el bit correspondiente al mensaje. 
+con el bit correspondiente del mensaje. 
 
 Supongamos una variable ```cover``` que contiene los valores de los bytes
 leídos del medio (suficientes bytes como para incrustar todo el mensaje) y
@@ -228,7 +236,7 @@ que en binario corresponden a:
 
 Para incrustar el mensaje sumemos o restemos 1 aleatoriamente a aquellos 
 píxeles en los que el valor del LSB no coincide con el bit del mensaje que 
-queremos ocultar:
+queremos ocultar. Por ejemplo:
 
 | (+0) 1010000**0** | (+1) 0011110**1** | (-1) 0011010**0** | (+0) 1000000**0** | 
 | (-1) 0110111**0** | (+1) 00101**100** | (+0) 0101010**0** | (+0) 0111110**1** | 
@@ -240,13 +248,14 @@ En este caso, el resultado es:
 Con esta técnica estamos ocultando un bit en cada byte. 
 
 En esteganografía, se toma como referencia el número total de bytes que tiene el
-medio y la ocultación de un bit en cada byte como una capacidad del 100%. Por
-lo tanto, diremos que una técnica tiene una capacidad o un *payload* del 100% 
-si esconde un bit en cada valor. Así, un método que incruste un bit en cada cuatro
-bytes tendrá una capacidad del 25%, mientras que un método que incruste dos bits
-en cada byte tendrá una capacidad del 200%. Sin embargo, lo habitual será
-trabajar con capacidad pequeñas, dado que cuanto más alta es la capacidad más
-inseguro (detectable) es el método.
+medio, disponibles para ocultar información, como el número de bits que se 
+pueden ocultar para una capacidad del 100%. Es decir, incrustando un bit en cada
+uno de los bytes disponibles. Por lo tanto, diremos que una técnica tiene una 
+capacidad o un *payload* del 100% si esconde un bit en cada byte. Así, un método 
+que incruste un bit en cada cuatro bytes tendrá una capacidad del 25%, mientras 
+que un método que incruste dos bits en cada byte tendrá una capacidad del 200%. 
+Sin embargo, lo habitual será trabajar con capacidad pequeñas, dado que cuantos
+más datos se oculten más inseguro (detectable) será el método.
 
 
 Veamos ahora cómo incrustar un mensaje usando el lenguaje de programación Python. 
@@ -283,12 +292,11 @@ for i in range(len(message_bits)):
 ```
 
 
-Es importante tener en cuenta que se podría dar el caso de que la suma de 1 o -1
-genere un resultado fuera de rango. Los bytes van de 0 a 255 por lo que no podemos
-usar valores negativos o positivos mayores que 255. Es decir, que al incrustar un 
-mensaje tendremos que controlar que nunca se resta 1 de los valores 0 y que nunca 
-se suma 1 a los valores 255.
-
+Es importante tener en cuenta que se podría dar el caso de que la suma de 1 o 
+-1 genere un resultado fuera de rango. Los bytes van de 0 a 255 por lo que no 
+podemos usar valores negativos o valores positivos mayores que 255. Es decir, 
+que al incrustar un mensaje tendremos que controlar que nunca se resta 1 de 
+los valores 0 y que nunca se suma 1 a los valores 255.
 
 
 <br>
@@ -327,7 +335,7 @@ for i in range(len(message_bits)):
 ## Los peligros del LSB *replacement*
 
 Hemos comentado que el LSB *replacement* es inseguro, lo que en esteganografía
-significa que es detectable. Esto es debido a que la incrustación se realizad
+significa que es detectable. Esto es debido a que la incrustación se realiza
 de una forma asimétrica, es decir, que no existe la misma probabilidad de 
 incrementar un valor que de decrementarlo. 
 
@@ -335,7 +343,7 @@ Cuando sustituimos el LSB de un valor par (un LSB con valor 0) por un bit del
 mensaje con valor 1, el efecto que se produce es el mismo que el de añadir uno 
 a ese valor. De la misma manera, cuando sustituimos el LSB de un píxel con valor 
 impar (un LSB con valor 1) por un bit del mensaje con valor 0, el efecto que se 
-produce es el mismo que el de restar uno a ese valor. Esto es una operación
+produce es el mismo que el de restar uno a ese valor. Esta es una operación
 asimétrica, en el sentido de que nunca se suma 1 a un valor impar y nunca se
 resta uno a un valor par.
 
@@ -361,15 +369,16 @@ a obtener una altura similar.
 Al sumar uno a las barras pares, estas ceden parte de sus valores a la barra
 posterior, mientra que al restar uno a las barras impares, estas ceden parte
 de sus valores a la barra anterior. Por ello, los pares de barras consecutivas
-par-impar tienen a tomar una altura similar.
+par-impar tienden a tomar una altura similar.
 
-Existe toda una familia de ataques dedicados a explotar esta anomalía 
+Existen toda una familia de ataques dedicados a explotar esta anomalía 
 estadística introducida por el LSB *replacement*. Estos ataques se conocen como
 **ataques estructurales** y pueden ser explotados con herramientas de 
 estegoanálisis como [Aletheia](https://github.com/daniellerch/aletheia). 
-En [Ataque práctico a esquemas LSB-R] se explica como usar esta herramienta
-para detectar este tipo de esquemas de esteganografía, usados por muchas 
-herramientas populares como [OpenStego](https://www.openstego.com/) y 
+En [Ataque práctico a esquemas LSB-R](/stego/aletheia/lsbr-attack-es) 
+se explica como usar esta herramienta para detectar este tipo de esquemas de 
+esteganografía, usados por muchas herramientas populares como 
+[OpenStego](https://www.openstego.com/) y 
 [OpenPuff](https://embeddedsw.net/OpenPuff_Steganography_Home.html).
 
 
@@ -385,8 +394,8 @@ Sin embargo, las dos técnicas que hemos descrito son más eficientes. Pues,
 estadísticamente, la mitad de los bytes en los que queremos ocultar información
 ya tendrán como valor del LSB el bit del mensaje que queremos incrustar, por 
 lo que no será necesario modificarlo. Así pues, estaremos incrustando un bit
-en cada byte pero solo estaremos modificando la mitad de los bytes. En
-consecuencia, la eficiencia de estas técnicas es de 2.
+en cada byte, pero solo estaremos modificando la mitad de los bytes. En
+consecuencia, la eficiencia de estas técnicas es de 2 bits por modificación.
 
 Aunque pueda sorprender, existen técnicas todavía más eficientes. Técnicas que
 nos permiten incrustar información con eficiencias muy superiores. Por ejemplo,
@@ -408,16 +417,15 @@ Las imágenes de tipo mapa de bits son aquellas que representan el valor de
 los píxeles en una matriz. Si la imagen es en escala de grises, cada valor
 de la matriz es un byte, es decir, un número de 0 a 255 que representa la
 intensidad del píxel. El valor 0 nos indicaría el color negro, mientras
-que un valor 255 nos indicaría el color blanco. Asó, todos los valores 
+que un valor 255 nos indicaría el color blanco. Así, todos los valores 
 intermedios representarían los diferentes tonos de gris. 
 
-Sin embargo, lo más habitual es que las imágenes sean en color, y que 
+Sin embargo, lo más habitual es que las imágenes sean en colory y que 
 representen los píxeles con un conjunto de tres bytes: la cantidad
 de rojo (R), la cantidad de verde (G) y la cantidad de azul (B). Este
 tipo de representación (RGB) es muy común, aunque también es habitual
 el RGBA, que usa un byte adicional para almacenar el nivel de transparencia
 del píxel.
-
 
 Veamos como podemos leer una imagen usando Python:
 
@@ -494,7 +502,7 @@ Array([[125, 125, 133, 128, 120, 116, 123, 124, 127, 119],
 Una vez tenemos acceso al *array* de Numpy que contiene los datos, podemos 
 incrustar un mensaje usando las técnicas que se han descrito en los 
 apartados anteriores. Si llamamos ```Is``` a nuestro *array* modificado con el
-mensaje oculta, podemos guardar la imagen en Python mediante:
+mensaje oculto, podemos guardar la imagen en Python mediante:
 
 ```python
 imageio.imwrite("stego-image.png", Is)
@@ -568,22 +576,16 @@ contiene 128 píxeles, aunque los últimos no se usan. Una herramienta de
 esteganografía podría evitar el problema indicando la longitud del mensaje 
 en una cabecera también oculta.
 
-En este ejemplo no se controlan los desbordamientos. Es decir, no se controla
-que si sumamos 1 a 255 o restamos 1 a 0, vamos a producir cambios drásticos
-en el valor del byte, lo que hará que la incrustación sea muy detectable.
-
-sdas
-
 <br>
 ## Incrustación en imágenes JPEG
 
 Las imágenes [JPEG](https://en.wikipedia.org/wiki/JPEG) tienen un 
 funcionamiento bastante más complejo que el de las imágenes de tipo mapa de 
 bits. No vamos a entrar en detalle de cómo funciona todo el proceso de 
-compresión y descompresión que se realiza. En el enlace indicado es un buen 
-punto de partida para ampliar información en este aspecto. Sí que realizaremos, 
-sin embargo, una breve descripción del proceso, centrándonos en las partes que 
-nos interesan desde el punto de vista de la esteganografía.
+compresión y descompresión que se realiza. El enlace indicado es un buen 
+punto de partida para ampliar información. Sí que realizaremos, sin embargo, 
+una breve descripción del proceso, centrándonos en las partes que nos interesan 
+desde el punto de vista de la esteganografía.
 
 Para comprimir una imagen usando el estándar JPEG, partimos del mapa de bits 
 que representa la imagen. Dividimos dicho mapa de bits en bloques de 
@@ -659,12 +661,13 @@ array([[124.,  -3.,   1., ...,   0.,   0.,   0.],
 ```
 
 Debido a la cuantización, la cantidad de coeficientes con valor cero suele ser
-muy grande. No es buena idea ocultar información en esos coeficientes, puesto
-esto podría se sospechoso. El primer problema que nos encontraríamos es que el
+muy grande. Más, cuanto mayor es el nivel de compresión aplicado. 
+No es buena idea ocultar información en esos coeficientes, puesto que
+esto podría ser sospechoso. El primer problema que nos encontraríamos es que el
 tamaño del fichero crecería. Esto es debido a que la forma en la que JPEG 
 almacena los datos evita guardar los ceros, y si ocultamos información en esos
 coeficientes, el algoritmo JPEG tendría que almacenarlos. Adicionalmente, la 
-existencia de valores en coeficientes donde, debido a la cuantización, debería 
+existencia de valores en coeficientes en los que, debido a la cuantización, debería 
 haber ceros, también sería algo muy sospechoso.
 
 Así pues, en esteganografía JPEG, es habitual evitar modificar los coeficientes
@@ -684,22 +687,24 @@ genere un nuevo cero, puesto que el receptor no sabría que ese cero no lo tiene
 que ignorar. Intentar no generar nuevos ceros podría llevar a introducir serias 
 anomalías estadísticas que harían nuestro sistema muy detectable. 
 Existen diferentes técnicas para lidiar con este tipo de problemas, aunque
-no las vamos a tratar en este artículo. 
+no las vamos a tratar en este artículo. Analizaremos el problema con detalle
+en artículos posteriores.
 
 
 A continuación vamos a ver un ejemplo completo en el que ocultaremos la cadena 
-```"Hello World"```. Úsaremos únicamente el coeficiente DC, es decir, el 
-coeficiente de arriba a la izquierda de cada bloque de $8 \times 8$. De esta
-manera no afectaremos a los ceros y el receptor sabrá donde leer.
+```"Hello World"```. Úsaremos únicamente el coeficiente DC, que es como llamamos
+al coeficiente de arriba a la izquierda de cada bloque de $8 \times 8$. De esta
+manera no afectaremos a los ceros y el receptor sabrá qué coeficientes leer.
 
-Primero representamos el mensaje a incrustar como lista de bits. A continuación
-extraemos el coefficiente de la esquina superior izquierda de cada bloque de
-$8 \times 8$. Esto lo hacemos usando la indexación de Numpy ```[::8,::8]```.
-Para el ejemplo, únicamente extraemos datos del primer canal. Puesto que los 
-datos extraídos estan representados como una matriz de dos dimensiones, usamos
-la ```flatten()``` para representarlos como un vector. A continuación 
-incrustamos el mensaje y representamos de nuevo los datos del vector como matriz
-de dos dimensiones. Finalemente, guardamos los datos en un fichero JPEG.
+Primero representamos el mensaje a incrustar como una lista de bits. A 
+continuación extraemos el coefficiente de la esquina superior izquierda de cada 
+bloque de $8 \times 8$. Esto lo hacemos usando la indexación de Numpy 
+```[::8,::8]```. Para el ejemplo, únicamente extraemos datos del primer canal. 
+Puesto que los datos extraídos estan representados como una matriz de dos 
+dimensiones, usamos la función ```flatten()``` para representarlos como un 
+vector. A continuación incrustamos el mensaje y representamos de nuevo los datos
+del vector como matriz de dos dimensiones. Finalemente, guardamos los datos en 
+un fichero JPEG.
 
 
 ```python
