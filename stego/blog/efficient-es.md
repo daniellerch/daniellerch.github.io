@@ -40,15 +40,15 @@ lang-suffix: "-es"
 En esteganografía decimos que la eficiencia de la inserción es 1 cuando 
 necesitamos hacer una modificación cada vez que incrustamos un bit. Sin 
 embargo, Cuando ocultamos información en el LSB 
-(ver [Incrustación de información en el LSB](/stego/blog/lsb-es))
+(ver [Esteganografía LSB en imágenes y audio](/stego/blog/lsb-es))
 la eficiencia de la inserción es de 2. Esto es así debido a que, 
 estadísticamente, la mitad de los bytes en los que queremos ocultar información
 ya tendrán como valor del LSB el bit del mensaje que queremos incrustar, por 
-lo que no será necesario modificarlo. Así pues, estaremos incrustando un bit
+lo que no será necesario modificarlos. Así pues, estaremos incrustando un bit
 en cada byte pero solo estaremos modificando la mitad de los bytes. En
-consecuencia, la eficiencia será de 2.
+consecuencia, la eficiencia será de 2 bits por modificación.
 
-Esta eficiencia puede mejorarse fácilmente con un sencillo truco. Veamos como
+Esta eficiencia puede mejorarse fácilmente con un sencillo truco. Veamos cómo
 funciona. 
 
 Vamos a ocultar información en grupos de tres bytes:
@@ -96,12 +96,12 @@ Y finalmente, si queremos ocultar $11$ un posible resultado será:
 
 | 10010100 | 10010101 | (-1) 1001011**0** |
 
-Hay cuatro opciones $00$, $01$, $10$ y $11$. Una de cada cuatro opciones,
-no será necesario realizar ninguna modificación, mientras que las otras
+Hay cuatro opciones $00$, $01$, $10$ y $11$. Para una de cada cuatro opciones,
+no será necesario realizar ninguna modificación, mientras que para las otras
 tres modificaremos un solo bit. Por lo tanto, modificaremos un bit cada
-3/4 de los casos. Puesto que cada una de estas modificacions nos permite
+3/4 de los casos. Puesto que cada una de estas modificaciones nos permite
 incrustar dos bits, tenemos una eficiencia de $\frac{2}{3/4}=2.66$.
-Una eficiencia superior a la del LSB *matching*.
+Una eficiencia superior a la de la esteganografía LSB.
 
 
 
@@ -133,6 +133,10 @@ Podemos calcular el mensaje que oculta de forma "natural" un vector
 
 $ m = Mc $
 
+Es importante tener en cuenta que trabajamos con bits, es decir, que
+todas las operaciones que realizamos son 
+[operaciones módulo 2](https://en.wikipedia.org/wiki/Modular_arithmetic).
+
 Aunque puede darse el caso de que el mensaje $m$ coincida con los bits
 que queremos incrustar, no ocurrirá de forma habitual. En este caso,
 restaremos el mensaje $m$ que queremos ocultar de $Mc$:
@@ -151,7 +155,7 @@ mensaje $m=(1,1,0)$.
 Dado que $p=3$ necesitaremos ocultar nuestro mensaje en grupos de 
 $2^p-1=7$ bits, por lo que para cada incrustación necesitaremos un 
 vector *cover* $c$ de 7 bits. Obtendremos dicho vector del medio y 
-nos quedamos con su LSB. 
+nos quedaremos con su LSB. 
 
 Supongamos que los bytes extraídos del medio son los siguientes:
 
@@ -262,7 +266,6 @@ Repitamos el ejemplo anterior, ahora usando Python:
 
 ```python
 m = [1, 1, 0]
-M = prepare_M(3)
 c = [ 0b11011010, 0b11011011, 0b11011011, 0b11011010,
       0b11011011, 0b11011010, 0b11011010 ]
 s = embed(M, c, m)
@@ -311,7 +314,8 @@ muy pequeños.
 <br>
 ## Códigos de Hamming n-arios
 
-Teniendo en cuenta que las operaciones que realizamos son de tipo $\pm 1$, 
+Teniendo en cuenta que las operaciones que realizamos son de tipo $\pm 1$
+(LSB *matching*), 
 podríamos decir que no estamos aprovechando al máximo este sistema de inserción. 
 Si en lugar de reemplazar el bit menos significativo de cada byte, optamos por 
 realizar una operación $\pm 1$ estamos trabajando con tres posibles valores: 
@@ -360,30 +364,38 @@ $ M=\begin{pmatrix}
 \end{pmatrix} $
 </small>
 
-Y finalmente, el mensaje que queremos ocultar. Ocultemos por ejemplo:
+Y finalmente, necesitamos también el mensaje que queremos ocultar. 
+Ocultemos por ejemplo:
 
 $ m=(2, 0, 2) $
 
 Si calculamos el mensaje oculto en nuestro vector $c$ vemos que es:
 
-$ m = Mc = (1, 1, 0) $
+$ m = Mc = (1, 0, 0) $
 
-Lógicamente, no es el que queremos ocultar. Buscamos pues que 
+Lógicamente, no es el que queremos ocultar. Buscamos pues qué
 columna de M es la responsable:
 
-$$ Mc-m = (1, 2, 2) $$
+$$ Mc-m = (2, 0, 1) $$
 
-Es la columna 17 de la matriz M. Por lo que, para obtener el vector *stego*
-$s$ tenemos que sumar 1 al valor de esa posición en el vector $c$:
+Es la columna 9 de la matriz M. Por lo que, para obtener el vector *stego*
+$s$ tenemos que sumar 2 (o restar 1) al valor de esa posición en el vector $c$:
 
-$c=(0,1,0,0,2,1,2,2,2,0,1,0,2,0,2,1,1,2,0,1,1,1,2,2,0,2)$
-$s=(0,1,0,0,2,1,2,2,2,0,1,0,2,0,2,1,2,2,0,1,1,1,2,2,0,2)$
+$c=(0,1,0,0,2,1,2,2,2,0,1,0,2)$
+
+$s=(0,1,0,0,3,1,2,2,1,0,1,0,2)$
 
 
-Por lo tanto, cuando el receptor del mensaje obtenga el vector *stego* del
-medio, podrá extraer el mensaje mediante:
+Podría darse el caso de que, en la matriz M, no encontrásemos la columna
+que buscamos, pero sí una combinación lineal. En este caso sumaríamos
+1 (o restaríamos 2).
+
+
+Cuando el receptor del mensaje obtenga el vector *stego* del medio, 
+podrá extraer el mensaje mediante:
 
 $m=Ms=(2,0,2)$
+
 
 
 Veamos el código Python que nos permite realizar estas operaciones. Primero
@@ -406,14 +418,19 @@ que buscar la posición de $Mc-m$ en la matriz $M$ y modificarla:
 import numpy as np
 def embed(M, c, m, n):
     s = c.copy()
-    vector_to_change = (M.dot(c)-m)%n
+    col_to_find = (M.dot(c)-m)%n
+    print(col_to_find)
     position = 0
-    for v in M.T: 
-        if np.array_equal(v, vector_to_change):
-            s[position] = (s[position] + 1) % 2
+    for v in M.T:
+        if np.array_equal(v, col_to_find):
+            s[position] = (s[position] + 2)%n
+            break
+        elif np.array_equal((v*2)%n, col_to_find):
+            s[position] = (s[position] + 1)%n
             break
         position += 1
     return s
+
 ```
 
 Para extraer el mensaje incrustado bastará con realizar la operación $Ms$:
@@ -427,7 +444,6 @@ Repitamos ahora el ejemplo usando Python:
 
 ```python
 m = [2, 0, 2]
-M = prepare_M(3, 3)
 c = [0,1,0,0,2,1,2,2,2,0,1,0,2]
 s = embed(M, c, m, 3)
 new_m = extract(M, s, 3)
@@ -440,13 +456,13 @@ array([2, 0, 2])
 
 
 
-Además de usar técnicas de inserción $$\pm 1$$, podemos usar técnicas 
-$$\pm k$$ siendo $k$ cualquier valor que nos interese. Sin embargo, 
+En lugar de usar técnicas de inserción $\pm 1$, podemos usar técnicas 
+$\pm k$, siendo $k$ cualquier valor que nos interese. Sin embargo, 
 cuanto mayor sea $k$ mayor será la distorsión introducida, por lo que 
 puede no ser apropiado seleccionar valores demasiado grandes. 
 
 Si hemos usado códigos ternarios para la inserción $\pm 1$, con la 
-inserción $\pm 2$ tendremos que usar códigos quintarios, puesto que 
+inserción $\pm 2$ tendremos que usar códigos quinarios, puesto que 
 tenemos cinco operaciones posibles: -2, -1, 0, +1 y +2. 
 
 En este caso el proceso sería es el mismo que antes, cambiando el valor del 
