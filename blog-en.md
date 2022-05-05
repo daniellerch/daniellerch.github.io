@@ -12,7 +12,7 @@ lang-suffix: "-en"
 ## Esteganografía
 - [LSB steganography in images and audio](/stego/blog/lsb-en).
 
-<center>&diams;</center>
+<center>&nbsp;</center>
 
 ## Steganalysis using Aletheia
 - [Introduction to steganalysis using Aletheia.](/stego/aletheia/intro-en)

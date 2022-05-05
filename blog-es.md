@@ -20,7 +20,7 @@ lang-suffix: "-es"
 - El *deep learning*, las imágenes adversarias y las funciones de coste.
 -->
 
-<center>&diams;</center>
+<center>&nbsp;</center>
 
 ## Estegoanálisis con Aletheia
 - [Introducción al estegoanálisis con Aletheia.](/stego/aletheia/intro-es)
