@@ -45,7 +45,7 @@ lang-suffix: "-en"
 
 The main objective of steganography is not to be detected. Therefore, we will always try to modify the information of the media in which we want to hide a message, so that the modification goes unnoticed.
 
-We will also be interested in modifying values that a stegoanalyst cannot easily predict. Since if its original value can be deduced, it will suffice to compare it with the value of the analyzed media to know that it has been altered. Or in any case, make the use of steganography suspicious.
+We will also be interested in modifying values that a steganalyst cannot easily predict. Since if its original value can be deduced, it will suffice to compare it with the value of the analyzed media to know that it has been altered. Or in any case, make the use of steganography suspicious.
 
 For this reason, those digital media made of data difficult to model statistically are especially suitable for hiding information. Some media of this type, commonly used in steganography, are images, audio and video.
 

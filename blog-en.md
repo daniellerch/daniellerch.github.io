@@ -4,7 +4,7 @@ title: Blog
 subtitle: "" 
 noindex: false
 meta-title: "Blog"
-meta-description: "Steganografía and stegoanalysis blog"
+meta-description: "Steganografía and steganalysis blog"
 lang-suffix: "-en"
 ---
 
