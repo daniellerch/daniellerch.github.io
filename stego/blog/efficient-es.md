@@ -245,10 +245,10 @@ que buscar la posición de $Mc-m$ en la matriz $M$ y modificarla:
 ```python
 def embed(M, c, m):
     s = c.copy()
-    vector_to_change = (M.dot(c)-m)%2
+    col_to_find = (M.dot(c)-m)%2
     position = 0
     for v in M.T: 
-        if np.array_equal(v, vector_to_change):
+        if np.array_equal(v, col_to_find):
             s[position] = (s[position] + 1) % 2
             break
         position += 1
@@ -492,6 +492,17 @@ Como se puede ver en las gráficas, cuanto mayor es $n$ mayor es la eficiencia
 del método. Sin embargo, aumentar demasiado $n$ implica trabajar con valores
 de $k$ quizás demasiado grandes, que  pueden distorsionar mucho el medio y 
 hacer que el método esteganográfico sea más detectable.
+
+Sin embargo, hay algo que no se puede pasar por alto. La distorsión introducida
+por los códigos binarios es la misma que la introducida por los códigos 
+ternarios, puesto que en ambos casos realizamos únicamente operaciones $+1$ y
+$-1$. La diferencia es que, mientras que en los códigos binarios elegimos una
+u otra aleatoriamente, en los códigos ternarios esta decisión forma parte del 
+código. Por lo tanto, el uso de los codigos ternarios nos ofrecerá más 
+capacidad para el mismo grado de distorsión.
+
+| **Código binario** | **Código ternario** |
+| xx | xx |
 
 
 <br>
