@@ -8,8 +8,8 @@ meta-description: "Article about the use of steganography embedding information 
 lang-suffix: "-en"
 ---
 
-> In this article we are going to see how to embed information in images using the least 
-> significant bit (LSB) of each byte.
+> In this article we are going to see how to embed information in images and 
+> audio using the least significant bit (LSB) of each byte.
 
 
 <style>
@@ -28,14 +28,14 @@ lang-suffix: "-en"
 
 1. [Information in the least significant bit](#information-in-the-least-significant-bit)
 2. [Two usual techniques](#two-usual-techniques)
-3. [Information embedding with LSB *replacement*](#information-embedding-with-lsb-replacement)
-4. [Information embedding with LSB *matching*](#information-embedding-with-lsb-matching)
+3. [Information embedding with LSB replacement](#information-embedding-with-lsb-replacement)
+4. [Information embedding with LSB matching](#information-embedding-with-lsb-matching)
 5. [Information extraction](#information-extraction)
-6. [The dangers of LSB *replacement*](#the-dangers-of-lsb-replacement)
-7. [Towards more efficient embedding](#towards-more-efficient-embedding)
-8. [Embedding into bitmap-type images](#embedding-into-bitmap-images)
-9. [Embedding into JPEG images](#embedding-into-jpeg-images)
-10. [Embedding into WAV audio files](#embedding-into-wav-audio-files)
+6. [The dangers of LSB replacement](#the-dangers-of-lsb-replacement)
+7. [Towards a more efficient embedding](#towards-a-more-efficient-embedding)
+8. [LSB steganography in bitmap images](#lsb-steganography-in-bitmap-images)
+9. [LSB steganography in JPEG images](#lsb-steganography-in-jpeg-images)
+10. [LSB steganography in WAV audio files](#lsb-steganography-in-wav-audio-files)
 
 
 
@@ -45,11 +45,11 @@ lang-suffix: "-en"
 
 The main objective of steganography is not to be detected. Therefore, we will always try to modify the information of the media in which we want to hide a message, so that the modification goes unnoticed.
 
-We will also be interested in modifying values that a stegoanalyst cannot easily predict. Since if its original value can be deduced, it will suffice to compare it with the value of the analyzed media to know that it has been altered. Or in any case, make the use of steganography is suspicious.
+We will also be interested in modifying values that a stegoanalyst cannot easily predict. Since if its original value can be deduced, it will suffice to compare it with the value of the analyzed media to know that it has been altered. Or in any case, make the use of steganography suspicious.
 
-For this reason, those digital media made up of data difficult to model statistically are especially suitable for hiding information. Some media of this type, commonly used in steganography, are images, audio and video.
+For this reason, those digital media made of data difficult to model statistically are especially suitable for hiding information. Some media of this type, commonly used in steganography, are images, audio and video.
 
-Even if you have a media made up of data difficult to model, it is recommended to make as few modifications as possible. And the minimum modification that we can make on a byte is a modification of a unit. Let us take as an example a byte with a value of 160. Its representation in binary is as follows:
+Even if you have a media made of data difficult to model, it is recommended to make as few modifications as possible. And the minimum modification that we can make on a byte is a modification of a unit. Let us take as an example a byte with a value of 160. Its representation in binary is as follows:
 
 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | **0** |
 
@@ -57,9 +57,9 @@ The least significant bit (LSB) has been marked in bold, which in this case has 
 
 
 <br>
-## Two common techniques
+## Two usual techniques
 
-There are two common techniques for embedding information in the least significant bit of a byte: LSB *replacement* and LSB *matching*. LSB *replacement* is an **insecure** technique, for which there are multiple attacks and which simply consists of replacing the value of the LSB with the value of the message. 
+There are two common techniques for embedding information in the least significant bit of a byte: LSB replacement and LSB matching. LSB replacement is an **insecure** technique, for which there are multiple attacks and which simply consists of replacing the value of the LSB with the value of the message. 
 
 Continuing with the previous example, to embed a 1 in a byte with value 160:
 
@@ -70,7 +70,8 @@ All we have to do is replace the LSB with 1:
 
 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | **1** |
 
-This technique is known as **LSB replacement** and its use is not recommended as it is detectable. The section [The dangers of LSB *replacement*](#the-dangers-of-lsb-replacement) explains what makes this technique unsafe.
+
+As we have said before, this technique is known as **LSB replacement** and its use is not recommended, since it is detectable. The section [The dangers of LSB replacement](#the-dangers-of-lsb-replacement) explains what makes this technique unsafe.
 
 Another way to modify the LSB is to add 1 or subtract 1 to the value of the byte. 
 For example, if we add 1 to:
@@ -82,17 +83,17 @@ It will give us as a result:
 
 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | **1** |
 
-and if we subtract 1:
+and if we subtract 1, we will get:
 
 | 1 | 0 | 0 | **1** | **1** | **1** | **1** | **1** |
 
 In both cases we have modified the LSB, so in both cases we have a 1 embedded as the value of the message. The second case, however, has modified 5 bits. But this should not be considered more insecure, since in both cases we have modified the value of the byte by one unit.
 
-This technique is known as **LSB matching** or &#177;1 embedding and is much more secure than the previous one.
+This technique is known as **LSB matching** or **&#177;1 embedding** and is much more secure than the previous one.
 
 
 <br>
-## Embedding the information with LSB *replacement*
+## Information embedding with LSB replacement
 
 Suppose we have the following values, corresponding to a group of bytes obtained from the digital media in which we want to hide the message:
 
@@ -107,20 +108,20 @@ Suppose now that we want to hide a byte, for example the one corresponding to th
 
 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 
 
-We will do this by substituting the value of the least significant bit of each value:
+We will do this by replacing the value of the least significant bit of each value:
 
 
 | 1010000**0** | 0011110**1** | 0011010**0** | 1000000**0** | 
 | 0110111**0** | 0010101**0** | 0101010**0** | 0111110**1** | 
 
-So we will have the following values:
+So we will get the following values:
 
 | 160 | 61 | 52 | 128 | 110 | 42 | 84 | 125 |
 
 
 At the beginning of steganography in digital images, it was mistakenly thought that this was the most appropriate way to hide information, since it only modifies one bit. From an intuitive point of view it makes a lot of sense, since this technique allows us to insert a bit of information by modifying the value of the byte as little as possible. However, this operation introduces significant changes in the statistical distribution of the bytes, which makes it very detectable.
 
-Let's see how to embed a message using the Python programming language. The first thing we need to do is convert the message into a list of ones and zeros. Suppose, for this example, that we already have a list of the integer values that represent the bytes:
+Let's see how to embed a message using the Python programming language. The first thing we need to do is convert the message into a list of ones and zeros. 
 
 
 ```python
@@ -160,11 +161,11 @@ The content of the ```cover``` variable will come from the media in which we wan
 
 
 <br>
-## Embedding the information with LSB *matching*
+## Information embedding with LSB matching
 
-LSB *matching* is a technique that, from the point of view of the value of the LSB, offers the same results as LSB *replacement*. However, this technique does not introduce the statistical anomalies that the LSB *replacement* introduces, so it is the recommended way of embedding information in the LSB.
+LSB matching is a technique that, from the point of view of the value of the LSB, offers the same results as LSB replacement. However, this technique does not introduce the statistical anomalies that the LSB replacement introduces, so it is the recommended way of embedding information in the LSB.
 
-Let's go back to the previous example to see how information would be embedded using LSB *matching*. Recall that we used the following values:
+Let's go back to the previous example to see how information would be embedded using LSB matching. Recall that we used the following values:
 
 | 160 | 60 | 53 | 128 | 111 | 43 | 84 | 125 |
 
@@ -215,7 +216,7 @@ for i in range(len(message_bits)):
 [160, 61, 54, 128, 110, 44, 84, 125]
 ```
 
-It is important to note that the addition of 1 or -1 could generate a result out of range. The bytes range from 0 to 255, so we cannot use negative values or positive values greater than 255. That is, when embedding a message we will have to control that 1 is never subtracted from the 0 values and that 1 is never added to the values 255.
+It is important to note that the addition of 1 or -1 could generate a result out of range. The bytes range from 0 to 255, so we cannot use negative values or positive values greater than 255. That is, when embedding a message we will have to control that 1 is never subtracted from the 0 values and that 1 is never added to the 255 values.
 
 
 <br>
@@ -229,7 +230,7 @@ Let's see how to perform this operation using Python. First we extract the bits:
 message_bits = [ s%2 for s in stego ]
 ```
 
-In this case, the variable ```stego``` contains the values of the bytes extracted from the medium.
+In this case, the variable ```stego``` contains the values of the bytes extracted from the digital media.
 
 Now we have to group the bits 8 by 8 to form the byte value of the original message:
 
@@ -245,6 +246,12 @@ for i in range(len(message_bits)):
     value |= message_bits[i] << i%8
 
 ```
+
+```bash
+>>> ''.join([chr(l) for l in message_ex])
+'A'
+```
+
 
 
 <br>
@@ -276,7 +283,7 @@ In [Practical attack on LSB-R schemes](/stego/aletheia/lsbr-attack-en) it is exp
 
 
 <br>
-## Towards more efficient embedding
+## Towards a more efficient embedding
 
 A very important concept in steganography is that of embedding efficiency. An efficiency of 1 would correspond to an insertion technique that modifies all the bytes in which a bit is embedded. That is, one modification for each inserted bit.
 
@@ -290,7 +297,7 @@ There are many families of codes that allow us to perform this type of efficient
 
 
 <br>
-## Embedding in bitmap images
+## LSB steganography in bitmap images
 
 Bitmap type images are those that represent the value of pixels in a matrix. If the image is grayscale, each value in the array is a byte, that is, a number from 0 to 255 that represents the intensity of the pixel. The value 0 would indicate the color black, while a value 255 would indicate the color white. Thus, all intermediate values would represent the different shades of gray.
 
@@ -434,7 +441,7 @@ for i in range(len(message_bits)):
 We can see some strange characters at the end of the extracted string. This is because we have extracted all the bits from the selected vector, which contains 128 pixels, even though the last ones are not used. A steganography tool could avoid the problem by indicating the length of the message in a hidden header.
 
 <br>
-## Embedding in JPEG images
+## LSB steganography in JPEG images
 
 [JPEG](https://en.wikipedia.org/wiki/JPEG) images have a much more complex operation than that of bitmap images. We are not going to detail how the entire compression and decompression process works. The indicated link is a good starting point for further information. We will, however, make a brief description of the process, focusing on the interesting parts for steganography.
 
@@ -566,7 +573,7 @@ for i in range(len(message_bits)):
 As in the previous case, we can see some strange characters at the end of the extracted string, because we have extracted bits that are not used.
 
 <br>
-## Embedding in WAV audio files
+## LSB steganography in WAV audio files
 
 Audio files [WAV](https://en.wikipedia.org/wiki/WAV) (see [WAV format](http://soundfile.sapp.org/doc/WaveFormat/)) are files that store the sound samples without using lossy compression, as is the case with other formats such as MP3.
 

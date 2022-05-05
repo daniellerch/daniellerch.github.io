@@ -8,8 +8,8 @@ meta-description: "Artículo acerca del uso de esteganografía incrustando infor
 lang-suffix: "-es"
 ---
 
-> En este artículo vamos a ver cómo incrustar información en imágenes usando el bit menos 
-> significativo (LSB) de cada byte. 
+> En este artículo vamos a ver cómo incrustar información en imágenes y
+> en audio usando el bit menos significativo (LSB) de cada byte. 
 
 
 
@@ -34,9 +34,9 @@ lang-suffix: "-es"
 5. [Extracción de la información](#extraccion-de-la-información)
 6. [Los peligros del LSB *replacement*](#los-peligros-del-lsb-replacement)
 7. [Hacia una incrustación más eficiente](#hacia-una-incrustación-más-eficiente)
-8. [Incrustación en imágenes de tipo mapa de bits](#incrustación-en-imágenes-de-tipo-mapa-de-bits)
-9. [Incrustación en imágenes JPEG](#incrustación-en-imágenes-jpeg)
-10. [Incrustación en ficheros de audio WAV](#incrustación-en-ficheros-de-audio-wav)
+8. [Esteganografía LSB en imágenes de tipo mapa de bits](#esteganografía-lsb-en-imágenes-de-tipo-mapa-de-bits)
+9. [Esteganografía LSB en imágenes JPEG](#esteganografía-lsb-en-imágenes-jpeg)
+10. [Esteganografía LSB en ficheros de audio WAV](#esteganografía-lsb-en-ficheros-de-audio-wav)
 
 
 
@@ -162,8 +162,7 @@ de los bytes, lo que la hace muy detectable.
 
 Veamos cómo incrustar un mensaje usando el lenguaje de programación Python. 
 Lo primero que tenemos que hacer es convertir el mensaje en una lista de 
-unos y ceros. Supongamos, para este ejemplo, que ya disponemos de una lista
-de los valores enteros que representan a los bytes:
+unos y ceros. 
 
 
 ```python
@@ -411,7 +410,7 @@ incrustaciones eficientes. Estos temas se tratan con cierto detalle en
 
 
 <br>
-## Incrustación en imágenes de tipo mapa de bits
+## Esteganografía LSB en imágenes de tipo mapa de bits
 
 Las imágenes de tipo mapa de bits son aquellas que representan el valor de 
 los píxeles en una matriz. Si la imagen es en escala de grises, cada valor
@@ -577,7 +576,7 @@ esteganografía podría evitar el problema indicando la longitud del mensaje
 en una cabecera también oculta.
 
 <br>
-## Incrustación en imágenes JPEG
+## Esteganografía LSB en imágenes JPEG
 
 Las imágenes [JPEG](https://en.wikipedia.org/wiki/JPEG) tienen un 
 funcionamiento bastante más complejo que el de las imágenes de tipo mapa de 
@@ -761,7 +760,7 @@ de la cadena extraída, debido a que hemos extraído bits que no se usan.
 
 
 <br>
-## Incrustación en ficheros de audio WAV
+## Esteganografía LSB en ficheros de audio WAV
 
 Los archivos de audio [WAV](https://en.wikipedia.org/wiki/WAV) 
 (ver [formato WAV](http://soundfile.sapp.org/doc/WaveFormat/)) 

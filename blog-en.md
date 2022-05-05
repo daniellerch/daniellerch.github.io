@@ -9,17 +9,10 @@ lang-suffix: "-en"
 ---
 
 
-<!-- 
 ## Esteganografía
-- [Esteganografía LSB en imágenes y audio](/stego/blog/lsb-es).
-- [Técnicas de incrustación eficiente en esteganografía](/stego/blog/efficient-es).
+- [LSB steganography in images and audio](/stego/blog/lsb-en).
 
-- Esteganografía adaptativa.
-- Esteganografía robusta.
-- La esteganografía negable y los métodos reversibles.
-- El *deep learning*, las imágenes adversarias y las funciones de coste.
 <center>&diams;</center>
--->
 
 ## Steganalysis using Aletheia
 - [Introduction to steganalysis using Aletheia.](/stego/aletheia/intro-en)
