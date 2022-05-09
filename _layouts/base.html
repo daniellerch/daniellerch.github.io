@@ -15,7 +15,13 @@ common-js:
 ---
 
 <!DOCTYPE html>
+
+{%- if page.lang-suffix == "-es" -%}
+<html lang="es">
+{%- else -%}
 <html lang="en">
+{%- endif -%}
+
   <!-- Beautiful Jekyll | MIT license | Copyright Dean Attali 2016 -->
   {% include head.html %}
 
