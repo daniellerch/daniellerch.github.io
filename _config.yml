@@ -3,7 +3,8 @@
 disablechache: true
 
 # Name of website
-title: "daniel<span style='color:#0074D9'>lerch</span>"
+title: "daniellerch.me"
+title-styled: "daniel<span style='color:#0074D9'>lerch</span>"
 
 # Short description of your site
 description: daniellerch.me
