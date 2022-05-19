@@ -23,14 +23,8 @@ url: "https://daniellerch.me"
 
 # List of links in the navigation bar
 navbar-links:
-#   Home: "https://daniellerch.me"
-#   Stego: "stego/toc"
-#   ML-Snippets: "ml/snippets"
-#   Blog: "/"
-#   Tools: "https://github.com/daniellerch"
    tools: "/tools-en"
-   stegolab: "/code-en"
-   blog: "/blog-en"
+   stegolab: "/stegolab-en"
    papers: "/papers-en"
    about: "/about-en"
 

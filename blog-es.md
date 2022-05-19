@@ -11,10 +11,10 @@ lang-suffix: "-es"
 
 ## Esteganografía
 - [Esteganografía LSB en imágenes y audio](/stego/blog/lsb-es).
+- [Técnicas de codificación de mensajes en esteganografía](/stego/blog/efficient-es).
 
 <!--
-- [Técnicas de incrustación eficiente en esteganografía](/stego/blog/efficient-es).
-- Esteganografía adaptativa.
+- La esteganografía y las funciones de coste.
 - Esteganografía robusta.
 - La esteganografía negable y los métodos reversibles.
 - El *deep learning*, las imágenes adversarias y las funciones de coste.

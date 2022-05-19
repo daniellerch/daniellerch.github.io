@@ -58,7 +58,7 @@ Puedes encontrar más información sobre Daniel Lerch en:
 <br/>
 ### Fotos
 
-Algunas imágenes de diferenrtes eventos relacionados con mi investigación en los campos de la esteganografía y el estegoanálisis. <br/><br/>
+Algunas imágenes de diferentes eventos relacionados con mi investigación en los campos de la esteganografía y el estegoanálisis. <br/><br/>
 
 <center>
 
