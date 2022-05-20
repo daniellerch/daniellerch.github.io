@@ -38,10 +38,10 @@ lang-suffix: "-es"
 
 - **[Esteganografía LSB en imágenes y audio](/stego/blog/lsb-es)**: Artículo introductorio a la esteganografía LSB. Incluye ejemplos en Python para la incrustación de mensajes en imágenes de mapa de bits, imágenes JPEG y archivos de audio WAV.
 
-- **[Códigos de Hamming binarios](/stego/lab/codes/binary-hamming-es)**: Descripción e implementación en Python de la incrustación de información mediante técnicas de *matrix embedding* usando códigos de Hamming **binarios**. 
+- **[Códigos de Hamming binarios](/stego/lab/codes/binary-hamming-es)**: Descripción e implementación en Python de la incrustación de información mediante técnicas de *matrix embedding* usando códigos de Hamming binarios. 
 
 
-- **[Códigos de Hamming ternarios](/stego/lab/codes/ternary-hamming-es)**: Descripción e implementación en Python de la incrustación de información mediante técnicas de *matrix embedding* usando códigos de Hamming **ternarios**. Los códigos ternarios permiten una capacidad superior a la de los códigos binarios para el mismo nivel de distorsión del medio.
+- **[Códigos de Hamming ternarios](/stego/lab/codes/ternary-hamming-es)**: Descripción e implementación en Python de la incrustación de información mediante técnicas de *matrix embedding* usando códigos de Hamming ternarios. Los códigos ternarios permiten una capacidad superior a la de los códigos binarios para el mismo nivel de distorsión del medio.
 
 
 - **[Syndrome Trellis Codes](https://github.com/daniellerch/stegolab/tree/master/codes/STC.py)**: Implementación en Python de la técnica de incrustación presentada en el artículo "[Minimizing embedding impact in steganography using trellis-coded quantization](https://doi.org/10.1117/12.838002)" de Tomáš Filler, Jan Judas y Jessica Fridrich.

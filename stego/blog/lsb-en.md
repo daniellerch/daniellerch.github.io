@@ -24,7 +24,7 @@ lang-suffix: "-en"
 
 <div class='menu' style='margin-top:50px'></div>
 
-## Contenido
+## Content
 
 1. [Information in the least significant bit](#information-in-the-least-significant-bit)
 2. [Two usual techniques](#two-usual-techniques)

@@ -37,10 +37,10 @@ lang-suffix: "-en"
 
 - **[LSB steganography in images and audio.](/stego/blog/lsb-en)**: Introductory article to LSB steganography. Includes Python examples for embedding messages in bitmap images, JPEG images, and WAV audio files.
 
-- **[Binary Hamming codes](/stego/lab/codes/binary-hamming-en)**: Description and implementation in Python of information hiding using matrix embedding techniques using **binary** Hamming codes. 
+- **[Binary Hamming codes](/stego/lab/codes/binary-hamming-en)**: Description and implementation in Python of information hiding using matrix embedding techniques using binary Hamming codes. 
 
 
-- **[Ternary Hamming codes](/stego/lab/codes/ternary-hamming-en)**: Description and implementation in Python of information hiding using matrix embedding techniques with **ternary** Hamming codes. Ternary codes allow a higher capacity than binary codes for the same level of media distortion.
+- **[Ternary Hamming codes](/stego/lab/codes/ternary-hamming-en)**: Description and implementation in Python of information hiding using matrix embedding techniques with ternary Hamming codes. Ternary codes allow a higher capacity than binary codes for the same level of media distortion.
 
 
 - **[Syndrome Trellis Codes](https://github.com/daniellerch/stegolab/tree/master/codes/STC.py)**: A Python implementation of the steganography embedding technique presented in the paper "[Minimizing embedding impact in steganography using trellis-coded quantization](https://doi.org/10.1117/12.838002)" by Tomáš Filler, Jan Judas and Jessica Fridrich.
