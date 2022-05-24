@@ -44,6 +44,9 @@ lang-suffix: "-es"
 - **[Códigos de Hamming ternarios](/stego/lab/codes/ternary-hamming-es)**: Descripción e implementación en Python de la incrustación de información mediante técnicas de *matrix embedding* usando códigos de Hamming ternarios. Los códigos ternarios permiten una capacidad superior a la de los códigos binarios para el mismo nivel de distorsión del medio.
 
 
+- **[Wet Paper Codes](https://github.com/daniellerch/stegolab/tree/master/codes/WetPaperCodes.py)**: Implementación en Python de la técnica de incrustación presentada en el artículo "[Efficient Wet Paper Codes](http://www.ws.binghamton.edu/fridrich/research/WPC_IHW_final.pdf)" de Jessica Fridrich, Miroslav Goljan y David Soukal
+
+
 - **[Syndrome Trellis Codes](https://github.com/daniellerch/stegolab/tree/master/codes/STC.py)**: Implementación en Python de la técnica de incrustación presentada en el artículo "[Minimizing embedding impact in steganography using trellis-coded quantization](https://doi.org/10.1117/12.838002)" de Tomáš Filler, Jan Judas y Jessica Fridrich.
 
 
