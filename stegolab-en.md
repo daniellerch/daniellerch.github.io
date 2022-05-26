@@ -35,17 +35,30 @@ lang-suffix: "-en"
 ## Esteganografía
 <hr style='border:1px solid #ccc'>
 
+
+<div style='margin-bottom:30px'></div>
+#### Basic concepts:
+
 - **[LSB steganography in images and audio.](/stego/blog/lsb-en)**: Introductory article to LSB steganography. Includes Python examples for embedding messages in bitmap images, JPEG images, and WAV audio files.
+
+
+
+<div style='margin-bottom:50px'></div>
+#### Codes:
 
 - **[Binary Hamming codes](/stego/lab/codes/binary-hamming-en)**: Description and implementation in Python of information hiding using matrix embedding techniques using binary Hamming codes. 
 
 
 - **[Ternary Hamming codes](/stego/lab/codes/ternary-hamming-en)**: Description and implementation in Python of information hiding using matrix embedding techniques with ternary Hamming codes. Ternary codes allow a higher capacity than binary codes for the same level of media distortion.
 
-- **[Wet Paper Codes](https://github.com/daniellerch/stegolab/tree/master/codes/WetPaperCodes.py)**: A Python implementación of the steganography embedding technique presented in the paper "[Efficient Wet Paper Codes](http://www.ws.binghamton.edu/fridrich/research/WPC_IHW_final.pdf)" by Jessica Fridrich, Miroslav Goljan and David Soukal
+- **[Wet Paper Codes](https://github.com/daniellerch/stegolab/tree/master/codes/WetPaperCodes.py)**: A Python implementación of the steganography embedding technique presented in the paper "[Writing on Wet Paper](http://www.ws.binghamton.edu/fridrich/Research/EI5681-33_WPC.pdf)" by Jessica Fridrich, Miroslav Goljan and David Soukal
 
 - **[Syndrome Trellis Codes](https://github.com/daniellerch/stegolab/tree/master/codes/STC.py)**: A Python implementation of the steganography embedding technique presented in the paper "[Minimizing embedding impact in steganography using trellis-coded quantization](https://doi.org/10.1117/12.838002)" by Tomáš Filler, Jan Judas and Jessica Fridrich.
 
+
+
+<div style='margin-bottom:50px'></div>
+#### Cost functions:
 
 - **[J-UNIWARD](https://github.com/daniellerch/stegolab/tree/master/J-UNIWARD)**: 
   A Python implementation of the steganography method for hidden information into JPEG images, proposed in the paper "[Universal Distortion Function for Steganography in an Arbitrary Domain](https://link.springer.com/article/10.1186/1687-417X-2014-1)" by Vojtěch Holub, Jessica Fridrich and Tomáš Denemark. 
