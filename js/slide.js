@@ -1,9 +1,10 @@
 
-var num_slides = 4;
-var duration = 5;
+var num_slides = 6;
+var duration = 10;
 var click_disabled = false;
 
 function transition(i, j) {
+    if(click_disabled) return;
     click_disabled = true;
 
     var slide_i = document.getElementById('slide-'+i);
@@ -14,8 +15,6 @@ function transition(i, j) {
             slide_i.style.opacity = parseFloat(slide_i.style.opacity) - 0.1;
         } else {
             clearInterval(fadeout);
-            for(var k=0; k<num_slides; k++)
-                document.getElementById('slide-'+k).style.opacity=0;
         }
     }, 50);
 
@@ -78,6 +77,8 @@ document.addEventListener("DOMContentLoaded", function(event){
 
     setInterval(function(){
         if(locked)
+            return;
+        if(document.hidden)
             return;
 
         t--;
