@@ -10,13 +10,12 @@ lang-suffix: "-es"
 
 Hola, bienvenido a mi página. Mi nombre es Daniel Lerch y esta es mi página personal dedicada a la **esteganografía**, la ciencia y el antiguo arte de las comunicaciones ocultas.
 
+<div id='center-space'></div>
+
 
 <link rel="stylesheet" href="/css/slide.css">
 
-<div style='height:350px' class='cites'>
-
-
-
+<div class='cites'>
 
 <blockquote id='slide-0' class='slide' style='opacity:1'>
    "(...) los chinos a menudo escribían un mensaje secreto en seda o en un 
@@ -49,7 +48,7 @@ Hola, bienvenido a mi página. Mi nombre es Daniel Lerch y esta es mi página pe
 </blockquote>
 
 
-<blockquote id='slide-2' clsas='slide' style='opacity:0'>
+<blockquote id='slide-2' class='slide' style='opacity:0'>
    "Histieo, queriendo enviar un mensaje desde la corte persa a su yerno, 
     el tirano Aristágoras de Mileto, afeitó la cabeza de un esclavo de 
     confianza, tatuó el mensaje secreto en ella, esperó a que creciera 
@@ -107,13 +106,17 @@ Hola, bienvenido a mi página. Mi nombre es Daniel Lerch y esta es mi página pe
     </div>
 </blockquote>
 
+<a id='left_link' href='#'>
+    <div id='left' class='arrow-left'></div>
+</a>
 
-
-
-<hr id='bar'>
-<div id='left'><a id='left_link' href='#'>&#9664;</a></div>
 <div id='seconds'></div>
-<div id='right'><a id='right_link' href='#'>&#9654;</a></div>
+
+<a id='right_link' href='#'>
+    <div id='right' class='arrow-right'></div>
+</a>
+
+
 </div>
 
 

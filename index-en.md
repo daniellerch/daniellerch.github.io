@@ -12,9 +12,11 @@ Hello and welcome to my page. My name is Daniel Lerch and this is a personal sit
 mainly dedicated to **steganography**, the ancient art and science of hidden communication.
 
 
+<div id='center-space'></div>
+
 <link rel="stylesheet" href="/css/slide.css">
 
-<div style='height:350px' class='cites'>
+<div class='cites'>
 
 
 
@@ -47,7 +49,7 @@ mainly dedicated to **steganography**, the ancient art and science of hidden com
 </blockquote>
 
 
-<blockquote id='slide-2' clsas='slide' style='opacity:0'>
+<blockquote id='slide-2' class='slide' style='opacity:0'>
    "Histiaeus, wanting to send word from the Persian court to his son-in-law,
     the tyrant Aristagoras at Miletus, shaved the head of a trusted slave,
     tattooed the secret message thereon, waited for a new head of hair to
@@ -108,10 +110,17 @@ mainly dedicated to **steganography**, the ancient art and science of hidden com
 
 
 
-<hr id='bar'>
-<div id='left'><a id='left_link' href='#'>&#9664;</a></div>
+<a id='left_link' href='#'>
+    <div id='left' class='arrow-left'></div>
+</a>
+
 <div id='seconds'></div>
-<div id='right'><a id='right_link' href='#'>&#9654;</a></div>
+
+<a id='right_link' href='#'>
+    <div id='right' class='arrow-right'></div>
+</a>
+
+
 </div>
 
 

@@ -37,7 +37,6 @@ document.addEventListener("DOMContentLoaded", function(event){
     var t = duration+1;
     var locked = false;
 
-    var bar = document.getElementById('bar');
     var left = document.getElementById('left');
     var right = document.getElementById('right');
     var left_link = document.getElementById('left_link');
@@ -46,14 +45,12 @@ document.addEventListener("DOMContentLoaded", function(event){
 
     cites.addEventListener("mouseover", function(){
         locked = true;
-        bar.style.opacity=1;
         left.style.opacity=1;
         right.style.opacity=1;
     }, false);
 
     cites.addEventListener("mouseout", function(){
         locked = false;
-        bar.style.opacity=0;
         left.style.opacity=0;
         right.style.opacity=0;
     }, false);
