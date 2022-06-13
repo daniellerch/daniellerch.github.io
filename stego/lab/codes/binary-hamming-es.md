@@ -370,34 +370,25 @@ descodificación del mensaje, antes y después de la inserción.
 
 
 
-A continuación, se muestra un ejemplo de uso:
+A continuación, se muestra un ejemplo en el que escondemos datos en una imagen:
+
 
 ```python
-cover = np.array([
-    [200, 200, 201, 210, 251, 251, 251, 251],
-    [200, 200, 201, 240, 239, 239, 239, 239],
-    [201, 201, 201, 219, 234, 234, 234, 234],
-    [201, 201, 202, 210, 205, 205, 205, 205],
-    [202, 202, 210, 218, 215, 215, 215, 215],
-    [202, 202, 210, 218, 215, 215, 215, 215],
-    [203, 203, 213, 218, 228, 220, 235, 254],
-    [203, 203, 214, 219, 220, 231, 245, 255],
-])
+import imageio
 
-print(f"Cover:\n{cover}\n")
-
-message = "HELO".encode('utf8')
-print(f"Message to hide: {message}\n")
-
+cover = imageio.imread("image.png")
+message = "Hello World".encode('utf8')
 hc = HC(3)
-print(f"Shared matrix H:\n{hc.H}\n")
+stego = cover.copy()
+stego[:,:,0] = hc.embed(cover[:,:,0], message)
+imageio.imsave("stego.png", stego)
 
-stego = hc.embed(cover, message)
-print(f"Stego:\n{stego}\n")
-
-extracted_message = hc.extract(stego)
+stego = imageio.imread("stego.png")
+extracted_message = hc.extract(stego[:,:,0])
 print("Extracted message:", extracted_message.decode())
+
 ```
+
 
 
 
