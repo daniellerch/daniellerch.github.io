@@ -9,8 +9,17 @@ lang-suffix: "-es"
 ---
 
 
+
 > A continuación se presenta una técnica de incrustación de información de 
 > tipo *matrix embedding* basada en códigos de Hamming ternarios.
+<div style='text-align:right;margin-top:-25px'> 
+    [ <a href='https://github.com/daniellerch/stegolab/tree/master/codes/TernaryHammingCodes.py'>
+        Código en GitHub
+      </a> ]
+</div>
+
+
+
 
 
 <style>
@@ -272,31 +281,76 @@ array([2, 0, 2])
 Todo parece indicar que es más apropiado usar un código ternario que un 
 código binario, puesto que nos da una capacidad más alta para el mismo
 nivel de distorsión. Sin embargo, los ordenadores representan la 
-información en binario, por lo que usar un código ternario puede
-ser problemático.
+información en binario, por lo que usar un código ternarario requiere un poco
+de trabajo extra.
 
-Supongamos, por ejemplo, que usamos la siguiente codificación para representar
-los datos binarios en ternario.
+Concretamente, necesitamos poder pasar de binario a ternario, y biceversa.
+Esta funcionalidad nos la proporciona la función 
+[base_repr()](https://numpy.org/doc/stable/reference/generated/numpy.base_repr.html) 
+de la librería Numpy.
 
-| Decimal| Binario | Ternario |
-| 0 | 00 | 0 |
-| 1 | 01 | 1 |
-| 2 | 10 | 2 |
-| 3 | 11 | - |
 
-Nos falta una representación para los pares de bits $11$. Este mismo 
-problema, nos lo vamos a encontrar, agrupando los bits de cualquier
-otra forma. Pues no existen $x, y$ enteros que cumplan $2^x=3^y$.
+Veamos un ejemplo. Primero convertiremos de binario a un número decimal:
 
-Existen diferentes codificaciones que nos permiten lidiar con este tipo
-de problemas, aunque no son de mucho interés en esteganografía. Pues aunque
-se consiga cambiar entre codificación binaria y ternaria de forma sencilla,
-siempre se tendrán que desaprovechar algunos bits. Este desaprovechamiento,
-hace que el incremento de capacidad ofrecido por los códigos ternarios
-se desvanezca, y deje de ser tan interesante su uso.
+```python
+>>> binary_string = "1010101011111111101010101010010"
+>>> num = int(binary_string, 2)
+>>> num
+```
+```bash
+1434441042
+```
 
-Por suerte, existen otros códigos que nos permiten incrementar la eficiencia
-sin tener que codificar el mensaje en ternario.
+A continuación, representaremos este número en base 3:
+
+
+```python
+>>> ternary_string = np.base_repr(num, base=3)
+>>> ternary_string
+
+```
+```bash
+'10200222011011012000'
+```
+
+El proceso inverso se realiza de forma similar:
+
+
+```python
+>>> num = int(ternary_string, 3)
+>>> binary_string = np.base_repr(num, base=2)
+>>> binary_string
+```
+```bash
+'1010101011111111101010101010010'
+```
+
+
+<br>
+## Implementación completa en Python
+
+En el [enlace](https://github.com/daniellerch/stegolab/tree/master/codes/TernaryHammingCodes.py) 
+de GitHub se proporciona una implementación completa, que incluye la codificación y
+descodificación del mensaje, antes y después de la inserción.
+
+A continuación, se muestra un ejemplo en el que escondemos datos en una imagen:
+
+
+```python
+import imageio
+
+cover = imageio.imread("image.png")
+message = "Hello World".encode('utf8')
+hc = HC3(3)
+stego = cover.copy()
+stego[:,:,0] = hc.embed(cover[:,:,0], message)
+imageio.imsave("stego.png", stego)
+
+stego = imageio.imread("stego.png")
+extracted_message = hc.extract(stego[:,:,0])
+print("Extracted message:", extracted_message.decode())
+
+```
 
 
 

@@ -9,7 +9,15 @@ lang-suffix: "-en"
 ---
 
 
-> An information hiding technique based on terary Hamming codes is presented below.
+> An information hiding technique based on ternary Hamming codes is presented below.
+
+<div style='text-align:right;margin-top:-25px'> 
+    [ <a href='https://github.com/daniellerch/stegolab/tree/master/codes/TernaryHammingCodes.py'>
+        Code on GitHub
+      </a> ]
+</div>
+
+
 
 
 <style>
@@ -30,12 +38,12 @@ lang-suffix: "-en"
 2. [Ternary Hamming codes](#ternary-hamming-codes)
 3. [Efficiency and distortion](#efficiency-and-distortion)
 4. [Example using Python](#example-using-python)
-5. [Message encoding](#mensaje-encoding)
+5. [Message encoding](#message-encoding)
 6. [References](#references)
 
 
 <br>
-## References
+## Introduction
 
 In the article [Binary Hamming Codes in Steganography](/stego/lab/codes/binary-hamming-en)
 we have seen how to hide information with binary codes using operations $+1$ and $-1$ on the value of the bytes. However, with binary codes we are only interested in the value of the LSB, so it is not important if the operation we perform is $+1$ or $-1$, which usually leads us to choose it randomly.
@@ -223,27 +231,78 @@ array([2, 0, 2])
 
 
 <br>
-## Message enconding
+## Message encoding
 
-Everything seems to indicate that it is more appropriate to use a ternary code than a binary code, since it gives us a higher capacity for the same level of distortion. However, computers represent information in binary, so using a ternary code can be problematic.
+Everything seems to indicate that it is more appropriate to use a ternary code than a binary code, since it gives us a higher capacity for the same level of distortion. However, computers represent information in binary, so using a ternary code often requires extra work.
 
-Suppose, for example, that we use the following encoding to represent binary data in ternary.
+Specifically, we need to be able to go from binary to ternary, and vice versa. This functionality is provided by the function [base_repr()](https://numpy.org/doc/stable/reference/generated/numpy.base_repr.html) of the Numpy library.
 
-| Decimal| Binary | Ternary |
-| 0 | 00 | 0 |
-| 1 | 01 | 1 |
-| 2 | 10 | 2 |
-| 3 | 11 | - |
+Let's see an example. We will first convert from binary to a decimal number:
 
-We are missing a representation for the bit pairs $11$. We are going to find this same problem, grouping the bits in any other way. Since there are no $x, y$ integers that satisfy $2^x=3^y$.
+```python
+>>> binary_string = "1010101011111111101010101010010"
+>>> num = int(binary_string, 2)
+>>> num
+```
+```bash
+1434441042
+```
 
-There are different encodings that allow us to deal with this type of problem, although they are not of much interest in steganography. Since, even if it is possible to switch between binary and ternary encoding in a simple way, some bits will always have to be wasted. This waste makes the increase in capacity offered by ternary codes vanish, and makes their use less interesting.
+Next, we will represent this number in base 3:
 
-Fortunately, there are other codes that allow us to increase efficiency without requiring ternary encoding.
+```python
+>>> ternary_string = np.base_repr(num, base=3)
+>>> ternary_string
+
+```
+```bash
+'10200222011011012000'
+```
+
+To convert back to binary we will do it in a similar way:
+
+
+```python
+>>> num = int(ternary_string, 3)
+>>> binary_string = np.base_repr(num, base=2)
+>>> binary_string
+```
+```bash
+'1010101011111111101010101010010'
+```
 
 
 <br>
-## Referencias
+## Implementación completa en Python
+
+En el [enlace](https://github.com/daniellerch/stegolab/tree/master/codes/TernaryHammingCodes.py) 
+de GitHub se proporciona una implementación completa, que incluye la codificación y
+descodificación del mensaje, antes y después de la inserción.
+
+A continuación, se muestra un ejemplo en el que escondemos datos en una imagen:
+
+
+```python
+import imageio
+
+cover = imageio.imread("image.png")
+message = "Hello World".encode('utf8')
+hc = HC3(3)
+stego = cover.copy()
+stego[:,:,0] = hc.embed(cover[:,:,0], message)
+imageio.imsave("stego.png", stego)
+
+stego = imageio.imread("stego.png")
+extracted_message = hc.extract(stego[:,:,0])
+print("Extracted message:", extracted_message.decode())
+
+```
+
+
+
+
+<br>
+## References
 
 1. Fridrich, J. (2009). Steganography in Digital Media: Principles, Algorithms, 
    and Applications. Cambridge University Press.
