@@ -11,7 +11,7 @@ lang-suffix: "-en"
 > An information hiding technique based on binary Hamming codes is presented below.
 
 <div style='text-align:right;margin-top:-25px'> 
-    [ <a href='https://github.com/daniellerch/stegolab/tree/master/codes/HammingCodes.py'>
+    [ <a href='https://github.com/daniellerch/stegolab/tree/master/codes/hamming-codes.py'>
         Code on GitHub
       </a> ]
 </div>
@@ -309,7 +309,7 @@ array([1, 1, 0])
 ## Python implementation
 
 
-A full implementation, including message encoding and decoding, before and after embedding, is provided on GitHub [link](https://github.com/daniellerch/stegolab/tree/master/codes/HammingCodes.py).
+A full implementation, including message encoding and decoding, before and after embedding, is provided on GitHub [link](https://github.com/daniellerch/stegolab/tree/master/codes/hamming-codes.py).
 
 Here is an example where we embed data into an image:
 

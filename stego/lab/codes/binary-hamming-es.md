@@ -12,7 +12,7 @@ lang-suffix: "-es"
 > A continuación se presenta una técnica de incrustación de información de 
 > tipo *matrix embedding* basada en códigos de Hamming binarios.
 <div style='text-align:right;margin-top:-25px'> 
-    [ <a href='https://github.com/daniellerch/stegolab/tree/master/codes/HammingCodes.py'>
+    [ <a href='https://github.com/daniellerch/stegolab/tree/master/codes/hamming-codes.py'>
         Código en GitHub
       </a> ]
 </div>
@@ -363,7 +363,7 @@ array([1, 1, 0])
 <br>
 ## Implementación completa en Python
 
-En el [enlace](https://github.com/daniellerch/stegolab/tree/master/codes/HammingCodes.py) 
+En el [enlace](https://github.com/daniellerch/stegolab/tree/master/codes/hamming-codes.py) 
 de GitHub se proporciona una implementación completa, que incluye la codificación y
 descodificación del mensaje, antes y después de la inserción.
 
