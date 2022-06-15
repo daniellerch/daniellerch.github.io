@@ -28,10 +28,10 @@ lang-suffix: "-es"
 ## Contenido
 
 1. [Información en el bit menos significativo](#información-en-el-bit-menos-significativo)
-2. [Dos técnicas habituales](#dos-tecnicas-habituales)
+2. [Dos técnicas habituales](#dos-técnicas-habituales)
 3. [Incrustación de la información con LSB *replacement*](#incrustación-de-la-información-con-lsb-replacement)
 4. [Incrustación de la información con LSB *matching*](#incrustación-de-la-información-con-lsb-matching)
-5. [Extracción de la información](#extraccion-de-la-información)
+5. [Extracción de la información](#extracción-de-la-información)
 6. [Los peligros del LSB *replacement*](#los-peligros-del-lsb-replacement)
 7. [Hacia una incrustación más eficiente](#hacia-una-incrustación-más-eficiente)
 8. [Esteganografía LSB en imágenes de tipo mapa de bits](#esteganografía-lsb-en-imágenes-de-tipo-mapa-de-bits)

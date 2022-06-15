@@ -32,7 +32,7 @@ lang-suffix: "-en"
 <div style='margin-bottom:50px'></div>
 
 
-## Esteganografía
+## Steganography
 <hr style='border:1px solid #ccc'>
 
 
@@ -46,7 +46,7 @@ lang-suffix: "-en"
 <div style='margin-bottom:50px'></div>
 #### Codes:
 
-- **[Binary Hamming codes](/stego/lab/codes/binary-hamming-en)**: Description and implementation in Python of information hiding using matrix embedding techniques using binary Hamming codes. 
+- **[Binary Hamming codes](/stego/lab/codes/binary-hamming-en)**: Description and implementation in Python of information hiding using matrix embedding techniques with binary Hamming codes. 
 
 
 - **[Ternary Hamming codes](/stego/lab/codes/ternary-hamming-en)**: Description and implementation in Python of information hiding using matrix embedding techniques with ternary Hamming codes. Ternary codes allow a higher capacity than binary codes for the same level of media distortion.
@@ -68,7 +68,7 @@ lang-suffix: "-en"
 
 
 <br>
-## Estegoanálisis
+## Steganalisis
 <hr style='border:1px solid #ccc'>
 
 - **[ATS attack](https://github.com/daniellerch/papers_code/tree/master/ATS)**: Python implementation of the ATS attack, an unsupervised steganalysis technique presented in the article [Unsupervised steganalysis based on artificial training sets](https://www.sciencedirect.com/science/article/abs/pii/S0952197616000026) [[arXiv](https://arxiv.org/abs/2107.13862)] by Daniel Lerch-Hostalot and David Megías.
