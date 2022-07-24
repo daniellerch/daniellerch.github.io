@@ -12,7 +12,7 @@ lang-suffix: "-en"
 > An information hiding technique based on ternary Hamming codes is presented below.
 
 <div style='text-align:right;margin-top:-25px'> 
-    [ <a href='https://github.com/daniellerch/stegolab/tree/master/codes/ternary-hamming-codes.py'>
+    [ <a href='https://github.com/daniellerch/stegolab/blob/master/codes/STC.py'>
         Code on GitHub
       </a> ]
 </div>
@@ -278,7 +278,7 @@ To convert back to binary we will do it in a similar way:
 
 A complete implementation, including encoding and decoding the message, before and 
 after the embedding, is provided in
-[GitHub](https://github.com/daniellerch/stegolab/tree/master/codes/ternary-hamming-codes.py).
+[GitHub](https://github.com/daniellerch/stegolab/blob/master/codes/STC.py).
                                                                                                                          
 Here is an example where we hide data in an image:
 
