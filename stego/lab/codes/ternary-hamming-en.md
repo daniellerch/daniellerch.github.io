@@ -39,7 +39,8 @@ lang-suffix: "-en"
 3. [Efficiency and distortion](#efficiency-and-distortion)
 4. [Example using Python](#example-using-python)
 5. [Message encoding](#message-encoding)
-6. [References](#references)
+6. [A complete python implementation.](#A-complete-python-implementation)
+7. [References](#references)
 
 
 <br>
@@ -273,13 +274,21 @@ To convert back to binary we will do it in a similar way:
 
 
 <br>
-## Implementación completa en Python
+## A complete python implementation
 
 En el [enlace](https://github.com/daniellerch/stegolab/tree/master/codes/ternary-hamming-codes.py) 
 de GitHub se proporciona una implementación completa, que incluye la codificación y
 descodificación del mensaje, antes y después de la inserción.
 
 A continuación, se muestra un ejemplo en el que escondemos datos en una imagen:
+
+
+A complete implementation, including encoding and decoding the message, before and 
+after the embedding, is provided in
+[GitHub](https://github.com/daniellerch/stegolab/tree/master/codes/ternary-hamming-codes.py).
+                                                                                                                         
+Here is an example where we hide data in an image:
+
 
 
 ```python

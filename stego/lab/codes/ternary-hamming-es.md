@@ -41,7 +41,8 @@ lang-suffix: "-es"
 3. [Eficiencia y distorsión](#eficiencia-y-distorsión)
 4. [Ejemplo en Python](#ejemplo-en-python)
 5. [Codificación del mensaje](#codificación-del-mensaje)
-6. [Referencias](#referencias)
+6. [Implementación completa en Python](#implementación-completa-en-python)
+7. [Referencias](#referencias)
 
 
 <br>
