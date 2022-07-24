@@ -276,13 +276,6 @@ To convert back to binary we will do it in a similar way:
 <br>
 ## A complete Python implementation
 
-En el [enlace](https://github.com/daniellerch/stegolab/tree/master/codes/ternary-hamming-codes.py) 
-de GitHub se proporciona una implementación completa, que incluye la codificación y
-descodificación del mensaje, antes y después de la inserción.
-
-A continuación, se muestra un ejemplo en el que escondemos datos en una imagen:
-
-
 A complete implementation, including encoding and decoding the message, before and 
 after the embedding, is provided in
 [GitHub](https://github.com/daniellerch/stegolab/tree/master/codes/ternary-hamming-codes.py).
