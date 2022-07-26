@@ -12,7 +12,7 @@ lang-suffix: "-en"
 > An information hiding technique based on ternary Hamming codes is presented below.
 
 <div style='text-align:right;margin-top:-25px'> 
-    [ <a href='https://github.com/daniellerch/stegolab/tree/master/codes/ternary-hamming-codes.py'>
+    [ <a href='https://github.com/daniellerch/stegolab/blob/master/codes/STC.py'>
         Code on GitHub
       </a> ]
 </div>
@@ -39,7 +39,8 @@ lang-suffix: "-en"
 3. [Efficiency and distortion](#efficiency-and-distortion)
 4. [Example using Python](#example-using-python)
 5. [Message encoding](#message-encoding)
-6. [References](#references)
+6. [A complete Python implementation](#a-complete-python-implementation)
+7. [References](#references)
 
 
 <br>
@@ -273,13 +274,14 @@ To convert back to binary we will do it in a similar way:
 
 
 <br>
-## Implementación completa en Python
+## A complete Python implementation
 
-En el [enlace](https://github.com/daniellerch/stegolab/tree/master/codes/ternary-hamming-codes.py) 
-de GitHub se proporciona una implementación completa, que incluye la codificación y
-descodificación del mensaje, antes y después de la inserción.
+A complete implementation, including encoding and decoding the message, before and 
+after the embedding, is provided in
+[GitHub](https://github.com/daniellerch/stegolab/blob/master/codes/STC.py).
+                                                                                                                         
+Here is an example where we hide data in an image:
 
-A continuación, se muestra un ejemplo en el que escondemos datos en una imagen:
 
 
 ```python

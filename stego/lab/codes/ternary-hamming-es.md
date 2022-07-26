@@ -13,7 +13,7 @@ lang-suffix: "-es"
 > A continuación se presenta una técnica de incrustación de información de 
 > tipo *matrix embedding* basada en códigos de Hamming ternarios.
 <div style='text-align:right;margin-top:-25px'> 
-    [ <a href='https://github.com/daniellerch/stegolab/tree/master/codes/ternary-hamming-codes.py'>
+    [ <a href='https://github.com/daniellerch/stegolab/blob/master/codes/STC.py'>
         Código en GitHub
       </a> ]
 </div>
@@ -41,7 +41,8 @@ lang-suffix: "-es"
 3. [Eficiencia y distorsión](#eficiencia-y-distorsión)
 4. [Ejemplo en Python](#ejemplo-en-python)
 5. [Codificación del mensaje](#codificación-del-mensaje)
-6. [Referencias](#referencias)
+6. [Implementación completa en Python](#implementación-completa-en-python)
+7. [Referencias](#referencias)
 
 
 <br>
@@ -329,7 +330,7 @@ El proceso inverso se realiza de forma similar:
 <br>
 ## Implementación completa en Python
 
-En el [enlace](https://github.com/daniellerch/stegolab/tree/master/codes/ternary-hamming-codes.py) 
+En el [enlace](https://github.com/daniellerch/stegolab/blob/master/codes/STC.py) 
 de GitHub se proporciona una implementación completa, que incluye la codificación y
 descodificación del mensaje, antes y después de la inserción.
 
