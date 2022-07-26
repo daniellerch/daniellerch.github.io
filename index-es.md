@@ -8,7 +8,7 @@ meta-description: "Esteganografía y estegoanálisis en imágenes"
 lang-suffix: "-es"
 ---
 
-Hola, bienvenido a mi página. Mi nombre es Daniel Lerch y esta es mi página personal dedicada a la **esteganografía**, la ciencia y el antiguo arte de las comunicaciones ocultas.
+¡Bienvenido! Mi nombre es Daniel Lerch y esta es mi página personal dedicada a la **esteganografía**, la ciencia y antiguo arte de las comunicaciones ocultas.
 
 <div id='center-space'></div>
 

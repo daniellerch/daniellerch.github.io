@@ -8,7 +8,7 @@ meta-description: "Image steganography and steganalysis"
 lang-suffix: "-en"
 ---
 
-Hello and welcome to my page. My name is Daniel Lerch and this is a personal site
+Welcome! My name is Daniel Lerch and this is a personal site
 mainly dedicated to **steganography**, the ancient art and science of hidden communication.
 
 
