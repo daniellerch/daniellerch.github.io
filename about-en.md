@@ -31,7 +31,7 @@ of the
 and I usually participate in the technical program committee of the ARES workshops 
 that they organize. 
 I also work as a lecturer for Data Hiding and Cryptography subjects
-af the <a href="https://uoc.edu">Universitat Oberta de Catalunya</a> (UOC).
+at the <a href="https://uoc.edu">Universitat Oberta de Catalunya</a> (UOC).
 
 
 This site is dedicated to steganography and steganalysis. I have created it 
