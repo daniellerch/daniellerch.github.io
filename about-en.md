@@ -8,12 +8,48 @@ meta-description: "Some information about Daniel Lerch Hostalot related to stega
 lang-suffix: "-en"
 ---
 
-Daniel Lerch holds a BSc degree in Computer Science, a MSc degree in Free and Open Source Software (FOSS) and a PhD in Network and Information Technologies from <a href="https://uoc.edu">Universitat Oberta de Catalunya</a> (UOC). He is member of KISON (K-ryptography and Information Security for Open Networks) research group and his research focuses on Steganography, Steganalysis, Image Processing and Machine learning. 
-He is also associate professor of <a href='http://cv.uoc.edu/tren/trenacc/web/GAT_EXP.PLANDOCENTE?any_academico=20202&cod_asignatura=M1.878&idioma=CAS&pagina=PD_PREV_PORTAL'>Data Hiding</a> and <a href='http://cv.uoc.edu/tren/trenacc/web/GAT_EXP.PLANDOCENTE?any_academico=20202&cod_asignatura=75.601&idioma=CAS&pagina=PD_PREV_PORTAL'>Cryptography</a> at the <a href="https://uoc.edu">Universitat Oberta de Catalunya</a> (UOC). Daniel Lerch is an expert member at Criminal Use of Information Hiding (<a href="https://cuing.org/">CUIng</a>) Initiative (<a href="https://www.europol.europa.eu/about-europol/european-cybercrime-centre-ec3">Europol European Cybercrime Centre - EC3</a>).
+
+My name is **Daniel Lerch** and I started doing research in steganography 
+and steganalysis during my master's thesis in 2011. 
+I continued my research during my 
+<a href='https://www.uoc.edu/portal/en/escola-doctorat/linies-recerca/linies-nit/information-network/index.html'>
+PhD
+</a>, which I finished in 2017 with the thesis 
+"**Image Steganalysis and Steganography in the Spatial Domain**".
 
 
 
-You can find Daniel Lerch at:
+Since then I have continued researching in collaboration with the 
+<a href='https://www.uoc.edu/portal/en/in3/recerca/grups/kriptography_and_information'>
+KISON 
+</a> group 
+(K-ryptography and Information Security for Open Networks) 
+of the <a href="https://uoc.edu">Universitat Oberta de Catalunya</a> (UOC).
+In addition, I am an expert member at <a href="https://cuing.org/">CUIng</a> 
+(Criminal Use of Information Hiding Initiative) 
+of the 
+<a href="https://www.europol.europa.eu/about-europol/european-cybercrime-centre-ec3">Europol European Cybercrime Centre - EC3</a>
+and I usually participate in the technical program committee of the ARES workshops 
+that they organize. 
+I also work as a lecturer for Data Hiding and Cryptography subjects
+af the <a href="https://uoc.edu">Universitat Oberta de Catalunya</a> (UOC).
+
+
+This site is dedicated to steganography and steganalysis. I have created it 
+with the idea of having a site where I can upload information related to my 
+research and as a complement to the code that I upload to
+<a href='https://github.com/daniellerch'>Github</a>.
+Here you can find steganography tools 
+(such as <a href='https://github.com/daniellerch/hstego'>HStego</a>) 
+and steganalysis tools 
+(such as <a href='https://github.com/daniellerch/aletheia'>Aletheia</a>), 
+as well as different code snippets that implement stego techniques. 
+The latter can be found in the 
+<a href='/stegolab-en/'>StegoLab</a>
+section, where I also write some articles on these techniques.
+
+You can contact me or find more information here:
+
 
 <div style="width:90%;position:relative;left:50px">
 

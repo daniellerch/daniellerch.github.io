@@ -8,11 +8,45 @@ meta-description: "Información sobre Daniel Lerch Hostalot relacionada con la e
 lang-suffix: "-es"
 ---
 
-Daniel Lerch tiene una Ingeniería Superior en Informática, un máster en *Software* Libre y un doctorado en Tecnologías de la Información y de Redes por la <a href="https://uoc.edu">Universitat Oberta de Catalunya</a> (UOC). Es miembro del grupo de investigación KISON (K-ryptography and Information Security for Open Networks) y su investigación se centra en la esteganografía y el estegoanálisis. Además, es profesor asociado de <a href='http://cv.uoc.edu/tren/trenacc/web/GAT_EXP.PLANDOCENTE?any_academico=20202&cod_asignatura=M1.878&idioma=CAS&pagina=PD_PREV_PORTAL'>Técnicas de Ocultación de Datos</a> y de <a href='http://cv.uoc.edu/tren/trenacc/web/GAT_EXP.PLANDOCENTE?any_academico=20202&cod_asignatura=75.601&idioma=CAS&pagina=PD_PREV_PORTAL'>Criptografía</a> en la <a href="https://uoc.edu">Universitat Oberta de Catalunya</a> (UOC). Daniel Lerch es también miembro experto de la Criminal Use of Information Hiding Initiative (<a href="https://cuing.org/">CUIng</a>) del <a href="https://www.europol.europa.eu/about-europol/european-cybercrime-centre-ec3">Europol European Cybercrime Centre - EC3</a>.
+
+Mi nombre es Daniel Lerch y empecé a investigar en esteganografía y 
+estegoanálisis durante mi trabajo de máster en 2011. Investigación que
+continué posteriormente durante mi 
+<a href='https://www.uoc.edu/portal/en/escola-doctorat/linies-recerca/linies-nit/information-network/index.html'>
+doctorado
+</a>, que finalicé en 2017 con la 
+tesis "**Esteganografía y estegoanalisis de imágenes en el dominio espacial**".
+
+Desde entonces he continuado investigando en colaboración con el grupo 
+<a href='https://www.uoc.edu/portal/en/in3/recerca/grups/kriptography_and_information'>
+KISON
+</a>
+(K-ryptography and Information Security for Open Networks)
+de la <a href="https://uoc.edu">Universitat Oberta de Catalunya</a> (UOC).
+Además, formo parte de <a href="https://cuing.org/">CUIng</a> 
+(Criminal Use of Information Hiding Initiative) del 
+<a href="https://www.europol.europa.eu/about-europol/european-cybercrime-centre-ec3">Europol European Cybercrime Centre - EC3</a>
+y suelo colaborar en el comité ténico de los congresos 
+<a href='https://www.ares-conference.eu/'>ARES</a> que organizan.
+También ejerzo como profesor colaborador de las asignaturas de 
+ <a href='http://cv.uoc.edu/tren/trenacc/web/GAT_EXP.PLANDOCENTE?any_academico=20202&cod_asignatura=M1.878&idioma=CAS&pagina=PD_PREV_PORTAL'>Técnicas de Ocultación de Datos</a> y de <a href='http://cv.uoc.edu/tren/trenacc/web/GAT_EXP.PLANDOCENTE?any_academico=20202&cod_asignatura=75.601&idioma=CAS&pagina=PD_PREV_PORTAL'>Criptografía</a> en la <a href="https://uoc.edu">Universitat Oberta de Catalunya</a> (UOC).
 
 
+Esta página está dedicada a la esteganografía y al estegoanálisis. La creé con
+la intención de tener un sitio donde ir subiendo información relativa a mis 
+investigaciones y como complemento del código que subo a 
+<a href='https://github.com/daniellerch'>Github</a>.
+Aquí puedes encontrar herramientas de esteganografía 
+(como <a href='https://github.com/daniellerch/hstego'>HStego</a>) 
+y de estegoanálisis 
+(como <a href='https://github.com/daniellerch/aletheia'>Aletheia</a>), 
+así como diferentes fragmentos de código que implementan técnicas *stego*. 
+Estos últimos se encuentran en la sección 
+<a href='/stegolab-es/'>StegoLab</a>, 
+donde además escribo algunos artículos sobre estas técnicas.
 
-Puedes encontrar más información sobre Daniel Lerch en:
+
+Puedes contactar conmigo o encontrar más información mediante:
 
 <div style="width:90%;position:relative;left:50px">
 
