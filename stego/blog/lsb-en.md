@@ -3,7 +3,7 @@ layout: page
 title: "LSB steganography in images and audio."
 subtitle: "" 
 noindex: false
-meta-title: "Embedding information in the LSB"
+meta-title: "LSB steganography in images and audio."
 meta-description: "Article about the use of steganography embedding information in the LSB"
 lang-suffix: "-en"
 ---

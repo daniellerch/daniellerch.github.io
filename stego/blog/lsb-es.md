@@ -3,7 +3,7 @@ layout: page
 title: "Esteganografía LSB en imágenes y audio"
 subtitle: "" 
 noindex: false
-meta-title: "Incrustación de información en el LSB"
+meta-title: "Esteganografía LSB en imágenes y audio"
 meta-description: "Artículo acerca del uso de esteganografía incrustando información en el LSB"
 lang-suffix: "-es"
 ---
