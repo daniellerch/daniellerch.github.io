@@ -401,8 +401,54 @@ de ecuaciones $Hs=m$. Al finalizar, calcularemos el coste de cada una de
 las rutas válidas y nos quedaremos con la de menor coste.
 
 
-Veamos como construir el camino que recorre la rejilla. Empezaremos por el
-primer bloque:
+Antes de empezar con la codificación, conviene recordar que lo que estamos
+haciendo es buscan un vector $s$ que cumpla $Hs=m$. Para los parámetros
+seleccinados, esto implica encontrar una solución al sistema de ecuaciones:
+
+<center>
+$ \begin{pmatrix} 
+ 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0  \\\
+ 1 & 1 & 1 & 0 & 0 & 0 & 0 & 0  \\\
+ 0 & 0 & 1 & 1 & 1 & 0 & 0 & 0  \\\
+ 0 & 0 & 0 & 0 & 1 & 1 & 1 & 0 
+\end{pmatrix}
+\begin{pmatrix} 
+s_{1}\\\
+s_{2}\\\
+s_{3}\\\
+s_{3}\\\
+s_{4}\\\
+s_{5}\\\
+s_{6}\\\
+s_{7}\\\
+s_{8}
+\end{pmatrix}
+=
+\begin{pmatrix} 
+ s_{1}\\\
+ s_{1} + s_{2} + s_{3}\\\
+ s_{3} + s_{4} + s_{5}\\\
+ s_{5} + s_{6} + s_{7}
+\end{pmatrix}
+=
+\begin{pmatrix} 
+ 0\\\
+ 1\\\
+ 1\\\
+ 1
+\end{pmatrix} $ 
+
+</center>
+
+Es decir, que durante la búsqueda del vector $s$ estaremos buscando valores
+que cumplan $s_1=0$, $s_1+s_2+s_3=1$, $s_3+s_4+s_5=1$ y $s_5+s_6+s_7=1$.
+Es importante no perder esto de vista para entender la motivación de los
+diferntes pasos que sigue el algoritmo de codificación.
+
+
+
+Para empezar, veamos como construir el camino que recorre la rejilla. 
+Empezaremos por el primer bloque:
 
 ![trellis-3](/stego/lab/codes/resources/trellis-3.png?style=centerme)
 
