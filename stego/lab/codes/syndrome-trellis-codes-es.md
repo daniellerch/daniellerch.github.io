@@ -273,8 +273,10 @@ x_{8}
  x_{1} + x_{2} + x_{3}\\\
  x_{3} + x_{4} + x_{5}\\\
  x_{5} + x_{6} + x_{7}
-\end{pmatrix} $
+\end{pmatrix} $ 
+
 </center>
+
 
 
 Ahora, encontrar los valores del síndrome que dan como resultado $m$ es 
@@ -362,13 +364,171 @@ como ejemplo la siguiente imagen, procedente del artículo original
 
 
 
-![efficiency](/stego/lab/codes/trellis-1.png?style=centerme)
+![trellis-1](/stego/lab/codes/trellis-1.png?style=centerme)
 <p style='text-align:center;font-size:12px;font-weight:bold;margin-top:-10px'>
    Image from ref [<a href='#referencias'>1</a>]
 </p>
 
 
+Como vemos, se ha elegido una matriz con $h=2$ y $w=2$, por lo que estaremos
+ocultando información con $\alpha=0.5$. El vector cover inicial es:
 
+$c = [1, 0, 1, 1, 0, 0, 0, 1]$
+
+el mensaje que se quiere ocultar es:
+
+$m = [0, 1, 1, 1]$
+
+y la submatriz usada para generar $H$ es:
+
+<center>
+$ \hat{H} = \begin{pmatrix} 
+ 1 & 0\\\
+ 1 & 1
+\end{pmatrix} $
+</center>
+
+
+El diagrama que vemos en la figura es un gráfico de rejilla formado por
+diferentes bloques (un bloque para cada matriz $\hat{H}$ contenida en $H$).
+Cada uno de estos bloques tiene $w+1$ columnas y $2^h$ filas. Cada una
+de las filas representa un estado, indicados en binario ($00$, $01$, $10$, $11$).
+
+
+Siempre partiremos del estado $00$ e iremos construyendo la ruta por la
+rejilla, de manera que una ruta válida represente una solución al sistema
+de ecuaciones $Hs=m$. Al finalizar, calcularemos el coste de cada una de 
+las rutas válidas y nos quedaremos con la de menor coste.
+
+
+Veamos como construir el camino que recorre la rejilla. Empezaremos por el
+primer bloque:
+
+![trellis-3](/stego/lab/codes/trellis-3.png?style=centerme)
+
+
+Empezamos en el estado $00$, en la columna $p_0$. Se abren dos caminos: 
+el primer camino consiste en permanecer en el mismo estado y el segundo camino 
+consiste en cambiar de estado. Para cambiar de estado realizaremos una operación 
+$\oplus$ ([XOR](https://en.wikipedia.org/wiki/Exclusive_or)) del valor del estado
+actual con el valor de la columna $\hat{H}$ correspondiente (en este caso 
+la primera columna) leída de abajo a arriba. En este caso, dado que estamos en 
+el estado $00$, haremos $00 \oplus 11 = 11$. Es decir, que pasaremos al estado
+$11$.
+
+En este punto (columna 1) disponemos de dos caminos, uno en el estado $00$ y 
+otro en el estado $11$. De nuevo, en ambos tenemos la opción de continuar en 
+el mismo estado o de cambiar de estado. Para cambiar de estado, esta vez 
+realizaremos la operación $\oplus$ con la segunda columna de la matriz 
+$\hat{H}$, que es $10$ (recordemos que se lee de abajo a arriba). Así, el 
+camino en el estado $00$ pasa al estado $00 \oplus 10 = 10$, mientras que el 
+camino en el estado $11$ pasa al estado $11 \oplus 10 = 01$
+
+Además de calcular el camino, también tenemos que calcular el coste de dicho
+camino. Resaltados con un círculo rojo en la siguiente imagen:
+
+![trellis-4](/stego/lab/codes/trellis-4.png?style=centerme)
+
+
+
+Para ello hay que tener en cuenta que cuando nos mantenemos en el
+mismo estado, estamos estableciendo el valor correspondiente del vector $s$ 
+(vector *stego*) resultante a $0$, mientras que cuando cambiamos de estado, 
+estamos estableciendo el valor a $1$ (el coste de cada camino se indica en rojo 
+en la imagen). Vemos pues que al pasar del estado $00$ 
+de la columna $p_0$, al estado $00$ de la columna $1$ estamos estableciendo 
+$s_1$ a $0$, y dado que este valía $1$ tenemos un coste que añadir. En el ejemplo 
+se usa un coste fijo de $1$ para todas las modificaciones, pero si tuviésemos un 
+vector de costes, usaríamos el valor correspondiente. Por otra parte, al pasar 
+del estado $00$ de la columna $p_0$ al estado $11$ de la columna $1$, vemos en 
+la imagen que se le ha asignado un coste $0$, debido a que corresponde a 
+establecer el valodr $s_1$ a $0$, que es el valor que ya tenía. Es decir, que 
+siguiendo este camino, no es necesario modificar $s_1$.
+
+De forma similar se establecen los costes al pasar de la columna $1$ a la
+columna $2$. Mantenerse en el estado $00$ supone codificar un $0$, dado que
+el $c_2$ vale cero y no hay que modificar $s_2$ el coste es $0$, pero como el
+coste del nodo anterior era $1$, el coste acumulado es de $1$. Cambiar del
+estado $00$ al estado $10$ supone codificar un $1$ y dado que $c_2$ vale $0$,
+esto supone realizar otro cambio, es decir sumar $1$ al coste. Puesto que el 
+coste ya era de $1$, el coste total acumulado es de $2$. Lo misma idea se
+puede aplicar para pasar del estado $11$ a los estados $01$ y $11$, 
+obteniendo un coste total acumulado de $1$ y $0$, respectivamente.
+
+
+Ya hemos terminado con el primer bloque, así que es momento de eliminar los
+caminos que no nos sirven. Para ello, es necesario tener en cuenta que el 
+mensaje lo codificamos con el bit de la derecha (LSB) del estado. Es decir,
+que los caminos que terminan en los estados $00$ y $10$ estan incrustando el
+bit de mensaje $0$, mientras que los caminos que terminan en los estados 
+$01$ y $11$ estan incrustando el bit del mensaje $1$. Puesto que queremos
+incrustar $m_1=0$, sabemos que los caminos que terminan en los estados $01$
+y $11$ nunca podrán codificar nuestro mensaje, por lo que podemos eliminarlos.
+
+
+Una vez procesado el bloque, volvemos a empezar de los estados iniciales. 
+Es decir, simplemente movemos los estados finales del bloque hacia arriba. 
+<p style='color:red'> ????</p>
+
+
+
+El proceso del siguiente bloque es similar, aunque existen alguinas 
+particularidades que vale la pena mencionar.
+
+![trellis-5](/stego/lab/codes/trellis-5.png?style=centerme)
+
+Calculamos el coste de los diferentes caminos de la misma forma que en el
+primer bloque y vamos acumulando el coste. Cuando llegamos al cambio de
+la columna $3$ a la $4$ nos encontramos con diferentes caminos que terminan
+en el mismo estado. Cuando esto ocurre, nos quedamos con el camino de menor
+coste y eliminamos el otro. En la imagen, el camino eliminado aparece en
+linea discontinua. Pasar del estado $00$ al estado $00$ supone codificar un $0$
+y dado que $c_4=1$ el coste total será de $3$. Sin embargo, pasar del estado 
+$10$ al estado $00$ supone codificar un $1$, que coincide con $c_4$ y acumula
+un coste total de $2$. Así, esta última opción permanece y la anterior se
+elimina. Lo mismo ocurre con el resto de los estados.
+
+
+Es importante darse cuenta de que el último bit del vector cover no afecta
+al mensaje, por lo que aunque en la imagen se muestra una linea horizental
+(no ha cambio de estado) entre la columna $7$ y la $8$, que debería codificar
+un cero, codifica igualmente un $1$. Recordemos pues que:
+
+
+<center>
+$ \begin{pmatrix} 
+ 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0  \\\
+ 1 & 1 & 1 & 0 & 0 & 0 & 0 & 0  \\\
+ 0 & 0 & 1 & 1 & 1 & 0 & 0 & 0  \\\
+ 0 & 0 & 0 & 0 & 1 & 1 & 1 & 0 
+\end{pmatrix}
+\begin{pmatrix} 
+x_{1}\\\
+x_{2}\\\
+x_{3}\\\
+x_{3}\\\
+x_{4}\\\
+x_{5}\\\
+x_{6}\\\
+x_{7}\\\
+x_{8}
+\end{pmatrix}
+=
+\begin{pmatrix} 
+ x_{1}\\\
+ x_{1} + x_{2} + x_{3}\\\
+ x_{3} + x_{4} + x_{5}\\\
+ x_{5} + x_{6} + x_{7}
+\end{pmatrix}
+=
+\begin{pmatrix} 
+ m_{1}\\\
+ m_{2}\\\
+ m_{3}\\\
+ m_{4}
+\end{pmatrix} $ 
+
+</center>
 
 
 
