@@ -364,7 +364,7 @@ como ejemplo la siguiente imagen, procedente del artículo original
 
 
 
-![trellis-1](/stego/lab/codes/trellis-1.png?style=centerme)
+![trellis-1](/stego/lab/codes/resources/trellis-1.png?style=centerme)
 <p style='text-align:center;font-size:12px;font-weight:bold;margin-top:-10px'>
    Image from ref [<a href='#referencias'>1</a>]
 </p>
@@ -404,7 +404,7 @@ las rutas válidas y nos quedaremos con la de menor coste.
 Veamos como construir el camino que recorre la rejilla. Empezaremos por el
 primer bloque:
 
-![trellis-3](/stego/lab/codes/trellis-3.png?style=centerme)
+![trellis-3](/stego/lab/codes/resources/trellis-3.png?style=centerme)
 
 
 Empezamos en el estado $00$, en la columna $p_0$. Se abren dos caminos: 
@@ -427,7 +427,7 @@ camino en el estado $11$ pasa al estado $11 \oplus 10 = 01$
 Además de calcular el camino, también tenemos que calcular el coste de dicho
 camino. Resaltados con un círculo rojo en la siguiente imagen:
 
-![trellis-4](/stego/lab/codes/trellis-4.png?style=centerme)
+![trellis-4](/stego/lab/codes/resources/trellis-4.png?style=centerme)
 
 
 
@@ -475,7 +475,7 @@ Es decir, simplemente movemos los estados finales del bloque hacia arriba.
 El proceso del siguiente bloque es similar, aunque existen alguinas 
 particularidades que vale la pena mencionar.
 
-![trellis-5](/stego/lab/codes/trellis-5.png?style=centerme)
+![trellis-5](/stego/lab/codes/resources/trellis-5.png?style=centerme)
 
 Calculamos el coste de los diferentes caminos de la misma forma que en el
 primer bloque y vamos acumulando el coste. Cuando llegamos al cambio de
@@ -487,6 +487,13 @@ y dado que $c_4=1$ el coste total será de $3$. Sin embargo, pasar del estado
 $10$ al estado $00$ supone codificar un $1$, que coincide con $c_4$ y acumula
 un coste total de $2$. Así, esta última opción permanece y la anterior se
 elimina. Lo mismo ocurre con el resto de los estados.
+
+
+
+Una vez tenemos todos los bloques procesados, podemos recorrer hacia tras
+la rejilla para obtener el valor del vector $s$ óptimo.
+
+![trellis-7](/stego/lab/codes/resources/trellis-7.png?style=centerme)
 
 
 Es importante darse cuenta de que el último bit del vector cover no afecta
