@@ -402,11 +402,43 @@ las rutas válidas y nos quedaremos con la de menor coste.
 
 
 Antes de empezar con la codificación, conviene recordar que lo que estamos
-haciendo es buscan un vector $s$ que cumpla $Hs=m$. Para los parámetros
-seleccinados, esto implica encontrar una solución al sistema de ecuaciones:
+haciendo es buscan un vector $s$ que cumpla $Hs=m$. Para una matriz $\hat{H}$
+de $w=2$ y $h=2$, esto implica encontrar una solución al sistema de ecuaciones:
 
-<center>
-$ \begin{pmatrix} 
+<center style='font-size:14px'>
+$ \begin{equation}
+\begin{pmatrix} 
+ h_{11} & h_{21} & 0 & 0 & 0 & 0 & 0 & 0  \\\
+ h_{12} & h_{22} & h_{11} & h_{21} & 0 & 0 & 0 & 0  \\\
+ 0 & 0 & h_{12} & h_{22} & h_{11} & h_{21} & 0 & 0  \\\
+ 0 & 0 & 0 & 0 & h_{12} & h_{22} & h_{11} & h_{21} 
+\end{pmatrix}
+\begin{pmatrix} 
+s_{1}\\\
+s_{2}\\\
+s_{3}\\\
+s_{3}\\\
+s_{4}\\\
+s_{5}\\\
+s_{6}\\\
+s_{7}\\\
+s_{8}
+\end{pmatrix}
+=
+\begin{pmatrix} 
+ h_{11} s_1 + h_{21} s_2\\\
+ h_{12} s_1 + h_{22} s_2 + h_{11} s_3 + h_{21} s_4\\\
+ h_{12} s_3 + h_{22} s_4 + h_{11} s_5 + h_{21} s_6\\\
+ h_{12} s_5 + h_{22} s_6 + h_{11} s_7 + h_{21} s_8
+\end{pmatrix}
+\end{equation}$
+</center>
+
+que para la matriz escogida corresponde a:
+
+<center style='font-size:14px'>
+$ \begin{equation}
+\begin{pmatrix} 
  1 & 0 & 0 & 0 & 0 & 0 & 0 & 0  \\\
  1 & 1 & 1 & 0 & 0 & 0 & 0 & 0  \\\
  0 & 0 & 1 & 1 & 1 & 0 & 0 & 0  \\\
@@ -429,16 +461,21 @@ s_{8}
  s_{1} + s_{2} + s_{3}\\\
  s_{3} + s_{4} + s_{5}\\\
  s_{5} + s_{6} + s_{7}
-\end{pmatrix}
+\end{pmatrix}  
 =
 \begin{pmatrix} 
  0\\\
  1\\\
  1\\\
  1
-\end{pmatrix} $ 
-
+\end{pmatrix} 
+\end{equation}$
 </center>
+
+
+
+
+
 
 Es decir, que durante la búsqueda del vector $s$ estaremos buscando valores
 que cumplan $s_1=0$, $s_1+s_2+s_3=1$, $s_3+s_4+s_5=1$ y $s_5+s_6+s_7=1$.
@@ -471,7 +508,8 @@ camino en el estado $00$ pasa al estado $00 \oplus 10 = 10$, mientras que el
 camino en el estado $11$ pasa al estado $11 \oplus 10 = 01$
 
 Además de calcular el camino, también tenemos que calcular el coste de dicho
-camino. Resaltados con un círculo rojo en la siguiente imagen:
+camino. El coste de cada opción está marcado con un círculo rojo en la 
+siguiente imagen:
 
 ![trellis-4](/stego/lab/codes/resources/trellis-4.png?style=centerme)
 
