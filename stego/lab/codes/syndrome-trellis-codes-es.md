@@ -42,13 +42,13 @@ lang-suffix: "-es"
 4. [STC: búsqueda de soluciones](#stc-búsqueda-de-soluciones)
 5. [Eficiencia y distorsión](#eficiencia-y-distorsión)
 6. [Ejemplo en Python](#ejemplo-en-python)
-7. [Codificación del mensaje](#codificación-del-mensaje)
 8. [Implementación completa en Python](#implementación-completa-en-python)
 9. [Referencias](#referencias)
 
 
 <br>
 ## Introducción
+<!-- {{{ -->
 
 En el artículos previos, como el de 
 [Códigos de Hamming binarios en esteganografía](/stego/lab/codes/binary-hamming-es) 
@@ -89,10 +89,11 @@ para imágenes JPEG y
 [HILL](https://github.com/daniellerch/stegolab/tree/master/HILL)
 para imágenes de mapa de bits.
 
-
+<!-- }}} -->
 
 <br>
 ## STC: introducción
+<!-- {{{ -->
 
 El método que se describe a continuación fué presentado en el artículo
 "Minimizing embedding impact in steganography using trellis-coded quantization" 
@@ -142,10 +143,11 @@ Esto es precisamente, lo que hacen los STC. Al valor de $x$ le llamamos
 *síndrome* y el método usado para encontrar el síndrome usa un descodificador
 de rejilla o *trellis*, lo que da origen al nombre del método. 
 
-
+<!-- }}} -->
 
 <br>
 ## STC: la matriz H
+<!-- {{{ -->
 
 Una de las primeras cosas que necesitamos para empezar a codificar usando
 los STC es una matriz de paridad $H$. Esta matriz de paridad tiene una
@@ -309,10 +311,13 @@ de filas igual al número de elementos que tiene el síndrome. Esto nos
 permitirá realizar la multiplicación de la matriz $H$ por el syndrome.
 
 
-
+<!-- }}} -->
 
 <br>
 ## STC: búsqueda de soluciones
+<!-- {{{ -->
+
+**Introducción:**
 
 Dada una matriz $H$, un vector cover $c$ inicial y un vector de costes $\rho$,
 queremos encontrar un vector $s$ tal que $Hs=m$, siendo $m$ el mensaje
@@ -358,7 +363,7 @@ bits, tiene un coste más alto, por lo que nos quedaríamos con la primera.
 
 
 Veamos ahora cómo usar la matriz $H$ y el vector $c$ para incrustar $m$.
-Es decir, veamos como calcular las soluciones posibles a $Hs=m$. Usaremos
+Es decir, veamos cómo calcular las soluciones posibles a $Hs=m$. Usaremos
 como ejemplo la siguiente imagen, procedente del artículo original 
 [<a href='#referencias'> 1 </a>]:
 
@@ -368,6 +373,7 @@ como ejemplo la siguiente imagen, procedente del artículo original
 <p style='text-align:center;font-size:12px;font-weight:bold;margin-top:-10px'>
    Image from ref [<a href='#referencias'>1</a>]
 </p>
+
 
 
 Como vemos, se ha elegido una matriz con $h=2$ y $w=2$, por lo que estaremos
@@ -480,11 +486,14 @@ s_{8}
 Es decir, que durante la búsqueda del vector $s$ estaremos buscando valores
 que cumplan $s_1=0$, $s_1+s_2+s_3=1$, $s_3+s_4+s_5=1$ y $s_5+s_6+s_7=1$.
 Es importante no perder esto de vista para entender la motivación de los
-diferntes pasos que sigue el algoritmo de codificación.
+diferentes pasos que sigue el algoritmo de codificación.
 
 
 
-Para empezar, veamos como construir el camino que recorre la rejilla. 
+<br>
+**Codificación (I):**
+
+Para empezar, veamos cómo construir el camino que recorre la rejilla. 
 Empezaremos por el primer bloque:
 
 ![trellis-3](/stego/lab/codes/resources/trellis-3.png?style=centerme)
@@ -550,10 +559,77 @@ incrustar $m_1=0$, sabemos que los caminos que terminan en los estados $01$
 y $11$ nunca podrán codificar nuestro mensaje, por lo que podemos eliminarlos.
 
 
-Una vez procesado el bloque, volvemos a empezar de los estados iniciales. 
+Una vez procesado el bloque, volvemos a empezar desde los estados iniciales. 
 Es decir, simplemente movemos los estados finales del bloque hacia arriba. 
 <p style='color:red'> ????</p>
 
+
+
+<br>
+**Algunas aclaraciones:**
+
+
+Volvamos un momento a la ecuación 1, de la cual mostramos a continuación 
+una parte:
+
+<center style='font-size:14px'>
+$
+\begin{pmatrix} 
+ h_{11} s_1 + h_{21} s_2\\\
+ h_{12} s_1 + h_{22} s_2 + h_{11} s_3 + h_{21} s_4\\\
+ h_{12} s_3 + h_{22} s_4 + h_{11} s_5 + h_{21} s_6\\\
+ h_{12} s_5 + h_{22} s_6 + h_{11} s_7 + h_{21} s_8
+\end{pmatrix}
+=
+\begin{pmatrix} 
+ 0\\\
+ 1\\\
+ 1\\\
+ 1
+\end{pmatrix} 
+= m
+$
+</center>
+
+Nótese, que las bifurcaciones correspondientes a mantenerse en el mismo estado,
+corresponden a la codificación de un 0 en el vector $s$ resultante. Poner un
+cero en una posición del vector $s$ equivale a multiplicar por cero (ignorar) 
+el valor de la matriz $\hat{H}$ correspondiente. Sin embargo, cambiar de estado 
+codifica un 1 en una posición de $s$, lo que implica multiplicar por 1 (tener 
+en cuenta) el valor de $\hat{H}$ correspondiente. Nótese también, que la decisión 
+de codificar un 0 o un 1 en una posición de $s$, afecta a toda la columna 
+correspondiente de $\hat{H}$.
+Esta es la motivación de realizar los cambios de estado como se indica, pues nos 
+permite no recorrer caminos imposibles. Así, cada uno de los caminos prueba una 
+de las posibles soluciones.
+
+
+Los estados nos indican el bit de $m$ que estamos incrustando. Recordemos que
+este no es más que el resultado de la suma de cada valor de $s$ multiplicado
+por el valor de $\hat{H}$ correspondiente, tal y como se ve en la imágen anterior.
+Esto lo calculamos con el cambio de estado. En cada cambio, si nos mantenemos en 
+el mismo estado, el bit de mensaje no cambiará. Pero si cambiamos de estado sí 
+lo hará. De esta manera, en cada cambio de estado decidimos si cambiamos el bit 
+de $m$ que estamos incrustando o no. El estado final de cada bloque decidirá que 
+bit queda incrustado. Como empezamos en el estado $00$, y cada vez que cambiamos 
+de estado (a un estado diferente) cambiamos el LSB, al final, el LSB del estado 
+nos indicará el bit de $m$ incrustado. Al finalizar el bloque y descartar los 
+caminos con el LSB del estado que no se corresponde con el mensaje, estamos 
+descartando las soluciones parciales que ya no pueden llevar a un $s$ que 
+cumpla $Hs=m$. 
+
+
+
+Dado que cada cambio de 
+estado implica sumar 1, y dado que empezamos en el estado $00$, los estados
+con un valor par (LSB con valor 0) codificarán un 0 en el bit correspondiente
+de $m$, mientras que los estados con un valor impar (LSB con valor 1) 
+codificarán un 1 en el bit de $m$ correspondiente.
+
+
+
+<br>
+**Codificación (II):**
 
 
 El proceso del siguiente bloque es similar, aunque existen alguinas 
@@ -581,48 +657,20 @@ la rejilla para obtener el valor del vector $s$ óptimo.
 
 
 Es importante darse cuenta de que el último bit del vector cover no afecta
-al mensaje, por lo que aunque en la imagen se muestra una linea horizental
-(no ha cambio de estado) entre la columna $7$ y la $8$, que debería codificar
-un cero, codifica igualmente un $1$. Recordemos pues que:
+al mensaje, debido a que la matriz $H$ tiene todo ceros en la última columna.
+Por lo tanto, aunque en la imagen se muestra una linea horizontal
+(no hay cambio de estado) entre la columna $7$ y la $8$, que debería codificar
+un cero, codifica igualmente un $1$ (consultar ecuación 2).
 
 
-<center>
-$ \begin{pmatrix} 
- 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0  \\\
- 1 & 1 & 1 & 0 & 0 & 0 & 0 & 0  \\\
- 0 & 0 & 1 & 1 & 1 & 0 & 0 & 0  \\\
- 0 & 0 & 0 & 0 & 1 & 1 & 1 & 0 
-\end{pmatrix}
-\begin{pmatrix} 
-x_{1}\\\
-x_{2}\\\
-x_{3}\\\
-x_{3}\\\
-x_{4}\\\
-x_{5}\\\
-x_{6}\\\
-x_{7}\\\
-x_{8}
-\end{pmatrix}
-=
-\begin{pmatrix} 
- x_{1}\\\
- x_{1} + x_{2} + x_{3}\\\
- x_{3} + x_{4} + x_{5}\\\
- x_{5} + x_{6} + x_{7}
-\end{pmatrix}
-=
-\begin{pmatrix} 
- m_{1}\\\
- m_{2}\\\
- m_{3}\\\
- m_{4}
-\end{pmatrix} $ 
+<br>
+**Descodificación del mensaje:**
 
-</center>
+Cuando el receptor del mensaje extrae el vector $s$ del medio *stego*, puede
+extraer $m$ únicamente realizando la multiplicación $m=Hs$.
 
 
-
+<!-- }}} -->
 
 
 
@@ -638,14 +686,6 @@ xxx
 
 xxx
 
-
-
-
-
-<br>
-## Codificación del mensaje
-
-xxx
 
 
 <br>
