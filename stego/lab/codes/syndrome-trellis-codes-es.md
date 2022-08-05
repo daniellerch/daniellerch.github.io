@@ -48,17 +48,16 @@ lang-suffix: "-es"
 
 <br>
 ## Introducción
-<!-- {{{ -->
 
-En el artículos previos, como el de 
-[Códigos de Hamming binarios en esteganografía](/stego/lab/codes/binary-hamming-es) 
-o el de
-[Códigos de Hamming ternarios en esteganografía](/stego/lab/codes/ternary-hamming-es),
-hemos visto como incrementar la eficiencia de la inserción de datos ocultos
+En artículos previos como
+"[Códigos de Hamming binarios en esteganografía](/stego/lab/codes/binary-hamming-es)"
+o 
+"[Códigos de Hamming ternarios en esteganografía](/stego/lab/codes/ternary-hamming-es)"
+hemos visto cómo incrementar la eficiencia de la inserción de datos ocultos
 mediante técnicas de *matrix embedding*. Estas técnicas, si bien nos permiten
 incrementar la eficiencia, no nos permiten controlar en qué zonas no queremos
 ocultar información. Esto es muy importante para reducir la probabilidad de
-ser detectado, puesto que hay zonas en las que una modificacion podría ser
+ser detectado, puesto que hay zonas en las que una modificación podría ser
 muy sospechosa (en imágenes, podemos pensar en zonas con intensidades de color 
 uniformes, como un cielo azul). 
 
@@ -67,7 +66,7 @@ Podemos evitar estas zonas mediante el uso de
 Esta técnica nos permite marcar toda una serie de bytes como "mojados", es 
 decir, bytes que no van a ser modificados durante el proceso de inserción.
 Sin embargo, únicamente nos permite decidir si vamos a ocultar información
-en un derterminado byte o no. Mucho más interesante sería poder asignar
+en un determinado byte o no. Mucho más interesante sería poder asignar
 a cada byte un valor que indique cuan fácil sería detectar la modificación,
 y posteriormente encontrar qué bytes modificar para ocultar el
 mensaje minimizando la probabilidad de ser detectado.
@@ -89,13 +88,11 @@ para imágenes JPEG y
 [HILL](https://github.com/daniellerch/stegolab/tree/master/HILL)
 para imágenes de mapa de bits.
 
-<!-- }}} -->
 
 <br>
 ## STC: introducción
-<!-- {{{ -->
 
-El método que se describe a continuación fué presentado en el artículo
+El método que se describe a continuación fue presentado en el artículo
 "Minimizing embedding impact in steganography using trellis-coded quantization" 
 de Tomáš Filler, Jan Judas y Jessica Fridrich, que se puede encontrar en la
 referencia [ <a href='#referencias'>1</a> ].
@@ -126,7 +123,7 @@ que modificar para obtener un $s$ que codifique el mensaje deseado, es sencillo
 (en el artículo de [códigos binarios](/stego/lab/codes/binary-hamming-es)
 se explica). Sin embargo, si queremos que nuestro método soporte la posibilidad
 de asignar costes a cada uno de los bytes que pueden ser modificados, 
-necesariamente necesitaremos que existean multiples $s$. Pues si existen
+necesariamente necesitaremos que existean múltiples $s$. Pues si existen
 múltiples $s$, podremos quedarnos con aquel que tenga un coste de inserción
 más pequeño.
 
@@ -143,11 +140,10 @@ Esto es precisamente, lo que hacen los STC. Al valor de $x$ le llamamos
 *síndrome* y el método usado para encontrar el síndrome usa un descodificador
 de rejilla o *trellis*, lo que da origen al nombre del método. 
 
-<!-- }}} -->
 
 <br>
 ## STC: la matriz H
-<!-- {{{ -->
+
 
 Una de las primeras cosas que necesitamos para empezar a codificar usando
 los STC es una matriz de paridad $H$. Esta matriz de paridad tiene una
@@ -183,10 +179,10 @@ $ \begin{pmatrix}
 
 
 Si nos fijamos en el resultado de la multiplicación, vemos que la
-modificación de cada un solo valor del síndrome supone la modificación
+modificación de un solo valor del síndrome supone la modificación
 de todos los valores del mensaje. Esto dificulta encontrar los valores
-de del síndrome que dan como resultado de la multiplicación el vector
-de $m$ deseado. 
+del síndrome que dan como resultado de la multiplicación el vector
+$m$ deseado. 
 
 Una construcción extrema de la matriz $H$ podría ser una matriz con unos en
 la diagonal. Veamos qué ocurre:
@@ -218,7 +214,7 @@ $ \begin{pmatrix}
 \end{pmatrix} $
 </center>
 
-En este caso obtener un sindrome que dé como resultado $m$ es sencillo, basta
+En este caso obtener un síndrome que dé como resultado $m$ es sencillo, basta
 con hacer que $x$ = $m$. Pero recordemos que el síndrome procede del medio en 
 el que queremos ocultar información y que queremos modificarlo lo menos posible. 
 Por lo que modificar todos sus elementos no es una buena opción. Necesitamos una
@@ -282,19 +278,19 @@ x_{8}
 
 
 Ahora, encontrar los valores del síndrome que dan como resultado $m$ es 
-más sencillo que en el primer caso, y al mismo tiempo, continuan existiendo
+más sencillo que en el primer caso, y al mismo tiempo, continúan existiendo
 múltiples soluciones que nos permitirán quedarnos con la de menor coste. 
 
 
 Antes de continuar, conviene aclarar algunos puntos más sobre las matrices
 $\hat{H}$ y $H$.
 
-Cualquier matriz de unos y ceros, cuyos vectores sean linearmente 
+Cualquier matriz de unos y ceros, cuyos vectores sean linealmente 
 independientes nos sirve para construir nuestra matriz $H$. Sin embargo,
 el número de columnas y de filas afectan de manera importante al 
 método de inserción. Por un lado, el número de filas $h$ afecta al
 rendimiento del algoritmo. En el artículo se propone usar $6 \le h \le 15$
-Otro parámetro importante es el número de columns $w$, pues nos permite
+Otro parámetro importante es el número de columnas $w$, pues nos permite
 controlar la capacidad, y se elige de manera que $w=1/\alpha$, siendo 
 $\alpha$ el *payload*. As, por ejemplo, una matriz $\hat{H}$ de dos
 columnas nos permitiría ocultar información con un *payload* relativo de
@@ -302,24 +298,22 @@ $0.5$.
 
 Cabe destacar que no todas las matrices $\hat{H}$ son igual de eficientes.
 Los autores, en base a sus experimentos, recomiendan poner a unos la 
-primera y última fila, y escojer aleatoriamente el resto.
+primera y última fila, y escoger aleatoriamente el resto.
 
 
 Durante la construcción del matriz $H$ iremos concatenando la matriz
 $\hat{H}$ y desplazándonos una fila hacia abajo hasta obtener un número
 de filas igual al número de elementos que tiene el síndrome. Esto nos
-permitirá realizar la multiplicación de la matriz $H$ por el syndrome.
+permitirá realizar la multiplicación de la matriz $H$ por el síndrome.
 
 
-<!-- }}} -->
 
 <br>
 ## STC: búsqueda de soluciones
-<!-- {{{ -->
 
 **Introducción:**
 
-Dada una matriz $H$, un vector cover $c$ inicial y un vector de costes $\rho$,
+Dada una matriz $H$, un vector *cover* $c$ inicial y un vector de costes $\rho$,
 queremos encontrar un vector $s$ tal que $Hs=m$, siendo $m$ el mensaje
 que queremos ocultar.
 
@@ -342,7 +336,7 @@ $\rho = [0.2, 0.9, 0.9, 0.8, 0.1, 0.2, 0.8, 0.7] $
 
 
 Supongamos que usando los STC encontramos dos soluciones que codifican
-el mensaje $m$ desado:
+el mensaje $m$ deseado:
 
 <center>
 $s = [0, 0, 1, 1, 1, 0, 0, 1]$
@@ -377,7 +371,7 @@ como ejemplo la siguiente imagen, procedente del artículo original
 
 
 Como vemos, se ha elegido una matriz con $h=2$ y $w=2$, por lo que estaremos
-ocultando información con $\alpha=0.5$. El vector cover inicial es:
+ocultando información con $\alpha=0.5$. El vector *cover* inicial es:
 
 $c = [1, 0, 1, 1, 0, 0, 0, 1]$
 
@@ -408,7 +402,7 @@ las rutas válidas y nos quedaremos con la de menor coste.
 
 
 Antes de empezar con la codificación, conviene recordar que lo que estamos
-haciendo es buscan un vector $s$ que cumpla $Hs=m$. Para una matriz $\hat{H}$
+haciendo es buscar un vector $s$ que cumpla $Hs=m$. Para una matriz $\hat{H}$
 de $w=2$ y $h=2$, esto implica encontrar una solución al sistema de ecuaciones:
 
 <center style='font-size:14px'>
@@ -535,7 +529,7 @@ se usa un coste fijo de $1$ para todas las modificaciones, pero si tuviésemos u
 vector de costes, usaríamos el valor correspondiente. Por otra parte, al pasar 
 del estado $00$ de la columna $p_0$ al estado $11$ de la columna $1$, vemos en 
 la imagen que se le ha asignado un coste $0$, debido a que corresponde a 
-establecer el valodr $s_1$ a $0$, que es el valor que ya tenía. Es decir, que 
+establecer el valor $s_1$ a $0$, que es el valor que ya tenía. Es decir, que 
 siguiendo este camino, no es necesario modificar $s_1$.
 
 De forma similar se establecen los costes al pasar de la columna $1$ a la
@@ -552,9 +546,9 @@ obteniendo un coste total acumulado de $1$ y $0$, respectivamente.
 Ya hemos terminado con el primer bloque, así que es momento de eliminar los
 caminos que no nos sirven. Para ello, es necesario tener en cuenta que el 
 mensaje lo codificamos con el bit de la derecha (LSB) del estado. Es decir,
-que los caminos que terminan en los estados $00$ y $10$ estan incrustando el
+que los caminos que terminan en los estados $00$ y $10$ están incrustando el
 bit de mensaje $0$, mientras que los caminos que terminan en los estados 
-$01$ y $11$ estan incrustando el bit del mensaje $1$. Puesto que queremos
+$01$ y $11$ están incrustando el bit del mensaje $1$. Puesto que queremos
 incrustar $m_1=0$, sabemos que los caminos que terminan en los estados $01$
 y $11$ nunca podrán codificar nuestro mensaje, por lo que podemos eliminarlos.
 
@@ -606,7 +600,7 @@ de las posibles soluciones.
 
 Los estados nos indican el bit de $m$ que estamos incrustando. Recordemos que
 este no es más que el resultado de la suma de cada valor de $s$ multiplicado
-por el valor de $\hat{H}$ correspondiente, tal y como se ve en la imágen anterior.
+por el valor de $\hat{H}$ correspondiente, tal y como se ve en la imagen anterior.
 Esto lo calculamos con el cambio de estado. En cada cambio, si nos mantenemos en 
 el mismo estado, el bit de mensaje no cambiará. Pero si cambiamos de estado sí 
 lo hará. De esta manera, en cada cambio de estado decidimos si cambiamos el bit 
@@ -632,7 +626,7 @@ codificarán un 1 en el bit de $m$ correspondiente.
 **Codificación (II):**
 
 
-El proceso del siguiente bloque es similar, aunque existen alguinas 
+El proceso del siguiente bloque es similar, aunque existen algunas 
 particularidades que vale la pena mencionar.
 
 ![trellis-5](/stego/lab/codes/resources/trellis-5.png?style=centerme)
@@ -656,7 +650,7 @@ la rejilla para obtener el valor del vector $s$ óptimo.
 ![trellis-7](/stego/lab/codes/resources/trellis-7.png?style=centerme)
 
 
-Es importante darse cuenta de que el último bit del vector cover no afecta
+Es importante darse cuenta de que el último bit del vector *cover* no afecta
 al mensaje, debido a que la matriz $H$ tiene todo ceros en la última columna.
 Por lo tanto, aunque en la imagen se muestra una linea horizontal
 (no hay cambio de estado) entre la columna $7$ y la $8$, que debería codificar
@@ -666,11 +660,11 @@ un cero, codifica igualmente un $1$ (consultar ecuación 2).
 <br>
 **Descodificación del mensaje:**
 
-Cuando el receptor del mensaje extrae el vector $s$ del medio *stego*, puede
-extraer $m$ únicamente realizando la multiplicación $m=Hs$.
+Cuando el receptor del mensaje, que dispone de la matriz $H$), extrae el vector 
+$s$ del medio *stego*, puede extraer $m$ únicamente realizando la 
+multiplicación $m=Hs$.
 
 
-<!-- }}} -->
 
 
 
