@@ -290,12 +290,13 @@ Siguiendo con nuestro ejemplo, la eficiencia para $p=3$ es de $3.429$. Superior 
 nuestro ejemplo inicial, que tenía una eficiencia de $2.66$.
 
 En el siguiente gráfico podemos ver la relación entre el *payload* y la eficiencia.
+En realidad, para una mejor visualización, se usa el inverso del *payload* ($1/\alpha^-{1}$).
 
 
 ![efficiency](/stego/blog/resources/binary-codes.png?style=centerme)
 
 Como se puede ver en la gráfica, la mayor eficiencia se consigue con *payloads* 
-muy pequeños. 
+muy pequeños ($\alpha^{-1}$ muy grande). 
 
 
 

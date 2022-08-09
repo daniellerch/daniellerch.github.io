@@ -162,7 +162,9 @@ $e_p = \frac{p \log_2 n}{1-n^{-p}}$
 </center>
 
 This allows us to draw a graph to see the efficiency with respect to the
-payload for different values of $p$ and $n$:
+payload for different values of $p$ and $n$.
+For better graphical representation, the inverse of *payload* ($1/\alpha^-{1}$) is used.
+
 
 ![efficiency](/stego/blog/resources/n-ary-codes.png?style=centerme)
 

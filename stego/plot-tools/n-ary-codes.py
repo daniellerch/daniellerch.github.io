@@ -96,6 +96,7 @@ def get_bound_binary(n, p_range):
 
         print(p, round(alpha,2), y, round(e,2))
 
+        alpha = 1/alpha
         payload.append(alpha)
         efficiency.append(e)
 
@@ -117,6 +118,7 @@ def get_bound_ternary(n, p_range):
 
         print(p, round(alpha,2), y, round(e,2))
 
+        alpha = 1/alpha
         payload.append(alpha)
         efficiency.append(e)
 
@@ -135,11 +137,12 @@ def get_bound_pentary(n, p_range):
         y = iH5(alpha)
         e = alpha/y
 
-        if round(alpha,2) <= 0.02:
+        if round(alpha,2) <= 0.00:
             continue
 
         print(p, round(alpha,2), y, round(e,2))
 
+        alpha = 1/alpha
         payload.append(alpha)
         efficiency.append(e)
 
@@ -157,6 +160,7 @@ def get_series(n, p_range):
     print("-- n:", n, "--")
     for p in p_range:
         alpha = p*np.log2(n) / ( (n**p-1)/(n-1) )
+        alpha = 1/alpha
         e = p*np.log2(n) / (1-n**(-p) )
 
         print(p, round(alpha,2), round(e,2))
@@ -177,18 +181,18 @@ payload, efficiency = get_series(7, range(1,6))
 plt.plot(payload, efficiency, label='n=7')
 
 
-payload, efficiency = get_bound_binary(2, range(1,15))
+payload, efficiency = get_bound_binary(2, range(1,10))
 plt.plot(payload, efficiency, label='binary bound', linestyle='dashed')
 
-payload, efficiency = get_bound_ternary(3, range(1,15))
+payload, efficiency = get_bound_ternary(3, range(1,10))
 plt.plot(payload, efficiency, label='ternary bound', linestyle='dashed')
 
-payload, efficiency = get_bound_pentary(5, range(1,15))
+payload, efficiency = get_bound_pentary(5, range(1,10))
 plt.plot(payload, efficiency, label='pentary bound', linestyle='dashed')
 
 
-plt.xlim(0, 1)
-plt.xlabel('Payload')
+plt.xlim(0, 20)
+plt.xlabel(r'Payload $\alpha^{-1}$')
 plt.ylabel('Efficiency')
 plt.title('n-ary codes')
 plt.grid(True)

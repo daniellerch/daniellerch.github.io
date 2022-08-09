@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
+#plt.rcParams['text.usetex'] = True
 
 
 # Binary entropy function
@@ -34,6 +35,7 @@ def get_series(n, p_range):
     print("-- n:", n, "--")
     for p in p_range:
         alpha = p*np.log2(n) / ( (n**p-1)/(n-1) )
+        alpha = 1/alpha
         e = p*np.log2(n) / (1-n**(-p) )
 
         print(p, round(alpha,2), round(e,2))
@@ -56,6 +58,7 @@ def get_bound(n, p_range):
 
         print(p, round(alpha,2), y, round(e,2))
 
+        alpha = 1/alpha
         payload.append(alpha)
         efficiency.append(e)
 
@@ -64,10 +67,10 @@ def get_bound(n, p_range):
 
 
 
-payload, efficiency = get_series(2, range(1,15))
+payload, efficiency = get_series(2, range(1, 10))
 plt.plot(payload, efficiency, label='n=2')
 
-payload, efficiency = get_bound(2, range(1,15))
+payload, efficiency = get_bound(2, range(1,10))
 plt.plot(payload, efficiency, label='bound', linestyle='dashed')
 
 #efficiency = [7, 6.2, 5.9,  4.1]
@@ -78,8 +81,8 @@ plt.plot(payload, efficiency, label='bound', linestyle='dashed')
 
 
 plt.ylim(0, 10)
-plt.xlim(0, 1)
-plt.xlabel('Payload')
+plt.xlim(0, 20)
+plt.xlabel(r'Payload $\alpha^{-1}$')
 plt.ylabel('Efficiency')
 plt.title('binary codes')
 plt.grid(True)
