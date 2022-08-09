@@ -196,7 +196,8 @@ Y para calcular la eficiencia:
 $e_p = \frac{p \log_2 n}{1-n^{-p}}$
 
 Esto nos permite dibujar una gráfica para ver la eficiencia respecto el
-*payload* para diferentes valores de $p$ y $n$:
+*payload* para diferentes valores de $p$ y $n$.
+Para una mejor visualización, se usa el inverso del *payload* ($1/\alpha^-{1}$).
 
 ![efficiency](/stego/blog/resources/n-ary-codes.png?style=centerme)
 
