@@ -163,7 +163,7 @@ $e_p = \frac{p \log_2 n}{1-n^{-p}}$
 
 This allows us to draw a graph to see the efficiency with respect to the
 payload for different values of $p$ and $n$.
-For better graphical representation, the inverse of *payload* ($1/\alpha^-{1}$) is used.
+For better graphical representation, the inverse of *payload* ($\alpha^{-1}$) is used.
 
 
 ![efficiency](/stego/blog/resources/n-ary-codes.png?style=centerme)
@@ -172,6 +172,9 @@ For better graphical representation, the inverse of *payload* ($1/\alpha^-{1}$) 
 As can be seen in the graph, the higher $n$ is, the greater the efficiency of the method. However, increasing $n$ too much means working with perhaps too large values of $k$, which can greatly distort the media and make the steganographic method more detectable.
 
 However, there is something that cannot be overlooked. The distortion introduced by binary codes is the same as that introduced by ternary codes, since in both cases we only perform $+1$ and $-1$ operations. While in binary codes we choose one or the other randomly, in ternary codes this decision is part of the code. Therefore, the use of ternary codes will offer us more capacity for the same degree of distortion.
+
+In the graph you can also see the theoretical limit for each type of code. As can 
+be seen, these codes do not reach the theoretical capacity.
 
 
 <br>

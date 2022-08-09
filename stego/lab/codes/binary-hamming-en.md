@@ -239,14 +239,16 @@ $e_p = \frac{p}{ 1-2^{-p} }$
 Continuing with our example, the efficiency for $p=3$ is $3.429$. Superior to our initial example, which had an efficiency of $2.66$.
 
 In the following graph we can see the relationship between *payload* and efficiency.
-Actually, for better graphical representation, the inverse of *payload* ($1/\alpha^-{1}$) is used.
+Actually, for better graphical representation, the inverse of *payload* ($\alpha^{-1}$) is used.
 
 
 ![efficiency](/stego/blog/resources/binary-codes.png?style=centerme)
 
 As you can see in the graph, the highest efficiency is achieved with very small *payloads*
-(very high $1/\alpha^-{1}$ values).
+(very high $\alpha^{-1}$ values).
 
+In the graph you can also see the theoretical limit for binary codes. As can 
+be seen, these codes do not reach the theoretical capacity.
 
 
 

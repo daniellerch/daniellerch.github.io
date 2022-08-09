@@ -197,7 +197,7 @@ $e_p = \frac{p \log_2 n}{1-n^{-p}}$
 
 Esto nos permite dibujar una gráfica para ver la eficiencia respecto el
 *payload* para diferentes valores de $p$ y $n$.
-Para una mejor visualización, se usa el inverso del *payload* ($1/\alpha^-{1}$).
+Para una mejor visualización, se usa el inverso del *payload* ($\alpha^{-1}$).
 
 ![efficiency](/stego/blog/resources/n-ary-codes.png?style=centerme)
 
@@ -214,6 +214,10 @@ $-1$. La diferencia es que, mientras que en los códigos binarios elegimos una
 u otra aleatoriamente, en los códigos ternarios esta decisión forma parte del 
 código. Por lo tanto, el uso de los códigos ternarios nos ofrecerá más 
 capacidad para el mismo grado de distorsión.
+
+En la gráfica también se puede ver el límite teórico para cada tipo de código.
+Como se puede observar, los códigos usados no alcanzan la máxima capacidad
+teórica.
 
 
 <br>
