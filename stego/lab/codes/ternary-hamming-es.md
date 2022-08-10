@@ -199,7 +199,7 @@ Esto nos permite dibujar una gráfica para ver la eficiencia respecto el
 *payload* para diferentes valores de $p$ y $n$.
 Para una mejor visualización, se usa el inverso del *payload* ($\alpha^{-1}$).
 
-![efficiency](/stego/blog/resources/n-ary-codes.png?style=centerme)
+![efficiency](/stego/lab/codes/resources/n-ary-codes.png?style=centerme)
 
 
 Como se puede ver en las gráficas, cuanto mayor es $n$ mayor es la eficiencia 

@@ -40,7 +40,7 @@ lang-suffix: "-es"
 <div style='margin-bottom:30px'></div>
 #### Conceptos básicos:
 
-- **[Esteganografía LSB en imágenes y audio](/stego/blog/lsb-es)**: Artículo introductorio a la esteganografía LSB. Incluye ejemplos en Python para la incrustación de mensajes en imágenes de mapa de bits, imágenes JPEG y archivos de audio WAV.
+- **[Esteganografía LSB en imágenes y audio](/stego/lab/intro/lsb-es)**: Artículo introductorio a la esteganografía LSB. Incluye ejemplos en Python para la incrustación de mensajes en imágenes de mapa de bits, imágenes JPEG y archivos de audio WAV.
 
 <div style='margin-bottom:50px'></div>
 #### Códigos:

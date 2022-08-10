@@ -242,7 +242,7 @@ In the following graph we can see the relationship between *payload* and efficie
 Actually, for better graphical representation, the inverse of *payload* ($\alpha^{-1}$) is used.
 
 
-![efficiency](/stego/blog/resources/binary-codes.png?style=centerme)
+![efficiency](/stego/lab/codes/resources/binary-codes.png?style=centerme)
 
 As you can see in the graph, the highest efficiency is achieved with very small *payloads*
 (very high $\alpha^{-1}$ values).

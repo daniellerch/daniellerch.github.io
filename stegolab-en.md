@@ -39,7 +39,7 @@ lang-suffix: "-en"
 <div style='margin-bottom:30px'></div>
 #### Basic concepts:
 
-- **[LSB steganography in images and audio.](/stego/blog/lsb-en)**: Introductory article to LSB steganography. Includes Python examples for embedding messages in bitmap images, JPEG images, and WAV audio files.
+- **[LSB steganography in images and audio.](/stego/lab/intro/lsb-en)**: Introductory article to LSB steganography. Includes Python examples for embedding messages in bitmap images, JPEG images, and WAV audio files.
 
 
 

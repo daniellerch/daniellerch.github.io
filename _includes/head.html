@@ -30,6 +30,10 @@
   <meta http-equiv='pragma' content='no-cache'>
   {% endif %}
 
+  {% if page.redirect %}
+  <meta http-equiv="refresh" content="0;url={{ page.redirect }}"/>
+  {% endif %}
+
 
 
 
