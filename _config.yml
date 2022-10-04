@@ -264,5 +264,5 @@ plugins:
 
 
 # deployment
-host: 192.168.1.202
+host: 192.168.1.200
 port: 4000
