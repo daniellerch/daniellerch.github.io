@@ -8,6 +8,20 @@ meta-description: "Información sobre Daniel Lerch Hostalot relacionada con la e
 lang-suffix: "-es"
 ---
 
+Esta página está dedicada a la esteganografía y al estegoanálisis. La creé con
+la intención de tener un sitio donde ir subiendo información relativa a mis 
+investigaciones y como complemento del código que subo a 
+<a href='https://github.com/daniellerch'>Github</a>.
+Aquí puedes encontrar herramientas de esteganografía 
+(como <a href='https://github.com/daniellerch/hstego'>HStego</a>) 
+y de estegoanálisis 
+(como <a href='https://github.com/daniellerch/aletheia'>Aletheia</a>), 
+así como diferentes fragmentos de código que implementan técnicas *stego*. 
+Estos últimos se encuentran en la sección 
+<a href='/stegolab-es/'>StegoLab</a>, 
+donde además escribo algunos artículos sobre estas técnicas.
+
+
 
 Mi nombre es Daniel Lerch y empecé a investigar en esteganografía y 
 estegoanálisis durante mi trabajo de máster en 2011. Investigación que
@@ -31,19 +45,6 @@ y suelo colaborar en el comité ténico de los congresos
 También ejerzo como profesor colaborador de las asignaturas de 
  <a href='http://cv.uoc.edu/tren/trenacc/web/GAT_EXP.PLANDOCENTE?any_academico=20202&cod_asignatura=M1.878&idioma=CAS&pagina=PD_PREV_PORTAL'>Técnicas de Ocultación de Datos</a> y de <a href='http://cv.uoc.edu/tren/trenacc/web/GAT_EXP.PLANDOCENTE?any_academico=20202&cod_asignatura=75.601&idioma=CAS&pagina=PD_PREV_PORTAL'>Criptografía</a> en la <a href="https://uoc.edu">Universitat Oberta de Catalunya</a> (UOC).
 
-
-Esta página está dedicada a la esteganografía y al estegoanálisis. La creé con
-la intención de tener un sitio donde ir subiendo información relativa a mis 
-investigaciones y como complemento del código que subo a 
-<a href='https://github.com/daniellerch'>Github</a>.
-Aquí puedes encontrar herramientas de esteganografía 
-(como <a href='https://github.com/daniellerch/hstego'>HStego</a>) 
-y de estegoanálisis 
-(como <a href='https://github.com/daniellerch/aletheia'>Aletheia</a>), 
-así como diferentes fragmentos de código que implementan técnicas *stego*. 
-Estos últimos se encuentran en la sección 
-<a href='/stegolab-es/'>StegoLab</a>, 
-donde además escribo algunos artículos sobre estas técnicas.
 
 
 Puedes contactar conmigo o encontrar más información mediante:
