@@ -182,12 +182,12 @@ Supongamos que los bytes extraídos del medio son los siguientes:
 
 Nos quedamos con los LSB:
 
-| 0 | 1 | 1 | 0 | 1 | 1 | 0 | 0 |
+| 0 | 1 | 1 | 0 | 1 | 0 | 0 |
 
 Por lo que nuestro vector $c$ será:
 
 <center>
-$ c=(0,1,1,0,1,1,0,0) $
+$ c=(0,1,1,0,1,0,0) $
 </center>
 
 Calculamos el mensaje que oculta este vector:
@@ -223,11 +223,11 @@ Esto significa que tenemos que cambiar el segundo bit de $c$ para obtener el
 vector *stego* $s$.
 
 <center>
-$ c=(0,1,1,0,1,1,0,0) $
+$ c=(0,1,1,0,1,0,0) $
 </center>
 
 <center>
-$ s=(0,0,1,0,1,1,0,0) $
+$ s=(0,0,1,0,1,0,0) $
 </center>
 
 De esta manera, la operación de extracción dará como resultado nuestro mensaje:
