@@ -154,7 +154,7 @@ We get the LSBs:
 So our vector $c$ will be:
 
 <center>
-$ c=(0,1,1,0,1,1,0,0) $
+$ c=(0,1,1,0,1,0,0) $
 </center>
 
 We calculate the message that hides this vector:
