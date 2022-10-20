@@ -49,9 +49,9 @@ lang-suffix: "-es"
 <br>
 ## Introducción
 
-En artículos previos como
+En los artículos 
 "[Códigos de Hamming binarios en esteganografía](/stego/lab/codes/binary-hamming-es)"
-o 
+y 
 "[Códigos de Hamming ternarios en esteganografía](/stego/lab/codes/ternary-hamming-es)"
 hemos visto cómo incrementar la eficiencia de la inserción de datos ocultos
 mediante técnicas de *matrix embedding*. Estas técnicas, si bien nos permiten
@@ -74,12 +74,13 @@ mensaje minimizando la probabilidad de ser detectado.
 Esto es precisamente lo que hacen los Syndrome Trellis Codes (STC). Esta técnica 
 nos permite separar el método de esteganografía en dos partes: una primera parte
 en la que asignamos un coste a cada byte y una segunda parte en la que buscamos
-la forma de ocultar el mensaje de menos coste. 
+la forma de ocultar el mensaje de menos coste. De esta segunda parte se 
+encargan los STC.
 
 Esta metodología ha supuesto un avance importante en esteganografía, puesto
 que al disponer de una técnica casi óptima de incrustar el mensaje (los
-STC), los investigadores pueden centrarse en el diseño
-de una buena función de coste.
+STC), los investigadores pueden centrarse en el diseño de una buena función 
+de coste.
 
 Aunque existen muchas funciones de coste, dos ejemplos destacados para
 imágenes son
@@ -97,8 +98,8 @@ El método que se describe a continuación fue presentado en el artículo
 de Tomáš Filler, Jan Judas y Jessica Fridrich, que se puede encontrar en la
 referencia [ <a href='#referencias'>1</a> ].
 
-Este artículo marcó un antes y un después en el mundo de la esteganogafía,
-y el método de incrustación propuesto, se ha convertido en una herramienta
+Este artículo supuso un avance signigicativo en el mundo de la esteganogafía,
+y la técnica propuesta, se ha convertido en una herramienta
 indispensable para los métodos modernos de esteganografía.
 
 Recordemos, que en *matrix embeding*, codificamos un mensaje $m$
@@ -127,16 +128,45 @@ necesariamente necesitaremos que existean múltiples $s$. Pues si existen
 múltiples $s$, podremos quedarnos con aquel que tenga un coste de inserción
 más pequeño.
 
-Para que un sistema de ecuaciones de tipo $Hx=m$ tenga múltiples soluciones, 
+
+Recordemos que $Hx=m$ es un sistema de ecuaciones como el siguiente:
+
+<center>
+$ \begin{pmatrix} 
+ h_{11} & h_{21} & ... & h_{n1}\\\
+ h_{12} & h_{22} & ... & h_{n2}\\\
+ h_{13} & h_{23} & ... & h_{n3}\\\
+ ...    & ...    & ... & ... \\\
+ h_{1m} & h_{2m} & ... & h_{nm}  
+\end{pmatrix} $
+·
+$ \begin{pmatrix} 
+x_{1}\\\
+x_{2}\\\
+x_{3}\\\
+...\\\
+x_{m}
+\end{pmatrix} $
+=
+$ \begin{pmatrix} 
+ h_{11}x_1 + h_{21}x_2 + ... + h_{n1}x_n\\\
+ h_{12}x_1 + h_{22}x_2 + ... + h_{n2}x_n\\\
+ h_{13}x_1 + h_{23}x_2 + ... + h_{n3}x_n\\\
+ ...   \\\
+ h_{1m}x_1 + h_{2m}x_2 + ... + h_{nm}x_n
+\end{pmatrix} $
+</center>
+
+Y para que un sistema de ecuaciones de tipo $Hx=m$ tenga múltiples soluciones, 
 una de las cosas que necesitamos es que haya más variables que incógnitas, 
 es decir, que el número de columnas de la matriz $H$ sea más pequeño que el
-número de filas. Por lo tanto, a la hora de seleccionar la matriz $H$ lo 
-tendremos que tener en cuenta.
+número de filas. Por lo tanto, a la hora de seleccionar el tamaño de la matriz 
+$H$ y de los vectores $x$ y $m$, lo tendremos que tener en cuenta.
 
-Sin embargo, cuando realizamos este pequeño cambio en la matriz $H$, surge la
-necesidad de disponer de un método que permita encontrar las soluciones,
-así como el coste de inserción asociado a cada una de ellas. 
-Esto es precisamente, lo que hacen los STC. Al valor de $x$ le llamamos
+Sin embargo, cuando queremos resolver un sistema de ecuaciones que tiene
+múltiples soluciones, surge la necesidad de disponer de un método que permita 
+encontrar dichas soluciones.
+Esto es precisamente lo que hacen los STC. Al valor de $x$ le llamamos
 *síndrome* y el método usado para encontrar el síndrome usa un descodificador
 de rejilla o *trellis*, lo que da origen al nombre del método. 
 
@@ -149,7 +179,7 @@ Una de las primeras cosas que necesitamos para empezar a codificar usando
 los STC es una matriz de paridad $H$. Esta matriz de paridad tiene una
 construcción especial, que veremos más adelante. Pero para comprender esta
 construcción tenemos que fijarnos en como funciona la multiplicación de 
-una matriz por un vector.
+una matriz por un vector ($Hx=m$).
 
 <center>
 $ \begin{pmatrix} 
@@ -288,13 +318,14 @@ $\hat{H}$ y $H$.
 Cualquier matriz de unos y ceros, cuyos vectores sean linealmente 
 independientes nos sirve para construir nuestra matriz $H$. Sin embargo,
 el número de columnas y de filas afectan de manera importante al 
-método de inserción. Por un lado, el número de filas $h$ afecta al
-rendimiento del algoritmo. En el artículo se propone usar $6 \le h \le 15$
-Otro parámetro importante es el número de columnas $w$, pues nos permite
+método de inserción. Por un lado, el número de filas ($h$) afecta al
+rendimiento del algoritmo. En el artículo se propone usar $6 \le h \le 15$.
+Otro parámetro importante es el número de columnas ($w$), pues nos permite
 controlar la capacidad, y se elige de manera que $w=1/\alpha$, siendo 
-$\alpha$ el *payload*. As, por ejemplo, una matriz $\hat{H}$ de dos
+$\alpha$ el *payload*. Así, por ejemplo, una matriz $\hat{H}$ de dos
 columnas nos permitiría ocultar información con un *payload* relativo de
-$0.5$.
+$0.5$, puesto que $\alpha=1/w=1/2=0.5$.
+
 
 Cabe destacar que no todas las matrices $\hat{H}$ son igual de eficientes.
 Los autores, en base a sus experimentos, recomiendan poner a unos la 
@@ -318,7 +349,7 @@ queremos encontrar un vector $s$ tal que $Hs=m$, siendo $m$ el mensaje
 que queremos ocultar.
 
 Pongamos un ejemplo antes de entrar en materia. Supongamos que tenemos un 
-bloque de 8 píxeles de una imagen, en escala de grises, con los siguientes
+bloque de 8 píxeles de una imagen (en escala de grises) con los siguientes
 valores:
 
 $c = [113, 110, 111, 115, 100, 102, 102, 103]$
@@ -351,14 +382,14 @@ Podemos calcular el coste simplemente aplicando el coste correspondiente
 del elemento que ha sido modificado. Por lo tanto, el coste de $s$ seria de
 $0.2+0.1=0.3$, puesto que se ha modificado el primer valor y el quinto.
 En el caso de $s'$ el coste sería de $0.9$, puesto que solo se ha modificado
-el segundo valor. Vemos pues, que aunque la segunda solución modifica menos 
+el segundo valor. Vemos pues que, aunque la segunda solución modifica menos 
 bits, tiene un coste más alto, por lo que nos quedaríamos con la primera.
 
 
 
 Veamos ahora cómo usar la matriz $H$ y el vector $c$ para incrustar $m$.
-Es decir, veamos cómo calcular las soluciones posibles a $Hs=m$. Usaremos
-como ejemplo la siguiente imagen, procedente del artículo original 
+Es decir, veamos cómo buscar las soluciones de menor coste de $Hs=m$. 
+Usaremos como ejemplo la siguiente imagen, procedente del artículo original 
 [<a href='#referencias'> 1 </a>]:
 
 
@@ -375,11 +406,11 @@ ocultando información con $\alpha=0.5$. El vector *cover* inicial es:
 
 $c = [1, 0, 1, 1, 0, 0, 0, 1]$
 
-el mensaje que se quiere ocultar es:
+El mensaje que se quiere ocultar es:
 
 $m = [0, 1, 1, 1]$
 
-y la submatriz usada para generar $H$ es:
+Y la submatriz usada para generar $H$ es:
 
 <center>
 $ \hat{H} = \begin{pmatrix} 
@@ -660,9 +691,8 @@ un cero, codifica igualmente un $1$ (consultar ecuación 2).
 <br>
 **Descodificación del mensaje:**
 
-Cuando el receptor del mensaje, que dispone de la matriz $H$), extrae el vector 
-$s$ del medio *stego*, puede extraer $m$ únicamente realizando la 
-multiplicación $m=Hs$.
+Cuando el receptor del mensaje (que dispone de la matriz $H$), extrae el vector 
+$s$ del medio *stego*, puede extraer $m$ realizando la multiplicación $m=Hs$.
 
 
 
