@@ -40,8 +40,19 @@ lang-suffix: "-es"
 2. [STC: introducción](#stc-introducción)
 3. [STC: la matriz H](#stc-la-matriz-h)
 4. [STC: búsqueda de soluciones](#stc-búsqueda-de-soluciones)
-5. [Eficiencia y distorsión](#eficiencia-y-distorsión)
-6. [Ejemplo en Python](#ejemplo-en-python)
+   - [Ejemplo básico](#ejemplo-básico)
+   - [Codificación (I)](#codificación-i)
+   - [Algunas aclaraciones](#algunas-aclaraciones)
+   - [Codificación (II)](#codificación-ii)
+5. [STC: Descodificación](#stc-descodificación)
+6. [Eficiencia y distorsión](#eficiencia-y-distorsión)
+7. [Implementación vectorizada en Python](#implementación-vectorizada-en-python)
+   - [Vector mensaje ($M$)](#vector-mensaje-m)
+   - [Vector *cover* ($X$)](#vector-cover-x)
+   - [Vector de costes ($\rho$ o *rho*)](#vector-de-costes-rho-o-rho)
+   - [Variables de trabajo](#variables-de-trabajo)
+   - [Cálculo de costes y caminos](#cálculo-de-costes-y-caminos)
+   - [Búsqueda del camino óptimo](#búsqueda-del-camino-óptimo)
 8. [Implementación completa en Python](#implementación-completa-en-python)
 9. [Referencias](#referencias)
 
@@ -342,7 +353,7 @@ permitirá realizar la multiplicación de la matriz $H$ por el síndrome.
 <br>
 ## STC: búsqueda de soluciones
 
-**Introducción:**
+### Ejemplo básico
 
 Dada una matriz $H$, un vector *cover* $c$ inicial y un vector de costes $\rho$,
 queremos encontrar un vector $s$ tal que $Hs=m$, siendo $m$ el mensaje
@@ -516,7 +527,7 @@ diferentes pasos que sigue el algoritmo de codificación.
 
 
 <br>
-**Codificación (I):**
+### Codificación (I)
 
 Para empezar, veamos cómo construir el camino que recorre la rejilla. 
 Empezaremos por el primer bloque:
@@ -585,13 +596,12 @@ y $11$ nunca podrán codificar nuestro mensaje, por lo que podemos eliminarlos.
 
 
 Una vez procesado el bloque, volvemos a empezar desde los estados iniciales. 
-Es decir, simplemente movemos los estados finales del bloque hacia arriba. 
-<p style='color:red'> ????</p>
+Es decir, simplemente movemos los estados finales del bloque al principio. 
 
 
 
 <br>
-**Algunas aclaraciones:**
+### Algunas aclaraciones
 
 
 Volvamos un momento a la ecuación 1, de la cual mostramos a continuación 
@@ -654,7 +664,7 @@ codificarán un 1 en el bit de $m$ correspondiente.
 
 
 <br>
-**Codificación (II):**
+### Codificación (II)
 
 
 El proceso del siguiente bloque es similar, aunque existen algunas 
@@ -689,10 +699,12 @@ un cero, codifica igualmente un $1$ (consultar ecuación 2).
 
 
 <br>
-**Descodificación del mensaje:**
+## STC: Descodificación
 
 Cuando el receptor del mensaje (que dispone de la matriz $H$), extrae el vector 
 $s$ del medio *stego*, puede extraer $m$ realizando la multiplicación $m=Hs$.
+
+
 
 
 
@@ -706,9 +718,300 @@ xxx
 
 
 <br>
-## Ejemplo en Python
+## Implementación vectorizada en Python
 
-xxx
+En cada columna, el algoritmo necesita realizar un máximo de $2^h$ operaciones,
+donde $h$ es la altura de la matrix $\hat{H}$. Por ello, implementar el 
+algoritmo usando bucles en Python daría lugar a un programa demasiado lento.
+Habría que implementarlo en un lenguaje de bajo nivel como C o C++. Sin
+embargo, podemos usar [Numpy](https://numpy.org/) para vectorizar el programa. 
+Es decir, realizar siempre que sea posible operaciones con arrays implementadas 
+por la librería Numpy. De esta manera, se puede conseguir una eficiencia aceptable. Aunque
+cabe mencionar que esta forma de programar, en ocasiones, dificulta enormemente
+seguir el algoritmo. Por ello, vamos a detallar cada paso a continuación.
+
+Partiremos de las siguientes variables:
+
+
+
+### Vector mensaje ($M$)
+
+$X$ es un array de dos dimensiones que contiene unos y ceros. La primera
+dimensión indica el número de bloques en los que se ha divido el mensaje 
+y la segunda, la longitud de cada bloque.
+
+Contiene los bits que forman el mensaje (unos y ceros). 
+
+A continuación vemos un ejemplo de $M$ en el que hay 11200 bloques de 
+5 bits cada uno. Es decir, que estamos unsando un código que nos permite
+ocultar $5$ bits en cada bloque del vector $cover$, que veremos después.
+
+```python
+>>> M.shape
+(11200, 5)
+>>> M
+[[1 0 1 1 0]
+ [0 1 0 1 0]
+ [0 1 1 0 1]
+ ...
+ [1 1 0 0 0]
+ [1 0 0 1 0]
+ [1 1 0 1 0]]
+```
+
+
+
+### Vector *cover* ($X$)
+
+$X$ es un array de dos dimensiones que contiene unos y ceros. La primera
+dimensión indica el número de bloques y la segunda, la longitud de cada bloque.
+
+Es una representación del vector $cover$, es decir, que podría contener 
+por ejemplo, los LSB de los píxeles de una imagen o de las muestra de audio.
+
+A continuación vemos un ejemplo de $X$ en el que hay 11200 bloques de 
+20 bits cada uno. Es decir, que estamos unsando un código que nos permite
+ocultar $5$ bits en cada bloque de $20$ bits.
+
+```python
+>>> X.shape
+(11200, 20)
+>>> X
+[[1 1 1 ... 0 1 0]
+ [1 0 1 ... 0 1 1]
+ [0 1 0 ... 1 1 1]
+ ...
+ [1 0 0 ... 0 0 0]
+ [0 1 1 ... 1 0 0]
+ [1 1 1 ... 0 1 1]]
+```
+
+
+
+
+### Vector de costes ($\rho$ o *rho*)
+
+$\rho$ es un array de dos dimensiones que contiene el coste de ocultar
+información en cada posición del bit correspondiente. Igual que en el
+caso anterior, la primera dimensión corresponde al número de bloques 
+y la segunda a la longitud de cada bloque.
+
+Veamos un ejemplo:
+
+```python
+>>> rho.shape
+(11200, 20)
+>>> rho
+[[0.12285315 0.12869447 0.07671703 ... 0.09957111 0.09522195 0.53469276]
+ [0.54047088 0.43969172 0.10222969 ... 0.40612536 0.11569894 0.49387093]
+ [0.07055812 0.28936677 0.22440558 ... 0.10338494 0.26619512 0.33683038]
+ ...
+ [0.38567256 0.10401772 0.06888007 ... 0.04226346 0.11083836 0.0957425 ]
+ [0.15387796 0.26243051 0.16229406 ... 0.10800338 0.35959262 0.3779376 ]
+ [0.40139949 0.23998674 0.69433262 ... 0.07365008 0.0405597  0.09663148]]
+```
+
+
+### Variables de trabajo
+
+Vamos a trabajar, principalmente, con dos variables: la variable *costs* en
+la que guardaremos los costes de los diferentes caminos del Trellis y la
+variable *paths* en la que guardaremos las diferentes transiciones que
+realizamos en cada estado.
+
+Definimos e inicializamos la variable *costs* de la siguiente manera:
+
+```python
+costs = np.infty * np.ones((dim, 2**self.h))
+costs[:,0] = 0
+```
+```python
+>>> costs.shape
+(11200, 1024)
+```
+
+
+y la variable *paths*, como vemos a continuación:
+
+
+```python
+paths = np.zeros((dim, 2**self.h, self.n)) 
+```
+
+```python
+>>> paths.shape
+(11200, 1024, 20)
+```
+
+De esta manera, podemos guardar en *costs* el coste para cada uno de los 
+$2^h$ estados posibles (en este ejemplo $h=10$. Mientras que en *paths*
+podemos guardar el cambio de estado que se produce para cada bloque, 
+para cada estado y para cada uno de los bits que forma cada bloque.
+
+Una vez que la parte inicial del algoritmo rellene estas dos variables, 
+tendremos la información suficiente como para construir el camino de menor coste.
+
+
+
+### Cálculo de costes y caminos
+
+El algoritmo tiene dos partes, una primera parte en la que calculamos los
+costes de las transiciones y los cambios de estado, y una segunda parte en
+la que usamos estos datos para reconstruir el caminio de menor coste.
+
+La primera parte usa el siguiente código:
+
+
+```python
+for i in range(self.n):
+   previous_cost = costs.copy()
+   hi = self.Hcols[i]
+   for j in range(2**self.h):
+      c1 = previous_cost[:,j] + X[:,i]*rho[:,i]
+      c2 = previous_cost[:,j^hi] + (1-X[:,i])*rho[:,i]
+
+      if np.sum(c1<c2)>0:
+         costs[c1<c2, j] = c1[c1<c2]
+         paths[c1<c2, j, i] = j
+      if np.sum(c1>=c2)>0:
+         costs[c1>=c2, j] = c2[c1>=c2]
+         paths[c1>=c2, j, i] = j^hi
+
+      if self.shift[i] == 1:  
+         tail = np.infty* np.ones((dim, 2**(self.h-1)))   
+         costs_0 = np.concatenate((costs[:, 0::2], tail), axis=1) 
+         costs_1 = np.concatenate((costs[:, 1::2], tail), axis=1) 
+         costs = costs_0.copy()   
+         costs[M[:,m_id]==1] = costs_1[M[:,m_id]==1]  
+         m_id = m_id + 1  
+```
+
+
+Vemos que se recorren los $n$ bits de cada bloque, y para cada uno de ellos, 
+se recorren los $2^h$ estados. En cada paso, calculamos el cotes mínimo y
+el camino seguido. Veámoslo paso a paso:
+
+```python
+c1 = previous_cost[:,j] + X[:,i]*rho[:,i]
+c2 = previous_cost[:,j^hi] + (1-X[:,i])*rho[:,i]
+```
+
+En el vector $c_1$ se guarda el coste de los casos en los que el estado $j$ 
+continua en el mismo estado. Es decir, los costes de los casos en los que no 
+hay cambio de estado. Recordemos que cuando no hay cambio de estado estamos 
+codificando un $0$ en el vector $stego$. Por lo tanto, si $X$ (para cada bloque 
+y en la posición $i$)  vale $0$, no habrá incremento de coste, pues estaremos 
+codificando un $0$ y el vector $X$ en esa posición ya vale $0$ (no es necesario 
+cambiar ese bit en el vector $stego$). Sin embargo, si $X$ en esa posición vale 
+$1$, al estar codificando un 0, habrá que cambiar el bit  correspondiente de $X$, 
+por lo que habrá que imputar el coste según indique el  vector $\rho$.
+
+En el vector $c_2$ se guarda el coste de los casos en los que $j$ es el resultado
+de un cambio de estado desde $j \oplus hi$. Es decir, que el estado anterior
+era $j \oplus hi$ y el nuevo estado pasa a ser $j$. La idea es similar a la 
+del caso  anterior, sin embargo, dado que el cambio de estado codifica un $1$
+en el vector $stego$, solo imputaremos el coste del vector $\rho$ cuando el 
+valor de $X$ sea $0$.
+
+Nótese que la posición $j$ representa el estado al que pasamos, y no el estado
+del que partimos. Hacerlo así nos permite guardar únicamente el que coste
+mínimo para llegar a este estado. Sin embargo, en *paths* vamos a guardar el
+estado origen que nos ha permitido llegar hasta allí, que lo podemos calcular
+mediante $j^hi$.
+
+Nótese también que las operaciones son vectorizadas. Es decir, que Numpy está 
+procesando todo el vector a la vez, y está calculando los cambios de estado
+para la posición $i$ de todos los bloques.
+
+
+A continuación, para el cambio de estado de menor coste, guardamos el
+cambio de estado y el coste.
+
+```python
+if np.sum(c1<c2)>0:
+   costs[c1<c2, j] = c1[c1<c2]
+   paths[c1<c2, j, i] = j
+if np.sum(c1>=c2)>0:
+   costs[c1>=c2, j] = c2[c1>=c2]
+   paths[c1>=c2, j, i] = j^hi
+```
+
+Los *ifs* los usamos únicamente para no realizar la operación si no se cumple
+el caso. La idea de las sentencias anteriores es, simplemente, guardar $c_1$ o
+$c_2$ en $costs$, el que tenga un valor inferior. Hacemos lo mismo con $paths$,
+pero esta vez guardando el cambio de transición: $j$ si no hay cambio de estado,
+lo que ocurre si $c_1$ es el coste mínimo, o $j \oplus hi$ si hay cambio de
+estado, lo que ocurre si $c_2$ es el coste mínimo.
+
+
+Cada vez que procesamos una matriz $\hat{H}$ entera paramos para "podar" las
+transiciones de estado imposibles. La variable "shift" se prepara para que
+contenga unos en las posiciones en las que se terminan las columnas de la
+matriz $\hat{H}$, de manera que el *if* nos permite realizar esta parte solo
+cuando es necesario.
+
+
+```python
+      if self.shift[i] == 1:  
+         tail = np.infty* np.ones((dim, 2**(self.h-1)))   
+         costs_0 = np.concatenate((costs[:, 0::2], tail), axis=1) 
+         costs_1 = np.concatenate((costs[:, 1::2], tail), axis=1) 
+         costs = costs_0.copy()   
+         costs[M[:,m_id]==1] = costs_1[M[:,m_id]==1]  
+         m_id = m_id + 1  
+```
+
+Cuando esto ocurre, la parte del mensaje correspondiente ya ha sido codificada.
+Los bits del mensaje coinciden con los LSB del estado, por lo que los estados
+con LSB de valor 0, codifican un 0 en el mensaje, mientras que los estado con
+LSB de valor 1, codifican un 1.
+Por lo tanto, la sección anterior de código se queda con los costes que
+permiten codificar el mensaje, eliminando el resto (coste infinito). 
+
+
+
+
+### Búsqueda del camino óptimo
+
+Una vez tenemos almacenados los costes y los cambios de estado, ya podemos
+reconstruir la ruta de menor coste. Usaremos el siguiente código:
+
+```python
+ind = np.argmin(costs, axis=1)
+m_id -= 1
+for i in range(self.n-1, -1, -1):                                                                                
+   if self.shift[i] == 1:
+       ind = 2*ind + M[:,m_id]
+       m_id = m_id - 1
+   Y[:, i] = paths[range(dim), ind, i] != ind
+   ind = paths[range(dim), ind, i].astype('uint16')
+```
+
+Lo que estamos haciendo es recorrer el *trellis* hacia atrás, calculando
+el vector *stego*.
+
+Empezamos calculando los indices de los estados de menor coste. Cabe destacar
+que el vector "costs" contiene el coste final para cada estado, por lo tanto,
+el estado de menor coste es aquel que termina el camino de menor coste.
+Así, $argmin$ nos dará el índice en el que termina el camino óptimo para cada
+uno de los bloques $cover$.
+
+Partiendo de dicho índice, podemos usar el vector $paths$ para saber cual
+era el estado anterior, recorriendo así el *trellis* hacia atrás.
+Una excepción a esto se produce al final de cada bloque del *trellis*. 
+Recordemos que en la sección anterior hemos realizado una "poda" en la que 
+eliminábamos la mitad de los estados al final de cada bloque. Así pues,
+para recuperar el estado anterior en el final de los bloques, tenemos que
+multiplicar el índice por $2$ para obtener el estado anterior, aplicando
+como ofset el valor del bit del mensaje.
+
+Durante el recorrido hacia atrás del *trellis* aprovechamos para calcular
+el vector $stego$. Recordemos que un cambio de estado codificaba un $1$, 
+mientras que mantenerse en el mismo estado codificaba un $0$. Así pues,
+únicamnte tenemos que consultar si el estado anterior y el siguiente son
+iguales o no para saber el valor del vector *stego* en cada posición.
+
+
 
 
 
