@@ -19,6 +19,13 @@
   {% endif %}
 
 
+  {% if page.keywords %}
+  <meta name="keywords" content="{{ page.keywords }}">
+  {% endif %}
+
+
+
+
   {% if page.noindex %}
   <meta name="robots" content="noindex">
   {% endif %}

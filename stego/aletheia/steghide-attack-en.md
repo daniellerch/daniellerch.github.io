@@ -6,6 +6,7 @@ noindex: false
 comments: true
 meta-title: "Practical attack on Steghide"
 meta-description: "Blog post about the detection of JPEG images embedded with Steghide, using the Aletheia steganalysis tool"
+meta-keywords: "steganography, steganalysis, images"
 lang-suffix: "-en"
 ---
 

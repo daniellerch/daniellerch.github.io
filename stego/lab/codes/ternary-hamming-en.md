@@ -5,6 +5,7 @@ subtitle: ""
 noindex: false
 meta-title: "Ternary Hamming Codes in Steganography"
 meta-description: "Information hiding technique based on ternary Hamming codes."
+meta-keywords: "steganography, codes"
 lang-suffix: "-en"
 ---
 
