@@ -5,6 +5,7 @@ subtitle: ""
 noindex: false
 meta-title: "Introduction to steganalysis with Aletheia"
 meta-description: "Blog post about the basic usage of the Aletheia steganalysis tool"
+meta-keywords: "steganography, steganalysis, images"
 lang-suffix: "-en"
 ---
 

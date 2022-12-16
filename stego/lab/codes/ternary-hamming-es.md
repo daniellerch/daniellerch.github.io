@@ -5,6 +5,7 @@ subtitle: ""
 noindex: false
 meta-title: "Códigos de Hamming Ternarios en Esteganografía"
 meta-description: "Técnica de incrustación de información de tipo matrix embedding basada en códigos de Hamming ternarios."
+meta-keywords: "esteganografía, códigos"
 lang-suffix: "-es"
 ---
 

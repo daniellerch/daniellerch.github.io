@@ -8,6 +8,19 @@ meta-description: "Some information about Daniel Lerch Hostalot related to stega
 lang-suffix: "-en"
 ---
 
+This site is dedicated to steganography and steganalysis. I have created it 
+with the idea of having a site where I can upload information related to my 
+research and as a complement to the code that I upload to
+<a href='https://github.com/daniellerch'>Github</a>.
+Here you can find steganography tools 
+(such as <a href='https://github.com/daniellerch/hstego'>HStego</a>) 
+and steganalysis tools 
+(such as <a href='https://github.com/daniellerch/aletheia'>Aletheia</a>), 
+as well as different code snippets that implement stego techniques. 
+The latter can be found in the 
+<a href='/stegolab-en/'>StegoLab</a>
+section, where I also write some articles on these techniques.
+
 
 My name is **Daniel Lerch** and I started doing research in steganography 
 and steganalysis during my master's thesis in 2011. 
@@ -33,19 +46,6 @@ that they organize.
 I also work as a lecturer for Data Hiding and Cryptography subjects
 at the <a href="https://uoc.edu">Universitat Oberta de Catalunya</a> (UOC).
 
-
-This site is dedicated to steganography and steganalysis. I have created it 
-with the idea of having a site where I can upload information related to my 
-research and as a complement to the code that I upload to
-<a href='https://github.com/daniellerch'>Github</a>.
-Here you can find steganography tools 
-(such as <a href='https://github.com/daniellerch/hstego'>HStego</a>) 
-and steganalysis tools 
-(such as <a href='https://github.com/daniellerch/aletheia'>Aletheia</a>), 
-as well as different code snippets that implement stego techniques. 
-The latter can be found in the 
-<a href='/stegolab-en/'>StegoLab</a>
-section, where I also write some articles on these techniques.
 
 You can contact me or find more information here:
 

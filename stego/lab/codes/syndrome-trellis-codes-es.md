@@ -5,6 +5,7 @@ subtitle: ""
 noindex: false
 meta-title: "Syndrome Trellis Codes en Esteganografía"
 meta-description: "Técnica de incrustación de información de tipo matrix embedding basada en códigos de rejilla."
+meta-keywords: "esteganografía, imágenes, códigos"
 lang-suffix: "-es"
 ---
 

@@ -5,6 +5,7 @@ subtitle: ""
 noindex: false
 meta-title: "Binary Hamming Codes in Steganography"
 meta-description: "Information hiding technique based on binary Hamming codes."
+meta-keywords: "steganography, codes"
 lang-suffix: "-en"
 ---
 
@@ -149,12 +150,12 @@ Suppose the bytes extracted from the media are as follows:
 
 We get the LSBs:
 
-| 0 | 1 | 1 | 0 | 1 | 1 | 0 | 0 |
+| 0 | 1 | 1 | 0 | 1 | 0 | 0 |
 
 So our vector $c$ will be:
 
 <center>
-$ c=(0,1,1,0,1,1,0,0) $
+$ c=(0,1,1,0,1,0,0) $
 </center>
 
 We calculate the message that hides this vector:
@@ -185,11 +186,11 @@ $ M=\begin{pmatrix}
 This means that we have to change the second bit of $c$ to get the *stego* vector $s$.
 
 <center>
-$ c=(0,1,1,0,1,1,0,0) $
+$ c=(0,1,1,0,1,0,0) $
 </center>
 
 <center>
-$ s=(0,0,1,0,1,1,0,0) $
+$ s=(0,0,1,0,1,0,0) $
 </center>
 
 In this way, the extract operation will result in our message:
