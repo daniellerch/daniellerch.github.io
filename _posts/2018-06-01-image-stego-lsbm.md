@@ -1,12 +1,12 @@
 ---
 layout: post
 title: "LSB Matching and Matrix Embedding"
-author: dlerch
-tags: [ Steganography, Steganalysis, Images ]
-comments: true
-image: images/hns_f16.png
-featured: false
-hidden: false
+subtitle: "" 
+noindex: false
+meta-title: "LSB Matching and Matrix Embedding"
+meta-description: "LSB Matching and Matrix Embedding."
+meta-keywords: "steganography, steganalysis, images"
+lang-suffix: "-en"
 ---
 
 

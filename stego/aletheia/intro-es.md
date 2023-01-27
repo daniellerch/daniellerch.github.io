@@ -5,6 +5,7 @@ subtitle: ""
 noindex: false
 meta-title: "Introducción al estegoanálisis con Aletheia"
 meta-description: "Artículo acerca del uso básico de la herramienta para estegoanálisis Aletheia"
+meta-keywords: "esteganografía, estegoanálisis, imágenes"
 lang-suffix: "-es"
 ---
 

@@ -5,6 +5,7 @@ subtitle: ""
 noindex: false
 meta-title: "Identifying the steganographic scheme"
 meta-description: "Blog post about the identification of the steganography scheme using the Aletheia steganalysis tool"
+meta-keywords: "steganography, steganalysis, images"
 lang-suffix: "-en"
 ---
 

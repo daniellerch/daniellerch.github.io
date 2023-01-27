@@ -12,6 +12,7 @@
 
   <meta name="author" content="{{ site.author.name }}" />
 
+
   {% if page.meta-description %}
   <meta name="description" content="{{ page.meta-description }}">
   {% else %}
@@ -19,8 +20,17 @@
   {% endif %}
 
 
+  {% if page.meta-keywords %}
+  <meta name="keywords" content="{{ page.meta-keywords }}">
+  {% endif %}
+
+
+
+
   {% if page.noindex %}
   <meta name="robots" content="noindex">
+  {% else %}
+  <meta name="robots" content="follow"/>
   {% endif %}
 
 

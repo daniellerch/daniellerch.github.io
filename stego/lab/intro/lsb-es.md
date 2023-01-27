@@ -5,6 +5,7 @@ subtitle: ""
 noindex: false
 meta-title: "Esteganografía LSB en imágenes y audio"
 meta-description: "Artículo acerca del uso de esteganografía incrustando información en el LSB"
+meta-keywords: "esteganografía, estegoanálisis, imágenes"
 lang-suffix: "-es"
 ---
 
