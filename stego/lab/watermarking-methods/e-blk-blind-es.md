@@ -29,7 +29,7 @@ lang-suffix: "-es"
 <br>
 ## Incrustación
 
-Este método está basado en el **Sistema 4** presentado en [ [1](#referencias) ]. 
+Este método está basado en el **Sistema 3** presentado en [ [1](#referencias) ]. 
 Se trata de un método basado en [E-Blind](/stego/lab/watermarking-methods/e-blind-es/), 
 aunque en este caso se agrupa la imagen en bloques para después repartir la marca
 entre ellos. Al hacerlo, el sistema resulta más **robusto**. Por lo demás,

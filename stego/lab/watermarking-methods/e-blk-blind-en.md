@@ -29,7 +29,7 @@ lang-suffix: "-es"
 ## Embedding
 
 
-This method is based on **System 4** presented in [ [1](#referencias) ]. 
+This method is based on **System 3** presented in [ [1](#referencias) ]. 
 It is a method based on [E-Blind](/stego/lab/watermarking-methods/e-blind-es/), 
 although in this case the image is grouped into blocks and then the mark is 
 distributed among them. Doing so makes the system more robust. 
