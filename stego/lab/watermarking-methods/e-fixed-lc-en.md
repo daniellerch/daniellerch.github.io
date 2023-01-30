@@ -89,7 +89,7 @@ like the following:
 
 
 ```bash
-$ python3 E_LC.py marked.png
+$ python3 D_LC.py marked.png passw123
 LC: 0.9705514
 watermark, m=1
 ```

@@ -83,7 +83,7 @@ Para detectar la marca y ver si se ha incrustado un 0 o un 1, basta con ejecutar
 un comando como el siguiente:
 
 ```bash
-$ python3 E_LC.py marked.png
+$ python3 D_LC.py marked.png passw123
 LC: 0.92543936
 watermark, m=1
 ```

@@ -80,7 +80,7 @@ To detect the mark and see if a 0 or a 1 has been embedded, just run a command
 like the following:
 
 ```bash
-$ python3 E_LC.py marked.png
+$ python3 D_LC.py marked.png passw123
 LC: 0.92543936
 watermark, m=1
 ```
