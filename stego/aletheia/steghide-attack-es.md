@@ -3,7 +3,7 @@ layout: page
 title: Ataque práctico a Steghide
 subtitle: "" 
 noindex: false
-comments: true
+comments: false
 meta-title: "Ataque práctico a Steghide"
 meta-description: "Artículo sobre cómo detectar el esquema de esteganografía para imágenes JPEG conocido como Steghide, usando la herramienta Aletheia."
 meta-keywords: "esteganografía, estegoanálisis, imágenes"
