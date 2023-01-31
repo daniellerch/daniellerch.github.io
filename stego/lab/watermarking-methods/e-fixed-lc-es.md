@@ -68,7 +68,7 @@ $ python3 E_FIXED_LC.py image.png passw123 1 marked.png
 
 La detección de la marca se realiza calculando la **correlación lineal** entre
 la imagen marcada y la marca. Es decir, que necesitamos el password para
-generar la misma marca que se ha incrustado y así podever verificar que 
+generar la misma marca que se ha incrustado y así poder verificar que 
 existe correlación lineal.
 
 La fórmula usada para la correlación lineal es la siguiente:

@@ -87,26 +87,15 @@ lang-suffix: "-en"
 <hr style='border:1px solid #ccc'>
 
 
+- **[E-Blind](/stego/lab/watermarking-methods/e-blind-en)**: Blind embedding and Linear Correlation Detection. This method simply adds a pattern to the image. The method is based on "System 1" proposed in the book [Digital Watermarking and Steganography](https://www.elsevier.com/books/digital-watermarking-and-steganography/cox/978-0-12-372585-1)  de I. J. Cox, M. L. Miller, J. A. Bloom, J. Fridrich y T. Kalker.
 
-- **[Watermarking examples](https://github.com/daniellerch/stegolab/tree/master/watermarking)**: Implementation of some watermarking schemes proposed in the book [Digital Watermarking and Steganography](https://www.elsevier.com/books/digital-watermarking-and-steganography/cox/978-0-12-372585-1)  by I. J. Cox, M. L. Miller, J. A. Bloom, J. Fridrich and T. Kalker.
+- **[E-Fixed-LC](/stego/lab/watermarking-methods/e-fixed-lc-en)**: Fixed Linear Correlation Embedder (informed embedding) and Linear Correlation Detection. This method adjusts the strength of the watermark to ensure that the watermarked image has a specified linear correlation. The method is based on "System 2" proposed in the book [Digital Watermarking and Steganography](https://www.elsevier.com/books/digital-watermarking-and-steganography/cox/978-0-12-372585-1)  de I. J. Cox, M. L. Miller, J. A. Bloom, J. Fridrich y T. Kalker.
 
-    - **System 1: E_BLIND/L_LC**<br>Blind Embedding ([E_BLIND](https://github.com/daniellerch/stegolab/tree/master/watermarking/E_BLIND.py)) and Linear Correlation Detection ([D_LC](https://github.com/daniellerch/stegolab/tree/master/watermarking/D_LC.py)). E_BLIND simply adds a pattern to an image.
+- **[E-blk-Blind](/stego/lab/watermarking-methods/e-blk-blind-en)**: Block-based blind embedding and correlation coefficient detection. This method works in a similar way to the E-Blind method. The method is based on "System 3" proposed in the book [Digital Watermarking and Steganography](https://www.elsevier.com/books/digital-watermarking-and-steganography/cox/978-0-12-372585-1)  de I. J. Cox, M. L. Miller, J. A. Bloom, J. Fridrich y T. Kalker.
 
-    - **System 2: E_FIXED_LC/L_LC**<br>
-      Fixed Linear Correlation Embedder ([E_FIXED_LC](https://github.com/daniellerch/stegolab/tree/master/watermarking/E_FIXED_LC.py)) and Linear Correlation Detection ([D_LC](https://github.com/daniellerch/stegolab/tree/master/watermarking/D_LC.py)). E_FIXED_LC adjusts the strength of the watermark to ensure that the watermarked image has a specified linear correlation (informed embedding). 
+- **[E-Simple-8](/stego/lab/watermarking-methods/e-simple-8-en)**: 8-bit blind embedder and 8-bit detector. This method is a version of E-Blind modified to embed 8-bits. The method is based on "System 4" proposed in the book [Digital Watermarking and Steganography](https://www.elsevier.com/books/digital-watermarking-and-steganography/cox/978-0-12-372585-1)  de I. J. Cox, M. L. Miller, J. A. Bloom, J. Fridrich y T. Kalker.
 
-    - **System 3: E_BLK_BLIND/D_BLK_CC**<br>
-      Block-Based, Blind Embedding ([E_BLK_BLIND](https://github.com/daniellerch/stegolab/tree/master/watermarking/E_BLK_BLIND.py)) and Correlation Coefficient Detection ([D_BLK_CC](https://github.com/daniellerch/stegolab/tree/master/watermarking/D_BLK_CC.py)). E_BLK_BLIND adds a pattern by block averaging.
-
-
-    - **System 4: E_SIMPLE_8/D_SIMPLE_8**<br>
-      8-Bit Blind Embedder ([E_SIMPLE_8](https://github.com/daniellerch/stegolab/tree/master/watermarking/E_SIMPLE_8.py)) and 8-Bit Detector ([D_SIMPLE_8](https://github.com/daniellerch/stegolab/tree/master/watermarking/D_SIMPLE_8.py)). E_SIMPLE_8 is a version of E_BLIND modified to embed 8-bits.
-
-    - **System 5: E_TRELLIS_8/D_TRELLIS_8**<br>
-      Trellis-Coding Embedder ([E_TRELLIS_8](https://github.com/daniellerch/stegolab/tree/master/watermarking/E_TRELLIS_8.py)) and Viterbi Detector ([D_TRELLIS_8](https://github.com/daniellerch/stegolab/tree/master/watermarking/D_TRELLIS_8.py)). E_TRELLIS_8 embeds 8-bit messages using trellis-coded modulation.
-
-
-
+- **[E-Trellis-8](/stego/lab/watermarking-methods/e-trellis-8-en)**: Trellis-coding embedder and Viterbi detector. This method embeds 8-bit messages using trellis-coded modulation. The method is based on "System 4" proposed in the book [Digital Watermarking and Steganography](https://www.elsevier.com/books/digital-watermarking-and-steganography/cox/978-0-12-372585-1)  de I. J. Cox, M. L. Miller, J. A. Bloom, J. Fridrich y T. Kalker.
 
 
 

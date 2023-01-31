@@ -37,6 +37,10 @@ A medida que se insertan más y más marcas, con el objetivo de incrustar más
 bits de información, la fiabilidad decrece. Por lo tanto, no podemos usar esta
 metodología para incrustar grandes cantidades de información.
 
+
+Es un método **robusto**, es decir, capaz de resistir algunas alteraciones de
+la imagen.
+
 El código del método de incrustación está disponible en el siguiente enlace:
 <a href='https://github.com/daniellerch/stegolab/tree/master/watermarking/E_SIMPLE_8.py'>E_SIMPLE_8</a>.
 

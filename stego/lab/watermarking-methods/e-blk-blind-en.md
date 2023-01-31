@@ -6,7 +6,7 @@ noindex: false
 meta-title: "Block-based blind embedding and correlation coefficient detection"
 meta-description: "Block-based blind embedding and correlation coefficient detection."
 meta-keywords: "watermarking, robust, block-based, blind"
-lang-suffix: "-es"
+lang-suffix: "-en"
 ---
 
 
@@ -29,11 +29,11 @@ lang-suffix: "-es"
 ## Embedding
 
 
-This method is based on **System 3** presented in [ [1](#referencias) ]. 
-It is a method based on [E-Blind](/stego/lab/watermarking-methods/e-blind-es/), 
+This method is based on **System 3** presented in [ [1](#references) ]. 
+It is a method based on [E-Blind](/stego/lab/watermarking-methods/e-blind-en/), 
 although in this case the image is grouped into blocks and then the mark is 
-distributed among them. Doing so makes the system more robust. 
-The method works exactly the same as [E-Blind](/stego/lab/watermarking-methods/e-blind-es/).
+distributed among them. Doing so makes the system more **robust**. 
+The method works exactly the same as [E-Blind](/stego/lab/watermarking-methods/e-blind-en/).
 
 The code for the embedding method is available at the following link: 
 <a href='https://github.com/daniellerch/stegolab/tree/master/watermarking/E_BLK_BLIND.py'>E_BLK_BLIND</a>.
@@ -48,7 +48,7 @@ $ python3 E_BLK_BLIND.py image.png passw123 1 marked.png
 <br>
 ## Detection
 
-Unlike the [E-Blind](/stego/lab/watermarking-methods/e-blind-es/) method, where 
+Unlike the [E-Blind](/stego/lab/watermarking-methods/e-blind-en/) method, where 
 we perform the detection using linear correlation, in this case we use the 
 **correlation coefficient** between the marked image and the mark. 
 We will need the password to generate the same mark that has been embedded in 

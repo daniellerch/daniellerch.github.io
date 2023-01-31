@@ -27,14 +27,17 @@ lang-suffix: "-en"
 <br>
 ## Embedding
 
-This method is based on **System 4** presented in [ [1](#referencias) ]. 
-It is a method based on [E-Blind](/stego/lab/watermarking-methods/e-blind-es/), 
+This method is based on **System 4** presented in [ [1](#references) ]. 
+It is a method based on [E-Blind](/stego/lab/watermarking-methods/e-blind-en/), 
 although in this case 8 different marks are embedded. This allows 8 bits to be 
 embedded, since each mark can be inserted by adding (1) or subtracting (0).
 
 As more and more marks are inserted, in order to embed more bits of information, 
 the reliability decreases. Therefore, we cannot use this methodology to embed 
 large amounts of information.
+
+It is a **robust** method, capable of resisting some alterations of 
+the image.
 
 The code of the embedding method is available at the following link:
 <a href='https://github.com/daniellerch/stegolab/tree/master/watermarking/E_SIMPLE_8.py'>E_SIMPLE_8</a>.
@@ -74,7 +77,7 @@ msg: 10101010
 
 
 <br>
-## Referencias
+## References
 
 
 1. I. J. Cox, M. L. Miller, J. A. Bloom, J. Fridrich y T. Kalker (2008). 

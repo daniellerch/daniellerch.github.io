@@ -84,23 +84,15 @@ lang-suffix: "-es"
 ## Watermarking
 <hr style='border:1px solid #ccc'>
 
+- **[E-Blind](/stego/lab/watermarking-methods/e-blind-es)**: Incrustación a ciegas y detección mediante Correlación Lineal. Este método simplemente añade un patron a la imagen. Método etiquetado como *System 1* en el libro [Digital Watermarking and Steganography](https://www.elsevier.com/books/digital-watermarking-and-steganography/cox/978-0-12-372585-1)  de I. J. Cox, M. L. Miller, J. A. Bloom, J. Fridrich y T. Kalker.
 
-- **[Ejemplos de Watermarking](https://github.com/daniellerch/stegolab/tree/master/watermarking)**: Implementación libre de algunos esquemas de *watermarking* propuestos en el libro [Digital Watermarking and Steganography](https://www.elsevier.com/books/digital-watermarking-and-steganography/cox/978-0-12-372585-1)  de I. J. Cox, M. L. Miller, J. A. Bloom, J. Fridrich y T. Kalker.
+- **[E-Fixed-LC](/stego/lab/watermarking-methods/e-fixed-lc-es)**: Incrustación informada con correlación lineal fija y detección mediante correlación lineal. Este método ajusta la fuerza de la marca para garantizar una correlación lineal específica. Método etiquetado como *System 2* en el libro [Digital Watermarking and Steganography](https://www.elsevier.com/books/digital-watermarking-and-steganography/cox/978-0-12-372585-1)  de I. J. Cox, M. L. Miller, J. A. Bloom, J. Fridrich y T. Kalker.
 
-    - **System 1: E_BLIND/L_LC**<br>Incrustación a ciegas ([E_BLIND](https://github.com/daniellerch/stegolab/tree/master/watermarking/E_BLIND.py)) y detección mediante Correlación Lineal ([D_LC](https://github.com/daniellerch/stegolab/tree/master/watermarking/D_LC.py)). E_BLIND simplemente añade un patron a la imagen.
+- **[E-blk-Blind](/stego/lab/watermarking-methods/e-blk-blind-es)**: Incrustación a ciegas basada en bloques y detección mediante coeficiente de correlación. Método etiquetado como *System 3* en el libro [Digital Watermarking and Steganography](https://www.elsevier.com/books/digital-watermarking-and-steganography/cox/978-0-12-372585-1)  de I. J. Cox, M. L. Miller, J. A. Bloom, J. Fridrich y T. Kalker.
 
-    - **System 2: E_FIXED_LC/L_LC**<br>
-      Incrustación por Correlación Lineal fija ([E_FIXED_LC](https://github.com/daniellerch/stegolab/tree/master/watermarking/E_FIXED_LC.py)) y detección mediante Correlación Lineal ([D_LC](https://github.com/daniellerch/stegolab/tree/master/watermarking/D_LC.py)). E_FIXED_LC ajusta la fuerza de la marca para asegurar que la imagen marcada tiene una correlación lineal específica (incrustación informada). 
+- **[E-Simple-8](/stego/lab/watermarking-methods/e-simple-8-es)**: Incrustación a ciegas de 8 bits y detector de 8 bits. Método etiquetado como *System 4* en el libro [Digital Watermarking and Steganography](https://www.elsevier.com/books/digital-watermarking-and-steganography/cox/978-0-12-372585-1)  de I. J. Cox, M. L. Miller, J. A. Bloom, J. Fridrich y T. Kalker.
 
-    - **System 3: E_BLK_BLIND/D_BLK_CC**<br>
-      Incrustación a ciegas basda en bloques ([E_BLK_BLIND](https://github.com/daniellerch/stegolab/tree/master/watermarking/E_BLK_BLIND.py)) y detección mediante Coeficiente de Correlación ([D_BLK_CC](https://github.com/daniellerch/stegolab/tree/master/watermarking/D_BLK_CC.py)). E_BLK_BLIND añade un patron en la media de los bloques.
-
-
-    - **System 4: E_SIMPLE_8/D_SIMPLE_8**<br>
-      Incrustación a ciegas de 8 bits ([E_SIMPLE_8](https://github.com/daniellerch/stegolab/tree/master/watermarking/E_SIMPLE_8.py)) y detector de 8 bits ([D_SIMPLE_8](https://github.com/daniellerch/stegolab/tree/master/watermarking/D_SIMPLE_8.py)). E_SIMPLE_8 es una modificación de E_BLIND para incrustar 8 bits.
-
-    - **System 5: E_TRELLIS_8/D_TRELLIS_8**<br>
-      Incrustación usando códigos de Trellis ([E_TRELLIS_8](https://github.com/daniellerch/stegolab/tree/master/watermarking/E_TRELLIS_8.py)) y detección mediante el algoritmo de Viterbi ([D_TRELLIS_8](https://github.com/daniellerch/stegolab/tree/master/watermarking/D_TRELLIS_8.py)). E_TRELLIS_8 incrusta 8 bits usando códigos de Trellis.
+- **[E-Trellis-8](/stego/lab/watermarking-methods/e-trellis-8-es)**: Incrustación usando códigos de Trellis y detección mediante el algoritmo de Viterbi. Método etiquetado como *System 5* en el libro [Digital Watermarking and Steganography](https://www.elsevier.com/books/digital-watermarking-and-steganography/cox/978-0-12-372585-1)  de I. J. Cox, M. L. Miller, J. A. Bloom, J. Fridrich y T. Kalker.
 
 
 

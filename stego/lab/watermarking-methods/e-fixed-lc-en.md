@@ -6,7 +6,7 @@ noindex: false
 meta-title: "Fixed Linear Correlation Embedder and Linear Correlation Detection"
 meta-description: "Fixed Linear Correlation Embedder and Linear Correlation Detection."
 meta-keywords: "watermarking, robust, informed embedding"
-lang-suffix: "-es"
+lang-suffix: "-en"
 ---
 
 
@@ -29,9 +29,9 @@ lang-suffix: "-es"
 <br>
 ## Embedding
 
-This method is based on **System 2** presented in [ [1](#referencias) ]. 
+This method is based on **System 2** presented in [ [1](#references) ]. 
 It is a method that adds a pattern to the image, but unlike the 
-[E-Blind](/stego/lab/watermarking-methods/e-blind-es/) method, in this case the 
+[E-Blind](/stego/lab/watermarking-methods/e-blind-en/) method, in this case the 
 image is analyzed before embedding the mark in order to keep the linear 
 correlation value fixed. This type of insertion is known as informed embedding.
 
@@ -95,7 +95,7 @@ watermark, m=1
 ```
 
 <br>
-## Referencias
+## References
 
 
 1. I. J. Cox, M. L. Miller, J. A. Bloom, J. Fridrich y T. Kalker (2008). 
