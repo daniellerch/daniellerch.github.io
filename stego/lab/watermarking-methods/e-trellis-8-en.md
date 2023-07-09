@@ -56,8 +56,8 @@ The formula used for the linear correlation is as follows:
 
 $Z_{lc} = \frac{1}{N} \bar{c} · \bar{w_r} = \frac{1}{N}\sum_{xy}c(x,y) w_r(x,y)$
 
-The [Viterbi](https://en.wikipedia.org/wiki/Viterbi_algorithm).
-Viterbi algorithm is used for message decoding.
+The [Viterbi](https://en.wikipedia.org/wiki/Viterbi_algorithm) 
+algorithm is used for message decoding.
 
 
 The code of the detection method is available at the following link: 
