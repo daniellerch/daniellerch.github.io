@@ -57,7 +57,7 @@ in other articles:
 
 - [Practical attack on Steghide](/stego/aletheia/steghide-attack-en).
 - [Practical attack on F5](/stego/aletheia/f5-attack-en).
-- [Practical attack on LSB replacement: OpenStego and OpenPuff](/stego/aletheia/lsb-attack-en).
+- [Practical attack on LSB replacement: OpenStego and OpenPuff](/stego/aletheia/lsbr-attack-en).
 
 
 Since steganography techniques tend to be very different depending on whether 
@@ -179,7 +179,7 @@ in other articles:
 
 - [Practical attack on Steghide](/stego/aletheia/steghide-attack-en).
 - [Practical attack on F5](/stego/aletheia/f5-attack-en).
-- [Practical attack on LSB replacement: OpenStego and OpenPuff](/stego/aletheia/lsb-attack-en).
+- [Practical attack on LSB replacement: OpenStego and OpenPuff](/stego/aletheia/lsbr-attack-en).
 
 Let's see an example in which we detect different steganography schemes:
 
