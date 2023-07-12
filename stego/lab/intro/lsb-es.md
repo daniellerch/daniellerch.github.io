@@ -375,7 +375,7 @@ Existen toda una familia de ataques dedicados a explotar esta anomalía
 estadística introducida por el LSB *replacement*. Estos ataques se conocen como
 **ataques estructurales** y pueden ser explotados con herramientas de 
 estegoanálisis como [Aletheia](https://github.com/daniellerch/aletheia). 
-En [Ataque práctico a esquemas LSB-R](/stego/aletheia/lsbr-attack-es) 
+En [Ataque práctico a esquemas LSB replacement](/stego/aletheia/lsbr-attack-es) 
 se explica como usar esta herramienta para detectar este tipo de esquemas de 
 esteganografía, usados por muchas herramientas populares como 
 [OpenStego](https://www.openstego.com/) y 

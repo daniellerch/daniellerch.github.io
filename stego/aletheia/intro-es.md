@@ -215,7 +215,7 @@ siguientes artículos:
 ## Ataques estructurales
 
 Los ataques estrucucturales estan diseñados para detectar algoritmos que 
-usan la técnica de sustitución del bit menos significativo (LSB-R o LSB 
+usan la técnica de sustitución del bit menos significativo (LSB 
 *replacement*). Esta técnica es usada por herramientas como 
 [OpenStego](https://www.openstego.com/) o
 [OpenPuff](https://embeddedsw.net/OpenPuff_Steganography_Home.html), entre muchas otras.
@@ -311,7 +311,7 @@ Corresponde a la sección:
 ```
 
 En el siguiente ejemplo ocultamos mensajes aleatorios usando la 
-ténica de esteganografía LSB-M o LSB *matching*. El tamaño de 
+ténica de esteganografía LSB *matching*. El tamaño de 
 estos mensajes es de, aproximadamente, el 20% del número total 
 de píxeles.
 

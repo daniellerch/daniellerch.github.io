@@ -39,7 +39,7 @@ lang-suffix: "-es"
 - [Cómo identificar el esquema de esteganografía.](/stego/aletheia/identify-es)
 - [Ataque práctico a Steghide.](/stego/aletheia/steghide-attack-es)
 - [Ataque práctico a F5.](/stego/aletheia/f5-attack-es)
-- [Ataque práctico a esquemas LSB-R: OpenStego y OpenPuff.](/stego/aletheia/lsbr-attack-es)
+- [Ataque práctico a esquemas LSB replacement: OpenStego y OpenPuff.](/stego/aletheia/lsbr-attack-es)
 
 
 <div style='margin-top:40px'></div>

@@ -1,15 +1,15 @@
 ---
 layout: page
-title: Ataque práctico a esquemas LSB-R
+title: Ataque práctico a esquemas LSB replacement
 subtitle: "OpenStego y OpenPuff" 
 noindex: false
-meta-title: "Ataque práctico a LSB-R: OpenStego y OpenPuff"
+meta-title: "Ataque práctico a LSB replacement: OpenStego y OpenPuff"
 meta-description: "Artículo sobre cómo detectar herramientas que usan la técnica LSB replacement en imágenes de tipo bitmap, usando la herramienta Aletheia"
 meta-keywords: "esteganografía, estegoanálisis, imágenes"
 lang-suffix: "-es"
 ---
 
-> En este artículo vamos a ver cómo detectar herramientas que usan la técnica LSB-R o 
+> En este artículo vamos a ver cómo detectar herramientas que usan de 
 > LSB *replacement* en imágenes de tipo *bitmap*. Para ello, usaremos la herramienta 
 > de estegoanálisis [Aletheia](https://github.com/daniellerch/aletheia).
 
@@ -25,17 +25,17 @@ lang-suffix: "-es"
 
 <div class='menu' style='margin-top:50px'></div>
 
-1. [Cómo funciona la técnica del LSB-R](#cómo-funciona-la-técnica-del-lsb-r)
+1. [Cómo funciona la técnica del LSB replacement](#cómo-funciona-la-técnica-del-lsb-replacement)
 2. [OpenStego](#openstego)
 3. [OpenPuff](#openstego)
 4. [Exploración inicial](#exploración-inicial)
 5. [Estegoanálisis estructural](#estegoanálisis-estructural)
 6. [Ataque de fuerza bruta a OpenStego](#ataque-de-fuerza-bruta-a-openstego)
-7. [LSB-*M*: una alternativa sencilla a LSB-R](#lsb-m-una-alternativa-sencilla-a-lsb-r)
+7. [LSB *matching*: una alternativa sencilla al LSB replacement](#lsb-matching-una-alternativa-sencilla-al-lsb-replacement)
 
 
 <br>
-## Cómo funciona la técnica del LSB-R
+## Cómo funciona la técnica del LSB *replacement*
 
 En imágenes representadas como mapas de bits, es habitual que cada píxel sea 
 representado mediante tres bytes: el byte **R**, que nos indica la cantidad de 
@@ -80,10 +80,10 @@ ataques que la explotan. Los primeros de estos ataques son de finales los 90,
 aunque evolucionaron significativamente en años posteriores. 
 Actualmente, este tipo de ataques, conocidos como 
 **ataques estructurales**, son suficientemente precisos como para considerar
-al LSB-R una técnica esteganográfica a evitar.
+al LSB *replacement* una técnica esteganográfica a evitar.
 
 Por suerte o por desgracia, todavía son muchas las herramientas que implementan
-LSB-R. Por Ejemplo 
+LSB *replacement*. Por Ejemplo 
 [OpenStego](https://www.openstego.com/) y 
 [OpenPuff](https://embeddedsw.net/OpenPuff_Steganography_Home.html),
 que vemos en este artículo.
@@ -184,9 +184,9 @@ Obtenemos la siguiente imagen *stego*:
 
 
 
-Para saber qué ataques podemos realizar es necesario conocer que técnica de inserción de información usa el programa. OpenStego usa *LSB replacement* por lo que podremos usar todas las técnicas que implementa Aletheia para atacar *LSB replacement*.
+Para saber qué ataques podemos realizar es necesario conocer que técnica de inserción de información usa el programa. OpenStego usa LSB *replacement* por lo que podremos usar todas las técnicas que implementa Aletheia para atacar LSB *replacement*.
 
-Podemos ver que, efectivamente, OpenStego usa *LSB replacement* comparando una imagen original con una imagen con un mensaje oculto. Aletheia nos ofrece el comando "print-diffs" que nos muestra las diferencias entre los píxeles. Con este comando podemos ver qué ocurre al ocultar un mensaje.
+Podemos ver que, efectivamente, OpenStego usa LSB *replacement* comparando una imagen original con una imagen con un mensaje oculto. Aletheia nos ofrece el comando "print-diffs" que nos muestra las diferencias entre los píxeles. Con este comando podemos ver qué ocurre al ocultar un mensaje.
 
 
 
@@ -207,7 +207,7 @@ Channel 1:
 ...
 ```
 
-Vemos que los píxeles suelen modificarse en una unidad. Por ejemplo, el valor el original del primer píxel modificado es 98, que se modifica pasando a ser 99, una operación de +1. El tercero, es un píxel con valor 155 que pasa a ser 154, una operación de -1. El detalle importante en el que hay que fijarse es que las operaciones no son +1 o -1 indiscriminadamente (lo que nos indicaría que se trata de *LSB matching*), sino que los píxeles impares siempre se modifican con -1 y los pares con +1. Esto nos indica que se está usando *LSB replacement*, pues es es precisamente, el efecto de reemplazar el bit menos significativo de cada píxel.
+Vemos que los píxeles suelen modificarse en una unidad. Por ejemplo, el valor el original del primer píxel modificado es 98, que se modifica pasando a ser 99, una operación de +1. El tercero, es un píxel con valor 155 que pasa a ser 154, una operación de -1. El detalle importante en el que hay que fijarse es que las operaciones no son +1 o -1 indiscriminadamente (lo que nos indicaría que se trata de LSB *matching*), sino que los píxeles impares siempre se modifican con -1 y los pares con +1. Esto nos indica que se está usando LSB *replacement*, pues es es precisamente, el efecto de reemplazar el bit menos significativo de cada píxel.
 
 
 Si ejecutamos el mismo comando con las imágenes de OpenPuff, obtenemos resultados similares:
@@ -232,7 +232,7 @@ Channel 1:
 <br>
 ## Estegoanálisis estructural
 
-Puesto que sabemos que se está usando *LSB replacement*, podemos usar todas los ataques que implementa Aletheia para este tipo de esteganografía. Aquí Usaremos dos ataques: El ataque SPA (Sample Pairs Analysis) y el ataque WS (Weighted Stego), dos ataques eficientes y precisos. En todos los casos, como referencia, realizaremos primero un ataque sobre la imagen original y después un ataque sobre la imagen con el mensaje oculto.
+Puesto que sabemos que se está usando LSB *replacement*, podemos usar todas los ataques que implementa Aletheia para este tipo de esteganografía. Aquí Usaremos dos ataques: El ataque SPA (Sample Pairs Analysis) y el ataque WS (Weighted Stego), dos ataques eficientes y precisos. En todos los casos, como referencia, realizaremos primero un ataque sobre la imagen original y después un ataque sobre la imagen con el mensaje oculto.
 
 ### El ataque SPA (Sample Pairs Analysis)
 
@@ -317,18 +317,17 @@ Password found: 123456
 ```
 
 <br>
-## LSB-M: una alternativa sencilla a LSB-R
+## LSB *matching*: una alternativa sencilla a LSB replacement
 
 Resulta curioso que todavía se desarrollen herramientas de esteganografía que
-usen LSB-R, cuando existen ataques tan potentes como los que se han mostrado.
+usen LSB replacement, cuando existen ataques tan potentes como los que se han mostrado.
 Principalmente, teniendo en cuenta que existe una alternativa tan sencilla
-como el propio LSB-R que evita todos estos ataques. Se tratat del LSB-M o 
-LSB *matching*. 
+como el propio LSB replacement que evita todos estos ataques. Se tratat del LSB *matching*. 
 
 En lugar de sustutir aquellos LSBs que no coinciden con los bits del mensaje
 que queremos ocultar, lo que tenemos que hacer es sumar o restar uno a esos
 valores. El efecto sobre el LSB es exactamente el mismo, pero esta forma de
-ocultar datos no producte las anomalías estadísticas que hacen que LSB-R sea 
+ocultar datos no producte las anomalías estadísticas que hacen que LSB replacement sea 
 tan detectable. 
 
 
@@ -349,9 +348,9 @@ hacerlo sumando o restando uno aleatoriamente, cuando sea necesario:
 | 01010100     | 01111101          | 01111101          |
 
 
-Como se puede ver en el ejemplo, la diferencia fundamental entre LSB-R y LSB-M
+Como se puede ver en el ejemplo, la diferencia fundamental entre LSB replacement y LSB *matching*
 es que el segundo produce acarreo mientras que el primero no. De hecho, con 
-LSB-R nunca se le suma uno a un valor impar y nunca se le resta uno a un valor
+LSB *replacement* nunca se le suma uno a un valor impar y nunca se le resta uno a un valor
 par, lo que produce la anomalía que explotan los métodos de detección 
 estructurales.
 

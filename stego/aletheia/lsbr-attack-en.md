@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Practical attack on LSB-R
+title: Practical attack on LSB replacement
 subtitle: "OpenStego and OpenPuff" 
 noindex: false
 meta-title: "Practical attack on LSB replacement: OpenStego and OpenPuff"
@@ -9,7 +9,7 @@ meta-keywords: "steganography, steganalysis, images"
 lang-suffix: "-en"
 ---
 
-> In this article we are going to talk about how to detect tools that use the LSB-R 
+> In this article we are going to talk about how to detect tools that use the LSB replacement
 or LSB replacement technique in bitmap images. To do this, we are going to use the 
 steganalysis tool [Aletheia](https://github.com/daniellerch/aletheia).
 
@@ -25,18 +25,18 @@ steganalysis tool [Aletheia](https://github.com/daniellerch/aletheia).
 
 <div class='menu' style='margin-top:50px'></div>
 
-1. [How LSB-R works](#how-lsb-r-works)
+1. [How LSB replacement works](#how-lsb-replacement-works)
 2. [OpenStego](#openstego)
 3. [OpenPuff](#openstego)
 4. [Initial exploration](#initial-exploration)
 5. [Structural steganalysis](#structural-steganalysis)
 6. [Brute force attack on OpenStego](#brute-force-attack-on-openstego)
-7. [LSB-*M*: a simple alternative to LSB-R](#lsb-m-a-simple-alternative-to-lsb-r)
+7. [LSB matching: a simple alternative to LSB replacement](#lsb-matching-a-simple-alternative-to-lsb-replacement)
 
 
 
 <br>
-## How LSB-R works
+## How LSB replacement works
 
 In images represented as bitmaps, it is common to represent each pixel by 
 three bytes: the **R** byte, which indicates the amount of red, the **G** 
@@ -77,10 +77,10 @@ to replace the value of the LSB with the value of the message:
 Unfortunately, this type of insertion is not very secure and there are many attacks 
 that exploit it. The first of these attacks are from the late 1990s, although they 
 evolved significantly in later years. Currently, these types of attacks, known 
-as **structural attacks**, are good enough to consider to LSB-R a steganographic 
+as **structural attacks**, are good enough to consider to LSB replacement a steganographic 
 technique to avoid.
 
-Curiously, there are still many tools that implement LSB-R. For Example 
+Curiously, there are still many tools that implement LSB replacement. For Example 
 [OpenStego](https://www.openstego.com/) and
 [OpenPuff](https://embeddedsw.net/OpenPuff_Steganography_Home.html), 
 which we analyze in this article.
@@ -306,12 +306,12 @@ Password found: 123456
 ```
 
 <br>
-## LSB-M: a simple alternative to LSB-R
+## LSB matching: a simple alternative to LSB replacement
 
-It is curious that steganography tools that use LSB-R are still being developed, when there are attacks as powerful as those that have been shown.
-Mainly, taking into account that there is an alternative as simple as the LSB-R itself that avoids all these attacks. This is the LSB-M or LSB matching.
+It is curious that steganography tools that use LSB replacement are still being developed, when there are attacks as powerful as those that have been shown.
+Mainly, taking into account that there is an alternative as simple as the LSB replacement itself that avoids all these attacks. This is the LSB matching.
 
-Instead of substituting those LSBs that do not match the bits of the message that we want to hide, what we have to do is add or subtract one from those values. The effect on LSB is exactly the same, but this way of hiding data does not produce the statistical anomalies that make LSB-R so detectable.
+Instead of substituting those LSBs that do not match the bits of the message that we want to hide, what we have to do is add or subtract one from those values. The effect on LSB is exactly the same, but this way of hiding data does not produce the statistical anomalies that make LSB replacement so detectable.
 
 Returning to the example with which the article was started, if we have the following values in binary:
 
@@ -328,7 +328,7 @@ and we want to hide the byte **01000001** corresponding to the letter 'A', we ca
 | 10000000     | 0110111**0** (-1) | 00101010          | 
 | 01010100     | 01111101          | 01111101          |
 
-As can be seen from the example, the fundamental difference between LSB-R and LSB-M is that the latter produces carry while the former does not. In fact, LSB-R never adds one to an odd value and never subtracts one from an even value, producing the anomaly exploited by structural detection methods.
+As can be seen from the example, the fundamental difference between LSB replacement and LSB matching is that the latter produces carry while the former does not. In fact, LSB replacement never adds one to an odd value and never subtracts one from an even value, producing the anomaly exploited by structural detection methods.
 
 
 

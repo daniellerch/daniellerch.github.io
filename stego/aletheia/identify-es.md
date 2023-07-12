@@ -58,7 +58,7 @@ que se muestra en otros artículos:
 
 - [Ataque práctico a Steghide](/stego/aletheia/steghide-attack-es).
 - [Ataque práctico a F5](/stego/aletheia/f5-attack-es).
-- [Ataque práctico a esquemas LSB-R: OpenStego y OpenPuff](/stego/aletheia/lsb-attack-es).
+- [Ataque práctico a esquemas LSB replacement: OpenStego y OpenPuff](/stego/aletheia/lsb-attack-es).
 
 
 Dado que las técnicas de esteganografía suelen ser muy diferentes en función
@@ -143,7 +143,7 @@ puesto que otros modelos lo detectan con bastante fiabilidad.
 ## Mapas de bits
 
 En mapas de bits, existe la posibilidad de que se haya usado la técnica
-LSB-R o LSB *replacement*. Para esta técnica existe una familia de 
+de LSB *replacement*. Para esta técnica existe una familia de 
 ataques muy fiables, conocidos como ataques estructurales. Por ello, lo
 más apropiado es empezar con un par de ataques estructurales.
 
@@ -178,7 +178,7 @@ CSM, que describimos con más detalle en otros artículos:
 
 - [Ataque práctico a Steghide](/stego/aletheia/steghide-attack-es).
 - [Ataque práctico a F5](/stego/aletheia/f5-attack-es).
-- [Ataque práctico a esquemas LSB-R: OpenStego y OpenPuff](/stego/aletheia/lsb-attack-es).
+- [Ataque práctico a esquemas LSB replacement: OpenStego y OpenPuff](/stego/aletheia/lsb-attack-es).
 
 Veamos un ejemplo en el que detectamos diferentes esquemas de esteganografía:
 

@@ -142,7 +142,7 @@ method is used, since other models detect it quite reliably.
 <br>
 ## Bitmaps
 
-In bitmaps, there is a possibility that the LSB-R or LSB replacement technique 
+In bitmaps, there is a possibility that the LSB replacement technique 
 was used. For this technique there is a family of very reliable attacks, known as 
 structural attacks. Therefore, it is a good idea to start with a couple of 
 structural attacks.

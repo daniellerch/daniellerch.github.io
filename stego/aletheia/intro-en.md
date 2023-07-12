@@ -215,7 +215,7 @@ in the following articles:
 ## Structural attacks
 
 Structural attacks are designed to detect algorithms that use the least significant 
-bit replacement technique (LSB-R or LSB *replacement*). This technique is used by 
+bit replacement technique (LSB replacement). This technique is used by 
 tools such as [OpenStego](https://www.openstego.com/) or 
 [OpenPuff](https://embeddedsw.net/OpenPuff_Steganography_Home.html), among many others.
 
@@ -311,7 +311,7 @@ It belongs to the section:
 ```
 
 In the following example we hide random messages using the
-LSB-M or LSB *matching* steganography technique. The size of
+LSB matching steganography technique. The size of
 these messages is approximately 20% of the total number
 of pixels.
 
@@ -322,7 +322,7 @@ of pixels.
 This command will hide a random message in the images into **cover_image_dir** and 
 save them into the **stego_image_dir** folder.
 
-You can also specify the *payload* in a range of values.
+You can also specify the payload in a range of values.
 For example, to hide messages of a random size between 5% and 40% of the image 
 size, we can run the following command:
 
