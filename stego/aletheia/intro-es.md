@@ -486,12 +486,6 @@ Esto resulta muy útil cuando analizamos una herramienta de esteganografía y no
 exactamente lo que hace. 
 
 
-Se puede ver cómo se usan estos dos comandos en los siguientes artículos:
-
-- [Ataque práctico a Steghide](/stego/aletheia/steghide-attack-es).
-- [Ataque práctico a F5](/stego/aletheia/f5-attack-es).
-
-
 El lector puede explorar los comandos restantes, pues son sencillos y siguen la
 dinámica habitual de Aletheia.
 

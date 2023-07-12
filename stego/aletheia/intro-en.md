@@ -475,13 +475,6 @@ a hidden message. This is very useful when we are analyzing a
 steganography tool and we do not know exactly what it does.
 
 
-You can see how these two commands are used in the following articles:
-
-
-- [Practical attack on Steghide](/stego/aletheia/steghide-attack-en).
-- [Practical attack on F5](/stego/aletheia/f5-attack-en).
-
-
 The reader can explore the remaining commands, as they are simple and work 
 as usual.
 
