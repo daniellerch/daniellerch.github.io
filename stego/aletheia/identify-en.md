@@ -55,8 +55,9 @@ steganography methods are most likely to be used. Normally, it will be
 necessary to continue with a more in-depth analysis, such as that shown 
 in other articles:
 
-- [Practical attack on Steghide](/stego/aletheia/steghide-attack-es).
-- [Practical attack on F5](/stego/aletheia/f5-attack-es).
+- [Practical attack on Steghide](/stego/aletheia/steghide-attack-en).
+- [Practical attack on F5](/stego/aletheia/f5-attack-en).
+- [Practical attack on LSB replacement: OpenStego and OpenPuff](/stego/aletheia/lsb-attack-en).
 
 
 Since steganography techniques tend to be very different depending on whether 
@@ -178,6 +179,7 @@ in other articles:
 
 - [Practical attack on Steghide](/stego/aletheia/steghide-attack-en).
 - [Practical attack on F5](/stego/aletheia/f5-attack-en).
+- [Practical attack on LSB replacement: OpenStego and OpenPuff](/stego/aletheia/lsb-attack-en).
 
 Let's see an example in which we detect different steganography schemes:
 

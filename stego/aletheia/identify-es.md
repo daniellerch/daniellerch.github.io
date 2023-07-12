@@ -58,6 +58,7 @@ que se muestra en otros artículos:
 
 - [Ataque práctico a Steghide](/stego/aletheia/steghide-attack-es).
 - [Ataque práctico a F5](/stego/aletheia/f5-attack-es).
+- [Ataque práctico a esquemas LSB-R: OpenStego y OpenPuff](/stego/aletheia/lsb-attack-es).
 
 
 Dado que las técnicas de esteganografía suelen ser muy diferentes en función
@@ -177,6 +178,7 @@ CSM, que describimos con más detalle en otros artículos:
 
 - [Ataque práctico a Steghide](/stego/aletheia/steghide-attack-es).
 - [Ataque práctico a F5](/stego/aletheia/f5-attack-es).
+- [Ataque práctico a esquemas LSB-R: OpenStego y OpenPuff](/stego/aletheia/lsb-attack-es).
 
 Veamos un ejemplo en el que detectamos diferentes esquemas de esteganografía:
 
