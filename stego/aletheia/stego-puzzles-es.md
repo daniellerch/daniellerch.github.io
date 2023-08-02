@@ -33,6 +33,7 @@ lang-suffix: "-es"
 3. [Información oculta en el canal alfa](#información-oculta-en-el-canal-alfa)
 4. [Técnicas EOF](#tecnicas-eof)
 5. [Metadatos](#metadatos)
+6. [Conclusión](#conclusión)
 
 
 <br>
@@ -68,7 +69,7 @@ el contenido oculto y revelar el mensaje original.
 
 
 Esta forma de esteganografía representa una interesante y creativa manera de 
-ocultar información a simple vista y es bastante comun en stego-puzzles o 
+ocultar información a simple vista y es bastante común en stego-puzzles o 
 retos de hacking.
 
 
@@ -80,7 +81,7 @@ A simple vista no podemos percibir el mensaje oculto, puesto que el texto
 se ha dibujado usando un color con una diferencia de un solo píxel con el
 color original.
 
-Está técnica no resulta difícil de detectar. Se puede hacer, por ejemplo, 
+Esta técnica no resulta difícil de detectar. Se puede hacer, por ejemplo, 
 usando un filtro que resalte los bordes, ideal para nuestro caso, dado que 
 queremos buscar cambios en el color. El siguiente código en Python aplica un 
 filtro de paso alto mediante 
@@ -102,7 +103,7 @@ A continuación podemos ver el resultado de aplicar el filtro:
 <br>
 ## Información oculta en el canal alfa
 
-Una formas ingeniosa de esteganografía en imágenes consisten en la ocultación 
+Una forma ingeniosa de esteganografía en imágenes consiste en la ocultación 
 de datos en el canal alpha de una imagen. El canal alpha, también conocido como 
 canal de transparencia, es un componente que se encuentra en las imágenes con 
 soporte para transparencia, como los formatos PNG. Este canal almacena la 
@@ -124,7 +125,7 @@ La siguiente imagen de Homer tiene el fondo transparente.
 <img class='image-center' src="{{ site.baseurl }}/stego/aletheia/resources/homer.png"/>
 
 Si leemos, usando Python, el píxel de la esquina superior izquierda, podemos 
-ver como se estructura la información relativa al valor del píxel:
+ver cómo se estructura la información relativa al valor del píxel:
 
 
 ```python
@@ -140,13 +141,13 @@ Que al ejecutarlo, nos da la siguiente salida:
 [0, 0, 0, 0]
 ```
 
-Cada píxel se representa en una lista de Python con cuatro valores RGBA: 
+Cada píxel se representa en una lista de Python con cuatro valores (RGBA): 
 cantidad de color rojo, cantidad de verde, cantidad de azul y nivel de 
 transparencia, como hemos comentado anteriormente.
 
 El valor cero del cuarto byte nos indica que el píxel es totalmente 
 transparente, por lo que el valor de los tres bytes que especifican el color, 
-se ignoran. Esto nos ofrece pues, una forma sencilla de ocultar información. 
+se ignoran. Esto nos ofrece, pues, una forma sencilla de ocultar información. 
 Podemos escribir lo que queramos en los primeros tres bytes de cada píxel, 
 siempre que el cuarto esté a cero.
 
@@ -198,7 +199,7 @@ El resultado después de modificar la opacidad es el siguiente:
 <img class='image-center' src="{{ site.baseurl }}/stego/aletheia/resources/homer_stego_broken.png"/>
 
 
-Com podemos ver, el fondo de la imagen es negro. Pero existe una sección al 
+Como podemos ver, el fondo de la imagen es negro. Pero existe una sección al 
 principio en la que los píxeles tienen colores extraños. Esta sección 
 corresponde a los datos que hemos ocultado. En este caso, un atacante solo
 tendría que leerlos, aunque esta técnica podría haberse combinado con un 
@@ -214,7 +215,7 @@ o video. Estas técnicas aprovechan el campo conocido como "EOF" o "End-of-File"
 presente en muchos formatos, que señala el final del archivo.
 
 Es habitual que los programas que usan estos formatos de archivo no lean más
-alla del campo "EOF", puesto que se supone que ya no hay más datos. Esto 
+allá del campo "EOF", puesto que se supone que ya no hay más datos. Esto 
 permite escribir datos a continuación que, al no ser leídos por dicho software,
 no alterarán su comportamiento.
 
@@ -223,9 +224,9 @@ Para extraer la información oculta, solo es necesario leer la información que
 hay después del campo "EOF" y guardarla en un archivo.
 
 Es importante destacar que aunque las técnicas EOF de Esteganografía son 
-relativamente sencillas, también son menos seguras que la mayoría de otros
-métodos. Si alguien sospecha la presencia de información oculta, solo tiene 
-que mirar si hay información después del campo "EOF".
+relativamente sencillas, también son poco seguras. Si alguien sospecha de la 
+presencia de información oculta, solo tiene que mirar si hay información 
+después del campo "EOF".
 
 
 Uno de los formatos de fichero que permite ocultar información al final, sin 
@@ -270,7 +271,7 @@ Hello World!
 ```
 
 Este método puede ser usado en diferentes formatos de ficheros (no tienen
-necesariamiente imágenes). Algunos ejemplos populares, además del
+necesariamente imágenes). Algunos ejemplos populares, además del
 GIF, son los formatos de archivo PNG o JPEG, entre otros.
 
 
@@ -285,7 +286,7 @@ Data extracted from groot_stego.gif to data.out (application/zip)
 
 ```
 
-Como podemos ver, Aletheia no solo extrae la información, si no que nos
+Como podemos ver, Aletheia no solo extrae la información, sino que nos
 indica el tipo de archivo que se ha extraído. Esto nos permitirá identificar
 rápidamente si se trata de un ZIP, una imagen, un audio, un vídeo, etc.
 
@@ -295,13 +296,52 @@ Aletheia puede extraer archivos de imágenes GIF, JPEG y PNG.
 <br>
 ## Metadatos
 
-xxx
+Los metadatos son un conjunto de datos que describen y dan información sobre 
+otros datos. En el contexto de las imágenes, los metadatos ofrecen información 
+sobre la estructura, el origen y las características técnicas de una imagen, 
+sin alterar la imagen en sí. Esto puede incluir detalles como la marca y el 
+modelo de la cámara, la fecha y hora en que se tomó la fotografía, la 
+ubicación geográfica, la resolución y la profundidad de color, entre otros. 
 
-xxx
+Estos datos auxiliares han encontrado múltiples aplicaciones en la organización, 
+catalogación y análisis de imágenes. Sin embargo, también pueden ser usados para
+ocultar información. Aunque en este aspecto, es necesario mencionar que no es 
+un método muy seguro, puesto que cualquiera que consulte los metadatos verá
+la información oculta.
 
-xxx
+Existen muchas formas de escribir información en los metadatos de la imagen.
+Una forma sencilla consiste en usar la herramienta "exiftool":
+
+```bash
+exiftool -artist="Hello World" image.jpg
+```
+
+Podemos leer los metadatos usando la herramienta Aletheia con el siguiente
+comando:
+
+```bash
+./aletheia.py print-metadata image.jpg
+ResolutionUnit           : 1
+YResolution              : (1, 1)
+YCbCrPositioning         : 1
+XResolution              : (1, 1)
+Artist                   : Hello World
+```
 
 
+
+
+<br>
+## Conclusión
+
+La resolución de stego-puzzles abarca una gama fascinante de técnicas y 
+métodos, como hemos explorado en este artículo. Utilizando Aletheia, hemos 
+visto cómo se pueden detectar mensajes ocultos en imágenes mediante textos 
+dibujados, información oculta en el canal alfa, usando técnicas EOF y 
+ocultando datos como metadatos. 
+A pesar de las limitaciones de seguridad de estas técnicas, su aplicación en 
+retos de hacking y stego-puzzles ofrece una perspectiva valiosa y educativa 
+en el campo de la esteganografía.
 
 
 

@@ -42,6 +42,7 @@ lang-suffix: "-en"
 - [Practical attack on Steghide.](/stego/aletheia/steghide-attack-en)
 - [Practical attack on F5.](/stego/aletheia/f5-attack-en)
 - [Practical attack on LSB replacement: OpenStego and OpenPuff.](/stego/aletheia/lsbr-attack-en)
+- [Solving Stego-Puzzles with Aletheia](/stego/aletheia/stego-puzzles-en)
 
 
 <div style='margin-top:40px'></div>
