@@ -8,7 +8,6 @@ meta-description: "Papers about image steganography and steganalysis"
 lang-suffix: "-es"
 ---
 
-- Daniel Lerch-Hostalot and David Megias. 2023. 
 - Real-world actor-based image steganalysis via classifier inconsistency detection. In Proceedings of the 18th International Conference on Availability, Reliability and Security (ARES '23). Association for Computing Machinery, New York, NY, USA, Article 43, 1–9. [<a href='https://doi.org/10.1145/3600160.3605042'>10.1145/3600160.3605042</a>].
 
 - Subsequent embedding in targeted image steganalysis: Theoretical framework and practical applications. IEEE Transactions on Dependable and Secure Computing, February 2022. [<a href='https://ieeexplore.ieee.org/document/9722958'>10.1109/TDSC.2022.3154967</a>] [<a href='https://arxiv.org/abs/2107.13862'>arXiv</a>].
