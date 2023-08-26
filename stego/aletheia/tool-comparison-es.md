@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Comparación de herramientas de esteganografía en imágenes
+title: Comparativa de herramientas de esteganografía en imágenes
 subtitle: "" 
 noindex: false
 comments: false
-meta-title: "Comparación de herramientas de esteganografía en imágenes"
+meta-title: "Comparativa de herramientas de esteganografía en imágenes"
 meta-description: "Artículo en el que se comparan diferentes herramientas de esteganografía en imágeens para ver cuáles son más difíciles de detectar."
 meta-keywords: "esteganografía, estegoanálisis, imágenes"
 lang-suffix: "-es"
