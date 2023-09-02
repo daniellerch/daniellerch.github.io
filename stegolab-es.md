@@ -41,6 +41,9 @@ lang-suffix: "-es"
 
 - **[Esteganografía LSB en imágenes y audio](/stego/lab/intro/lsb-es)**: Artículo introductorio a la esteganografía LSB. Incluye ejemplos en Python para la incrustación de mensajes en imágenes de mapa de bits, imágenes JPEG y archivos de audio WAV.
 
+- **[Comparativa de herramientas de esteganografía en imágenes.](/stego/aletheia/tool-comparison-es)**: Artículo en el que se comparan diferentes herramientas de esteganografía en imágeens para ver cuáles son más difíciles de detectar.
+
+
 <div style='margin-bottom:50px'></div>
 #### Códigos:
 
