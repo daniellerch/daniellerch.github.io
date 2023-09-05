@@ -170,7 +170,7 @@ As can be seen in the chart, nsF5 provides good results, especially for low payl
 
 ### J-MiPOD
 
-[J-MiPOD](https://doi.org/10.24433/CO.2423893.v4) is, along with nsF5 and J-UNIWARD, 
+[J-MiPOD](https://doi.org/10.1109/tifs.2021.3111713) is, along with nsF5 and J-UNIWARD, 
 one of the best of those analyzed. It surpasses nsF5 with large
 payload sizes, although for small payload sizes, nsF5 slightly outperforms it.
 Furthermore, it offers inferior results to J-UNIWARD in all cases.

@@ -216,7 +216,7 @@ principalmente para tamaños de *payload* bajos.
 
 ### J-MiPOD
 
-[J-MiPOD](https://doi.org/10.24433/CO.2423893.v4) es, junto con nsF5 y 
+[J-MiPOD](https://doi.org/10.1109/tifs.2021.3111713) es, junto con nsF5 y 
 J-UNIWARD,  uno de los mejores de los analizados. Supera a nsF5 con tamaños de
 *payload* grandes, aunque para tamaños de *payload* pequeños nsF5 lo supera
 ligeramente. Además, ofrece resultados inferiores a J-UNIWARD en todos los casos.
