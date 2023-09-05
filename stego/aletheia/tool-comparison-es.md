@@ -39,7 +39,8 @@ lang-suffix: "-es"
    1. [Outguess](#outguess)
    2. [Steghide](#steghide)
    3. [nsF5](#nsF5)
-   4. [J-UNIWARD (HStego)](#j-uniward-hstego)
+   4. [J-MiPOD](#j-mipod)
+   5. [J-UNIWARD (HStego)](#j-uniward-hstego)
 
 <br>
 ## Gráfica cómparativa
@@ -211,6 +212,14 @@ mejorada del conocido método de esteganografía [F5](https://www.semanticschola
 
 Tal y como se puede ver en la gráfica, nsF5 ofrece buenos resultados,
 principalmente para tamaños de *payload* bajos.
+
+
+### J-MiPOD
+
+[J-MiPOD](https://doi.org/10.24433/CO.2423893.v4) es, junto con nsF5 y 
+J-UNIWARD,  uno de los mejores de los analizados. Supera a nsF5 con tamaños de
+*payload* grandes, aunque para tamaños de *payload* pequeños nsF5 lo supera
+ligeramente. Además, ofrece resultados inferiores a J-UNIWARD en todos los casos.
 
 
 ### J-UNIWARD (HStego)
