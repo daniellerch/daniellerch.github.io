@@ -39,7 +39,8 @@ lang-suffix: "-en"
    1. [Outguess](#outguess)
    2. [Steghide](#steghide)
    3. [nsF5](#nsF5)
-   4. [J-UNIWARD (HStego)](#j-uniward-hstego)
+   4. [J-MiPOD](#j-mipod)
+   5. [J-UNIWARD (HStego)](#j-uniward-hstego)
 
 <br>
 ## Comparative chart
