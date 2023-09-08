@@ -217,7 +217,7 @@ Although we have performed a $-1$ operation, a $+1$ operation would also have wo
 
 
 <br>
-## Eficiencia
+## Efficiency
 
 The bigger $p$ is, the more information we can hide with fewer modifications. But if we use a too large $p$ we will find that the groups are so large that we quickly run out of bytes in which to hide information. For example, in a 512x512 pixel image we can hide 18 bits by modifying a single bit. However, we can no longer hide anything else. It is therefore convenient to select a suitable $p$, which allows us to hide information without greatly modifying the media, but which at the same time offers us an acceptable capacity.
 
