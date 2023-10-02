@@ -66,7 +66,7 @@ lang-suffix: "-es"
   Implementación en Python del método de esteganografía para ocultar información en imágenes JPEG propuesta en el artículo "[Universal Distortion Function for Steganography in an Arbitrary Domain](https://link.springer.com/article/10.1186/1687-417X-2014-1)" de Vojtěch Holub, Jessica Fridrich y Tomáš Denemark. 
 
 - **[RBV](https://github.com/daniellerch/stegolab/tree/master/J-RBV)**: 
-  Implementación en Python del método de esteganografía para ocultar información en imágenes JPEG propuesta en el artículo "[# Distortion function based on residual blocks for JPEG steganography](https://link.springer.com/article/10.1007/s11042-017-5053-7)" de Qingde Wei, Zhaoxia Yin, Zichi Wang y Xinpeng Zhang.
+  Implementación en Python del método de esteganografía para ocultar información en imágenes JPEG propuesta en el artículo "[Distortion function based on residual blocks for JPEG steganography](https://link.springer.com/article/10.1007/s11042-017-5053-7)" de Qingde Wei, Zhaoxia Yin, Zichi Wang y Xinpeng Zhang.
 
 
 - **[HILL](https://github.com/daniellerch/stegolab/tree/master/HILL)**: 
