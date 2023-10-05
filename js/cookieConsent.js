@@ -104,7 +104,7 @@
 		
        // accept all - sets all cookies to be allowed
 		// YOU CAN ADD MORE COOKIE TYPES HERE IF NECESSARY
-		$('#coookieDialog_acceptAll_button').click(function(e) {
+		$('#coookieDialog_accept_button').click(function(e) {
 			currentPreferences = {'necessary': 1, 'marketing': 1};
 			var preferences = 'preferences=' + JSON.stringify(currentPreferences);
 
@@ -114,11 +114,9 @@
 		
         // save preferences - saves cookie consent based on submitted form
 		// YOU CAN ADD MORE COOKIE TYPES HERE IF NECESSARY
-		$('#coookieDialog_save_button').click(function(e) {
-			var marketingConsent = $('#marketingCookiesConsent_input').is(":checked");
-			currentPreferences = {'necessary': 1, 'marketing': marketingConsent ? 1 : 0}
+		$('#coookieDialog_reject_button').click(function(e) {
+			currentPreferences = {'necessary': 1, 'marketing': 0};
 			var preferences = 'preferences=' + JSON.stringify(currentPreferences);
-
 			saveCookiePreferences(preferences);
 			e.preventDefault();
 		});
@@ -141,21 +139,10 @@
 	    
 	}
 
-	// set checkbox values in form based on user preferences
-	// YOU CAN ADD MORE COOKIE TYPES HERE IF NECESSARY
 	function setCookieConsentForm() {
-		// set marketing consent to false as default if there are no cookie preferences
 		if (currentPreferences == null) {
 			showDialog = true;
-            $('#marketingCookiesConsent_input').prop('checked', false);
-		// otherwise set marketing cookie consent checkbox value based on the user preferences
-		} else {
-            if (currentPreferences["marketing"] == 1) {
-				$('#marketingCookiesConsent_input').prop('checked', true);
-			} else if (currentPreferences["marketing"] == 0) {
-				$('#marketingCookiesConsent_input').prop('checked', false);
-			}
-        }
+		} 
 	}
 
     function init() {
