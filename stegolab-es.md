@@ -64,6 +64,7 @@ lang-suffix: "-es"
 
 - **[J-UNIWARD](https://github.com/daniellerch/stegolab/tree/master/J-UNIWARD)**: 
   Implementación en Python del método de esteganografía para ocultar información en imágenes JPEG propuesta en el artículo "[Universal Distortion Function for Steganography in an Arbitrary Domain](https://link.springer.com/article/10.1186/1687-417X-2014-1)" de Vojtěch Holub, Jessica Fridrich y Tomáš Denemark. 
+Incluye implementaciones aceleradas con Numba y descompresión a RGB sin redondear el valor de los píxeles.
 
 - **[RBV](https://github.com/daniellerch/stegolab/tree/master/J-RBV)**: 
   Implementación en Python del método de esteganografía para ocultar información en imágenes JPEG propuesta en el artículo "[Distortion function based on residual blocks for JPEG steganography](https://link.springer.com/article/10.1007/s11042-017-5053-7)" de Qingde Wei, Zhaoxia Yin, Zichi Wang y Xinpeng Zhang.

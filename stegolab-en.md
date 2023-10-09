@@ -62,6 +62,7 @@ lang-suffix: "-en"
 
 - **[J-UNIWARD](https://github.com/daniellerch/stegolab/tree/master/J-UNIWARD)**: 
   A Python implementation of the cost function used in steganography for hidding information into JPEG images, proposed in the paper "[Universal Distortion Function for Steganography in an Arbitrary Domain](https://link.springer.com/article/10.1186/1687-417X-2014-1)" by Vojtěch Holub, Jessica Fridrich and Tomáš Denemark. 
+Includes fast implementations using Numba and implementations that decompress into RGB without rounding the pixel values.
 
 - **[RBV](https://github.com/daniellerch/stegolab/tree/master/J-RBV)**: 
  A Python implementation of the cost function used in steganography for hidding information into JPEG images, proposed in the paper 
