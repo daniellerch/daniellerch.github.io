@@ -66,8 +66,8 @@ lang-suffix: "-es"
   Implementación en Python del método de esteganografía para ocultar información en imágenes JPEG propuesta en el artículo "[Universal Distortion Function for Steganography in an Arbitrary Domain](https://link.springer.com/article/10.1186/1687-417X-2014-1)" de Vojtěch Holub, Jessica Fridrich y Tomáš Denemark. 
 Incluye implementaciones aceleradas con Numba y descompresión a RGB sin redondear el valor de los píxeles.
 
-- **[J-UNIWARD Cost Polarization](https://github.com/daniellerch/stegolab/tree/master/J-UNIWARD/j-uniwardfast-rgbnr-wiener-color.py)**: 
-  Implementación en Python del método de esteganografía para ocultar información en imágenes JPEG propuesta en el artículo "[Universal Distortion Function for Steganography in an Arbitrary Domain](https://link.springer.com/article/10.1186/1687-417X-2014-1)" de Vojtěch Holub, Jessica Fridrich y Tomáš Denemark combinado con la técnica de polarización de costes usando el filtro Wiener, propuesto en el artículo [JPEG Steganography With Estimated Side-Information](https://ieeexplore.ieee.org/document/8746719) de Weixiang Li, Kejiang Chen, Weiming Zhang, Hang Zhou, Yaofei Wang y Nenghai Yu.
+- **[J-UNIWARD + Cost Polarization](https://github.com/daniellerch/stegolab/tree/master/J-UNIWARD/j-uniwardfast-rgbnr-wiener-color.py)**: 
+  Implementación en Python de la técnica de polarización de costes usando el filtro Wiener para [J-UNIWARD](https://link.springer.com/article/10.1186/1687-417X-2014-1)", propuesto en el artículo [JPEG Steganography With Estimated Side-Information](https://ieeexplore.ieee.org/document/8746719) de Weixiang Li, Kejiang Chen, Weiming Zhang, Hang Zhou, Yaofei Wang y Nenghai Yu.
 
 
 
