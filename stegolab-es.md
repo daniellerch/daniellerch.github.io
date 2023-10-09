@@ -67,7 +67,7 @@ lang-suffix: "-es"
 Incluye implementaciones aceleradas con Numba y descompresión a RGB sin redondear el valor de los píxeles.
 
 - **[J-UNIWARD + Cost Polarization](https://github.com/daniellerch/stegolab/tree/master/J-UNIWARD/j-uniwardfast-rgbnr-wiener-color.py)**: 
-  Implementación en Python de la técnica de polarización de costes usando el filtro Wiener para [J-UNIWARD](https://link.springer.com/article/10.1186/1687-417X-2014-1)", propuesto en el artículo [JPEG Steganography With Estimated Side-Information](https://ieeexplore.ieee.org/document/8746719) de Weixiang Li, Kejiang Chen, Weiming Zhang, Hang Zhou, Yaofei Wang y Nenghai Yu.
+  Implementación en Python de la técnica de polarización de costes usando el filtro Wiener para [J-UNIWARD](https://link.springer.com/article/10.1186/1687-417X-2014-1), propuesto en el artículo [JPEG Steganography With Estimated Side-Information](https://ieeexplore.ieee.org/document/8746719) de Weixiang Li, Kejiang Chen, Weiming Zhang, Hang Zhou, Yaofei Wang y Nenghai Yu.
 
 
 
