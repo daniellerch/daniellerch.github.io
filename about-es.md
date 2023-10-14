@@ -16,10 +16,10 @@ Aquí puedes encontrar herramientas de esteganografía
 (como <a href='https://github.com/daniellerch/hstego'>HStego</a>) 
 y de estegoanálisis 
 (como <a href='https://github.com/daniellerch/aletheia'>Aletheia</a>), 
-así como diferentes fragmentos de código que implementan técnicas *stego*. 
-Estos últimos se encuentran en la sección 
-<a href='/stegolab-es/'>StegoLab</a>, 
-donde además escribo algunos artículos sobre estas técnicas.
+así como diferentes fragmentos de código que implementan técnicas *stego* 
+de diferentes *papers* y que puedes encontrar en  <a href='/stegolab-es/'>StegoLab</a>. 
+Además, en <a href='/blog-es/'>Blog</a>, escribo todo tipo de artículos 
+relacionados con la esteganografía y el estegoanálisis.
 
 
 

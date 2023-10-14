@@ -26,7 +26,7 @@ lang-suffix: "-es"
 </center>
 
 
-> En StegoLab puedes encontrar artículos e implementaciones de
+> En StegoLab puedes encontrar implementaciones de
 > diferentes técnicas usadas en esteganografía, estegoanálisis y 
 > *watermarking*.
 
@@ -37,20 +37,14 @@ lang-suffix: "-es"
 <hr style='border:1px solid #ccc'>
 
 
-<div style='margin-bottom:30px'></div>
-
-- **[Esteganografía LSB en imágenes y audio](/stego/lab/intro/lsb-es)**: Artículo introductorio a la esteganografía LSB. Incluye ejemplos en Python para la incrustación de mensajes en imágenes de mapa de bits, imágenes JPEG y archivos de audio WAV.
-
-- **[Comparativa de herramientas de esteganografía en imágenes.](/stego/aletheia/tool-comparison-es)**: Artículo en el que se comparan diferentes herramientas de esteganografía en imágeens para ver cuáles son más difíciles de detectar.
-
 
 <div style='margin-bottom:50px'></div>
 #### Códigos:
 
-- **[Códigos de Hamming binarios](/stego/lab/codes/binary-hamming-es)**: Descripción e implementación en Python de la incrustación de información mediante técnicas de *matrix embedding* usando códigos de Hamming binarios. 
+- **[Códigos de Hamming binarios](https://github.com/daniellerch/stegolab/tree/master/codes/hamming_codes.py)**: Implementación en Python de la incrustación de información mediante técnicas de *matrix embedding* usando códigos de Hamming binarios. Puedes encontrar más información en el artículo "[Códigos de Hamming binarios en esteganografía](/stego/lab/codes/binary-hamming-es)".
 
 
-- **[Códigos de Hamming ternarios](/stego/lab/codes/ternary-hamming-es)**: Descripción e implementación en Python de la incrustación de información mediante técnicas de *matrix embedding* usando códigos de Hamming ternarios. Los códigos ternarios permiten una capacidad superior a la de los códigos binarios para el mismo nivel de distorsión del medio.
+- **[Códigos de Hamming ternarios](https://github.com/daniellerch/stegolab/tree/master/codes/ternary_hamming_codes.py)**: Implementación en Python de la incrustación de información mediante técnicas de *matrix embedding* usando códigos de Hamming ternarios. Los códigos ternarios permiten una capacidad superior a la de los códigos binarios para el mismo nivel de distorsión del medio. Puedes encontrar más información en el artículo "[Códigos de Hamming ternarios en esteganografía](/stego/lab/codes/ternary-hamming-es)".
 
 
 - **[Wet Paper Codes](https://github.com/daniellerch/stegolab/tree/master/codes/wet_paper_codes.py)**: Implementación en Python de la técnica de incrustación presentada en el artículo "[Writing on Wet Paper](http://www.ws.binghamton.edu/fridrich/Research/EI5681-33_WPC.pdf)" de Jessica Fridrich, Miroslav Goljan, Petr Lisoněk y David Soukal

@@ -23,8 +23,9 @@ url: "https://daniellerch.me"
 
 # List of links in the navigation bar
 navbar-links:
-   tools: "/tools-en"
+   blog: "/blog-en"
    stegolab: "/stegolab-en"
+   tools: "/tools-en"
    papers: "/papers-en"
    about: "/about-en"
 

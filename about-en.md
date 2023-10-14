@@ -16,10 +16,12 @@ Here you can find steganography tools
 (such as <a href='https://github.com/daniellerch/hstego'>HStego</a>) 
 and steganalysis tools 
 (such as <a href='https://github.com/daniellerch/aletheia'>Aletheia</a>), 
-as well as different code snippets that implement stego techniques. 
-The latter can be found in the 
-<a href='/stegolab-en/'>StegoLab</a>
-section, where I also write some articles on these techniques.
+as well as different code snippets that implement stego techniques from 
+different papers and that you can find in 
+<a href='/stegolab-en/'>StegoLab</a>. Additionally, on 
+<a href='/blog-en/'>Blog</a>, I write all kinds of articles related to 
+steganography and steganalysis.
+
 
 
 My name is **Daniel Lerch** and I started doing research in steganography 

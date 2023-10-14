@@ -25,7 +25,7 @@ lang-suffix: "-en"
 | &nbsp; <a href='#watermarking'>Watermarking</a> &nbsp; ]
 </center>
 
-> In StegoLab you can find articles and implementations of different 
+> In StegoLab you can find implementations of different 
 > techniques used in steganography, steganalysis and watermarking.
 
 
@@ -36,20 +36,13 @@ lang-suffix: "-en"
 <hr style='border:1px solid #ccc'>
 
 
-<div style='margin-bottom:30px'></div>
-
-- **[LSB steganography in images and audio.](/stego/lab/intro/lsb-en)**: Introductory article to LSB steganography. Includes Python examples for embedding messages in bitmap images, JPEG images, and WAV audio files.
-
-- **[Comparison of Image Steganography Tools.](/stego/aletheia/tool-comparison-en)**: Article comparing different steganography tools in images to see which ones are harder to detect.
-
-
 <div style='margin-bottom:50px'></div>
 #### Codes:
 
-- **[Binary Hamming codes](/stego/lab/codes/binary-hamming-en)**: Description and implementation in Python of information hiding using matrix embedding techniques with binary Hamming codes. 
+- **[Binary Hamming codes](https://github.com/daniellerch/stegolab/tree/master/codes/hamming_codes.py)**: Implementation in Python of information hiding using matrix embedding techniques with binary Hamming codes. You can find more information in the article "[Binary Hamming Codes in Steganography](/stego/lab/codes/binary-hamming-en)".
 
 
-- **[Ternary Hamming codes](/stego/lab/codes/ternary-hamming-en)**: Description and implementation in Python of information hiding using matrix embedding techniques with ternary Hamming codes. Ternary codes allow a higher capacity than binary codes for the same level of media distortion.
+- **[Ternary Hamming codes](https://github.com/daniellerch/stegolab/tree/master/codes/ternary_hamming_codes.py)**: Implementation in Python of information hiding using matrix embedding techniques with ternary Hamming codes. Ternary codes allow a higher capacity than binary codes for the same level of media distortion.You can find more information in the article "[Ternary Hamming Codes in Steganography](/stego/lab/codes/ternary-hamming-en)".
 
 - **[Wet Paper Codes](https://github.com/daniellerch/stegolab/tree/master/codes/wet_paper_codes.py)**: A Python implementación of the steganography embedding technique presented in the paper "[Writing on Wet Paper](http://www.ws.binghamton.edu/fridrich/Research/EI5681-33_WPC.pdf)" by Jessica Fridrich, Miroslav Goljan, Petr Lisoněk and David Soukal
 
