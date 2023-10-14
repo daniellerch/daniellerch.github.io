@@ -3,7 +3,7 @@ layout: page
 title: Blog
 subtitle: "" 
 noindex: false
-meta-title: "StegoLab"
+meta-title: "Blog"
 meta-description: "Articles about steganography and steganalysis"
 lang-suffix: "-en"
 ---

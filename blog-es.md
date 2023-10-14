@@ -3,7 +3,7 @@ layout: page
 title: Blog
 subtitle: "" 
 noindex: false
-meta-title: "StegoLab"
+meta-title: "Blog"
 meta-description: "Artículos sobre esteganografía y estegoanálisis"
 lang-suffix: "-es"
 ---
