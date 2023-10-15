@@ -35,8 +35,7 @@ lang-suffix: "-es"
 <hr style='border:1px solid #ccc'>
 
 ### Introducción:
-- Glosario.
-- ¿Qué es la esteganografía?
+- [Preguntas frecuentes sobre esteganografía](/stego/blog/faq-es).
 - Listado de herramientas de esteganografía.
 - [Comparativa de herramientas de esteganografía en imágenes.](/stego/aletheia/tool-comparison-es)
 - [Esteganografía LSB en imágenes y audio](/stego/lab/intro/lsb-es).
@@ -56,12 +55,12 @@ lang-suffix: "-es"
 - Esteganografía en la guerra fría.
 
 
-<h3 class='todo'>HStego:</h3>
-- Introducción a HStego.
-- HStego como módulo Python.
-- Detalles técnicos de HStego I: mapas de bits.
-- Detalles técnicos de HStego II: JPEG.
-- Detalles técnicos de HStego III: Incrustación.
+<!-- ### HStego: -->
+<!-- - [Introducción a HStego](/stego/hstego/intro-es).
+<!-- - [HStego como módulo Python](/stego/hstego/python-module-es). -->
+<!-- - [Detalles técnicos de HStego I: mapas de bits](/stego/hstego/technical-details-I-es). -->
+<!-- - [Detalles técnicos de HStego II: JPEG](/stego/hstego/technical-details-II-es). -->
+<!-- - [Detalles técnicos de HStego III: Incrustación](/stego/hstego/technical-details-III-es). -->
       
 
 <h3 class='todo'>Esteganografía en redes sociales:</h3>

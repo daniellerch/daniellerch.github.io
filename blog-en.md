@@ -35,6 +35,7 @@ lang-suffix: "-en"
 <hr style='border:1px solid #ccc'>
 
 ### Introduction:
+- [Steganography FAQ](/stego/blog/faq-en).
 - [Comparison of Image Steganography Tools.](/stego/aletheia/tool-comparison-en)
 - [LSB steganography in images and audio.](/stego/lab/intro/lsb-en)
 
