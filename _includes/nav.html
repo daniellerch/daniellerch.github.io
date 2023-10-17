@@ -13,7 +13,7 @@
               {%- if site.title-img -%}
                 <a class="navbar-brand navbar-brand-logo navbar-collapse collapse" href="{{ '' | absolute_url }}"><img src="{{ site.title-img }}"/></a>
               {%- else -%}
-              <a class="navbar-brand navbar-collapse_ collapse_" href="/index{{ page.lang-suffix }}">{{ site.title-styled }}</a>
+              <a class="navbar-brand navbar-collapse_ collapse_" href="/index{{ page.lang-suffix }}/">{{ site.title-styled }}</a>
               {%- endif -%}
             </div>
 
@@ -32,13 +32,12 @@
                     </div>
                   </li>
                 {% else %}
-                  <li><a href="{{ link[1] | relative_url | replace: "-en", "" | replace: "-es", "" }}{{ page.lang-suffix}}">{{ link[0] }}</a></li>
+                  <li><a href="{{ link[1] | relative_url | replace: "-en", "" | replace: "-es", "" }}{{ page.lang-suffix}}/">{{ link[0] }}</a></li>
                 {%- endif -%}
               {%- endfor -%}
 
 
               <li>
-                 <script>console.log("{{ page.lang-suffix }}");</script>
                  <div class='lang'>
                 {%- if page.url == "/" -%}
                   (<a {% if page.lang-suffix == "-en" %}class="lang-sel"{% endif %} 

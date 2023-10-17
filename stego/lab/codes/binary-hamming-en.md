@@ -44,7 +44,7 @@ lang-suffix: "-en"
 <br>
 ## Introduction
 
-In steganography we say that the embedding efficiency is 1 when we need to make a modification every time we embed a bit. However, when we hide information in the LSB (see [LSB steganography in images and audio](/stego/blog/lsb-en)) the efficiency of the insertion is 2. This is so because, statistically, half of the bytes in which we want to hide information will already have the LSB value of the bit of the message that we want to embed. Therefore, it will not be necessary to modify them. Thus, we will be embedding a bit in each byte, but we will only be modifying half of the bytes. Consequently, the efficiency will be 2 bits per modification.
+In steganography we say that the embedding efficiency is 1 when we need to make a modification every time we embed a bit. However, when we hide information in the LSB (see [LSB steganography in images and audio](/stego/blog/lsb-en/)) the efficiency of the insertion is 2. This is so because, statistically, half of the bytes in which we want to hide information will already have the LSB value of the bit of the message that we want to embed. Therefore, it will not be necessary to modify them. Thus, we will be embedding a bit in each byte, but we will only be modifying half of the bytes. Consequently, the efficiency will be 2 bits per modification.
 
 This efficiency can be easily improved with a simple trick. Let's see how it works.
 

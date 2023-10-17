@@ -35,10 +35,10 @@ lang-suffix: "-es"
 <hr style='border:1px solid #ccc'>
 
 ### Introducción:
-- [Preguntas frecuentes sobre esteganografía](/stego/blog/faq-es).
+- [Preguntas frecuentes sobre esteganografía](/stego/blog/faq-es/).
 - Listado de herramientas de esteganografía.
-- [Comparativa de herramientas de esteganografía en imágenes.](/stego/aletheia/tool-comparison-es)
-- [Esteganografía LSB en imágenes y audio](/stego/lab/intro/lsb-es).
+- [Comparativa de herramientas de esteganografía en imágenes.](/stego/aletheia/tool-comparison-es/)
+- [Esteganografía LSB en imágenes y audio](/stego/lab/intro/lsb-es/).
 - Esteganografía F5.
 - Esteganografía Steghide.
 - Esteganografía LSB en vídeo.
@@ -68,8 +68,8 @@ lang-suffix: "-es"
  
 
 ### Codificación del mensaje:
-- [Códigos de Hamming binarios en esteganografía](/stego/lab/codes/binary-hamming-es).
-- [Códigos de Hamming ternarios en esteganografía](/stego/lab/codes/ternary-hamming-es).
+- [Códigos de Hamming binarios en esteganografía](/stego/lab/codes/binary-hamming-es/).
+- [Códigos de Hamming ternarios en esteganografía](/stego/lab/codes/ternary-hamming-es/).
 
 
 <h3 class='todo'>Funciones de coste:</h3>
@@ -83,11 +83,11 @@ lang-suffix: "-es"
 <hr style='border:1px solid #ccc'>
 
 ### Estegoanálisis práctico con Aletheia:
-- [Introducción al estegoanálisis con Aletheia.](/stego/aletheia/intro-es)
-- [Cómo identificar el esquema de esteganografía.](/stego/aletheia/identify-es)
-- [Ataque práctico a Steghide.](/stego/aletheia/steghide-attack-es)
-- [Ataque práctico a F5.](/stego/aletheia/f5-attack-es)
-- [Ataque práctico a esquemas LSB replacement: OpenStego y OpenPuff.](/stego/aletheia/lsbr-attack-es)
+- [Introducción al estegoanálisis con Aletheia.](/stego/aletheia/intro-es/)
+- [Cómo identificar el esquema de esteganografía.](/stego/aletheia/identify-es/)
+- [Ataque práctico a Steghide.](/stego/aletheia/steghide-attack-es/)
+- [Ataque práctico a F5.](/stego/aletheia/f5-attack-es/)
+- [Ataque práctico a esquemas LSB replacement: OpenStego y OpenPuff.](/stego/aletheia/lsbr-attack-es/)
 - Comparación de funciones de coste para esteganografía en imágenes.
 
 <h3 class='todo'>Ataques teóricos:</h3>

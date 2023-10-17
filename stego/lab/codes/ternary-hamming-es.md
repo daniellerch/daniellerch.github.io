@@ -49,7 +49,7 @@ lang-suffix: "-es"
 <br>
 ## Introducción
 
-En el artículo [Códigos de Hamming binarios en esteganografía](/stego/lab/codes/binary-hamming-es)
+En el artículo [Códigos de Hamming binarios en esteganografía](/stego/lab/codes/binary-hamming-es/)
 hemos visto cómo ocultar información con códigos binarios usando operaciones
 $+1$ y $-1$ sobre el valor de los bytes. Sin embargo, con los códigos binarios
 solo estamos interesados en el valor del LSB, por lo que no es importante si

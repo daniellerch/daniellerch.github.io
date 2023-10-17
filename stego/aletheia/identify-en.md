@@ -55,9 +55,9 @@ steganography methods are most likely to be used. Normally, it will be
 necessary to continue with a more in-depth analysis, such as that shown 
 in other articles:
 
-- [Practical attack on Steghide](/stego/aletheia/steghide-attack-en).
-- [Practical attack on F5](/stego/aletheia/f5-attack-en).
-- [Practical attack on LSB replacement: OpenStego and OpenPuff](/stego/aletheia/lsbr-attack-en).
+- [Practical attack on Steghide](/stego/aletheia/steghide-attack-en/).
+- [Practical attack on F5](/stego/aletheia/f5-attack-en/).
+- [Practical attack on LSB replacement: OpenStego and OpenPuff](/stego/aletheia/lsbr-attack-en/).
 
 
 Since steganography techniques tend to be very different depending on whether 
@@ -177,9 +177,9 @@ If we can't find hidden data, it's time to try deep learning models, using the
 we need more images, due to the CSM problem, which we describe in more detail 
 in other articles:
 
-- [Practical attack on Steghide](/stego/aletheia/steghide-attack-en).
-- [Practical attack on F5](/stego/aletheia/f5-attack-en).
-- [Practical attack on LSB replacement: OpenStego and OpenPuff](/stego/aletheia/lsbr-attack-en).
+- [Practical attack on Steghide](/stego/aletheia/steghide-attack-en/).
+- [Practical attack on F5](/stego/aletheia/f5-attack-en/).
+- [Practical attack on LSB replacement: OpenStego and OpenPuff](/stego/aletheia/lsbr-attack-en/).
 
 Let's see an example in which we detect different steganography schemes:
 

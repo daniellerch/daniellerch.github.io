@@ -62,9 +62,9 @@ lang-suffix: "-es"
 ## Introducción
 
 En los artículos 
-"[Códigos de Hamming binarios en esteganografía](/stego/lab/codes/binary-hamming-es)"
+"[Códigos de Hamming binarios en esteganografía](/stego/lab/codes/binary-hamming-es/)"
 y 
-"[Códigos de Hamming ternarios en esteganografía](/stego/lab/codes/ternary-hamming-es)"
+"[Códigos de Hamming ternarios en esteganografía](/stego/lab/codes/ternary-hamming-es/)"
 hemos visto cómo incrementar la eficiencia de la inserción de datos ocultos
 mediante técnicas de *matrix embedding*. Estas técnicas, si bien nos permiten
 incrementar la eficiencia, no nos permiten controlar en qué zonas no queremos
@@ -122,7 +122,7 @@ $H$.
 <center>$Hc = m$</center>
 
 Se pueden refrescar estos conceptos en el artículo de 
-[códigos binarios](/stego/lab/codes/binary-hamming-es) 
+[códigos binarios](/stego/lab/codes/binary-hamming-es/) 
 referenciado en la introducción.
 
 
@@ -133,7 +133,7 @@ de $H$, podrá calcular $m$ con una simple multiplicación de una matriz por un 
 
 En general, cuando se usan códigos de Hamming, encontrar qué bits de $c$ tenemos
 que modificar para obtener un $s$ que codifique el mensaje deseado, es sencillo
-(en el artículo de [códigos binarios](/stego/lab/codes/binary-hamming-es)
+(en el artículo de [códigos binarios](/stego/lab/codes/binary-hamming-es/)
 se explica). Sin embargo, si queremos que nuestro método soporte la posibilidad
 de asignar costes a cada uno de los bytes que pueden ser modificados, 
 necesariamente necesitaremos que existean múltiples $s$. Pues si existen

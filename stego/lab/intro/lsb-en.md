@@ -278,7 +278,7 @@ In the histogram it can be seen that the consecutive pairs of bars tend to obtai
 By adding one to the even bars, they give part of their values to the subsequent bar, while subtracting one to the odd bars, they give part of their values to the previous bar. Therefore, even-odd pairs of consecutive bars tend to take a similar height.
 
 There is a whole family of attacks dedicated to exploiting this statistical anomaly introduced by the LSB replacement. These attacks are known as **structural attacks** and can be exploited with steganalysis tools like [Aletheia](https://github.com/daniellerch/aletheia).
-In [Practical attack on LSB replacement schemes](/stego/aletheia/lsbr-attack-en) it is explained how to use this tool to detect this type of steganography schemes, used by many popular tools such as [OpenStego](https://www.openstego.com/) and
+In [Practical attack on LSB replacement schemes](/stego/aletheia/lsbr-attack-en/) it is explained how to use this tool to detect this type of steganography schemes, used by many popular tools such as [OpenStego](https://www.openstego.com/) and
 [OpenPuff](https://embeddedsw.net/OpenPuff_Steganography_Home.html).
 
 
@@ -294,7 +294,10 @@ However, the two techniques we have described are more efficient. Well, statisti
 Although it may surprise, there are even more efficient techniques. Techniques that allow us to embed information with much higher efficiencies. For example, an embedding based on Hamming codes allows us to embed $p$ bits into $2^p-1$ bytes with a single modification. If we used, for example,
 $p=3$ we could embed 3 bits in each 7-byte block with a single modification. Our efficiency in this case would be 3,429.
 
-There are many families of codes that allow us to perform this type of efficient embedding. These topics are covered in some detail in [Efficient Embedding Techniques in Steganography](/stego/blog/efficient-en).
+There are many families of codes that allow us to perform this type of efficient embedding. These topics are covered in some detail in the following articles:
+
+- [Binary Hamming codes in Steganography](/stego/lab/codes/binary-hamming-en/)
+- [Ternary Hamming codes in Steganography](/stego/lab/codes/ternary-hamming-en/)
 
 
 <br>

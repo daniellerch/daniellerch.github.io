@@ -206,8 +206,8 @@ This issue, known as CSM or *Cover Source Mismatch* is covered in some detail
 in the following articles:
 
 
-- [Practical attack on Steghide](/stego/aletheia/steghide-attack-en).
-- [Practical attack on F5](/stego/aletheia/f5-attack-en).
+- [Practical attack on Steghide](/stego/aletheia/steghide-attack-en/).
+- [Practical attack on F5](/stego/aletheia/f5-attack-en/).
 
 
 
@@ -273,7 +273,7 @@ Hidden data found in channel 2: 0.45050276128936173
 ```
 
 More details about this attack in the article:
-- [Practical attack on F5](/stego/aletheia/f5-attack-en).
+- [Practical attack on F5](/stego/aletheia/f5-attack-en/).
 
 
 
@@ -377,8 +377,8 @@ of Aletheia's commands.
 Regarding the use of deep learning, the prediction using pretrained models 
 provided by Aletheia is detailed in the following articles:
 
-- [Practical attack on Steghide](/stego/aletheia/steghide-attack-en).
-- [Practical attack on F5](/stego/aletheia/f5-attack-en).
+- [Practical attack on Steghide](/stego/aletheia/steghide-attack-en/).
+- [Practical attack on F5](/stego/aletheia/f5-attack-en/).
 
 
 > NOTE: An article is currently in development explaining in detail

@@ -47,7 +47,7 @@ lang-suffix: "-en"
 <br>
 ## Introduction
 
-In the article [Binary Hamming Codes in Steganography](/stego/lab/codes/binary-hamming-en)
+In the article [Binary Hamming Codes in Steganography](/stego/lab/codes/binary-hamming-en/)
 we have seen how to hide information with binary codes using operations $+1$ and $-1$ on the value of the bytes. However, with binary codes we are only interested in the value of the LSB, so it is not important if the operation we perform is $+1$ or $-1$, which usually leads us to choose it randomly.
 
 

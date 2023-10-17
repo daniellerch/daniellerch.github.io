@@ -48,7 +48,7 @@ lang-suffix: "-es"
 En esteganografía decimos que la eficiencia de la inserción es 1 cuando 
 necesitamos hacer una modificación cada vez que incrustamos un bit. Sin 
 embargo, Cuando ocultamos información en el LSB 
-(ver [Esteganografía LSB en imágenes y audio](/stego/blog/lsb-es))
+(ver [Esteganografía LSB en imágenes y audio](/stego/blog/lsb-es/))
 la eficiencia de la inserción es de 2. Esto es así debido a que, 
 estadísticamente, la mitad de los bytes en los que queremos ocultar información
 ya tendrán como valor del LSB el bit del mensaje que queremos incrustar. Por 

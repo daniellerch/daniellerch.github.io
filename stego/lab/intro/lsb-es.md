@@ -375,7 +375,7 @@ Existen toda una familia de ataques dedicados a explotar esta anomalía
 estadística introducida por el LSB *replacement*. Estos ataques se conocen como
 **ataques estructurales** y pueden ser explotados con herramientas de 
 estegoanálisis como [Aletheia](https://github.com/daniellerch/aletheia). 
-En [Ataque práctico a esquemas LSB replacement](/stego/aletheia/lsbr-attack-es) 
+En [Ataque práctico a esquemas LSB replacement](/stego/aletheia/lsbr-attack-es/) 
 se explica como usar esta herramienta para detectar este tipo de esquemas de 
 esteganografía, usados por muchas herramientas populares como 
 [OpenStego](https://www.openstego.com/) y 
@@ -406,7 +406,9 @@ modificación. Nuestra eficiencia sería en este caso de 3.429.
 
 Existen muchas familias de códigos que nos permiten realizar este tipo de
 incrustaciones eficientes. Estos temas se tratan con cierto detalle en
-[Técnicas de incrustación eficiente en esteganografía](/stego/blog/efficient-es).
+los siguientes artículos:
+- [Códigos de Hamming binarios en esteganografía](/stego/lab/codes/binary-hamming-es/).
+- [Códigos de Hamming ternarios en esteganografía](/stego/lab/codes/ternary-hamming-es/).
 
 
 
