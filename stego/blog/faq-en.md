@@ -6,7 +6,7 @@ noindex: false
 meta-title: "Steganography FAQ"
 meta-description: "FAQ about steganography"
 meta-keywords: "steganography, faq, frequently asked questions"
-lang-suffix: "-es"
+lang-suffix: "-en"
 ---
 
 
