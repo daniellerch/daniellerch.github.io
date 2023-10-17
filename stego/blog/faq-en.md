@@ -37,7 +37,7 @@ lang-suffix: "-es"
 <br>
 ## What is steganography?
 
-The term "steganography" comes from the Greek words "steganós" (hidden) and "graphein" (to write), and it literally translates as "hidden writing." This discipline refers to the art and science of hiding a message or information within other information in such a way that it is not noticeable.
+The term "steganography" comes from the Greek words "steganos" (hidden) and "graphos" (to write), and it literally translates as "hidden writing." This discipline refers to the art and science of hiding a message or information within other information in such a way that it is not noticeable.
 
 Unlike cryptography, where a message is encoded so that it cannot be read without the appropriate key, steganography aims to hide the message itself, so its existence cannot be detected.
 

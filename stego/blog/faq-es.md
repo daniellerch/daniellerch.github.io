@@ -37,8 +37,8 @@ lang-suffix: "-es"
 <br>
 ## ¿Qué es la esteganografía?
 
-El término esteganografía, proveniene del griego "steganós" (oculto) y 
-"graphein" (escribir) y se traduce literalmente como "escribir oculto". 
+El término esteganografía, proveniene del griego "steganos" (oculto) y 
+"graphos" (escritura) y se traduce literalmente como "escritura oculta". 
 Esta disciplina se refiere al arte y ciencia de esconder un mensaje o 
 información dentro de otra información, de tal manera que no sea perceptible.
 
