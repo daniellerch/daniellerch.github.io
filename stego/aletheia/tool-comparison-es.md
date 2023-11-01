@@ -5,7 +5,7 @@ subtitle: ""
 noindex: false
 comments: false
 meta-title: "Comparativa de herramientas de esteganografía en imágenes"
-meta-description: "Artículo en el que se comparan diferentes herramientas de esteganografía en imágeens para ver cuáles son más difíciles de detectar."
+meta-description: "Artículo en el que se comparan diferentes herramientas de esteganografía en imágenes para ver cuáles son más difíciles de detectar."
 meta-keywords: "esteganografía, estegoanálisis, imágenes"
 lang-suffix: "-es"
 ---
@@ -33,14 +33,12 @@ lang-suffix: "-es"
    1. [LSB replacement (OpenStego, OpenPuff)](#lsb-replacement-openstego-openpuff)
    2. [LSB matching](#lsb-matching)
    3. [SteganoGAN](#steganogan)
-   4. [S-UNIWARD](#s-uniward)
-   5. [HILL (HStego)](#hill-hstego)
+   4. [HStego](#hstego)
 4. [Resultados en JPEG](#resultados-en-jpeg)
    1. [Outguess](#outguess)
-   2. [Steghide](#steghide)
-   3. [nsF5](#nsF5)
-   4. [J-MiPOD](#j-mipod)
-   5. [J-UNIWARD (HStego)](#j-uniward-hstego)
+   2. [F5](#F5)
+   3. [Steghide](#steghide)
+   4. [HStego](#hstego)
 
 <br>
 ## Gráfica cómparativa
@@ -83,6 +81,13 @@ Para cada uno de los métodos se han usado 500 imágenes *cover* (sin ningún
 mensaje oculto) y 500 imágenes *stego* (con información oculta, conforme al
 *payload* indicado en la gráfica).
 
+Aquí, tentendemos por *payload* el tamaño del mensaje respecto al total 
+disponible para ocultar incrustando un solo bit por elemento. Por ejemplo,
+en mapas de bits, un payload de 0.4 nos indicaría que el tamaño del mensaje
+(en bits) es del 40% del total de píxeles. En imágenes JPEG nos indicaría que
+el tamaño del mensaje es del 40% del total de coeficientes DCT que no son cero.
+
+
 <br>
 ## Resultados en mapas de bits
 
@@ -110,12 +115,12 @@ inconveniente: el problema del CSM. Este problema introduce importantes
 dificultades en el estegoanálisis, por lo que disponer de un método que no
 tiene este problema (como ocurre con SPA) facilita mucho la tarea.
 
-Las dos líneas de la gráfica dedicadas al LSB *replacement* nos permiten ver
-que no es la mejor técnica analizada. Esto, junto al hecho de que estas 
-técnicas son susceptibles de ser atacas con métodos estructurales como SPA,
-hacen que esta técnica de incrustación sea **la menos recomendable** de las
-analizadas.
-
+Las dos líneas de la gráfica dedicadas al LSB replacement nos permiten ver que 
+no es una buena técnica de ocultación de información. Dado que esta técnica es 
+susceptible de ser atacada con métodos estructurales como SPA, la hace 
+**poco recomendable**. Pero además, podemos ver que al atacarla mediante 
+*deep learning* es una de las técnicas más fáciles de detectar, únicamente 
+superada por SteganoGAN.
 
 
 ### LSB matching
@@ -154,33 +159,30 @@ generada por SteganoGAN, para que la podamos detectar. Actualmente, esto
 puede servir para detectar esta herramienta. Sin embargo, es de esperar que
 el número de imágenes generadas por redes GAN vaya creciendo hasta convertirse
 en algo habitual, lo que nos llevará a un escenario en el que no bastará
-con detectar que una imagen generada por una GAN. Tendremos que diferenciar
-entre imágenes generadas por una GAN con mensaje oculto y imágenes generadas
-por una GAN sin mensaje oculto. Por el momento, no hay mucha investigación
-al respecto.
+con detectar que una imagen ha sido generada por una determinada GAN. 
+Tendremos que diferenciar entre imágenes generadas por una GAN con mensaje 
+oculto y imágenes generadas por una GAN sin mensaje oculto. Por el momento, 
+no hay mucha investigación al respecto.
 
-Aún y así, actualmente no recomendaría el uso de SteganoGAN.
+A pesar de ello y debido a las circunstancias señaladas, actualmente no se 
+recomienda el uso de SteganoGAN.
 
 
+### HStego
 
-### S-UNIWARD
+HStego es una herramienta para ocultar datos en imágenes de mapa de bits y 
+JPEG. Esta herramienta utiliza algunos de los métodos de esteganografía más 
+avanzados conocidos en la actualidad, junto con un límite superior en la 
+cantidad de datos que se pueden ocultar para que las herramientas de 
+esteganografía modernas no puedan detectarlos de manera confiable.
 
-[S-UNIWARD](https://doi.org/10.1186/1687-417X-2014-1) es, junto con HILL, 
-uno de los mejores de la lista. En realidad,
-no se trata de una herramienta de esteganografía, sino de una función de
-coste que indica en que posiciones de la imagen se tiene que ocultar la 
-información. Por el momento, no parece haberse usado en ninguna herramienta
-pública de esteganografía.
+Sin embargo, en este análisis no se ha usado el límite en la cantidad de
+información para poder comparar HStego con las otras herramientas, a medida
+que varía el *payload*.
 
-### HILL (HStego)
-
-[HILL](https://doi.org/10.1109/ICIP.2014.7025854) es, junto con S-UNIWARD, 
-uno de los mejores de la lista. En realidad,
-no se trata de una herramienta de esteganografía, sino de una función de
-coste que indica en que posiciones de la imagen se tiene que ocultar la 
-información. Esta función de coste está implementada en la herramienta
-de esteganografía [HStego](https://github.com/daniellerch/hstego).
-
+En la gráfica se presentan dos versiones diferentes de HStego, la 0.3 y la
+0.4. La versión 0.4 introduce diferentes mejoras que la hacen más difícil de
+detectar.
 
 
 
@@ -195,43 +197,45 @@ En su momento fue un método de esteganografía que aportaba ciertas
 innovaciones. Sin embargo, no podemos olvidar que se trata de un método
 muy antiguo.
 
+
+### F5
+[F5](https://github.com/daniellerch/stego-collection/tree/master/F5) es un 
+método de esteganografía muy popular, que ha dado lugar a una variación
+avanzada conocida com [nsF5](https://dde.binghamton.edu/download/nsf5simulator/), 
+mucho más difícil de detectar, aunque no implementada en ninguna herramienta pública.
+
+Como se puede ver en la gráfica, es una herramienta de puede ser detectada
+de forma bastante fiable con técnicas de estegoanálisis actuales.
+
 ### Steghide
 
 [Steghide](https://steghide.sourceforge.net/) es un método de esteganografía
-muy popular, quizás el más popular para imágenes JPEG. Ha resistido bastante
-bien con los años, pero actualmente existen métodos mucho mejores.
+muy popular, quizás el más popular para imágenes JPEG. 
 
-Como se puede ver en la gráfica, mejora considerablemente los resultados 
-de Outguess, aunque está bastante alejado de nsF5 y J-UNIWARD.
-
-
-### nsF5
-
-[nsF5](https://dde.binghamton.edu/download/nsf5simulator/) es la versión
-mejorada del conocido método de esteganografía [F5](https://www.semanticscholar.org/paper/F-5-%E2%80%94-A-Steganographic-Algorithm-High-Capacity-Westfeld/149b41d7560d7bd628da502bd3d8122a8317d472).
-
-Tal y como se puede ver en la gráfica, nsF5 ofrece buenos resultados,
-principalmente para tamaños de *payload* bajos.
+Ha resistido bastante bien con los años, aunque actualmente puede ser
+detectado con bastante fiabilidad. Sin embargo, como se puede ver en la
+gráfica, ofrece resultados mucho mejores que los de F5 y Outguess.
 
 
-### J-MiPOD
+### HStego
 
-[J-MiPOD](https://doi.org/10.1109/tifs.2021.3111713) es, junto con nsF5 y 
-J-UNIWARD,  uno de los mejores de los analizados. Supera a nsF5 con tamaños de
-*payload* grandes, aunque para tamaños de *payload* pequeños nsF5 lo supera
-ligeramente. Además, ofrece resultados inferiores a J-UNIWARD en todos los casos.
+Como ya se ha mencionado en la sección de mapas de bits, HStego es una 
+herramienta para ocultar datos en imágenes de mapa de bits y 
+JPEG. Esta herramienta utiliza algunos de los métodos de esteganografía más 
+avanzados conocidos en la actualidad, junto con un límite superior en la 
+cantidad de datos que se pueden ocultar para que las herramientas de 
+esteganografía modernas no puedan detectarlos de manera confiable.
+
+En este análisis no se ha usado el límite en la cantidad de
+información para poder comparar HStego con las otras herramientas, a medida
+que varía el *payload*.
+
+En la gráfica se presentan dos versiones diferentes de HStego, la 0.3 y la
+0.4. La versión 0.4 introduce diferentes mejoras que la hacen más difícil de
+detectar.
 
 
-### J-UNIWARD (HStego)
 
-[J-UNIWARD](https://doi.org/10.1186/1687-417X-2014-1) es, junto con nsF5, 
-el mejor de los analizados. Supera holgadamente a nsF5 con tamaños de
-*payload* grandes, aunque para tamaños de *payload* pequeños nsF5 lo supera
-ligeramente.
 
-En realidad, no se trata de una herramienta de esteganografía, sino de 
-una función de coste que indica en que posiciones de la imagen se tiene 
-que ocultar la información. Esta función de coste está implementada en 
-la herramienta de esteganografía [HStego](https://github.com/daniellerch/hstego).
 
 
