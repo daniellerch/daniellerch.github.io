@@ -81,6 +81,9 @@ Aquí se ha tenido que añadir al *prompt* una instrucción para que escriba
 todo el texto en español, puesto que ocasionalmente escribía parte del 
 texto en inglés.
 
+A continuación, vamos a ver algunos ejemplos en los que pediremos a ChatGPT
+que oculte mensajes en los textos generados.
+
 
 <br>
 ## Ejemplo 1: una letra por frase
