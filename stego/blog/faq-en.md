@@ -32,6 +32,7 @@ lang-suffix: "-en"
 - [What is F5 steganography?](#what-is-f5-steganography)
 - [What is StegHide?](#what-is-steghide)
 - [In what media can steganography be used?](#in-what-media-can-steganography-be-used)
+- [What are structural attacks?](#what-are-structural-attacks)
 
 
 <br>
@@ -174,4 +175,23 @@ used (like slack blocks or metadata) where information can be hidden.
 
 - **Digital documents**: In formats like PDF or Word, it's possible to hide 
 information in metadata, white spaces, or by using nearly invisible text colors.
+
+
+## What are structural attacks?
+
+Although steganography tries to hide information imperceptibly, the data 
+embedding process can introduce changes to the structural characteristics of 
+the carrier object. These changes, although they might be invisible or 
+inaudible to the human observer, can be detected through statistical analysis.
+
+When using LSB (Least Significant Bit) replacement techniques, significant 
+statistical anomalies appear, as the LSB replacement causes the total amount 
+of even values (for example, pixels) to increase and the total number of odd 
+values to decrease.
+
+These anomalies are exploited by a whole family of attacks known as 
+"structural attacks", among which the SPA attack, RS attack, and WS attack 
+stand out.
+
+
 

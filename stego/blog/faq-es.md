@@ -32,7 +32,7 @@ lang-suffix: "-es"
 - [¿Qué es la esteganografía F5?](#qué-es-la-esteganografía-f5)
 - [¿Qué es StegHide?](#qué-es-steghide)
 - [¿En qué medios se puede usar esteganografía?](#en-qué-medios-se-puede-usar-esteganografía)
-
+- [¿Qué son los ataques estructurales?](#qué-son-los-ataques-estructurales)
 
 <br>
 ## ¿Qué es la esteganografía?
@@ -53,8 +53,8 @@ por ejemplo, calentando el papel.
 
 En el ámbito digital, la esteganografía a menudo implica incrustar información 
 dentro de archivos multimedia, como imágenes, audios o videos. Por ejemplo, 
-se podría esconder un mensaje de texto dentro de una imagen alterando 
-ligeramente los valores de los píxeles de la imagen de manera que no sea 
+se podría esconder un mensaje de texto dentro de una imagen alterando, 
+ligeramente los valores de los píxeles de la imagen, de manera que no sea 
 perceptible a simple vista. Solo alguien que sepa que hay un mensaje oculto 
 y cómo extraerlo podría acceder a él.
 
@@ -70,7 +70,7 @@ El estegoanálisis es el proceso de detectar y, posiblemente, extraer
 información oculta mediante técnicas de esteganografía en un medio. Mientras 
 que la esteganografía se centra en ocultar la existencia de un mensaje dentro 
 de otro medio (como una imagen, audio o video), el estegoanálisis busca 
-identificar y extraera esos mensajes ocultos.
+identificar y extraerá esos mensajes ocultos.
 
 En otras palabras, si la esteganografía es el arte de esconder, el 
 estegoanálisis es el arte de descubrir lo escondido. Los expertos en 
@@ -218,6 +218,27 @@ información.
 - **Documentos digitales**: En formatos como PDF o Word, es posible ocultar 
 información en metadatos, espacios en blanco, o mediante el uso de colores de 
 texto casi invisibles.
+
+
+## ¿Qué son los ataques estructurales?
+
+Aunque la esteganografía intenta ocultar información de manera imperceptible, 
+el proceso de incrustación de datos puede introducir cambios en las 
+características estructurales del objeto portador. Estos cambios, aunque pueden 
+ser invisibles o inaudibles para el observador humano, pueden ser detectados 
+mediante análisis estadístico.
+
+Cuando se usan técnicas de [LSB replacement](/stego/blog/faq-es/#qué-es-el-lsb-replacement),
+aparecen anomalías estadísticas importantes, debido a que la sustitución del
+LSB hace que la cantidad total de valores (por ejemplo, píxeles) pares aumente
+y que la cantidad total de valores impares disminuya. 
+
+Estas anomalías son aprovechadas por una toda una familia de ataques conocidodos
+como "ataques estructurales", entre los que destacan el ataque SPA, el ataque RS
+o el ataque WS.
+
+
+
 
 
 
