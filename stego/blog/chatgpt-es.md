@@ -64,7 +64,7 @@ algunos errores, por lo que es necesario pedírselo de nuevo. Aunque es de
 esperar que con el tiempo vaya mejorando (Los ejemplos que se ponen a lo largo 
 del artículo se han realizado con GPT-4).
 
-Antes de entrar de lleno en materia, veamos un ejemplo sencillo. Usaremos un
+Vamos a empezar con un ejemplo sencillo: un texto
 [acróstico](https://es.wikipedia.org/wiki/Acr%C3%B3stico), es decir, un texto
 o composición poética en el que la primera letra de cada verso u oración 
 forma parte del mensaje.
