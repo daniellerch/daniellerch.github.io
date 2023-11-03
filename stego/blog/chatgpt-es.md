@@ -183,7 +183,7 @@ el mensaje cifrado.
 > **PROMPT**:
 > Escribe un texto explicando como funciona un motor de combustión.
 > Escribe texto de manera que cada frase empiece con una letra del mensaje 
-> secreto: "AQGLSTLYOFGVÑTAH". 
+> secreto: "AQGLSTLYOFGVNTAH". 
 > Escribe el texto en un solo párrafo, sin puntos y aparte.
 > Marca en negrita las letras del mensaje secreto.
 
