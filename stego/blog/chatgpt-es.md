@@ -105,6 +105,10 @@ más realista.
 ![Ejemplo 1](/stego/blog/resources/chatgpt2.png?style=centerme)
 
 
+Como se puede ver, ChatGPT hace perfectamente lo que se le ha pedido.
+A continuación, veremos un ejemplo más complicado.
+
+
 <br>
 ## Ejemplo 2: una letra por palabra
 
@@ -125,6 +129,13 @@ todo un desafío. Veamos un ejemplo:
 
 
 ![Ejemplo 2](/stego/blog/resources/chatgpt3.png?style=centerme)
+
+
+Si bien el resultado es el esperado, la frase se ve muy forzada y resulta 
+poco natural. Se podrían buscar soluciones intermedias, que oculten
+dos o tres letras por frase, pero resulta complicado con la versión
+actual de ChatGPT, pues no es capaz de contar letras o palabras 
+correctamente. Quizás versiones futuras puedan hacer este tipo de tareas.
 
 
 <br>
@@ -170,6 +181,10 @@ el mensaje cifrado.
 
 
 ![Ejemplo 3](/stego/blog/resources/chatgpt4.png?style=centerme)
+
+Ahora, como se puede observar, ya no es posible obtener el mensaje oculto
+si no se dispone de la clave. Ni siquiera parece posible detectar el uso de 
+esteganografía.
 
 
 <br>
