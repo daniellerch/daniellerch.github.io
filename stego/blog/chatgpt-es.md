@@ -158,29 +158,42 @@ cifrado de la siguiente manera:
 A=0, B=1, ..., Ñ=14, ..., Z=26.
 
 **Hacemos lo mismo con el mensaje:**
-A(0) T(19) A(0) Q(16) U(20) E(4) A(0) L(11) A(0) M(12) A(0) N(13) E(4) C(2) E(4) R(17)
+A(0) T(20) A(0) Q(17) U(21) E(4) A(0) L(11) A(0) M(12) A(0) N(13) E(4) C(2) E(4) R(18)
 
 
 **Hacemos lo mismo con la clave:**
-A(0) X(23) G(6) U(20) Y(24) P(15) L(11) Ñ(14) O(14) T(19) G(6) J(9) K(10) R(17) W(22) P(15)
+A(0) X(24) G(6) U(21) Y(25) P(16) L(11) Ñ(14) O(15) T(20) G(6) J(9) K(10) R(18) W(23) P(16)
 
 **Sumamos el mensaje con la clave módulo 27:**
-A(0) I(7) H(6) F(10) G(17) S(19) L(11) E(25) Y(24) Z(5) G(6) V(22) O(14) S(19) A(0) H(6)
+A(0) Q(17) G(6) L(11) S(19) T(20) L(11) Y(25) O(15) F(5) G(6) V(22) Ñ(14) T(20) A(0) H(7)
 
-El mensaje cifrado es: AIHFGSLYEYZGVOASH
+El mensaje cifrado es: AQGLSTLYOFGVÑTAH
+
 
 **Vemos un resumen en la tabla siguiente:**
 
 | MENSAJE EN CLARO | ATAQUEALAMANECER |
 | CLAVE | AXGUYPLÑOTGJKRWP |
-| MENSAJE CIFRADO | AIHFGSLYEYZGVOASH|
+| MENSAJE CIFRADO | AQGLSTLYOFGVÑTAH|
 
 
 Ahora ya podemos pedir a ChatGPT que genere el nuevo texto, ahora usando
 el mensaje cifrado.
 
+> **PROMPT**:
+> Escribe un texto explicando como funciona un motor de combustión.
+> Escribe texto de manera que cada frase empiece con una letra del mensaje 
+> secreto: "AQGLSTLYOFGVÑTAH". 
+> Escribe el texto en un solo párrafo, sin puntos y aparte.
+> Marca en negrita las letras del mensaje secreto.
+
+
 
 ![Ejemplo 3](/stego/blog/resources/chatgpt4.png?style=centerme)
+
+Cabe destacar que he sustituido la Ñ por una N, pues resulta complicado
+encontrar una palabra que empiece por Ñ. Para el cifrado podría ser 
+interesante usar mensajes y alfabetos sin Ñ.
 
 Ahora, como se puede observar, ya no es posible obtener el mensaje oculto
 si no se dispone de la clave. Ni siquiera parece posible detectar el uso de 
