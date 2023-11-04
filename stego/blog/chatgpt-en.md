@@ -103,7 +103,7 @@ Next, we will look at a more complicated example.
 
 At this point, it might be interesting to try to increase the capacity, so as to increase the ratio of hidden letters per word or per sentence. For instance, we can ask ChatGPT to use every word.
 
-This doesn't usually work very well, in fact, ChatGPT chatgpt can't get it right.
+This doesn't usually work very well, in fact, ChatGPT can't get it right.
 Let's see an example:
 
 
