@@ -136,7 +136,7 @@ herramienta de esteganografía para imágenes que se ejecuta en el navegador.
 Dado que esta herramienta se ejecuta en el navegador, únicamente es
 necesario acceder a la página y seguierl as instrucciones.
 
-![CryptoStego](/stego/blog/resources/tools-cryptostego.png?style=centerme)
+![CryptoStego](/stego/intro/resources/tools-cryptostego.png?style=centerme)
 
 
 <!-- ))) -->
@@ -224,7 +224,7 @@ hstego.py extract stego.png content.txt p4ssw0rd
 La herramienta HStego dispone de una interfaz gráfica que permite
 ocultar y extraer información, así como incrustar y verificar el marcado.
 
-![HStego](/stego/blog/resources/tools-hstego.png?style=centerme)
+![HStego](/stego/intro/resources/tools-hstego.png?style=centerme)
 
 
 
@@ -335,7 +335,7 @@ n múltiples formatos.
 La herramienta OpenPuff dispone de una interfaz gráfica que permite
 ocultar y extraer información, así como incrustar y verificar el marcado.
 
-![OpenPuff](/stego/blog/resources/tools-openpuff.jpg?style=centerme)
+![OpenPuff](/stego/intro/resources/tools-openpuff.jpg?style=centerme)
 
 
 <!-- ))) -->
@@ -382,7 +382,7 @@ java -jar openstego.jar extract -a randomlsb -sf stego.png -xd output-dir
 La herramienta OpenStego dispone de una interfaz gráfica que permite
 ocultar y extraer información, así como incrustar y verificar el marcado.
 
-![OpenStego](/stego/blog/resources/tools-openstego.png?style=centerme)
+![OpenStego](/stego/intro/resources/tools-openstego.png?style=centerme)
 
 
 
@@ -450,7 +450,7 @@ información en imágenes.
 La herramienta QuickStego dispone de una interfaz gráfica que permite
 ocultar y extraer información.
 
-![QuickStego](/stego/blog/resources/tools-quickstego.jpg?style=centerme)
+![QuickStego](/stego/intro/resources/tools-quickstego.jpg?style=centerme)
 
 
 
@@ -481,7 +481,7 @@ y audio.
 La herramienta SilentEye dispone de una interfaz gráfica que permite
 ocultar y extraer información.
 
-![SilentEye](/stego/blog/resources/tools-silenteye.png?style=centerme)
+![SilentEye](/stego/intro/resources/tools-silenteye.png?style=centerme)
 
 
 
@@ -511,7 +511,7 @@ información en imágenes.
 La herramienta SSuite Picsel dispone de una interfaz gráfica que permite
 ocultar y extraer información.
 
-![SSuite Picsel](/stego/blog/resources/tools-ssuite-picsel.png?style=centerme)
+![SSuite Picsel](/stego/intro/resources/tools-ssuite-picsel.png?style=centerme)
 
 
 
