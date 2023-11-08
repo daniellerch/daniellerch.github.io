@@ -7,7 +7,6 @@ meta-title: "Esteganografía en texto con ChatGPT"
 meta-description: "Artículo acerca del uso de ChatGPT para realizar esteganografía en texto"
 meta-keywords: "esteganografía, texto, ChatGPT"
 lang-suffix: "-es"
-canonical: "/stego/text/chatgpt-es/"
 ---
 
 
