@@ -62,9 +62,9 @@ lang-suffix: "-es"
 ## Introducción
 
 En los artículos 
-"[Códigos de Hamming binarios en esteganografía](/stego/lab/codes/binary-hamming-es/)"
+"[Códigos de Hamming binarios en esteganografía](/stego/codes/binary-hamming-es/)"
 y 
-"[Códigos de Hamming ternarios en esteganografía](/stego/lab/codes/ternary-hamming-es/)"
+"[Códigos de Hamming ternarios en esteganografía](/stego/codes/ternary-hamming-es/)"
 hemos visto cómo incrementar la eficiencia de la inserción de datos ocultos
 mediante técnicas de *matrix embedding*. Estas técnicas, si bien nos permiten
 incrementar la eficiencia, no nos permiten controlar en qué zonas no queremos
@@ -122,7 +122,7 @@ $H$.
 <center>$Hc = m$</center>
 
 Se pueden refrescar estos conceptos en el artículo de 
-[códigos binarios](/stego/lab/codes/binary-hamming-es/) 
+[códigos binarios](/stego/codes/binary-hamming-es/) 
 referenciado en la introducción.
 
 
@@ -133,7 +133,7 @@ de $H$, podrá calcular $m$ con una simple multiplicación de una matriz por un 
 
 En general, cuando se usan códigos de Hamming, encontrar qué bits de $c$ tenemos
 que modificar para obtener un $s$ que codifique el mensaje deseado, es sencillo
-(en el artículo de [códigos binarios](/stego/lab/codes/binary-hamming-es/)
+(en el artículo de [códigos binarios](/stego/codes/binary-hamming-es/)
 se explica). Sin embargo, si queremos que nuestro método soporte la posibilidad
 de asignar costes a cada uno de los bytes que pueden ser modificados, 
 necesariamente necesitaremos que existean múltiples $s$. Pues si existen
@@ -406,7 +406,7 @@ Usaremos como ejemplo la siguiente imagen, procedente del artículo original
 
 
 
-![trellis-1](/stego/lab/codes/resources/trellis-1.png?style=centerme)
+![trellis-1](/stego/codes/resources/trellis-1.png?style=centerme)
 <p style='text-align:center;font-size:12px;font-weight:bold;margin-top:-10px'>
    Image from ref [<a href='#referencias'>1</a>]
 </p>
@@ -533,7 +533,7 @@ diferentes pasos que sigue el algoritmo de codificación.
 Para empezar, veamos cómo construir el camino que recorre la rejilla. 
 Empezaremos por el primer bloque:
 
-![trellis-3](/stego/lab/codes/resources/trellis-3.png?style=centerme)
+![trellis-3](/stego/codes/resources/trellis-3.png?style=centerme)
 
 
 Empezamos en el estado $00$, en la columna $p_0$. Se abren dos caminos: 
@@ -557,7 +557,7 @@ Además de calcular el camino, también tenemos que calcular el coste de dicho
 camino. El coste de cada opción está marcado con un círculo rojo en la 
 siguiente imagen:
 
-![trellis-4](/stego/lab/codes/resources/trellis-4.png?style=centerme)
+![trellis-4](/stego/codes/resources/trellis-4.png?style=centerme)
 
 
 
@@ -671,7 +671,7 @@ codificarán un 1 en el bit de $m$ correspondiente.
 El proceso del siguiente bloque es similar, aunque existen algunas 
 particularidades que vale la pena mencionar.
 
-![trellis-5](/stego/lab/codes/resources/trellis-5.png?style=centerme)
+![trellis-5](/stego/codes/resources/trellis-5.png?style=centerme)
 
 Calculamos el coste de los diferentes caminos de la misma forma que en el
 primer bloque y vamos acumulando el coste. Cuando llegamos al cambio de
@@ -689,7 +689,7 @@ elimina. Lo mismo ocurre con el resto de los estados.
 Una vez tenemos todos los bloques procesados, podemos recorrer hacia tras
 la rejilla para obtener el valor del vector $s$ óptimo.
 
-![trellis-7](/stego/lab/codes/resources/trellis-7.png?style=centerme)
+![trellis-7](/stego/codes/resources/trellis-7.png?style=centerme)
 
 
 Es importante darse cuenta de que el último bit del vector *cover* no afecta
