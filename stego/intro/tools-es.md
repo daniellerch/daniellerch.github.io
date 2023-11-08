@@ -106,7 +106,7 @@ herramienta.
 
 Si conoces algunos datos de los que no se proporcionan o hay alguna herramienta 
 que crees que se podría ser interesante añadir a la lista, puedes ponerte en 
-contacto conmigo conmigo [aquí](/about-es).
+contacto conmigo [aquí](/about-es).
 
 
 
@@ -126,7 +126,7 @@ herramienta de esteganografía para imágenes que se ejecuta en el navegador.
 
 
 Dado que esta herramienta se ejecuta en el navegador, únicamente es
-necesario acceder a la página y seguierl as instrucciones.
+necesario acceder a la página y seguir las instrucciones.
 
 ![CryptoStego](/stego/intro/resources/tools-cryptostego.png?style=centerme)
 
