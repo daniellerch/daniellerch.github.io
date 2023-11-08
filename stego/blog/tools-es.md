@@ -25,6 +25,12 @@ lang-suffix: "-es"
         margin-top: -70px;
         visibility: hidden;
     }
+    .separator {
+        height: 10px;
+    } 
+    hr {
+      margin-top: 80px;
+    }
 </style>
 
 <div class='menu' style='margin-top:50px'></div>
@@ -32,6 +38,7 @@ lang-suffix: "-es"
 
 
 ## Esteganografía en imágenes
+- [CryptoStego](#cryptostego) <small>[ PNG, JPG ]</small>
 - [F5](#f5) <small>[ JPG ]</small>
 - [HStego](#hstego) <small>[ PNG, JPG ]</small>
 - [JPHS](#jphs) <small>[ JPG ]</small>
@@ -40,57 +47,57 @@ lang-suffix: "-es"
 - [OpenStego](#openstego) <small>[ PNG ]</small>
 - [Outguess](#outguess) <small>[ JPG ]</small>
 - [SilentEye](#silenteye) <small>[ BMP, JPG ]</small>
+- [SSuite Picsel](#ssuite-picsel) <small>[ BMP, PNG, JPG ]</small>
 - [StegHide](#steghide) <small>[ BMP, JPG ]</small> 
-- [SSuite Picsel](#ssuite-picsel) <------
-- [ImageHide](#imagehide) XXX
-- [QuickStego](#quickstego) XXX
-- [S-Tools](#s-tools) XXX
-- [WBStego4](#wbstego4) XXX 
-- [JPHS](#jphs) <small>[ JPG ]</small> XXX
-- [JSteg](#jsteg) <small>[ JPG ]</small> XXX
-- [Xiao Steganography](#xiao-steganography) XXX https://xiao-steganography.en.uptodown.com/windows
-- [YASS](#yass) XXX
+- [QuickStego](#quickstego) <small>[ BMP, GIF, JPG ]</small> 
 
 
-
-### Esteganografía en audio   
+<div class='separator'></div>
+## Esteganografía en audio   
+- XXX [DeepSound](#deepsound) <small>[ WAV, FLAC, WMA, APE ]</small> https://jpinsoft.net/deepsound/overview.aspx
+- XXX [HiddenWave](#hiddenwave) <small>[ WAV ]</small> https://github.com/techchipnet/HiddenWave
+- XXX [MP3Stego](#mp3stego) <small>[ MP3 ]</small> https://www.petitcolas.net/steganography/mp3stego/
+- XXX [MP3 Steganography Lib](#mp3-steganography-lib) <small>[ MP3 ]</small> https://github.com/tomershay100/mp3-steganography-lib
 - [OpenPuff](#openpuff) <small>[ AIFF, MP3, NEXT/SUN, WAV ]</small>
 - [SilentEye](#silenteye) <small>[ WAV ]</small> 
-- [StegHide](#steghide) <small>[ WAV, AU ]</small> <------
-- [MP3Stego](#mp3stego) <small>[ MP3 ]</small> XXX https://www.petitcolas.net/steganography/mp3stego/
-- [MP3 Steganography Lib](#mp3-steganography-lib) <small>[ MP3 ]</small> XXX https://github.com/tomershay100/mp3-steganography-lib
-- [DeepSound](#deepsound) <small>[ WAV, FLAC, WMA, APE ]</small> XXX https://jpinsoft.net/deepsound/overview.aspx
-- [HiddenWave](#hiddenwave) <small>[ WAV ]</small> XXX https://github.com/techchipnet/HiddenWave
-- [Stegonaut](#stegonaut) <small>[ MP3 ] XXX https://github.com/knez/stegonaut</small>
+- [StegHide](#steghide) <small>[ WAV, AU ]</small>
 
 
-
-### Esteganografía en video
+<div class='separator'></div>
+## Esteganografía en video
 - [OpenPuff](#openpuff) [ 3GP, MP4, MPG, VOB ]
 
 
-
-### Esteganografía en protocolos de red
+<div class='separator'></div>
+## Esteganografía en protocolos de red
 - [xxx](#xxx)
 
 
-
-## Esteganografía concatenando archivos
+<div class='separator'></div>
+## Esteganografía EOF
 - [xxx](#xxx)
 
 
-
+<div class='separator'></div>
 ## Esteganografía en texto
-- [Steg](#steg) XXX https://github.com/geezee/steg
-- [ChatGPT](#chatgpt) XXX
+- XXX [Steg](#steg) https://github.com/geezee/steg
+- XXX [ChatGPT](#chatgpt)
 
 
-
-### Esteganografía en otros medios
+<div class='separator'></div>
+## Esteganografía en otros medios
 - [OpenPuff](#openpuff) [ FLV, SWF, PDF ]
 
 
 
+<!--
+PENDING:
+- [stegosuite](#stegosuite) <small>[ MP3 ] https://github.com/knez/stegonaut</small>
+- [Stegonaut](#stegonaut) <small>[ MP3 ] https://github.com/knez/stegonaut</small>
+-->
+
+<br>
+<hr>
 
 ## Notas sobre esta lista
 
@@ -111,10 +118,31 @@ contacto conmigo conmigo [aquí](/about-es).
 
 
 
+<hr>
+## CryptoStego
+<!-- ((( -->
 
+[CryptoStego](https://stego.js.org/) es una 
+herramienta de esteganografía para imágenes que se ejecuta en el navegador.
+
+
+|-|-|
+| **Sistema Operativo** | Multiplataforma (Navegador web) |
+| **Método de inserción para imágenes** | LSB Replacement |
+| **Método de inserción para imágenes JPG** | A medida |
+| **Licencia** | MIT |
+
+
+Dado que esta herramienta se ejecuta en el navegador, únicamente es
+necesario acceder a la página y seguierl as instrucciones.
+
+![CryptoStego](/stego/blog/resources/tools-cryptostego.png?style=centerme)
+
+
+<!-- ))) -->
 
 <hr>
-### F5
+## F5
 <!-- ((( -->
 
 [F5](https://github.com/daniellerch/stego-collection/tree/master/F5) es una 
@@ -152,11 +180,11 @@ java Extract -p p4ssw0rd -e output.txt stego.jpg
 <!-- ))) -->
 
 <hr>
-### HStego
+## HStego
 <!-- ((( -->
 
 [HStego](https://github.com/daniellerch/hstego) es una herramienta de 
-esteganografía para imágenes, que permite ocultar información en imágenes 
+esteganografía que permite ocultar información en imágenes 
 PNG y JPG. 
 Esta herramienta tiene como objetivo principal no ser detectada con 
 herramientas modernas de estegoanálisis.
@@ -203,7 +231,7 @@ ocultar y extraer información, así como incrustar y verificar el marcado.
 <!-- ))) -->
 
 <hr>
-### JPHS
+## JPHS
 <!-- ((( -->
 
 [JP Hide & Seek](https://github.com/daniellerch/stego-collection/tree/master/jphs) es una 
@@ -212,7 +240,7 @@ herramienta de esteganografía para imágenes JPEG.
 
 |-|-|
 | **Sistema Operativo** | Linux |
-| **Método de inserción para imágenes JPG** | ? |
+| **Método de inserción para imágenes JPG** | DCT LSB replacement |
 | **Licencia** | GPL v2 |
 
 
@@ -241,7 +269,7 @@ jpseek stego.jpg output.txt
 <!-- ))) -->
 
 <hr>
-### JSteg
+## JSteg
 <!-- ((( -->
 
 [JSteg](https://github.com/daniellerch/stego-collection/tree/master/jsteg) es una 
@@ -279,11 +307,11 @@ djpeg -steg output.txt stego.jpg > out.jpg
 <!-- ))) -->
 
 <hr>
-### OpenPuff
+## OpenPuff
 <!-- ((( -->
 
 [OpenPuff](https://embeddedsw.net/OpenPuff_Steganography_Home.html) es una 
-herramienta de esteganografía para imágenes, que permite ocultar información 
+herramienta de esteganografía que permite ocultar información 
 n múltiples formatos.
 
 
@@ -313,7 +341,7 @@ ocultar y extraer información, así como incrustar y verificar el marcado.
 <!-- ))) -->
 
 <hr>
-### OpenStego
+## OpenStego
 <!-- ((( -->
 
 [OpenStego](https://www.openstego.com) es una herramienta de esteganografía
@@ -361,7 +389,7 @@ ocultar y extraer información, así como incrustar y verificar el marcado.
 <!-- ))) -->
 
 <hr>
-### Outguess
+## Outguess
 <!-- ((( -->
 
 [Outguess](https://github.com/daniellerch/stego-collection/tree/master/Outguess) es una 
@@ -399,11 +427,41 @@ outguess -k p4ssw0rd -r stego.jpg output.txt
 <!-- ))) -->
 
 <hr>
-### SilentEye
+## QuickStego
+<!-- ((( -->
+
+[QuickStego](http://quickcrypto.com/free-steganography-software.html) 
+es una herramienta de esteganografía que permite ocultar 
+información en imágenes.
+
+
+|-|-|
+| **Sistema Operativo** | Windows |
+| **Formatos soportados** | BMP, GIF, JPG |
+| **Método de inserción en imágenes** | ? |
+| **Método de inserción en imágenes JPEG** | ? |
+| **Licencia** | Freeware |
+
+
+
+<br>
+**Interfaz gráfica:**
+
+La herramienta QuickStego dispone de una interfaz gráfica que permite
+ocultar y extraer información.
+
+![QuickStego](/stego/blog/resources/tools-quickstego.jpg?style=centerme)
+
+
+
+<!-- ))) -->
+
+<hr>
+## SilentEye
 <!-- ((( -->
 
 [SilentEye](https://achorein.github.io/silenteye/) es una herramienta de 
-esteganografía para imágenes, que permite ocultar información en imágenes
+esteganografía que permite ocultar información en imágenes
 y audio.
 
 
@@ -430,7 +488,37 @@ ocultar y extraer información.
 <!-- ))) -->
 
 <hr>
-### Steghide
+## SSuite Picsel
+<!-- ((( -->
+
+[SSuite Picsel](https://www.ssuiteoffice.com/software/ssuitepicselsecurity.htm) 
+es una herramienta de esteganografía que permite ocultar 
+información en imágenes.
+
+
+|-|-|
+| **Sistema Operativo** | Windows, MacOS X, Linux |
+| **Formatos soportados** | BMP, PNG, JPG |
+| **Método de inserción en imágenes** | ? |
+| **Método de inserción en imágenes JPEG** | ? |
+| **Licencia** | Freeware |
+
+
+
+<br>
+**Interfaz gráfica:**
+
+La herramienta SSuite Picsel dispone de una interfaz gráfica que permite
+ocultar y extraer información.
+
+![SSuite Picsel](/stego/blog/resources/tools-ssuite-picsel.png?style=centerme)
+
+
+
+<!-- ))) -->
+
+<hr>
+## Steghide
 <!-- ((( -->
 
 [Steghide](https://steghide.sourceforge.net/index.php) es una herramienta de 
@@ -470,6 +558,9 @@ steghide extract -sf stego.jpg -xf output.txt -p p4ssw0rd -f
 
 
 <!-- ))) -->
+
+
+
 
 
 
