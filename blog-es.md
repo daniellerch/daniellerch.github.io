@@ -35,11 +35,11 @@ lang-suffix: "-es"
 <hr style='border:1px solid #ccc'>
 
 ### Introducción:
-- [Preguntas frecuentes sobre esteganografía](/stego/blog/faq-es/).
+- [Preguntas frecuentes sobre esteganografía](/stego/intro/faq-es/).
 - Listado de herramientas de esteganografía.
 - [Comparativa de herramientas de esteganografía en imágenes.](/stego/aletheia/tool-comparison-es/)
 - [Esteganografía en texto con ChatGPT](/stego/text/chatgpt-es/).
-- [Esteganografía LSB en imágenes y audio](/stego/lab/intro/lsb-es/).
+- [Esteganografía LSB en imágenes y audio](/stego/intro/lsb-es/).
 - Esteganografía F5.
 - Esteganografía Steghide.
 - Esteganografía LSB en vídeo.
@@ -69,8 +69,8 @@ lang-suffix: "-es"
  
 
 ### Codificación del mensaje:
-- [Códigos de Hamming binarios en esteganografía](/stego/lab/codes/binary-hamming-es/).
-- [Códigos de Hamming ternarios en esteganografía](/stego/lab/codes/ternary-hamming-es/).
+- [Códigos de Hamming binarios en esteganografía](/stego/codes/binary-hamming-es/).
+- [Códigos de Hamming ternarios en esteganografía](/stego/codes/ternary-hamming-es/).
 
 
 <h3 class='todo'>Funciones de coste:</h3>

@@ -35,15 +35,15 @@ lang-suffix: "-en"
 <hr style='border:1px solid #ccc'>
 
 ### Introduction:
-- [Steganography FAQ](/stego/blog/faq-en/).
+- [Steganography FAQ](/stego/intro/faq-en/).
 - [Comparison of Image Steganography Tools.](/stego/aletheia/tool-comparison-en/)
 - [Text steganography with ChatGPT](/stego/text/chatgpt-en/).
-- [LSB steganography in images and audio.](/stego/lab/intro/lsb-en/)
+- [LSB steganography in images and audio.](/stego/intro/lsb-en/)
 
 
 ### Message enconding:
-- [Binary Hamming codes in Steganography](/stego/lab/codes/binary-hamming-en/)
-- [Ternary Hamming codes in Steganography](/stego/lab/codes/ternary-hamming-en/)
+- [Binary Hamming codes in Steganography](/stego/codes/binary-hamming-en/)
+- [Ternary Hamming codes in Steganography](/stego/codes/ternary-hamming-en/)
 
 
 
