@@ -38,7 +38,7 @@ lang-suffix: "-es"
 - [Preguntas frecuentes sobre esteganografía](/stego/blog/faq-es/).
 - Listado de herramientas de esteganografía.
 - [Comparativa de herramientas de esteganografía en imágenes.](/stego/aletheia/tool-comparison-es/)
-- [Esteganografía en texto con ChatGPT](/stego/blog/chatgpt-es/).
+- [Esteganografía en texto con ChatGPT](/stego/text/chatgpt-es/).
 - [Esteganografía LSB en imágenes y audio](/stego/lab/intro/lsb-es/).
 - Esteganografía F5.
 - Esteganografía Steghide.

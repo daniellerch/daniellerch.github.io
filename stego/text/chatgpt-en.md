@@ -7,7 +7,7 @@ meta-title: "Text steganography with ChatGPT"
 meta-description: "Article about using ChatGPT to perform text steganography"
 meta-keywords: "steganography, text, ChatGPT"
 lang-suffix: "-en"
-sitemap: false
+canonical: "/stego/text/chatgpt-es/"
 ---
 
 

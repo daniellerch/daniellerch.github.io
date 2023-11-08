@@ -114,7 +114,10 @@
 
   <meta property="og:type" content="website" />
 
-  {% if page.id %}
+  {% if page.canonical %}
+  <meta property="og:url" content="{{ page.canonical | absolute_url }}" />
+  <link rel="canonical" href="{{ page.canonical | absolute_url }}" />
+  {% elsif page.id %}
   <meta property="og:url" content="{{ page.url | absolute_url }}" />
   <link rel="canonical" href="{{ page.url | absolute_url }}" />
   {% else %}
@@ -122,11 +125,13 @@
   <link rel="canonical" href="{{ page.url | absolute_url | strip_index }}" />
   {% endif %}
 
+
   {% if page.share-img %}
   <meta property="og:image" content="{{ page.share-img }}" />
   {% elsif site.avatar %}
   <meta property="og:image" content="{{ site.avatar | absolute_url }}" />
   {% endif %}
+
 
 
   <!-- Twitter summary cards -->

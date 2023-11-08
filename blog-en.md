@@ -37,7 +37,7 @@ lang-suffix: "-en"
 ### Introduction:
 - [Steganography FAQ](/stego/blog/faq-en/).
 - [Comparison of Image Steganography Tools.](/stego/aletheia/tool-comparison-en/)
-- [Text steganography with ChatGPT](/stego/blog/chatgpt-en/).
+- [Text steganography with ChatGPT](/stego/text/chatgpt-en/).
 - [LSB steganography in images and audio.](/stego/lab/intro/lsb-en/)
 
 
