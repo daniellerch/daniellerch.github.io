@@ -54,10 +54,9 @@ lang-suffix: "-es"
 
 <div class='separator'></div>
 ## Esteganografía en audio   
-- XXX [DeepSound](#deepsound) <small>[ WAV, FLAC, WMA, APE ]</small> https://jpinsoft.net/deepsound/overview.aspx
-- XXX [HiddenWave](#hiddenwave) <small>[ WAV ]</small> https://github.com/techchipnet/HiddenWave
-- XXX [MP3Stego](#mp3stego) <small>[ MP3 ]</small> https://www.petitcolas.net/steganography/mp3stego/
-- XXX [MP3 Steganography Lib](#mp3-steganography-lib) <small>[ MP3 ]</small> https://github.com/tomershay100/mp3-steganography-lib
+- [DeepSound](#deepsound) <small>[ FLAC, MP3, WAV, APE ]</small>
+- [HiddenWave](#hiddenwave) <small>[ WAV ]</small> 
+- [MP3Stego](#mp3stego) <small>[ MP3 ]</small>
 - [OpenPuff](#openpuff) <small>[ AIFF, MP3, NEXT/SUN, WAV ]</small>
 - [SilentEye](#silenteye) <small>[ WAV ]</small> 
 - [StegHide](#steghide) <small>[ WAV, AU ]</small>
@@ -69,19 +68,9 @@ lang-suffix: "-es"
 
 
 <div class='separator'></div>
-## Esteganografía en protocolos de red
-- [xxx](#xxx)
-
-
-<div class='separator'></div>
-## Esteganografía EOF
-- [xxx](#xxx)
-
-
-<div class='separator'></div>
 ## Esteganografía en texto
-- XXX [Steg](#steg) https://github.com/geezee/steg
-- XXX [ChatGPT](#chatgpt)
+- [Steg](#steg)
+- [ChatGPT](#chatgpt)
 
 
 <div class='separator'></div>
@@ -94,6 +83,9 @@ lang-suffix: "-es"
 PENDING:
 - [stegosuite](#stegosuite) <small>[ MP3 ] https://github.com/knez/stegonaut</small>
 - [Stegonaut](#stegonaut) <small>[ MP3 ] https://github.com/knez/stegonaut</small>
+- XXX [MP3 Steganography Lib](#mp3-steganography-lib) <small>[ MP3 ]</small> https://github.com/tomershay100/mp3-steganography-lib
+## Esteganografía en protocolos de red
+- ...
 -->
 
 <br>
@@ -142,6 +134,50 @@ necesario acceder a la página y seguierl as instrucciones.
 <!-- ))) -->
 
 <hr>
+## ChatGPT
+<!-- ((( -->
+
+[ChatGPT](https://chat.openai.com//) es un modelo de inteligencia artificial 
+desarrollado por [OpenAI](https://openai.com/) para simular conversaciones 
+humanas a través de texto. 
+
+No se trata de una herramienta de esteganografía, aunque su capacidad para
+generar textos de calidad permite usarla como tal. Puede encontrarse un 
+ejemplo en el artículo [Esteganografía en texto con ChatGPT](/stego/text/chatgpt-es/).
+
+
+
+<!-- ))) -->
+
+<hr>
+## DeepSound
+<!-- ((( -->
+
+[DeepSound](https://jpinsoft.net/deepsound/overview.aspx) es una 
+herramienta de esteganografía que permite ocultar información 
+en archivos de sonido.
+
+
+|-|-|
+| **Sistema Operativo** | Windows |
+| **Formatos soportados para sonido** | FLAC, MP3, WAV, APE |
+| **Método de inserción en audio** | ? |
+| **Licencia** | Freeware |
+
+
+
+<br>
+**Interfaz gráfica:**
+
+La herramienta DeepSound dispone de una interfaz gráfica que permite
+ocultar y extraer información.
+
+![DeepSound](/stego/intro/resources/tools-deepsound.png?style=centerme)
+
+
+<!-- ))) -->
+
+<hr>
 ## F5
 <!-- ((( -->
 
@@ -173,6 +209,45 @@ siguiente comando:
 
 ```bash
 java Extract -p p4ssw0rd -e output.txt stego.jpg
+```
+
+
+
+<!-- ))) -->
+
+<hr>
+## HiddenWave
+<!-- ((( -->
+
+[HiddenWave](https://github.com/techchipnet/HiddenWave) es una 
+herramienta de esteganografía para audio en archivos WAV.
+
+
+|-|-|
+| **Sistema Operativo** | Multiplataforma (Python) |
+| **Método de inserción para audio WAV** | LSB replacement |
+| **Licencia** | Dominio público / Sin licencia |
+
+
+<br>
+**Incrustación de un mensaje usando comandos:**
+
+Para ocultar un mensaje en un audio *cover* podemos usar el
+siguiente comando:
+
+```bash
+python3 HiddenWave.py -f cover.wav -m "Secret message" -o stego.wav
+
+```
+
+<br>
+**Extracción de un mensaje usando  comandos:**
+
+Para extraer información oculta en el audio  *stego* podemos usar el
+siguiente comando:
+
+```bash
+python3 ExWave.py -f stego.wav
 ```
 
 
@@ -307,12 +382,52 @@ djpeg -steg output.txt stego.jpg > out.jpg
 <!-- ))) -->
 
 <hr>
+## MP3Stego
+<!-- ((( -->
+
+[MP3Stego](https://www.petitcolas.net/steganography/mp3stego/) es una 
+herramienta de esteganografía que oculta información durante la compresión
+de un archivo WAV a MP3.
+
+
+|-|-|
+| **Sistema Operativo** | Windows |
+| **Método de inserción para audio MP3** | A medida |
+| **Licencia** | ? |
+
+
+<br>
+**Incrustación de un mensaje usando comandos:**
+
+Para ocultar un archivo secret.txt en un audio *cover* podemos usar el
+siguiente comando:
+
+```bash
+encode -E secret.txt -P p4ssw0rd cover.wav stego.mp3
+
+```
+
+<br>
+**Extracción de un mensaje usando  comandos:**
+
+Para extraer información oculta en el audio  *stego* podemos usar el
+siguiente comando:
+
+```bash
+decode -X -P p4ssw0rd svega_stego.mp3
+```
+
+
+
+<!-- ))) -->
+
+<hr>
 ## OpenPuff
 <!-- ((( -->
 
 [OpenPuff](https://embeddedsw.net/OpenPuff_Steganography_Home.html) es una 
 herramienta de esteganografía que permite ocultar información 
-n múltiples formatos.
+en múltiples formatos.
 
 
 |-|-|
@@ -512,6 +627,45 @@ La herramienta SSuite Picsel dispone de una interfaz gráfica que permite
 ocultar y extraer información.
 
 ![SSuite Picsel](/stego/intro/resources/tools-ssuite-picsel.png?style=centerme)
+
+
+
+<!-- ))) -->
+
+<hr>
+## Steg
+<!-- ((( -->
+
+[Steg](https://github.com/geezee/steg) es una herramienta de 
+esteganografía que permite ocultar información en texto ASCII usando diferentes
+codificaciones para el espacio en blanco.
+
+
+|-|-|
+| **Sistema Operativo** | Multiplataforma (D) |
+| **Método de inserción para texto** | Espacios con diferentes codificaciones |
+| **Licencia** | GPL v3 |
+
+
+<br>
+**Incrustación de un mensaje usando comandos:**
+
+Para ocultar un fichero "secret.txt" en una imagen *cover* podemos usar el
+siguiente comando:
+
+```bash
+steghide embed -cf cover.jpg -ef secret.txt -sf stego.jpg -p p4ssw0rd
+```
+
+<br>
+**Extracción de un mensaje usando  comandos:**
+
+Para extraer información oculta en una imagen *stego* podemos usar el
+siguiente comando:
+
+```bash
+steghide extract -sf stego.jpg -xf output.txt -p p4ssw0rd -f
+```
 
 
 

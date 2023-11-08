@@ -31,7 +31,7 @@ lang-suffix: "-es"
 1. [Introducción](#introduccion)
 2. [Texto dibujado en imágenes](#texto-dibujado-en-imágenes)
 3. [Información oculta en el canal alfa](#información-oculta-en-el-canal-alfa)
-4. [Técnicas EOF](#tecnicas-eof)
+4. [Técnicas EOF](#técnicas-eof)
 5. [Metadatos](#metadatos)
 6. [Conclusión](#conclusión)
 
