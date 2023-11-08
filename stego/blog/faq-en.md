@@ -7,7 +7,7 @@ meta-title: "Steganography FAQ"
 meta-description: "FAQ about steganography"
 meta-keywords: "steganography, faq, frequently asked questions"
 lang-suffix: "-en"
-canonical: "/stego/intro/faq-es/"
+canonical: "/stego/intro/faq-en/"
 sitemap: false
 ---
 
