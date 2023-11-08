@@ -36,15 +36,15 @@ lang-suffix: "-en"
 
 ### Introduction:
 - [Steganography FAQ](/stego/intro/faq-en/).
-- [Steganography Tools](/stego/intro/tools-en/)
-- [Comparison of Image Steganography Tools.](/stego/aletheia/tool-comparison-en/)
+- [Steganography Tools](/stego/intro/tools-en/).
+- [Comparison of Image Steganography Tools](/stego/aletheia/tool-comparison-en/).
 - [Text steganography with ChatGPT](/stego/text/chatgpt-en/).
-- [LSB steganography in images and audio.](/stego/intro/lsb-en/)
+- [LSB steganography in images and audio](/stego/intro/lsb-en/).
 
 
 ### Message enconding:
-- [Binary Hamming codes in Steganography](/stego/codes/binary-hamming-en/)
-- [Ternary Hamming codes in Steganography](/stego/codes/ternary-hamming-en/)
+- [Binary Hamming codes in Steganography](/stego/codes/binary-hamming-en/).
+- [Ternary Hamming codes in Steganography](/stego/codes/ternary-hamming-en/).
 
 
 
@@ -54,12 +54,12 @@ lang-suffix: "-en"
 <hr style='border:1px solid #ccc'>
 
 ### Practical steganalysis with Aletheia:
-- [Introduction to steganalysis using Aletheia.](/stego/aletheia/intro-en/)
-- [Identifying the steganographic scheme.](/stego/aletheia/identify-en/)
-- [Practical attack on Steghide.](/stego/aletheia/steghide-attack-en/)
-- [Practical attack on F5.](/stego/aletheia/f5-attack-en/)
-- [Practical attack on LSB replacement: OpenStego and OpenPuff.](/stego/aletheia/lsbr-attack-en/)
-- [Solving Stego-Puzzles with Aletheia.](/stego/aletheia/stego-puzzles-en/)
+- [Introduction to steganalysis using Aletheia](/stego/aletheia/intro-en/).
+- [Identifying the steganographic scheme](/stego/aletheia/identify-en/).
+- [Practical attack on Steghide](/stego/aletheia/steghide-attack-en/).
+- [Practical attack on F5](/stego/aletheia/f5-attack-en/).
+- [Practical attack on LSB replacement: OpenStego and OpenPuff](/stego/aletheia/lsbr-attack-en/).
+- [Solving Stego-Puzzles with Aletheia](/stego/aletheia/stego-puzzles-en/).
 
 
 
