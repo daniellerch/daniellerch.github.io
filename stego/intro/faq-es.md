@@ -7,8 +7,6 @@ meta-title: "Preguntas frecuentes sobre esteganografía"
 meta-description: "FAQ sobre esteganografía"
 meta-keywords: "esteganografía, faq, preguntas frecuentes"
 lang-suffix: "-es"
-canonical: "/stego/intro/faq-es/"
-sitemap: false
 ---
 
 
