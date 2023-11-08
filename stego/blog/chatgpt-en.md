@@ -74,7 +74,7 @@ is part of the message.
 > **PROMPT:** Write an acrostic that hides the message "Hello World".
 > Highlight the letters that are part of the message in bold.
 
-![Acrostic](/stego/blog/resources/chatgpt1en.png?style=centerme)
+![Acrostic](/stego/text/resources/chatgpt1en.png?style=centerme)
 
 Next, we will look at some examples where we will ask ChatGPT
 to hide messages in the generated texts.
@@ -92,7 +92,7 @@ ChatGPT doesn't typically work well if we ask it to insert the message letters a
 > Write the text in a single paragraph, without any new paragraphs.
 > Highlight the letters of the secret message in bold.
 
-![Example 1](/stego/blog/resources/chatgpt2en.png?style=centerme)
+![Example 1](/stego/text/resources/chatgpt2en.png?style=centerme)
 
 As can be seen, ChatGPT does exactly what is asked of it. 
 Next, we will look at a more complicated example.
@@ -115,7 +115,7 @@ Let's see an example:
 > Write the text in a single paragraph, without any new paragraphs.
 > Highlight the letters of the secret message in bold.
 
-![Example 2](/stego/blog/resources/chatgpt3en.png?style=centerme)
+![Example 2](/stego/text/resources/chatgpt3en.png?style=centerme)
 
 It is really difficult to fit the letters of the message into all the words. ChatGPT tries, and does it pretty well, but not good enough. Although, with other messages or different conversation topics, ChatGPT might be able to handle it.
 
@@ -161,7 +161,7 @@ Now we can ask ChatGPT to generate the new text, now using the encrypted message
 > Write the text in a single paragraph, without separate sentences.
 > Highlight the letters of the encrypted message in **bold**.
 
-![Example 3](/stego/blog/resources/chatgpt4en.png?style=centerme)
+![Example 3](/stego/text/resources/chatgpt4en.png?style=centerme)
 
 
 Now, as you can see, it's not possible to read the hidden message without the key. 

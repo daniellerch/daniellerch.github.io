@@ -73,7 +73,7 @@ forma parte del mensaje.
 > Asegúrate de que todo el texto está en español.
 
 
-![Acróstico](/stego/blog/resources/chatgpt1.png?style=centerme)
+![Acróstico](/stego/text/resources/chatgpt1.png?style=centerme)
 
 
 Aquí se ha tenido que añadir al *prompt* una instrucción para que escriba
@@ -101,7 +101,7 @@ más realista.
 > Marca en negrita las letras del mensaje secreto.
 
 
-![Ejemplo 1](/stego/blog/resources/chatgpt2.png?style=centerme)
+![Ejemplo 1](/stego/text/resources/chatgpt2.png?style=centerme)
 
 
 Como se puede ver, ChatGPT hace perfectamente lo que se le ha pedido.
@@ -127,7 +127,7 @@ todo un desafío. Veamos un ejemplo:
 > Marca en negrita las letras del mensaje secreto.
 
 
-![Ejemplo 2](/stego/blog/resources/chatgpt3.png?style=centerme)
+![Ejemplo 2](/stego/text/resources/chatgpt3.png?style=centerme)
 
 
 Si bien el resultado es el esperado, la frase se ve muy forzada y resulta 
@@ -188,7 +188,7 @@ el mensaje cifrado.
 
 
 
-![Ejemplo 3](/stego/blog/resources/chatgpt4.png?style=centerme)
+![Ejemplo 3](/stego/text/resources/chatgpt4.png?style=centerme)
 
 Cabe destacar que he sustituido la Ñ por una N, pues resulta complicado
 encontrar una palabra que empiece por Ñ. Para el cifrado podría ser 
