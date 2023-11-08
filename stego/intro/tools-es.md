@@ -101,7 +101,7 @@ que usa. Este último es especialmente importante si se desea realizar
 estegoanálisis usando alguna herramienta como [Aletheia](https://github.com/daniellerch/aletheia).
 
 Algunos datos todavía no están disponibles, normalmente porque no he 
-econtrado esta información y aún no he tenido tiempo de investigar la 
+encontrado esta información y aún no he tenido tiempo de investigar la 
 herramienta.
 
 Si conoces algunos datos de los que no se proporcionan o hay alguna herramienta 
