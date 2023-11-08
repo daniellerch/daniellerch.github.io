@@ -7,7 +7,7 @@ meta-title: "Ternary Hamming Codes in Steganography"
 meta-description: "Information hiding technique based on ternary Hamming codes."
 meta-keywords: "steganography, codes"
 lang-suffix: "-en"
-canonical: "/stego/codes/ternary-hamming-es/"
+canonical: "/stego/codes/ternary-hamming-en/"
 sitemap: false
 ---
 
