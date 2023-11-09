@@ -127,7 +127,7 @@ google_analytics: G-LMCVW2DYY8
 # --- Comments --- #
 
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-disqus: "daniellerch"
+#disqus: "daniellerch"
 
 # If you want to use JustComments fill with the API Key
 #just-comments: "ABCD-EFGH-IJKL"
@@ -256,6 +256,19 @@ prose:
           label: "Publish"
           help: "Check to publish post, uncheck to hide."
 
+
+
+comment-read: https://docs.google.com/spreadsheets/d/17FJ08QK-aOOvUxRcJDEB_DxlopbVNayjyUF_XzGDaV8
+comment-post: https://docs.google.com/forms/d/e/1FAIpQLSfOwVPFnCcP9gl84MCDCJbd2gRSZxukLVBL6jqxY69Zkjg7Kg
+comment-post-fields: [entry.1753710955, entry.834810890, entry.1352118463]
+
+google_forms_comments:
+  chunked_comment_loading: true
+  lazy_load_comments: false
+  comment_replies_enabled: false
+
+
+
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -265,5 +278,5 @@ plugins:
 
 
 # deployment
-host: 0.0.0.0
+host: 192.168.1.200
 port: 4000

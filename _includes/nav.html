@@ -41,9 +41,9 @@
                  <div class='lang'>
                 {%- if page.url == "/" -%}
                   (<a {% if page.lang-suffix == "-en" %}class="lang-sel"{% endif %} 
-                      href="/index-en">en</a>|
+                      href="/index-en/">en</a>|
                    <a {% if page.lang-suffix == "-es" %}class="lang-sel"{% endif %} 
-                      href="/index-es">es</a>)
+                      href="/index-es/">es</a>)
                 {% else %}
                   (<a {% if page.lang-suffix == "-en" %}class="lang-sel"{% endif %} 
                       href="{{ page.url | replace: "-es", "-en" | absolute_url }}">en</a>|
