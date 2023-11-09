@@ -41,6 +41,7 @@ comments: true
 - [Ataque práctico a Steghide.](/stego/aletheia/steghide-attack-es/)
 - [Ataque práctico a F5.](/stego/aletheia/f5-attack-es/)
 - [Ataque práctico a esquemas LSB replacement: OpenStego y OpenPuff.](/stego/aletheia/lsbr-attack-es/)
+- [Resolución de stego-puzzles con Aletheia](/stego/aletheia/stego-puzzles-es/).
 - [Comparativa de herramientas de esteganografía en imágenes.](/stego/aletheia/tool-comparison-es/)
 
 
