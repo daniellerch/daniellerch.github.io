@@ -6,6 +6,7 @@ noindex: false
 meta-title: "Tools"
 meta-description: "Steganograpy and steganalysis tools"
 lang-suffix: "-en"
+comments: true
 ---
 
 

@@ -6,6 +6,7 @@ noindex: false
 meta-title: "StegoLab"
 meta-description: "Laboratorio de Esteganografía, Estegoanálisis y watermarking"
 lang-suffix: "-es"
+comments: true
 ---
 
 <style>

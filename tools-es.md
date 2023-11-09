@@ -6,6 +6,7 @@ noindex: false
 meta-title: "Herramientas"
 meta-description: "Herramientas de esteganografía y estegoanálisis"
 lang-suffix: "-es"
+comments: true
 ---
 
 

@@ -6,6 +6,7 @@ noindex: false
 meta-title: "About Daniel Lerch Hostalot"
 meta-description: "Some information about Daniel Lerch Hostalot related to steganography"
 lang-suffix: "-en"
+comments: true
 ---
 
 This site is dedicated to steganography and steganalysis. I have created it 

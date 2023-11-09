@@ -6,6 +6,7 @@ noindex: false
 meta-title: "Sobre Daniel Lerch Hostalot"
 meta-description: "Información sobre Daniel Lerch Hostalot relacionada con la esteganografía"
 lang-suffix: "-es"
+comments: true
 ---
 
 Esta página está dedicada a la esteganografía y al estegoanálisis. La creé con
