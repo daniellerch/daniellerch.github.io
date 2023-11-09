@@ -637,22 +637,22 @@ encodings for whitespace.
 <br>
 **Embedding a message using commands:**
 
-To hide a file "secret.txt" inside a *cover* image we can use the
+To hide a message inside a *cover* image we can use the
 following command:
 
 
 ```bash
-steghide embed -cf cover.jpg -ef secret.txt -sf stego.jpg -p p4ssw0rd
+steg -c cover.txt -o stego.txt "This is a message"
 ```
 
 <br>
 **Extracting a message using commands:**
 
-To extract hidden information from a stego image we can use the
+To extract hidden information from a stego text we can use the
 following command:
 
 ```bash
-steghide extract -sf stego.jpg -xf output.txt -p p4ssw0rd -f
+steg -d -s stego.txt
 ```
 
 

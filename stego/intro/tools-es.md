@@ -651,21 +651,21 @@ codificaciones para el espacio en blanco.
 <br>
 **Incrustación de un mensaje usando comandos:**
 
-Para ocultar un fichero "secret.txt" en una imagen *cover* podemos usar el
+Para ocultar un mensaje en un texto *cover* podemos usar el
 siguiente comando:
 
 ```bash
-steghide embed -cf cover.jpg -ef secret.txt -sf stego.jpg -p p4ssw0rd
+steg -c cover.txt -o stego.txt "This is a message"
 ```
 
 <br>
 **Extracción de un mensaje usando  comandos:**
 
-Para extraer información oculta en una imagen *stego* podemos usar el
+Para extraer información oculta de un texto *stego* podemos usar el
 siguiente comando:
 
 ```bash
-steghide extract -sf stego.jpg -xf output.txt -p p4ssw0rd -f
+steg -d -s stego.txt
 ```
 
 
