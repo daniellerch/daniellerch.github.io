@@ -7,6 +7,7 @@ meta-title: "Detalles técnicos de HStego I: mapas de bits"
 meta-description: "En este artículo se detalla cómo HStego detecta las zonas donde ocultar información"
 meta-keywords: "esteganografía, imágenes, mapas de bits"
 lang-suffix: "-es"
+comments: true
 ---
 
 > En este artículo vamos a ver cómo detecta HStego las zonas más seguras

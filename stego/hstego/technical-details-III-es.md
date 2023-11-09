@@ -7,6 +7,7 @@ meta-title: "Detalles técnicos de HStego III: incrustación"
 meta-description: "Artículo en el que se detalla la fase de incrustación de la herramienta HStego."
 meta-keywords: "esteganografía, imágenes, incrustación, STC"
 lang-suffix: "-es"
+comments: true
 ---
 
 > En este artículo vamos a ver cómo incrustar información en imágenes 

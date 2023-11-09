@@ -7,6 +7,7 @@ meta-title: "Esteganografía LSB en imágenes y audio"
 meta-description: "Artículo acerca del uso de esteganografía incrustando información en el LSB"
 meta-keywords: "esteganografía, estegoanálisis, imágenes"
 lang-suffix: "-es"
+comments: true
 ---
 
 > En este artículo vamos a ver cómo incrustar información en imágenes y

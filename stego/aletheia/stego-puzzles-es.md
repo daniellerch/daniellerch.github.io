@@ -7,6 +7,7 @@ meta-title: "Resolución de stego-puzzles con Aletheia"
 meta-description: "Artículo acerca del usode la herramienta Aletheia para la resolución de stego-puzzles"
 meta-keywords: "esteganografía, estegoanálisis, imágenes, stego-puzzles"
 lang-suffix: "-es"
+comments: true
 ---
 
 > En este artículo vamos a ver cómo usar los comandos que ofrece 

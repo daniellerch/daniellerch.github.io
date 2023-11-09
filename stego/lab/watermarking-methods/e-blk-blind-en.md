@@ -7,6 +7,7 @@ meta-title: "Block-based blind embedding and correlation coefficient detection"
 meta-description: "Block-based blind embedding and correlation coefficient detection."
 meta-keywords: "watermarking, robust, block-based, blind"
 lang-suffix: "-en"
+comments: true
 ---
 
 

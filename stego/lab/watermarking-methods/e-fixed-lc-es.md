@@ -7,6 +7,7 @@ meta-title: "Incrustación informada con correlación lineal fija y detección m
 meta-description: "Incrustación informada con correlación lineal fija y detección mediante correlación lineal."
 meta-keywords: "watermarking, robusto, incrustación informada"
 lang-suffix: "-es"
+comments: true
 ---
 
 

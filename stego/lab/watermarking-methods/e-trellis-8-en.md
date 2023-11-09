@@ -7,6 +7,7 @@ meta-title: "Trellis-coding embedder and Viterbi detector"
 meta-description: "Trellis-coding embedder and Viterbi detector."
 meta-keywords: "watermarking, robust, blind, 8-bit, Trellis codes, Trellis modulation"
 lang-suffix: "-en"
+comments: true
 ---
 
 

@@ -7,6 +7,7 @@ meta-title: "Introducción a HStego"
 meta-description: "Artículo introductorio a la herramienta de esteganografía HStego"
 meta-keywords: "esteganografía, imágenes"
 lang-suffix: "-es"
+comments: true
 ---
 
 > En este artículo vamos a ver cómo incrustar información en imágenes 

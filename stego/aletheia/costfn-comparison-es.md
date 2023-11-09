@@ -8,6 +8,7 @@ meta-title: "Comparativa de funciones de coste para esteganografía en imágenes
 meta-description: "Artículo en el que se comparan diferentes funciones de coste para esteganografía en imágenes."
 meta-keywords: "esteganografía, estegoanálisis, imágenes"
 lang-suffix: "-es"
+comments: true
 ---
 
 > En este artículo vamos a ver una comparativa de funciones de coste para

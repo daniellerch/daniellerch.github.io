@@ -7,6 +7,7 @@ meta-title: "Fixed Linear Correlation Embedder and Linear Correlation Detection"
 meta-description: "Fixed Linear Correlation Embedder and Linear Correlation Detection."
 meta-keywords: "watermarking, robust, informed embedding"
 lang-suffix: "-en"
+comments: true
 ---
 
 

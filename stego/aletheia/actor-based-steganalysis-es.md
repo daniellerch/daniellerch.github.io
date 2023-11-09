@@ -8,6 +8,7 @@ meta-title: "Estegoanálisis basado en actores"
 meta-description: "Artículo en el que se muestra cómo realizar estegoanálisis de imágenes basado en actores."
 meta-keywords: "esteganografía, estegoanálisis, imágenes, CSM"
 lang-suffix: "-es"
+comments: true
 ---
 
 > En este artículo vamos a ver cómo realizar estegoanálisis de 

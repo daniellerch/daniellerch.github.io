@@ -8,6 +8,7 @@ meta-title: "Comparativa de herramientas de esteganografía en imágenes"
 meta-description: "Artículo en el que se comparan diferentes herramientas de esteganografía en imágenes para ver cuáles son más difíciles de detectar."
 meta-keywords: "esteganografía, estegoanálisis, imágenes"
 lang-suffix: "-es"
+comments: true
 ---
 
 > En este artículo vamos a ver una comparativa de herramientas de esteganografía

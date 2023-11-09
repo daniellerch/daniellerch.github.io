@@ -7,6 +7,7 @@ meta-title: "Detalles técnicos de HStego II: JPEG"
 meta-description: "En este artículo se detalla cómo HStego detecta las zonas donde ocultar información"
 meta-keywords: "esteganografía, imágenes, JPEG"
 lang-suffix: "-es"
+comments: true
 ---
 
 > En este artículo vamos a ver cómo detecta HStego las zonas más seguras

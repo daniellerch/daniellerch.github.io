@@ -7,6 +7,7 @@ meta-title: "HStego como módulo Python"
 meta-description: "Introducción al uso de HStego como módulo Python"
 meta-keywords: "esteganografía, imágenes"
 lang-suffix: "-es"
+comments: true
 ---
 
 > En este artículo vamos a ver cómo incrustar información en imágenes 

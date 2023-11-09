@@ -8,6 +8,7 @@ meta-title: "Comparison of Image Steganography Tools"
 meta-description: "Article comparing different steganography tools in images to see which ones are harder to detect."
 meta-keywords: "steganography, stegoanalysis, images"
 lang-suffix: "-en"
+comments: true
 ---
 
 > In this article, we will see a comparison of steganography tools

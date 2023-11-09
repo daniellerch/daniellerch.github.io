@@ -7,6 +7,7 @@ meta-title: "Ataque práctico a LSB replacement: OpenStego y OpenPuff"
 meta-description: "Artículo sobre cómo detectar herramientas que usan la técnica LSB replacement en imágenes de tipo bitmap, usando la herramienta Aletheia"
 meta-keywords: "esteganografía, estegoanálisis, imágenes"
 lang-suffix: "-es"
+comments: true
 ---
 
 > En este artículo vamos a ver cómo detectar herramientas que usan de 

@@ -7,6 +7,7 @@ meta-title: "Binary Hamming Codes in Steganography"
 meta-description: "Information hiding technique based on binary Hamming codes."
 meta-keywords: "steganography, codes"
 lang-suffix: "-en"
+comments: true
 ---
 
 > An information hiding technique based on binary Hamming codes is presented below.

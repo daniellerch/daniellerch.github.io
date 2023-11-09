@@ -7,6 +7,7 @@ meta-title: "Incrustación usando códigos de Trellis y detección mediante el a
 meta-description: "ncrustación usando códigos de Trellis y detección mediante el algoritmo de Viterbi."
 meta-keywords: "watermarking, robusto, a ciegas, 8 bits, códigos de trellis o rejilla"
 lang-suffix: "-es"
+comments: true
 ---
 
 

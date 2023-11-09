@@ -7,6 +7,7 @@ meta-title: "LSB steganography in images and audio."
 meta-description: "Article about the use of steganography embedding information in the LSB"
 meta-keywords: "steganography, steganalysis, images"
 lang-suffix: "-en"
+comments: true
 ---
 
 > In this article we are going to see how to embed information in images and 

@@ -7,6 +7,7 @@ meta-title: "8-bit blind embedder and 8-bit detector"
 meta-description: "8-bit blind embedder and 8-bit detector."
 meta-keywords: "watermarking, robust, blind, 8-bit"
 lang-suffix: "-en"
+comments: true
 ---
 
 > An 8-bit blind embedding and 8-bit blind detection/extraction technique 

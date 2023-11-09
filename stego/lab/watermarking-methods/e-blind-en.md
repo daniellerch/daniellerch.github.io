@@ -7,6 +7,7 @@ meta-title: "Blind embedding and linear correlation detection"
 meta-description: "Blind embedding and linear correlation detection"
 meta-keywords: "watermarking, robust, blind"
 lang-suffix: "-en"
+comments: true
 ---
 
 > A blind information embedding and linear correlation detection technique for 

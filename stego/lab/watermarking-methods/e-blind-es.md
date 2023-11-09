@@ -7,6 +7,7 @@ meta-title: "Incrustación a ciegas y detección mediante correlación lineal"
 meta-description: "Incrustación a ciegas y detección mediante correlación lineal."
 meta-keywords: "watermarking, robusto, a ciegas"
 lang-suffix: "-es"
+comments: true
 ---
 
 

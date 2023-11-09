@@ -7,6 +7,7 @@ meta-title: "Preguntas frecuentes sobre esteganografía"
 meta-description: "FAQ sobre esteganografía"
 meta-keywords: "esteganografía, faq, preguntas frecuentes"
 lang-suffix: "-es"
+comments: true
 ---
 
 

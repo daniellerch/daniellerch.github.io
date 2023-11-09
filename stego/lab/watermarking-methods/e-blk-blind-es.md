@@ -7,6 +7,7 @@ meta-title: "Incrustación a ciegas basada en bloques y detección mediante coef
 meta-description: "Incrustación a ciegas basada en bloques y detección mediante coeficiente de correlación."
 meta-keywords: "watermarking, robusto, en bloques, a ciegas"
 lang-suffix: "-es"
+comments: true
 ---
 
 

@@ -7,6 +7,7 @@ meta-title: "Incrustación a ciegas de 8 bits y detección/extracción de 8 bits
 meta-description: "Incrustación a ciegas de 8 bits y detección/extracción de 8 bits."
 meta-keywords: "watermarking, robusto, a ciegas, 8 bits"
 lang-suffix: "-es"
+comments: true
 ---
 
 
