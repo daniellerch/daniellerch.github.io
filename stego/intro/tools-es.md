@@ -3,7 +3,7 @@ layout: page
 title: "Herramientas de esteganografía"
 subtitle: "" 
 noindex: false
-meta-title: "Herramientas esteganografía"
+meta-title: "Herramientas de esteganografía"
 meta-description: "Listado de herramientas esteganografía"
 meta-keywords: "esteganografía, herramientas"
 lang-suffix: "-es"
