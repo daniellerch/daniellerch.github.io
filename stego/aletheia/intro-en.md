@@ -194,7 +194,7 @@ $ ./aletheia.py auto actors/A2/
 3.jpg                  [1.0]    [1.0]    [1.0]     0.3
 5.jpg                   0.0      0.1     [0.7]    [0.6]
 
-* Probability of being stego using the indicated steganographic method.
+* Probability of steganographic content using the indicated method.
 ```
 
 

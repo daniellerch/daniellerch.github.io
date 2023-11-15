@@ -206,7 +206,7 @@ aletheia.py auto actors/A1
 3.jpg                   0.0      0.0      0.2      0.4   
 5.jpg                   0.0      0.4      0.1     [0.5]  
 
-* Probability of being stego using the indicated steganographic method.
+* Probability of steganographic content using the indicated method.
 ```
 
 We see that only one image appears as stego for nsF5. In this case it is a 
@@ -232,7 +232,7 @@ Now, let's run the command for actor A3.
 3.jpg                   0.0      0.0     [0.5]     0.1
 5.jpg                   0.0      0.0     [0.9]     0.2
 
-* Probability of being stego using the indicated steganographic method.
+* Probability of steganographic content using the indicated method.
 ```
 
 We see that almost all the images are positive for F5. It should 

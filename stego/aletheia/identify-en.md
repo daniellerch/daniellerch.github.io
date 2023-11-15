@@ -112,7 +112,7 @@ Let's now look at another example where the most likely scheme appears to be nsF
 3.jpg                   0.0      0.0     [0.5]     0.1   
 5.jpg                   0.0      0.0     [0.9]     0.2   
 
-* Probability of being stego using the indicated steganographic method.
+* Probability of steganographic content using the indicated method.
 ```
 
 And finally, let's see an example for Outguess:
@@ -133,7 +133,7 @@ And finally, let's see an example for Outguess:
 3.jpg                  [1.0]    [1.0]    [0.9]    [1.0]  
 5.jpg                  [1.0]    [1.0]    [0.8]    [1.0]  
 
-* Probability of being stego using the indicated steganographic method.
+* Probability of steganographic content using the indicated method.
 ```
 
 Although in the latter case it is a bit more complicated to know which 
@@ -202,7 +202,7 @@ $ ./aletheia.py auto sample_images/alaska2
 55453_lsbm.png         [0.6]     [0.9]     0.0     [0.9]  
 67104_steganogan.png   [0.9]     [0.9]    [1.0]    [0.8]  
 
-* Probability of being stego using the indicated steganographic method.
+* Probability of steganographic content using the indicated method.
 
 ```
 

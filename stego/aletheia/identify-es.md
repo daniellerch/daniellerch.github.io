@@ -112,7 +112,7 @@ Veamos ahora otro ejemplo en el que el esquema más probable parece ser nsF5:
 3.jpg                   0.0      0.0     [0.5]     0.1   
 5.jpg                   0.0      0.0     [0.9]     0.2   
 
-* Probability of being stego using the indicated steganographic method.
+* Probability of steganographic content using the indicated method.
 ```
 
 Y finalmente, veamos un ejemplo para Outguess:
@@ -133,7 +133,7 @@ Y finalmente, veamos un ejemplo para Outguess:
 3.jpg                  [1.0]    [1.0]    [0.9]    [1.0]  
 5.jpg                  [1.0]    [1.0]    [0.8]    [1.0]  
 
-* Probability of being stego using the indicated steganographic method.
+* Probability of steganographic content using the indicated method.
 ```
 
 Aunque en este último caso es un poco más complicado saber qué método se usa,
@@ -201,7 +201,7 @@ $ ./aletheia.py auto sample_images/alaska2
 55453_lsbm.png         [0.6]     [0.9]     0.0     [0.9]  
 67104_steganogan.png   [0.9]     [0.9]    [1.0]    [0.8]  
 
-* Probability of being stego using the indicated steganographic method.
+* Probability of steganographic content using the indicated method.
 
 ```
 
