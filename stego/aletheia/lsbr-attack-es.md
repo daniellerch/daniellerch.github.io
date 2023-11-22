@@ -4,14 +4,14 @@ title: Ataque práctico a esquemas LSB replacement
 subtitle: "OpenStego y OpenPuff" 
 noindex: false
 meta-title: "Ataque práctico a LSB replacement: OpenStego y OpenPuff"
-meta-description: "Artículo sobre cómo detectar herramientas que usan la técnica LSB replacement en imágenes de tipo bitmap, usando la herramienta Aletheia"
+meta-description: "Artículo sobre cómo detectar herramientas que usan la técnica LSB replacement en imágenes sin comprimir, usando la herramienta Aletheia"
 meta-keywords: "esteganografía, estegoanálisis, imágenes"
 lang-suffix: "-es"
 comments: true
 ---
 
 > En este artículo vamos a ver cómo detectar herramientas que usan de 
-> LSB *replacement* en imágenes de tipo *bitmap*. Para ello, usaremos la herramienta 
+> LSB *replacement* en imágenes sin comprimir. Para ello, usaremos la herramienta 
 > de estegoanálisis [Aletheia](https://github.com/daniellerch/aletheia).
 
 <style>
