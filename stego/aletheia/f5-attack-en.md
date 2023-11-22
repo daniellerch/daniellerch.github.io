@@ -250,8 +250,8 @@ And in that case, which algorithms are most likely to be used?
 <br>
 ## Calibration attack
 
-When an image in bitmap format is compressed to JPEG, the original image 
-is divided into 8x8 blocks, to which a discrete cosine transform or 
+When an uncompressed image represented as a bitmap is compressed to JPEG, 
+the original image is divided into 8x8 blocks, to which a discrete cosine transform or 
 [DCT](https://en.wikipedia.org/wiki/Discrete_cosine_transform)
 is applied. Specially designed quantization matrices are applied to the 
 DCT coefficients obtained to eliminate certain values with reduced visual 

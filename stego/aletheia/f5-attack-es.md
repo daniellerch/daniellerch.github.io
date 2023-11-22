@@ -247,9 +247,9 @@ usando.
 <br>
 ## Ataque de calibración
 
-Cuando una imagen en formato "mapa de bits", se comprime a JPEG, la imagen
-original se divide en bloques de 8x8, a los que les aplica una transformada
-discreta del coseno o 
+Cuando una imagen sin comprimir, representada como mapa de bits (bitmap), 
+se comprime a JPEG, la imagen original se divide en bloques de 8x8, a los que 
+les aplica una transformada discreta del coseno o 
 [DCT](https://es.wikipedia.org/wiki/Transformada_de_coseno_discreta).
 A los coeficientes DCT obtenidos se les aplican unas matrices de cuantización
 especialmente diseñadas para eliminar ciertos valores de impacto visual
@@ -257,7 +257,7 @@ reducido, lo que genera muchos coeficientes con valor cero. Esta información,
 se almacena en el archivo JPEG y es usada para generar de nuevo el mapa de
 bits cuando se desea visualizar la imagen.
 
-La técnica de calibración consiste en descomprimir la imagen a mapa de bits,
+La técnica de calibración consiste en descomprimir la imagen a un mapa de bits,
 eliminar algunas filas y columnas del principio (1-4) y volverla a comprimir
 con JPEG. Esto obliga al proceso de compresión a elegir bloques de 8x8
 diferentes a los originales, por lo que la nueva image JPEG puede disponer
