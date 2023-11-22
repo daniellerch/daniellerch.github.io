@@ -36,7 +36,7 @@ comments: true
 5. [Extracción de la información](#extracción-de-la-información)
 6. [Los peligros del LSB *replacement*](#los-peligros-del-lsb-replacement)
 7. [Hacia una incrustación más eficiente](#hacia-una-incrustación-más-eficiente)
-8. [Esteganografía LSB en imágenes de tipo mapa de bits](#esteganografía-lsb-en-imágenes-de-tipo-mapa-de-bits)
+8. [Esteganografía LSB en imágenes sin comprimir](#esteganografía-lsb-en-imágenes-sin-comprimir)
 9. [Esteganografía LSB en imágenes JPEG](#esteganografía-lsb-en-imágenes-jpeg)
 10. [Esteganografía LSB en ficheros de audio WAV](#esteganografía-lsb-en-ficheros-de-audio-wav)
 
@@ -414,14 +414,18 @@ los siguientes artículos:
 
 
 <br>
-## Esteganografía LSB en imágenes de tipo mapa de bits
+## Esteganografía LSB en imágenes sin comprimir
 
-Las imágenes de tipo mapa de bits son aquellas que representan el valor de 
-los píxeles en una matriz. Si la imagen es en escala de grises, cada valor
-de la matriz es un byte, es decir, un número de 0 a 255 que representa la
-intensidad del píxel. El valor 0 nos indicaría el color negro, mientras
-que un valor 255 nos indicaría el color blanco. Así, todos los valores 
-intermedios representarían los diferentes tonos de gris. 
+Las imágenes sin comprimir suelen representarse como imágenes de mapa de bits (bitmap). 
+Las imágenes de mapa de bits almacenan los valores de los píxeles en una matriz, 
+característica común a la mayoría de las imágenes digitales. Sin embargo, en el 
+contexto de las imágenes sin comprimir, cada píxel en una imagen de mapa de bits 
+está directamente mapeado a un bit en el archivo de la imagen. Para una imagen en 
+escala de grises de 8 bits, cada valor en la matriz representa un byte, 
+correspondiente a un número de 0 a 255, que indica la intensidad del píxel. 
+Un valor de 0 representa el color negro, mientras que un valor de 255 indica el 
+blanco. Por lo tanto, todos los valores intermedios representan los diversos 
+tonos de gris en la imagen.
 
 Sin embargo, lo más habitual es que las imágenes sean en colory y que 
 representen los píxeles con un conjunto de tres bytes: la cantidad

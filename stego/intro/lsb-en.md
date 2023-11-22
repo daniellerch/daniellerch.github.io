@@ -35,7 +35,7 @@ comments: true
 5. [Information extraction](#information-extraction)
 6. [The dangers of LSB replacement](#the-dangers-of-lsb-replacement)
 7. [Towards a more efficient embedding](#towards-a-more-efficient-embedding)
-8. [LSB steganography in bitmap images](#lsb-steganography-in-bitmap-images)
+8. [LSB steganography in uncompressed images](#lsb-steganography-in-uncompressed-images)
 9. [LSB steganography in JPEG images](#lsb-steganography-in-jpeg-images)
 10. [LSB steganography in WAV audio files](#lsb-steganography-in-wav-audio-files)
 
@@ -302,9 +302,11 @@ There are many families of codes that allow us to perform this type of efficient
 
 
 <br>
-## LSB steganography in bitmap images
+## LSB steganography in uncompressed images
 
-Bitmap type images are those that represent the value of pixels in a matrix. If the image is grayscale, each value in the array is a byte, that is, a number from 0 to 255 that represents the intensity of the pixel. The value 0 would indicate the color black, while a value 255 would indicate the color white. Thus, all intermediate values would represent the different shades of gray.
+Uncompressed images are usually represented a s a bitmap. Bitmap images are those that represent the value of pixels in a matrix. If the image is grayscale, each value in the array is a byte, that is, a number from 0 to 255 that represents the intensity of the pixel. The value 0 would indicate the color black, while a value 255 would indicate the color white. Thus, all intermediate values would represent the different shades of gray.
+
+Uncompressed images are usually represented as bitmap images. Bitmap images store pixel values in a matrix, a characteristic common to most digital images. However, in the context of uncompressed images, each pixel in a bitmap image is directly mapped to a bit in the image file. For an 8-bit grayscale image, each value in the array represents a byte, corresponding to a number from 0 to 255, which indicates the pixel's intensity. A value of 0 represents the color black, while a value of 255 indicates white. Consequently, all intermediate values represent the various shades of gray in the image
 
 More commonly, however, images are color and represent pixels with a set of three bytes: the amount of red (R), the amount of green (G), and the amount of blue (B). This type of representation (RGB) is very common, although RGBA is also common, which uses an additional byte to store the transparency level of the pixel.
 
@@ -448,7 +450,7 @@ We can see some strange characters at the end of the extracted string. This is b
 <br>
 ## LSB steganography in JPEG images
 
-[JPEG](https://en.wikipedia.org/wiki/JPEG) images have a much more complex operation than that of bitmap images. We are not going to detail how the entire compression and decompression process works. The indicated link is a good starting point for further information. We will, however, make a brief description of the process, focusing on the interesting parts for steganography.
+[JPEG](https://en.wikipedia.org/wiki/JPEG) images have a much more complex operation than that of uncompressed images. We are not going to detail how the entire compression and decompression process works. The indicated link is a good starting point for further information. We will, however, make a brief description of the process, focusing on the interesting parts for steganography.
 
 
 To compress an image using the JPEG standard, we start with the bitmap that represents the image. We divide the bitmap into blocks of $8 \times 8$ pixels and apply the [Discrete Cosine Transform (DCT)](https://en.wikipedia.org/wiki/Discrete_cosine_transform) after subtracting 128 from the pixel value. As a result, we get a new block of $8 \times 8$ values, which we call **DCT coefficients**. These values are divided by predefined matrices called **quantization matrices**, rounded to the nearest integer. These arrays are designed to reduce the information in the high-frequency components, which are the most difficult for the human eye to distinguish. This type of operations involve loss of information, so once the image is compressed, its original state cannot be recovered. It is the result of these quantized DCT coefficients that is stored in the JPEG file, so, from the point of view of steganography, we will be interested in hiding information in these coefficients.
