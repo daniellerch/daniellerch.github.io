@@ -30,7 +30,7 @@ comments: true
 
 1. [Options to consider](#options-to-consider)
 2. [JPEG images](#jpeg-images)
-3. [Bitmaps](#bitmaps)
+3. [Uncompressed images](#uncompressed-images)
 
 
 <br>
@@ -62,7 +62,7 @@ in other articles:
 
 
 Since steganography techniques tend to be very different depending on whether 
-we are dealing with a JPEG image or a bitmap image (PNG, TIF, BMP, etc.), 
+we are dealing with a JPEG image or an uncompressed image (PNG, TIF, BMP, etc.), 
 we are going to perform the analysis separately.
 
 <br>
@@ -141,9 +141,9 @@ method is used, since other models detect it quite reliably.
 
 
 <br>
-## Bitmaps
+## Uncompressed images
 
-In bitmaps, there is a possibility that the LSB replacement technique 
+In uncompressed images, there is a possibility that the LSB replacement technique 
 was used. For this technique there is a family of very reliable attacks, known as 
 structural attacks. Therefore, it is a good idea to start with a couple of 
 structural attacks.

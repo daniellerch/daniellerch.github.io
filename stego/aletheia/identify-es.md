@@ -29,7 +29,7 @@ comments: true
 
 1. [Opciones a considerar](#opciones-a-considerar)
 2. [Imágenes JPEG](#imágenes-jpeg)
-3. [Mapas de bits](#mapas-de-bits)
+3. [Imágenes sin comprimir](#imágenes-sin-comprimir)
 
 
 <br>
@@ -63,7 +63,7 @@ que se muestra en otros artículos:
 
 
 Dado que las técnicas de esteganografía suelen ser muy diferentes en función
-de si tratamos con una imagen JPEG o una imagen de tipo mapa de bits (PNG,
+de si tratamos con una imagen JPEG o una imagen sin comprimir (PNG,
 TIF, BMP, etc), realizaremos el análisis por separado.
 
 <br>
@@ -141,9 +141,9 @@ puesto que otros modelos lo detectan con bastante fiabilidad.
 
 
 <br>
-## Mapas de bits
+## Imágenes sin comprimir
 
-En mapas de bits, existe la posibilidad de que se haya usado la técnica
+En imágenes sin comprimir, existe la posibilidad de que se haya usado la técnica
 de LSB *replacement*. Para esta técnica existe una familia de 
 ataques muy fiables, conocidos como ataques estructurales. Por ello, lo
 más apropiado es empezar con un par de ataques estructurales.
