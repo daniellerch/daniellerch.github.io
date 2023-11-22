@@ -11,7 +11,7 @@ comments: true
 ---
 
 > In this article we are going to talk about how to detect tools that use the LSB replacement
-or LSB replacement technique in bitmap images. To do this, we are going to use the 
+or LSB replacement technique in uncompressed images. To do this, we are going to use the 
 steganalysis tool [Aletheia](https://github.com/daniellerch/aletheia).
 
 <style>
@@ -39,7 +39,7 @@ steganalysis tool [Aletheia](https://github.com/daniellerch/aletheia).
 <br>
 ## How LSB replacement works
 
-In images represented as bitmaps, it is common to represent each pixel by 
+In uncompressed images represented as bitmaps, it is common to represent each pixel by 
 three bytes: the **R** byte, which indicates the amount of red, the **G** 
 byte, which indicates the amount of green and the **B** byte, which 
 indicates the amount of blue. Since the modification of these bytes by 
@@ -129,7 +129,7 @@ Leaving an image *stego* indistinguishable from the original for the human eye.
 <br>
 ## OpenPuff
 
-[OpenPuff](https://embeddedsw.net/OpenPuff_Steganography_Home.html) is a free tool for hiding information on different types of media. Next, we are going to analyze this tool in its version v4.0.1, when the images in which the information is hidden are bitmaps.
+[OpenPuff](https://embeddedsw.net/OpenPuff_Steganography_Home.html) is a free tool for hiding information on different types of media. Next, we are going to analyze this tool in its version v4.0.1, when the images in which the information is hidden are uncompressed.
 
 
 <center><img src="/stego/aletheia/resources/openpuff-1.png"/></center>

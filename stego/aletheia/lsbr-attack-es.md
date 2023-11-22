@@ -38,7 +38,8 @@ comments: true
 <br>
 ## Cómo funciona la técnica del LSB *replacement*
 
-En imágenes representadas como mapas de bits, es habitual que cada píxel sea 
+En imágenes sin comprimir representadas como mapas de bits (bitmap), es habitual 
+que cada píxel sea 
 representado mediante tres bytes: el byte **R**, que nos indica la cantidad de 
 rojo, el byte **G**, que nos indica la cantidad de verde y el byte **B**, que nos 
 indica la cantidad de azul. Dado que la modificación de estos bytes en unas 
@@ -134,7 +135,7 @@ Quedando una imagen *stego* indistinguible de la original para el ojo humano.
 <br>
 ## OpenPuff
 
-[OpenPuff](https://embeddedsw.net/OpenPuff_Steganography_Home.html) es una herramienta gratuita para esconder información en diferentes tipos de medios. A continuación, vamos a estegoanalizar esta herramienta en su  versión v4.0.1, cuando las imágenes en las que se esconde la información son mapas de bits.
+[OpenPuff](https://embeddedsw.net/OpenPuff_Steganography_Home.html) es una herramienta gratuita para esconder información en diferentes tipos de medios. A continuación, vamos a estegoanalizar esta herramienta en su  versión v4.0.1, cuando las imágenes en las que se esconde la información son imágenes sin comprimir.
 
 
 <center><img src="/stego/aletheia/resources/openpuff-1.png"/></center>
