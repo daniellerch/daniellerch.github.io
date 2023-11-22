@@ -30,7 +30,7 @@ comments: true
 
 1. [Gráfica comparativa](#gráfica-comparativa)
 2. [Descripción del experimento](#descripcción del experimento)
-3. [Resultados en mapas de bits](#resultados-en-mapas-de-bits)
+3. [Resultados en imágenes sin comprimir](#resultados-en-imágenes-sin-comprimir)
    1. [LSB replacement (OpenStego, OpenPuff)](#lsb-replacement-openstego-openpuff)
    2. [LSB matching](#lsb-matching)
    3. [SteganoGAN](#steganogan)
@@ -46,12 +46,12 @@ comments: true
 
 En este artículo comparamos diferentes métodos de esteganografía en imágenes
 para ver cuáles son más difíciles de detectar. Separamos la comparativa en
-imágenes de tipo mapa de bits y imágenes JPEG. Vemos, primero, las gráficas
+imágenes sin comprimir y imágenes JPEG. Vemos, primero, las gráficas
 comparativas.
 
 
 <center><b>
-Comparativa de esteganografía en imágenes de tipo mapa de bits (PNG, TIF, BMP, etc):
+Comparativa de esteganografía en imágenes sin comprimir (PNG, TIF, BMP, etc):
 </b></center>
 
 ![efficiency](/stego/aletheia/resources/tool_comparison.png?style=centerme)
@@ -84,13 +84,13 @@ mensaje oculto) y 500 imágenes *stego* (con información oculta, conforme al
 
 Aquí, tentendemos por *payload* el tamaño del mensaje respecto al total 
 disponible para ocultar incrustando un solo bit por elemento. Por ejemplo,
-en mapas de bits, un payload de 0.4 nos indicaría que el tamaño del mensaje
+en imágenes sin comprimir, un payload de 0.4 nos indicaría que el tamaño del mensaje
 (en bits) es del 40% del total de píxeles. En imágenes JPEG nos indicaría que
 el tamaño del mensaje es del 40% del total de coeficientes DCT que no son cero.
 
 
 <br>
-## Resultados en mapas de bits
+## Resultados en imágenes sin comprimir
 
 ### LSB replacement (OpenStego, OpenPuff)
 
@@ -171,8 +171,8 @@ recomienda el uso de SteganoGAN.
 
 ### HStego
 
-HStego es una herramienta para ocultar datos en imágenes de mapa de bits y 
-JPEG. Esta herramienta utiliza algunos de los métodos de esteganografía más 
+HStego es una herramienta para ocultar datos en imágenes sin comprimir y 
+en imágenes JPEG. Esta herramienta utiliza algunos de los métodos de esteganografía más 
 avanzados conocidos en la actualidad, junto con un límite superior en la 
 cantidad de datos que se pueden ocultar para que las herramientas de 
 esteganografía modernas no puedan detectarlos de manera confiable.
@@ -220,8 +220,8 @@ gráfica, ofrece resultados mucho mejores que los de F5 y Outguess.
 
 ### HStego
 
-Como ya se ha mencionado en la sección de mapas de bits, HStego es una 
-herramienta para ocultar datos en imágenes de mapa de bits y 
+Como ya se ha mencionado anteriormente, HStego es una 
+herramienta para ocultar datos en imágenes sin comprimir y en imágenes 
 JPEG. Esta herramienta utiliza algunos de los métodos de esteganografía más 
 avanzados conocidos en la actualidad, junto con un límite superior en la 
 cantidad de datos que se pueden ocultar para que las herramientas de 

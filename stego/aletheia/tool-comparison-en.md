@@ -30,7 +30,7 @@ comments: true
 
 1. [Comparative chart](#comparative-chart)
 2. [Experiment description](#experiment-description)
-3. [Results in bitmaps](#results-in-bitmaps)
+3. [Results in uncompressed images](#results-in-uncompressed-images)
    1. [LSB replacement (OpenStego, OpenPuff)](#lsb-replacement-openstego-openpuff)
    2. [LSB matching](#lsb-matching)
    3. [SteganoGAN](#steganogan)
@@ -46,10 +46,10 @@ comments: true
 
 In this article, we compare different image steganography methods
 to see which ones are harder to detect. We separate the comparison into
-bitmap images and JPEG images. First, we look at the comparative charts.
+uncompressed images and JPEG images. First, we look at the comparative charts.
 
 <center><b>
-Comparison of steganography in bitmap images (PNG, TIF, BMP, etc):
+Comparison of steganography in uncompressed images (PNG, TIF, BMP, etc):
 </b></center>
 
 ![efficiency](/stego/aletheia/resources/tool_comparison.png?style=centerme)
@@ -79,13 +79,13 @@ the payload indicated on the chart) were used.
 
 In this context, the term 'payload' refers to the ratio of the size of 
 the message being embedded to the total available capacity for embedding, 
-when using a single-bit-per-element method. In bitmap images, a payload of 0.4 
+when using a single-bit-per-element method. In uncompressed images, a payload of 0.4 
 signifies that the message size (measured in bits) is equivalent to 40% of the 
 total pixel count. For JPEG images, a payload value of 0.4 implies that the 
 message constitutes 40% of the total non-zero DCT coefficients.
 
 <br>
-## Results in Bitmaps
+## Results in Uncompressed Images
 
 ### LSB replacement (OpenStego, OpenPuff)
 
@@ -139,7 +139,7 @@ Nevertheless, given the circumstances mentioned, the use of SteganoGAN is curren
 
 ### S-UNIWARD
 
-HStego is a tool for hiding data in bitmap and JPEG images. This tool uses some of the most advanced steganography methods known today, along with an upper limit on the amount of data that can be hidden so that it cannot be reliably detected by modern steganography tools.
+HStego is a tool for hiding data in uncompressed and JPEG images. This tool uses some of the most advanced steganography methods known today, along with an upper limit on the amount of data that can be hidden so that it cannot be reliably detected by modern steganography tools.
 
 However, in this analysis the limit on the amount of information has not been used to compare HStego with the other tools, as the payload varies.
 
@@ -179,7 +179,7 @@ it offers much better results than those of F5 and Outguess.
 
 ### HStego
 
-As previously discussed in the bitmap section, HStego specializes in concealing data within bitmap and JPEG images. It employs some of the most cutting-edge steganography techniques available today and sets a maximum threshold for data concealment to ensure that contemporary steganalysis tools struggle to detect it consistently.
+As previously discussed, HStego specializes in concealing data within uncompressed and JPEG images. It employs some of the most cutting-edge steganography techniques available today and sets a maximum threshold for data concealment to ensure that contemporary steganalysis tools struggle to detect it consistently.
 
 For this analysis, the data concealment limit hasn't been applied when contrasting HStego with other tools, given that the payload fluctuates.
 
