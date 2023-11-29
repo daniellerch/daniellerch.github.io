@@ -175,13 +175,14 @@ steganalysis tasks. It belongs to the section:
 
 
 
-
 ```bash
   Automated tools:
   - auto:      Try different steganalysis methods.
   - dci:       Predict a set of images using DCI evaluation.
 ```
 
+
+**The "auto" command:**
 
 The first command is the **auto** command, which performs an exploratory 
 analysis trying to identify the steganalysis technique used. 
@@ -210,6 +211,20 @@ $ ./aletheia.py auto actors/A2/
 
 From which we deduce that the most probable steganography scheme is Steghide.
 
+This command internally uses the 
+[effnetb0](https://github.com/daniellerch/aletheia/tree/master/aletheia-models), 
+models, which are models trained with the 
+[Alaska2](https://github.com/daniellerch/aletheia/blob/master/aletheia-models/README.md). 
+image database .
+They are models for color images, so they cannot be used with grayscale images. 
+On the other hand, using these models to predict images with statistical characteristics 
+different from those of the Alaska2 images could lead to unreliable results. 
+Because of this, it is advisable to use the **dci** command hich we will see next.
+
+
+
+**The "dci" command**:
+
 
 The second command is the **dci** command, used to detect cases in which the 
 models used by Aletheia might not be appropriate for the images we are analyzing. 
@@ -217,8 +232,88 @@ This issue, known as CSM or *Cover Source Mismatch* is covered in some detail
 in the following articles:
 
 
-- [Practical attack on Steghide](/stego/aletheia/steghide-attack-en/).
-- [Practical attack on F5](/stego/aletheia/f5-attack-en/).
+- [Practical attack on Steghide](/stego/aletheia/steghide-attack-en/#can-we-trust-the-model).
+- [Practical attack on F5](/stego/aletheia/f5-attack-en/#can-we-trust-the-model).
+
+
+Therefore, it is advisable next to see if the models available in 
+Aletheia are suitable for making predictions on these images, with 
+Steghide. 
+For this, we use the **dci** command in the following way:
+
+```bash
+$ ./aletheia.py dci steghide-sim actors/A2/
+Preparing the B set ...
+Using 16 threads
+actors/A2/2.jpg          1
+actors/A2/4.jpg          1 (inc)
+actors/A2/10.jpg         1 (inc)
+actors/A2/6.jpg          1 (inc)
+actors/A2/7.jpg          1 (inc)
+actors/A2/8.jpg          1
+actors/A2/9.jpg          1 (inc)
+actors/A2/1.jpg          1
+actors/A2/3.jpg          1
+actors/A2/5.jpg          0 (inc)
+DCI prediction score: 0.7
+```
+
+As we can see, we get a DCI prediction of 0.7. This means that the
+models used are correct, approximately, 70% of the time. If we consider
+this percentage of success sufficient, we can trust the result.
+
+Now, let's see what happens when, due to the CSM problem, the models
+are not suitable.
+
+We use the auto command with the B4 test actor:
+
+```bash                                                                                                                  
+$ ./aletheia.py auto actors/B4                                                                                           
+                                                                                                                         
+                     Outguess  Steghide   nsF5  J-UNIWARD *                                                              
+-----------------------------------------------------------                                                              
+2.jpg                   0.0      0.0     [0.9]    [0.5]                                                                  
+4.jpg                  [0.7]    [1.0]     0.3     [0.5]                                                                  
+10.jpg                  0.0     [1.0]     0.1      0.3                                                                   
+6.jpg                   0.0      0.0      0.3     [0.9]                                                                  
+7.jpg                  [1.0]     0.0      0.0     [0.6]                                                                  
+8.jpg                   0.0      0.0      0.3     [0.5]                                                                  
+9.jpg                   0.0      0.0      0.1     [0.9]                                                                  
+1.jpg                   0.0     [1.0]     0.1     [0.6]                                                                  
+3.jpg                   0.0      0.0      0.3      0.4                                                                   
+5.jpg                   0.0      0.0     [0.9]    [0.6]                                                                  
+                                                                                                                         
+* Probability of steganographic content using the indicated method.                                                      
+```      
+
+
+Using the **auto** command, we see that the method most likely predicted is **J-UNIWARD**. Now, we are interested in knowing if the models are reliable for making this prediction.
+
+We execute the **dci** command, this time for J-UNIWARD:
+
+```bash
+$ ./aletheia.py dci j-uniward-color-sim actors/B4 0
+
+Preparing the B set ...
+Using 16 threads
+actors/B4/2.jpg          1 (inc)
+actors/B4/4.jpg          1 (inc)
+actors/B4/10.jpg         0 (inc)
+actors/B4/6.jpg          1
+actors/B4/7.jpg          1 (inc)
+actors/B4/8.jpg          1 (inc)
+actors/B4/9.jpg          1 (inc)
+actors/B4/1.jpg          1 (inc)
+actors/B4/3.jpg          0 (inc)
+actors/B4/5.jpg          1 (inc)
+DCI prediction score: 0.55
+```
+
+As we can see, the prediction made is 0.55. A 55% probability of success is very low, so it is not advisable to trust the results obtained. This is a case of CSM.
+
+
+
+
 
 
 

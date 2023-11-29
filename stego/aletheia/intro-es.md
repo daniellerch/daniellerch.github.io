@@ -184,6 +184,8 @@ la sección:
   - dci:       Predict a set of images using DCI evaluation.
 ```
 
+**El comando "auto"**:
+
 El primer comando es el
 comando **auto**, que realiza un análisis exploratorio intentando
 identificar la técnica de estegoanálisis usada. Veamos un ejemplo:
@@ -211,15 +213,113 @@ De lo que deducimos que el esquema de esteganografía más probable
 es Steghide.
 
 
+Este comando usa internamente los modelos 
+[effnetb0](https://github.com/daniellerch/aletheia/tree/master/aletheia-models),
+que son modelos entrenados con la base de datos de imágenes 
+[Alaska2](https://github.com/daniellerch/aletheia/blob/master/aletheia-models/README.md).
+Son modelos para imágenes en color, por lo que no se pueden usar con imágenes
+en escala de grises. 
+Por otra parte, el uso de estos modelos para predecir imágenes con características 
+estadísticas diferentes a las de las imagenes de Alaska2, podría dar lugar
+a resultados poco fiables. Debido a esto, conviene usar el comando **dci**
+que veremos a continuación.
+
+
+**El comando "dci"**:
+
 El segundo comando es el comando **dci**, usado para detectar casos en 
 los que los modelos usados por Aletheia podrían no ser apropiados para
 las imágenes que estamos analizando. Este problema, conocido como 
 CSM o *Cover Source Mismatch*, se trata con cierto detalle en los
 siguientes artículos:
 
-- [Ataque práctico a Steghide](/stego/aletheia/steghide-attack-es/).
-- [Ataque práctico a F5](/stego/aletheia/f5-attack-es/).
+- [Ataque práctico a Steghide](/stego/aletheia/steghide-attack-es/#podemos-confiar-en-el-modelo).
+- [Ataque práctico a F5](/stego/aletheia/f5-attack-es/#podemos-confiar-en-el-modelo).
 
+
+Vamos a ver un par de ejemplos a continuación. Empezaremos continuando el
+ejemplo anterior. Hemos visto que el comando **auto** nos indicaba que
+el método más probable es Steghide.
+
+Por ello, a continuación es conveniente ver si los modelos disponibles en
+Aletheia son apropiados para hacer predicciones sobre estas imágenes, con
+Steghide.
+Para ello usamos el comando **dci** de la siguiente manera:
+
+```bash
+$ ./aletheia.py dci steghide-sim actors/A2/
+Preparind the B set ...
+Using 16 threads
+actors/A2/2.jpg          1
+actors/A2/4.jpg          1 (inc)
+actors/A2/10.jpg         1 (inc)
+actors/A2/6.jpg          1 (inc)
+actors/A2/7.jpg          1 (inc)
+actors/A2/8.jpg          1
+actors/A2/9.jpg          1 (inc)
+actors/A2/1.jpg          1
+actors/A2/3.jpg          1
+actors/A2/5.jpg          0 (inc)
+DCI prediction score: 0.7
+```
+
+Como podemos ver, obtenemos una predición DCI de 0,7. Esto significa que los
+modelos usados aciertan, aproximadamente, el 70% de las veces. Si consideramos
+que este porcentage de aciertos es suficiente, podemos confiar en el resultado.
+
+
+Vamos a ver ahora, qué ocurre cuando, debido al problema del CSM, los modelos
+no son adecuados. 
+
+Usamos el comando **auto** con el actor de prueba B4:
+
+```bash
+$ ./aletheia.py auto actors/B4
+
+                     Outguess  Steghide   nsF5  J-UNIWARD *
+-----------------------------------------------------------
+2.jpg                   0.0      0.0     [0.9]    [0.5]
+4.jpg                  [0.7]    [1.0]     0.3     [0.5]
+10.jpg                  0.0     [1.0]     0.1      0.3
+6.jpg                   0.0      0.0      0.3     [0.9]
+7.jpg                  [1.0]     0.0      0.0     [0.6]
+8.jpg                   0.0      0.0      0.3     [0.5]
+9.jpg                   0.0      0.0      0.1     [0.9]
+1.jpg                   0.0     [1.0]     0.1     [0.6]
+3.jpg                   0.0      0.0      0.3      0.4
+5.jpg                   0.0      0.0     [0.9]    [0.6]
+
+* Probability of steganographic content using the indicated method.
+```
+
+Usando el comando **auto**, vemos que el método que se predice con más 
+probabilidad es **J-UNIWARD**. Ahora nos interesa saber si los modelos son 
+fiables para realizar esta predicción.
+
+Ejecutamos el comando **dci**, esta vez para J-UNIWARD:
+
+```bash
+$ ./aletheia.py dci j-uniward-color-sim actors/B4 0
+
+Preparind the B set ...
+Using 16 threads
+actors/B4/2.jpg          1 (inc)
+actors/B4/4.jpg          1 (inc)
+actors/B4/10.jpg         0 (inc)
+actors/B4/6.jpg          1
+actors/B4/7.jpg          1 (inc)
+actors/B4/8.jpg          1 (inc)
+actors/B4/9.jpg          1 (inc)
+actors/B4/1.jpg          1 (inc)
+actors/B4/3.jpg          0 (inc)
+actors/B4/5.jpg          1 (inc)
+DCI prediction score: 0.55
+
+```
+
+Como podemos ver, la predicción que ser realiza es de 0,55. Un 55% de 
+probabilidad de acierto es muy baja, por lo que no es conveniente confiar
+en los resultados obtenidos. Se trata de un caso de CSM.
 
 
 <br>
