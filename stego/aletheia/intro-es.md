@@ -321,6 +321,13 @@ Como podemos ver, la predicción que ser realiza es de 0,55. Un 55% de
 probabilidad de acierto es muy baja, por lo que no es conveniente confiar
 en los resultados obtenidos. Se trata de un caso de CSM.
 
+**NOTA IMPORTANTE:** Conviene tener en cuenta que el comando "dci" requiere que se analice
+un actor, no una sola imagen. Es decir, que necesitamos disponer de varias
+imágenes del mismo actor (con las mismas propiedades estadísticas) para poder 
+aplicar este método. Unas 10 imágenes suelen ser suficientes, aunque la
+precisión mejora con la cantidad de imágenes.
+
+
 
 <br>
 ## Ataques estructurales

@@ -312,7 +312,7 @@ DCI prediction score: 0.55
 As we can see, the prediction made is 0.55. A 55% probability of success is very low, so it is not advisable to trust the results obtained. This is a case of CSM.
 
 
-
+**IMPORTANT NOTE**: It should be noted that the "dci" command requires the analysis of an actor, not just a single image. This means that we need to have several images of the same actor (with the same statistical properties) to apply this method. About 10 images are usually sufficient, although the accuracy improves with the number of images.
 
 
 
