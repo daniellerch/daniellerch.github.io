@@ -10,7 +10,6 @@ function transition(i, j) {
     var slide_i = document.getElementById('slide-'+i);
     var slide_j = document.getElementById('slide-'+j);
 
-    var new_height = slide_j.offsetHeight+30;
     var cites = document.querySelector(".cites");
     var centerspace = document.getElementById("center-space");
 
@@ -19,11 +18,14 @@ function transition(i, j) {
         if (slide_i.style.opacity > 0) {
             slide_i.style.opacity = parseFloat(slide_i.style.opacity) - 0.1;
         } else {
+            slide_i.style.display = 'none';
             clearInterval(fadeout);
         }
     }, 50);
     
 
+    slide_j.style.display = 'block';
+    var new_height = slide_j.offsetHeight+50;
     var fadein = setInterval(function () {
         if (slide_i.style.opacity <= 0) {
             if (slide_j.style.opacity < 1) {

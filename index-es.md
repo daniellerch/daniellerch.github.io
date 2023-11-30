@@ -30,7 +30,7 @@ lang-suffix: "-es"
 </blockquote>
 
 
-<blockquote id='slide-1' class='slide' style='opacity:0'>
+<blockquote id='slide-1' class='slide' style='opacity:0;display:none'>
    "Demarato, el hijo de Aristón, que estaba exiliado en Persia, (...) tan 
     pronto como le llegó en Susa la noticia de que Jerjes había decidido la 
     invasión de Grecia, sintió que debía transmitir la información a Esparta. 
@@ -48,7 +48,7 @@ lang-suffix: "-es"
 </blockquote>
 
 
-<blockquote id='slide-2' class='slide' style='opacity:0'>
+<blockquote id='slide-2' class='slide' style='opacity:0;display:none'>
    "Histieo, queriendo enviar un mensaje desde la corte persa a su yerno, 
     el tirano Aristágoras de Mileto, afeitó la cabeza de un esclavo de 
     confianza, tatuó el mensaje secreto en ella, esperó a que creciera 
@@ -63,7 +63,7 @@ lang-suffix: "-es"
 </blockquote>
 
 
-<blockquote id='slide-3' class='slide' style='opacity:0'>
+<blockquote id='slide-3' class='slide' style='opacity:0;display:none'>
   "(...) He descubierto ciertas formas, numerosas y variadas, (...)
    por las cuales puedo transmitir mis pensamientos más secretos a otro que 
    conoce este arte, por lejos que lo desee, con seguridad y libre de engaño, 
@@ -75,7 +75,7 @@ lang-suffix: "-es"
     </div>
 </blockquote>
 
-<blockquote id='slide-4' class='slide' style='opacity:0'>
+<blockquote id='slide-4' class='slide' style='opacity:0;display:none'>
    "La rejilla de Cardano consiste en una lámina de material rígido, como cartón
    o metal, en la que se realizan unos agujeros rectangulares, de la altura de 
    una línea escrita y de longitud variable, a intervalos irregulares. El 
@@ -92,7 +92,7 @@ lang-suffix: "-es"
     </div>
 </blockquote>
 
-<blockquote id='slide-5' class='slide' style='opacity:0'>
+<blockquote id='slide-5' class='slide' style='opacity:0;display:none'>
     "Dos cómplices de un crimen han sido detenidos y están a punto de ser 
      encerrados en celdas muy separadas. Su único medio de comunicación 
      después de que estén encerrados será a través de los mensajes que les 

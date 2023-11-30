@@ -32,7 +32,7 @@ mainly dedicated to **steganography**, the ancient art and science of hidden com
 </blockquote>
 
 
-<blockquote id='slide-1' class='slide' style='opacity:0'>
+<blockquote id='slide-1' class='slide' style='opacity:0;display:none'>
    "Demaratus, the son of Ariston, who was an exile in Persia, (...) as soon as 
     news reached him at Susa that Xerxes had decided uponthe invasion of Greece, 
     he felt that he must pass on the information to Sparta. As the danger of 
@@ -49,7 +49,7 @@ mainly dedicated to **steganography**, the ancient art and science of hidden com
 </blockquote>
 
 
-<blockquote id='slide-2' class='slide' style='opacity:0'>
+<blockquote id='slide-2' class='slide' style='opacity:0;display:none'>
    "Histiaeus, wanting to send word from the Persian court to his son-in-law,
     the tyrant Aristagoras at Miletus, shaved the head of a trusted slave,
     tattooed the secret message thereon, waited for a new head of hair to
@@ -64,7 +64,7 @@ mainly dedicated to **steganography**, the ancient art and science of hidden com
 </blockquote>
 
 
-<blockquote id='slide-3' class='slide' style='opacity:0'>
+<blockquote id='slide-3' class='slide' style='opacity:0;display:none'>
    "[...] I have uncovered certain ways, both numerous and varied, that are 
     not to be entirely spurned whereby I can intimate my most secret thoughts 
     to another who knows this art, however far away I wish, securely and free 
@@ -76,7 +76,7 @@ mainly dedicated to **steganography**, the ancient art and science of hidden com
     </div>
 </blockquote>
 
-<blockquote id='slide-4' class='slide' style='opacity:0'>
+<blockquote id='slide-4' class='slide' style='opacity:0;display:none'>
    "The Cardano grille consists of a sheet of stiff material, such a cardboard,
     patchment, or metal, into which rectangular holes, the height of a line of
     writing and of varying lengths, are cut at irregular intervals. The
@@ -93,7 +93,7 @@ mainly dedicated to **steganography**, the ancient art and science of hidden com
     </div>
 </blockquote>
 
-<blockquote id='slide-5' class='slide' style='opacity:0'>
+<blockquote id='slide-5' class='slide' style='opacity:0;display:none'>
    "Two accomplices in a crime have been arrested and are about to be locked in 
     widely separated cells. Their only means of communication after they are 
     locked up will be by way of messages conveyed for them by trustees -- who 
