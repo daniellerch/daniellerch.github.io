@@ -10,6 +10,11 @@ function transition(i, j) {
     var slide_i = document.getElementById('slide-'+i);
     var slide_j = document.getElementById('slide-'+j);
 
+    var new_height = slide_j.offsetHeight+30;
+    var cites = document.querySelector(".cites");
+    var centerspace = document.getElementById("center-space");
+
+
     var fadeout = setInterval(function () {
         if (slide_i.style.opacity > 0) {
             slide_i.style.opacity = parseFloat(slide_i.style.opacity) - 0.1;
@@ -17,6 +22,7 @@ function transition(i, j) {
             clearInterval(fadeout);
         }
     }, 50);
+    
 
     var fadein = setInterval(function () {
         if (slide_i.style.opacity <= 0) {
@@ -28,6 +34,12 @@ function transition(i, j) {
             }
         }
     }, 50);
+
+
+    setTimeout(function(){
+       cites.style.height = new_height+"px";
+       centerspace.style.height = new_height+"px";
+    }, 500);
 }
 
 document.addEventListener("DOMContentLoaded", function(event){
