@@ -124,6 +124,12 @@ mainly dedicated to **steganography**, the ancient art and science of hidden com
 </div>
 
 
+If this is your first time here, I recommend starting with the 
+[Blog](/blog-en) section, where you can find articles on steganography 
+and steganalysis. You can also visit the [About](/about-en)
+section to learn a little more about me.
+
+
 <script src='/js/slide.js'></script>
 
 

@@ -119,6 +119,11 @@ lang-suffix: "-es"
 
 </div>
 
+Si esta estu primera vez aquí, te recomiendo empezar por la sección 
+[Blog](/blog-es), donde podrás encontrar artículos sobre esteganaografía
+y estegonanálisis. También te puedes pasar por la sección [About](/about-es) 
+para saber un poco más sobre mi.
+
 
 <script src='/js/slide.js'></script>
 
