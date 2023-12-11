@@ -34,6 +34,7 @@ comments: true
 - [What is StegHide?](#what-is-steghide)
 - [In what media can steganography be used?](#in-what-media-can-steganography-be-used)
 - [What are structural attacks?](#what-are-structural-attacks)
+- [What is the Cover Source Mismatch?](#what-is-the-cover-source-mismatch)
 
 
 <br>
@@ -194,5 +195,14 @@ These anomalies are exploited by a whole family of attacks known as
 "structural attacks", among which the SPA attack, RS attack, and WS attack 
 stand out.
 
+
+## What the is Cover Source Mismatch?
+
+The Cover Source Mismatch (CSM) is a significant problem in steganalysis that 
+occurs when using machine learning to create models for detecting images that 
+use steganography. The problem arises because the models learn from data, 
+so a model trained with one image database may not function correctly with 
+images from another image database, possibly due to different statistical 
+characteristics.
 
 

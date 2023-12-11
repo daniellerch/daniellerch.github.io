@@ -34,6 +34,7 @@ comments: true
 - [¿Qué es StegHide?](#qué-es-steghide)
 - [¿En qué medios se puede usar esteganografía?](#en-qué-medios-se-puede-usar-esteganografía)
 - [¿Qué son los ataques estructurales?](#qué-son-los-ataques-estructurales)
+- [¿Qué es el Cover Source Mismatch?](#qué-es-el-cover-source-mismatch)
 
 <br>
 ## ¿Qué es la esteganografía?
@@ -238,6 +239,16 @@ Estas anomalías son aprovechadas por una toda una familia de ataques conocidodo
 como "ataques estructurales", entre los que destacan el ataque SPA, el ataque RS
 o el ataque WS.
 
+
+## ¿Qué es el Cover Source Mismatch?
+
+El Cover Source Mismatch (CSM) es un problema muy importante en estegoanálisis
+que se produce al usar *machine learning* para crear modelos de detección 
+de imágenes que usan esteganografía.  El problema se produce debido a que los 
+modelos aprenden de los datos, por lo que un modelo entrenado con una base de 
+datos de imágenes puede no funcionar correctamente con imágenes que proceden de
+otra base de datos de imágenes, posiblemente, con unas características
+estadísticas diferentes.
 
 
 
