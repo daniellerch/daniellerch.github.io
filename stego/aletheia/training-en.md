@@ -183,7 +183,7 @@ cover stego
 ```
 
 But in this case, we additionally have the **B_** directories, which contain
-*stego* and *double* directories:
+stego and double directories:
 
 ```bash
 $ ls trset-dci-s0/B_train
@@ -204,7 +204,7 @@ the B models. The A models are simple models that allow predicting
 whether an image is cover or stego. These models can be trained with
 the basic dataset, which does not contain double images, but also
 with the DCI dataset. The B models are models that allow
-predicting whether an image is stego or *double*. These models are only necessary
+predicting whether an image is stego or double. These models are only necessary
 for the DCI method. 
 
 The DCI method uses A and B models to determine if there are
@@ -261,7 +261,7 @@ If we are using a dataset for DCI, we simply have to change some directories:
                        trset-s0/A_valid/cover trset-s0/A_valid/stego A-model 0 100 32
 ```
 
-Training models B is very similar, although in this case it is necessary to have datasets for DCI. The only difference is that we have to use stego and *double* images. The command is as follows:
+Training models B is very similar, although in this case it is necessary to have datasets for DCI. The only difference is that we have to use stego and double images. The command is as follows:
 
 ```bash
 ./aletheia.py effnetb0 trset-s0/B_train/stego trset-s0/B_train/double \
