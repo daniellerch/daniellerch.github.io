@@ -247,7 +247,7 @@ Training B models is very similar, although in this case it is necessary to have
 
 ```bash
 ./aletheia.py effnetb0 trset-s0/B_train/stego trset-s0/B_train/double \
-                       trset-s0/B_valid/stego trset-s0/B_valid/double B-model 0 100 32
+        trset-s0/B_valid/stego trset-s0/B_valid/double B-model 0 100 32
 ```
 
 Once the process is finished, we have models ready to be used.
