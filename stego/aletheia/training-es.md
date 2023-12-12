@@ -222,7 +222,7 @@ conjunto de datos básico:
 
 ```bash
 ./aletheia.py effnetb0 trset-s0/train/cover trset-s0/train/stego \
-                      trset-s0/valid/cover trset-s0/valid/stego A-model 0 100 32
+        trset-s0/valid/cover trset-s0/valid/stego A-model 0 100 32
 ```
 
 
@@ -242,7 +242,7 @@ cambiar algunos directorios:
 
 ```bash
 ./aletheia.py effnetb0 trset-s0/A_train/cover trset-s0/A_train/stego \
-                       trset-s0/A_valid/cover trset-s0/A_valid/stego A-model 0 100 32
+        trset-s0/A_valid/cover trset-s0/A_valid/stego A-model 0 100 32
 ```
 
 
