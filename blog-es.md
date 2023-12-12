@@ -14,7 +14,6 @@ lang-suffix: "-es"
         display: block;
         height:      70px;
         margin-top: -70px;
-        visibility: todo;
     }
    .todo {
         display: none;
@@ -56,13 +55,21 @@ lang-suffix: "-es"
 - Esteganografía en la guerra fría.
 
 
-<!-- ### HStego: -->
-<!-- - [Introducción a HStego](/stego/hstego/intro-es).
-<!-- - [HStego como módulo Python](/stego/hstego/python-module-es). -->
-<!-- - [Detalles técnicos de HStego I: mapas de bits](/stego/hstego/technical-details-I-es). -->
-<!-- - [Detalles técnicos de HStego II: JPEG](/stego/hstego/technical-details-II-es). -->
-<!-- - [Detalles técnicos de HStego III: Incrustación](/stego/hstego/technical-details-III-es). -->
-      
+<h3 class='todo'>Esteganografía robusta en imágenes:</h3>
+- Esteganogragía robusta en imágenes mediante QIM.
+- Esteganografía en imágenes para Whatsapp.
+- Esteganografía en imágenes para Twitter/X.
+- Esteganografía en imágenes para Linkedin.
+- Esteganografía en imágenes para Facebook.
+- Esteganografía en imágenes para Instagram.
+
+
+<h3 class='todo'>Esteganografía con HStego:</h3>
+- Introducción a HStego.
+- HStego como módulo Python.
+- Detalles técnicos de HStego I: mapas de bits.
+- Detalles técnicos de HStego II: JPEG.
+- Detalles técnicos de HStego III: Incrustación.
 
 <h3 class='todo'>Esteganografía en redes sociales:</h3>
 - Esteganografía mediante interacciones: likes, retweets, etc.
@@ -90,6 +97,7 @@ lang-suffix: "-es"
 - [Ataque práctico a F5](/stego/aletheia/f5-attack-es/).
 - [Ataque práctico a esquemas LSB replacement: OpenStego y OpenPuff](/stego/aletheia/lsbr-attack-es/).
 - [Resolución de stego-puzzles con Aletheia](/stego/aletheia/stego-puzzles-es/).
+- [Entrenamiento de modelos para Aletheia](/stego/aletheia/training-es/).
 - Comparación de funciones de coste para esteganografía en imágenes.
 
 <h3 class='todo'>Ataques teóricos:</h3>

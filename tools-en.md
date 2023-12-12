@@ -45,6 +45,7 @@ comments: true
 - [Practical attack on LSB replacement: OpenStego and OpenPuff.](/stego/aletheia/lsbr-attack-en/)
 - [Solving Stego-Puzzles with Aletheia.](/stego/aletheia/stego-puzzles-en/)
 - [Comparison of Image Steganography Tools.](/stego/aletheia/tool-comparison-en/)
+- [Training models for Aletheia](/stego/aletheia/training-en/).
 
 
 <div style='margin-top:40px'></div>
