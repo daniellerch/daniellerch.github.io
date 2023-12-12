@@ -196,7 +196,7 @@ These anomalies are exploited by a whole family of attacks known as
 stand out.
 
 
-## What the is Cover Source Mismatch?
+## What is the Cover Source Mismatch?
 
 The Cover Source Mismatch (CSM) is a significant problem in steganalysis that 
 occurs when using machine learning to create models for detecting images that 
