@@ -73,7 +73,7 @@ Includes fast implementations using Numba and implementations that decompress in
 
 
 <br>
-## Steganalisis
+## Steganalysis
 <hr style='border:1px solid #ccc'>
 
 - **[ATS attack](https://github.com/daniellerch/papers_code/tree/master/ATS)**: Python implementation of the ATS attack, an unsupervised steganalysis technique presented in the article [Unsupervised steganalysis based on artificial training sets](https://www.sciencedirect.com/science/article/abs/pii/S0952197616000026) [[arXiv](https://arxiv.org/abs/2107.13862)] by Daniel Lerch-Hostalot and David Megías.
