@@ -65,7 +65,7 @@ so we will use the same database for our examples.
 
 The first step in creating our dataset is to 
 create stego images. We already have cover images, so now
-we will use Aletheia to create stego images. This we will have to do
+we will use Aletheia to create stego images. We will do this
 by embedding information using the steganography method for which 
 we want to create the model. 
 
