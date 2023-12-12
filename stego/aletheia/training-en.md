@@ -345,7 +345,7 @@ dci-prediction-score: 0.815
 
 As we can see, the DCI method tells us that using these models we will be correct approximately 81.5% of the time. These are good results, so with this CSM, we can trust the model.
 
-For reference, the actual results when predicting images from this test set are 98%, a bit far from the prediction made by DCI.
+For reference, the actual results when predicting images from this test set are 98%, not so far from the prediction made by DCI.
 
 Let's now see an example with high CSM. We will use the [LFW-FACES](https://paperswithcode.com/dataset/lfw) database. We proceed as in the previous example, obtaining a set of 500 cover and 500 stego images. These are the results:
 
