@@ -611,7 +611,6 @@ stego_wav.writeframes(bytes(frames))
 
 Now, as in the previous cases, we are going to see a complete example in which we will hide the string ```Hello World```.
 
-
 ```python
 import wave
 import random
@@ -623,8 +622,9 @@ message_bits = []
 for l in "Hello World":
     message_bits += [ (ord(l)>>i)&1 for i in range(8) ]
 
-for i in range(len(message_bits)):
-    if frames[i]%2 != message_bits[i]:
+j = 0
+for i in range(0, len(frames), 2):
+    if frames[i]%2 != message_bits[j]:
         if frames[i] == 255:
             s = -1
         elif frames[i] == 0:
@@ -632,6 +632,9 @@ for i in range(len(message_bits)):
         else:
             s = random.choice([-1, +1])
         frames[i] = frames[i] + s
+    j += 1
+    if j>=len(message_bits):
+        break
 
 stego_wav = wave.open('stego-sound.wav', 'wb')
 stego_wav.setparams(cover_wav.getparams())
@@ -640,6 +643,10 @@ stego_wav.writeframes(bytes(frames))
 cover_wav.close()
 stego_wav.close()
 ```
+
+It is important to realize that we are only modifying one of every two bytes. 
+The WAV format typically stores samples with 16-bit precision, so we only want 
+to modify the byte that represents the least significant bits.
 
 Next, let's extract the hidden message:
 
@@ -650,21 +657,22 @@ import wave
 cover_wav = wave.open("stego-sound.wav", mode='rb')
 frames = bytearray(cover_wav.readframes(cover_wav.getnframes()))
 
-message_bits = [ int(f)%2 for f in frames ]
-
 message_ex = []
 value = 0
-for i in range(len(message_bits)):
-    if i%8==0 and i!=0:
+
+j = 0
+for i in range(0, len(frames), 2):
+    msg_bit = frames[i]%2
+    if j%8==0 and j!=0:
         message_ex.append(value)
         value = 0
-    value |= message_bits[i] << i%8
-
+    value |= msg_bit << j%8
+    j+=1
 ```
 
 ```bash
 >>> ''.join([chr(l) for l in message_ex])[:20]
-Hello World¡GhÓ
+Hello World
 ```
 
 As in the previous cases, we can see some strange characters at the end of the extracted string, because we have extracted bits that are not used.

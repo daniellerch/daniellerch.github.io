@@ -815,8 +815,9 @@ message_bits = []
 for l in "Hello World":
     message_bits += [ (ord(l)>>i)&1 for i in range(8) ]
 
-for i in range(len(message_bits)):
-    if frames[i]%2 != message_bits[i]:
+j = 0
+for i in range(0, len(frames), 2):
+    if frames[i]%2 != message_bits[j]:
         if frames[i] == 255:
             s = -1
         elif frames[i] == 0:
@@ -824,6 +825,9 @@ for i in range(len(message_bits)):
         else:
             s = random.choice([-1, +1])
         frames[i] = frames[i] + s
+    j += 1
+    if j>=len(message_bits):
+        break
 
 stego_wav = wave.open('stego-sound.wav', 'wb')
 stego_wav.setparams(cover_wav.getparams())
@@ -832,6 +836,11 @@ stego_wav.writeframes(bytes(frames))
 cover_wav.close()
 stego_wav.close()
 ```
+
+Conviene darse cuenta de que solo estamos modificando uno de cada dos
+bytes. El formato WAV normalmente almacena las muestras con precisión
+de 16 bits, por lo que solo queremos modificar el byte que representa
+los bits de menos peso.
 
 
 A continuación, vamos a extraer el mensaje oculto:
@@ -842,16 +851,17 @@ import wave
 cover_wav = wave.open("stego-sound.wav", mode='rb')
 frames = bytearray(cover_wav.readframes(cover_wav.getnframes()))
 
-message_bits = [ int(f)%2 for f in frames ]
-
 message_ex = []
 value = 0
-for i in range(len(message_bits)):
-    if i%8==0 and i!=0:
+
+j = 0
+for i in range(0, len(frames), 2):
+    msg_bit = frames[i]%2
+    if j%8==0 and j!=0:
         message_ex.append(value)
         value = 0
-    value |= message_bits[i] << i%8
-
+    value |= msg_bit << j%8
+    j+=1
 ```
 
 ```bash
