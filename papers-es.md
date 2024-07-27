@@ -8,7 +8,7 @@ meta-description: "Papers about image steganography and steganalysis"
 lang-suffix: "-es"
 ---
 
-
+- Single-image steganalysis in real-world scenarios based on classifier inconsistency detection. Daniel Lerch-Hostalot and David Megias. In Proceedings of the 19th International Conference on Availability, Reliability and Security (ARES '24). July 2024. [<a href='https://doi.org/10.1145/3664476.3670911'>10.1145/3664476.3670911</a>].
 
 - Aletheia: an open-source toolbox for steganalysis. Journal of Open Source Software. Daniel Lerch-Hostalot and David Megias. 9(93), 5982. January 2024. [<a href='https://doi.org/10.21105/joss.05982'>10.21105/joss.05982</a>]. 
 
