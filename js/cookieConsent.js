@@ -158,6 +158,9 @@
       }
    }
 
-   init();
+   $(document).ready(function() {
+      console.log("ready");
+      init();
+   });
 
 })(window, window.document, jQuery); // end of private namespace
