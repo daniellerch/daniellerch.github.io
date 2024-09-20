@@ -72,6 +72,7 @@
 			} else if (currentPreferences["marketing"] == 0) {
             // Do nothing
    		}
+      }
 	}
 
     // push GTM event to data layer
