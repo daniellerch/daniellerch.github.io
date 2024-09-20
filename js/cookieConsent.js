@@ -62,17 +62,16 @@
    function runScripts() {
 		if (currentPreferences != null) {
 	    	if (currentPreferences["marketing"] == 1) {
-				gtag('consent', 'update', {
-							'ad_storage': 'granted', 
-							'analytics_storage': 'granted',
-							'personalization_storage': 'granted'});
+            // -->
+            window.dataLayer = window.dataLayer || [];
+           function gtag(){dataLayer.push(arguments);}
+           gtag('js', new Date());
+           gtag('config', 'G-LMCVW2DYY8');
+            // <--
+
 			} else if (currentPreferences["marketing"] == 0) {
-				gtag('consent', 'update', {
-							'ad_storage': 'denied', 
-							'analytics_storage': 'denied',
-							'personalization_storage': 'denied'});
-                }
-		}
+            // Do nothing
+   		}
 	}
 
     // push GTM event to data layer
