@@ -60,6 +60,7 @@
 
    // run GTM consent update based on current consent settings
    function runScripts() {
+      window.dataLayer = window.dataLayer || [];
       if (currentPreferences != null) {
          if (currentPreferences["marketing"] == 1) {
             // -->
@@ -67,7 +68,6 @@
             gtagScript.async = true;
             gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-LMCVW2DYY8';
             document.head.appendChild(gtagScript);            
-            window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-LMCVW2DYY8');
