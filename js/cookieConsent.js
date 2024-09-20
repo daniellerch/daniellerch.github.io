@@ -125,6 +125,7 @@
     // load saved cookie consent and preset form
     function loadData() {
 		var params = getCookie(identificator).split("&");
+       console.log(params);
 		// go though cookie value params and find preferences
 		for (var i = 0; i < params.length; i++) {
 	    	var param = params[i];
