@@ -63,6 +63,10 @@
       if (currentPreferences != null) {
          if (currentPreferences["marketing"] == 1) {
             // -->
+            let gtagScript = document.createElement('script');
+            gtagScript.async = true;
+            gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-LMCVW2DYY8';
+            document.head.appendChild(gtagScript);            
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
