@@ -221,6 +221,13 @@
 	{%- endcomment -%}
 	function formatDate(stringDate) {
 		var date = new Date(stringDate);
+      if(isNaN(date)) {
+         date = new Date(parseInt(stringDate) * 1000);
+      }
+      if(isNaN(date)) {
+         console.error("Invalid date format:", stringDate);
+         return "Invalid Date";
+      }
 		var dateOptions = { year: 'numeric', month: 'long', day: 'numeric'};
 		var timeOptions = { hour: 'numeric', minute: 'numeric' };
 		return `${date.toLocaleDateString("en-us", dateOptions)} at ${date.toLocaleTimeString("en-us", timeOptions)}`;
