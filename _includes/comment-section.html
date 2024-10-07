@@ -220,6 +220,7 @@
 	/* Format the comment's date to our desired format */
 	{%- endcomment -%}
 	function formatDate(stringDate) {
+      console.log(stringDate);
 		var date = new Date(stringDate);
       if(isNaN(date)) {
          date = new Date(parseInt(stringDate) * 1000);
