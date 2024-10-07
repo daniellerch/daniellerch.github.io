@@ -39,6 +39,7 @@ comments: true
 
 
 ## Esteganografía en imágenes
+- [StegoApp](#stegoapp) <small>[ PNG, JPG ]</small>
 - [CryptoStego](#cryptostego) <small>[ PNG, JPG ]</small>
 - [F5](#f5) <small>[ JPG ]</small>
 - [HStego](#hstego) <small>[ PNG, JPG ]</small>
@@ -109,6 +110,29 @@ Si conoces algunos datos de los que no se proporcionan o hay alguna herramienta
 que crees que se podría ser interesante añadir a la lista, puedes ponerte en 
 contacto conmigo [aquí](/about-es).
 
+
+
+
+<hr>
+## StegoApp
+<!-- ((( -->
+
+[StegoApp](https://stego.app) es una 
+herramienta de esteganografía para imágenes que se ejecuta en el navegador.
+
+|-|-|
+| **Sistema Operativo** | Multiplataforma (Navegador web) |
+| **Método de inserción de imagen** | Método robusto a medida |
+| **Licencia** | Gratuita con opciones premium |
+
+Dado que esta herramienta se ejecuta en el navegador, solo es 
+necesario acceder a la página y seguir las instrucciones.
+
+<div style="display: flex; justify-content: space-around; align-items: center;">
+    <img src="/stego/intro/resources/tools-stegoapp1.jpeg" style="width: 30%; margin-right: 10px;">
+    <img src="/stego/intro/resources/tools-stegoapp2.jpeg" style="width: 30%; margin-right: 10px;">
+    <img src="/stego/intro/resources/tools-stegoapp3.jpeg" style="width: 30%;">
+</div>
 
 
 <hr>
