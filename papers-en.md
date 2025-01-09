@@ -13,7 +13,7 @@ lang-suffix: "-en"
 
 - Aletheia: an open-source toolbox for steganalysis. Journal of Open Source Software. Daniel Lerch-Hostalot and David Megias. 9(93), 5982. January 2024. [<a href="https://www.theoj.org/joss-papers/joss.05982/10.21105.joss.05982.pdf">pdf</a>] [<a href='https://doi.org/10.21105/joss.05982'>10.21105/joss.05982</a>]. 
 
-- Real-world actor-based image steganalysis via classifier inconsistency detection. Daniel Lerch-Hostalot and David Megias. In Proceedings of the 18th International Conference on Availability, Reliability and Security (ARES '23). August 2023. [<a href='https://doi.org/10.1145/3600160.3605042'>10.1145/3600160.3605042</a>].
+- Real-world actor-based image steganalysis via classifier inconsistency detection. Daniel Lerch-Hostalot and David Megias. In Proceedings of the 18th International Conference on Availability, Reliability and Security (ARES '23). August 2023. [<a href='https://doi.org/10.1145/3600160.3605042'>10.1145/3600160.3605042</a>] [<a href='https://arxiv.org/abs/2501.04362'>arXiv</a>].
 
 - Subsequent embedding in targeted image steganalysis: Theoretical framework and practical applications. David Megias and Daniel Lerch-Hostalot. IEEE Transactions on Dependable and Secure Computing, February 2022. [<a href='https://ieeexplore.ieee.org/document/9722958'>10.1109/TDSC.2022.3154967</a>] [<a href='https://arxiv.org/abs/2107.13862'>arXiv</a>].
 
