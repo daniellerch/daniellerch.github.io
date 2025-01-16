@@ -11,6 +11,8 @@ lang-suffix: "-en"
 comments: true
 ---
 
+<center>Aletheia <a href='https://github.com/daniellerch/aletheia/tree/v0.3'>v0.3</a></center><br>
+
 > In this article we are going to talk about how to detect **JPEG images** 
 > which contain hidden data using Steghide. To do this, we are going to use the 
 > steganalysis tool 

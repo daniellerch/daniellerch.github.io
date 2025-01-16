@@ -10,6 +10,8 @@ lang-suffix: "-en"
 comments: true
 ---
 
+<center>Aletheia <a href='https://github.com/daniellerch/aletheia/tree/v0.3'>v0.3</a></center><br>
+
 > In this article, we will see how to use the commands offered by
 > [Aletheia](https://github.com/daniellerch/aletheia) to solve stego-puzzles.
 
