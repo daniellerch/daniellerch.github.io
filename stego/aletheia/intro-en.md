@@ -13,6 +13,9 @@ comments: true
 > In this article we are going to talk about how to use the commands offered by 
 > the [Aletheia](https://github.com/daniellerch/aletheia) tool for image stegaanalysis.
 
+> Aletheia version: v0.3
+
+
 <style>
     [id]::before {
         content: '';
@@ -42,7 +45,7 @@ comments: true
 for image steganalysis. Next we will see how to use these commands.
 
 Details for installing Aletheia can be found
-[here](https://github.com/daniellerch/aletheia/blob/master/doc/INSTALL.md).
+[here](https://github.com/daniellerch/aletheia/blob/master/INSTALL.md).
 
 Once installed, executing Aletheia without parameters allows us to see a list 
 of the available commands

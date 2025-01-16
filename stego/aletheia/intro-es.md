@@ -13,6 +13,7 @@ comments: true
 > En este artículo vamos a ver cómo usar los comandos que ofrece la herramienta 
 > [Aletheia](https://github.com/daniellerch/aletheia) para el estegoanálisis de imágenes.
 
+> Aletheia version: v0.3
 
 
 <style>
@@ -47,7 +48,7 @@ estegoanálisis para imágenes basada en comandos. A continuación veremos
 como usarlos.
 
 Los detalles para la instalación de Aletheia pueden encontrarse 
-[aquí](https://github.com/daniellerch/aletheia/blob/master/doc/INSTALL.md).
+[aquí](https://github.com/daniellerch/aletheia/blob/master/INSTALL.md).
 
 Una vez instalada, la ejecución de Aletheia sin parámetros nos permite ver
 un listado de los comandos disponibles.
