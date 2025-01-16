@@ -10,7 +10,7 @@ lang-suffix: "-en"
 comments: true
 ---
 
-<center>Aletheia <a href='https://github.com/daniellerch/aletheia/tree/v0.3'>v0.3</a></center><br>
+<center style='margin-bottom:30px'>Aletheia <a href='https://github.com/daniellerch/aletheia/tree/v0.3'>v0.3</a></center>
 
 > In this article we are going to talk about how to identify the steganography 
 > scheme that has been used to hide information. To do this, we will use the 

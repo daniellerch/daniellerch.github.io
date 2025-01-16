@@ -11,7 +11,7 @@ lang-suffix: "-es"
 comments: true
 ---
 
-<center>Aletheia <a href='https://github.com/daniellerch/aletheia/tree/v0.3'>v0.3</a></center><br>
+<center style='margin-bottom:30px'>Aletheia <a href='https://github.com/daniellerch/aletheia/tree/v0.3'>v0.3</a></center>
 
 > En este artículo vamos a ver cómo detectar **imagenes JPEG** en las que se
 > ha ocultado información usando la herramienta **Steghide**. Para ello, 

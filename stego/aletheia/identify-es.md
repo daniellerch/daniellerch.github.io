@@ -10,7 +10,7 @@ lang-suffix: "-es"
 comments: true
 ---
 
-<center>Aletheia <a href='https://github.com/daniellerch/aletheia/tree/v0.3'>v0.3</a></center><br>
+<center style='margin-bottom:30px'>Aletheia <a href='https://github.com/daniellerch/aletheia/tree/v0.3'>v0.3</a></center>
 
 > En este artículo vamos a ver cómo identificar el esquema de esteganografía 
 > que se ha usado para ocultar información. Para ello, usaremos la herramienta 
