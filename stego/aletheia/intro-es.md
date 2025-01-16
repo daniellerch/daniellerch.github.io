@@ -10,10 +10,11 @@ lang-suffix: "-es"
 comments: true
 ---
 
+<center>Aletheia <a href='https://github.com/daniellerch/aletheia/tree/v0.3'>v0.3</a></center>
+
 > En este artículo vamos a ver cómo usar los comandos que ofrece la herramienta 
 > [Aletheia](https://github.com/daniellerch/aletheia) para el estegoanálisis de imágenes.
 
-> Aletheia version: v0.3
 
 
 <style>
