@@ -11,7 +11,6 @@ comments: true
 ---
 
 <center>Aletheia <a href='https://github.com/daniellerch/aletheia/tree/v0.3'>v0.3</a></center><br>
-
 > In this article we are going to talk about how to use the commands offered by 
 > the [Aletheia](https://github.com/daniellerch/aletheia) tool for image stegaanalysis.
 
