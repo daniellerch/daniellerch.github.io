@@ -74,7 +74,7 @@ comments: true
 
 
 
-<div style='margin-bottom:80px'></div>
+<div style='margin-bottom:50px'></div>
 ### Python JPEG Toolbox
 
 **[Python JPEG Toolbox](https://github.com/daniellerch/python-jpeg-toolbox)**  is a library similar to the well-known JPEG Toolbox for Matlab. It allows reading and writing low-level information from JPEG files, such as DCT coefficients or quantization matrices.
