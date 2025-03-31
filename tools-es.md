@@ -22,9 +22,12 @@ comments: true
 
 
 <center style='margin-bottom:30px'>
+[ &nbsp; <a href='#herramientas'>Herramientas</a> &nbsp;
+|| &nbsp; <a href='#librerías'>Librerías</a> &nbsp; ]
+<br>
 [ &nbsp; <a href='#aletheia'>Aletheia</a> &nbsp;
 | &nbsp; <a href='#hstego'>HStego</a> &nbsp;  
-| &nbsp; <a href='#stego-retweet'>Stego Retweet</a> &nbsp; ) 
+| &nbsp; <a href='#stego-retweet'>Stego Retweet</a> &nbsp; 
 || &nbsp; <a href='#python-jpeg-toolbox'>Python JPEG Toolbox</a> &nbsp;
 | &nbsp; <a href='#python-syndrome-trellis-codes'>pySTC</a> &nbsp; ]
 </center>
