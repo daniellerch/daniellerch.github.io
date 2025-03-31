@@ -31,13 +31,12 @@ comments: true
 
 
 <div style='margin-bottom:50px'></div>
-# Herramientas
+## Herramientas
 <hr style='border:1px solid #ccc'>
 
 
 <div style='margin-bottom:50px'></div>
-## Aletheia
-<hr style='border:1px solid #ccc'>
+### Aletheia
 
 **[Aletheia](https://github.com/daniellerch/aletheia)** es una herramienta libre de estegoanálisis para la detección de mensajes ocultos en imágenes. Para alcanzar sus objetivos, Aletheia usa técnicas de *machine learning* del estado del arte. Es capaz de detectar diferentes métodos de esteganografía, como por ejemplo F5, Steghide, métodos basdos en sustitución del LSB, LSB *matching* y métodos adaptativos.
 
@@ -57,20 +56,35 @@ comments: true
 
 
 <div style='margin-bottom:80px'></div>
-## HStego
-<hr style='border:1px solid #ccc'>
+### HStego
 
 **[HStego](https://github.com/daniellerch/hstego)** es una herramienta para ocultar información en imágenes de tipo mapa de bits y en imágenes JPEG. Esta herramienta usa algunos de los más avanzados métodos de esteganografía que se conocen, junto con un límite en la cantidad de datos que esconde, calculado para que no pueda ser detectada por herramientas modernas de estegoanálisis. 
 
 
 <div style='margin-bottom:80px'></div>
-## Stego Retweet
-<hr style='border:1px solid #ccc'>
+### Stego Retweet
 
 
 **[Stego Retweet](https://github.com/daniellerch/stego-retweet)** es una herramienta para esconder mensajes en Twitter mediante retweets. Usando una lista de *hashtags* proporcionada por el usuario, esta herramienta busca y realiza retweets de  tweets que contienen ciertas palabras especiales. De esta manera es capaz de transmitir un mensaje que podrá ser leído por un destinatario poseedor de una contraseña. La capacidad de este esquema es de dos caracteres por retweet. 
 
 
+
+<div style='margin-bottom:50px'></div>
+## Libs
+<hr style='border:1px solid #ccc'>
+
+
+
+<div style='margin-bottom:80px'></div>
+### Python JPEG Toolbox
+
+**[Python JPEG Toolbox](https://github.com/daniellerch/python-jpeg-toolbox)** es una librería  similar al concodio JPEG toolbox de Matlab. Permite leer y escribir información de bajo nivel de archivos JPEG, como, por ejemplo, los coeficientes DCT, o las matrices de cuantización.
+
+
+<div style='margin-bottom:80px'></div>
+### Python Syndrome Trellis Codes
+
+**[PySTC](https://github.com/daniellerch/pySTC)** es una interfaz en Python para los Códigos Síndrome-Trellis (STC), un método utilizado en la esteganografía para minimizar la distorsión en la inserción al ocultar información dentro de medios digitales. Los STC son códigos convolucionales lineales representados mediante una matriz de verificación de paridad, lo que permite una inserción eficiente mientras se preserva la calidad del medio portador.
 
 
 
