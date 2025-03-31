@@ -74,7 +74,7 @@ comments: true
 
 
 <div style='margin-bottom:50px;margin-top:80px'></div>
-## Libs
+## Librerías
 <hr style='border:1px solid #ccc'>
 
 
