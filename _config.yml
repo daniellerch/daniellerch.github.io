@@ -25,7 +25,7 @@ url: "https://daniellerch.me"
 navbar-links:
    blog: "/blog-en"
    stegolab: "/stegolab-en"
-   tools: "/tools-en"
+   tools & libs: "/tools-en"
    papers: "/papers-en"
    about: "/about-en"
 
