@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Herramientas
+title: Herramientas y librerías
 subtitle: "" 
 noindex: false
 meta-title: "Herramientas"
@@ -28,6 +28,12 @@ comments: true
 </center>
 
 > Aquí puedes encontrar un listado de mis herramientas de esteganografía y estegoanálisis
+
+
+<div style='margin-bottom:50px'></div>
+# Herramientas
+<hr style='border:1px solid #ccc'>
+
 
 <div style='margin-bottom:50px'></div>
 ## Aletheia
@@ -63,6 +69,10 @@ comments: true
 
 
 **[Stego Retweet](https://github.com/daniellerch/stego-retweet)** es una herramienta para esconder mensajes en Twitter mediante retweets. Usando una lista de *hashtags* proporcionada por el usuario, esta herramienta busca y realiza retweets de  tweets que contienen ciertas palabras especiales. De esta manera es capaz de transmitir un mensaje que podrá ser leído por un destinatario poseedor de una contraseña. La capacidad de este esquema es de dos caracteres por retweet. 
+
+
+
+
 
 
 
