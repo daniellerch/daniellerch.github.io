@@ -68,7 +68,7 @@ comments: true
 **[Stego Retweet](https://github.com/daniellerch/stego-retweet)** is a tool for hiding messages in Twitter using retweets. Using a list of hashtags provided by the user, this tool finds and retweets some tweets containing especial words. This allows to hide a message that can be read by the user who has the password. The capacity is of two characters per retweet. 
 
 
-<div style='margin-bottom:50px;margin-top:50px'></div>
+<div style='margin-bottom:50px;margin-top:80px'></div>
 ## Libs
 <hr style='border:1px solid #ccc'>
 
