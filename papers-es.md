@@ -8,6 +8,10 @@ meta-description: "Papers about image steganography and steganalysis"
 lang-suffix: "-es"
 ---
 
+
+- Calyptography: Secure Secret Storage Inspired by Cryptography and Steganography. Daniel Lerch-Hostalot, Jordi Puiggalí and David Megias. In: Coppens, B., Volckaert, B., Naessens, V., De Sutter, B. (eds) Availability, Reliability and Security. ARES 2025. Lecture Notes in Computer Science, vol 15996. Springer, Cham.
+[<a href='https://doi.org/10.1007/978-3-032-00635-6_17'>https://doi.org/10.1007/978-3-032-00635-6_17</a>].
+
 - Single-image steganalysis in real-world scenarios based on classifier inconsistency detection. Daniel Lerch-Hostalot and David Megias. In Proceedings of the 19th International Conference on Availability, Reliability and Security (ARES '24). July 2024. [<a href='https://doi.org/10.1145/3664476.3670911'>10.1145/3664476.3670911</a>].
 
 - Aletheia: an open-source toolbox for steganalysis. Journal of Open Source Software. Daniel Lerch-Hostalot and David Megias. 9(93), 5982. January 2024. [<a href="https://www.theoj.org/joss-papers/joss.05982/10.21105.joss.05982.pdf">pdf</a>] [<a href='https://doi.org/10.21105/joss.05982'>10.21105/joss.05982</a>]. 
