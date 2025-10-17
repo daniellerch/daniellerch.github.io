@@ -96,7 +96,7 @@ Incluye implementaciones aceleradas con Numba y descompresión a RGB sin redonde
 ## Watermarking
 <hr style='border:1px solid #ccc'>
 
-- **[H\[$i$\]dden](https://github.com/daniellerch/stegolab/tree/master/watermarking/H%5Bi%5Ddden.py)**: Método de incrustación reversible en el dominio complejo con cifrado homomórfico presentado en el paper [Complex Domain Approach for Reversible Data Hiding and Homomorphic Encryption: General Framework and Application to Dispersed Data](https://arxiv.org/abs/2510.03770) de David Megias, 2025.
+- **[H\[$i$\]dden](https://github.com/daniellerch/stegolab/tree/master/watermarking/H%5Bi%5Ddden.py)**: Método de incrustación reversible en el dominio complejo con cifrado homomórfico presentado en el paper Complex Domain Approach for Reversible Data Hiding and Homomorphic Encryption: General Framework and Application to Dispersed Data] de David Megias, 2025 [<a href="https://arxiv.org/abs/2510.03770">pdf</a>] [<a href="https://github.com/daniellerch/stegolab/watermarking/doc/raw/master/Dagstuhl 2025.pptx">slides</a>].
 
 - **[E-Blind](/stego/lab/watermarking-methods/e-blind-es/)**: Incrustación a ciegas y detección mediante Correlación Lineal. Este método simplemente añade un patron a la imagen. Método etiquetado como *System 1* en el libro [Digital Watermarking and Steganography](https://www.elsevier.com/books/digital-watermarking-and-steganography/cox/978-0-12-372585-1)  de I. J. Cox, M. L. Miller, J. A. Bloom, J. Fridrich y T. Kalker.
 
