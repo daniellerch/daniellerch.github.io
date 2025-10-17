@@ -92,7 +92,7 @@ Includes fast implementations using Numba and implementations that decompress in
 ## Watermarking
 <hr style='border:1px solid #ccc'>
 
-- **[H\[$i$\]dden](https://github.com/daniellerch/stegolab/tree/master/watermarking/H%5Bi%5Ddden.py)**: Reversible data embedding in complex domain with homomorphic encryption presented in the paper Complex Domain Approach for Reversible Data Hiding and Homomorphic Encryption: General Framework and Application to Dispersed Data by David Megias, 2025 [<a href="https://arxiv.org/abs/2510.03770">pdf</a>] [<a href="https://github.com/daniellerch/stegolab/watermarking/doc/raw/master/Dagstuhl 2025.pptx">slides</a>].
+- **[H\[$i$\]dden](https://github.com/daniellerch/stegolab/tree/master/watermarking/H%5Bi%5Ddden.py)**: Reversible data embedding in complex domain with homomorphic encryption presented in the paper Complex Domain Approach for Reversible Data Hiding and Homomorphic Encryption: General Framework and Application to Dispersed Data by David Megias, 2025 [<a href="https://arxiv.org/abs/2510.03770">pdf</a>] [<a href="https://github.com/daniellerch/stegolab/raw/refs/heads/master/watermarking/doc/Dagstuhl%202025.pptx">slides</a>].
 
 - **[E-Blind](/stego/lab/watermarking-methods/e-blind-en/)**: Blind embedding and Linear Correlation Detection. This method simply adds a pattern to the image. The method is based on "System 1" proposed in the book [Digital Watermarking and Steganography](https://www.elsevier.com/books/digital-watermarking-and-steganography/cox/978-0-12-372585-1)  by I. J. Cox, M. L. Miller, J. A. Bloom, J. Fridrich y T. Kalker.
 
