@@ -41,7 +41,7 @@ de la <a href="https://uoc.edu">Universitat Oberta de Catalunya</a> (UOC).
 Además, formo parte de <a href="https://cuing.org/">CUIng</a> 
 (Criminal Use of Information Hiding Initiative) del 
 <a href="https://www.europol.europa.eu/about-europol/european-cybercrime-centre-ec3">Europol European Cybercrime Centre - EC3</a>
-y suelo colaborar en el comité ténico de los congresos 
+y suelo colaborar en el comité técnico de los congresos 
 <a href='https://www.ares-conference.eu/'>ARES</a> que organizan.
 También ejerzo como profesor colaborador de las asignaturas de 
  <a href='http://cv.uoc.edu/tren/trenacc/web/GAT_EXP.PLANDOCENTE?any_academico=20202&cod_asignatura=M1.878&idioma=CAS&pagina=PD_PREV_PORTAL'>Técnicas de Ocultación de Datos</a> y de <a href='http://cv.uoc.edu/tren/trenacc/web/GAT_EXP.PLANDOCENTE?any_academico=20202&cod_asignatura=75.601&idioma=CAS&pagina=PD_PREV_PORTAL'>Criptografía</a> en la <a href="https://uoc.edu">Universitat Oberta de Catalunya</a> (UOC).
