@@ -59,9 +59,9 @@ son los métodos de esteganografía que es más probable que se estén usando.
 Normalmente, será necesario continuar con un análisis más profundo, como el
 que se muestra en otros artículos:
 
-- [Ataque práctico a Steghide](/stego/aletheia/steghide-attack-es/).
-- [Ataque práctico a F5](/stego/aletheia/f5-attack-es/).
-- [Ataque práctico a esquemas LSB replacement: OpenStego y OpenPuff](/stego/aletheia/lsbr-attack-es/).
+- [Ataque práctico a Steghide](/stego/aletheia/v03/steghide-attack-es/).
+- [Ataque práctico a F5](/stego/aletheia/v03/f5-attack-es/).
+- [Ataque práctico a esquemas LSB replacement: OpenStego y OpenPuff](/stego/aletheia/v03/lsbr-attack-es/).
 
 
 Dado que las técnicas de esteganografía suelen ser muy diferentes en función
@@ -179,9 +179,9 @@ Si no encontramos nada, es el momento de intentarlo con modelos de
 fiable usando *deep learning* necesitamos más imágenes, debido al problema del 
 CSM, que describimos con más detalle en otros artículos:
 
-- [Ataque práctico a Steghide](/stego/aletheia/steghide-attack-es/).
-- [Ataque práctico a F5](/stego/aletheia/f5-attack-es/).
-- [Ataque práctico a esquemas LSB replacement: OpenStego y OpenPuff](/stego/aletheia/lsbr-attack-es/).
+- [Ataque práctico a Steghide](/stego/aletheia/v03/steghide-attack-es/).
+- [Ataque práctico a F5](/stego/aletheia/v03/f5-attack-es/).
+- [Ataque práctico a esquemas LSB replacement: OpenStego y OpenPuff](/stego/aletheia/v03/lsbr-attack-es/).
 
 Veamos un ejemplo en el que detectamos diferentes esquemas de esteganografía:
 

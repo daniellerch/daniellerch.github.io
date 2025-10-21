@@ -421,7 +421,7 @@ de prueba son del 66.5%%, muy cercano a la predicción hecha por DCI.
 
 
 Las predicciones DCI están automatizadas usando los modelos proporcionados
-por Aletheia usando el [comando "dci"](/stego/aletheia/intro-es/#herramientas-automatizadas).
+por Aletheia usando el [comando "dci"](/stego/aletheia/v03/intro-es/#herramientas-automatizadas).
 
 
 

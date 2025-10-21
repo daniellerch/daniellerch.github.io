@@ -236,8 +236,8 @@ las imágenes que estamos analizando. Este problema, conocido como
 CSM o *Cover Source Mismatch*, se trata con cierto detalle en los
 siguientes artículos:
 
-- [Ataque práctico a Steghide](/stego/aletheia/steghide-attack-es/#podemos-confiar-en-el-modelo).
-- [Ataque práctico a F5](/stego/aletheia/f5-attack-es/#podemos-confiar-en-el-modelo).
+- [Ataque práctico a Steghide](/stego/aletheia/v03/steghide-attack-es/#podemos-confiar-en-el-modelo).
+- [Ataque práctico a F5](/stego/aletheia/v03/f5-attack-es/#podemos-confiar-en-el-modelo).
 
 
 Vamos a ver un par de ejemplos a continuación. Empezaremos continuando el
@@ -393,7 +393,7 @@ Hidden data found in channel 2: 0.45050276128936173
 ```
 
 Más detalles sobre este ataque en el artículo:
-- [Ataque práctico a F5](/stego/aletheia/f5-attack-es/).
+- [Ataque práctico a F5](/stego/aletheia/v03/f5-attack-es/).
 
 
 
@@ -505,8 +505,8 @@ habitual de los comandos de Aletheia.
 En cuanto al uso de *deep learning*, la predicción usando los modelos
 pre-entrenados que proporciona Aletheia, puede verse en los siguientes
 artículos:
-- [Ataque práctico a Steghide](/stego/aletheia/steghide-attack-es/).
-- [Ataque práctico a F5](/stego/aletheia/f5-attack-es/).
+- [Ataque práctico a Steghide](/stego/aletheia/v03/steghide-attack-es/).
+- [Ataque práctico a F5](/stego/aletheia/v03/f5-attack-es/).
 
 
 

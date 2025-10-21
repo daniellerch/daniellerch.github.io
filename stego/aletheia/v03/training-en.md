@@ -385,7 +385,7 @@ In this case, the DCI method tells us that using these models we will be correct
 
 For reference, the actual results when predicting images from this test set are 66.5%, very close to the prediction made by DCI.
 
-DCI predictions are automated using the models provided by Aletheia using the [“dci” command](/stego/aletheia/intro-en/#automated-tools).
+DCI predictions are automated using the models provided by Aletheia using the [“dci” command](/stego/aletheia/v03/intro-en/#automated-tools).
 
 
 
