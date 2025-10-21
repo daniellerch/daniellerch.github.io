@@ -75,7 +75,7 @@ hacking challenges.
 Let's see an example below:
 
 
-<img class='image-center' src="{{ site.baseurl }}/stego/aletheia/resources/bender_stego.png"/>
+<img class='image-center' src="{{ site.baseurl }}/stego/aletheia/v03/resources/bender_stego.png"/>
 
 
 At first glance, we cannot perceive the hidden message, as the text
@@ -96,7 +96,7 @@ $ ./aletheia.py hpf bender_stego.png bender_stego_broken.png
 
 Below, we can see the result of applying the filter:
 
-<img class='image-center' src="{{ site.baseurl }}/stego/aletheia/resources/bender_stego_broken.png"/>
+<img class='image-center' src="{{ site.baseurl }}/stego/aletheia/v03/resources/bender_stego_broken.png"/>
 
 
 <br>
@@ -118,7 +118,7 @@ allow us to adjust the pixel's transparency degree.
 
 The following image of Homer has a transparent background.
 
-<img class='image-center' src="{{ site.baseurl }}/stego/aletheia/resources/homer.png"/>
+<img class='image-center' src="{{ site.baseurl }}/stego/aletheia/v03/resources/homer.png"/>
 
 If we read, using Python, the pixel in the top left corner, we can
 see how the information related to the pixel value is structured:
@@ -177,7 +177,7 @@ imsave('homer_stego.png', I)
 <br>
 As a result, we obtain the following image:
 
-<img class='image-center' src="{{ site.baseurl }}/stego/aletheia/resources/homer_stego.png"/>
+<img class='image-center' src="{{ site.baseurl }}/stego/aletheia/v03/resources/homer_stego.png"/>
 
 The message is hidden from view. But it's not a very secure technique, as it's enough to remove the alpha channel to see that something strange is happening.
 
@@ -191,7 +191,7 @@ $ ./aletheia.py rm-alpha homer_stego.png homer_stego.png
 <br>
 The result after modifying the opacity is as follows:
 
-<img class='image-center' src="{{ site.baseurl }}/stego/aletheia/resources/homer_stego_broken.png"/>
+<img class='image-center' src="{{ site.baseurl }}/stego/aletheia/v03/resources/homer_stego_broken.png"/>
 
 As we can see, the background of the image is black. But there is a section at the beginning where the pixels have strange colors. This section corresponds to the data we have hidden. In this case, an attacker would only have to read them, although this technique could have been combined with encryption to keep the information secure.
 
@@ -226,11 +226,11 @@ copy /B file.gif+file.zip file.gif
 
 Take the following GIF image of Groot as an example:
 
-<img class='image-center' src="{{ site.baseurl }}/stego/aletheia/resources/groot.gif"/>
+<img class='image-center' src="{{ site.baseurl }}/stego/aletheia/v03/resources/groot.gif"/>
 
 After adding a ZIP file at the end we get the following image:
 
-<img class='image-center' src="{{ site.baseurl }}/stego/aletheia/resources/groot_stego.gif"/>
+<img class='image-center' src="{{ site.baseurl }}/stego/aletheia/v03/resources/groot_stego.gif"/>
 
 To extract the hidden file, just execute the following command:
 

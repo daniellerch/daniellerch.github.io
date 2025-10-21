@@ -110,7 +110,7 @@ convert monarch.tif monarch.png
 
 La imagen es la siguiente:
 
-<center><img src="/stego/aletheia/resources/monarch.png"/></center>
+<center><img src="/stego/aletheia/v03/resources/monarch.png"/></center>
 
 
 Ocultaremos un mensaje de 20000 bytes. Generamos el mensaje con el siguiente comando:
@@ -125,12 +125,12 @@ dd if=/dev/urandom of=secret.txt bs=1 count=20000
 
 A continuación, usaremos OpenStego para ocultar el mensaje. 
 
-<center><img src="/stego/aletheia/resources/openstego-1.png"/></center>
+<center><img src="/stego/aletheia/v03/resources/openstego-1.png"/></center>
 
 
 Quedando una imagen *stego* indistinguible de la original para el ojo humano.
 
-<center><img src="/stego/aletheia/resources/monarch_openstego.png"/></center>
+<center><img src="/stego/aletheia/v03/resources/monarch_openstego.png"/></center>
 
 
 
@@ -140,7 +140,7 @@ Quedando una imagen *stego* indistinguible de la original para el ojo humano.
 [OpenPuff](https://embeddedsw.net/OpenPuff_Steganography_Home.html) es una herramienta gratuita para esconder información en diferentes tipos de medios. A continuación, vamos a estegoanalizar esta herramienta en su  versión v4.0.1, cuando las imágenes en las que se esconde la información son imágenes sin comprimir.
 
 
-<center><img src="/stego/aletheia/resources/openpuff-1.png"/></center>
+<center><img src="/stego/aletheia/v03/resources/openpuff-1.png"/></center>
 
 Para realizar el análisis descargaremos una imagen del repositorio de Waterloo. Concretamente la imagen "Peppers". Y a continuación, la convertiremos a PNG, puesto que OpenPuff no soporta el formato TIFF.
 
@@ -151,7 +151,7 @@ convert peppers3.tif peppers3.png
 
 La imagen es la siguiente:
 
-<center><img src="/stego/aletheia/resources/peppers3.png"/></center>
+<center><img src="/stego/aletheia/v03/resources/peppers3.png"/></center>
 
 
 Ocultaremos un mensaje de unos 5000 bytes, que es lo máximo que nos permite guardar OpenPuff cuando usamos el *payload* mínimo y más seguro (12.5%). Generamos el mensaje con el siguiente comando:
@@ -171,13 +171,13 @@ dd if=/dev/urandom of=secret.txt bs=1 count=5000
 A continuación, usaremos OpenPuff para ocultar el mensaje. 
 
 
-<center><img src="/stego/aletheia/resources/openpuff-3.png"/></center>
+<center><img src="/stego/aletheia/v03/resources/openpuff-3.png"/></center>
 
 
 
 Obtenemos la siguiente imagen *stego*:
 
-<center><img src="/stego/aletheia/resources/peppers3_openpuff.png"/></center>
+<center><img src="/stego/aletheia/v03/resources/peppers3_openpuff.png"/></center>
 
 
 
@@ -274,7 +274,7 @@ Imágenes originales:
 $ ./aletheia.py ws monarch.png 
 No hidden data found
 
-$ ./aletheia.py ws stego/aletheia/resources/peppers3.png 
+$ ./aletheia.py ws stego/aletheia/v03/resources/peppers3.png 
 No hidden data found
 ```
 
@@ -286,7 +286,7 @@ Hiden data found in channel R 0.07295581176434245
 Hiden data found in channel G 0.07493768934615823
 Hiden data found in channel B 0.06355771697762562
 
-$ ./aletheia.py ws stego/aletheia/resources/peppers3_openpuff.png 
+$ ./aletheia.py ws stego/aletheia/v03/resources/peppers3_openpuff.png 
 Hidden data found in channel R 0.13275428291180907
 Hidden data found in channel G 0.13427208873412433
 Hidden data found in channel B 0.11806703947840881

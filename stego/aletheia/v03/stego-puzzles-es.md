@@ -78,7 +78,7 @@ retos de hacking.
 
 Veamos un ejemplo a continuación:
 
-<img class='image-center' src="{{ site.baseurl }}/stego/aletheia/resources/bender_stego.png"/>
+<img class='image-center' src="{{ site.baseurl }}/stego/aletheia/v03/resources/bender_stego.png"/>
 
 A simple vista no podemos percibir el mensaje oculto, puesto que el texto 
 se ha dibujado usando un color con una diferencia de un solo píxel con el
@@ -98,7 +98,7 @@ $ ./aletheia.py hpf bender_stego.png bender_stego_broken.png
 
 A continuación podemos ver el resultado de aplicar el filtro:
 
-<img class='image-center' src="{{ site.baseurl }}/stego/aletheia/resources/bender_stego_broken.png"/>
+<img class='image-center' src="{{ site.baseurl }}/stego/aletheia/v03/resources/bender_stego_broken.png"/>
 
 
 
@@ -125,7 +125,7 @@ intermedios nos permitirán ajustar el grado de transparencia del píxel.
 
 La siguiente imagen de Homer tiene el fondo transparente.
 
-<img class='image-center' src="{{ site.baseurl }}/stego/aletheia/resources/homer.png"/>
+<img class='image-center' src="{{ site.baseurl }}/stego/aletheia/v03/resources/homer.png"/>
 
 Si leemos, usando Python, el píxel de la esquina superior izquierda, podemos 
 ver cómo se estructura la información relativa al valor del píxel:
@@ -184,7 +184,7 @@ imsave('homer_stego.png', I)
 <br>
 Como resultado, obtenemos la siguiente imagen:
 
-<img class='image-center' src="{{ site.baseurl }}/stego/aletheia/resources/homer_stego.png"/>
+<img class='image-center' src="{{ site.baseurl }}/stego/aletheia/v03/resources/homer_stego.png"/>
 
 El mensaje queda oculto a la vista. Pero no es una técnica muy segura, puesto
 que basta con eliminar el canal alfa para ver que algo extraño está ocurriendo.
@@ -199,7 +199,7 @@ $ ./aletheia.py rm-alpha homer_stego.png homer_stego.png
 <br>
 El resultado después de modificar la opacidad es el siguiente:
 
-<img class='image-center' src="{{ site.baseurl }}/stego/aletheia/resources/homer_stego_broken.png"/>
+<img class='image-center' src="{{ site.baseurl }}/stego/aletheia/v03/resources/homer_stego_broken.png"/>
 
 
 Como podemos ver, el fondo de la imagen es negro. Pero existe una sección al 
@@ -254,11 +254,11 @@ copy /B file.gif+file.zip file.gif
 
 Tomemos como ejemplo la siguiente imagen GIF de Groot:
 
-<img class='image-center' src="{{ site.baseurl }}/stego/aletheia/resources/groot.gif"/>
+<img class='image-center' src="{{ site.baseurl }}/stego/aletheia/v03/resources/groot.gif"/>
 
 Después de añadir un fichero ZIP al final obtenemos la siguiente imagen:
 
-<img class='image-center' src="{{ site.baseurl }}/stego/aletheia/resources/groot_stego.gif"/>
+<img class='image-center' src="{{ site.baseurl }}/stego/aletheia/v03/resources/groot_stego.gif"/>
 
 
 Para extraer el fichero oculto basta con ejecutar el siguiente comando:

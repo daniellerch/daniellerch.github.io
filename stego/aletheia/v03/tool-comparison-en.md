@@ -52,13 +52,13 @@ uncompressed images and JPEG images. First, we look at the comparative charts.
 Comparison of steganography in uncompressed images (PNG, TIF, BMP, etc):
 </b></center>
 
-![efficiency](/stego/aletheia/resources/tool_comparison.png?style=centerme)
+![efficiency](/stego/aletheia/v03/resources/tool_comparison.png?style=centerme)
 
 <center><b>
 Comparison of steganography in JPEG images:
 </b></center>
 
-![efficiency](/stego/aletheia/resources/tool_comparison_jpeg.png?style=centerme)
+![efficiency](/stego/aletheia/v03/resources/tool_comparison_jpeg.png?style=centerme)
 
 <br>
 ## Experiment Description

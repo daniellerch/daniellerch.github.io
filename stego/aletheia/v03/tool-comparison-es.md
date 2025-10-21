@@ -54,14 +54,14 @@ comparativas.
 Comparativa de esteganografía en imágenes sin comprimir (PNG, TIF, BMP, etc):
 </b></center>
 
-![efficiency](/stego/aletheia/resources/tool_comparison.png?style=centerme)
+![efficiency](/stego/aletheia/v03/resources/tool_comparison.png?style=centerme)
 
 
 <center><b>
 Comparativa de esteganografía en imágenes JPEG:
 </b></center>
 
-![efficiency](/stego/aletheia/resources/tool_comparison_jpeg.png?style=centerme)
+![efficiency](/stego/aletheia/v03/resources/tool_comparison_jpeg.png?style=centerme)
 
 
 <br>

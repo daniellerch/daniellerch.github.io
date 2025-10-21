@@ -104,7 +104,7 @@ convert monarch.tif monarch.png
 
 We get this image:
 
-<center><img src="/stego/aletheia/resources/monarch.png"/></center>
+<center><img src="/stego/aletheia/v03/resources/monarch.png"/></center>
 
 
 We are going to hide a 20000 byte message. We generate the message with the following command:
@@ -119,12 +119,12 @@ dd if=/dev/urandom of=secret.txt bs=1 count=20000
 
 Next, we will use OpenStego to hide the message.
 
-<center><img src="/stego/aletheia/resources/openstego-1.png"/></center>
+<center><img src="/stego/aletheia/v03/resources/openstego-1.png"/></center>
 
 
 Leaving an image *stego* indistinguishable from the original for the human eye.
 
-<center><img src="/stego/aletheia/resources/monarch_openstego.png"/></center>
+<center><img src="/stego/aletheia/v03/resources/monarch_openstego.png"/></center>
 
 
 
@@ -134,7 +134,7 @@ Leaving an image *stego* indistinguishable from the original for the human eye.
 [OpenPuff](https://embeddedsw.net/OpenPuff_Steganography_Home.html) is a free tool for hiding information on different types of media. Next, we are going to analyze this tool in its version v4.0.1, when the images in which the information is hidden are uncompressed.
 
 
-<center><img src="/stego/aletheia/resources/openpuff-1.png"/></center>
+<center><img src="/stego/aletheia/v03/resources/openpuff-1.png"/></center>
 
 To perform the analysis we will download an image from the Waterloo repository. Specifically the image "Peppers". And then we will convert it to PNG, since OpenPuff does not support the TIFF format.
 
@@ -145,7 +145,7 @@ convert peppers3.tif peppers3.png
 
 We get this image:
 
-<center><img src="/stego/aletheia/resources/peppers3.png"/></center>
+<center><img src="/stego/aletheia/v03/resources/peppers3.png"/></center>
 
 
 
@@ -163,12 +163,12 @@ dd if=/dev/urandom of=secret.txt bs=1 count=5000
 Next, we will use OpenPuff to hide the message.
 
 
-<center><img src="/stego/aletheia/resources/openpuff-3.png"/></center>
+<center><img src="/stego/aletheia/v03/resources/openpuff-3.png"/></center>
 
 
 We get the following stego image:
 
-<center><img src="/stego/aletheia/resources/peppers3_openpuff.png"/></center>
+<center><img src="/stego/aletheia/v03/resources/peppers3_openpuff.png"/></center>
 
 
 
@@ -264,7 +264,7 @@ Cover images:
 $ ./aletheia.py ws monarch.png 
 No hidden data found
 
-$ ./aletheia.py ws stego/aletheia/resources/peppers3.png 
+$ ./aletheia.py ws stego/aletheia/v03/resources/peppers3.png 
 No hidden data found
 ```
 
@@ -276,7 +276,7 @@ Hiden data found in channel R 0.07295581176434245
 Hiden data found in channel G 0.07493768934615823
 Hiden data found in channel B 0.06355771697762562
 
-$ ./aletheia.py ws stego/aletheia/resources/peppers3_openpuff.png 
+$ ./aletheia.py ws stego/aletheia/v03/resources/peppers3_openpuff.png 
 Hidden data found in channel R 0.13275428291180907
 Hidden data found in channel G 0.13427208873412433
 Hidden data found in channel B 0.11806703947840881

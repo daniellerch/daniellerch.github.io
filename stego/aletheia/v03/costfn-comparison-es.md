@@ -61,14 +61,14 @@ Vemos, primero, las gráficas comparativas.
 Comparativa de esteganografía en imágenes de tipo mapa de bits (PNG, TIF, BMP, etc):
 </b></center>
 
-![efficiency](/stego/aletheia/resources/cosfn_comparison.png?style=centerme)
+![efficiency](/stego/aletheia/v03/resources/cosfn_comparison.png?style=centerme)
 
 
 <center><b>
 Comparativa de esteganografía en imágenes JPEG:
 </b></center>
 
-![efficiency](/stego/aletheia/resources/costfn_comparison_jpeg.png?style=centerme)
+![efficiency](/stego/aletheia/v03/resources/costfn_comparison_jpeg.png?style=centerme)
 
 
 <br>
