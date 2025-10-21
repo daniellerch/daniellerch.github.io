@@ -54,13 +54,13 @@ lang-suffix: "-en"
 <hr style='border:1px solid #ccc'>
 
 ### Practical steganalysis with Aletheia:
-- [Introduction to steganalysis using Aletheia](/stego/aletheia/intro-en/).
-- [Identifying the steganographic scheme](/stego/aletheia/identify-en/).
-- [Practical attack on Steghide](/stego/aletheia/steghide-attack-en/).
-- [Practical attack on F5](/stego/aletheia/f5-attack-en/).
-- [Practical attack on LSB replacement: OpenStego and OpenPuff](/stego/aletheia/lsbr-attack-en/).
-- [Solving Stego-Puzzles with Aletheia](/stego/aletheia/stego-puzzles-en/).
-- [Training models for Aletheia](/stego/aletheia/training-en/).
+- [Introduction to steganalysis using Aletheia](/stego/aletheia/v03/intro-en/).
+- [Identifying the steganographic scheme](/stego/aletheia/v03/identify-en/).
+- [Practical attack on Steghide](/stego/aletheia/v03/steghide-attack-en/).
+- [Practical attack on F5](/stego/aletheia/v03/f5-attack-en/).
+- [Practical attack on LSB replacement: OpenStego and OpenPuff](/stego/aletheia/v03/lsbr-attack-en/).
+- [Solving Stego-Puzzles with Aletheia](/stego/aletheia/v03/stego-puzzles-en/).
+- [Training models for Aletheia](/stego/aletheia/v03/training-en/).
 
 
 

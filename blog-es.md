@@ -91,13 +91,13 @@ lang-suffix: "-es"
 <hr style='border:1px solid #ccc'>
 
 ### Estegoanálisis práctico con Aletheia:
-- [Introducción al estegoanálisis con Aletheia](/stego/aletheia/intro-es/).
-- [Cómo identificar el esquema de esteganografía](/stego/aletheia/identify-es/).
-- [Ataque práctico a Steghide](/stego/aletheia/steghide-attack-es/).
-- [Ataque práctico a F5](/stego/aletheia/f5-attack-es/).
-- [Ataque práctico a esquemas LSB replacement: OpenStego y OpenPuff](/stego/aletheia/lsbr-attack-es/).
-- [Resolución de stego-puzzles con Aletheia](/stego/aletheia/stego-puzzles-es/).
-- [Entrenamiento de modelos para Aletheia](/stego/aletheia/training-es/).
+- [Introducción al estegoanálisis con Aletheia](/stego/aletheia/v03/intro-es/).
+- [Cómo identificar el esquema de esteganografía](/stego/aletheia/v03/identify-es/).
+- [Ataque práctico a Steghide](/stego/aletheia/v03/steghide-attack-es/).
+- [Ataque práctico a F5](/stego/aletheia/v03/f5-attack-es/).
+- [Ataque práctico a esquemas LSB replacement: OpenStego y OpenPuff](/stego/aletheia/v03/lsbr-attack-es/).
+- [Resolución de stego-puzzles con Aletheia](/stego/aletheia/v03/stego-puzzles-es/).
+- [Entrenamiento de modelos para Aletheia](/stego/aletheia/v03/training-es/).
 - Comparación de funciones de coste para esteganografía en imágenes.
 
 <h3 class='todo'>Ataques teóricos:</h3>

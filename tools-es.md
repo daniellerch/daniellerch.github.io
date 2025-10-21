@@ -43,14 +43,14 @@ comments: true
 **[Aletheia](https://github.com/daniellerch/aletheia)** es una herramienta libre de estegoanálisis para la detección de mensajes ocultos en imágenes. Para alcanzar sus objetivos, Aletheia usa técnicas de *machine learning* del estado del arte. Es capaz de detectar diferentes métodos de esteganografía, como por ejemplo F5, Steghide, métodos basdos en sustitución del LSB, LSB *matching* y métodos adaptativos.
 
 **Artículos sobre estegoanálisis práctico con Aletheia:**
-- [Introducción al estegoanálisis con Aletheia.](/stego/aletheia/intro-es/)
-- [Cómo identificar el esquema de esteganografía.](/stego/aletheia/identify-es/)
-- [Ataque práctico a Steghide.](/stego/aletheia/steghide-attack-es/)
-- [Ataque práctico a F5.](/stego/aletheia/f5-attack-es/)
-- [Ataque práctico a esquemas LSB replacement: OpenStego y OpenPuff.](/stego/aletheia/lsbr-attack-es/)
-- [Resolución de stego-puzzles con Aletheia](/stego/aletheia/stego-puzzles-es/).
-- [Comparativa de herramientas de esteganografía en imágenes.](/stego/aletheia/tool-comparison-es/)
-- [Entrenamiento de modelos para Aletheia](/stego/aletheia/training-es/).
+- [Introducción al estegoanálisis con Aletheia.](/stego/aletheia/v03/intro-es/)
+- [Cómo identificar el esquema de esteganografía.](/stego/aletheia/v03/identify-es/)
+- [Ataque práctico a Steghide.](/stego/aletheia/v03/steghide-attack-es/)
+- [Ataque práctico a F5.](/stego/aletheia/v03/f5-attack-es/)
+- [Ataque práctico a esquemas LSB replacement: OpenStego y OpenPuff.](/stego/aletheia/v03/lsbr-attack-es/)
+- [Resolución de stego-puzzles con Aletheia](/stego/aletheia/v03/stego-puzzles-es/).
+- [Comparativa de herramientas de esteganografía en imágenes.](/stego/aletheia/v03/tool-comparison-es/)
+- [Entrenamiento de modelos para Aletheia](/stego/aletheia/v03/training-es/).
 
 
 <div style='margin-top:40px'></div>
