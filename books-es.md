@@ -36,7 +36,7 @@ lang-suffix: "-es"
         <li><a href='/stego/books/stegopython/audio-es/'>Esteganografía en audio</a></li>
         <li><a href='/stego/books/stegopython/bitmapimages-es/'>Esteganografía en imágenes raster sin pérdida</a></li>
         <li><a href='/stego/books/stegopython/jpegimages-es/'>Esteganografía en imágenes JPEG</a></li>
-        <li>Esteganografía en imágenes generadas con IA'</li>
+        <li>Esteganografía en imágenes generadas con IA</li>
         <li><a href='/stego/books/stegopython/video-es/'>Esteganografía en vídeo</a></li>
         <li><a href='/stego/books/stegopython/networks-es/'>Esteganografía en protocolos de red</a></li>
         <li><a href='/stego/books/stegopython/text-es/'>Esteganografía en texto</a></li>
