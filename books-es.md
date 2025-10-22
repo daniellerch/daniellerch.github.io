@@ -52,14 +52,35 @@ lang-suffix: "-es"
 <br>
 ## Estegoanálisis de imágenes con Aletheia:
 <hr style='border:1px solid #ccc'>
-1. [Introducción](/stego/books/aletheia/intro-es/).
-2. [Estegoanálisis de técnicas básicas](/stego/books/aletheia/basic-es/).
-3. [Ataques estructurales](/stego/books/aletheia/struct-es/).
-4. [Ataques de calibración](/stego/books/aletheia/calib-es/).
-5. [Estegoanálisis usando machine learning](/stego/books/aletheia/ml-es/).
-6. [Extracción del mensaje](/stego/books/aletheia/extract-es/).
-7. [Procedimiento de análisis](/stego/books/aletheia/proc-es/).
-8. [Casos de estudio](/stego/books/aletheia/cases-es/).
+
+
+
+
+
+/
+
+
+
+
+
+<div style="display: flex; align-items: flex-start;">
+  <div style="flex: 1; padding-right: 20px;">
+    <ol>
+        <li><a href='/stego/books/aletheia/intro-es/'>Introducción</a></li>
+        <li><a href='/stego/books/aletheia/basic-es/'>Estegoanálisis de técnicas básicas</a></li>
+        <li><a href='/stego/books/aletheia/struct-es/'>Ataques estructurales</a></li>
+        <li><a href='/stego/books/aletheia/calib-es/'>Ataques de calibración</a></li>
+        <li><a href='/stego/books/aletheia/ml-es/'>Estegoanálisis usando machine learning</a></li>
+        <li><a href='/stego/books/aletheia/extract-es/'>Extracción del mensaje</a></li>
+        <li><a href='/stego/books/aletheia/proc-es/'>Procedimiento de análisis</a></li>
+        <li><a href='/stego/books/aletheia/cases-es/'>Casos de estudio</a></li>
+    </ol>
+  </div>
+  <div>
+    <img src="/stego/books/stegopython/cover-aletheia.png" width="250">
+  </div>
+</div>
+
 
 
 
