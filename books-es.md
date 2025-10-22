@@ -21,11 +21,6 @@ lang-suffix: "-es"
 </style>
 
 
-<center style='margin-bottom:30px'>
-[ &nbsp; <a href='#esteganografía'>Esteganografía</a> &nbsp;
-| &nbsp; <a href='#estegoanálisis'>Estegoanálisis</a> &nbsp; ]
-</center>
-
 
 <div style='margin-bottom:50px'></div>
 
