@@ -44,7 +44,7 @@ lang-suffix: "-es"
     </ol>
   </div>
   <div>
-    <img src="/stego/books/stegopython/cover-stegopython.png" width="250">
+    <img src="/stego/books/stegopython/cover-stegopython.png" width="220">
   </div>
 </div>
 
@@ -70,7 +70,7 @@ lang-suffix: "-es"
     </ol>
   </div>
   <div>
-    <img src="/stego/books/aletheia/cover-aletheia.png" width="250">
+    <img src="/stego/books/aletheia/cover-aletheia.png" width="220">
   </div>
 </div>
 
