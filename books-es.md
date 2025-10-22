@@ -30,18 +30,18 @@ lang-suffix: "-es"
 
 <div style="display: flex; align-items: flex-start;">
   <div style="flex: 1; padding-right: 20px;">
-
-1. [Introducción](/stego/books/stegopython/intro-es/).
-2. [Técnicas de incrustación](/stego/books/stegopython/embed-es/).
-3. [Esteganografía en audio](/stego/books/stegopython/audio-es/).
-4. [Esteganografía en imágenes raster sin pérdida](/stego/books/stegopython/bitmapimages-es/).
-5. [Esteganografía en imágenes JPEG](/stego/books/stegopython/jpegimages-es/).
-6. Esteganografía en imágenes generadas con IA.
-7. [Esteganografía en vídeo](/stego/books/stegopython/video-es/).
-8. [Esteganografía en protocolos de red](/stego/books/stegopython/networks-es/).
-9. [Esteganografía en texto](/stego/books/stegopython/text-es/).
-10. Desarrollo de aplicaciones reales.
-
+    <ol>
+        <li><a href='/stego/books/stegopython/intro-es/'>Introducción</a></li>
+        <li><a href='/stego/books/stegopython/embed-es/'>Técnicas de incrustación</a></li>
+        <li><a href='Esteganografía en audio'>/stego/books/stegopython/audio-es/</a></li>
+        <li><a href='Esteganografía en imágenes raster sin pérdida'>/stego/books/stegopython/bitmapimages-es/</a></li>
+        <li><a href='Esteganografía en imágenes JPEG'>/stego/books/stegopython/jpegimages-es/</a></li>
+        <li>Esteganografía en imágenes generadas con IA'</li>
+        <li><a href='Esteganografía en vídeo'>/stego/books/stegopython/video-es/</a></li>
+        <li><a href='Esteganografía en protocolos de red'>/stego/books/stegopython/networks-es/</a></li>
+        <li><a href='Esteganografía en texto'>/stego/books/stegopython/text-es/</a></li>
+        <li>Desarrollo de aplicaciones reales</li>
+    </ol>
   </div>
   <div>
     <img src="/stego/books/stegopython/cover-stegopython.png" width="250">
