@@ -56,13 +56,6 @@ lang-suffix: "-es"
 
 
 
-
-/
-
-
-
-
-
 <div style="display: flex; align-items: flex-start;">
   <div style="flex: 1; padding-right: 20px;">
     <ol>
@@ -77,7 +70,7 @@ lang-suffix: "-es"
     </ol>
   </div>
   <div>
-    <img src="/stego/books/stegopython/cover-aletheia.png" width="250">
+    <img src="/stego/books/aletheia/cover-aletheia.png" width="250">
   </div>
 </div>
 
