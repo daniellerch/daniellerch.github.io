@@ -30,11 +30,9 @@ lang-suffix: "-es"
 <div style='margin-bottom:50px'></div>
 
 
-## Introducción a la Esteganografía
-### Para programadores Python
+## Introducción a la Esteganografía, para programadores Python
 <hr style='border:1px solid #ccc'>
 
-### Introducción:
 1. [Introducción](/stego/books/stegopython/intro-es/).
 2. [Técnicas de incrustación](/stego/books/stegopython/embed-es/).
 3. [Esteganografía en audio](/stego/books/stegopython/audio-es/).
@@ -48,10 +46,8 @@ lang-suffix: "-es"
 
 
 <br>
-## Estegoanálisis
+## Estegoanálisis de imágenes con Aletheia:
 <hr style='border:1px solid #ccc'>
-
-### Estegoanálisis de imágenes con Aletheia:
 1. [Introducción](/stego/books/aletheia/intro-es/).
 2. [Estegoanálisis de técnicas básicas](/stego/books/aletheia/basic-es/).
 3. [Ataques estructurales](/stego/books/aletheia/struct-es/).
