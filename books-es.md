@@ -28,6 +28,9 @@ lang-suffix: "-es"
 ## Esteganografía para programadores Python
 <hr style='border:1px solid #ccc'>
 
+<div style="display: flex; align-items: flex-start;">
+  <div style="flex: 1; padding-right: 20px;">
+
 1. [Introducción](/stego/books/stegopython/intro-es/).
 2. [Técnicas de incrustación](/stego/books/stegopython/embed-es/).
 3. [Esteganografía en audio](/stego/books/stegopython/audio-es/).
@@ -38,6 +41,12 @@ lang-suffix: "-es"
 8. [Esteganografía en protocolos de red](/stego/books/stegopython/networks-es/).
 9. [Esteganografía en texto](/stego/books/stegopython/text-es/).
 10. Desarrollo de aplicaciones reales.
+
+  </div>
+  <div>
+    <img src="/stego/books/stegopython/cover-stegopython.png" width="250">
+  </div>
+</div>
 
 
 <br>
