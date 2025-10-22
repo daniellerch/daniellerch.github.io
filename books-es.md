@@ -29,7 +29,7 @@ lang-suffix: "-es"
 <hr style='border:1px solid #ccc'>
 
 <div style="display: flex; align-items: flex-start;">
-  <div style="flex: 1; padding-right: 20px;">
+  <div style="flex: 1; padding-right: 20px;padding-top:30px;">
     <ol>
         <li><a href='/stego/books/stegopython/intro-es/'>Introducción</a></li>
         <li><a href='/stego/books/stegopython/embed-es/'>Técnicas de incrustación</a></li>
@@ -57,7 +57,7 @@ lang-suffix: "-es"
 
 
 <div style="display: flex; align-items: flex-start;">
-  <div style="flex: 1; padding-right: 20px;">
+  <div style="flex: 1; padding-right: 20px;padding-top:50px">
     <ol>
         <li><a href='/stego/books/aletheia/intro-es/'>Introducción</a></li>
         <li><a href='/stego/books/aletheia/basic-es/'>Estegoanálisis de técnicas básicas</a></li>
