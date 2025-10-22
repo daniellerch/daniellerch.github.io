@@ -30,7 +30,7 @@ lang-suffix: "-es"
 <div style='margin-bottom:50px'></div>
 
 
-## Introducción a la Esteganografía, para programadores Python
+## Esteganografía para programadores Python
 <hr style='border:1px solid #ccc'>
 
 1. [Introducción](/stego/books/stegopython/intro-es/).
