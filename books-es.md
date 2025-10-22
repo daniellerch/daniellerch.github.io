@@ -33,13 +33,13 @@ lang-suffix: "-es"
     <ol>
         <li><a href='/stego/books/stegopython/intro-es/'>Introducción</a></li>
         <li><a href='/stego/books/stegopython/embed-es/'>Técnicas de incrustación</a></li>
-        <li><a href='Esteganografía en audio'>/stego/books/stegopython/audio-es/</a></li>
-        <li><a href='Esteganografía en imágenes raster sin pérdida'>/stego/books/stegopython/bitmapimages-es/</a></li>
-        <li><a href='Esteganografía en imágenes JPEG'>/stego/books/stegopython/jpegimages-es/</a></li>
+        <li><a href='/stego/books/stegopython/audio-es/'>Esteganografía en audio</a></li>
+        <li><a href='/stego/books/stegopython/bitmapimages-es/'>Esteganografía en imágenes raster sin pérdida</a></li>
+        <li><a href='/stego/books/stegopython/jpegimages-es/'>Esteganografía en imágenes JPEG</a></li>
         <li>Esteganografía en imágenes generadas con IA'</li>
-        <li><a href='Esteganografía en vídeo'>/stego/books/stegopython/video-es/</a></li>
-        <li><a href='Esteganografía en protocolos de red'>/stego/books/stegopython/networks-es/</a></li>
-        <li><a href='Esteganografía en texto'>/stego/books/stegopython/text-es/</a></li>
+        <li><a href='/stego/books/stegopython/video-es/'>Esteganografía en vídeo</a></li>
+        <li><a href='/stego/books/stegopython/networks-es/'>Esteganografía en protocolos de red</a></li>
+        <li><a href='/stego/books/stegopython/text-es/'>Esteganografía en texto</a></li>
         <li>Desarrollo de aplicaciones reales</li>
     </ol>
   </div>
