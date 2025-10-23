@@ -75,13 +75,15 @@ ges. MM&Sec ’01. Ottawa, Ontario, Canada: Association for
 Computing Machinery, 2001, págs. 27-30. isbn: 1581133936. doi:
 10.1145/1232454.1232466.
 
-- [7] J. Fridrich, T. Pevný y J. Kodovský. “Statistically Undetecta-
+#### [Fridrich:2007:nsF5]
+J. Fridrich, T. Pevný y J. Kodovský. “Statistically Undetecta-
 ble JPEG Steganography: Dead Ends Challenges, and Oppor-
 tunities”. En: Proceedings of the 9th Workshop on Multimedia
 & Security. MM&Sec ’07. Dallas, Texas, USA: Association for
 Computing Machinery, 2007, págs. 3-14. isbn: 9781595938572.
 
-- [8] V. Holub, J. J. Fridrich y T. Denemark. “Universal distortion
+#### [Holub:2014:uniward]
+V. Holub, J. J. Fridrich y T. Denemark. “Universal distortion
 function for steganography in an arbitrary domain”. En: EURA-
 SIP Journal on Information Security 2014.1 (2014), págs. 1-13.
 
@@ -100,11 +102,13 @@ Vol. 6819. International Society for Optics y Photonics. SPIE,
 2008, págs. 56-72. url: https://doi.org/10.1117/12.
 766820.
 
-- [11] B. Li et al. “A New Cost Function for Spatial Image Stega-
+#### [Li:2014:hill]
+B. Li et al. “A New Cost Function for Spatial Image Stega-
 nography”. En: 2014 IEEE International Conference on Image
 Processing (ICIP). Paris, France: IEEE, oct. de 2014, págs. 4206-4210.
 
-- [12] A. Westfeld. “F5—A Steganographic Algorithm”. En: Informa-
+#### [Westfeld:2001:F5]
+A. Westfeld. “F5—A Steganographic Algorithm”. En: Informa-
 tion Hiding. Ed. por I. S. Moskowitz. Berlin, Heidelberg: Sprin-
 ger Berlin Heidelberg, 2001, págs. 289-302.
 BIBLIOGRAFÍA 215

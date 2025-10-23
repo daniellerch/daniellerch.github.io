@@ -3,7 +3,7 @@ layout: page
 title: "Esteganografía para programadores Python"
 subtitle: "Esteganografía en audio" 
 noindex: false
-meta-title: "Esteganografía para programadores Python: Introducción"
+meta-title: "Esteganografía para programadores Python: Esteganografía en audio"
 meta-description: "Capítulo 'Esteganografía en audio' del libro 'Esteganografía para programadores Python'"
 meta-keywords: "esteganografía, Python"
 lang-suffix: "-es"
