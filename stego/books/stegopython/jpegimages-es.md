@@ -244,14 +244,14 @@ Evitar la modificación de los coeficientes DCT de valor cero al incrustar infor
 
 Este problema, conocido como *shrinkage*, se ilustra fácilmente con un ejemplo. Si utilizamos *LSB matching* e intentamos incrustar información en un coeficiente con valor $1$ realizando una operación $-1$, o en un coeficiente $-1$ sumándole $1$, el resultado será un coeficiente con valor $0$. Dado que el receptor ignora estos ceros, los bits insertados en estas posiciones se perderían. Para solucionar este inconveniente, el conocido algoritmo de esteganografía F5 [[westfeld:2001:f5](/stego/books/stegopython/references-es/#westfeld2001f5)] adoptó la siguiente estrategia: si durante la inserción se genera un coeficiente de valor cero, el proceso continúa y el mismo bit se inserta nuevamente en el siguiente coeficiente disponible. De esta manera, aunque se generen ceros adicionales y sean ignorados en la extracción, el receptor aún encontraría el bit incrustado en una posición posterior, evitando así la pérdida de información. Sin embargo, este método tiene una limitación importante, ya que reduce significativamente la capacidad de incrustación al requerir múltiples inserciones del mismo bit.
 
-Otra forma de abordar el problema consiste en evitar generar ceros. Por ejemplo, en lugar de aplicar LSB *matching* de manera convencional, podríamos modificar los coeficientes de forma aleatoria con $+1$ o $-1$, excepto cuando $|x_i|= 1$. En este caso, si $x_i=1$, la modificación siempre sería con $+1$, mientras que si $x_i=-1$, se aplicaría $-1$. De esta manera, se evitaría la generación de nuevos ceros y se garantizaría la correcta extracción del mensaje. 
+Otra forma de abordar el problema consiste en evitar generar ceros. Por ejemplo, en lugar de aplicar LSB *matching* de manera convencional, podríamos modificar los coeficientes de forma aleatoria con $+1$ o $-1$, excepto cuando $\|x_i\|= 1$. En este caso, si $x_i=1$, la modificación siempre sería con $+1$, mientras que si $x_i=-1$, se aplicaría $-1$. De esta manera, se evitaría la generación de nuevos ceros y se garantizaría la correcta extracción del mensaje. 
 
 $$
 x_i' =
 \begin{cases}
     x_i + 1, & \text{si } x_i = 1 \\
     x_i - 1, & \text{si } x_i = -1 \\
-    x_i + s, & \text{si } |x_i| > 1, \quad \text{donde } s \in \{-1, +1\} \text{ con probabilidad } 0.5
+    x_i + s, & \text{si } \|x_i\| > 1, \quad \text{donde } s \in \{-1, +1\} \text{ con probabilidad } 0.5
 \end{cases}
 $$
 

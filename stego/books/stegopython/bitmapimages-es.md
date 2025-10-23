@@ -33,11 +33,11 @@ comments: true
 ## Contenido
 
 1. [Introducción](#introducción)
-3. [Incrustación de datos en imágenes](#incrustación-de-datos-en-imágenes)
+2. [Incrustación de datos en imágenes](#incrustación-de-datos-en-imágenes)
     1. [Introducción](#incrustación-de-datos-en-audio)
     2. [LSB matching](#lsb-matching)
     3. [matrix-embedding](#lsb-matching)
-4. [Incrustación adaptativa](#incrustación-adaptativa)
+3. [Incrustación adaptativa](#incrustación-adaptativa)
     1. [Introducción](#incrustación-adaptativa)
     2. [Cálculo de costes](#cálculo-de-costes)
     3. [Syndrome Trellis Codes](#syndrome-trellis-codes)

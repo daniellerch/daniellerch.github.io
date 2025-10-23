@@ -26,20 +26,18 @@ comments: true
         margin-top: -70px;
         visibility: hidden;
     }
+    p{
+        margin: 10px 0px 50px 0px !important;
+    }
 </style>
 
 <div class='menu' style='margin-top:50px'></div>
 
-## Contenido
-
-1. [Referencias](#referencias)
-
-<br>
 
 
-## Referencias
 
-- [1] K. Chen et al. “Derivative-Based Steganographic Distortion and
+#### [Chen:2020:audio_derivative]
+K. Chen et al. “Derivative-Based Steganographic Distortion and
 its Non-additive Extensions for Audio”. En: IEEE Transactions
 on Circuits and Systems for Video Technology 30.7 (2020), págs. 2027-2032.
 doi: 10.1109/TCSVT.2019.2918511.
@@ -51,7 +49,7 @@ Signal Processing 51.7 (2003), págs. 1995-2007. doi: 10.1109/
 TSP.2003.812753.
 
 #### [Fillatre:2012:structural]
-- [3] L. Fillatre. “Adaptive Steganalysis of Least Significant Bit Re-
+L. Fillatre. “Adaptive Steganalysis of Least Significant Bit Re-
 placement in Grayscale Natural Images”. En: IEEE Transactions
 on Signal Processing 60.2 (2012), págs. 556-569. doi: 10.1109/
 TSP.2011.2174231.
@@ -88,7 +86,7 @@ function for steganography in an arbitrary domain”. En: EURA-
 SIP Journal on Information Security 2014.1 (2014), págs. 1-13.
 
 #### [Ker:2005:structural]
-- [9] A. D. Ker. “A General Framework for Structural Steganalysis
+A. D. Ker. “A General Framework for Structural Steganalysis
 of LSB Replacement”. En: Proceedings of the 7th Internatio-
 nal Conference on Information Hiding. IH’05. Barcelona, Spain:
 Springer-Verlag, 2005, págs. 296-311. isbn: 3540290397. doi: 10.
@@ -113,7 +111,8 @@ tion Hiding. Ed. por I. S. Moskowitz. Berlin, Heidelberg: Sprin-
 ger Berlin Heidelberg, 2001, págs. 289-302.
 BIBLIOGRAFÍA 215
 
-- [13] A. Westfeld y A. Pfitzmann. “Attacks on Steganographic Sys-
+#### [Westfeld:2000]
+A. Westfeld y A. Pfitzmann. “Attacks on Steganographic Sys-
 tems”. En: Information Hiding. Ed. por A. Pfitzmann. Berlin,
 Heidelberg: Springer Berlin Heidelberg, 2000, págs. 61-76. isbn:
 978-3-540-46514-0.
