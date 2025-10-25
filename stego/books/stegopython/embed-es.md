@@ -128,7 +128,7 @@ Ahora veremos cómo funciona el LSB *matching*. En este caso, queremos realizar 
 
 Existen otras formas de realizar esta operación, pero la que hemos usado es bastante ilustrativa. Usamos la operación módulo (%), que nos da el resto de la división. Es decir, que al realizar una operación $\%2$ obtenemos el LSB. En la línea $1$ queremos incrustar un $1$ en el número $50$. Como su LSB no es $1$, se entra en el bloque `if` y entonces sumamos o restamos $1$. La selección es aleatoria, realizada con el módulo `random` de Python, cuya función `choice` nos permite elegir aleatoriamente un elemento de la lista pasado como parámetro. En la línea $5$ vemos que, dado que $50$ ya tiene el LSB a $0$, no se entra en el bloque `if`, puesto que su LSB ya es correcto. En las líneas $8$ y $11$ vemos como incrustar bits en el número $51$.
 
-Este proceso puede parecer un poco más tedioso que el anterior. Quizás este sea el motivo por el que el LSB *replacement* goza de mucha más popularidad que el LSB *matching*. O quizás porque el primero surge en la mente de cualquier programador que quiere modificar un LSB de forma mucho más directa que el segundo. En cualquier caso, uno puede ver que existen Internet muchísimas herramientas disponibles que usan LSB *replacement*, mientras que el LSB *matching* es poco frecuente. Cuando, en realidad, el segundo es mucho más difícil de detectar que el primero. Mientras que realizar una serie de modificaciones $\pm1$ produce una serie de cambios muy similares al ruido que ya contienen medios digitales como las imágenes o el audio, el LSB *replacement* es una operación asimétrica que introduce una gran cantidad de anomalías estadísticas que pueden ser detectadas.
+Este proceso puede parecer un poco más tedioso que el anterior. Quizás este sea el motivo por el que el LSB *replacement* goza de mucha más popularidad que el LSB *matching*. O quizás porque el primero surge en la mente de cualquier programador que quiere modificar un LSB de forma mucho más directa que el segundo. En cualquier caso, uno puede ver que existen en Internet muchísimas herramientas disponibles que usan LSB *replacement*, mientras que el LSB *matching* es poco frecuente. Cuando, en realidad, el segundo es mucho más difícil de detectar que el primero. Mientras que realizar una serie de modificaciones $\pm1$ produce una serie de cambios muy similares al ruido que ya contienen medios digitales como las imágenes o el audio, el LSB *replacement* es una operación asimétrica que introduce una gran cantidad de anomalías estadísticas que pueden ser detectadas.
 
 <br>
 ### Incrustar más bits con menos modificaciones
@@ -182,7 +182,7 @@ Cuya representación en binario es la siguiente:
 | 10010100 | 10010101 | 10010111 |
 |----------|----------|----------|
 
-Usaremos la técnica LSB *replacement*, que hemos visto anteriormente. Es decir, realizaremos las modificaciones del LSB mediante una operación $+1$ o $-1$ escogida aleatoriamente.
+Usaremos la técnica LSB *matching*, que hemos visto anteriormente. Es decir, realizaremos las modificaciones del LSB mediante una operación $+1$ o $-1$ escogida aleatoriamente.
 
 Vamos a ver, uno a uno, todos los posibles casos, teniendo en cuenta que los valores iniciales de $m_1$ y $m_2$ son los siguientes:
 
@@ -541,7 +541,7 @@ En la práctica, para aplicaciones avanzadas, se emplean técnicas más sofistic
 
 Veamos cómo utilizar STC a través de la librería pySTC. En este ejemplo, primero generamos una secuencia de bytes aleatorios (valores entre 0 y 255) para simular el medio en el que deseamos incrustar los datos. Luego, creamos un *array* del mismo tamaño para representar los costes de incrustación.
 
-Estos costes determinan la dificultad de modificar cada byte: cuanto menor sea el costo asignado a un byte, mayor será la probabilidad de que se altere para insertar el mensaje. En cambio, los bytes con costos más altos tienen menos probabilidad de ser modificados, lo que nos permite proteger ciertas áreas del medio en las que los cambios serían más detectables.
+Estos costes determinan la dificultad de modificar cada byte: cuanto menor sea el coste asignado a un byte, mayor será la probabilidad de que se altere para insertar el mensaje. En cambio, los bytes con costes más altos tienen menos probabilidad de ser modificados, lo que nos permite proteger ciertas áreas del medio en las que los cambios serían más detectables.
 
 Finalmente, incrustamos el mensaje en el medio y, posteriormente, lo extraemos.
 

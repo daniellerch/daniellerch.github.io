@@ -35,7 +35,7 @@ comments: true
 1. [¿Qué es este libro?](#que-és-este-libro)
 2. [Por qué Python](#por-qué-python)
 3. [Conceptos básicos](#conceptos-básicos)
-4. [Enfoque del libro y técnicas excluídas](#enfoque-del-libro-y-técnicas-excluidas)
+4. [Enfoque del libro y técnicas excluidas](#enfoque-del-libro-y-técnicas-excluidas)
 5. [Instalación de librerías necesarias](#instalación-de-librerías-necesarias)
 6. [Repositorio de ejemplos](#repositorio-de-ejemplos)
 
@@ -45,13 +45,13 @@ comments: true
 
 ## ¿Qué es este libro?
 
-Este libro es una introducción a la **esteganografía** diseñada específicamente para programadores con conocimientos en **Python** que desean dar sus primeros pasos en esta disciplina. A lo largo de sus capítulos, se exploran los fundamentos teóricos de la esteganografía, sus diferencias con otras técnicas como la criptografía y el watermarking, así como su relación con el esteganálisis, disciplina encargada de detectar y extraer información oculta.
+Este libro es una introducción a la **esteganografía** diseñada específicamente para programadores con conocimientos en **Python** que desean dar sus primeros pasos en esta disciplina. A lo largo de sus capítulos, se exploran los fundamentos teóricos de la esteganografía, sus diferencias con otras técnicas como la criptografía y el watermarking, así como su relación con el estegoanálisis, disciplina encargada de detectar y extraer información oculta.
 
 A diferencia de textos más académicos o matemáticamente complejos, este libro adopta un enfoque práctico y accesible. No se requiere experiencia previa en seguridad informática ni conocimientos avanzados en procesamiento de señales, aunque cierta familiaridad con la programación en Python será de gran utilidad. Se presentarán ejemplos detallados y explicaciones paso a paso que permitirán a los lectores aplicar los conceptos en la práctica mediante código.
 
 Uno de los objetivos principales de este libro es mostrar cómo la esteganografía puede implementarse en distintos **medios digitales**, como imágenes, archivos de audio, video y texto. A través de ejemplos concretos, se explorarán diversas técnicas de ocultación de información, desde las más simples, como la modificación de bits menos significativos (*LSB*), hasta métodos más avanzados basados en transformadas matemáticas y técnicas modernas utilizadas en la actualidad.
 
-Además de la implementación, también se analizarán las herramientas y estrategias utilizadas en el **esteganálisis**, lo que permitirá a los lectores no solo aprender a ocultar información, sino también comprender algunos de los métodos empleados para detectarla. Este enfoque proporciona una visión más completa y equilibrada de la disciplina.
+Además de la implementación, también se analizarán las herramientas y estrategias utilizadas en el **estegoanálisis**, lo que permitirá a los lectores no solo aprender a ocultar información, sino también comprender algunos de los métodos empleados para detectarla. Este enfoque proporciona una visión más completa y equilibrada de la disciplina.
 
 A lo largo del libro, el código en Python será el protagonista, permitiendo que cada técnica se comprenda desde un punto de vista práctico y aplicable. Se utilizarán librerías populares para el procesamiento de imágenes y señales, además de herramientas específicas que facilitarán la experimentación y el aprendizaje.
 
@@ -83,19 +83,19 @@ En resumen, Python es la elección ideal para el desarrollo de aplicaciones de e
 <br>
 ## Conceptos básicos
 
-En el estudio de la **esteganografía**, es común encontrar términos que pueden parecer similares, pero que, en realidad, tienen propósitos y aplicaciones distintas. Conceptos como **criptografía**, **watermarking** y **esteganálisis** están estrechamente relacionados con la ocultación y protección de la información, pero difieren en su enfoque y funcionalidad. Este capítulo tiene como objetivo esclarecer estas diferencias, proporcionando una base sólida para comprender cómo cada técnica opera, en qué se asemejan y en qué se distinguen dentro del campo de la seguridad de la información.
+En el estudio de la **esteganografía**, es común encontrar términos que pueden parecer similares, pero que, en realidad, tienen propósitos y aplicaciones distintas. Conceptos como **criptografía**, **watermarking** y **estegoanálisis** están estrechamente relacionados con la ocultación y protección de la información, pero difieren en su enfoque y funcionalidad. Este capítulo tiene como objetivo esclarecer estas diferencias, proporcionando una base sólida para comprender cómo cada técnica opera, en qué se asemejan y en qué se distinguen dentro del campo de la seguridad de la información.
 
-La **esteganografía** y el **esteganálisis** representan dos enfoques opuestos dentro del campo de la seguridad de la información. Mientras que la esteganografía se enfoca en ocultar información dentro de un medio portador sin que su presencia sea detectada, el esteganálisis se dedica a la detección y posible extracción de estos mensajes ocultos.
+La **esteganografía** y el **estegoanálisis** representan dos enfoques opuestos dentro del campo de la seguridad de la información. Mientras que la esteganografía se enfoca en ocultar información dentro de un medio portador sin que su presencia sea detectada, el estegoanálisis se dedica a la detección y posible extracción de estos mensajes ocultos.
 
 La esteganografía busca la discreción. Su propósito no es cifrar la información, sino esconderla de manera que parezca inexistente. Esto se logra mediante diversas técnicas, como la modificación de los bits menos significativos (LSB) en imágenes y audio, la inserción de datos en el dominio de la frecuencia a través de transformadas matemáticas o la ocultación de información en metadatos y protocolos de comunicación.
 
-Por otro lado, el esteganálisis se encarga de detectar y analizar archivos en busca de alteraciones sutiles que puedan delatar la presencia de información oculta. Se basa en métodos estadísticos, aprendizaje automático y técnicas de procesamiento de señales para identificar irregularidades en el archivo sospechoso. Algunas estrategias incluyen la búsqueda de anomalías en la distribución de valores de píxeles o el análisis de patrones en la codificación de imágenes.
+Por otro lado, el estegoanálisis se encarga de detectar y analizar archivos en busca de alteraciones sutiles que puedan delatar la presencia de información oculta. Se basa en métodos estadísticos, aprendizaje automático y técnicas de procesamiento de señales para identificar irregularidades en el archivo sospechoso. Algunas estrategias incluyen la búsqueda de anomalías en la distribución de valores de píxeles o el análisis de patrones en la codificación de imágenes.
 
-A medida que avanza la esteganografía, surgen técnicas más sofisticadas de ocultación que desafían las capacidades del esteganálisis. De la misma forma, los métodos de detección evolucionan para contrarrestar las nuevas formas de ocultamiento. Esta lucha constante convierte a ambos campos en disciplinas dinámicas dentro del ámbito de la seguridad informática.
+A medida que avanza la esteganografía, surgen técnicas más sofisticadas de ocultación que desafían las capacidades del estegoanálisis. De la misma forma, los métodos de detección evolucionan para contrarrestar las nuevas formas de ocultamiento. Esta lucha constante convierte a ambos campos en disciplinas dinámicas dentro del ámbito de la seguridad informática.
 
-Las aplicaciones de la esteganografía van desde la ocultación de malware, la exfiltración de datos y la comunicación encubierta en actividades delictivas, hasta la comunicación segura en entornos censurados. Mientras tanto, el esteganálisis es utilizado en investigaciones forenses, ciberseguridad y detección de malware que emplea técnicas de ocultación. 
+Las aplicaciones de la esteganografía van desde la ocultación de malware, la exfiltración de datos y la comunicación encubierta en actividades delictivas, hasta la comunicación segura en entornos censurados. Mientras tanto, el estegoanálisis es utilizado en investigaciones forenses, ciberseguridad y detección de malware que emplea técnicas de ocultación. 
 
-La esteganografía y el esteganálisis están intrínsecamente relacionados en una competencia continua. Mientras que uno busca ocultar información de manera imperceptible, el otro desarrolla técnicas avanzadas para exponer su existencia. Ambos desempeñan un papel crucial en la seguridad de la información y seguirán evolucionando con el avance de la tecnología.
+La esteganografía y el estegoanálisis están intrínsecamente relacionados en una competencia continua. Mientras que uno busca ocultar información de manera imperceptible, el otro desarrolla técnicas avanzadas para exponer su existencia. Ambos desempeñan un papel crucial en la seguridad de la información y seguirán evolucionando con el avance de la tecnología.
 
 La **criptografía** y la **esteganografía** son dos disciplinas de la seguridad de la información que, aunque comparten el objetivo de proteger los datos, se diferencian en su enfoque y propósito fundamental. Mientras que la criptografía se centra en transformar la información para hacerla ilegible a terceros no autorizados, la esteganografía busca ocultar la existencia de la información dentro de otro medio.
 
@@ -128,7 +128,7 @@ Este libro está orientado al desarrollo de herramientas de esteganografía que 
 
 Una de las técnicas excluidas es la esteganografía basada en el **EOF (End of File)**, que consiste en añadir datos ocultos al final de un archivo sin modificar su contenido original. Aunque esta técnica es extremadamente sencilla de implementar, también es trivial de detectar, ya que los datos adicionales quedan fuera de la estructura normal del archivo y pueden ser identificados mediante inspección manual o herramientas automatizadas. Debido a esta debilidad, su uso en aplicaciones prácticas es limitado y no se tratará en este libro.
 
-Otro método comúnmente utilizado pero altamente inseguro es la esteganografía en **metadatos**, donde la información oculta se almacena en los campos de metadatos de archivos de imagen, audio o documentos. Aunque esta técnica no altera el contenido visible del archivo los metadatos pueden ser inspeccionados fácilmente con herramientas estándar, lo que hace que esta técnica sea poco fiable en escenarios donde la ocultación efectiva de la información es crucial.
+Otro método comúnmente utilizado pero altamente inseguro es la esteganografía en **metadatos**, donde la información oculta se almacena en los campos de metadatos de archivos de imagen, audio o documentos. Aunque esta técnica no altera el contenido visible del archivo, los metadatos pueden ser inspeccionados fácilmente con herramientas estándar, lo que hace que esta técnica sea poco fiable en escenarios donde la ocultación efectiva de la información es crucial.
 
 El uso de **texto dibujado** es otro método que, aunque creativo, resulta inseguro en la práctica. En esta técnica, los mensajes ocultos se representan dentro de una imagen utilizando caracteres dibujados o patrones sutiles que solo pueden ser interpretados por el receptor. Sin embargo, este tipo de ocultación es altamente dependiente del contenido visual y puede ser detectado fácilmente mediante el uso de filtros especializados. 
 

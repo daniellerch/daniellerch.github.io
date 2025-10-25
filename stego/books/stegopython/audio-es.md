@@ -258,7 +258,7 @@ De esta manera obtendremos una gráfica como la de la **figura 2**.
 
 ### Introducción
 
-La esteganografía en audio sin pérdida se basa en la modificación directa de los valores de las muestras de audio, en formatos que no aplican compresión con pérdida que degrade la señal original. Este enfoque permite ocultar información sin tener que procuparse de la pérdida del mensaje incrustado por culpa de la compresión con pérdida. 
+La esteganografía en audio sin pérdida se basa en la modificación directa de los valores de las muestras de audio, en formatos que no aplican compresión con pérdida que degrade la señal original. Este enfoque permite ocultar información sin tener que preocuparse de la pérdida del mensaje incrustado por culpa de la compresión con pérdida. 
 
 El formato WAV, debido a su almacenamiento en PCM sin compresión, es una opción especialmente adecuada para la esteganografía en audio sin pérdida. Cada muestra de audio se almacena con una profundidad de bits específica (por ejemplo, 16 o 24 bits), lo que permite modificar los valores de forma precisa sin generar artefactos audibles. 
 
@@ -497,7 +497,7 @@ embed("audio.wav", "audio_stego.wav", message)
 
 A continuación, vemos el código para extraer el mensaje. El proceso es similar a la inversa, recorremos las muestras de audio y vamos extrayendo el LSB, para, finalmente, reconstruir el mensaje. 
 
-Para recuperar el mensaje incrustado en la imagen, es necesario recorrer los píxeles en el mismo orden en que se realizó la incrustación y extraer el bit menos significativo del canal correspondiente. Luego, estos bits se agrupan en bloques de 8 para reconstruir los caracteres del mensaje original en código ASCII. El proceso finalizará cuando hayamos extruido todo el mensaje. Sin embargo, no hemos implementado ningún mecanismo para saber cuándo el mensaje ha sido extraído al completo, por lo que en el ejemplo hemos extraído $88$ bits, que es justo lo que necesitamos. Existen diferentes técnicas para lidiar con este problema, como por ejemplo introducir una cabecera al principio que nos diga la longitud del mensaje, o incrustar una marca de fin de mensaje. Lidiaremos con estos problemas más adelante.
+Para recuperar el mensaje incrustado en el audio, es necesario recorrer los píxeles en el mismo orden en que se realizó la incrustación y extraer el bit menos significativo del canal correspondiente. Luego, estos bits se agrupan en bloques de 8 para reconstruir los caracteres del mensaje original en código ASCII. El proceso finalizará cuando hayamos extraído todo el mensaje. Sin embargo, no hemos implementado ningún mecanismo para saber cuándo el mensaje ha sido extraído al completo, por lo que en el ejemplo hemos extraído $88$ bits, que es justo lo que necesitamos. Existen diferentes técnicas para lidiar con este problema, como por ejemplo introducir una cabecera al principio que nos diga la longitud del mensaje, o incrustar una marca de fin de mensaje. Lidiaremos con estos problemas más adelante.
 
 ```python
 import wave
@@ -765,7 +765,7 @@ Si en lugar de LSB *matching* empleamos *matrix embedding* con $p=7$, el *payloa
 
 ### Introducción
 
-En la sección previa, exploramos la técnica de *LSB matching* para ocultar información y cómo su eficiencia puede mejorarse mediante *matrix embedding*. Este método permite insertar una cantidad comparable de datos con un menor número de modificaciones, reduciendo así la probabilidad de detección. Como siguiente avance, es fundamental optimizar la elección de las áreas de la imagen en las que se realiza la incrustación, priorizando aquellas donde la presencia de información oculta sea menos evidente.
+En la sección previa, exploramos la técnica de *LSB matching* para ocultar información y cómo su eficiencia puede mejorarse mediante *matrix embedding*. Este método permite insertar una cantidad comparable de datos con un menor número de modificaciones, reduciendo así la probabilidad de detección. Como siguiente avance, es fundamental optimizar la elección de las áreas en las que se realiza la incrustación, priorizando aquellas donde la presencia de información oculta sea menos evidente.
 
 En el caso del audio, la selección adecuada de las regiones donde se insertará la información es aún más crítica. A diferencia de las imágenes, donde la variabilidad en los valores de píxeles es alta incluso en zonas uniformes, los archivos de audio pueden contener segmentos de **silencio absoluto**, representados por largas secuencias de muestras con valores cero o cercanos a cero. Incrustar datos en estas regiones puede resultar problemático, ya que cualquier modificación en una zona de silencio absoluto puede ser fácilmente detectable.
 
