@@ -53,7 +53,7 @@ El vídeo digital está compuesto, en esencia, por dos tipos de datos: una secue
 
 En lo que respecta a los fotogramas, algunos formatos de vídeo almacenan cada imagen de forma independiente y sin pérdida de información. Este es el caso de formatos como FFV1, HuffYUV, Apple ProRes 4444 (en sus variantes sin pérdida) o UT Video. Estos formatos son especialmente adecuados para la esteganografía, ya que permiten modificar directamente los píxeles de cada fotograma utilizando técnicas similares a las empleadas en imágenes sin comprimir, como la inserción de bits en el LSB.
 
-Por otro lado, la mayoría de los formatos populares de vídeo utilizan compresión con pérdida para reducir el tamaño del archivo. Este es el caso de H.264, H.265/HEVC, VP9, AV1 y otros codecs ampliamente utilizados en plataformas de transmisión y redes sociales. Estos algoritmos de compresión aplican transformaciones complejas (como DCT, cuantificación y predicción inter-frame) que alteran significativamente los datos originales. Como consecuencia, las técnicas de esteganografía que dependen de la preservación exacta de los valores de píxeles, como la modificación del bit menos significativo, resultan más complejas, ya que la información oculta en píxeles se perdería durante la compresión.
+Por otro lado, la mayoría de los formatos populares de vídeo utilizan compresión con pérdida para reducir el tamaño del archivo. Este es el caso de H.264, H.265/HEVC, VP9, AV1 y otros códecs ampliamente utilizados en plataformas de transmisión y redes sociales. Estos algoritmos de compresión aplican transformaciones complejas (como DCT, cuantificación y predicción inter-frame) que alteran significativamente los datos originales. Como consecuencia, las técnicas de esteganografía que dependen de la preservación exacta de los valores de píxeles, como la modificación del bit menos significativo, resultan más complejas, ya que la información oculta en píxeles se perdería durante la compresión.
 
 Una situación similar ocurre con el audio. Algunos formatos de vídeo incorporan pistas de audio en formatos sin compresión o con compresión sin pérdida, como PCM, WAV o FLAC. Estos permiten aplicar técnicas LSB sin riesgo de perder la información oculta. Sin embargo, otros formatos como AAC, MP3 o Opus, que aplican compresión con pérdida, descartan partes del espectro de audio consideradas no perceptibles. Esto implica una pérdida irreversible de datos, lo que también afecta a cualquier mensaje que se haya incrustado.
 
@@ -66,9 +66,9 @@ En resumen, la posibilidad de aplicar técnicas de esteganografía como LSB en v
 
 En este apartado se aborda la ocultación de información en vídeos sin pérdida, lo que implica trabajar con archivos en los que la pista de vídeo y/o la de audio se almacenan sin compresión con pérdida. Esto es fundamental para aplicar técnicas de esteganografía como la modificación del bit menos significativo (LSB), ya que los procesos de compresión con pérdida eliminan o alteran partes significativas de los datos originales, destruyendo cualquier información oculta en el proceso.
 
-En el caso del vídeo, es necesario utilizar un codec que almacene los fotogramas sin pérdida, como FFV1, HuffYUV o versiones sin compresión de Apple ProRes o UT Video. Para el audio, se deben emplear códecs como PCM (típicamente almacenado como WAV) o FLAC, que permiten mantener la fidelidad de las muestras originales y, por tanto, son adecuados para la incrustación de datos mediante técnicas LSB.
+En el caso del vídeo, es necesario utilizar un códec que almacene los fotogramas sin pérdida, como FFV1, HuffYUV o versiones sin compresión de Apple ProRes o UT Video. Para el audio, se deben emplear códecs como PCM (típicamente almacenado como WAV) o FLAC, que permiten mantener la fidelidad de las muestras originales y, por tanto, son adecuados para la incrustación de datos mediante técnicas LSB.
 
-Afortunadamente, ffmpeg, una herramienta muy potente y versátil, permite recodificar cualquier archivo de vídeo a un formato sin pérdida, seleccionando de forma explícita los codecs de vídeo y audio que se deseen. A continuación, se presentan algunos ejemplos de uso de ffmpeg para generar archivos compatibles con esteganografía basada en LSB:
+Afortunadamente, ffmpeg, una herramienta muy potente y versátil, permite recodificar cualquier archivo de vídeo a un formato sin pérdida, seleccionando de forma explícita los códecs de vídeo y audio que se deseen. A continuación, se presentan algunos ejemplos de uso de ffmpeg para generar archivos compatibles con esteganografía basada en LSB:
 
 **Vídeo con códec FFV1 y audio PCM (formato AVI):**
 ```bash
@@ -92,9 +92,9 @@ ffmpeg -i input.mp4 -c:v rawvideo -pix_fmt rgb24 -c:a pcm_s16le output.mov
 
 Un aspecto fundamental al trabajar con vídeo es entender la diferencia entre los *códecs* y los *contenedores*. Mientras que los códecs (como ffv1, h264, aac, etc.) son responsables de la codificación y compresión de los flujos de audio y vídeo, los contenedores (como .avi, .mov, .mkv, etc.) definen cómo se agrupan, organizan y sincronizan estos flujos dentro de un mismo archivo.
 
-El contenedor es el que determina la extensión del archivo, y no el códec en sí. Por ejemplo, un mismo vídeo comprimido con el códec ffv1 puede almacenarse en un contenedor .avi, .mov o .mkv, y seguirá teniendo exactamente el mismo flujo de vídeo internamente. No obstante, algunos contenedores ofrecen mayor compatibilidad con ciertos codecs o soportan mejor características como múltiples pistas de audio, subtítulos, o metadatos.
+El contenedor es el que determina la extensión del archivo, y no el códec en sí. Por ejemplo, un mismo vídeo comprimido con el códec ffv1 puede almacenarse en un contenedor .avi, .mov o .mkv, y seguirá teniendo exactamente el mismo flujo de vídeo internamente. No obstante, algunos contenedores ofrecen mayor compatibilidad con ciertos códecs o soportan mejor características como múltiples pistas de audio, subtítulos, o metadatos.
 
-En la **Tabla 1** se muestra una tabla con los contenedores más comunes, sus extensiones y los codecs típicamente compatibles.
+En la **Tabla 1** se muestra una tabla con los contenedores más comunes, sus extensiones y los códecs típicamente compatibles.
 
 
 | **Ext.** | **Contenedor** | **Vídeo**                    | **Audio**                    |
@@ -106,7 +106,7 @@ En la **Tabla 1** se muestra una tabla con los contenedores más comunes, sus ex
 
 <center>
 <br>
-Tabla 1. Contenedores comunes y codecs compatibles
+Tabla 1. Contenedores comunes y códecs compatibles
 </center>
 
 La **Tabla 1** muestra algunos de los contenedores más habituales, junto con los códecs de vídeo y audio que suelen utilizar. Para aplicaciones de esteganografía, los contenedores .avi, .mov y .mkv son especialmente útiles, ya que permiten emplear códecs sin pérdida como ffv1, huffyuv o pcm_s16le. Por el contrario, contenedores como .mp4, aunque muy populares, están orientados a la compresión con pérdida y no son recomendables cuando se desea trabajar con esteganografía LSB.
@@ -124,7 +124,7 @@ Para acceder a los fotogramas del vídeo y manipularlos directamente desde Pytho
 
 La clave de este enfoque es que, al mantener la compresión sin pérdida, los cambios realizados en los píxeles de los fotogramas no se verán alterados por el proceso de codificación, garantizando así que la información incrustada pueda recuperarse de forma precisa.
 
-En el siguiente ejemplo vemos como usar la librería PyAV para extraer las diferentes imágenes que forman el video, de forma secuencial. Como ejemplo de cómo insertar información, modificaremos el valor del pixel en la posición $(0,0)$ incrementándolo en una unidad (evitamos el *overflow* usando la función `min`). Usaremes el primer canal de color, es decir, el que corresponde al rojo.
+En el siguiente ejemplo vemos cómo usar la librería PyAV para extraer las diferentes imágenes que forman el vídeo, de forma secuencial. Como ejemplo de cómo insertar información, modificaremos el valor del pixel en la posición $(0,0)$ incrementándolo en una unidad (evitamos el *overflow* usando la función `min`). Usaremos el primer canal de color, es decir, el que corresponde al rojo.
 
 ```python
 import av
@@ -138,7 +138,7 @@ for frame in container.decode(video_stream):
     img[0, 0, 0] = min(img[0, 0, 0] + 1, 255)
 ```
 
-Sin embargo, la imagen en RGB es una conversión del formato YUV usado por el coded FFV1. Esto es algo que no nos conviene, puesto que la conversión de YUV a RGB afectará al LSB de los bytes y destruirá el mensaje. Por lo tanto, no vamos a trabajar con RGB si no que lo vamos a hacer con YUV.
+Sin embargo, la imagen en RGB es una conversión del formato YUV usado por el códec FFV1. Esto es algo que no nos conviene, puesto que la conversión de YUV a RGB afectará al LSB de los bytes y destruirá el mensaje. Por lo tanto, no vamos a trabajar con RGB si no que lo vamos a hacer con YUV.
 
 Aunque en muchas herramientas y librerías (como FFmpeg o PyAV) se utiliza el término YUV para referirse a formatos como yuv444p o yuv420p, en realidad estos nombres hacen referencia a una codificación digital del color basada en el espacio YCbCr, que ya hemos explicado anteriormente. El término YUV proviene del mundo analógico, donde se definía como un modelo de codificación de color utilizado en televisión. En la práctica actual, cuando manipulamos datos en formatos como yuv444p, estamos trabajando con componentes Y (luminancia), Cb (diferencia con el azul) y Cr (diferencia con el rojo), pero usando la nomenclatura tradicional YUV por conveniencia histórica. Por tanto, podemos usar el término YUV como sinónimo práctico de YCbCr, ya que es el nombre comúnmente utilizado en librerías y formatos de vídeo digitales.
 
@@ -156,7 +156,7 @@ for frame in container.decode(video_stream):
     yuv[0][0, 0] = min(yuv[0][0, 0] + 1, 255) 
 ```
 
-Si bien hemos modificado la muestra de vídeo, faltaría almacenarlo. Esto implica no solo recodificar el vídeo, si no también el audio, pues no queremos perderlo en el proceso. En el siguiente apartado veremos como incrustar información en el canal de audio, posteriormente, veremos como realizar el proceso completo.
+Si bien hemos modificado la muestra de vídeo, faltaría almacenarlo. Esto implica no solo recodificar el vídeo, si no también el audio, pues no queremos perderlo en el proceso. En el siguiente apartado veremos cómo incrustar información en el canal de audio, posteriormente, veremos cómo realizar el proceso completo.
 
 <br>
 ### Incrustación en el audio
@@ -189,7 +189,7 @@ Igual que en el apartado anterior, falta guardar el resultado. Para ello, no sol
 
 En los apartados anteriores hemos visto cómo modificar las imágenes y las muestras de  audio que forman el vídeo para ocultar información. Sin embargo no hemos visto cómo recodificar el vídeo para guardar el resultado. Para poder almacenar los cambios realizados es necesario crear un contenedor de salida en el que vamos a tener que insertar las imágenes y las muestras de audio.
 
-El siguiente código implementa la incrustación de un mensaje en video, tanto en el flujo de imágenes como en el de audio, utilizando la técnica LSB *matching*. La implementación se basa en la librería PyAV, que permite el acceso a los datos sin comprimir de los fotogramas y las muestras de audio.
+El siguiente código implementa la incrustación de un mensaje en vídeo, tanto en el flujo de imágenes como en el de audio, utilizando la técnica LSB *matching*. La implementación se basa en la librería PyAV, que permite el acceso a los datos sin comprimir de los fotogramas y las muestras de audio.
 
 El proceso comienza con la apertura de los contenedores de entrada y salida mediante la función `open_containers`, que se encarga de inicializar los objetos necesarios para leer y escribir los datos multimedia. A continuación, la función `setup_streams` configura los *streams* de vídeo y audio en el contenedor de salida, replicando parámetros fundamentales como la resolución del vídeo, el número de canales de audio y el diseño del canal. El flujo de vídeo se codifica utilizando el códec sin pérdida FFV1, mientras que el audio se mantiene en formato PCM sin compresión.
 
@@ -416,7 +416,7 @@ def extract(input_path, n_bytes_video, n_bytes_audio):
 msg_video, msg_audio = extract('video_stego_ffv1_pcm.avi', 
                         n_bytes_video=16, n_bytes_audio=16)
 
-print("Vide message:", msg_video)
+print("Video message:", msg_video)
 print("Audio message:", msg_audio)
 ```
 

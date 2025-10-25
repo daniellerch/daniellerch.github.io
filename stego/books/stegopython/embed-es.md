@@ -35,7 +35,7 @@ comments: true
 1. [Incrustación de información oculta](#incrustación-de-información-oculta)
 2. [Minimizando el impacto de la incrustación](#minimizando-el-impacto-de-la-incrustación)
     1. [Incrustación de bits en el LSB](#incrustación-de-bits-en-el-lsb)
-    2. [Incrustar más bits con menos modificaciones](#incrustar-mas-bits-con-menos-modificaciones)
+    2. [Incrustar más bits con menos modificaciones](#incrustar-más-bits-con-menos-modificaciones)
     3. [Matrix Embedding](#matrix-embedding)
     4. [Cómo evitar zonas detectables](#cómo-evitar-zonas-detectables)
 

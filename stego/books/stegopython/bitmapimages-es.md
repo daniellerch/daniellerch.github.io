@@ -33,10 +33,10 @@ comments: true
 ## Contenido
 
 1. [Introducción](#introducción)
-2. [Incrustación de datos en imágenes](#incrustación-de-datos-en-imágenes)
-    1. [Introducción](#incrustación-de-datos-en-audio)
+2. [Incrustación de datos en la imagen](#incrustación-de-datos-en-la-imagen)
+    1. [Introducción](#incrustación-de-datos-en-la-imagen)
     2. [LSB matching](#lsb-matching)
-    3. [matrix-embedding](#lsb-matching)
+    3. [matrix-embedding](#matrix-embedding)
 3. [Incrustación adaptativa](#incrustación-adaptativa)
     1. [Introducción](#incrustación-adaptativa)
     2. [Cálculo de costes](#cálculo-de-costes)
@@ -56,7 +56,7 @@ Los formatos de imagen pueden utilizar compresión con pérdida o compresión si
 
 Entre los formatos de imagen *raster* sin pérdida más utilizados se encuentran PNG (*Portable Network Graphics*), un formato ampliamente usado en la web y en diseño gráfico que permite transparencia y compresión sin pérdida; TIFF (*Tagged Image File Format*), popular en fotografía y escaneo profesional, que admite múltiples capas y almacenamiento sin compresión; BMP (*Bitmap Image File*), un formato sin compresión utilizado principalmente en entornos Windows; y los formatos PPM, PGM y PBM (*Portable Pixmap Formats*), empleados en entornos Unix para el procesamiento de imágenes. Estos formatos son ideales para la esteganografía, ya que cualquier modificación en los píxeles se mantiene intacta tras el guardado, evitando la degradación de la información oculta.
 
-Un formato de imagen importante que no se incluyen en este capítulo es el formato JPEG (*Joint Photographic Experts Group*). Este formato es el más extendido en fotografía digital y utiliza compresión con pérdida. Dicha compresión introduce modificaciones en los datos de la imagen, lo que puede destruir información oculta. Esto hace más complejo su uso en esteganografía. Por esta razón, trataremos la esteganografía JPEG en un capítulo aparte. 
+Un formato de imagen importante que no se incluye en este capítulo es el formato JPEG (*Joint Photographic Experts Group*). Este formato es el más extendido en fotografía digital y utiliza compresión con pérdida. Dicha compresión introduce modificaciones en los datos de la imagen, lo que puede destruir información oculta. Esto hace más complejo su uso en esteganografía. Por esta razón, trataremos la esteganografía JPEG en un capítulo aparte. 
 
 Otro formato excluido es GIF (*Graphics Interchange Format*), que aunque permite compresión sin pérdida en imágenes de 256 colores, su paleta reducida y el uso de compresión basada en patrones limitan su aplicabilidad en esteganografía. Asimismo, los formatos vectoriales como SVG, AI, EPS y PDF no almacenan información en píxeles, sino como ecuaciones matemáticas, lo que los hace inadecuados para los métodos esteganográficos tradicionales basados en la manipulación de píxeles.
 
@@ -319,7 +319,7 @@ extracted_message = extract_lsb_matching(stego_img, 88)
 print(extracted_message)
 ```
 
-Llegados a este punto puede ser interesante realizar algunos cálculos para ver la ventaja que nos ofrece ocultar información usando *matrix embedding* sobre el LSB *matching* tradicional. En la literatura ya se ha mostrado cómo evolucionan el *payload* relativo y la eficiencia en función de $p$, por lo que podemos usar esos valores para realizar los cálculos.
+Llegados a este punto puede ser interesante realizar algunos cálculos para ver la ventaja que nos ofrece ocultar información usando *matrix embedding* sobre el LSB *matching* tradicional. En la tabla del apartado [Técnicas de incrustación: Incrustar más bits con menos modificaciones](/stego/books/stegopython/embed-es/#incrustar-más-bits-con-menos-modificaciones) ya se ha mostrado cómo evolucionan el *payload* relativo y la eficiencia en función de $p$, por lo que podemos usar esos valores para realizar los cálculos.
 
 Por ejemplo, supongamos que incrustamos información en una imagen de $512\times512$ en color. Puesto que incrustamos un bit en cada píxel y hay tres canales de color (R, G y B), usando LSB *matching* podríamos incrustar $512 \times 512 \times 3 = 786432$ bits. Pero esto alteraría mucho la imagen, así que vamos a suponer que solo incrustamos información en un $10\%$ de los píxeles. Esto nos daría una capacidad de $78643$ bits. Al usar LSB *matching*, la mitad de los píxeles ya tendrá un LSB que coincidirá con el del mensaje, por lo que, aproximadamente, tendremos que modificar $39322$ píxeles. 
 
@@ -440,7 +440,9 @@ edges_x = np.clip(edges_x, 0, 255).astype(np.uint8)
 iio.imwrite("tree_sobel_x.png", edges_x)
 ```
 
-La **figura 4** muestra el resultado de aplicar el filtro Sobel que hemos implementado en Python sobre la imagen de la **figura 1**.
+Sin embargo, muchas librerías de procesamiento de imágenes ya incluyen estos filtros ya implementados, por lo que lo más común es utilizarlas directamente en lugar de programarlos desde cero.
+
+Basándonos en lo estudiado en el apartado anterior, queda claro que debemos evitar las zonas homogéneas, como el cielo, y centrarnos en las regiones más complejas, como las hojas.  La **figura 4** muestra el resultado de aplicar el filtro Sobel que hemos implementado en Python sobre la imagen de la **figura 1**.
 
 ![Árbol con filtro Sobel horizontal](/stego/books/stegopython/images/tree_sobel_x.png)
 <center>
