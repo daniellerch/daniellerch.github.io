@@ -38,9 +38,10 @@ lang-suffix: "-es"
         <li><a href='/stego/books/stegopython/jpegimages-es/'>Esteganografía en imágenes JPEG</a></li>
         <li>Esteganografía en imágenes generadas con IA</li>
         <li><a href='/stego/books/stegopython/video-es/'>Esteganografía en vídeo</a></li>
-        <li><a href='/stego/books/stegopython/networks-es/'>Esteganografía en protocolos de red</a></li>
+        <li><a href='/stego/books/stegopython/network-es/'>Esteganografía en protocolos de red</a></li>
         <li><a href='/stego/books/stegopython/text-es/'>Esteganografía en texto</a></li>
         <li>Desarrollo de aplicaciones reales</li>
+        <li><a href='/stego/books/stegopython/references-es/'>Referencias</a></li>
     </ol>
   </div>
   <div>
@@ -49,8 +50,9 @@ lang-suffix: "-es"
 </div>
 
 
+<!--
 <br>
-## Estegoanálisis de imágenes con Aletheia:
+## Estegoanálisis de imágenes con Aletheia
 <hr style='border:1px solid #ccc'>
 
 
@@ -67,13 +69,14 @@ lang-suffix: "-es"
         <li><a href='/stego/books/aletheia/extract-es/'>Extracción del mensaje</a></li>
         <li><a href='/stego/books/aletheia/proc-es/'>Procedimiento de análisis</a></li>
         <li><a href='/stego/books/aletheia/cases-es/'>Casos de estudio</a></li>
+        <li><a href='/stego/books/aletheia/references-es/'>Referencias</a></li>
     </ol>
   </div>
   <div>
     <img src="/stego/books/aletheia/cover-aletheia.png" width="220">
   </div>
 </div>
-
+-->
 
 
 
