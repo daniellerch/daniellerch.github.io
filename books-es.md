@@ -3,7 +3,7 @@ layout: page
 title: Libros
 subtitle: "" 
 noindex: false
-meta-title: "Blog"
+meta-title: "Books"
 meta-description: "Libros sobre esteganografía y estegoanálisis"
 lang-suffix: "-es"
 ---
@@ -39,7 +39,7 @@ lang-suffix: "-es"
         <li>Esteganografía en imágenes generadas con IA</li>
         <li><a href='/stego/books/stegopython/video-es/'>Esteganografía en vídeo</a></li>
         <li><a href='/stego/books/stegopython/network-es/'>Esteganografía en protocolos de red</a></li>
-        <li><a href='/stego/books/stegopython/text-es/'>Esteganografía en texto</a></li>
+        <li>Esteganografía en texto</li>
         <li>Desarrollo de aplicaciones reales</li>
         <li><a href='/stego/books/stegopython/references-es/'>Referencias</a></li>
     </ol>
