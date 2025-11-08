@@ -39,7 +39,7 @@ comments: true
     3. [Incrustación en el audio](#incrustación-en-el-audio)
     4. [Incrustación y recodificación](#incrustación-y-recodificación)
     5. [Extracción del mensaje](#extracción-del-mensaje)
-3. [Vídeo con compresión con pérdida](#vídeo-con-compresión con pérdida)
+3. [Vídeo con compresión con pérdida](#vídeo-con-compresión-con-pérdida)
  
 <br>
 

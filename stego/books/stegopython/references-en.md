@@ -1,14 +1,17 @@
 ---
 layout: page
-title: "Esteganografía para programadores Python"
-subtitle: "Referencias" 
+title: "Steganography for Python Programmers"
+subtitle: "References"
 noindex: false
-meta-title: "Esteganografía para programadores Python: Referencias"
-meta-description: "Capítulo 'Referencias' del libro 'Esteganografía para programadores Python'"
-meta-keywords: "esteganografía, Python"
-lang-suffix: "-es"
+meta-title: "Steganography for Python Programmers: References"
+meta-description: "Chapter 'References' from the book 'Steganography for Python Programmers'"
+meta-keywords: "steganography, Python"
+lang-suffix: "-en"
 comments: true
 ---
+
+
+
 
 <center style='margin-bottom:30px'>
 [ &nbsp; <a href='/books-es'>Índice</a> ]
