@@ -8,6 +8,8 @@ meta-description: "Papers about image steganography and steganalysis"
 lang-suffix: "-en"
 ---
 
+- On the Effectiveness of Side-Informed Steganography in Diffusion-Generated Images. Daniel Lerch-Hostalot and David Megías. In Proceedings of the 21st International Conference on Availability, Reliability and Security (ARES '26). To appear, August 2026.
+
 - Calyptography: Secure Secret Storage Inspired by Cryptography and Steganography. Daniel Lerch-Hostalot, Jordi Puiggalí and David Megias. In: Coppens, B., Volckaert, B., Naessens, V., De Sutter, B. (eds) Availability, Reliability and Security. ARES 2025. Lecture Notes in Computer Science, vol 15996. Springer, Cham.
 [<a href='https://doi.org/10.1007/978-3-032-00635-6_17'>10.1007/978-3-032-00635-6_17</a>].
 

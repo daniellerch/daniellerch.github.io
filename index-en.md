@@ -1,136 +1,50 @@
 ---
 layout: page
 title: Welcome
-subtitle: "" 
+subtitle: ""
 noindex: false
-meta-title: "Daniel Lerch's personal page"
-meta-description: "Image steganography and steganalysis"
+meta-title: "Daniel Lerch — Image steganography and steganalysis"
+meta-description: "Researcher in image steganography and steganalysis"
 lang-suffix: "-en"
 ---
 
-Welcome! My name is Daniel Lerch and this is a personal site
-mainly dedicated to **steganography**, the ancient art and science of hidden communication.
+<section class="home-intro">
+  <p>Welcome! My name is Daniel Lerch, and this site is dedicated to steganography and steganalysis—the study of hiding information and detecting its presence.</p>
 
-
-<div id='center-space'></div>
-
-<link rel="stylesheet" href="/css/slide.css">
-
-<div class='cites'>
-
-
-
-<blockquote id='slide-0' class='slide' style='opacity:1'>
-   "(...) the Chinese would often write on exceedingly thin silk or paper,
-   which they rolled into a ball and covered with wax. The messenger hid the
-   ball, or "la wan," somewhere about his person, or in his rectum, or he
-   sometimes swallowed it."
-    <div class='author'>
-        <b>Ancient China</b>
-        <br>Cite from the book "The Codebreakers" by David Kahn.
+  <figure class="home-stego-demo">
+    <div class="home-image-pair">
+      <div>
+        <img src="/images/hns_peppers.jpg" alt="Image A: peppers">
+        <span>Cover image</span>
+      </div>
+      <div>
+        <img src="/images/hns_peppers_stego.jpg" alt="Image B: peppers containing hidden data">
+        <span>Stego image</span>
+      </div>
     </div>
-</blockquote>
+  </figure>
 
+  <p>The images above look identical, but one contains hidden information. This illustrates the central problem behind image steganography and steganalysis: how to conceal information without revealing its presence, and how to detect the traces it may leave behind.</p>
+</section>
 
-<blockquote id='slide-1' class='slide' style='opacity:0;display:none'>
-   "Demaratus, the son of Ariston, who was an exile in Persia, (...) as soon as 
-    news reached him at Susa that Xerxes had decided uponthe invasion of Greece, 
-    he felt that he must pass on the information to Sparta. As the danger of 
-    discovery was great, there was only one way in which he could contrive to get 
-    the message through: this was by scraping the wax off a pair of wooden folding
-    tablets, writing on the wood underneath what Xerxes intended to do, and then 
-    covering the message over with wax again. In this way the tablets, being 
-    apparently blank, would cause no trouble with the guards along the road."
+<section class="home-work" aria-labelledby="explore">
+  <h2 id="explore">Explore</h2>
 
-    <div class='author'>
-        <b>Histories, Herodotus (430 B.C.)</b>
-        <br>Cite from the book "The Codebreakers" by David Kahn.
-    </div>
-</blockquote>
+  <article class="home-work-item">
+    <h3>Aletheia</h3>
+    <p>Open-source toolbox for image steganalysis.</p>
+    <a href="https://github.com/daniellerch/aletheia">View Aletheia <span aria-hidden="true">→</span></a>
+  </article>
 
+  <article class="home-work-item">
+    <h3>StegoLab</h3>
+    <p>Research implementations of steganography, steganalysis and watermarking methods.</p>
+    <a href="/stegolab-en/">Explore StegoLab <span aria-hidden="true">→</span></a>
+  </article>
 
-<blockquote id='slide-2' class='slide' style='opacity:0;display:none'>
-   "Histiaeus, wanting to send word from the Persian court to his son-in-law,
-    the tyrant Aristagoras at Miletus, shaved the head of a trusted slave,
-    tattooed the secret message thereon, waited for a new head of hair to
-    grow, then sent him off to his son-in-law with the instruction to shave
-    the slave's head. When Aristagoras had done so, he read on the slave's
-    scalp the message that urged him to revolt agains Persia."
-
-    <div class='author'>
-        <b>Histories, Herodotus (430 B.C.)</b>
-        <br>Cite from the book "The Codebreakers" by David Kahn.
-    </div>
-</blockquote>
-
-
-<blockquote id='slide-3' class='slide' style='opacity:0;display:none'>
-   "[...] I have uncovered certain ways, both numerous and varied, that are 
-    not to be entirely spurned whereby I can intimate my most secret thoughts 
-    to another who knows this art, however far away I wish, securely and free 
-    from the deceit, suspicion, or detection by anyone, using writing or openly 
-    through messengers."
-
-    <div style='text-align:right;position:relative;top:10px;font-size:16px;margin:10px'>
-        <b>Steganographia, Johanes Trithemius (1462 - 1516)</b>
-    </div>
-</blockquote>
-
-<blockquote id='slide-4' class='slide' style='opacity:0;display:none'>
-   "The Cardano grille consists of a sheet of stiff material, such a cardboard,
-    patchment, or metal, into which rectangular holes, the height of a line of
-    writing and of varying lengths, are cut at irregular intervals. The
-    encipherer lays this mask over a sheet of writing paper and writes the 
-    secret message through the perforations, some of which will take a whole
-    word, others a single letter, others a syllable. He the removes the grille 
-    and fills in the remaining spaces with an innocuous-sounding cover message.
-    (...) The dechipherer simply places his grille on the message he receives and
-    reads the hidden text through the "windows". "
-
-    <div style='text-align:right;position:relative;top:10px;font-size:16px;margin:10px'>
-        <b>Girolamo Cardano (1501 - 1576)</b>
-        <br>Cite from the book "The Codebreakers" by David Kahn.
-    </div>
-</blockquote>
-
-<blockquote id='slide-5' class='slide' style='opacity:0;display:none'>
-   "Two accomplices in a crime have been arrested and are about to be locked in 
-    widely separated cells. Their only means of communication after they are 
-    locked up will be by way of messages conveyed for them by trustees -- who 
-    are known to be agents of the warden. (...). The prisoners, (...) are 
-    willing to accept these conditions (...) to be able to communicate at all, 
-    since they need to coordinate their plans. To do this they will have to 
-    deceive the  warden by finding a way of communicating secretly (...)"
-
-    <div class='author'>
-        <b>The Prisoners' Problem and the Subliminal Channel by Gustavus J. Simmons (1983)</b>
-    </div>
-</blockquote>
-
-
-
-
-<a id='left_link' href='#'>
-    <div id='left' class='arrow-left'></div>
-</a>
-
-<div id='seconds'></div>
-
-<a id='right_link' href='#'>
-    <div id='right' class='arrow-right'></div>
-</a>
-
-
-</div>
-
-
-If this is your first time here, I recommend starting with the 
-[Blog](/blog-en) section, where you can find articles on steganography 
-and steganalysis. You can also visit the [About](/about-en)
-section to learn a little more about me.
-
-
-<script src='/js/slide.js'></script>
-
-
-
+  <article class="home-work-item">
+    <h3>Publications</h3>
+    <p>Research papers and related materials.</p>
+    <a href="/papers-en/">View publications <span aria-hidden="true">→</span></a>
+  </article>
+</section>
