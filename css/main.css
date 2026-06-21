@@ -103,6 +103,102 @@ h3 {
   padding: 15px inherit;
 }
 
+.home-intro {
+  margin: 0 0 72px;
+  max-width: 720px;
+}
+
+.home-intro p {
+  color: #404040;
+  font-size: 18px;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.home-intro p + p {
+  margin-top: 24px;
+}
+
+.home-intro .home-stego-demo {
+  margin: 34px auto 30px;
+}
+
+.home-stego-demo {
+  max-width: 520px;
+}
+
+.home-stego-demo figcaption {
+  color: #444;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.45;
+  margin: 0 0 20px;
+  text-align: left;
+}
+
+.home-image-pair {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.home-image-pair img {
+  aspect-ratio: 1;
+  display: block;
+  width: 100%;
+}
+
+.home-image-pair div > span {
+  color: #777;
+  display: block;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  margin-top: 8px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.home-work {
+  max-width: 680px;
+}
+
+.home-work > h2 {
+  color: #777;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  margin: 0 0 8px;
+  text-transform: uppercase;
+}
+
+.home-work-item {
+  border-top: 1px solid #ddd;
+  padding: 25px 0 28px;
+}
+
+.home-work-item:last-child {
+  border-bottom: 1px solid #ddd;
+}
+
+.home-work-item h3 {
+  color: #333;
+  font-size: 21px;
+  margin: 0 0 8px;
+}
+
+.home-work-item p {
+  line-height: 1.55;
+  margin: 0 0 8px;
+}
+
+.home-work-item a {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+
 .hideme {
   display: none;
 }
