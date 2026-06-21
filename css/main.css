@@ -165,7 +165,7 @@ img {
 
 .navbar-brand {
   font-size: 22px;
-  margin-left: 5px !important;
+  /*margin-left: 5px !important;*/
 }
 
 .navbar-custom .navbar-brand,
@@ -312,6 +312,12 @@ img {
     border: 1px solid #eaeaea;
     border-width: 0 1px 1px;
   }
+}
+
+
+.navbar-nav>li>a {
+   padding-right: 10px !important;
+   padding-left: 10px !important;
 }
 
 /* --- Footer --- */

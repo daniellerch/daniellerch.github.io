@@ -40,19 +40,17 @@
               <li>
                  <div class='lang'>
                 {%- if page.url == "/" -%}
-                  (<a {% if page.lang-suffix == "-en" %}class="lang-sel"{% endif %} 
-                      href="/index-en/">en</a>|
-                   <a {% if page.lang-suffix == "-es" %}class="lang-sel"{% endif %} 
+                  (<a {% if page.lang-suffix == "-en" %}class="lang-sel"{% endif %}
+                      href="/index-en/">en</a>|<a {% if page.lang-suffix == "-es" %}class="lang-sel"{% endif %}
                       href="/index-es/">es</a>)
                 {% else %}
-                  (<a {% if page.lang-suffix == "-en" %}class="lang-sel"{% endif %} 
-                      href="{{ page.url | replace: "-es", "-en" | replace: "-ca", "-en" | absolute_url }}">en</a>|
-                   <a {% if page.lang-suffix == "-es" %}class="lang-sel"{% endif %} 
+                  (<a {% if page.lang-suffix == "-en" %}class="lang-sel"{% endif %}
+                      href="{{ page.url | replace: "-es", "-en" | replace: "-ca", "-en" | absolute_url }}">en</a>|<a {% if page.lang-suffix == "-es" %}class="lang-sel"{% endif %}
                       href="{{ page.url | replace: "-en", "-es" | replace: "-ca", "-en" | absolute_url }}">es</a>)
                 {%- endif -%}
                  </div>
               </li>
-            
+
               </ul>
             </div>
 
