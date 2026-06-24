@@ -18,7 +18,7 @@ Here you can find tools and software libraries, such as <a href='https://github.
 My name is **Daniel Lerch** and I started doing research in steganography 
 and steganalysis during my master's thesis in 2011. 
 I continued my research during my 
-<a href='https://www.uoc.edu/portal/en/escola-doctorat/linies-recerca/linies-nit/information-network/index.html'>
+<a href='https://www.uoc.edu/en/research/doctoral-school/lines/network-information-technologies#information'>
 PhD</a>, which I finished in 2017 with the thesis 
 "**Image Steganalysis and Steganography in the Spatial Domain**".
 

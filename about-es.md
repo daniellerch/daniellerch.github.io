@@ -18,7 +18,7 @@ Aquí puedes encontrar herramientas y librerías de software, como <a href='http
 Mi nombre es Daniel Lerch y empecé a investigar en esteganografía y 
 estegoanálisis durante mi trabajo de máster en 2011. Investigación que
 continué posteriormente durante mi 
-<a href='https://www.uoc.edu/portal/en/escola-doctorat/linies-recerca/linies-nit/information-network/index.html'>
+<a href='https://www.uoc.edu/en/research/doctoral-school/lines/network-information-technologies#information'>
 doctorado
 </a>, que finalicé en 2017 con la 
 tesis "**Esteganografía y estegoanalisis de imágenes en el dominio espacial**".
