@@ -38,7 +38,7 @@ comments: true
 </style>
 
 
-> StegoLab collects tools, software libraries and research code related to steganography, steganalysis and watermarking.
+> StegoLab brings together practical tools, supporting software libraries, and research implementations for work on steganography, steganalysis, and watermarking.
 
 
 <center style='margin-bottom:30px'>

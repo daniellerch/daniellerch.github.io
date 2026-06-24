@@ -9,19 +9,9 @@ lang-suffix: "-en"
 comments: true
 ---
 
-This site is dedicated to steganography and steganalysis. I have created it 
-with the idea of having a site where I can upload information related to my 
-research and as a complement to the code that I upload to
-<a href='https://github.com/daniellerch'>Github</a>.
-Here you can find steganography tools 
-(such as <a href='https://github.com/daniellerch/hstego'>HStego</a>) 
-and steganalysis tools 
-(such as <a href='https://github.com/daniellerch/aletheia'>Aletheia</a>), 
-as well as different code snippets that implement stego techniques from 
-different papers and that you can find in 
-<a href='/stegolab-en/'>StegoLab</a>. Additionally, on 
-<a href='/blog-en/'>Blog</a>, I write all kinds of articles related to 
-steganography and steganalysis.
+This site is dedicated to steganography and steganalysis. I use it to collect information related to my research and as a complement to the code that I publish on <a href='https://github.com/daniellerch'>GitHub</a>.
+
+Here you can find tools and software libraries, such as <a href='https://github.com/daniellerch/aletheia'>Aletheia</a> and <a href='https://github.com/daniellerch/hstego'>HStego</a>, together with research code implementing techniques from different papers in <a href='/stegolab-en/'>StegoLab</a>. The site also includes articles, papers and resources related to steganography and steganalysis.
 
 
 
@@ -40,14 +30,9 @@ KISON
 </a> group 
 (K-ryptography and Information Security for Open Networks) 
 of the <a href="https://uoc.edu">Universitat Oberta de Catalunya</a> (UOC).
-In addition, I am an expert member at <a href="https://cuing.org/">CUIng</a> 
-(Criminal Use of Information Hiding Initiative) 
-of the 
-<a href="https://www.europol.europa.eu/about-europol/european-cybercrime-centre-ec3">Europol European Cybercrime Centre - EC3</a>
-and I usually participate in the technical program committee of the ARES workshops 
-that they organize. 
-I also work as a lecturer for Data Hiding and Cryptography subjects
-at the <a href="https://uoc.edu">Universitat Oberta de Catalunya</a> (UOC).
+I also work as a lecturer in Data Hiding at the UOC, and I have previously taught Cryptography.
+Currently, I supervise Data Hiding master's thesis projects in the 
+<a href="https://www.uoc.edu/es/estudios/masters/master-universitario-ciberseguridad-privacidad">University Master's Degree in Cybersecurity and Privacy</a>.
 
 
 You can contact me or find more information here:
@@ -55,16 +40,12 @@ You can contact me or find more information here:
 
 <div style="width:90%;position:relative;left:50px">
 
-   <a href="javascript:location='mailto:\u0064\u006c\u0065\u0072\u0063\u0068\u0040\u0067\u006d\u0061\u0069\u006c\u002e\u0063\u006f\u006d';void 0"
-      style='color:#333' title="e-mail">
+   <a href="mailto:dlerch@gmail.com" style='color:#333' title="e-mail">
       <span class="fa-stack fa-lg">
          <i class="fa fa-circle fa-stack-2x"></i>
          <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-      </span> &nbsp; 
-         E-mail: <script type="text/javascript">document.write('\u0064\u006c\u0065\u0072\u0063\u0068\u0040\u0067\u006d\u0061\u0069\u006c\u002e\u0063\u006f\u006d')</script>
-      <span>
-
-      </span>
+      </span> &nbsp;
+      <span>E-mail: dlerch@gmail.com</span>
    </a><br/>
 
    <a href="https://github.com/daniellerch" style='color:#333' title="GitHub">
@@ -75,14 +56,6 @@ You can contact me or find more information here:
       <span> &nbsp; github.com/daniellerch</span>
    </a><br/>
 
-   <a href="https://twitter.com/daniel_lerch" style='color:#333' title="Twitter">
-      <span class="fa-stack fa-lg">
-         <i class="fa fa-circle fa-stack-2x"></i>
-         <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-      </span>
-      <span> &nbsp; twitter.com/daniel_lerch</span>
-   </a><br/>
-
    <a href="https://scholar.google.es/citations?user=5ggVkxMAAAAJ&hl" style='color:#333' title="Scholar">
       <span class="fa-stack fa-lg">
          <i class="fa fa-circle fa-stack-2x"></i>
@@ -91,60 +64,20 @@ You can contact me or find more information here:
       <span> &nbsp; Google Scholar</span>
    </a><br/>
 
+   <a href="https://linkedin.com/in/daniellerch" style='color:#333' title="LinkedIn">
+      <span class="fa-stack fa-lg">
+         <i class="fa fa-circle fa-stack-2x"></i>
+         <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+      </span>
+      <span> &nbsp; LinkedIn</span>
+   </a><br/>
+
+   <a href="https://orcid.org/0000-0003-2602-672X" style='color:#333' title="ORCID">
+      <span class="fa-stack fa-lg">
+         <i class="fa fa-circle fa-stack-2x"></i>
+         <strong class="fa-stack-1x fa-inverse" style="font-family:Arial, sans-serif;font-size:0.7em;letter-spacing:-1px;">iD</strong>
+      </span>
+      <span> &nbsp; ORCID: 0000-0003-2602-672X</span>
+   </a><br/>
+
 </div>
-
-
-<br/>
-### Photos
-
-Some pictures from different events related with my research in the fields of steganography and steganalysis. <br/><br/>
-
-<center>
-
-<img width='750px' src='/images/workshops/ihmmsec_paris_2019_small.jpg'/>
-<br/>
-<blockquote>7th ACM Workshop on Information Hiding and Multimedia Security 2019, París</blockquote>
-<br/><br/>
-
-<img width='750px'  src='/images/workshops/recsi_2018_grupo_small.jpg'/>
-<br/>
-<blockquote>XV Reunión Española sobre Criptología y Seguridad de la Información 2018, Granada</blockquote>
-<br/><br/>
-
-<img width='750px'  src='/images/workshops/phd_2017.jpg'/>
-<br/>
-<blockquote>
-Thesis defense "Image Steganalysis and Steganography in the Spatial Domain". <br/>
-Universitat Oberta de Catalunya 2017, Castelldefels
-</blockquote>
-<br/><br/>
-
-<img width='750px'  src='/images/workshops/uocrw_2016_presentacion.jpeg'/>
-<br/>
-<blockquote>UOC Research Week 2016, Castelldefels</blockquote>
-<br/><br/>
-
-<img width='750px'  src='/images/workshops/recsi_2016_grupo.jpg'/>
-<br/>
-<blockquote>XIV Reunión Española sobre Criptología y Seguridad de la Información 2016, Menorca</blockquote>
-<br/><br/>
-
-<img width='750px'  src='/images/workshops/recsi_2014_grupo.jpg'>
-<br/><br/>
-<img width='750px'  src='/images/workshops/daniel_lerch_recsi_2014_presentacion_color.jpg'/>
-<br>
-<blockquote>XIII Reunión Española sobre Criptología y Seguridad de la Información 2014, Alicante</blockquote>
-<br/><br/>
-
-<img width='750px'  src='/images/workshops/recsi_2012_grupo.jpg'/>
-<br/><br/>
-<img width='750px'  src='/images/workshops/daniel_lerch_recsi_2012_presentacion.jpg'/>
-<br/>
-<blockquote>XII Reunión Española sobre Criptología y Seguridad de la Información 2012, Donostia</blockquote>
-<br/><br/>
-</center>
-
-
-
-
-

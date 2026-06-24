@@ -38,7 +38,7 @@ comments: true
 </style>
 
 
-> StegoLab reúne herramientas, librerías de software y código de investigación relacionado con esteganografía, estegoanálisis y *watermarking*.
+> StegoLab reúne herramientas prácticas, librerías de apoyo e implementaciones de investigación para trabajar en esteganografía, estegoanálisis y *watermarking*.
 
 
 <center style='margin-bottom:30px'>
