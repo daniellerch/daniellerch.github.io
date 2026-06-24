@@ -17,24 +17,110 @@ comments: true
         margin-top: -70px;
         visibility: hidden;
     }
+
+    .stegolab-section {
+        margin: 3.5rem 0 2rem;
+        padding: 1.5rem 1.75rem;
+        border-left: 4px solid #0074D9;
+        background: #f7f9fb;
+    }
+
+    .stegolab-section h2 {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .stegolab-section p {
+        margin-bottom: 0;
+        color: #666;
+    }
+
 </style>
 
 
+> StegoLab reúne herramientas, librerías de software y código de investigación relacionado con esteganografía, estegoanálisis y *watermarking*.
+
+
 <center style='margin-bottom:30px'>
-[ &nbsp; <a href='#esteganografía'>Esteganografía</a> &nbsp;
-| &nbsp; <a href='#estegoanálisis'>Estegoanálisis</a> &nbsp;  
-| &nbsp; <a href='#watermarking'>Watermarking</a> &nbsp; ]
+[ &nbsp; <a href='#tools'>Tools</a> &nbsp;
+| &nbsp; <a href='#research-code'>Research Code</a> &nbsp; ]
 </center>
 
 
-> En StegoLab puedes encontrar implementaciones de
-> diferentes técnicas usadas en esteganografía, estegoanálisis y 
-> *watermarking*.
+<section class="stegolab-section" id="tools">
+  <h2>Tools</h2>
+  <p>Herramientas orientadas al uso práctico, incluyendo estegoanálisis, esteganografía y librerías de apoyo.</p>
+</section>
+
+<center style='margin-bottom:30px'>
+[ &nbsp; <a href='#aletheia'>Aletheia</a> &nbsp;
+| &nbsp; <a href='#hstego'>HStego</a> &nbsp;
+| &nbsp; <a href='#stego-retweet'>Stego Retweet</a> &nbsp;
+|| &nbsp; <a href='#python-jpeg-toolbox'>Python JPEG Toolbox</a> &nbsp;
+| &nbsp; <a href='#python-syndrome-trellis-codes'>pySTC</a> &nbsp; ]
+</center>
+
 
 <div style='margin-bottom:50px'></div>
+### Aletheia
+
+**[Aletheia](https://github.com/daniellerch/aletheia)** es una herramienta libre de estegoanálisis para la detección de mensajes ocultos en imágenes. Para alcanzar sus objetivos, Aletheia usa técnicas de *machine learning* del estado del arte. Es capaz de detectar diferentes métodos de esteganografía, como por ejemplo F5, Steghide, métodos basdos en sustitución del LSB, LSB *matching* y métodos adaptativos.
+
+**Artículos sobre estegoanálisis práctico con Aletheia:**
+- [Introducción al estegoanálisis con Aletheia.](/stego/aletheia/v03/intro-es/)
+- [Cómo identificar el esquema de esteganografía.](/stego/aletheia/v03/identify-es/)
+- [Ataque práctico a Steghide.](/stego/aletheia/v03/steghide-attack-es/)
+- [Ataque práctico a F5.](/stego/aletheia/v03/f5-attack-es/)
+- [Ataque práctico a esquemas LSB replacement: OpenStego y OpenPuff.](/stego/aletheia/v03/lsbr-attack-es/)
+- [Resolución de stego-puzzles con Aletheia](/stego/aletheia/v03/stego-puzzles-es/).
+- [Comparativa de herramientas de esteganografía en imágenes.](/stego/aletheia/v03/tool-comparison-es/)
+- [Entrenamiento de modelos para Aletheia](/stego/aletheia/v03/training-es/).
 
 
-## Esteganografía
+<div style='margin-top:40px'></div>
+
+
+
+<div style='margin-bottom:80px'></div>
+### HStego
+
+**[HStego](https://github.com/daniellerch/hstego)** es una herramienta para ocultar información en imágenes de tipo mapa de bits y en imágenes JPEG. Esta herramienta usa algunos de los más avanzados métodos de esteganografía que se conocen, junto con un límite en la cantidad de datos que esconde, calculado para que no pueda ser detectada por herramientas modernas de estegoanálisis. 
+
+
+<div style='margin-bottom:80px'></div>
+### Stego Retweet
+
+
+**[Stego Retweet](https://github.com/daniellerch/stego-retweet)** es una herramienta para esconder mensajes en Twitter mediante retweets. Usando una lista de *hashtags* proporcionada por el usuario, esta herramienta busca y realiza retweets de  tweets que contienen ciertas palabras especiales. De esta manera es capaz de transmitir un mensaje que podrá ser leído por un destinatario poseedor de una contraseña. La capacidad de este esquema es de dos caracteres por retweet. 
+
+
+
+<div style='margin-bottom:80px'></div>
+### Python JPEG Toolbox
+
+**[Python JPEG Toolbox](https://github.com/daniellerch/python-jpeg-toolbox)** es una librería  similar al concodio JPEG toolbox de Matlab. Permite leer y escribir información de bajo nivel de archivos JPEG, como, por ejemplo, los coeficientes DCT, o las matrices de cuantización.
+
+
+<div style='margin-bottom:80px'></div>
+### Python Syndrome Trellis Codes
+
+**[PySTC](https://github.com/daniellerch/pySTC)** es una interfaz en Python para los Códigos Síndrome-Trellis (STC), un método utilizado en la esteganografía para minimizar la distorsión en la inserción al ocultar información dentro de medios digitales. Los STC son códigos convolucionales lineales representados mediante una matriz de verificación de paridad, lo que permite una inserción eficiente mientras se preserva la calidad del medio portador.
+
+
+<div style='margin-bottom:60px'></div>
+
+<section class="stegolab-section" id="research-code">
+  <h2>Research Code</h2>
+  <p>Implementaciones, prototipos y código experimental asociado a publicaciones y trabajo técnico de investigación.</p>
+</section>
+
+<center style='margin-bottom:30px'>
+[ &nbsp; <a href='#esteganografía'>Esteganografía</a> &nbsp;
+| &nbsp; <a href='#estegoanálisis'>Estegoanálisis</a> &nbsp;
+| &nbsp; <a href='#watermarking'>Watermarking</a> &nbsp; ]
+</center>
+
+### Esteganografía
 <hr style='border:1px solid #ccc'>
 
 
@@ -80,7 +166,7 @@ Incluye implementaciones aceleradas con Numba y descompresión a RGB sin redonde
 
 
 <br>
-## Estegoanálisis
+### Estegoanálisis
 <hr style='border:1px solid #ccc'>
 
 - **[Ataque ATS](https://github.com/daniellerch/papers_code/tree/master/ATS)**: Implementación en Python del ataque ATS, una técnica de estegoanálisis no supervisado presentado en el artículo [Unsupervised steganalysis based on artificial training sets](https://www.sciencedirect.com/science/article/abs/pii/S0952197616000026) [[arXiv](https://arxiv.org/abs/2107.13862)] de Daniel Lerch-Hostalot y David Megías.
@@ -93,7 +179,7 @@ Incluye implementaciones aceleradas con Numba y descompresión a RGB sin redonde
 
 
 <br>
-## Watermarking
+### Watermarking
 <hr style='border:1px solid #ccc'>
 
 - **[H\[$i$\]dden](https://github.com/daniellerch/stegolab/tree/master/watermarking/H%5Bi%5Ddden.py)**: Método de incrustación reversible en el dominio complejo con cifrado homomórfico presentado en el paper [Complex Domain Approach for Reversible Data Hiding and Homomorphic Encryption: General Framework and Application to Dispersed Data](https://arxiv.org/abs/2510.03770) de David Megias, 2025 [<a href="https://arxiv.org/pdf/2510.03770">pdf</a>] [<a href="https://github.com/daniellerch/stegolab/raw/refs/heads/master/watermarking/doc/Dagstuhl%202025.pptx">slides</a>].

@@ -23,11 +23,10 @@ url: "https://daniellerch.me"
 
 # List of links in the navigation bar
 navbar-links:
-   blog: "/blog-en"
+# blog: "/blog-en"
    stegolab: "/stegolab-en"
-   tools & libs: "/tools-en"
    papers: "/papers-en"
-   books: "/books-en"
+# books: "/books-en"
    archive: "/archive-en"
    about: "/about-en"
 

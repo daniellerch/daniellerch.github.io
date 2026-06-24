@@ -12,4 +12,5 @@
 #bundle2.5 exec jekyll serve
 #bundle2.7 exec jekyll serve
 #bundle2.5 exec jekyll serve
-bundle3.0 exec jekyll serve
+#bundle3.0 exec jekyll serve
+bundle exec jekyll serve

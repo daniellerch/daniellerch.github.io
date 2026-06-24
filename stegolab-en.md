@@ -17,23 +17,108 @@ comments: true
         margin-top: -70px;
         visibility: hidden;
     }
+
+    .stegolab-section {
+        margin: 3.5rem 0 2rem;
+        padding: 1.5rem 1.75rem;
+        border-left: 4px solid #0074D9;
+        background: #f7f9fb;
+    }
+
+    .stegolab-section h2 {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .stegolab-section p {
+        margin-bottom: 0;
+        color: #666;
+    }
+
 </style>
 
 
+> StegoLab collects tools, software libraries and research code related to steganography, steganalysis and watermarking.
+
+
+<center style='margin-bottom:30px'>
+[ &nbsp; <a href='#tools'>Tools</a> &nbsp;
+| &nbsp; <a href='#research-code'>Research Code</a> &nbsp; ]
+</center>
+
+
+<section class="stegolab-section" id="tools">
+  <h2>Tools</h2>
+  <p>Software intended for practical use, including steganalysis tools, steganography tools and supporting libraries.</p>
+</section>
+
+<center style='margin-bottom:30px'>
+[ &nbsp; <a href='#aletheia'>Aletheia</a> &nbsp;
+| &nbsp; <a href='#hstego'>HStego</a> &nbsp;
+| &nbsp; <a href='#stego-retweet'>Stego Retweet</a> &nbsp;
+|| &nbsp; <a href='#python-jpeg-toolbox'>Python JPEG Toolbox</a> &nbsp;
+| &nbsp; <a href='#python-syndrome-trellis-codes'>pySTC</a> &nbsp; ]
+</center>
+
+<div style='margin-bottom:50px'></div>
+### Aletheia
+
+
+**[Aletheia](https://github.com/daniellerch/aletheia)** is an open source image steganalysis tool for the detection of hidden messages in images. To achieve its objectives, Aletheia uses state-of-the-art machine learning techniques. It is capable of detecting several different steganographic methods as for example F5, Steghide, LSB replacement, LSB matching and some kind of adaptive schemes.
+
+**Articles on practical steganalysis with Aletheia:**
+- [Introduction to steganalysis using Aletheia.](/stego/aletheia/v03/intro-en/)
+- [Identifying the steganographic scheme.](/stego/aletheia/v03/identify-en/)
+- [Practical attack on Steghide.](/stego/aletheia/v03/steghide-attack-en/)
+- [Practical attack on F5.](/stego/aletheia/v03/f5-attack-en/)
+- [Practical attack on LSB replacement: OpenStego and OpenPuff.](/stego/aletheia/v03/lsbr-attack-en/)
+- [Solving Stego-Puzzles with Aletheia.](/stego/aletheia/v03/stego-puzzles-en/)
+- [Comparison of Image Steganography Tools.](/stego/aletheia/v03/tool-comparison-en/)
+- [Training models for Aletheia](/stego/aletheia/v03/training-en/).
+
+
+<div style='margin-top:40px'></div>
+
+
+
+<div style='margin-bottom:80px'></div>
+### HStego
+
+
+**[HStego](https://github.com/daniellerch/hstego)** is a tool for hiding data in bitmap and JPEG images. This tool uses some of the most advanced steganography methods known today, along with an upper limit on the amount of data that can be hidden so that it cannot be reliably detected by modern steganalysis tools.
+
+<div style='margin-bottom:80px'></div>
+### Stego Retweet
+
+**[Stego Retweet](https://github.com/daniellerch/stego-retweet)** is a tool for hiding messages in Twitter using retweets. Using a list of hashtags provided by the user, this tool finds and retweets some tweets containing especial words. This allows to hide a message that can be read by the user who has the password. The capacity is of two characters per retweet. 
+
+
+<div style='margin-bottom:80px'></div>
+### Python JPEG Toolbox
+
+**[Python JPEG Toolbox](https://github.com/daniellerch/python-jpeg-toolbox)**  is a library similar to the well-known JPEG Toolbox for Matlab. It allows reading and writing low-level information from JPEG files, such as DCT coefficients or quantization matrices.
+
+
+<div style='margin-bottom:80px'></div>
+### Python Syndrome Trellis Codes
+
+**[PySTC](https://github.com/daniellerch/pySTC)** is a Python interface for Syndrome-Trellis Codes (STC), a method used in steganography to minimize embedding distortion when hiding information within digital media. STCs are linear convolutional codes represented by a parity-check matrix, which allows efficient embedding while preserving the quality of the cover medium.
+
+
+<div style='margin-bottom:60px'></div>
+
+<section class="stegolab-section" id="research-code">
+  <h2>Research Code</h2>
+  <p>Implementations, prototypes and experimental code associated with research papers and technical work.</p>
+</section>
+
 <center style='margin-bottom:30px'>
 [ &nbsp; <a href='#steganography'>Steganography</a> &nbsp;
-| &nbsp; <a href='#steganalysis'>Steganalysis</a> &nbsp;  
+| &nbsp; <a href='#steganalysis'>Steganalysis</a> &nbsp;
 | &nbsp; <a href='#watermarking'>Watermarking</a> &nbsp; ]
 </center>
 
-> In StegoLab you can find implementations of different 
-> techniques used in steganography, steganalysis and watermarking.
-
-
-<div style='margin-bottom:50px'></div>
-
-
-## Steganography
+### Steganography
 <hr style='border:1px solid #ccc'>
 
 
@@ -73,7 +158,7 @@ Includes fast implementations using Numba and implementations that decompress in
 
 
 <br>
-## Steganalysis
+### Steganalysis
 <hr style='border:1px solid #ccc'>
 
 - **[ATS attack](https://github.com/daniellerch/papers_code/tree/master/ATS)**: Python implementation of the ATS attack, an unsupervised steganalysis technique presented in the article [Unsupervised steganalysis based on artificial training sets](https://www.sciencedirect.com/science/article/abs/pii/S0952197616000026) [[arXiv](https://arxiv.org/abs/2107.13862)] by Daniel Lerch-Hostalot and David Megías.
@@ -89,7 +174,7 @@ Includes fast implementations using Numba and implementations that decompress in
 
 
 <br>
-## Watermarking
+### Watermarking
 <hr style='border:1px solid #ccc'>
 
 - **[H\[$i$\]dden](https://github.com/daniellerch/stegolab/tree/master/watermarking/H%5Bi%5Ddden.py)**: Reversible data embedding in complex domain with homomorphic encryption presented in the paper [Complex Domain Approach for Reversible Data Hiding and Homomorphic Encryption: General Framework and Application to Dispersed Data](https://arxiv.org/abs/2510.03770) by David Megias, 2025 [<a href="https://arxiv.org/pdf/2510.03770">pdf</a>] [<a href="https://github.com/daniellerch/stegolab/raw/refs/heads/master/watermarking/doc/Dagstuhl%202025.pptx">slides</a>].
