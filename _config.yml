@@ -82,7 +82,7 @@ social-network-links:
   github: daniellerch
 #  stackoverflow: "29743/daniel-lerch"
   linkedin: daniellerch
-  twitter: daniel_lerch
+#  twitter: daniel_lerch
 #  reddit: yourname
 #  xing: yourname
 
@@ -97,7 +97,7 @@ social-network-links:
 
 # Select which share links to show in posts
 share-links-active:
-  twitter: true
+  twitter: false
   facebook: true
   linkedin: true
 

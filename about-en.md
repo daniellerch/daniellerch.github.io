@@ -30,7 +30,7 @@ KISON
 </a> group 
 (K-ryptography and Information Security for Open Networks) 
 of the <a href="https://uoc.edu">Universitat Oberta de Catalunya</a> (UOC).
-I also work as a lecturer in Data Hiding at the UOC, and I have previously taught Cryptography.
+I also work as a lecturer in <a href="https://apps.uoc.edu/PlaDocent/PlaDocent?Semestre=20261&SignatureCode=M1.878&Context=3&Locale=en">Data Hiding</a> at the UOC, and I have previously taught Cryptography.
 Currently, I supervise Data Hiding master's thesis projects in the 
 <a href="https://www.uoc.edu/es/estudios/masters/master-universitario-ciberseguridad-privacidad">University Master's Degree in Cybersecurity and Privacy</a>.
 

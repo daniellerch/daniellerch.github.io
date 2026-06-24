@@ -29,7 +29,7 @@ KISON
 </a>
 (K-ryptography and Information Security for Open Networks)
 de la <a href="https://uoc.edu">Universitat Oberta de Catalunya</a> (UOC).
-También soy profesor colaborador de Técnicas de Ocultación de Datos en la UOC, y anteriormente he impartido Criptografía.
+También soy profesor colaborador de <a href="https://apps.uoc.edu/PlaDocent/PlaDocent?Semestre=20261&SignatureCode=M1.878&Context=3&Locale=es">Técnicas de Ocultación de Datos</a> en la UOC, y anteriormente he impartido Criptografía.
 Actualmente tutorizo trabajos de final de máster sobre Técnicas de Ocultación de Datos en el 
 <a href="https://www.uoc.edu/es/estudios/masters/master-universitario-ciberseguridad-privacidad">Máster Universitario de Ciberseguridad y Privacidad</a>.
 
