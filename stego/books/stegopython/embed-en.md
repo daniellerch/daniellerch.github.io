@@ -7,7 +7,7 @@ meta-title: "Steganography for Python Programmers: Embedding Techniques"
 meta-description: "Chapter 'Embedding Techniques' from the book 'Steganography for Python Programmers'"
 meta-keywords: "steganography, Python"
 lang-suffix: "-en"
-comments: true
+comments: false
 ---
 
 <center style='margin-bottom:30px'>

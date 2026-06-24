@@ -7,7 +7,7 @@ meta-title: "Steganography for Python Programmers: References"
 meta-description: "Chapter 'References' from the book 'Steganography for Python Programmers'"
 meta-keywords: "steganography, Python"
 lang-suffix: "-en"
-comments: true
+comments: false
 ---
 
 

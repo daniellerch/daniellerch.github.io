@@ -6,7 +6,7 @@ noindex: false
 meta-title: "Sobre Daniel Lerch Hostalot"
 meta-description: "Información sobre Daniel Lerch Hostalot relacionada con la esteganografía"
 lang-suffix: "-es"
-comments: true
+comments: false
 ---
 
 Esta página está dedicada a la esteganografía y al estegoanálisis. La uso para reunir información relacionada con mi investigación y como complemento del código que publico en <a href='https://github.com/daniellerch'>GitHub</a>.

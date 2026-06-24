@@ -7,7 +7,7 @@ meta-title: "Practical attack on LSB replacement: OpenStego and OpenPuff"
 meta-description: "Blog post about the detection of images embedded using LSB replacement (OpenStego and OpenPufF), using the Aletheia steganalysis tool."
 meta-keywords: "steganography, steganalysis, images"
 lang-suffix: "-en"
-comments: true
+comments: false
 ---
 
 <center style='margin-bottom:30px'>Aletheia <a href='https://github.com/daniellerch/aletheia/tree/v0.3'>v0.3</a></center>

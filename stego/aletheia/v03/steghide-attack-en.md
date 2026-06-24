@@ -8,7 +8,7 @@ meta-title: "Practical attack on Steghide"
 meta-description: "Blog post about the detection of JPEG images embedded with Steghide, using the Aletheia steganalysis tool"
 meta-keywords: "steganography, steganalysis, images"
 lang-suffix: "-en"
-comments: true
+comments: false
 ---
 
 <center style='margin-bottom:30px'>Aletheia <a href='https://github.com/daniellerch/aletheia/tree/v0.3'>v0.3</a></center>

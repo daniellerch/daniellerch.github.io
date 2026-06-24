@@ -7,7 +7,7 @@ meta-title: "Eines d'esteganografia"
 meta-description: "llistat d'eines d'esteganografia"
 meta-keywords: "esteganografia, eines"
 lang-suffix: "-es"
-comments: true
+comments: false
 ---
 
 

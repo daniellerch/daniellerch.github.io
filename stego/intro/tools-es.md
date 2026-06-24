@@ -7,7 +7,7 @@ meta-title: "Herramientas de esteganografía"
 meta-description: "Listado de herramientas esteganografía"
 meta-keywords: "esteganografía, herramientas"
 lang-suffix: "-es"
-comments: true
+comments: false
 ---
 
 

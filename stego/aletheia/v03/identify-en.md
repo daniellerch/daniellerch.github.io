@@ -7,7 +7,7 @@ meta-title: "Identifying the steganographic scheme"
 meta-description: "Blog post about the identification of the steganography scheme using the Aletheia steganalysis tool"
 meta-keywords: "steganography, steganalysis, images"
 lang-suffix: "-en"
-comments: true
+comments: false
 ---
 
 <center style='margin-bottom:30px'>Aletheia <a href='https://github.com/daniellerch/aletheia/tree/v0.3'>v0.3</a></center>

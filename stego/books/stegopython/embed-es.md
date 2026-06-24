@@ -7,7 +7,7 @@ meta-title: "Esteganografía para programadores Python: Técnicas de incrustaci�
 meta-description: "Capítulo 'Técnicas de incrustación' del libro 'Esteganografía para programadores Python'"
 meta-keywords: "esteganografía, Python"
 lang-suffix: "-es"
-comments: true
+comments: false
 ---
 
 <center style='margin-bottom:30px'>

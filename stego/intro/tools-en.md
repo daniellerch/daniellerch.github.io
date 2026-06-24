@@ -7,7 +7,7 @@ meta-title: "Steganography Tools"
 meta-description: "List of steganography tools"
 meta-keywords: "steganography, tools"
 lang-suffix: "-en"
-comments: true
+comments: false
 ---
 
 > Here you'll find a list of steganography tools. Before 

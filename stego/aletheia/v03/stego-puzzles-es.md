@@ -7,7 +7,7 @@ meta-title: "Resolución de stego-puzzles con Aletheia"
 meta-description: "Artículo acerca del usode la herramienta Aletheia para la resolución de stego-puzzles"
 meta-keywords: "esteganografía, estegoanálisis, imágenes, stego-puzzles"
 lang-suffix: "-es"
-comments: true
+comments: false
 ---
 
 <center style='margin-bottom:30px'>Aletheia <a href='https://github.com/daniellerch/aletheia/tree/v0.3'>v0.3</a></center>

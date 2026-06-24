@@ -7,7 +7,7 @@ meta-title: "Ataque práctico a LSB replacement: OpenStego y OpenPuff"
 meta-description: "Artículo sobre cómo detectar herramientas que usan la técnica LSB replacement en imágenes sin comprimir, usando la herramienta Aletheia"
 meta-keywords: "esteganografía, estegoanálisis, imágenes"
 lang-suffix: "-es"
-comments: true
+comments: false
 ---
 
 <center style='margin-bottom:30px'>Aletheia <a href='https://github.com/daniellerch/aletheia/tree/v0.3'>v0.3</a></center>

@@ -7,7 +7,7 @@ meta-title: "Steganography for Python Programmers: Audio Steganography"
 meta-description: "Chapter 'Audio Steganography' from the book 'Steganography for Python Programmers'"
 meta-keywords: "steganography, Python"
 lang-suffix: "-en"
-comments: true
+comments: false
 ---
 
 <center style='margin-bottom:30px'>

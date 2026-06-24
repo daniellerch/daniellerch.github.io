@@ -7,7 +7,7 @@ meta-title: "Steganography for Python Programmers: Steganography in Video"
 meta-description: "Chapter 'Steganography in Video' from the book 'Steganography for Python Programmers'"
 meta-keywords: "steganography, Python"
 lang-suffix: "-en"
-comments: true
+comments: false
 ---
 
 <center style='margin-bottom:30px'>

@@ -7,7 +7,7 @@ meta-title: "EfficientNet-b0 Model Training for Aletheia"
 meta-description: "Article about training models for Aletheia"
 meta-keywords: "steganography, steganalysis, images, DCI"
 lang-suffix: "-en"
-comments: true
+comments: false
 ---
 
 <center style='margin-bottom:30px'>Aletheia <a href='https://github.com/daniellerch/aletheia/tree/v0.3'>v0.3</a></center>
