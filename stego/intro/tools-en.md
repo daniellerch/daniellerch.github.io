@@ -449,7 +449,7 @@ in multiple formats.
 | **Supported Video Formats** | 3GP, MP4, MPG, VOB |
 | **Other Supported Formats** | FLV, SWF, PDF |
 | **Image Insertion Method** | LSB replacement |
-| **JPEG Image Insertion Method** | Steghide? |
+| **JPEG Image Insertion Method** | Unknown / custom |
 | **Video Insertion Method** | ? |
 | **Other Formats Insertion Method** | ? |
 | **License** | LGPL v3 + Partially closed code |

@@ -20,21 +20,21 @@ ax1.set_xlabel('Payload')
 ax1.set_ylabel('Accuracy')
 
 ax1.plot(payload, lsbm, marker='o', linestyle='-', label='LSB matching')
-ax1.plot(payload, lsbr, marker='o', linestyle='-', label='LSB replacement (OpenStego, OpenPuff, ...)')
-ax1.plot(payload, lsbr_spa, marker='o', linestyle='-', label='LSB replacement -SPA- (OpenStego, OpenPuff, ...)')
+ax1.plot(payload, lsbr, marker='o', linestyle='-', label='LSB replacement')
+ax1.plot(payload, lsbr_spa, marker='o', linestyle='-', label='LSB replacement (SPA)')
 ax1.plot(payload, steganogan, marker='o', linestyle='-', label='SteganoGAN')
-ax1.plot(payload, hstego03_hill, color='b', marker='o', linestyle='-', label='HStego 0.3')
-ax1.plot(payload, hstego04_suniw, color='g', marker='o', linestyle='-', label='HStego 0.4')
+ax1.plot(payload, hstego03_hill, color='b', marker='o', linestyle='-', label='HILL')
+ax1.plot(payload, hstego04_suniw, color='g', marker='o', linestyle='-', label='S-UNIWARD')
 
 ax1.tick_params(axis='y')
 ax1.grid(True, which='both', axis='y', linestyle='--', linewidth=0.5)
 
-plt.text(0.2, 0.75, 'Aletheia steganalysis tool', color='#808080', fontsize=12)
+ax1.text(0.5, 0.5, 'Aletheia Steganalysis Tool', transform=ax1.transAxes, ha='center', va='center', color='#9a9a9a', fontsize=26, alpha=0.32)
 plt.ylim(0.5, 1.1)
-plt.title('Steganography tools')
+plt.title('Steganography techniques and tools')
 plt.tight_layout()
 plt.legend(loc="lower right")
 #plt.show()
-plt.savefig("stego/aletheia/resources/tool_comparison.png")
+plt.savefig("stego/aletheia/v03/resources/tool_comparison.png")
 
 

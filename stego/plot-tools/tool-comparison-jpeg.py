@@ -20,19 +20,19 @@ ax1.set_ylabel('Accuracy')
 ax1.plot(payload, outguess, marker='o', linestyle='-', label='Outguess')
 ax1.plot(payload, f5, marker='.', linestyle='-', label='F5')
 ax1.plot(payload, steghide, marker='o', linestyle='-', label='Steghide')
-ax1.plot(payload, hstego03_juniw, color='b', marker='o', linestyle='-', label='HStego 0.3')
-ax1.plot(payload, hstego04_juniwwiener, color='g', marker='o', linestyle='-', label='HStego 0.4')
+ax1.plot(payload, hstego03_juniw, color='b', marker='o', linestyle='-', label='J-UNIWARD')
+ax1.plot(payload, hstego04_juniwwiener, color='g', marker='o', linestyle='-', label='J-UNIWARD + CP')
 
 ax1.tick_params(axis='y')
 ax1.grid(True, which='both', axis='y', linestyle='--', linewidth=0.5)
 
-plt.text(0.2, 0.85, 'Aletheia steganalysis tool', color='#808080', fontsize=12)
+ax1.text(0.5, 0.5, 'Aletheia Steganalysis Tool', transform=ax1.transAxes, ha='center', va='center', color='#9a9a9a', fontsize=26, alpha=0.32)
 plt.ylim(0.5, 1.1)
-plt.title('Steganography tools (JPEG)')
+plt.title('Steganography techniques and tools (JPEG)')
 plt.tight_layout()
 plt.legend(loc="lower right")
 #plt.show()
-plt.savefig("stego/aletheia/resources/tool_comparison_jpeg.png")
+plt.savefig("stego/aletheia/v03/resources/tool_comparison_jpeg.png")
 
 
 

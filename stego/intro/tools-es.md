@@ -462,7 +462,7 @@ en múltiples formatos.
 | **Formatos soportados para video** | 3GP, MP4, MPG, VOB |
 | **Otros formatos soportados** | FLV, SWF, PDF |
 | **Método de inserción en imágenes** | LSB replacement |
-| **Método de inserción en imágenes JPEG** | Steghide? |
+| **Método de inserción en imágenes JPEG** | Desconocido / a medida |
 | **Método de inserción en video** | ? |
 | **Método de inserción en otros formatos** | ? |
 | **Licencia** | LGPL v3 + Código parcialmente cerrado |
