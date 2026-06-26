@@ -10,6 +10,8 @@ hill = [0.8395, 0.8810, 0.9550]
 uniward = [0.7410, 0.8510, 0.9350]
 si_hill = [0.4995, 0.6605, 0.8915]
 si_uniward = [0.5030, 0.6200, 0.8420]
+stable_diffusion_generative_payload = [0.02]
+stable_diffusion_generative = [0.50]
 
 fig, ax1 = plt.subplots(figsize=(10, 6))
 
@@ -20,6 +22,14 @@ ax1.plot(payload, hill, marker="o", linestyle="-", label="HILL")
 ax1.plot(payload, uniward, marker="o", linestyle="-", label="UNIWARD")
 ax1.plot(payload, si_hill, marker="o", linestyle="-", label="SI-HILL")
 ax1.plot(payload, si_uniward, marker="o", linestyle="-", label="SI-UNIWARD")
+ax1.plot(
+    stable_diffusion_generative_payload,
+    stable_diffusion_generative,
+    marker="D",
+    markersize=8,
+    linestyle="None",
+    label="mas_GRDH",
+)
 
 ax1.tick_params(axis="y")
 ax1.grid(True, which="both", axis="y", linestyle="--", linewidth=0.5)
@@ -36,7 +46,7 @@ ax1.text(
 )
 
 plt.ylim(0.45, 1.0)
-plt.title("Side-informed steganography in Stable Diffusion images")
+plt.title("Steganography in Stable Diffusion images")
 plt.tight_layout()
 plt.legend(loc="lower right")
 plt.savefig("stego/aletheia/v03/resources/stable_diffusion_side_informed.png")
