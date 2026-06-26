@@ -94,7 +94,7 @@ StegoWatch sigue el estado actual de las técnicas y herramientas de esteganogra
 La comparación se organiza alrededor de las técnicas de incrustación subyacentes, porque muchas herramientas implementan los mismos métodos, o métodos muy cercanos. Esto facilita entender qué se está evaluando realmente: la herramienta, la técnica que utiliza, la carga insertada y el detector empleado para analizarla.
 
 <div class="stegowatch-updated">
-  <p><strong>Última actualización:</strong> 25 de junio de 2026. Esta es una sección viva: los resultados y clasificaciones pueden cambiar a medida que se actualicen herramientas, detectores y protocolos de comparación.</p>
+  <p><strong>Última actualización:</strong> 26 de junio de 2026. Esta es una sección viva: los resultados y clasificaciones pueden cambiar a medida que se actualicen herramientas, detectores y protocolos de comparación.</p>
 </div>
 
 <div class='menu' style='margin-top:50px'></div>
@@ -117,6 +117,11 @@ Las gráficas siguientes son la forma más rápida de leer la comparativa actual
   <div class="caption">Comparativa de esteganografía en imágenes JPEG.</div>
 </div>
 
+<div class="stegowatch-figure">
+  <img src="/stego/aletheia/v03/resources/stable_diffusion_side_informed.png" alt="Comparativa de esteganografía convencional y side-informed en imágenes de Stable Diffusion">
+  <div class="caption">Comparativa de esteganografía espacial convencional y side-informed en imágenes generadas con Stable Diffusion. La accuracy está promediada entre EfficientNet-B0 y SRNet.</div>
+</div>
+
 ## Técnicas y herramientas
 
 Muchas herramientas implementan las mismas técnicas, o técnicas muy cercanas. La tabla enlaza cada familia con su ficha y resume las herramientas representadas en la comparativa. Para un catálogo más amplio, consulta el [listado de herramientas de esteganografía](/stego/intro/tools-es/).
@@ -128,6 +133,8 @@ Muchas herramientas implementan las mismas técnicas, o técnicas muy cercanas. 
 | [LSB matching](/stegowatch/lsb-matching-es/) | Implementaciones de investigación / experimentales | Sin comprimir | <span class="stegowatch-rating stegowatch-rating-4" title="Parcialmente detectable"><span class="stegowatch-rating-bars" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span><span class="stegowatch-rating-label">Parcialmente detectable</span></span> |
 | [HILL](/stegowatch/hill-es/) | [HStego < 0.4](https://github.com/daniellerch/hstego) | Sin comprimir | <span class="stegowatch-rating stegowatch-rating-4" title="Parcialmente detectable"><span class="stegowatch-rating-bars" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span><span class="stegowatch-rating-label">Parcialmente detectable</span></span> |
 | [S-UNIWARD](/stegowatch/s-uniward-es/) | [HStego 0.4](https://github.com/daniellerch/hstego) | Sin comprimir | <span class="stegowatch-rating stegowatch-rating-5" title="Difícil de detectar"><span class="stegowatch-rating-bars" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span><span class="stegowatch-rating-label">Difícil de detectar</span></span> |
+| [SI-HILL](/stegowatch/si-hill-es/) | Implementación experimental | Sin comprimir (Stable Diffusion) | <span class="stegowatch-rating stegowatch-rating-5" title="Difícil de detectar"><span class="stegowatch-rating-bars" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span><span class="stegowatch-rating-label">Difícil de detectar</span></span> |
+| [SI-UNIWARD](/stegowatch/si-uniward-es/) | Implementación experimental | Sin comprimir (Stable Diffusion) | <span class="stegowatch-rating stegowatch-rating-5" title="Difícil de detectar"><span class="stegowatch-rating-bars" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span><span class="stegowatch-rating-label">Difícil de detectar</span></span> |
 | [Métodos clásicos en dominio JPEG](/stegowatch/jpeg-domain-es/) | [Outguess](https://github.com/daniellerch/stego-collection/tree/master/Outguess) y otros | JPEG | <span class="stegowatch-rating stegowatch-rating-1" title="Muy fácil de detectar"><span class="stegowatch-rating-bars" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span><span class="stegowatch-rating-label">Muy fácil de detectar</span></span> |
 | [F5](/stegowatch/f5-es/) | [F5](https://github.com/daniellerch/stego-collection/tree/master/F5) | JPEG | <span class="stegowatch-rating stegowatch-rating-1" title="Muy fácil de detectar"><span class="stegowatch-rating-bars" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span><span class="stegowatch-rating-label">Muy fácil de detectar</span></span> |
 | [Steghide](/stegowatch/steghide-es/) | [Steghide](https://steghide.sourceforge.net/index.php) | JPEG | <span class="stegowatch-rating stegowatch-rating-2" title="Fácil de detectar"><span class="stegowatch-rating-bars" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span><span class="stegowatch-rating-label">Fácil de detectar</span></span> |
@@ -136,7 +143,7 @@ Muchas herramientas implementan las mismas técnicas, o técnicas muy cercanas. 
 
 ## Cómo leer estos resultados
 
-El nivel resume la resistencia a detección en el escenario evaluado. Se calcula por separado para cada dominio a partir de la accuracy media del detector en los payloads mostrados en las gráficas: dentro de cada dominio, la accuracy media más alta se representa con un rectángulo rojo y la accuracy media más baja con cinco rectángulos verdes. No debe leerse como un ranking universal de herramientas, y no implica indetectabilidad. La detectabilidad depende de varios factores:
+El nivel resume la resistencia a detección en el escenario evaluado. Para las filas de la comparativa de Aletheia, se calcula por separado para cada dominio a partir de la accuracy media del detector en los payloads mostrados en las gráficas: dentro de cada dominio, la accuracy media más alta se representa con un rectángulo rojo y la accuracy media más baja con cinco rectángulos verdes. Las filas basadas en imágenes de Stable Diffusion siguen el protocolo descrito en sus fichas correspondientes. No debe leerse como un ranking universal de herramientas, y no implica indetectabilidad. La detectabilidad depende de varios factores:
 
 - *payload*;
 - fuente de imágenes;

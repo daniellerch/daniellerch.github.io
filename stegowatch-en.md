@@ -94,7 +94,7 @@ StegoWatch tracks the current state of image steganography techniques and tools,
 The comparison is organized around the underlying embedding techniques, because many tools implement the same or closely related methods. This makes it easier to understand what is actually being evaluated: the tool, the technique behind it, the payload, and the detector used to analyze it.
 
 <div class="stegowatch-updated">
-  <p><strong>Last updated:</strong> 25 June 2026. This is a living section: results and classifications may change as tools, detectors, and comparison protocols are updated.</p>
+  <p><strong>Last updated:</strong> 26 June 2026. This is a living section: results and classifications may change as tools, detectors, and comparison protocols are updated.</p>
 </div>
 
 <div class='menu' style='margin-top:50px'></div>
@@ -117,6 +117,11 @@ The charts below are the quickest way to read the current comparison. They show 
   <div class="caption">Comparison of steganography in JPEG.</div>
 </div>
 
+<div class="stegowatch-figure">
+  <img src="/stego/aletheia/v03/resources/stable_diffusion_side_informed.png" alt="Comparison of conventional and side-informed steganography in Stable Diffusion images">
+  <div class="caption">Comparison of conventional and side-informed spatial steganography in Stable Diffusion generated images. Accuracy is averaged over EfficientNet-B0 and SRNet.</div>
+</div>
+
 ## Techniques and tools
 
 Many tools implement the same or closely related techniques. The table links each family to its note and gives a compact reading of the tools represented in the comparison. For a broader catalogue, see the [steganography tools list](/stego/intro/tools-en/).
@@ -128,6 +133,8 @@ Many tools implement the same or closely related techniques. The table links eac
 | [LSB matching](/stegowatch/lsb-matching-en/) | Research / experimental implementations | Uncompressed | <span class="stegowatch-rating stegowatch-rating-4" title="Partially detectable"><span class="stegowatch-rating-bars" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span><span class="stegowatch-rating-label">Partially detectable</span></span> |
 | [HILL](/stegowatch/hill-en/) | [HStego < 0.4](https://github.com/daniellerch/hstego) | Uncompressed | <span class="stegowatch-rating stegowatch-rating-4" title="Partially detectable"><span class="stegowatch-rating-bars" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span><span class="stegowatch-rating-label">Partially detectable</span></span> |
 | [S-UNIWARD](/stegowatch/s-uniward-en/) | [HStego 0.4](https://github.com/daniellerch/hstego) | Uncompressed | <span class="stegowatch-rating stegowatch-rating-5" title="Hard to detect"><span class="stegowatch-rating-bars" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span><span class="stegowatch-rating-label">Hard to detect</span></span> |
+| [SI-HILL](/stegowatch/si-hill-en/) | Experimental implementation | Uncompressed (Stable Diffusion) | <span class="stegowatch-rating stegowatch-rating-5" title="Hard to detect"><span class="stegowatch-rating-bars" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span><span class="stegowatch-rating-label">Hard to detect</span></span> |
+| [SI-UNIWARD](/stegowatch/si-uniward-en/) | Experimental implementation | Uncompressed (Stable Diffusion) | <span class="stegowatch-rating stegowatch-rating-5" title="Hard to detect"><span class="stegowatch-rating-bars" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span><span class="stegowatch-rating-label">Hard to detect</span></span> |
 | [Older JPEG-domain methods](/stegowatch/jpeg-domain-en/) | [Outguess](https://github.com/daniellerch/stego-collection/tree/master/outguess) and others | JPEG | <span class="stegowatch-rating stegowatch-rating-1" title="Very easy to detect"><span class="stegowatch-rating-bars" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span><span class="stegowatch-rating-label">Very easy to detect</span></span> |
 | [F5](/stegowatch/f5-en/) | [F5](https://github.com/daniellerch/stego-collection/tree/master/F5) | JPEG | <span class="stegowatch-rating stegowatch-rating-1" title="Very easy to detect"><span class="stegowatch-rating-bars" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span><span class="stegowatch-rating-label">Very easy to detect</span></span> |
 | [Steghide](/stegowatch/steghide-en/) | [Steghide](https://steghide.sourceforge.net/index.php) | JPEG | <span class="stegowatch-rating stegowatch-rating-2" title="Easy to detect"><span class="stegowatch-rating-bars" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span><span class="stegowatch-rating-label">Easy to detect</span></span> |
@@ -136,7 +143,7 @@ Many tools implement the same or closely related techniques. The table links eac
 
 ## How to read these results
 
-The rating summarizes resistance to detection in the evaluated setting. It is computed separately for each domain from the mean detector accuracy across the payloads shown in the charts: within each domain, the highest mean accuracy maps to one red rectangle and the lowest mean accuracy maps to five green rectangles. It should not be read as a universal ranking of tools, and it does not imply undetectability. Detectability depends on several factors:
+The rating summarizes resistance to detection in the evaluated setting. For the Aletheia comparison rows, it is computed separately for each domain from the mean detector accuracy across the payloads shown in the charts: within each domain, the highest mean accuracy maps to one red rectangle and the lowest mean accuracy maps to five green rectangles. Rows based on Stable Diffusion images follow the protocol reported in their corresponding method notes. The rating should not be read as a universal ranking of tools, and it does not imply undetectability. Detectability depends on several factors:
 
 - payload;
 - image source;
