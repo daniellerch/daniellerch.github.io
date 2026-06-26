@@ -3,8 +3,8 @@ layout: page
 title: SI-UNIWARD
 subtitle: ""
 noindex: false
-meta-title: "SI-UNIWARD — StegoWatch"
-meta-description: "StegoWatch note on side-informed UNIWARD for Stable Diffusion generated images"
+meta-title: "SI-UNIWARD — StegoRank"
+meta-description: "StegoRank note on side-informed UNIWARD for Stable Diffusion generated images"
 lang-suffix: "-en"
 comments: false
 ---
@@ -20,7 +20,7 @@ SI-UNIWARD is a side-informed variant of UNIWARD for spatial-domain steganograph
 
 ## Use in tools
 
-SI-UNIWARD is currently represented in StegoWatch as an experimental research method, not as an end-user tool. It extends the standard UNIWARD cost function by reducing the cost of modifications whose direction agrees with the residual between the continuous VAE decoder output and the rounded 8-bit image.
+SI-UNIWARD is currently represented in StegoRank as an experimental research method, not as an end-user tool. It extends the standard UNIWARD cost function by reducing the cost of modifications whose direction agrees with the residual between the continuous VAE decoder output and the rounded 8-bit image.
 
 ## Detectability results
 
@@ -34,7 +34,7 @@ The result should be interpreted in the context of the evaluated protocol: Stabl
 
 ## Related resources
 
-- [StegoWatch main article](/stegowatch-en/)
+- [StegoRank main article](/stegorank-en/)
 - [StegoLab](/stegolab-en/)
 - [Aletheia](/stego/aletheia/v03/intro-en/)
 - [Steganography tools list](/stego/intro/tools-en/)

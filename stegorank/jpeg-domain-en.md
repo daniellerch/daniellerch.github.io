@@ -3,8 +3,8 @@ layout: page
 title: Outguess and Older JPEG Methods
 subtitle: ""
 noindex: false
-meta-title: "Outguess and Older JPEG Methods — StegoWatch"
-meta-description: "StegoWatch note on Outguess, JSteg, JPHS and older JPEG-domain steganography tools"
+meta-title: "Outguess and Older JPEG Methods — StegoRank"
+meta-description: "StegoRank note on Outguess, JSteg, JPHS and older JPEG-domain steganography tools"
 lang-suffix: "-en"
 comments: false
 ---
@@ -16,7 +16,7 @@ comments: false
     }
 </style>
 
-This family groups older JPEG-domain steganography tools that hide information by modifying elements of the JPEG representation, usually DCT coefficients. In the current StegoWatch table, this entry is represented mainly by Outguess and related older tools.
+This family groups older JPEG-domain steganography tools that hide information by modifying elements of the JPEG representation, usually DCT coefficients. In the current StegoRank table, this entry is represented mainly by Outguess and related older tools.
 
 ## Why it matters
 
@@ -33,7 +33,7 @@ Tools associated with this family include:
 
 ## Detectability results
 
-In the current StegoWatch comparison, Outguess represents this family and is very easy to detect in the evaluated setting. This should not be generalized automatically to every older JPEG tool, but it is consistent with the fact that non-adaptive JPEG methods tend to leave stronger statistical artifacts than adaptive approaches.
+In the current StegoRank comparison, Outguess represents this family and is very easy to detect in the evaluated setting. This should not be generalized automatically to every older JPEG tool, but it is consistent with the fact that non-adaptive JPEG methods tend to leave stronger statistical artifacts than adaptive approaches.
 
 ## Limitations
 
@@ -41,7 +41,7 @@ This is a broad family rather than a single algorithm. Detectability depends on 
 
 ## Related resources
 
-- [StegoWatch main article](/stegowatch-en/)
+- [StegoRank main article](/stegorank-en/)
 - [StegoLab](/stegolab-en/)
 - [Aletheia](/stego/aletheia/v03/intro-en/)
 - [Steganography tools list](/stego/intro/tools-en/)

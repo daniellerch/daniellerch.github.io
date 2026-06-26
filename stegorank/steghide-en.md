@@ -3,8 +3,8 @@ layout: page
 title: Steghide
 subtitle: ""
 noindex: false
-meta-title: "Steghide — StegoWatch"
-meta-description: "StegoWatch note on Steghide JPEG steganography"
+meta-title: "Steghide — StegoRank"
+meta-description: "StegoRank note on Steghide JPEG steganography"
 lang-suffix: "-en"
 comments: false
 ---
@@ -16,7 +16,7 @@ comments: false
     }
 </style>
 
-Steghide is a practical steganography tool that supports JPEG images and has been widely used by end users. In StegoWatch it is separated from generic JPEG-domain families because it behaves as a recognizable tool/method combination in practical comparisons.
+Steghide is a practical steganography tool that supports JPEG images and has been widely used by end users. In StegoRank it is separated from generic JPEG-domain families because it behaves as a recognizable tool/method combination in practical comparisons.
 
 ## Use in tools
 
@@ -28,7 +28,7 @@ In the evaluated setting, Steghide is less detectable than Outguess and F5, but 
 
 ## Related resources
 
-- [StegoWatch main article](/stegowatch-en/)
+- [StegoRank main article](/stegorank-en/)
 - [StegoLab](/stegolab-en/)
 - [Aletheia](/stego/aletheia/v03/intro-en/)
 - [Steganography tools list](/stego/intro/tools-en/)

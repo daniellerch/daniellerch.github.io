@@ -3,8 +3,8 @@ layout: page
 title: HILL
 subtitle: ""
 noindex: false
-meta-title: "HILL — StegoWatch"
-meta-description: "StegoWatch note on HILL adaptive spatial-domain steganography"
+meta-title: "HILL — StegoRank"
+meta-description: "StegoRank note on HILL adaptive spatial-domain steganography"
 lang-suffix: "-en"
 comments: false
 ---
@@ -22,7 +22,7 @@ HILL is an adaptive spatial-domain steganography method for uncompressed images.
 
 HILL was used by HStego versions prior to 0.4 for uncompressed images. This should be read as a method implemented by that tool version, not as a separate algorithm named “HStego 0.3”.
 
-For detectability experiments, StegoWatch also relies on the [HILL simulator included in Aletheia](/stego/aletheia/v03/intro-en/#simulators). A separate [HILL research implementation is available in StegoLab](https://github.com/daniellerch/stegolab/tree/master/HILL).
+For detectability experiments, StegoRank also relies on the [HILL simulator included in Aletheia](/stego/aletheia/v03/intro-en/#simulators). A separate [HILL research implementation is available in StegoLab](https://github.com/daniellerch/stegolab/tree/master/HILL).
 
 ## Detectability results
 
@@ -36,7 +36,7 @@ Simulator-based results should be interpreted as method-level results. Embedding
 
 ## Related resources
 
-- [StegoWatch main article](/stegowatch-en/)
+- [StegoRank main article](/stegorank-en/)
 - [StegoLab](/stegolab-en/)
 - [Aletheia](/stego/aletheia/v03/intro-en/)
 - [Steganography tools list](/stego/intro/tools-en/)

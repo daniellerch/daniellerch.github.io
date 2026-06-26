@@ -3,8 +3,8 @@ layout: page
 title: SI-HILL
 subtitle: ""
 noindex: false
-meta-title: "SI-HILL — StegoWatch"
-meta-description: "StegoWatch note on side-informed HILL for Stable Diffusion generated images"
+meta-title: "SI-HILL — StegoRank"
+meta-description: "StegoRank note on side-informed HILL for Stable Diffusion generated images"
 lang-suffix: "-en"
 comments: false
 ---
@@ -20,7 +20,7 @@ SI-HILL is a side-informed variant of HILL for spatial-domain steganography in u
 
 ## Use in tools
 
-SI-HILL is currently represented in StegoWatch as an experimental research method, not as an end-user tool. It extends the standard HILL cost function by reducing the cost of modifications whose direction is consistent with the quantization residual of the generated image.
+SI-HILL is currently represented in StegoRank as an experimental research method, not as an end-user tool. It extends the standard HILL cost function by reducing the cost of modifications whose direction is consistent with the quantization residual of the generated image.
 
 ## Detectability results
 
@@ -34,7 +34,7 @@ The result should be interpreted in the context of the evaluated protocol: Stabl
 
 ## Related resources
 
-- [StegoWatch main article](/stegowatch-en/)
+- [StegoRank main article](/stegorank-en/)
 - [StegoLab](/stegolab-en/)
 - [Aletheia](/stego/aletheia/v03/intro-en/)
 - [Steganography tools list](/stego/intro/tools-en/)

@@ -3,8 +3,8 @@ layout: page
 title: F5
 subtitle: ""
 noindex: false
-meta-title: "F5 — StegoWatch"
-meta-description: "Ficha de StegoWatch sobre esteganografía JPEG con F5"
+meta-title: "F5 — StegoRank"
+meta-description: "Ficha de StegoRank sobre esteganografía JPEG con F5"
 lang-suffix: "-es"
 comments: false
 ---
@@ -24,7 +24,7 @@ F5 se trata aquí como una familia técnica propia. Cuando una herramienta imple
 
 ## Resultados de detectabilidad
 
-En la comparativa actual de StegoWatch, F5 debe interpretarse dentro del grupo de métodos JPEG clásicos. Su detectabilidad se espera más alta que la de métodos JPEG adaptativos como J-UNIWARD en condiciones comparables.
+En la comparativa actual de StegoRank, F5 debe interpretarse dentro del grupo de métodos JPEG clásicos. Su detectabilidad se espera más alta que la de métodos JPEG adaptativos como J-UNIWARD en condiciones comparables.
 
 ## Paper original
 
@@ -32,7 +32,7 @@ En la comparativa actual de StegoWatch, F5 debe interpretarse dentro del grupo d
 
 ## Recursos relacionados
 
-- [Artículo principal de StegoWatch](/stegowatch-es/)
+- [Artículo principal de StegoRank](/stegorank-es/)
 - [StegoLab](/stegolab-es/)
 - [Aletheia](/stego/aletheia/v03/intro-es/)
 - [Listado de herramientas de esteganografía](/stego/intro/tools-es/)

@@ -3,8 +3,8 @@ layout: page
 title: Outguess y métodos JPEG clásicos
 subtitle: ""
 noindex: false
-meta-title: "Outguess y métodos JPEG clásicos — StegoWatch"
-meta-description: "Ficha de StegoWatch sobre Outguess, JSteg, JPHS y herramientas clásicas de esteganografía en dominio JPEG"
+meta-title: "Outguess y métodos JPEG clásicos — StegoRank"
+meta-description: "Ficha de StegoRank sobre Outguess, JSteg, JPHS y herramientas clásicas de esteganografía en dominio JPEG"
 lang-suffix: "-es"
 comments: false
 ---
@@ -16,7 +16,7 @@ comments: false
     }
 </style>
 
-Esta familia agrupa herramientas clásicas de esteganografía en dominio JPEG que ocultan información modificando elementos de la representación JPEG, normalmente coeficientes DCT. En la tabla actual de StegoWatch, esta entrada está representada principalmente por Outguess y herramientas antiguas relacionadas.
+Esta familia agrupa herramientas clásicas de esteganografía en dominio JPEG que ocultan información modificando elementos de la representación JPEG, normalmente coeficientes DCT. En la tabla actual de StegoRank, esta entrada está representada principalmente por Outguess y herramientas antiguas relacionadas.
 
 ## Por qué importa
 
@@ -33,7 +33,7 @@ Herramientas asociadas a esta familia:
 
 ## Resultados de detectabilidad
 
-En la comparativa actual de StegoWatch, Outguess representa esta familia y resulta muy fácil de detectar en el escenario evaluado. Esto no debe generalizarse automáticamente a todas las herramientas JPEG clásicas, pero es coherente con el hecho de que los métodos JPEG no adaptativos tienden a dejar artefactos estadísticos más fuertes que los enfoques adaptativos.
+En la comparativa actual de StegoRank, Outguess representa esta familia y resulta muy fácil de detectar en el escenario evaluado. Esto no debe generalizarse automáticamente a todas las herramientas JPEG clásicas, pero es coherente con el hecho de que los métodos JPEG no adaptativos tienden a dejar artefactos estadísticos más fuertes que los enfoques adaptativos.
 
 ## Limitaciones
 
@@ -41,7 +41,7 @@ Esta es una familia amplia, no un único algoritmo. La detectabilidad depende de
 
 ## Recursos relacionados
 
-- [Artículo principal de StegoWatch](/stegowatch-es/)
+- [Artículo principal de StegoRank](/stegorank-es/)
 - [StegoLab](/stegolab-es/)
 - [Aletheia](/stego/aletheia/v03/intro-es/)
 - [Listado de herramientas de esteganografía](/stego/intro/tools-es/)

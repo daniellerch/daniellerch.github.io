@@ -3,8 +3,8 @@ layout: page
 title: SI-HILL
 subtitle: ""
 noindex: false
-meta-title: "SI-HILL — StegoWatch"
-meta-description: "Ficha de StegoWatch sobre SI-HILL para imágenes generadas con Stable Diffusion"
+meta-title: "SI-HILL — StegoRank"
+meta-description: "Ficha de StegoRank sobre SI-HILL para imágenes generadas con Stable Diffusion"
 lang-suffix: "-es"
 comments: false
 ---
@@ -20,7 +20,7 @@ SI-HILL es una variante side-informed de HILL para esteganografía en dominio es
 
 ## Uso en herramientas
 
-SI-HILL aparece en StegoWatch como un método experimental de investigación, no como una herramienta de usuario final. Extiende la función de costes HILL reduciendo el coste de las modificaciones cuya dirección es coherente con el residuo de cuantización de la imagen generada.
+SI-HILL aparece en StegoRank como un método experimental de investigación, no como una herramienta de usuario final. Extiende la función de costes HILL reduciendo el coste de las modificaciones cuya dirección es coherente con el residuo de cuantización de la imagen generada.
 
 ## Resultados de detectabilidad
 
@@ -34,7 +34,7 @@ El resultado debe interpretarse dentro del protocolo evaluado: Stable Diffusion 
 
 ## Recursos relacionados
 
-- [Artículo principal de StegoWatch](/stegowatch-es/)
+- [Artículo principal de StegoRank](/stegorank-es/)
 - [StegoLab](/stegolab-es/)
 - [Aletheia](/stego/aletheia/v03/intro-es/)
 - [Listado de herramientas de esteganografía](/stego/intro/tools-es/)

@@ -3,8 +3,8 @@ layout: page
 title: Esteganografía generativa
 subtitle: ""
 noindex: false
-meta-title: "Esteganografía generativa — StegoWatch"
-meta-description: "Ficha StegoWatch sobre esteganografía generativa, SteganoGAN y métodos basados en Stable Diffusion"
+meta-title: "Esteganografía generativa — StegoRank"
+meta-description: "Ficha StegoRank sobre esteganografía generativa, SteganoGAN y métodos basados en Stable Diffusion"
 lang-suffix: "-es"
 comments: false
 ---
@@ -16,7 +16,7 @@ comments: false
     }
 </style>
 
-La esteganografía generativa utiliza modelos generativos para crear imágenes que contienen información oculta. En StegoWatch, esta familia incluye tanto enfoques anteriores basados en GAN, como SteganoGAN, como métodos más recientes basados en modelos de difusión.
+La esteganografía generativa utiliza modelos generativos para crear imágenes que contienen información oculta. En StegoRank, esta familia incluye tanto enfoques anteriores basados en GAN, como SteganoGAN, como métodos más recientes basados en modelos de difusión.
 
 ## Por qué importa
 
@@ -48,7 +48,7 @@ Los resultados no responden por completo a la cuestión más general de detectar
 
 ## Recursos relacionados
 
-- [Artículo principal de StegoWatch](/stegowatch-es/)
+- [Artículo principal de StegoRank](/stegorank-es/)
 - [StegoLab](/stegolab-es/)
 - [Aletheia](/stego/aletheia/v03/intro-es/)
 - [Listado de herramientas de esteganografía](/stego/intro/tools-es/)

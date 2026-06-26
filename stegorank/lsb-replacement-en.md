@@ -3,8 +3,8 @@ layout: page
 title: LSB Replacement
 subtitle: ""
 noindex: false
-meta-title: "LSB Replacement — StegoWatch"
-meta-description: "StegoWatch note on LSB replacement steganography, tools, detectability, and limitations"
+meta-title: "LSB Replacement — StegoRank"
+meta-description: "StegoRank note on LSB replacement steganography, tools, detectability, and limitations"
 lang-suffix: "-en"
 comments: false
 ---
@@ -35,7 +35,7 @@ Tools associated with this family include:
 
 ## Detectability results
 
-In the current StegoWatch comparison, LSB replacement is represented in the uncompressed-image comparison. The results include both SPA and machine-learning-based detection.
+In the current StegoRank comparison, LSB replacement is represented in the uncompressed-image comparison. The results include both SPA and machine-learning-based detection.
 
 The important point is not only that LSB replacement can be detected, but that it can be attacked with structural methods that are less dependent on training data than deep-learning detectors.
 
@@ -45,7 +45,7 @@ The available comparison depends on the evaluated image collection, payloads, im
 
 ## Related resources
 
-- [StegoWatch main article](/stegowatch-en/)
+- [StegoRank main article](/stegorank-en/)
 - [StegoLab](/stegolab-en/)
 - [Aletheia](/stego/aletheia/v03/intro-en/)
 - [Steganography tools list](/stego/intro/tools-en/)

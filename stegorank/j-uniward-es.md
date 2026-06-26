@@ -3,8 +3,8 @@ layout: page
 title: J-UNIWARD
 subtitle: ""
 noindex: false
-meta-title: "J-UNIWARD — StegoWatch"
-meta-description: "Ficha de StegoWatch sobre esteganografía JPEG con J-UNIWARD"
+meta-title: "J-UNIWARD — StegoRank"
+meta-description: "Ficha de StegoRank sobre esteganografía JPEG con J-UNIWARD"
 lang-suffix: "-es"
 comments: false
 ---
@@ -22,7 +22,7 @@ J-UNIWARD es un método de esteganografía adaptativa en dominio JPEG. Asigna co
 
 J-UNIWARD fue usado por las versiones de HStego anteriores a la 0.4 para imágenes JPEG. Esto debe leerse como un método implementado por esa versión de la herramienta, no como un algoritmo independiente llamado “HStego 0.3”.
 
-Para los experimentos de detectabilidad, StegoWatch también se apoya en el [simulador de J-UNIWARD incluido en Aletheia](/stego/aletheia/v03/intro-es/#simulators). También existe una [implementación de investigación de J-UNIWARD en StegoLab](https://github.com/daniellerch/stegolab/tree/master/J-UNIWARD).
+Para los experimentos de detectabilidad, StegoRank también se apoya en el [simulador de J-UNIWARD incluido en Aletheia](/stego/aletheia/v03/intro-es/#simulators). También existe una [implementación de investigación de J-UNIWARD en StegoLab](https://github.com/daniellerch/stegolab/tree/master/J-UNIWARD).
 
 ## Resultados de detectabilidad
 
@@ -36,7 +36,7 @@ Los resultados basados en simuladores deben interpretarse como resultados a nive
 
 ## Recursos relacionados
 
-- [Artículo principal de StegoWatch](/stegowatch-es/)
+- [Artículo principal de StegoRank](/stegorank-es/)
 - [StegoLab](/stegolab-es/)
 - [Aletheia](/stego/aletheia/v03/intro-es/)
 - [Listado de herramientas de esteganografía](/stego/intro/tools-es/)

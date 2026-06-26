@@ -3,8 +3,8 @@ layout: page
 title: J-UNIWARD + Cost Polarization
 subtitle: ""
 noindex: false
-meta-title: "J-UNIWARD + Cost Polarization — StegoWatch"
-meta-description: "Ficha de StegoWatch sobre J-UNIWARD con polarización de costes para esteganografía JPEG"
+meta-title: "J-UNIWARD + Cost Polarization — StegoRank"
+meta-description: "Ficha de StegoRank sobre J-UNIWARD con polarización de costes para esteganografía JPEG"
 lang-suffix: "-es"
 comments: false
 ---
@@ -36,7 +36,7 @@ Los resultados basados en implementaciones de investigación o simuladores deben
 
 ## Recursos relacionados
 
-- [Artículo principal de StegoWatch](/stegowatch-es/)
+- [Artículo principal de StegoRank](/stegorank-es/)
 - [StegoLab](/stegolab-es/)
 - [Aletheia](/stego/aletheia/v03/intro-es/)
 - [Listado de herramientas de esteganografía](/stego/intro/tools-es/)

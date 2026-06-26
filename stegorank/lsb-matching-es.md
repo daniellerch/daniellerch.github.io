@@ -3,8 +3,8 @@ layout: page
 title: LSB Matching
 subtitle: ""
 noindex: false
-meta-title: "LSB Matching — StegoWatch"
-meta-description: "Ficha StegoWatch sobre LSB matching, detectabilidad y limitaciones"
+meta-title: "LSB Matching — StegoRank"
+meta-description: "Ficha StegoRank sobre LSB matching, detectabilidad y limitaciones"
 lang-suffix: "-es"
 comments: false
 ---
@@ -30,7 +30,7 @@ LSB matching es menos frecuente en herramientas de usuario final que LSB replace
 
 ## Resultados de detectabilidad
 
-En la comparativa actual de StegoWatch, LSB matching aparece en la comparativa de imágenes sin comprimir. Obtiene mejores resultados que LSB replacement en varios escenarios de baja carga, pero no es indetectable.
+En la comparativa actual de StegoRank, LSB matching aparece en la comparativa de imágenes sin comprimir. Obtiene mejores resultados que LSB replacement en varios escenarios de baja carga, pero no es indetectable.
 
 Su detectabilidad depende de la carga, la fuente de imágenes, el detector y la implementación concreta.
 
@@ -40,7 +40,7 @@ La comparativa actual debe interpretarse como una comparación bajo unas condici
 
 ## Recursos relacionados
 
-- [Artículo principal de StegoWatch](/stegowatch-es/)
+- [Artículo principal de StegoRank](/stegorank-es/)
 - [StegoLab](/stegolab-es/)
 - [Aletheia](/stego/aletheia/v03/intro-es/)
 - [Listado de herramientas de esteganografía](/stego/intro/tools-es/)

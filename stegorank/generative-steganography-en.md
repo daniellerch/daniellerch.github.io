@@ -3,8 +3,8 @@ layout: page
 title: Generative Steganography
 subtitle: ""
 noindex: false
-meta-title: "Generative Steganography — StegoWatch"
-meta-description: "StegoWatch note on generative image steganography, SteganoGAN, and Stable Diffusion based methods"
+meta-title: "Generative Steganography — StegoRank"
+meta-description: "StegoRank note on generative image steganography, SteganoGAN, and Stable Diffusion based methods"
 lang-suffix: "-en"
 comments: false
 ---
@@ -16,7 +16,7 @@ comments: false
     }
 </style>
 
-Generative steganography uses generative models to create images that carry hidden information. In StegoWatch, this family includes both earlier GAN-based approaches, such as SteganoGAN, and more recent methods based on diffusion models.
+Generative steganography uses generative models to create images that carry hidden information. In StegoRank, this family includes both earlier GAN-based approaches, such as SteganoGAN, and more recent methods based on diffusion models.
 
 ## Why it matters
 
@@ -48,7 +48,7 @@ The results do not fully answer the broader question of detecting hidden message
 
 ## Related resources
 
-- [StegoWatch main article](/stegowatch-en/)
+- [StegoRank main article](/stegorank-en/)
 - [StegoLab](/stegolab-en/)
 - [Aletheia](/stego/aletheia/v03/intro-en/)
 - [Steganography tools list](/stego/intro/tools-en/)

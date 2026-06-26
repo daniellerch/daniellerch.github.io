@@ -3,8 +3,8 @@ layout: page
 title: S-UNIWARD
 subtitle: ""
 noindex: false
-meta-title: "S-UNIWARD — StegoWatch"
-meta-description: "StegoWatch note on S-UNIWARD adaptive spatial-domain steganography"
+meta-title: "S-UNIWARD — StegoRank"
+meta-description: "StegoRank note on S-UNIWARD adaptive spatial-domain steganography"
 lang-suffix: "-en"
 comments: false
 ---
@@ -22,7 +22,7 @@ S-UNIWARD is an adaptive spatial-domain steganography method for uncompressed im
 
 S-UNIWARD is used by HStego 0.4 for uncompressed images. This should be read as a method implemented by that tool version, not as a separate algorithm named “HStego 0.4”.
 
-For detectability experiments, StegoWatch also relies on the [S-UNIWARD simulator included in Aletheia](/stego/aletheia/v03/intro-en/#simulators). A separate [S-UNIWARD research implementation is available in StegoLab](https://github.com/daniellerch/stegolab/tree/master/S-UNIWARD).
+For detectability experiments, StegoRank also relies on the [S-UNIWARD simulator included in Aletheia](/stego/aletheia/v03/intro-en/#simulators). A separate [S-UNIWARD research implementation is available in StegoLab](https://github.com/daniellerch/stegolab/tree/master/S-UNIWARD).
 
 ## Detectability results
 
@@ -36,7 +36,7 @@ Simulator-based results should be interpreted as method-level results. Embedding
 
 ## Related resources
 
-- [StegoWatch main article](/stegowatch-en/)
+- [StegoRank main article](/stegorank-en/)
 - [StegoLab](/stegolab-en/)
 - [Aletheia](/stego/aletheia/v03/intro-en/)
 - [Steganography tools list](/stego/intro/tools-en/)

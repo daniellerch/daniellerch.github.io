@@ -3,8 +3,8 @@ layout: page
 title: Métodos adaptativos en dominio espacial
 subtitle: ""
 noindex: false
-meta-title: "Métodos adaptativos en dominio espacial — StegoWatch"
-meta-description: "Ficha StegoWatch sobre métodos adaptativos de esteganografía en imágenes sin comprimir"
+meta-title: "Métodos adaptativos en dominio espacial — StegoRank"
+meta-description: "Ficha StegoRank sobre métodos adaptativos de esteganografía en imágenes sin comprimir"
 lang-suffix: "-es"
 comments: false
 ---
@@ -26,7 +26,7 @@ Esta familia incluye métodos de investigación e implementaciones prácticas de
 
 ## Herramientas e implementaciones típicas
 
-La comparativa actual de StegoWatch relaciona estos métodos con versiones de HStego, pero los resultados de detectabilidad a nivel de método pueden usar simuladores de Aletheia en lugar de herramientas completas de usuario final.
+La comparativa actual de StegoRank relaciona estos métodos con versiones de HStego, pero los resultados de detectabilidad a nivel de método pueden usar simuladores de Aletheia en lugar de herramientas completas de usuario final.
 
 Las implementaciones de investigación relacionadas también pueden aparecer en StegoLab, pero deben tratarse como métodos o código de investigación, no necesariamente como herramientas de usuario final.
 
@@ -47,7 +47,7 @@ La comparativa actual está ligada a versiones concretas de HStego, cargas, dete
 
 ## Recursos relacionados
 
-- [Artículo principal de StegoWatch](/stegowatch-es/)
+- [Artículo principal de StegoRank](/stegorank-es/)
 - [StegoLab](/stegolab-es/)
 - [Aletheia](/stego/aletheia/v03/intro-es/)
 - [Listado de herramientas de esteganografía](/stego/intro/tools-es/)

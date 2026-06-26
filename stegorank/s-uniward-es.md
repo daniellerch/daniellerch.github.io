@@ -3,8 +3,8 @@ layout: page
 title: S-UNIWARD
 subtitle: ""
 noindex: false
-meta-title: "S-UNIWARD — StegoWatch"
-meta-description: "Ficha de StegoWatch sobre esteganografía adaptativa S-UNIWARD en dominio espacial"
+meta-title: "S-UNIWARD — StegoRank"
+meta-description: "Ficha de StegoRank sobre esteganografía adaptativa S-UNIWARD en dominio espacial"
 lang-suffix: "-es"
 comments: false
 ---
@@ -22,7 +22,7 @@ S-UNIWARD es un método de esteganografía adaptativa en dominio espacial para i
 
 S-UNIWARD es usado por HStego 0.4 para imágenes sin comprimir. Esto debe leerse como un método implementado por esa versión de la herramienta, no como un algoritmo independiente llamado “HStego 0.4”.
 
-Para los experimentos de detectabilidad, StegoWatch también se apoya en el [simulador de S-UNIWARD incluido en Aletheia](/stego/aletheia/v03/intro-es/#simulators). También existe una [implementación de investigación de S-UNIWARD en StegoLab](https://github.com/daniellerch/stegolab/tree/master/S-UNIWARD).
+Para los experimentos de detectabilidad, StegoRank también se apoya en el [simulador de S-UNIWARD incluido en Aletheia](/stego/aletheia/v03/intro-es/#simulators). También existe una [implementación de investigación de S-UNIWARD en StegoLab](https://github.com/daniellerch/stegolab/tree/master/S-UNIWARD).
 
 ## Resultados de detectabilidad
 
@@ -36,7 +36,7 @@ Los resultados basados en simuladores deben interpretarse como resultados a nive
 
 ## Recursos relacionados
 
-- [Artículo principal de StegoWatch](/stegowatch-es/)
+- [Artículo principal de StegoRank](/stegorank-es/)
 - [StegoLab](/stegolab-es/)
 - [Aletheia](/stego/aletheia/v03/intro-es/)
 - [Listado de herramientas de esteganografía](/stego/intro/tools-es/)

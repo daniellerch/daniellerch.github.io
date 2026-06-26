@@ -3,8 +3,8 @@ layout: page
 title: J-UNIWARD
 subtitle: ""
 noindex: false
-meta-title: "J-UNIWARD — StegoWatch"
-meta-description: "StegoWatch note on J-UNIWARD JPEG steganography"
+meta-title: "J-UNIWARD — StegoRank"
+meta-description: "StegoRank note on J-UNIWARD JPEG steganography"
 lang-suffix: "-en"
 comments: false
 ---
@@ -22,7 +22,7 @@ J-UNIWARD is an adaptive JPEG-domain steganography method. It assigns costs to c
 
 J-UNIWARD was used by HStego versions prior to 0.4 for JPEG images. This should be read as a method implemented by that tool version, not as a separate algorithm named “HStego 0.3”.
 
-For detectability experiments, StegoWatch also relies on the [J-UNIWARD simulator included in Aletheia](/stego/aletheia/v03/intro-en/#simulators). A separate [J-UNIWARD research implementation is available in StegoLab](https://github.com/daniellerch/stegolab/tree/master/J-UNIWARD).
+For detectability experiments, StegoRank also relies on the [J-UNIWARD simulator included in Aletheia](/stego/aletheia/v03/intro-en/#simulators). A separate [J-UNIWARD research implementation is available in StegoLab](https://github.com/daniellerch/stegolab/tree/master/J-UNIWARD).
 
 ## Detectability results
 
@@ -36,7 +36,7 @@ Simulator-based results should be interpreted as method-level results. Embedding
 
 ## Related resources
 
-- [StegoWatch main article](/stegowatch-en/)
+- [StegoRank main article](/stegorank-en/)
 - [StegoLab](/stegolab-en/)
 - [Aletheia](/stego/aletheia/v03/intro-en/)
 - [Steganography tools list](/stego/intro/tools-en/)

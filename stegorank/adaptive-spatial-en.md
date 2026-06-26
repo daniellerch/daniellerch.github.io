@@ -3,8 +3,8 @@ layout: page
 title: Adaptive Spatial Methods
 subtitle: ""
 noindex: false
-meta-title: "Adaptive Spatial Methods — StegoWatch"
-meta-description: "StegoWatch note on adaptive spatial-domain image steganography methods"
+meta-title: "Adaptive Spatial Methods — StegoRank"
+meta-description: "StegoRank note on adaptive spatial-domain image steganography methods"
 lang-suffix: "-en"
 comments: false
 ---
@@ -26,7 +26,7 @@ This family includes research methods and practical implementations derived from
 
 ## Typical tools and implementations
 
-The current StegoWatch comparison relates these methods to HStego versions, but method-level detectability results may use Aletheia simulators rather than complete end-user tools.
+The current StegoRank comparison relates these methods to HStego versions, but method-level detectability results may use Aletheia simulators rather than complete end-user tools.
 
 Related research implementations can also appear in StegoLab, but they should be treated as methods or research code rather than end-user tools.
 
@@ -47,7 +47,7 @@ The current comparison is tied to specific HStego versions, payloads, detectors,
 
 ## Related resources
 
-- [StegoWatch main article](/stegowatch-en/)
+- [StegoRank main article](/stegorank-en/)
 - [StegoLab](/stegolab-en/)
 - [Aletheia](/stego/aletheia/v03/intro-en/)
 - [Steganography tools list](/stego/intro/tools-en/)
