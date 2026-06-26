@@ -36,7 +36,7 @@ ax1.grid(True, which="both", axis="y", linestyle="--", linewidth=0.5)
 ax1.text(
     0.5,
     0.5,
-    "Stable Diffusion experiment",
+    "Aletheia Steganalysis Tool",
     transform=ax1.transAxes,
     ha="center",
     va="center",
