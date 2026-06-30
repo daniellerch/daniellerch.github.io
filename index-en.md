@@ -31,20 +31,20 @@ lang-suffix: "-en"
   <h2 id="explore">Explore</h2>
 
   <article class="home-work-item">
-    <h3>Aletheia</h3>
-    <p>Open-source toolbox for image steganalysis.</p>
-    <a href="https://github.com/daniellerch/aletheia">View Aletheia <span aria-hidden="true">→</span></a>
+    <h3>StegoRank</h3>
+    <p>Tracks the current state of image steganography techniques and tools, with a particular focus on how detectable they are under practical steganalysis.</p>
+    <a href="/stegorank-en/">Explore StegoRank <span aria-hidden="true">→</span></a>
   </article>
 
   <article class="home-work-item">
     <h3>StegoLab</h3>
-    <p>Research implementations of steganography, steganalysis and watermarking methods.</p>
+    <p>Research implementations and practical tools for steganography, steganalysis and watermarking. It includes <a href="https://github.com/daniellerch/aletheia">Aletheia</a>, an open source tool for detecting hidden messages in images, and <a href="https://github.com/daniellerch/hstego">HStego</a>, a tool for hiding data in bitmap and JPEG images.</p>
     <a href="/stegolab-en/">Explore StegoLab <span aria-hidden="true">→</span></a>
   </article>
 
   <article class="home-work-item">
     <h3>Publications</h3>
-    <p>Research papers and related materials.</p>
+    <p>My research papers, preprints and related materials on steganography, steganalysis, watermarking and information security.</p>
     <a href="/papers-en/">View publications <span aria-hidden="true">→</span></a>
   </article>
 </section>

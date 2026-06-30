@@ -1,6 +1,6 @@
 # --- General options --- #
 
-disablechache: true
+disablecache: true
 
 # Name of website
 title: "daniellerch.me"

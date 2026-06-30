@@ -31,20 +31,20 @@ lang-suffix: "-es"
   <h2 id="explore">Explora</h2>
 
   <article class="home-work-item">
-    <h3>Aletheia</h3>
-    <p>Herramienta de código abierto para el estegoanálisis de imágenes.</p>
-    <a href="https://github.com/daniellerch/aletheia">Ver Aletheia <span aria-hidden="true">→</span></a>
+    <h3>StegoRank</h3>
+    <p>Seguimiento del estado actual de las técnicas y herramientas de esteganografía en imágenes, con especial atención a cómo de detectables son frente al estegoanálisis práctico.</p>
+    <a href="/stegorank-es/">Explorar StegoRank <span aria-hidden="true">→</span></a>
   </article>
 
   <article class="home-work-item">
     <h3>StegoLab</h3>
-    <p>Implementaciones de investigación sobre esteganografía, estegoanálisis y <i>watermarking</i>.</p>
+    <p>Implementaciones de investigación y herramientas prácticas para esteganografía, estegoanálisis y <i>watermarking</i>. Incluye <a href="https://github.com/daniellerch/aletheia">Aletheia</a>, una herramienta libre para detectar mensajes ocultos en imágenes, y <a href="https://github.com/daniellerch/hstego">HStego</a>, una herramienta para ocultar información en imágenes de mapa de bits y JPEG.</p>
     <a href="/stegolab-es/">Explorar StegoLab <span aria-hidden="true">→</span></a>
   </article>
 
   <article class="home-work-item">
     <h3>Publications</h3>
-    <p>Artículos científicos y materiales relacionados.</p>
+    <p>Mis artículos científicos, preprints y materiales relacionados con investigación en esteganografía, estegoanálisis, <i>watermarking</i> y seguridad de la información.</p>
     <a href="/papers-es/">Ver publicaciones <span aria-hidden="true">→</span></a>
   </article>
 </section>

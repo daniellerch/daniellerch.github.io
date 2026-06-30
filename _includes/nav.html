@@ -32,7 +32,9 @@
                     </div>
                   </li>
                 {% else %}
-                  <li><a href="{{ link[1] | relative_url | replace: "-en", "" | replace: "-es", "" }}{{ page.lang-suffix}}/">{{ link[0] }}</a></li>
+                  {%- assign nav_base = link[1] | relative_url | replace: "-en", "" | replace: "-es", "" -%}
+                  {%- assign nav_url = nav_base | append: page.lang-suffix | append: "/" -%}
+                  <li{% if page.url == nav_url or page.url contains nav_base %} class="active"{% endif %}><a href="{{ nav_url }}">{{ link[0] }}</a></li>
                 {%- endif -%}
               {%- endfor -%}
 

@@ -193,7 +193,7 @@ h3 {
   margin: 0 0 8px;
 }
 
-.home-work-item a {
+.home-work-item > a {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 15px;
   font-weight: 600;
@@ -282,6 +282,19 @@ img {
   background-color: {{ site.navbar-col }};
   color: {{ site.hover-col }};
   /*text-decoration: underline;*/
+}
+
+.navbar-custom .nav li.active > a,
+.navbar-custom .nav li.active > a:hover,
+.navbar-custom .nav li.active > a:focus {
+  background-image: none;
+  background-color: {{ site.navbar-col }};
+  box-shadow: none;
+  color: {{ site.hover-col }};
+  text-decoration: underline;
+  text-decoration-color: {{ site.link-col }};
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
 }
 
 
@@ -1187,9 +1200,6 @@ input:checked + .checkboxSlider:before {
 
 
 /* --- End Cookie consent style --- */
-
-
-
 
 
 
