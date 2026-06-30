@@ -49,6 +49,9 @@ hr.small {
 }
 
 
+
+
+
 h1 {
   /*font-size: 6vw;*/
   font-size: 30px;
@@ -197,6 +200,64 @@ h3 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 15px;
   font-weight: 600;
+}
+
+.about-profile h2 {
+  margin-top: 46px;
+}
+
+.about-profile h2:first-child {
+  margin-top: 0;
+}
+
+.about-links {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  list-style: none;
+  margin: 28px 0 0;
+  padding: 0;
+}
+
+.about-links li {
+  border-top: 1px solid #e5e5e5;
+}
+
+.about-links li:last-child {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.about-links a {
+  align-items: baseline;
+  display: flex;
+  gap: 18px;
+  justify-content: space-between;
+  padding: 13px 0;
+  text-decoration: none;
+}
+
+.about-links span {
+  color: #777;
+  font-size: 14px;
+  min-width: 120px;
+}
+
+.about-links strong {
+  color: #333;
+  font-size: 15px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+  text-align: right;
+}
+
+@media only screen and (max-width: 520px) {
+  .about-links a {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .about-links strong {
+    text-align: left;
+  }
 }
 
 .hideme {
@@ -1200,6 +1261,4 @@ input:checked + .checkboxSlider:before {
 
 
 /* --- End Cookie consent style --- */
-
-
 

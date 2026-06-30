@@ -1,83 +1,47 @@
 ---
 layout: page
 title: "About"
-subtitle: "" 
+subtitle: ""
 noindex: false
 meta-title: "About Daniel Lerch Hostalot"
-meta-description: "Some information about Daniel Lerch Hostalot related to steganography"
+meta-description: "Professional profile of Daniel Lerch Hostalot, researcher in image steganography and steganalysis"
 lang-suffix: "-en"
 comments: false
 ---
 
-This site is dedicated to steganography and steganalysis. I use it to collect information related to my research and as a complement to the code that I publish on <a href='https://github.com/daniellerch'>GitHub</a>.
+<section class="about-profile" markdown="1">
 
-Here you can find tools and software libraries, such as <a href='https://github.com/daniellerch/aletheia'>Aletheia</a> and <a href='https://github.com/daniellerch/hstego'>HStego</a>, together with research code implementing techniques from different papers in <a href='/stegolab-en/'>StegoLab</a>. The site also includes articles, papers and resources related to steganography and steganalysis.
+## Biography
 
+I am **Daniel Lerch Hostalot**, a researcher working on image steganography and steganalysis. My work studies both sides of the problem: how information can be hidden in digital images, and how the traces left by that process can be detected.
 
+I started working in this field during my master's thesis in 2011 and continued this research during my PhD at the [Universitat Oberta de Catalunya](https://www.uoc.edu/en) (UOC), which I completed in 2017 with the thesis **Image Steganalysis and Steganography in the Spatial Domain**.
 
-My name is **Daniel Lerch** and I started doing research in steganography 
-and steganalysis during my master's thesis in 2011. 
-I continued my research during my 
-<a href='https://www.uoc.edu/en/research/doctoral-school/lines/network-information-technologies#information'>
-PhD</a>, which I finished in 2017 with the thesis 
-"**Image Steganalysis and Steganography in the Spatial Domain**".
+Since then, I have continued collaborating with the [KISON](https://www.uoc.edu/portal/en/in3/recerca/grups/kriptography_and_information) group at the UOC. I also work as a lecturer in [Data Hiding](https://apps.uoc.edu/PlaDocent/PlaDocent?Semestre=20261&SignatureCode=M1.878&Context=3&Locale=en) and supervise master's thesis projects related to information hiding, steganography and steganalysis.
 
+## Current Research
 
+My current research focuses on practical image steganalysis: methods and tools that can be used when the analyst does not know the embedding algorithm, the payload, or even the source of the images being examined.
 
-Since then I have continued researching in collaboration with the 
-<a href='https://www.uoc.edu/portal/en/in3/recerca/grups/kriptography_and_information'>
-KISON 
-</a> group 
-(K-ryptography and Information Security for Open Networks) 
-of the <a href="https://uoc.edu">Universitat Oberta de Catalunya</a> (UOC).
-I also work as a lecturer in <a href="https://apps.uoc.edu/PlaDocent/PlaDocent?Semestre=20261&SignatureCode=M1.878&Context=3&Locale=en">Data Hiding</a> at the UOC, and I have previously taught Cryptography.
-Currently, I supervise Data Hiding master's thesis projects in the 
-<a href="https://www.uoc.edu/es/estudios/masters/master-universitario-ciberseguridad-privacidad">University Master's Degree in Cybersecurity and Privacy</a>.
+This includes the evaluation of real steganography tools, the effect of *cover source mismatch*, single-image and actor-based scenarios, and the limits of what modern detectors can reliably conclude. I am also interested in adaptive steganography and in the new problems introduced by AI-generated images.
 
+## Tools and Resources
 
-You can contact me or find more information here:
+I maintain this website as an entry point to my publications, tools and technical notes. The two main resources are:
 
+- [StegoRank](/stegorank-en/): a view of the current state of image steganography techniques and tools, focused on practical detectability.
+- [StegoLab](/stegolab-en/): research implementations, tools and experimental code for steganography, steganalysis and watermarking.
 
-<div style="width:90%;position:relative;left:50px">
+Available tools include [Aletheia](https://github.com/daniellerch/aletheia), an open source tool for image steganalysis, and [HStego](https://github.com/daniellerch/hstego), a tool for hiding data in bitmap and JPEG images.
 
-   <a href="mailto:dlerch@gmail.com" style='color:#333' title="e-mail">
-      <span class="fa-stack fa-lg">
-         <i class="fa fa-circle fa-stack-2x"></i>
-         <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-      </span> &nbsp;
-      <span>E-mail: dlerch@gmail.com</span>
-   </a><br/>
+## Contact and Profiles
 
-   <a href="https://github.com/daniellerch" style='color:#333' title="GitHub">
-      <span class="fa-stack fa-lg">
-         <i class="fa fa-circle fa-stack-2x"></i>
-         <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-      </span>
-      <span> &nbsp; github.com/daniellerch</span>
-   </a><br/>
+<ul class="about-links">
+  <li><a href="mailto:dlerch@gmail.com"><span>E-mail</span><strong>dlerch@gmail.com</strong></a></li>
+  <li><a href="https://github.com/daniellerch"><span>GitHub</span><strong>github.com/daniellerch</strong></a></li>
+  <li><a href="https://scholar.google.es/citations?user=5ggVkxMAAAAJ&hl=en"><span>Google Scholar</span><strong>Academic profile</strong></a></li>
+  <li><a href="https://orcid.org/0000-0003-2602-672X"><span>ORCID</span><strong>0000-0003-2602-672X</strong></a></li>
+  <li><a href="https://linkedin.com/in/daniellerch"><span>LinkedIn</span><strong>linkedin.com/in/daniellerch</strong></a></li>
+</ul>
 
-   <a href="https://scholar.google.es/citations?user=5ggVkxMAAAAJ&hl" style='color:#333' title="Scholar">
-      <span class="fa-stack fa-lg">
-         <i class="fa fa-circle fa-stack-2x"></i>
-         <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
-      </span>
-      <span> &nbsp; Google Scholar</span>
-   </a><br/>
-
-   <a href="https://linkedin.com/in/daniellerch" style='color:#333' title="LinkedIn">
-      <span class="fa-stack fa-lg">
-         <i class="fa fa-circle fa-stack-2x"></i>
-         <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-      </span>
-      <span> &nbsp; LinkedIn</span>
-   </a><br/>
-
-   <a href="https://orcid.org/0000-0003-2602-672X" style='color:#333' title="ORCID">
-      <span class="fa-stack fa-lg">
-         <i class="fa fa-circle fa-stack-2x"></i>
-         <strong class="fa-stack-1x fa-inverse" style="font-family:Arial, sans-serif;font-size:0.7em;letter-spacing:-1px;">iD</strong>
-      </span>
-      <span> &nbsp; ORCID: 0000-0003-2602-672X</span>
-   </a><br/>
-
-</div>
+</section>

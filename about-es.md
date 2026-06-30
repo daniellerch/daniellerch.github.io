@@ -1,82 +1,47 @@
 ---
 layout: page
 title: "Acerca de"
-subtitle: "" 
+subtitle: ""
 noindex: false
 meta-title: "Sobre Daniel Lerch Hostalot"
-meta-description: "Información sobre Daniel Lerch Hostalot relacionada con la esteganografía"
+meta-description: "Perfil profesional de Daniel Lerch Hostalot, investigador en esteganografía y estegoanálisis de imágenes"
 lang-suffix: "-es"
 comments: false
 ---
 
-Esta página está dedicada a la esteganografía y al estegoanálisis. La uso para reunir información relacionada con mi investigación y como complemento del código que publico en <a href='https://github.com/daniellerch'>GitHub</a>.
+<section class="about-profile" markdown="1">
 
-Aquí puedes encontrar herramientas y librerías de software, como <a href='https://github.com/daniellerch/aletheia'>Aletheia</a> y <a href='https://github.com/daniellerch/hstego'>HStego</a>, junto con código de investigación que implementa técnicas de diferentes *papers* en <a href='/stegolab-es/'>StegoLab</a>. La web también incluye artículos, publicaciones y recursos relacionados con la esteganografía y el estegoanálisis.
+## Biografía
 
+Soy **Daniel Lerch Hostalot**, investigador en esteganografía y estegoanálisis de imágenes. Mi trabajo estudia las dos caras del problema: cómo ocultar información en imágenes digitales y cómo detectar las trazas que puede dejar ese proceso.
 
+Empecé a trabajar en este campo durante mi trabajo de máster en 2011 y continué posteriormente con el doctorado en la [Universitat Oberta de Catalunya](https://www.uoc.edu/es) (UOC), que finalicé en 2017 con la tesis **Esteganografía y estegoanálisis de imágenes en el dominio espacial**.
 
-Mi nombre es Daniel Lerch y empecé a investigar en esteganografía y 
-estegoanálisis durante mi trabajo de máster en 2011. Investigación que
-continué posteriormente durante mi 
-<a href='https://www.uoc.edu/en/research/doctoral-school/lines/network-information-technologies#information'>
-doctorado
-</a>, que finalicé en 2017 con la 
-tesis "**Esteganografía y estegoanalisis de imágenes en el dominio espacial**".
+Desde entonces colaboro con el grupo [KISON](https://www.uoc.edu/portal/en/in3/recerca/grups/kriptography_and_information) de la UOC. También soy profesor colaborador de [Técnicas de Ocultación de Datos](https://apps.uoc.edu/PlaDocent/PlaDocent?Semestre=20261&SignatureCode=M1.878&Context=3&Locale=es) y tutorizo trabajos de final de máster relacionados con ocultación de información, esteganografía y estegoanálisis.
 
-Desde entonces he continuado investigando en colaboración con el grupo 
-<a href='https://www.uoc.edu/portal/en/in3/recerca/grups/kriptography_and_information'>
-KISON
-</a>
-(K-ryptography and Information Security for Open Networks)
-de la <a href="https://uoc.edu">Universitat Oberta de Catalunya</a> (UOC).
-También soy profesor colaborador de <a href="https://apps.uoc.edu/PlaDocent/PlaDocent?Semestre=20261&SignatureCode=M1.878&Context=3&Locale=es">Técnicas de Ocultación de Datos</a> en la UOC, y anteriormente he impartido Criptografía.
-Actualmente tutorizo trabajos de final de máster sobre Técnicas de Ocultación de Datos en el 
-<a href="https://www.uoc.edu/es/estudios/masters/master-universitario-ciberseguridad-privacidad">Máster Universitario de Ciberseguridad y Privacidad</a>.
+## Investigación actual
 
+Mi investigación actual se centra en el estegoanálisis práctico de imágenes: métodos y herramientas que puedan utilizarse cuando el analista no conoce el algoritmo de incrustación, la carga oculta o incluso la fuente de las imágenes analizadas.
 
+Esto incluye la evaluación de herramientas reales de esteganografía, el efecto del *cover source mismatch*, escenarios de una sola imagen y de análisis por actor, y los límites de lo que los detectores modernos pueden concluir de forma fiable. También me interesan la esteganografía adaptativa y los nuevos problemas que introducen las imágenes generadas con IA.
 
-Puedes contactar conmigo o encontrar más información mediante:
+## Herramientas y recursos
 
-<div style="width:90%;position:relative;left:50px">
+Mantengo esta web como punto de entrada a mis publicaciones, herramientas y notas técnicas. Los dos recursos principales son:
 
-   <a href="mailto:dlerch@gmail.com" style='color:#333' title="e-mail">
-      <span class="fa-stack fa-lg">
-         <i class="fa fa-circle fa-stack-2x"></i>
-         <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-      </span> &nbsp;
-      <span>E-mail: dlerch@gmail.com</span>
-   </a><br/>
+- [StegoRank](/stegorank-es/): seguimiento del estado actual de técnicas y herramientas de esteganografía en imágenes, centrado en su detectabilidad práctica.
+- [StegoLab](/stegolab-es/): implementaciones de investigación, herramientas y código experimental sobre esteganografía, estegoanálisis y *watermarking*.
 
-   <a href="https://github.com/daniellerch" style='color:#333' title="GitHub">
-      <span class="fa-stack fa-lg">
-         <i class="fa fa-circle fa-stack-2x"></i>
-         <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-      </span>
-      <span> &nbsp; github.com/daniellerch</span>
-   </a><br/>
+Entre las herramientas disponibles están [Aletheia](https://github.com/daniellerch/aletheia), una herramienta libre para estegoanálisis de imágenes, y [HStego](https://github.com/daniellerch/hstego), una herramienta para ocultar información en imágenes de mapa de bits y JPEG.
 
-   <a href="https://scholar.google.es/citations?user=5ggVkxMAAAAJ&hl=es" style='color:#333' title="Scholar">
-      <span class="fa-stack fa-lg">
-         <i class="fa fa-circle fa-stack-2x"></i>
-         <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
-      </span>
-      <span> &nbsp; Google Scholar</span>
-   </a><br/>
+## Contacto y perfiles
 
-   <a href="https://linkedin.com/in/daniellerch" style='color:#333' title="LinkedIn">
-      <span class="fa-stack fa-lg">
-         <i class="fa fa-circle fa-stack-2x"></i>
-         <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-      </span>
-      <span> &nbsp; LinkedIn</span>
-   </a><br/>
+<ul class="about-links">
+  <li><a href="mailto:dlerch@gmail.com"><span>E-mail</span><strong>dlerch@gmail.com</strong></a></li>
+  <li><a href="https://github.com/daniellerch"><span>GitHub</span><strong>github.com/daniellerch</strong></a></li>
+  <li><a href="https://scholar.google.es/citations?user=5ggVkxMAAAAJ&hl=es"><span>Google Scholar</span><strong>Perfil académico</strong></a></li>
+  <li><a href="https://orcid.org/0000-0003-2602-672X"><span>ORCID</span><strong>0000-0003-2602-672X</strong></a></li>
+  <li><a href="https://linkedin.com/in/daniellerch"><span>LinkedIn</span><strong>linkedin.com/in/daniellerch</strong></a></li>
+</ul>
 
-   <a href="https://orcid.org/0000-0003-2602-672X" style='color:#333' title="ORCID">
-      <span class="fa-stack fa-lg">
-         <i class="fa fa-circle fa-stack-2x"></i>
-         <strong class="fa-stack-1x fa-inverse" style="font-family:Arial, sans-serif;font-size:0.7em;letter-spacing:-1px;">iD</strong>
-      </span>
-      <span> &nbsp; ORCID: 0000-0003-2602-672X</span>
-   </a><br/>
-
-</div>
+</section>
