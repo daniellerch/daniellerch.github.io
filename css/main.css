@@ -260,6 +260,110 @@ h3 {
   }
 }
 
+.publications > p:first-child {
+  color: #555;
+  line-height: 1.65;
+  margin-top: 0;
+}
+
+.publications h2 {
+  border-bottom: 1px solid #e2e2e2;
+  color: #555;
+  font-size: 18px;
+  margin: 50px 0 0;
+  padding-bottom: 8px;
+}
+
+.publication-item {
+  border-bottom: 1px solid #eee;
+  padding: 24px 0 22px;
+}
+
+.publication-item h3 {
+  color: #333;
+  font-size: 19px;
+  line-height: 1.35;
+  margin: 0 0 8px;
+}
+
+.publication-item p {
+  margin: 0;
+}
+
+.publication-authors {
+  color: #444;
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+.publication-venue {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.45;
+  margin-top: 6px !important;
+}
+
+.publication-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px !important;
+}
+
+.publication-links a {
+  border: 1px solid #d5dce2;
+  border-radius: 3px;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 3px 8px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.publication-links a:hover,
+.publication-links a:focus {
+  border-color: {{ site.link-col }};
+}
+
+.publication-abstract {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.5;
+  margin-top: 12px;
+}
+
+.publication-abstract summary {
+  align-items: center;
+  color: {{ site.link-col }};
+  cursor: pointer;
+  display: inline-flex;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  gap: 6px;
+  list-style: none;
+}
+
+.publication-abstract summary::-webkit-details-marker {
+  display: none;
+}
+
+.publication-abstract summary::before {
+  content: "▸";
+  font-size: 11px;
+  line-height: 1;
+}
+
+.publication-abstract[open] summary::before {
+  content: "▾";
+}
+
+.publication-abstract p {
+  margin-top: 8px;
+}
+
 .hideme {
   display: none;
 }
@@ -1261,4 +1365,3 @@ input:checked + .checkboxSlider:before {
 
 
 /* --- End Cookie consent style --- */
-
