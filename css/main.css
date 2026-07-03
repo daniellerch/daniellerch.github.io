@@ -364,6 +364,56 @@ h3 {
   margin-top: 8px;
 }
 
+.resource-index > p:first-child {
+  margin-top: 0;
+}
+
+.resource-index h2 {
+  color: #444;
+  font-size: 20px;
+  margin-top: 36px;
+}
+
+.resource-index ul,
+.resource-index ol {
+  margin-bottom: 28px;
+  margin-top: 10px;
+  padding-left: 24px;
+}
+
+.resource-index li {
+  line-height: 1.55;
+  padding: 3px 0;
+}
+
+.resource-index li::marker {
+  color: #aaa;
+}
+
+.resource-index li a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.resource-index li a:hover,
+.resource-index li a:focus {
+  text-decoration-thickness: 2px;
+}
+
+.resource-pending {
+  color: #888;
+  cursor: default;
+  pointer-events: none;
+  text-decoration: none;
+}
+
+.resource-pending em {
+  color: #999;
+  font-size: 12px;
+  font-style: normal;
+  margin-left: 6px;
+}
+
 .hideme {
   display: none;
 }
@@ -420,7 +470,7 @@ img {
 
 .navbar-custom .nav li a {
   /*text-transform: uppercase;*/
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 1px;
 }
 
