@@ -44,4 +44,6 @@ Entre las herramientas disponibles están [Aletheia](https://github.com/danielle
   <li><a href="https://linkedin.com/in/daniellerch"><span>LinkedIn</span><strong>linkedin.com/in/daniellerch</strong></a></li>
 </ul>
 
+También mantengo un pequeño [archivo de eventos y fotografías](/events-es/) de congresos, presentaciones y actividades académicas.
+
 </section>

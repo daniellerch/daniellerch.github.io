@@ -25,11 +25,11 @@ url: "https://daniellerch.me"
 navbar-links:
 # blog: "/blog-en"
    StegoRank: "/stegorank-en"
-   stegolab: "/stegolab-en"
-   papers: "/papers-en"
+   StegoLab: "/stegolab-en"
+   Publications: "/papers-en"
 # books: "/books-en"
-   archive: "/archive-en"
-   about: "/about-en"
+   Resources: "/resources-en"
+   About: "/about-en"
 
 #  Resources:
 #    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
