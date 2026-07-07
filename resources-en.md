@@ -26,7 +26,7 @@ You can also see [StegoRank](/stegorank-en/) for methods and tools, [StegoLab](/
 - [Binary Hamming codes in steganography](/stego/codes/binary-hamming-en/)
 - [Ternary Hamming codes in steganography](/stego/codes/ternary-hamming-en/)
 
-## Tutorial: Steganography for Python Programmers
+## Online Book: Steganography for Python Programmers
 
 1. [Introduction](/stego/books/stegopython/intro-en/)
 2. [Embedding techniques](/stego/books/stegopython/embed-en/)

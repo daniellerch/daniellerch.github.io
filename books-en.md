@@ -18,9 +18,23 @@ lang-suffix: "-en"
    .todo {
         display: none;
    }
+   .compat-note {
+        background: #fafafa;
+        border-left: 3px solid #0074D9;
+        color: #555;
+        font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        margin: 0 0 30px;
+        padding: 14px 16px;
+   }
+   .compat-note p {
+        margin: 0;
+   }
 </style>
 
 
+<div class="compat-note">
+  <p>This page is kept for compatibility with older links. The updated index is available in <a href="/resources-en/">Resources</a>.</p>
+</div>
 
 <div style='margin-bottom:50px'></div>
 
@@ -93,4 +107,3 @@ listItems.forEach(function(item) {
     }
 });
 </script>
-

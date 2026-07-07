@@ -18,9 +18,23 @@ lang-suffix: "-es"
    .todo {
         display: none;
    }
+   .compat-note {
+        background: #fafafa;
+        border-left: 3px solid #0074D9;
+        color: #555;
+        font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        margin: 0 0 30px;
+        padding: 14px 16px;
+   }
+   .compat-note p {
+        margin: 0;
+   }
 </style>
 
 
+<div class="compat-note">
+  <p>Esta página se mantiene por compatibilidad con enlaces antiguos. El índice actualizado está en <a href="/resources-es/">Recursos</a>.</p>
+</div>
 
 <div style='margin-bottom:50px'></div>
 
@@ -93,6 +107,5 @@ listItems.forEach(function(item) {
     }
 });
 </script>
-
 
 

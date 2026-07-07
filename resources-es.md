@@ -26,7 +26,7 @@ También puedes consultar [StegoRank](/stegorank-es/) para métodos y herramient
 - [Códigos de Hamming binarios en esteganografía](/stego/codes/binary-hamming-es/)
 - [Códigos de Hamming ternarios en esteganografía](/stego/codes/ternary-hamming-es/)
 
-## Tutorial: Esteganografía para programadores Python
+## Libro online: Esteganografía para programadores Python
 
 1. [Introducción](/stego/books/stegopython/intro-es/)
 2. [Técnicas de incrustación](/stego/books/stegopython/embed-es/)
