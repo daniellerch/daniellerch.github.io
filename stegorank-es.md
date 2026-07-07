@@ -130,7 +130,7 @@ StegoRank sigue el estado actual de las técnicas y herramientas de esteganograf
 La comparación se organiza alrededor de las técnicas de incrustación subyacentes, porque muchas herramientas implementan los mismos métodos, o métodos muy cercanos. Esto facilita entender qué se está evaluando realmente: la herramienta, la técnica que utiliza, la carga insertada y el detector empleado para analizarla.
 
 <div class="stegorank-updated">
-  <p><strong>Última actualización:</strong> 26 de junio de 2026. Esta es una sección viva: los resultados y clasificaciones pueden cambiar a medida que se actualicen herramientas, detectores y protocolos de comparación.</p>
+  <p><strong>Última actualización:</strong> 7 de julio de 2026. Esta es una sección viva: los resultados y clasificaciones pueden cambiar a medida que se actualicen herramientas, detectores y protocolos de comparación.</p>
 </div>
 
 <div class="stegorank-paths">
@@ -190,7 +190,7 @@ Métodos aplicados sobre píxeles o muestras de imágenes sin compresión con p�
 | [LSB replacement](/stegorank/lsb-replacement-es/) | [OpenStego](https://www.openstego.com), [OpenPuff](https://embeddedsw.net/OpenPuff_Steganography_Home.html) | <span class="stegorank-rating stegorank-rating-4" title="Parcialmente detectable"><span class="stegorank-rating-bars" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span><span class="stegorank-rating-label">Parcialmente detectable</span></span> |
 | [LSB matching](/stegorank/lsb-matching-es/) | Implementaciones de investigación / experimentales | <span class="stegorank-rating stegorank-rating-4" title="Parcialmente detectable"><span class="stegorank-rating-bars" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span><span class="stegorank-rating-label">Parcialmente detectable</span></span> |
 | [HILL](/stegorank/hill-es/) | [HStego < 0.4](https://github.com/daniellerch/hstego) | <span class="stegorank-rating stegorank-rating-4" title="Parcialmente detectable"><span class="stegorank-rating-bars" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span><span class="stegorank-rating-label">Parcialmente detectable</span></span> |
-| [S-UNIWARD](/stegorank/s-uniward-es/) | [HStego 0.4](https://github.com/daniellerch/hstego) | <span class="stegorank-rating stegorank-rating-5" title="Difícil de detectar"><span class="stegorank-rating-bars" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span><span class="stegorank-rating-label">Difícil de detectar</span></span> |
+| [S-UNIWARD](/stegorank/s-uniward-es/) | [HStego >= 0.4](https://github.com/daniellerch/hstego) | <span class="stegorank-rating stegorank-rating-5" title="Difícil de detectar"><span class="stegorank-rating-bars" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span><span class="stegorank-rating-label">Difícil de detectar</span></span> |
 
 ### Imágenes generadas con IA
 
@@ -212,7 +212,7 @@ Métodos que operan sobre coeficientes JPEG o herramientas diseñadas para este 
 | [F5](/stegorank/f5-es/) | [F5](https://github.com/daniellerch/stego-collection/tree/master/F5) | <span class="stegorank-rating stegorank-rating-1" title="Muy fácil de detectar"><span class="stegorank-rating-bars" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span><span class="stegorank-rating-label">Muy fácil de detectar</span></span> |
 | [Steghide](/stegorank/steghide-es/) | [Steghide](https://steghide.sourceforge.net/index.php) | <span class="stegorank-rating stegorank-rating-2" title="Fácil de detectar"><span class="stegorank-rating-bars" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span><span class="stegorank-rating-label">Fácil de detectar</span></span> |
 | [J-UNIWARD](/stegorank/j-uniward-es/) | [HStego < 0.4](https://github.com/daniellerch/hstego) | <span class="stegorank-rating stegorank-rating-4" title="Parcialmente detectable"><span class="stegorank-rating-bars" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span><span class="stegorank-rating-label">Parcialmente detectable</span></span> |
-| [J-UNIWARD + Cost Polarization](/stegorank/j-uniward-cost-polarization-es/) | [HStego 0.4](https://github.com/daniellerch/hstego) | <span class="stegorank-rating stegorank-rating-5" title="Difícil de detectar"><span class="stegorank-rating-bars" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span><span class="stegorank-rating-label">Difícil de detectar</span></span> |
+| [J-UNIWARD + Cost Polarization](/stegorank/j-uniward-cost-polarization-es/) | [HStego >= 0.4](https://github.com/daniellerch/hstego) | <span class="stegorank-rating stegorank-rating-5" title="Difícil de detectar"><span class="stegorank-rating-bars" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span><span class="stegorank-rating-label">Difícil de detectar</span></span> |
 
 ## Cómo leer estos resultados
 

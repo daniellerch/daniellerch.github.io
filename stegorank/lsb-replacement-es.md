@@ -18,6 +18,17 @@ comments: false
 
 LSB replacement es una técnica de esteganografía en dominio espacial que oculta información sustituyendo el bit menos significativo de las muestras de la imagen por bits del mensaje.
 
+<section class="stegorank-facts" markdown="1">
+## Resumen rápido
+
+<dl>
+  <dt>Dominio:</dt><dd>imágenes sin comprimir.</dd>
+  <dt>Tipo:</dt><dd>método LSB simple basado en sustitución directa de bits.</dd>
+  <dt>Herramientas:</dt><dd>OpenStego, OpenPuff y otras herramientas educativas o antiguas.</dd>
+  <dt>Lectura principal:</dt><dd>es fácil de implementar, pero deja artefactos estructurales conocidos que pueden detectarse incluso sin aprendizaje profundo.</dd>
+</dl>
+</section>
+
 ## Por qué importa
 
 LSB replacement es una técnica simple, muy conocida e implementada por muchas herramientas prácticas. Su simplicidad también la convierte en una buena referencia para entender la esteganografía y el estegoanálisis en imágenes.

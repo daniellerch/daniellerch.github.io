@@ -18,6 +18,17 @@ comments: false
 
 Generative steganography uses generative models to create images that carry hidden information. In StegoRank, this family includes both earlier GAN-based approaches, such as SteganoGAN, and more recent methods based on diffusion models.
 
+<section class="stegorank-facts" markdown="1">
+## Quick Summary
+
+<dl>
+  <dt>Domain:</dt><dd>generated images, especially scenarios involving GANs and general-purpose AI image models.</dd>
+  <dt>Type:</dt><dd>generation of stego images or use of generated images as carriers.</dd>
+  <dt>Tools and methods:</dt><dd>SteganoGAN and mas_GRDH.</dd>
+  <dt>Main reading:</dt><dd>detecting a specialized steganographic generator is not the same as distinguishing cover/stego images from a generator used for many types of images.</dd>
+</dl>
+</section>
+
 ## Why it matters
 
 Generative approaches are conceptually different from classical embedding methods. Instead of modifying an existing cover image, they can generate an image as part of the hiding process.

@@ -18,6 +18,17 @@ comments: false
 
 HILL is an adaptive spatial-domain steganography method for uncompressed images. It assigns embedding costs from the image content, so modifications are directed towards areas where they are expected to be harder to detect.
 
+<section class="stegorank-facts" markdown="1">
+## Quick Summary
+
+<dl>
+  <dt>Domain:</dt><dd>uncompressed images.</dd>
+  <dt>Type:</dt><dd>adaptive spatial-domain method.</dd>
+  <dt>Tools:</dt><dd>HStego before 0.4, the Aletheia simulator, and a research implementation in StegoLab.</dd>
+  <dt>Main reading:</dt><dd>it is much less detectable than LSB replacement, but its position against S-UNIWARD depends on the evaluated payload.</dd>
+</dl>
+</section>
+
 ## Use in tools
 
 HILL was used by HStego versions prior to 0.4 for uncompressed images. This should be read as a method implemented by that tool version, not as a separate algorithm named “HStego 0.3”.

@@ -18,6 +18,17 @@ comments: false
 
 La esteganografía generativa utiliza modelos generativos para crear imágenes que contienen información oculta. En StegoRank, esta familia incluye tanto enfoques anteriores basados en GAN, como SteganoGAN, como métodos más recientes basados en modelos de difusión.
 
+<section class="stegorank-facts" markdown="1">
+## Resumen rápido
+
+<dl>
+  <dt>Dominio:</dt><dd>imágenes generadas, especialmente escenarios con GAN y modelos de IA de propósito general.</dd>
+  <dt>Tipo:</dt><dd>generación de imágenes stego o uso de imágenes generadas como portadoras.</dd>
+  <dt>Herramientas y métodos:</dt><dd>SteganoGAN y mas_GRDH.</dd>
+  <dt>Lectura principal:</dt><dd>no es lo mismo detectar un generador esteganográfico especializado que distinguir imágenes cover/stego de un generador usado para todo tipo de imágenes.</dd>
+</dl>
+</section>
+
 ## Por qué importa
 
 Los enfoques generativos son conceptualmente distintos de los métodos clásicos de incrustación. En lugar de modificar una imagen portadora existente, pueden generar una imagen como parte del proceso de ocultación.

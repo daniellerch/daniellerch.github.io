@@ -18,6 +18,17 @@ comments: false
 
 HILL es un método de esteganografía adaptativa en dominio espacial para imágenes sin comprimir. Asigna costes de inserción a partir del contenido de la imagen, de modo que las modificaciones se dirigen hacia zonas donde se espera que sean más difíciles de detectar.
 
+<section class="stegorank-facts" markdown="1">
+## Resumen rápido
+
+<dl>
+  <dt>Dominio:</dt><dd>imágenes sin comprimir.</dd>
+  <dt>Tipo:</dt><dd>método adaptativo en dominio espacial.</dd>
+  <dt>Herramientas:</dt><dd>HStego anterior a 0.4, simulador de Aletheia e implementación de investigación en StegoLab.</dd>
+  <dt>Lectura principal:</dt><dd>es mucho menos detectable que LSB replacement, pero su posición frente a S-UNIWARD depende del payload evaluado.</dd>
+</dl>
+</section>
+
 ## Uso en herramientas
 
 HILL fue usado por las versiones de HStego anteriores a la 0.4 para imágenes sin comprimir. Esto debe leerse como un método implementado por esa versión de la herramienta, no como un algoritmo independiente llamado “HStego 0.3”.

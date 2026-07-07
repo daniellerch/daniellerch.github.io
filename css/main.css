@@ -414,6 +414,45 @@ h3 {
   margin-left: 6px;
 }
 
+.stegorank-facts {
+  background: #fafafa;
+  border-left: 3px solid #0074D9;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 28px 0 36px;
+  padding: 16px 18px;
+}
+
+.stegorank-facts h2 {
+  font-size: 18px;
+  margin: 0 0 12px;
+}
+
+.stegorank-facts dl {
+  margin: 0;
+}
+
+.stegorank-facts dt {
+  color: #555;
+  float: left;
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+.stegorank-facts dd {
+  margin: 0 0 8px;
+}
+
+.stegorank-facts dd:last-child {
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 520px) {
+  .stegorank-facts dt {
+    float: none;
+    margin: 0 0 2px;
+  }
+}
+
 .hideme {
   display: none;
 }

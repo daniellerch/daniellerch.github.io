@@ -18,9 +18,20 @@ comments: false
 
 S-UNIWARD is an adaptive spatial-domain steganography method for uncompressed images. It is part of the UNIWARD family of distortion functions and uses image content to guide where embedding changes should be made.
 
+<section class="stegorank-facts" markdown="1">
+## Quick Summary
+
+<dl>
+  <dt>Domain:</dt><dd>uncompressed images.</dd>
+  <dt>Type:</dt><dd>adaptive spatial-domain method.</dd>
+  <dt>Tools:</dt><dd>HStego >= 0.4, the Aletheia simulator, and a research implementation in StegoLab.</dd>
+  <dt>Main reading:</dt><dd>it reduces detectability compared with simple LSB methods, although results depend on payload and protocol.</dd>
+</dl>
+</section>
+
 ## Use in tools
 
-S-UNIWARD is used by HStego 0.4 for uncompressed images. This should be read as a method implemented by that tool version, not as a separate algorithm named “HStego 0.4”.
+S-UNIWARD is used by HStego >= 0.4 for uncompressed images. This should be read as a method implemented by those tool versions, not as a separate algorithm named “HStego”.
 
 For detectability experiments, StegoRank also relies on the [S-UNIWARD simulator included in Aletheia](/stego/aletheia/v03/intro-en/#simulators). A separate [S-UNIWARD research implementation is available in StegoLab](https://github.com/daniellerch/stegolab/tree/master/S-UNIWARD).
 

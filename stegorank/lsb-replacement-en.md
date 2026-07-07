@@ -18,6 +18,17 @@ comments: false
 
 LSB replacement is a spatial-domain steganography technique that hides information by replacing the least significant bit of image samples with message bits.
 
+<section class="stegorank-facts" markdown="1">
+## Quick Summary
+
+<dl>
+  <dt>Domain:</dt><dd>uncompressed images.</dd>
+  <dt>Type:</dt><dd>simple LSB method based on direct bit replacement.</dd>
+  <dt>Tools:</dt><dd>OpenStego, OpenPuff, and other educational or legacy tools.</dd>
+  <dt>Main reading:</dt><dd>it is easy to implement, but it leaves known structural artifacts that can be detected even without deep learning.</dd>
+</dl>
+</section>
+
 ## Why it matters
 
 LSB replacement is simple, widely known, and implemented by many practical tools. Its simplicity also makes it a useful baseline for understanding image steganography and steganalysis.
