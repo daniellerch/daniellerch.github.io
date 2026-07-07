@@ -260,6 +260,10 @@ h3 {
   }
 }
 
+.publications {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
 .publications > p:first-child {
   color: #555;
   line-height: 1.65;
