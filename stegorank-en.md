@@ -30,6 +30,42 @@ comments: false
         margin-bottom: 0;
     }
 
+    .stegorank-paths {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin: 2rem 0 2.5rem;
+    }
+
+    .stegorank-path {
+        border-left: 3px solid #0074D9;
+        background: #fafafa;
+        padding: 1rem 1.1rem;
+    }
+
+    .stegorank-path h3 {
+        font-size: 1.25rem;
+        margin: 0 0 0.55rem;
+    }
+
+    .stegorank-path p {
+        color: #555;
+        font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 1.1rem;
+        line-height: 1.55;
+        margin: 0;
+    }
+
+    .stegorank-path a {
+        font-weight: 700;
+    }
+
+    @media only screen and (max-width: 700px) {
+        .stegorank-paths {
+            grid-template-columns: 1fr;
+        }
+    }
+
 
     h2 {
         margin-top: 4rem;
@@ -95,6 +131,25 @@ The comparison is organized around the underlying embedding techniques, because 
 
 <div class="stegorank-updated">
   <p><strong>Last updated:</strong> 26 June 2026. This is a living section: results and classifications may change as tools, detectors, and comparison protocols are updated.</p>
+</div>
+
+<div class="stegorank-paths">
+  <div class="stegorank-path">
+    <h3><a href="#comparison-charts">See the comparison</a></h3>
+    <p>Quick access to the charts comparing detectability in uncompressed images, JPEG images, and AI-generated images.</p>
+  </div>
+  <div class="stegorank-path">
+    <h3><a href="#techniques-and-tools">Find a technique</a></h3>
+    <p>A compact list of families, embedding domains, represented tools, and resistance to detection.</p>
+  </div>
+  <div class="stegorank-path">
+    <h3><a href="/stegorank/adaptive-spatial-en/">Understand adaptive methods</a></h3>
+    <p>A recommended entry point for HILL, S-UNIWARD, and other techniques that select less detectable regions.</p>
+  </div>
+  <div class="stegorank-path">
+    <h3><a href="#how-to-read-these-results">Interpret the results</a></h3>
+    <p>Notes on payload, image source, detectors, and why the ranking should not be read as a universal guarantee.</p>
+  </div>
 </div>
 
 <div class='menu' style='margin-top:50px'></div>

@@ -30,6 +30,42 @@ comments: false
         margin-bottom: 0;
     }
 
+    .stegorank-paths {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin: 2rem 0 2.5rem;
+    }
+
+    .stegorank-path {
+        border-left: 3px solid #0074D9;
+        background: #fafafa;
+        padding: 1rem 1.1rem;
+    }
+
+    .stegorank-path h3 {
+        font-size: 1.25rem;
+        margin: 0 0 0.55rem;
+    }
+
+    .stegorank-path p {
+        color: #555;
+        font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 1.1rem;
+        line-height: 1.55;
+        margin: 0;
+    }
+
+    .stegorank-path a {
+        font-weight: 700;
+    }
+
+    @media only screen and (max-width: 700px) {
+        .stegorank-paths {
+            grid-template-columns: 1fr;
+        }
+    }
+
 
     h2 {
         margin-top: 4rem;
@@ -95,6 +131,25 @@ La comparación se organiza alrededor de las técnicas de incrustación subyacen
 
 <div class="stegorank-updated">
   <p><strong>Última actualización:</strong> 26 de junio de 2026. Esta es una sección viva: los resultados y clasificaciones pueden cambiar a medida que se actualicen herramientas, detectores y protocolos de comparación.</p>
+</div>
+
+<div class="stegorank-paths">
+  <div class="stegorank-path">
+    <h3><a href="#gráficas-comparativas">Ver la comparativa</a></h3>
+    <p>Acceso rápido a las gráficas para comparar detectabilidad en imágenes sin comprimir, JPEG e imágenes generadas con IA.</p>
+  </div>
+  <div class="stegorank-path">
+    <h3><a href="#técnicas-y-herramientas">Encontrar una técnica</a></h3>
+    <p>Listado de familias, dominios de incrustación, herramientas representadas y resistencia a detección.</p>
+  </div>
+  <div class="stegorank-path">
+    <h3><a href="/stegorank/adaptive-spatial-es/">Entender los métodos adaptativos</a></h3>
+    <p>Entrada recomendada para HILL, S-UNIWARD y otras técnicas que seleccionan zonas menos detectables.</p>
+  </div>
+  <div class="stegorank-path">
+    <h3><a href="#cómo-leer-estos-resultados">Interpretar los resultados</a></h3>
+    <p>Notas sobre payload, fuente de imágenes, detectores y por qué el ranking no debe leerse como una garantía universal.</p>
+  </div>
 </div>
 
 <div class='menu' style='margin-top:50px'></div>
