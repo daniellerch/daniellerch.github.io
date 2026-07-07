@@ -76,14 +76,14 @@ an effective technique for hiding information.
 
 For example, consider the following byte that represents a pixel value 
 in a grayscale image: 10010101. If you wanted to hide the bit 
-"0" using the LSB technique, the byte would remain the same since the LSB is already "1". 
-But if you wanted to hide the bit "1", you could change the LSB from "1" to "0", 
+"1" using the LSB technique, the byte would remain the same since the LSB is already "1".
+But if you wanted to hide the bit "0", you could change the LSB from "1" to "0",
 resulting in 10010100. Even though there has been a change, the difference in the pixel's 
 value is minimal and, therefore, hardly noticeable in the image.
 
 There are two common ways to modify the LSB of a value: 
 [LSB replacement](#what-is-lsb-replacement) and 
-[LSB matching](#what-is-lsb-replacement).
+[LSB matching](#what-is-lsb-matching).
 
 
 ## What is LSB replacement?
@@ -204,5 +204,3 @@ use steganography. The problem arises because the models learn from data,
 so a model trained with one image database may not function correctly with 
 images from another image database, possibly due to different statistical 
 characteristics.
-
-

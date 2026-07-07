@@ -85,7 +85,7 @@ comments: false
 ### HStego
 
 
-**[HStego](https://github.com/daniellerch/hstego)** is a tool for hiding data in bitmap and JPEG images. This tool uses some of the most advanced steganography methods known today, along with an upper limit on the amount of data that can be hidden so that it cannot be reliably detected by modern steganalysis tools.
+**[HStego](https://github.com/daniellerch/hstego)** is a tool for hiding data in bitmap and JPEG images. This tool uses modern adaptive steganography methods together with a payload limit intended to reduce detectability under supported scenarios; this should not be read as a guarantee of undetectability.
 
 <div style='margin-bottom:80px'></div>
 ### Stego Retweet
@@ -196,5 +196,4 @@ Includes fast implementations using Numba and implementations that decompress in
 
 <hr>
 <br><br>
-
 

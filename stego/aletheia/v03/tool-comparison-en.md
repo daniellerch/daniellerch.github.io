@@ -139,7 +139,7 @@ Nevertheless, given the circumstances mentioned, the use of SteganoGAN is curren
 
 ### S-UNIWARD
 
-HStego is a tool for hiding data in uncompressed and JPEG images. This tool uses some of the most advanced steganography methods known today, along with an upper limit on the amount of data that can be hidden so that it cannot be reliably detected by modern steganography tools.
+HStego is a tool for hiding data in uncompressed and JPEG images. This tool uses modern adaptive steganography methods together with a payload limit intended to reduce detectability under supported scenarios; this should not be read as a guarantee of undetectability.
 
 However, in this analysis the limit on the amount of information has not been used to compare HStego with the other tools, as the payload varies.
 
@@ -184,5 +184,4 @@ As previously discussed, HStego specializes in concealing data within uncompress
 For this analysis, the data concealment limit hasn't been applied when contrasting HStego with other tools, given that the payload fluctuates.
 
 The chart presents two distinct HStego versions: 0.3 and 0.4. The latter version, 0.4, integrates several enhancements, further bolstering its evasion against detection.
-
 

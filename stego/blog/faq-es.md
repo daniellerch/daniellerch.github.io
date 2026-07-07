@@ -110,14 +110,14 @@ convierte en una técnica efectiva para ocultar información.
 
 Por ejemplo, considera el siguiente byte que representa un valor de un píxel 
 en una imagen en escala de grises: 10010101. Si quisieras esconder el bit 
-"0" usando la técnica LSB, el byte quedaría igual, ya que el LSB ya es "1". 
-Pero si quisieras esconder el bit "1", se podría cambiar el LSB de "1" a "0", 
+"1" usando la técnica LSB, el byte quedaría igual, ya que el LSB ya es "1".
+Pero si quisieras esconder el bit "0", se podría cambiar el LSB de "1" a "0",
 resultando en 10010100. Aunque ha habido un cambio, la diferencia en el valor 
 del píxel es mínima y, por lo tanto, difícilmente perceptible en la imagen.
 
 Existen dos formas comunes de modificar el LSB de un valor: el 
 [LSB replacement](#qué-es-el-lsb-replacement) y el 
-[LSB matching](#qué-es-el-lsb-replacement). 
+[LSB matching](#qué-es-el-lsb-matching).
 
 ## ¿Qué es el LSB replacement?
 
@@ -238,8 +238,6 @@ y que la cantidad total de valores impares disminuya.
 Estas anomalías son aprovechadas por una toda una familia de ataques conocidodos
 como "ataques estructurales", entre los que destacan el ataque SPA, el ataque RS
 o el ataque WS.
-
-
 
 
 

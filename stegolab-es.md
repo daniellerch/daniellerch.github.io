@@ -84,7 +84,7 @@ comments: false
 <div style='margin-bottom:80px'></div>
 ### HStego
 
-**[HStego](https://github.com/daniellerch/hstego)** es una herramienta para ocultar información en imágenes de tipo mapa de bits y en imágenes JPEG. Esta herramienta usa algunos de los más avanzados métodos de esteganografía que se conocen, junto con un límite en la cantidad de datos que esconde, calculado para que no pueda ser detectada por herramientas modernas de estegoanálisis. 
+**[HStego](https://github.com/daniellerch/hstego)** es una herramienta para ocultar información en imágenes de tipo mapa de bits y en imágenes JPEG. Esta herramienta usa métodos modernos de esteganografía adaptativa junto con un límite de carga orientado a reducir la detectabilidad en los escenarios soportados; esto no debe leerse como una garantía de indetectabilidad.
 
 
 <div style='margin-bottom:80px'></div>
@@ -201,5 +201,3 @@ Incluye implementaciones aceleradas con Numba y descompresión a RGB sin redonde
 
 <hr>
 <br><br>
-
-

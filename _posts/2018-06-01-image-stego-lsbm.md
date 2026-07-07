@@ -130,7 +130,7 @@ The presented program has some limitations. The first one is we are hiding infor
 
 To minimize the distortion introduced hiding data a common approach is to use matrix embedding to hide the same data modifying less pixels of the image. This is possible with a simple trick. 
 
-Let's suppose you want to hide two bits. Using LSB matching as we shown before we have to modify the pixel 50% of the time, because the other 50% of the time the value of the LSB is already the same we want to hide. This means the effectiveness of our method is 1/2.
+Let's suppose you want to hide two bits. Using LSB matching as shown before, we have to modify a pixel 50% of the time, because the other 50% of the time the value of the LSB is already the same as the bit we want to hide. This means the embedding efficiency is 2 bits per modification.
 
 Let's suppose now we use LSB matching by hiding two bits in groups of three pixels:
 
@@ -138,11 +138,11 @@ Let's suppose now we use LSB matching by hiding two bits in groups of three pixe
 
 And that we use the following for the first bit we want to hide:
 
-$$ M_1 = LSB(P_1) \oplus LSB(P_2) 1$$
+$$ M_1 = LSB(P_1) \oplus LSB(P_2) $$
 
 And the following formula for the second bit we want to hide:
 
-$$ M_2 = LSB(P_2) \oplus LSB(P_3) 1$$
+$$ M_2 = LSB(P_2) \oplus LSB(P_3) $$
 
 Note this method is very easy to apply. If $$M_1$$ and $$M_2$$ match the bits we want to hide we do nothing. If none of $$M_1$$ and $$M_2$$ match the bits, we have to change the value of $$LSB(P_2)$$. If $$M_1$$ match but $$M_2$$ does not match we change the value of $$LSB(P_3)$$ and if $$M_2$$ match but $$M_1$$ does not match we change the value of $$LSB(P_1)$$. With this metodology we hide two bits and we only have to modify one. 
 
@@ -310,5 +310,4 @@ print(m_recovered)
 ```
 
 We can use blocks of different sizes but if the number of bit we want to hide in each block is too high the number of pixels we need en each block could be prohibitive (remember we need $$2^p-1$$ pixels). As a consequence, a high undetectability suppose a very low capacity because the big size of the blocks.
-
 

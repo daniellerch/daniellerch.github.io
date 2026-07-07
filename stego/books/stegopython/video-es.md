@@ -201,7 +201,7 @@ Durante todo el proceso de incrustación, se mantiene el seguimiento de la posic
 
 Finalmente, los fotogramas y bloques modificados se codifican y se escriben en el contenedor de salida, utilizando las funciones de codificación y multiplexado de PyAV. La sincronización temporal se preserva mediante la asignación de los campos `pts` y `time_base`, garantizando así que el archivo resultante sea perfectamente reproducible.
 
-Este enfoque, permite incrustar mensajes completos tanto en el componente visual como en el auditivo de un archivo multimedia, de manera eficaz y prácticamente indetectable.
+Este enfoque permite incrustar mensajes completos tanto en el componente visual como en el auditivo de un archivo multimedia de forma visual y auditivamente imperceptible. Esto no implica que sea indetectable frente a análisis estadístico o estegoanálisis especializado.
 
 ```python
 import av
@@ -436,7 +436,6 @@ La librería PyAV, aunque muy potente, trabaja a un nivel más alto y expone los
 Esto representa una limitación importante para quienes deseen aplicar técnicas de esteganografía robusta directamente en vídeos comprimidos. Para acceder a los coeficientes transformados, sería necesario modificar el código fuente de FFmpeg o utilizar librerías específicas escritas en C/C++ que interactúen con los decodificadores internos de los códecs, lo cual escapa del alcance de este libro.
 
 En conclusión, mientras no existan herramientas en Python que permitan manipular directamente los coeficientes DCT o MDCT en flujos comprimidos con pérdida, las técnicas esteganográficas robustas en vídeo deberán aplicarse sobre medios sin pérdida, o bien desarrollarse en lenguajes y entornos más cercanos al nivel de codificación del códec. Esta es una línea de investigación abierta y relevante para el futuro del análisis y la ocultación de información en contenidos audiovisuales comprimidos.
-
 
 
 
