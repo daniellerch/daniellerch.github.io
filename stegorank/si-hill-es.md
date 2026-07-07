@@ -4,7 +4,7 @@ title: SI-HILL
 subtitle: ""
 noindex: false
 meta-title: "SI-HILL — StegoRank"
-meta-description: "Ficha de StegoRank sobre SI-HILL para imágenes generadas con Stable Diffusion"
+meta-description: "Ficha de StegoRank sobre SI-HILL, evaluado en imágenes generadas con Stable Diffusion"
 lang-suffix: "-es"
 comments: false
 ---
@@ -16,11 +16,24 @@ comments: false
     }
 </style>
 
-SI-HILL es una variante side-informed de HILL para esteganografía en dominio espacial sobre imágenes sin comprimir generadas con Stable Diffusion. Utiliza información lateral procedente del proceso de síntesis de la imagen, concretamente los residuos de cuantización disponibles antes de redondear la salida continua del decodificador VAE a píxeles de 8 bits.
+SI-HILL es una versión side-informed de HILL. Es una estrategia general que puede aplicarse en distintos escenarios, como JPEG, imágenes de Stable Diffusion u otros casos donde exista información lateral útil.
+
+En la evaluación de StegoRank descrita aquí, SI-HILL se aplica a imágenes generadas con Stable Diffusion. En ese escenario, la información lateral procede del proceso de síntesis de la imagen, concretamente de los residuos de cuantización disponibles antes de redondear la salida continua del decodificador VAE a píxeles de 8 bits.
+
+<section class="stegorank-facts" markdown="1">
+## Resumen rápido
+<dl>
+  <dt>Método:</dt><dd>variante side-informed de HILL.</dd>
+  <dt>Escenario evaluado:</dt><dd>imágenes generadas con Stable Diffusion, evaluadas como imágenes sin comprimir.</dd>
+  <dt>Información lateral:</dt><dd>residuos de cuantización del proceso de síntesis en el protocolo evaluado.</dd>
+  <dt>Uso:</dt><dd>método experimental de investigación, no herramienta de usuario final.</dd>
+  <dt>Lectura principal:</dt><dd>aprovecha información disponible durante la generación para reducir la detectabilidad frente a HILL convencional en el protocolo evaluado.</dd>
+</dl>
+</section>
 
 ## Uso en herramientas
 
-SI-HILL aparece en StegoRank como un método experimental de investigación, no como una herramienta de usuario final. Extiende la función de costes HILL reduciendo el coste de las modificaciones cuya dirección es coherente con el residuo de cuantización de la imagen generada.
+SI-HILL aparece en StegoRank como un método experimental de investigación, no como una herramienta de usuario final. En el protocolo evaluado con Stable Diffusion, extiende la función de costes HILL reduciendo el coste de las modificaciones cuya dirección es coherente con el residuo de cuantización de la imagen generada.
 
 ## Resultados de detectabilidad
 

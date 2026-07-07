@@ -18,6 +18,16 @@ comments: false
 
 J-UNIWARD is an adaptive JPEG-domain steganography method. It assigns costs to changes in JPEG DCT coefficients using a distortion function designed for the JPEG domain.
 
+<section class="stegorank-facts" markdown="1">
+## Quick Summary
+<dl>
+  <dt>Domain:</dt><dd>JPEG.</dd>
+  <dt>Type:</dt><dd>adaptive method based on the UNIWARD distortion function.</dd>
+  <dt>Tools:</dt><dd>HStego &lt; 0.4, Aletheia simulator, and research implementation in StegoLab.</dd>
+  <dt>Main reading:</dt><dd>it is clearly stronger than older JPEG methods, but below J-UNIWARD + Cost Polarization in the current comparison.</dd>
+</dl>
+</section>
+
 ## Use in tools
 
 J-UNIWARD was used by HStego versions prior to 0.4 for JPEG images. This should be read as a method implemented by that tool version, not as a separate algorithm named “HStego 0.3”.

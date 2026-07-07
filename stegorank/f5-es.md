@@ -18,6 +18,16 @@ comments: false
 
 F5 es una técnica de esteganografía en dominio JPEG que modifica coeficientes DCT cuantificados evitando algunos de los artefactos más evidentes de métodos JPEG anteriores.
 
+<section class="stegorank-facts" markdown="1">
+## Resumen rápido
+<dl>
+  <dt>Dominio:</dt><dd>JPEG.</dd>
+  <dt>Tipo:</dt><dd>método JPEG clásico con codificación matricial y modificaciones sobre coeficientes DCT cuantificados.</dd>
+  <dt>Uso:</dt><dd>familia técnica propia, útil como referencia histórica y como línea base en estegoanálisis JPEG.</dd>
+  <dt>Lectura principal:</dt><dd>mejora frente a métodos JPEG más simples, pero suele quedar por detrás de métodos adaptativos modernos como J-UNIWARD.</dd>
+</dl>
+</section>
+
 ## Uso en herramientas
 
 F5 se trata aquí como una familia técnica propia. Cuando una herramienta implementa F5 o una variante cercana, conviene compararla a nivel de método en lugar de agruparla únicamente dentro de métodos JPEG clásicos genéricos.

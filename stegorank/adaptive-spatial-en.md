@@ -18,6 +18,16 @@ comments: false
 
 Adaptive spatial methods hide information in uncompressed images by assigning different embedding costs to different image regions. The goal is to modify areas where changes are expected to be harder to detect.
 
+<section class="stegorank-facts" markdown="1">
+## Quick Summary
+<dl>
+  <dt>Domain:</dt><dd>uncompressed images.</dd>
+  <dt>Type:</dt><dd>family of adaptive methods based on embedding costs.</dd>
+  <dt>Related methods:</dt><dd>HILL, S-UNIWARD, and other spatial-domain cost functions.</dd>
+  <dt>Main reading:</dt><dd>these methods are the starting point for understanding why modern embedding avoids image regions that are easy to model statistically.</dd>
+</dl>
+</section>
+
 ## Why it matters
 
 Adaptive methods represent a major step beyond simple LSB-based embedding. They use image content to guide embedding and reduce statistical artifacts.

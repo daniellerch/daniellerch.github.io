@@ -18,6 +18,16 @@ comments: false
 
 F5 is a JPEG-domain steganography technique that modifies quantized DCT coefficients while avoiding some of the most obvious artifacts produced by earlier JPEG embedding approaches.
 
+<section class="stegorank-facts" markdown="1">
+## Quick Summary
+<dl>
+  <dt>Domain:</dt><dd>JPEG.</dd>
+  <dt>Type:</dt><dd>older JPEG method with matrix encoding and modifications over quantized DCT coefficients.</dd>
+  <dt>Use:</dt><dd>its own technical family, useful as a historical reference and as a JPEG steganalysis baseline.</dd>
+  <dt>Main reading:</dt><dd>it improves on simpler JPEG methods, but is usually behind modern adaptive methods such as J-UNIWARD.</dd>
+</dl>
+</section>
+
 ## Use in tools
 
 F5 is treated here as its own technique family. When a tool implements F5 or a close variant, it should be compared at the method level rather than grouped only under generic older JPEG-domain tools.

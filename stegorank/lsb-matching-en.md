@@ -18,6 +18,16 @@ comments: false
 
 LSB matching is a spatial-domain steganography technique closely related to LSB replacement. Instead of directly replacing the least significant bit, it increments or decrements the sample value when a change is needed.
 
+<section class="stegorank-facts" markdown="1">
+## Quick Summary
+<dl>
+  <dt>Domain:</dt><dd>uncompressed images.</dd>
+  <dt>Type:</dt><dd>simple LSB method based on random increments or decrements.</dd>
+  <dt>Tools:</dt><dd>research, educational, or experimental implementations.</dd>
+  <dt>Main reading:</dt><dd>it avoids part of the LSB replacement artifacts, but remains detectable with suitable payloads and detectors.</dd>
+</dl>
+</section>
+
 ## Why it matters
 
 LSB matching avoids the specific statistical artifact introduced by direct LSB replacement. This usually makes it harder to detect with simple structural attacks designed for replacement artifacts.

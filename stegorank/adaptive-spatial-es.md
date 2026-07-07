@@ -18,6 +18,16 @@ comments: false
 
 Los métodos adaptativos en dominio espacial ocultan información en imágenes sin comprimir asignando distintos costes de incrustación a distintas regiones de la imagen. El objetivo es modificar zonas donde se espera que los cambios sean más difíciles de detectar.
 
+<section class="stegorank-facts" markdown="1">
+## Resumen rápido
+<dl>
+  <dt>Dominio:</dt><dd>imágenes sin comprimir.</dd>
+  <dt>Tipo:</dt><dd>familia de métodos adaptativos basados en costes de incrustación.</dd>
+  <dt>Métodos relacionados:</dt><dd>HILL, S-UNIWARD y otras funciones de coste en dominio espacial.</dd>
+  <dt>Lectura principal:</dt><dd>son el punto de partida para entender por qué las técnicas modernas evitan modificar regiones fáciles de modelar estadísticamente.</dd>
+</dl>
+</section>
+
 ## Por qué importa
 
 Los métodos adaptativos representan un salto importante respecto a la incrustación simple basada en LSB. Utilizan el contenido de la imagen para guiar la incrustación y reducir artefactos estadísticos.

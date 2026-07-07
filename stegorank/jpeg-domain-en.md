@@ -4,7 +4,7 @@ title: Outguess and Older JPEG Methods
 subtitle: ""
 noindex: false
 meta-title: "Outguess and Older JPEG Methods — StegoRank"
-meta-description: "StegoRank note on Outguess, JSteg, JPHS and older JPEG-domain steganography tools"
+meta-description: "StegoRank note on Outguess and older JPEG-domain steganography methods"
 lang-suffix: "-en"
 comments: false
 ---
@@ -16,15 +16,25 @@ comments: false
     }
 </style>
 
-This family groups older JPEG-domain steganography tools that hide information by modifying elements of the JPEG representation, usually DCT coefficients. In the current StegoRank table, this entry is represented mainly by Outguess and related older tools.
+This family groups older JPEG-domain steganography methods that hide information by modifying elements of the JPEG representation, usually DCT coefficients. In the current StegoRank table, this entry is represented by Outguess.
+
+<section class="stegorank-facts" markdown="1">
+## Quick Summary
+<dl>
+  <dt>Domain:</dt><dd>JPEG.</dd>
+  <dt>Type:</dt><dd>historical family of non-adaptive methods over JPEG coefficients.</dd>
+  <dt>Evaluated entry:</dt><dd>Outguess.</dd>
+  <dt>Main reading:</dt><dd>this entry works as a practical and historical baseline; older non-adaptive JPEG methods are usually more detectable than modern adaptive JPEG methods.</dd>
+</dl>
+</section>
 
 ## Why it matters
 
 JPEG remains one of the most relevant formats for practical image steganography. Older JPEG tools are still useful as historical references and as practical baselines for steganalysis, because their artifacts are usually easier to detect than those produced by modern adaptive methods.
 
-## Typical tools
+## Related tools
 
-Tools associated with this family include:
+Outguess is the tool represented in the current StegoRank comparison. Other historical JPEG tools associated with this family include JSteg and JP Hide & Seek, but they are not evaluated as separate entries in the current table.
 
 - [Outguess](https://github.com/daniellerch/stego-collection/tree/master/outguess);
 - [JSteg](https://github.com/daniellerch/stego-collection/tree/master/jsteg);

@@ -4,7 +4,7 @@ title: Outguess y métodos JPEG clásicos
 subtitle: ""
 noindex: false
 meta-title: "Outguess y métodos JPEG clásicos — StegoRank"
-meta-description: "Ficha de StegoRank sobre Outguess, JSteg, JPHS y herramientas clásicas de esteganografía en dominio JPEG"
+meta-description: "Ficha de StegoRank sobre Outguess y métodos clásicos de esteganografía en dominio JPEG"
 lang-suffix: "-es"
 comments: false
 ---
@@ -16,15 +16,25 @@ comments: false
     }
 </style>
 
-Esta familia agrupa herramientas clásicas de esteganografía en dominio JPEG que ocultan información modificando elementos de la representación JPEG, normalmente coeficientes DCT. En la tabla actual de StegoRank, esta entrada está representada principalmente por Outguess y herramientas antiguas relacionadas.
+Esta familia agrupa métodos clásicos de esteganografía en dominio JPEG que ocultan información modificando elementos de la representación JPEG, normalmente coeficientes DCT. En la tabla actual de StegoRank, esta entrada está representada por Outguess.
+
+<section class="stegorank-facts" markdown="1">
+## Resumen rápido
+<dl>
+  <dt>Dominio:</dt><dd>JPEG.</dd>
+  <dt>Tipo:</dt><dd>familia histórica de métodos no adaptativos sobre coeficientes JPEG.</dd>
+  <dt>Entrada evaluada:</dt><dd>Outguess.</dd>
+  <dt>Lectura principal:</dt><dd>esta entrada funciona como línea base práctica e histórica; los métodos JPEG clásicos no adaptativos suelen ser más detectables que los métodos JPEG adaptativos modernos.</dd>
+</dl>
+</section>
 
 ## Por qué importa
 
 JPEG sigue siendo uno de los formatos más relevantes para la esteganografía práctica en imágenes. Las herramientas JPEG clásicas siguen siendo útiles como referencia histórica y como línea base práctica para estegoanálisis, porque sus artefactos suelen ser más fáciles de detectar que los producidos por métodos adaptativos modernos.
 
-## Herramientas típicas
+## Herramientas relacionadas
 
-Herramientas asociadas a esta familia:
+Outguess es la herramienta representada en la comparativa actual de StegoRank. Otras herramientas JPEG históricas asociadas a esta familia incluyen JSteg y JP Hide & Seek, pero no se evalúan como entradas separadas en la tabla actual.
 
 - [Outguess](https://github.com/daniellerch/stego-collection/tree/master/Outguess);
 - [JSteg](https://github.com/daniellerch/stego-collection/tree/master/jsteg);

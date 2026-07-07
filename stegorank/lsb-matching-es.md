@@ -18,6 +18,16 @@ comments: false
 
 LSB matching es una técnica de esteganografía en dominio espacial muy cercana a LSB replacement. En lugar de sustituir directamente el bit menos significativo, incrementa o decrementa el valor de la muestra cuando necesita modificarlo.
 
+<section class="stegorank-facts" markdown="1">
+## Resumen rápido
+<dl>
+  <dt>Dominio:</dt><dd>imágenes sin comprimir.</dd>
+  <dt>Tipo:</dt><dd>método LSB simple basado en incrementos o decrementos aleatorios.</dd>
+  <dt>Herramientas:</dt><dd>implementaciones de investigación, educativas o experimentales.</dd>
+  <dt>Lectura principal:</dt><dd>evita parte de los artefactos de LSB replacement, pero sigue siendo detectable con cargas y detectores adecuados.</dd>
+</dl>
+</section>
+
 ## Por qué importa
 
 LSB matching evita el artefacto estadístico específico introducido por LSB replacement. Esto suele hacerlo más difícil de detectar mediante ataques estructurales simples diseñados para detectar la sustitución directa.

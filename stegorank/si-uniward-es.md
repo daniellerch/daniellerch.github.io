@@ -4,7 +4,7 @@ title: SI-UNIWARD
 subtitle: ""
 noindex: false
 meta-title: "SI-UNIWARD — StegoRank"
-meta-description: "Ficha de StegoRank sobre SI-UNIWARD para imágenes generadas con Stable Diffusion"
+meta-description: "Ficha de StegoRank sobre SI-UNIWARD, evaluado en imágenes generadas con Stable Diffusion"
 lang-suffix: "-es"
 comments: false
 ---
@@ -16,11 +16,24 @@ comments: false
     }
 </style>
 
-SI-UNIWARD es una variante side-informed de UNIWARD para esteganografía en dominio espacial sobre imágenes sin comprimir generadas con Stable Diffusion. Utiliza residuos de cuantización del proceso de síntesis de imagen como información lateral para guiar las modificaciones de incrustación.
+SI-UNIWARD es una versión side-informed de UNIWARD. Es una estrategia general que puede aplicarse en distintos escenarios, como JPEG, imágenes de Stable Diffusion u otros casos donde exista información lateral útil.
+
+En la evaluación de StegoRank descrita aquí, SI-UNIWARD se aplica a imágenes generadas con Stable Diffusion. En ese escenario, utiliza residuos de cuantización del proceso de síntesis de imagen como información lateral para guiar las modificaciones de incrustación.
+
+<section class="stegorank-facts" markdown="1">
+## Resumen rápido
+<dl>
+  <dt>Método:</dt><dd>variante side-informed de UNIWARD.</dd>
+  <dt>Escenario evaluado:</dt><dd>imágenes generadas con Stable Diffusion, evaluadas como imágenes sin comprimir.</dd>
+  <dt>Información lateral:</dt><dd>residuos de cuantización del proceso de síntesis en el protocolo evaluado.</dd>
+  <dt>Uso:</dt><dd>método experimental de investigación, no herramienta de usuario final.</dd>
+  <dt>Lectura principal:</dt><dd>reduce la detectabilidad de UNIWARD convencional aprovechando la información lateral disponible antes del redondeo a 8 bits.</dd>
+</dl>
+</section>
 
 ## Uso en herramientas
 
-SI-UNIWARD aparece en StegoRank como un método experimental de investigación, no como una herramienta de usuario final. Extiende la función de costes UNIWARD reduciendo el coste de las modificaciones cuya dirección coincide con el residuo entre la salida continua del decodificador VAE y la imagen redondeada a 8 bits.
+SI-UNIWARD aparece en StegoRank como un método experimental de investigación, no como una herramienta de usuario final. En el protocolo evaluado con Stable Diffusion, extiende la función de costes UNIWARD reduciendo el coste de las modificaciones cuya dirección coincide con el residuo entre la salida continua del decodificador VAE y la imagen redondeada a 8 bits.
 
 ## Resultados de detectabilidad
 
