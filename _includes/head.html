@@ -45,16 +45,21 @@
   {% endif %}
 
   {% if page.lang-suffix %}
-    {% assign hreflang_base = page.url %}
-    {% if page.canonical %}
-      {% assign hreflang_base = page.canonical %}
-    {% endif %}
-    {% if hreflang_base == "/" %}
-      {% assign alternate_en = "/index-en/" %}
-      {% assign alternate_es = "/index-es/" %}
+    {% if page.alternate-en and page.alternate-es %}
+      {% assign alternate_en = page.alternate-en %}
+      {% assign alternate_es = page.alternate-es %}
     {% else %}
-      {% assign alternate_en = hreflang_base | replace: "-es", "-en" | replace: "-ca", "-en" %}
-      {% assign alternate_es = hreflang_base | replace: "-en", "-es" | replace: "-ca", "-es" %}
+      {% assign hreflang_base = page.url %}
+      {% if page.canonical %}
+        {% assign hreflang_base = page.canonical %}
+      {% endif %}
+      {% if hreflang_base == "/" %}
+        {% assign alternate_en = "/" %}
+        {% assign alternate_es = "/index-es/" %}
+      {% else %}
+        {% assign alternate_en = hreflang_base | replace: "-es", "-en" | replace: "-ca", "-en" %}
+        {% assign alternate_es = hreflang_base | replace: "-en", "-es" | replace: "-ca", "-es" %}
+      {% endif %}
     {% endif %}
   <link rel="alternate" hreflang="en" href="{{ alternate_en | absolute_url }}" />
   <link rel="alternate" hreflang="es" href="{{ alternate_es | absolute_url }}" />
@@ -185,6 +190,34 @@
   <meta name="twitter:image" content="{{ page.share-img | absolute_url }}" />
   {% elsif site.avatar %}
   <meta name="twitter:image" content="{{ site.avatar | absolute_url }}" />
+  {% endif %}
+
+  {% if page.url == "/" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Daniel Lerch",
+    "url": "{{ "/" | absolute_url }}",
+    "description": "{{ site.description | xml_escape }}",
+    "inLanguage": ["en", "es"],
+    "publisher": {
+      "@type": "Person",
+      "name": "Daniel Lerch Hostalot",
+      "url": "{{ "/" | absolute_url }}",
+      "sameAs": [
+        "https://github.com/daniellerch",
+        "https://www.linkedin.com/in/daniellerch/"
+      ],
+      "knowsAbout": [
+        "Image steganography",
+        "Steganalysis",
+        "Digital watermarking",
+        "Information hiding"
+      ]
+    }
+  }
+  </script>
   {% endif %}
 
   {% if site.matomo %}

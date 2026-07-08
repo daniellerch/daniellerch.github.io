@@ -6,6 +6,8 @@ noindex: false
 meta-title: "Daniel Lerch — Esteganografía y estegoanálisis de imágenes"
 meta-description: "Investigador en esteganografía y estegoanálisis de imágenes"
 lang-suffix: "-es"
+alternate-en: "/"
+alternate-es: "/index-es/"
 ---
 
 <section class="home-intro">

@@ -2,10 +2,13 @@
 layout: page
 title: Welcome
 subtitle: ""
-noindex: false
+noindex: true
 meta-title: "Daniel Lerch — Image steganography and steganalysis"
 meta-description: "Researcher in image steganography and steganalysis"
 lang-suffix: "-en"
+canonical: "/"
+sitemap: false
+redirect: "/"
 ---
 
 <section class="home-intro">
