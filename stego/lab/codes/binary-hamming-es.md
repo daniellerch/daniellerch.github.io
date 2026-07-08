@@ -2,7 +2,7 @@
 layout: page
 title: "Códigos de Hamming Binarios en Esteganografía"
 subtitle: "" 
-noindex: false
+noindex: true
 meta-title: "Códigos de Hamming Binarios en Esteganografía"
 meta-description: "Técnica de incrustación de información de tipo matrix embedding basada en códigos de Hamming binarios."
 meta-keywords: "esteganografía, códigos"
@@ -403,5 +403,4 @@ print("Extracted message:", extracted_message.decode())
 
 1. Fridrich, J. (2009). Steganography in Digital Media: Principles, Algorithms, 
    and Applications. Cambridge University Press.
-
 

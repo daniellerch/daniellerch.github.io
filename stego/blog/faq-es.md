@@ -2,7 +2,7 @@
 layout: page
 title: "Preguntas frecuentes sobre esteganografía"
 subtitle: "" 
-noindex: false
+noindex: true
 meta-title: "Preguntas frecuentes sobre esteganografía"
 meta-description: "FAQ sobre esteganografía"
 meta-keywords: "esteganografía, faq, preguntas frecuentes"
@@ -230,7 +230,7 @@ características estructurales del objeto portador. Estos cambios, aunque pueden
 ser invisibles o inaudibles para el observador humano, pueden ser detectados 
 mediante análisis estadístico.
 
-Cuando se usan técnicas de [LSB replacement](/stego/blog/faq-es/#qué-es-el-lsb-replacement),
+Cuando se usan técnicas de [LSB replacement](/stego/intro/faq-es/#qué-es-el-lsb-replacement),
 aparecen anomalías estadísticas importantes, debido a que la sustitución del
 LSB hace que la cantidad total de valores (por ejemplo, píxeles) pares aumente
 y que la cantidad total de valores impares disminuya. 
@@ -238,7 +238,6 @@ y que la cantidad total de valores impares disminuya.
 Estas anomalías son aprovechadas por una toda una familia de ataques conocidodos
 como "ataques estructurales", entre los que destacan el ataque SPA, el ataque RS
 o el ataque WS.
-
 
 
 

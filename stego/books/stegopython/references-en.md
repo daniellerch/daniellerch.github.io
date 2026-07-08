@@ -14,7 +14,7 @@ comments: false
 
 
 <center style='margin-bottom:30px'>
-[ &nbsp; <a href='/books-es'>Índice</a> ]
+[ &nbsp; <a href='/resources-en/#online-book-steganography-for-python-programmers'>Index</a> ]
 </center>
 
 
@@ -119,6 +119,5 @@ A. Westfeld y A. Pfitzmann. “Attacks on Steganographic Sys-
 tems”. En: Information Hiding. Ed. por A. Pfitzmann. Berlin,
 Heidelberg: Springer Berlin Heidelberg, 2000, págs. 61-76. isbn:
 978-3-540-46514-0.
-
 
 

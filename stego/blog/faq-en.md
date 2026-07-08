@@ -2,7 +2,7 @@
 layout: page
 title: "Steganography FAQ"
 subtitle: ""
-noindex: false
+noindex: true
 meta-title: "Steganography FAQ"
 meta-description: "FAQ about steganography"
 meta-keywords: "steganography, faq, frequently asked questions"
@@ -194,4 +194,3 @@ values to decrease.
 These anomalies are exploited by a whole family of attacks known as 
 "structural attacks", among which the SPA attack, RS attack, and WS attack 
 stand out.
-

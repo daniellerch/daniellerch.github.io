@@ -11,7 +11,7 @@ comments: false
 ---
 
 <center style='margin-bottom:30px'>
-[ &nbsp; <a href='/books-en'>Index</a> ]
+[ &nbsp; <a href='/resources-en/#online-book-steganography-for-python-programmers'>Index</a> ]
 </center>
 
 

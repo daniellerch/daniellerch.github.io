@@ -45,12 +45,16 @@
   {% endif %}
 
   {% if page.lang-suffix %}
-    {% if page.url == "/" %}
+    {% assign hreflang_base = page.url %}
+    {% if page.canonical %}
+      {% assign hreflang_base = page.canonical %}
+    {% endif %}
+    {% if hreflang_base == "/" %}
       {% assign alternate_en = "/index-en/" %}
       {% assign alternate_es = "/index-es/" %}
     {% else %}
-      {% assign alternate_en = page.url | replace: "-es", "-en" | replace: "-ca", "-en" %}
-      {% assign alternate_es = page.url | replace: "-en", "-es" | replace: "-ca", "-es" %}
+      {% assign alternate_en = hreflang_base | replace: "-es", "-en" | replace: "-ca", "-en" %}
+      {% assign alternate_es = hreflang_base | replace: "-en", "-es" | replace: "-ca", "-es" %}
     {% endif %}
   <link rel="alternate" hreflang="en" href="{{ alternate_en | absolute_url }}" />
   <link rel="alternate" hreflang="es" href="{{ alternate_es | absolute_url }}" />

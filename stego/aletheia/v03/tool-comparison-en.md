@@ -90,7 +90,7 @@ message constitutes 40% of the total non-zero DCT coefficients.
 ### LSB replacement (OpenStego, OpenPuff)
 
 The data insertion technique 
-[LSB *replacement*](/stego/lab/intro/lsb-en/#embedding-information-with-lsb-replacement)
+[LSB *replacement*](/stego/intro/lsb-en/#embedding-information-with-lsb-replacement)
 is undoubtedly the most popular technique for embedding data in images and audio.
 Many image steganography tools use this technique, some of which are very popular, such as [OpenStego](https://www.openstego.com/) 
 and [OpenPuff](https://embeddedsw.net/OpenPuff_Steganography_Home.html).
@@ -99,7 +99,7 @@ In the chart, we can see two lines for this technique. One of them, labeled
 as "SPA", shows the results of conducting an SPA or Sample Pair
 Analysis. The other uses a deep learning model. It's worth noting that the
 LSB replacement technique introduces [statistical anomalies that make it
-especially vulnerable](/stego/lab/intro/lsb-en/#the-dangers-of-lsb-replacement),
+especially vulnerable](/stego/intro/lsb-en/#the-dangers-of-lsb-replacement),
 using the so-called "structural methods". One of these methods is the
 SPA attack. Even though the SPA results in the chart aren't the worst, it's important to consider that structural methods
 only require the image being analyzed, unlike deep learning-based methods which need to be trained with an image database. Therefore, deep learning-based methods have a significant drawback: the CSM problem. This problem introduces significant
@@ -115,7 +115,7 @@ learning-based detection, with only SteganoGAN proving easier to detect.
 ### LSB matching
 
 The data insertion technique 
-[LSB *matching*](/stego/lab/intro/lsb-en/#embedding-information-with-lsb-matching)
+[LSB *matching*](/stego/intro/lsb-en/#embedding-information-with-lsb-matching)
 is very similar to LSB replacement. The only difference is that, instead
 of replacing the least significant bit, we change its value by adding one 
 or subtracting one from the byte value. This way, we achieve the same 

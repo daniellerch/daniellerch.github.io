@@ -2,10 +2,12 @@
 layout: page
 title: Blog
 subtitle: "" 
-noindex: false
+noindex: true
 meta-title: "Blog"
 meta-description: "Articles about steganography and steganalysis"
 lang-suffix: "-en"
+canonical: "/resources-en/"
+sitemap: false
 ---
 
 <style>
@@ -68,5 +70,4 @@ lang-suffix: "-en"
 
 <hr>
 <br><br>
-
 

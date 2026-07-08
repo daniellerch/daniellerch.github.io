@@ -2,10 +2,12 @@
 layout: page
 title: Libros
 subtitle: "" 
-noindex: false
+noindex: true
 meta-title: "Books"
 meta-description: "Libros sobre esteganografía y estegoanálisis"
 lang-suffix: "-es"
+canonical: "/resources-es/"
+sitemap: false
 ---
 
 <style>
@@ -107,5 +109,4 @@ listItems.forEach(function(item) {
     }
 });
 </script>
-
 

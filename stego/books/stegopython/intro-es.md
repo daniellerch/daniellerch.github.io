@@ -11,7 +11,7 @@ comments: false
 ---
 
 <center style='margin-bottom:30px'>
-[ &nbsp; <a href='/books-es'>Índice</a> ]
+[ &nbsp; <a href='/resources-es/#libro-online-esteganografía-para-programadores-python'>Índice</a> ]
 </center>
 
 

@@ -95,7 +95,7 @@ el tamaño del mensaje es del 40% del total de coeficientes DCT que no son cero.
 ### LSB replacement (OpenStego, OpenPuff)
 
 La técnica de inserción de datos 
-[LSB *replacement*](/stego/lab/intro/lsb-es/#incrustación-de-la-información-con-lsb-replacement)
+[LSB *replacement*](/stego/intro/lsb-es/#incrustación-de-la-información-con-lsb-replacement)
 es, sin duda, la técnica más popular para incrustar datos en imágenes y audio.
 Esta técnica es utilizada por las muchas herramientas de esteganografía
 en imágenes, algunas muy populares, como [OpenStego](https://www.openstego.com/) 
@@ -105,7 +105,7 @@ En la gráfica podemos ver dos líneas para esta técnica. Una de ellas, etiquet
 como "SPA", indica los resultados de realizar un ataque SPA o Sample Pair
 Analysis. La otra usa un modelo de *deep learning*. Cabe destacar que la
 técnica LSB replacement introduce [anomalías estadísticas que la hacen
-especialmente vulnerable](/stego/lab/intro/lsb-es/#los-peligros-del-lsb-replacement),
+especialmente vulnerable](/stego/intro/lsb-es/#los-peligros-del-lsb-replacement),
 usando los conocidos como "métodos estructurales". Uno de estos métodos es el
 ataque SPA. Si bien los resultados que vemos en la gráfica para el caso SPA
 no son de los peores, es importante tener en cuenta que los métodos estructurales
@@ -127,7 +127,7 @@ superada por SteganoGAN.
 ### LSB matching
 
 La técnica de inserción de datos 
-[LSB *matching*](/stego/lab/intro/lsb-es/#incrustación-de-la-información-con-lsb-matching)
+[LSB *matching*](/stego/intro/lsb-es/#incrustación-de-la-información-con-lsb-matching)
 es muy similar al LSB *replacement*. La única diferencia es que, en lugar
 de sustituir el bit menos significativo, cambiamos su valor sumando uno 
 o restando uno al valor del byte. De esta manera, conseguimos el mismo 
@@ -233,7 +233,6 @@ que varía el *payload*.
 En la gráfica se presentan dos versiones diferentes de HStego, la 0.3 y la
 0.4. La versión 0.4 introduce diferentes mejoras que la hacen más difícil de
 detectar en el escenario evaluado.
-
 
 
 

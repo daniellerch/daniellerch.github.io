@@ -125,10 +125,10 @@ comments: false
 <div style='margin-bottom:50px'></div>
 #### Codes:
 
-- **[Binary Hamming codes](https://github.com/daniellerch/stegolab/tree/master/codes/hamming_codes.py)**: Implementation in Python of information hiding using matrix embedding techniques with binary Hamming codes. You can find more information in the article "[Binary Hamming Codes in Steganography](/stego/lab/codes/binary-hamming-en/)".
+- **[Binary Hamming codes](https://github.com/daniellerch/stegolab/tree/master/codes/hamming_codes.py)**: Implementation in Python of information hiding using matrix embedding techniques with binary Hamming codes. You can find more information in the article "[Binary Hamming Codes in Steganography](/stego/codes/binary-hamming-en/)".
 
 
-- **[Ternary Hamming codes](https://github.com/daniellerch/stegolab/tree/master/codes/ternary_hamming_codes.py)**: Implementation in Python of information hiding using matrix embedding techniques with ternary Hamming codes. Ternary codes allow a higher capacity than binary codes for the same level of media distortion.You can find more information in the article "[Ternary Hamming Codes in Steganography](/stego/lab/codes/ternary-hamming-en/)".
+- **[Ternary Hamming codes](https://github.com/daniellerch/stegolab/tree/master/codes/ternary_hamming_codes.py)**: Implementation in Python of information hiding using matrix embedding techniques with ternary Hamming codes. Ternary codes allow a higher capacity than binary codes for the same level of media distortion.You can find more information in the article "[Ternary Hamming Codes in Steganography](/stego/codes/ternary-hamming-en/)".
 
 - **[Wet Paper Codes](https://github.com/daniellerch/stegolab/tree/master/codes/wet_paper_codes.py)**: A Python implementación of the steganography embedding technique presented in the paper "[Writing on Wet Paper](http://www.ws.binghamton.edu/fridrich/Research/EI5681-33_WPC.pdf)" by Jessica Fridrich, Miroslav Goljan, Petr Lisoněk and David Soukal
 
@@ -196,4 +196,3 @@ Includes fast implementations using Numba and implementations that decompress in
 
 <hr>
 <br><br>
-

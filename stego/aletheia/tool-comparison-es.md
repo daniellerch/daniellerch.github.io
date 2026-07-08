@@ -4,8 +4,10 @@ title: "Comparativa de herramientas de esteganografía en imágenes"
 subtitle: ""
 noindex: true
 comments: false
+lang-suffix: "-es"
+canonical: "/stego/aletheia/v03/tool-comparison-es/"
+sitemap: false
+redirect: "/stego/aletheia/v03/tool-comparison-es/"
 ---
 
-<meta http-equiv="Refresh" content="0; url='/stego/aletheia/v03/tool-comparison-es/'" />
-
-This page has moved to [/stego/aletheia/v03/tool-comparison-es/](/stego/aletheia/v03/tool-comparison-es/).
+Esta página se ha movido a [/stego/aletheia/v03/tool-comparison-es/](/stego/aletheia/v03/tool-comparison-es/).

@@ -2,7 +2,7 @@
 layout: page
 title: "Text steganography with ChatGPT"
 subtitle: "" 
-noindex: false
+noindex: true
 meta-title: "Text steganography with ChatGPT"
 meta-description: "Article about using ChatGPT to perform text steganography"
 meta-keywords: "steganography, text, ChatGPT"
@@ -173,7 +173,6 @@ It doesn't even seem possible to detect the use of steganography.
 ## Conclusions
 
 With advanced platforms like ChatGPT, we can now create high-quality text steganography methods. Although there's still a long way to go, especially in terms of increasing capacity, what's been presented is a promising glimpse of what's to come. Without a doubt, text steganography will become a topic of discussion, as it doesn't seem it will be easily detectable.
-
 
 
 

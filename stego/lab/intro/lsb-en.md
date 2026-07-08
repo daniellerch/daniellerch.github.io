@@ -2,7 +2,7 @@
 layout: page
 title: "LSB steganography in images and audio."
 subtitle: "" 
-noindex: false
+noindex: true
 meta-title: "LSB steganography in images and audio."
 meta-description: "Article about the use of steganography embedding information in the LSB"
 meta-keywords: "steganography, steganalysis, images"
@@ -298,8 +298,8 @@ $p=3$ we could embed 3 bits in each 7-byte block with a single modification. Our
 
 There are many families of codes that allow us to perform this type of efficient embedding. These topics are covered in some detail in the following articles:
 
-- [Binary Hamming codes in Steganography](/stego/lab/codes/binary-hamming-en/)
-- [Ternary Hamming codes in Steganography](/stego/lab/codes/ternary-hamming-en/)
+- [Binary Hamming codes in Steganography](/stego/codes/binary-hamming-en/)
+- [Ternary Hamming codes in Steganography](/stego/codes/ternary-hamming-en/)
 
 
 <br>
@@ -667,8 +667,6 @@ Hello World¡GhÓ
 ```
 
 As in the previous cases, we can see some strange characters at the end of the extracted string, because we have extracted bits that are not used.
-
-
 
 
 

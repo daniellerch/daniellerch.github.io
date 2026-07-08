@@ -7,8 +7,9 @@ meta-title: "Tools"
 meta-description: "Steganograpy and steganalysis tools"
 lang-suffix: "-en"
 comments: false
+canonical: "/stegolab-en/"
+sitemap: false
+redirect: "/stegolab-en/"
 ---
-
-<meta http-equiv="Refresh" content="0; url='/stegolab-en'" />
 
 This page has moved to [StegoLab](/stegolab-en/).

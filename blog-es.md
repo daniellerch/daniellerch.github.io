@@ -2,10 +2,12 @@
 layout: page
 title: Blog
 subtitle: "" 
-noindex: false
+noindex: true
 meta-title: "Blog"
 meta-description: "Artículos sobre esteganografía y estegoanálisis"
 lang-suffix: "-es"
+canonical: "/resources-es/"
+sitemap: false
 ---
 
 <style>
@@ -120,6 +122,5 @@ listItems.forEach(function(item) {
     }
 });
 </script>
-
 
 

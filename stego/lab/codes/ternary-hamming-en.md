@@ -2,7 +2,7 @@
 layout: page
 title: "Ternary Hamming Codes in Steganography"
 subtitle: "" 
-noindex: false
+noindex: true
 meta-title: "Ternary Hamming Codes in Steganography"
 meta-description: "Information hiding technique based on ternary Hamming codes."
 meta-keywords: "steganography, codes"
@@ -316,6 +316,5 @@ print("Extracted message:", extracted_message.decode())
 
 1. Fridrich, J. (2009). Steganography in Digital Media: Principles, Algorithms, 
    and Applications. Cambridge University Press.
-
 
 

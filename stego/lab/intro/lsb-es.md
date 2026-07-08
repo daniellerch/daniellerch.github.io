@@ -2,7 +2,7 @@
 layout: page
 title: "Esteganografía LSB en imágenes y audio"
 subtitle: "" 
-noindex: false
+noindex: true
 meta-title: "Esteganografía LSB en imágenes y audio"
 meta-description: "Artículo acerca del uso de esteganografía incrustando información en el LSB"
 meta-keywords: "esteganografía, estegoanálisis, imágenes"
@@ -409,8 +409,8 @@ modificación. Nuestra eficiencia sería en este caso de 3.429.
 Existen muchas familias de códigos que nos permiten realizar este tipo de
 incrustaciones eficientes. Estos temas se tratan con cierto detalle en
 los siguientes artículos:
-- [Códigos de Hamming binarios en esteganografía](/stego/lab/codes/binary-hamming-es/).
-- [Códigos de Hamming ternarios en esteganografía](/stego/lab/codes/ternary-hamming-es/).
+- [Códigos de Hamming binarios en esteganografía](/stego/codes/binary-hamming-es/).
+- [Códigos de Hamming ternarios en esteganografía](/stego/codes/ternary-hamming-es/).
 
 
 
@@ -858,8 +858,6 @@ Hello World¡GhÓ
 
 Igual que en los casos anteriores, podemos ver algunos caracteres extraños al 
 final de la cadena extraída, debido a que hemos extraído bits que no se usan.
-
-
 
 
 

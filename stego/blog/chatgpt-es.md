@@ -2,7 +2,7 @@
 layout: page
 title: "Esteganografía en texto con ChatGPT"
 subtitle: "" 
-noindex: false
+noindex: true
 meta-title: "Esteganografía en texto con ChatGPT"
 meta-description: "Artículo acerca del uso de ChatGPT para realizar esteganografía en texto"
 meta-keywords: "esteganografía, texto, ChatGPT"
@@ -210,7 +210,6 @@ recorrer, especialmente en cuanto a ampliar la capacidad, lo presentado es
 una muestra prometedora de lo que está por venir. Sin duda, la esteganografía 
 en texto va a dar de qué hablar, pues no parece que vaya a ser fácil de 
 detectar.
-
 
 
 

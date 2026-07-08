@@ -2,10 +2,12 @@
 layout: page
 title: Books
 subtitle: "" 
-noindex: false
+noindex: true
 meta-title: "Books"
 meta-description: "Books on steganography and steganalysis"
 lang-suffix: "-en"
+canonical: "/resources-en/"
+sitemap: false
 ---
 
 <style>
