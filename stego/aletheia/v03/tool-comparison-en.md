@@ -179,9 +179,8 @@ it offers much better results than those of F5 and Outguess.
 
 ### HStego
 
-As previously discussed, HStego specializes in concealing data within uncompressed and JPEG images. It employs some of the most cutting-edge steganography techniques available today and sets a maximum threshold for data concealment to ensure that contemporary steganalysis tools struggle to detect it consistently.
+As previously discussed, HStego hides data in uncompressed and JPEG images using modern adaptive steganography methods. It also includes a payload limit intended to reduce detectability in supported scenarios, but this should not be interpreted as a guarantee of undetectability.
 
 For this analysis, the data concealment limit hasn't been applied when contrasting HStego with other tools, given that the payload fluctuates.
 
-The chart presents two distinct HStego versions: 0.3 and 0.4. The latter version, 0.4, integrates several enhancements, further bolstering its evasion against detection.
-
+The chart presents two distinct HStego versions: 0.3 and 0.4. Version 0.4 integrates several enhancements that make it harder to detect in the evaluated setting.

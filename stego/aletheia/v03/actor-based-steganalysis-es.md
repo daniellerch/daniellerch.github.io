@@ -212,7 +212,7 @@ imágenes. En el apartado siguiente vamos a ver diferentes casos de estudio,
 en los que veremos como usar Aletheia en escenarios con actores. Algunas
 de las herramientas que usaremos son las mismas que usamos para escenarios
 no basados en actores, que ja se han visto en 
-[otros artículos](/tools-es/) sobre estegoanálisis con Aletheia.
+[otros artículos sobre estegoanálisis con Aletheia](/stegolab-es/#aletheia).
 
 Adicionalmente, en este artículo nos centrearemos en el uso del comando "dci".
 
@@ -250,6 +250,5 @@ Adicionalmente, en este artículo nos centrearemos en el uso del comando "dci".
 
 
 <br>
-
 
 

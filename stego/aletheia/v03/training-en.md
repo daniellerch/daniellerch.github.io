@@ -94,7 +94,7 @@ random message embedded.
 If we want to prepare DCI models, we will also need to create images with
 double insertion. That is, images in which two 
 messages have been embedded. These images are necessary for DCI models, which are used
-to detect cases of [CSM](/stego/intro/faq-en#what-is-the-cover-source-mismatch).
+to detect cases of [CSM](/stego/intro/faq-en/#what-is-the-cover-source-mismatch).
 
 For this, we need a second embedding on the images that
 already have one embedding:
@@ -214,7 +214,7 @@ inconsistencies in the classification, which allows predicting the percentage
 of hits that the A model will have for a certain set of images
 with similar statistical characteristics. That is, it allows knowing if 
 a model is appropriate for the prediction of a set of images, or if
-it is not, due to the [CSM](/stego/intro/faq-en#what-is-the-cover-source-mismatch) problem.
+it is not, due to the [CSM](/stego/intro/faq-en/#what-is-the-cover-source-mismatch) problem.
 
 
 We can train an A type model with the following command, using the
@@ -386,7 +386,6 @@ In this case, the DCI method tells us that using these models we will be correct
 For reference, the actual results when predicting images from this test set are 66.5%, very close to the prediction made by DCI.
 
 DCI predictions are automated using the models provided by Aletheia using the [“dci” command](/stego/aletheia/v03/intro-en/#automated-tools).
-
 
 
 

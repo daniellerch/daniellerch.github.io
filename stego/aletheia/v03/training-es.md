@@ -95,7 +95,7 @@ aleatorio incrustado.
 Si queremos preparar modelos DCI, necesitaremos también crear imagenes con
 una doble inserción. Es decir, imágenes en las que se ha incrustado dos 
 mensajes. Estas imágenes son necesarias para los modelos DCI, que se usan
-para detectar casos de [CSM](/stego/intro/faq-es#qué-es-el-cover-source-mismatch).
+para detectar casos de [CSM](/stego/intro/faq-es/#qué-es-el-cover-source-mismatch).
 
 Para ello, necesitarems una segunda incrustación sobre las imágenes que
 ya tienen una incrustación:
@@ -216,7 +216,7 @@ inconsistencias en la clasificación, lo que permite predecir el porcentage
 de aciertos que tendrá el modelo A para un determinado conjunto de imágenes
 con características estadísticas similares. Es decir, permite saber si 
 un modelo es apropiado para la predicción de un conjunto de imágenes, o si
-no lo es, debido al problema [CSM](/stego/intro/faq-es#qué-es-el-cover-source-mismatch).
+no lo es, debido al problema [CSM](/stego/intro/faq-es/#qué-es-el-cover-source-mismatch).
 
 
 Podemos entrenar un modelo de tipo A con el siguiente comando, usando el
@@ -422,6 +422,5 @@ de prueba son del 66.5%%, muy cercano a la predicción hecha por DCI.
 
 Las predicciones DCI están automatizadas usando los modelos proporcionados
 por Aletheia usando el [comando "dci"](/stego/aletheia/v03/intro-es/#herramientas-automatizadas).
-
 
 

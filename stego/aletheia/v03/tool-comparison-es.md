@@ -222,10 +222,9 @@ gráfica, ofrece resultados mucho mejores que los de F5 y Outguess.
 
 Como ya se ha mencionado anteriormente, HStego es una 
 herramienta para ocultar datos en imágenes sin comprimir y en imágenes 
-JPEG. Esta herramienta utiliza algunos de los métodos de esteganografía más 
-avanzados conocidos en la actualidad, junto con un límite superior en la 
-cantidad de datos que se pueden ocultar para que las herramientas de 
-esteganografía modernas no puedan detectarlos de manera confiable.
+JPEG. Esta herramienta utiliza métodos modernos de esteganografía adaptativa
+y un límite de carga orientado a reducir la detectabilidad en los escenarios
+soportados; esto no debe interpretarse como una garantía de indetectabilidad.
 
 En este análisis no se ha usado el límite en la cantidad de
 información para poder comparar HStego con las otras herramientas, a medida
@@ -233,8 +232,7 @@ que varía el *payload*.
 
 En la gráfica se presentan dos versiones diferentes de HStego, la 0.3 y la
 0.4. La versión 0.4 introduce diferentes mejoras que la hacen más difícil de
-detectar.
-
+detectar en el escenario evaluado.
 
 
 

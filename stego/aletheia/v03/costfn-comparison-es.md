@@ -2,7 +2,7 @@
 layout: page
 title: Comparativa de funciones de coste para esteganografía en imágenes
 subtitle: "" 
-noindex: false
+noindex: true
 comments: false
 meta-title: "Comparativa de funciones de coste para esteganografía en imágenes"
 meta-description: "Artículo en el que se comparan diferentes funciones de coste para esteganografía en imágenes."
@@ -15,6 +15,9 @@ comments: false
 >  esteganografía en imágenes. Usaremos 
 > [Aletheia](https://github.com/daniellerch/aletheia) para ver qué funciones
 > de coste son más difíciles de detectar.
+
+> **Nota:** esta página es un borrador técnico incompleto. La referencia
+> actual para comparar métodos y herramientas es [StegoRank](/stegorank-es/).
 
 <style>
     [id]::before {
@@ -143,5 +146,3 @@ Wet Paper codes (WPC), en el que los coeficientes que no queremos mojar
 ### J-UNIWARD
 
 [J-UNIWARD](https://doi.org/10.1186/1687-417X-2014-1) 
-
-
