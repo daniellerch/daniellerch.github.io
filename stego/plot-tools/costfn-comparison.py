@@ -33,6 +33,5 @@ plt.ylim(0, 1.1)
 plt.title('Steganography tools')
 plt.tight_layout()
 plt.legend(loc="lower right")
-plt.show()
-
+plt.savefig("stego/aletheia/v03/resources/costfn_comparison.png")
 

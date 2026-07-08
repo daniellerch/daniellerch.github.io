@@ -12,6 +12,8 @@ comments: false
 
 <center style='margin-bottom:30px'>Aletheia <a href='https://github.com/daniellerch/aletheia/tree/v0.3'>v0.3</a></center>
 
+> This article refers to Aletheia v0.3. Command names and outputs may differ in newer versions.
+
 
 > In this article we are going to talk about how to use the commands offered by 
 > the [Aletheia](https://github.com/daniellerch/aletheia) tool for image stegaanalysis.
@@ -588,7 +590,6 @@ steganography tool and we do not know exactly what it does.
 
 The reader can explore the remaining commands, as they are simple and work 
 as usual.
-
 
 
 

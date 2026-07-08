@@ -12,6 +12,8 @@ comments: false
 
 <center style='margin-bottom:30px'>Aletheia <a href='https://github.com/daniellerch/aletheia/tree/v0.3'>v0.3</a></center>
 
+> Este artículo se refiere a Aletheia v0.3. Los nombres de comandos y las salidas pueden variar en versiones más recientes.
+
 > En este artículo vamos a ver cómo usar los comandos que ofrece 
 > [Aletheia](https://github.com/daniellerch/aletheia) para entrenar modelos
 > EfficientNet-b0
@@ -422,5 +424,4 @@ de prueba son del 66.5%%, muy cercano a la predicción hecha por DCI.
 
 Las predicciones DCI están automatizadas usando los modelos proporcionados
 por Aletheia usando el [comando "dci"](/stego/aletheia/v03/intro-es/#herramientas-automatizadas).
-
 

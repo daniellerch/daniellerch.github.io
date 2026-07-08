@@ -279,7 +279,7 @@ In the histogram it can be seen that the consecutive pairs of bars tend to obtai
 By adding one to the even bars, they give part of their values to the subsequent bar, while subtracting one to the odd bars, they give part of their values to the previous bar. Therefore, even-odd pairs of consecutive bars tend to take a similar height.
 
 There is a whole family of attacks dedicated to exploiting this statistical anomaly introduced by the LSB replacement. These attacks are known as **structural attacks** and can be exploited with steganalysis tools like [Aletheia](https://github.com/daniellerch/aletheia).
-In [Practical attack on LSB replacement schemes](/stego/aletheia/lsbr-attack-en/) it is explained how to use this tool to detect this type of steganography schemes, used by many popular tools such as [OpenStego](https://www.openstego.com/) and
+In [Practical attack on LSB replacement schemes](/stego/aletheia/v03/lsbr-attack-en/) it is explained how to use this tool to detect this type of steganography schemes, used by many popular tools such as [OpenStego](https://www.openstego.com/) and
 [OpenPuff](https://embeddedsw.net/OpenPuff_Steganography_Home.html).
 
 
@@ -676,7 +676,6 @@ Hello World
 ```
 
 As in the previous cases, we can see some strange characters at the end of the extracted string, because we have extracted bits that are not used.
-
 
 
 

@@ -13,6 +13,8 @@ comments: false
 
 <center style='margin-bottom:30px'>Aletheia <a href='https://github.com/daniellerch/aletheia/tree/v0.3'>v0.3</a></center>
 
+> This article refers to Aletheia v0.3. Command names and outputs may differ in newer versions.
+
 > In this article we are going to talk about how to detect the steganography 
 > scheme for **JPEG images** known as **F5**. To do this, we are going to 
 > use the steganalysis tool [Aletheia](https://github.com/daniellerch/aletheia).
@@ -590,6 +592,5 @@ the image to be analyzed.
 
 
 <br>
-
 
 

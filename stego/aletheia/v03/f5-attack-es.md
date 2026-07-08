@@ -13,6 +13,8 @@ comments: false
 
 <center style='margin-bottom:30px'>Aletheia <a href='https://github.com/daniellerch/aletheia/tree/v0.3'>v0.3</a></center>
 
+> Este artículo se refiere a Aletheia v0.3. Los nombres de comandos y las salidas pueden variar en versiones más recientes.
+
 > En este artículo vamos a ver cómo detectar el esquema de esteganografía para
 > imágenes JPEG conocido como F5. Para ello, usaremos la herramienta 
 > de estegoanálisis [Aletheia](https://github.com/daniellerch/aletheia).
@@ -576,7 +578,6 @@ que solo necesita la imagen a analizar.
 
 
 <br>
-
 
 
 

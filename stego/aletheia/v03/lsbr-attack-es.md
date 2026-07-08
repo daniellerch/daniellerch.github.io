@@ -12,6 +12,8 @@ comments: false
 
 <center style='margin-bottom:30px'>Aletheia <a href='https://github.com/daniellerch/aletheia/tree/v0.3'>v0.3</a></center>
 
+> Este artículo se refiere a Aletheia v0.3. Los nombres de comandos y las salidas pueden variar en versiones más recientes.
+
 > En este artículo vamos a ver cómo detectar herramientas que usan de 
 > LSB *replacement* en imágenes sin comprimir. Para ello, usaremos la herramienta 
 > de estegoanálisis [Aletheia](https://github.com/daniellerch/aletheia).
@@ -357,7 +359,6 @@ es que el segundo produce acarreo mientras que el primero no. De hecho, con
 LSB *replacement* nunca se le suma uno a un valor impar y nunca se le resta uno a un valor
 par, lo que produce la anomalía que explotan los métodos de detección 
 estructurales.
-
 
 
 

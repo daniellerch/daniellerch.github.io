@@ -12,6 +12,8 @@ comments: false
 
 <center style='margin-bottom:30px'>Aletheia <a href='https://github.com/daniellerch/aletheia/tree/v0.3'>v0.3</a></center>
 
+> Este artículo se refiere a Aletheia v0.3. Los nombres de comandos y las salidas pueden variar en versiones más recientes.
+
 
 > En este artículo vamos a ver cómo usar los comandos que ofrece la herramienta 
 > [Aletheia](https://github.com/daniellerch/aletheia) para el estegoanálisis de imágenes.
@@ -608,7 +610,6 @@ exactamente lo que hace.
 
 El lector puede explorar los comandos restantes, pues son sencillos y siguen la
 dinámica habitual de Aletheia.
-
 
 
 

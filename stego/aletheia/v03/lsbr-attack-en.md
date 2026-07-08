@@ -12,6 +12,8 @@ comments: false
 
 <center style='margin-bottom:30px'>Aletheia <a href='https://github.com/daniellerch/aletheia/tree/v0.3'>v0.3</a></center>
 
+> This article refers to Aletheia v0.3. Command names and outputs may differ in newer versions.
+
 > In this article we are going to talk about how to detect tools that use the LSB replacement
 or LSB replacement technique in uncompressed images. To do this, we are going to use the 
 steganalysis tool [Aletheia](https://github.com/daniellerch/aletheia).
@@ -332,7 +334,6 @@ and we want to hide the byte **01000001** corresponding to the letter 'A', we ca
 | 01010100     | 01111101          | 01111101          |
 
 As can be seen from the example, the fundamental difference between LSB replacement and LSB matching is that the latter produces carry while the former does not. In fact, LSB replacement never adds one to an odd value and never subtracts one from an even value, producing the anomaly exploited by structural detection methods.
-
 
 
 

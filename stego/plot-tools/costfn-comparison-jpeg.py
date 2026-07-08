@@ -23,6 +23,7 @@ ax1.plot(payload, steghide, color='b', marker='o', linestyle='-', label='Steghid
 ax1.plot(payload, nsf5, color='g', marker='o', linestyle='-', label='nsF5')
 ax1.plot(payload, jmipod, linestyle='-', label='J-MiPOD')
 ax1.plot(payload, juniw, marker='o', linestyle='-', label='J-UNIWARD (HStego)')
+ax1.plot(payload, juniw_wiener, marker='o', linestyle='-', label='J-UNIWARD + Wiener')
 
 ax1.tick_params(axis='y')
 ax1.grid(True, which='both', axis='y', linestyle='--', linewidth=0.5)
@@ -32,6 +33,5 @@ plt.ylim(0, 1.1)
 plt.title('Steganography tools (JPEG)')
 plt.tight_layout()
 plt.legend(loc="lower right")
-plt.show()
-
+plt.savefig("stego/aletheia/v03/resources/costfn_comparison_jpeg.png")
 

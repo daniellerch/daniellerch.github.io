@@ -12,6 +12,8 @@ comments: false
 
 <center style='margin-bottom:30px'>Aletheia <a href='https://github.com/daniellerch/aletheia/tree/v0.3'>v0.3</a></center>
 
+> Este artículo se refiere a Aletheia v0.3. Los nombres de comandos y las salidas pueden variar en versiones más recientes.
+
 > En este artículo vamos a ver cómo usar los comandos que ofrece 
 > [Aletheia](https://github.com/daniellerch/aletheia) para la resolución de stego-puzzles.
 
@@ -345,7 +347,6 @@ ocultando datos como metadatos.
 A pesar de las limitaciones de seguridad de estas técnicas, su aplicación en 
 retos de hacking y stego-puzzles ofrece una perspectiva valiosa y educativa 
 en el campo de la esteganografía.
-
 
 
 

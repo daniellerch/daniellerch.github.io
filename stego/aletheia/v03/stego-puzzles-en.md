@@ -12,6 +12,8 @@ comments: false
 
 <center style='margin-bottom:30px'>Aletheia <a href='https://github.com/daniellerch/aletheia/tree/v0.3'>v0.3</a></center>
 
+> This article refers to Aletheia v0.3. Command names and outputs may differ in newer versions.
+
 > In this article, we will see how to use the commands offered by
 > [Aletheia](https://github.com/daniellerch/aletheia) to solve stego-puzzles.
 
@@ -302,7 +304,6 @@ Artist                   : Hello World
 ## Conclusion
 
 Solving stego-puzzles encompasses a fascinating range of techniques and methods, as we have explored in this article. Using Aletheia, we have seen how hidden messages in images can be detected through drawn texts, information hidden in the alpha channel, using EOF techniques, and hiding data as metadata. Despite the security limitations of these techniques, their application in hacking challenges and stego-puzzles offers a valuable and educational perspective in the field of steganography.
-
 
 
 

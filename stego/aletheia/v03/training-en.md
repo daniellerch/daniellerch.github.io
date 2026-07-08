@@ -12,6 +12,8 @@ comments: false
 
 <center style='margin-bottom:30px'>Aletheia <a href='https://github.com/daniellerch/aletheia/tree/v0.3'>v0.3</a></center>
 
+> This article refers to Aletheia v0.3. Command names and outputs may differ in newer versions.
+
 > In this article, we will see how to use the commands offered by 
 > [Aletheia](https://github.com/daniellerch/aletheia) to train EfficientNet-b0 models
 
@@ -386,7 +388,6 @@ In this case, the DCI method tells us that using these models we will be correct
 For reference, the actual results when predicting images from this test set are 66.5%, very close to the prediction made by DCI.
 
 DCI predictions are automated using the models provided by Aletheia using the [“dci” command](/stego/aletheia/v03/intro-en/#automated-tools).
-
 
 
 

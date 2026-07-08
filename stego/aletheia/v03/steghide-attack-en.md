@@ -13,6 +13,8 @@ comments: false
 
 <center style='margin-bottom:30px'>Aletheia <a href='https://github.com/daniellerch/aletheia/tree/v0.3'>v0.3</a></center>
 
+> This article refers to Aletheia v0.3. Command names and outputs may differ in newer versions.
+
 > In this article we are going to talk about how to detect **JPEG images** 
 > which contain hidden data using Steghide. To do this, we are going to use the 
 > steganalysis tool 
@@ -450,5 +452,4 @@ Password found: 12345ab
 
 
 <br>
-
 
