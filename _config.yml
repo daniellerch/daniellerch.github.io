@@ -273,7 +273,9 @@ google_forms_comments:
 
 plugins:
   - jekyll-paginate
-  - jekyll-sitemap
+  # Temporarily disabled so Bing can verify /sitemap.xml/BingSiteAuth.xml.
+  # Re-enable after verification to restore /sitemap.xml as the sitemap file.
+  # - jekyll-sitemap
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
