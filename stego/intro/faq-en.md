@@ -46,6 +46,13 @@ comments: false
 - [What are wet paper codes?](#what-are-wet-paper-codes)
 - [What are syndrome-trellis codes (STC)?](#what-are-syndrome-trellis-codes-stc)
 - [What are false positives and false negatives?](#what-are-false-positives-and-false-negatives)
+- [What does low detectability mean?](#what-does-low-detectability-mean)
+- [What is detectability?](#what-is-detectability)
+- [What is distortion?](#what-is-distortion)
+- [What is the trade-off between capacity and detectability?](#what-is-the-trade-off-between-capacity-and-detectability)
+- [What is cover selection?](#what-is-cover-selection)
+- [What is a known-cover attack?](#what-is-a-known-cover-attack)
+- [Why can recompression or resizing break a hidden message?](#why-can-recompression-or-resizing-break-a-hidden-message)
 - [What is Aletheia?](#what-is-aletheia)
 - [What is StegoRank?](#what-is-stegorank)
 
@@ -287,7 +294,7 @@ the change may leave a clearer statistical trace.
 
 Methods such as HILL, S-UNIWARD, or J-UNIWARD rely on cost functions to decide
 where the image should be modified. The quality of the cost function directly
-affects the steganographic security of the method.
+affects the detectability of the method.
 
 ## What is matrix encoding?
 
@@ -327,6 +334,81 @@ occurs when a stego file goes undetected and is classified as cover.
 
 Both errors matter. A very aggressive detector may produce many false positives,
 whereas a very conservative detector may allow too many false negatives.
+
+## What does low detectability mean?
+
+A method has low detectability when it hides the existence of the message
+without leaving clear statistical traces in the stego file. It is not enough for
+the message to be extracted correctly; the resulting file should also look like
+a normal cover.
+
+In practice, detectability depends on the method, the payload, the type of
+cover, the key being used, and the detector it is facing. This is why it is
+clearer to talk about low or high detectability than security in a generic
+sense.
+
+## What is detectability?
+
+Detectability is how easily a steganalyst or tool can distinguish between covers
+and stego files. If a method produces statistically visible changes, its
+detectability will be high.
+
+Detectability does not depend only on the algorithm. It is also affected by the
+message size, image type, compression, cover source, and the dataset used to
+train or evaluate the detector.
+
+## What is distortion?
+
+Distortion is the change introduced into the cover when embedding a message. In
+an image, it can be measured as differences in pixels, JPEG coefficients,
+histograms, or other statistical features.
+
+Modern methods do not simply try to minimize the number of changes. They try to
+place those changes where they are less detectable, which is why distortion is
+often modeled using cost functions.
+
+## What is the trade-off between capacity and detectability?
+
+Capacity indicates how much information can be hidden in a cover. Detectability
+indicates how easy or difficult it is to detect that information has been hidden.
+There is usually a tension between the two: as the payload increases, the number
+of changes increases, and so does the probability of detection.
+
+For this reason, practical steganography is not only about asking how much fits
+inside an image. It is also about asking how much can be hidden before the
+result becomes easy to detect.
+
+## What is cover selection?
+
+**Cover selection** means carefully choosing which files will be used as covers.
+Instead of embedding data into any available image, the sender selects files
+that are better suited to hiding information with lower detection risk.
+
+For example, an image with a lot of texture may be a better candidate than an
+image with large smooth regions, because some changes are less visible in
+complex areas.
+
+## What is a known-cover attack?
+
+A **known-cover** attack occurs when the attacker has both the original cover
+and the stego file. By comparing them, the attacker can see exactly which
+positions have changed.
+
+This is not the normal setting for practical steganalysis, because the original
+cover is usually unavailable. It is mainly useful as an experimental or forensic
+scenario for studying how an algorithm modifies the cover and what patterns it
+leaves behind.
+
+## Why can recompression or resizing break a hidden message?
+
+Many steganographic techniques depend on specific pixel values or coefficients.
+If a platform recompresses, resizes, or strips metadata from a file, those values
+may change and the hidden message may become corrupted or disappear.
+
+This is especially important for social networks, messaging services, and
+platforms that automatically optimize images. Being able to extract a message
+locally does not guarantee that it will survive after uploading the file to an
+external service.
 
 ## What is Aletheia?
 

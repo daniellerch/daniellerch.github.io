@@ -46,6 +46,13 @@ comments: false
 - [¿Qué son los wet paper codes?](#qué-son-los-wet-paper-codes)
 - [¿Qué son los syndrome-trellis codes (STC)?](#qué-son-los-syndrome-trellis-codes-stc)
 - [¿Qué son los falsos positivos y falsos negativos?](#qué-son-los-falsos-positivos-y-falsos-negativos)
+- [¿Qué significa que un método tenga baja detectabilidad?](#qué-significa-que-un-método-tenga-baja-detectabilidad)
+- [¿Qué es la detectabilidad?](#qué-es-la-detectabilidad)
+- [¿Qué es la distorsión?](#qué-es-la-distorsión)
+- [¿Qué relación hay entre capacidad y detectabilidad?](#qué-relación-hay-entre-capacidad-y-detectabilidad)
+- [¿Qué es cover selection?](#qué-es-cover-selection)
+- [¿Qué es un ataque known-cover?](#qué-es-un-ataque-known-cover)
+- [¿Por qué la recompresión o el redimensionado pueden romper un mensaje oculto?](#por-qué-la-recompresión-o-el-redimensionado-pueden-romper-un-mensaje-oculto)
 - [¿Qué es Aletheia?](#qué-es-aletheia)
 - [¿Qué es StegoRank?](#qué-es-stegorank)
 
@@ -334,7 +341,7 @@ el cambio podría dejar una huella estadística más clara.
 
 Métodos como HILL, S-UNIWARD o J-UNIWARD se basan en funciones de coste para
 decidir dónde conviene modificar la imagen. La calidad de esa función influye
-directamente en la seguridad esteganográfica del método.
+directamente en la detectabilidad del método.
 
 ## ¿Qué es matrix encoding?
 
@@ -379,6 +386,82 @@ Ambos errores son importantes. Un detector muy agresivo puede producir muchos
 falsos positivos, mientras que un detector demasiado conservador puede dejar
 pasar demasiados falsos negativos.
 
+## ¿Qué significa que un método tenga baja detectabilidad?
+
+Un método tiene baja detectabilidad cuando consigue ocultar la existencia del
+mensaje sin dejar huellas estadísticas claras en el archivo stego. No basta con
+que el mensaje pueda extraerse correctamente; el archivo resultante también debe
+parecer un cover normal.
+
+En la práctica, la detectabilidad depende del método, del payload, del tipo de
+cover, de la clave usada y del detector al que se enfrenta. Por eso es más claro
+hablar de baja o alta detectabilidad que de seguridad en sentido genérico.
+
+## ¿Qué es la detectabilidad?
+
+La detectabilidad es la facilidad con la que un estegoanalista o una herramienta
+puede distinguir entre covers y archivos stego. Si un método produce cambios
+estadísticamente visibles, su detectabilidad será alta.
+
+La detectabilidad no depende solo del algoritmo. También influyen el tamaño del
+mensaje, el tipo de imagen, la compresión, el origen de los covers y el conjunto
+de datos usado para entrenar o evaluar el detector.
+
+## ¿Qué es la distorsión?
+
+La distorsión es el cambio introducido en el cover al incrustar un mensaje. En
+una imagen, puede medirse como diferencias en píxeles, coeficientes JPEG,
+histogramas u otras características estadísticas.
+
+Los métodos modernos no intentan simplemente minimizar el número de cambios,
+sino colocar esos cambios donde sean menos detectables. Por eso la distorsión se
+suele modelar mediante funciones de coste.
+
+## ¿Qué relación hay entre capacidad y detectabilidad?
+
+La capacidad indica cuánta información puede ocultarse en un cover. La
+detectabilidad indica lo fácil o difícil que es detectar que se ha ocultado
+información. Normalmente hay una tensión entre ambas: al aumentar el payload,
+aumentan los cambios y también la probabilidad de detección.
+
+Por eso, en esteganografía práctica no basta con preguntar cuánto cabe en una
+imagen. También hay que preguntar cuánto puede ocultarse sin que el resultado
+sea fácilmente detectable.
+
+## ¿Qué es cover selection?
+
+**Cover selection** consiste en elegir cuidadosamente qué archivos se usarán
+como covers. En lugar de incrustar datos en cualquier imagen disponible, se
+seleccionan aquellas que son más adecuadas para ocultar información con menor
+riesgo de detección.
+
+Por ejemplo, una imagen con mucha textura puede ser mejor candidata que una
+imagen con grandes zonas lisas, porque ciertos cambios quedan más disimulados
+en regiones complejas.
+
+## ¿Qué es un ataque known-cover?
+
+Un ataque **known-cover** ocurre cuando el atacante dispone tanto del cover
+original como del archivo stego. Al comparar ambos archivos, puede observar
+exactamente qué posiciones han cambiado.
+
+Este no es el escenario normal en estegoanálisis práctico, porque el cover
+original normalmente no está disponible. Es útil sobre todo como escenario
+experimental o forense para estudiar cómo modifica un algoritmo el cover y qué
+patrones deja.
+
+## ¿Por qué la recompresión o el redimensionado pueden romper un mensaje oculto?
+
+Muchas técnicas de esteganografía dependen de valores concretos de píxeles o
+coeficientes. Si una plataforma recomprime, redimensiona o elimina metadatos de
+un archivo, esos valores pueden cambiar y el mensaje oculto puede corromperse o
+desaparecer.
+
+Esto es especialmente importante en redes sociales, servicios de mensajería y
+plataformas que optimizan imágenes automáticamente. Que un mensaje se pueda
+extraer localmente no garantiza que sobreviva después de subir el archivo a un
+servicio externo.
+
 ## ¿Qué es Aletheia?
 
 **Aletheia** es una herramienta de estegoanálisis desarrollada para detectar y
@@ -398,8 +481,3 @@ son de detectar con estegoanálisis.
 La idea principal es que una herramienta esteganográfica no debería evaluarse
 solo por su capacidad o facilidad de uso, sino también por la huella estadística
 que deja en los archivos generados.
-
-
-
-
-
