@@ -39,7 +39,7 @@ comments: false
 <br>
 ## ¿Qué es la esteganografía?
 
-El término esteganografía, proveniene del griego "steganos" (oculto) y 
+El término esteganografía proviene del griego "steganos" (oculto) y 
 "graphos" (escritura) y se traduce literalmente como "escritura oculta". 
 Esta disciplina se refiere al arte y ciencia de esconder un mensaje o 
 información dentro de otra información, de tal manera que no sea perceptible.
@@ -72,7 +72,7 @@ El estegoanálisis es el proceso de detectar y, posiblemente, extraer
 información oculta mediante técnicas de esteganografía en un medio. Mientras 
 que la esteganografía se centra en ocultar la existencia de un mensaje dentro 
 de otro medio (como una imagen, audio o video), el estegoanálisis busca 
-identificar y extraerá esos mensajes ocultos.
+identificar y extraer esos mensajes ocultos.
 
 En otras palabras, si la esteganografía es el arte de esconder, el 
 estegoanálisis es el arte de descubrir lo escondido. Los expertos en 
@@ -122,8 +122,8 @@ Existen dos formas comunes de modificar el LSB de un valor: el
 ## ¿Qué es el LSB replacement?
 
 El LSB replacement (o "Reemplazo de Bit Menos Significativo") es una técnica de 
-[esteganografía LSB](qué-es-el-lsb--qué-es-la-esteganografía-lsb)
-que consiste en sustituir LSB por el bit del mensaje que se desea ocultar.
+[esteganografía LSB](#qué-es-el-lsb--qué-es-la-esteganografía-lsb)
+que consiste en sustituir el LSB por el bit del mensaje que se desea ocultar.
 
 Es importante destacar que, aunque el LSB Replacement es una técnica efectiva y 
 fácil de implementar, no es la más segura. Las herramientas modernas de 
@@ -134,8 +134,8 @@ este método.
 ## ¿Qué es el LSB matching?
 
 El LSB Matching es una técnica de
-[esteganografía LSB](qué-es-el-lsb--qué-es-la-esteganografía-lsb)
-otra técnica de esteganografía que, al igual que el 
+[esteganografía LSB](#qué-es-el-lsb--qué-es-la-esteganografía-lsb)
+que, al igual que el 
 [LSB Replacement](#qué-es-el-lsb-replacement), 
 se utiliza para ocultar información en los bits menos significativos de un 
 archivo multimedia, como una imagen. 
@@ -205,7 +205,7 @@ los datos de movimiento entre *frames*.
 - **Texto**: Aunque es menos común debido a la menor cantidad de datos 
 redundantes en el texto en comparación con otros medios, es posible ocultar 
 información en textos mediante el uso de espacios adicionales, tabulaciones 
-o cambios en la secuencia de caracteres. También es posible sustiruir palabras
+o cambios en la secuencia de caracteres. También es posible sustituir palabras
 o grupos de palabras por sinónimos, de manera que codifiquen un mensaje diferente.
 
 - **Protocolos de red**: La esteganografía puede usarse para ocultar información 
@@ -231,11 +231,13 @@ ser invisibles o inaudibles para el observador humano, pueden ser detectados
 mediante análisis estadístico.
 
 Cuando se usan técnicas de [LSB replacement](/stego/intro/faq-es/#qué-es-el-lsb-replacement),
-aparecen anomalías estadísticas importantes, debido a que la sustitución del
-LSB hace que la cantidad total de valores (por ejemplo, píxeles) pares aumente
-y que la cantidad total de valores impares disminuya. 
+aparecen anomalías estadísticas importantes. La sustitución directa del LSB
+solo puede convertir un valor par en el impar consecutivo, o un valor impar en
+el par consecutivo. Por eso tiende a igualar las frecuencias dentro de pares de
+valores consecutivos (por ejemplo, 0/1, 2/3, 4/5), alterando la distribución
+natural de los píxeles.
 
-Estas anomalías son aprovechadas por una toda una familia de ataques conocidodos
+Estas anomalías son aprovechadas por toda una familia de ataques conocidos
 como "ataques estructurales", entre los que destacan el ataque SPA, el ataque RS
 o el ataque WS.
 
@@ -249,8 +251,6 @@ modelos aprenden de los datos, por lo que un modelo entrenado con una base de
 datos de imágenes puede no funcionar correctamente con imágenes que proceden de
 otra base de datos de imágenes, posiblemente, con unas características
 estadísticas diferentes.
-
-
 
 
 

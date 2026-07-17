@@ -100,10 +100,9 @@ can detect the presence of steganography done using this method.
 
 LSB Matching is a form of 
 [LSB steganography](#what-is-the-lsb--what-is-lsb-steganography).
-Similar to
-[LSB Replacement](#what-is-lsb-replacement), 
-is used to conceal information within the least significant bits of 
-multimedia files, like image.
+Like
+[LSB Replacement](#what-is-lsb-replacement), it is used to conceal information within the least significant bits of 
+multimedia files, such as images.
 
 However, there's a key difference in the way the secret information is introduced. While "LSB Replacement" simply replaces the LSB of a pixel with a bit from the secret message, "LSB Matching" adopts a slightly more sophisticated approach: if the secret message bit matches the pixel's LSB, the pixel remains unchanged. If they don't match, the pixel value is randomly adjusted by either adding or subtracting one from its value.
 
@@ -187,9 +186,11 @@ the carrier object. These changes, although they might be invisible or
 inaudible to the human observer, can be detected through statistical analysis.
 
 When using LSB (Least Significant Bit) replacement techniques, significant 
-statistical anomalies appear, as the LSB replacement causes the total amount 
-of even values (for example, pixels) to increase and the total number of odd 
-values to decrease.
+statistical anomalies appear. Direct LSB replacement can only turn an even
+value into the following odd value, or an odd value into the preceding even
+value. As a result, it tends to equalize the frequencies within pairs of
+consecutive values (for example, 0/1, 2/3, 4/5), altering the natural
+distribution of pixel values.
 
 These anomalies are exploited by a whole family of attacks known as 
 "structural attacks", among which the SPA attack, RS attack, and WS attack 
