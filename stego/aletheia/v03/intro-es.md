@@ -8,6 +8,15 @@ meta-description: "Artículo acerca del uso básico de la herramienta para esteg
 meta-keywords: "esteganografía, estegoanálisis, imágenes"
 lang-suffix: "-es"
 comments: false
+software_schema:
+  name: "Aletheia"
+  description: "Herramienta libre de estegoanálisis de imágenes para detectar mensajes ocultos."
+  author: "Daniel Lerch Hostalot"
+  applicationCategory: "SecurityApplication"
+  operatingSystem: "Linux, Windows, macOS"
+  programmingLanguage: "Python"
+  codeRepository: "https://github.com/daniellerch/aletheia"
+  keywords: "esteganografía, estegoanálisis, estegoanálisis de imágenes, detección de mensajes ocultos"
 ---
 
 <center style='margin-bottom:30px'>Aletheia <a href='https://github.com/daniellerch/aletheia/tree/v0.3'>v0.3</a></center>
@@ -610,9 +619,6 @@ exactamente lo que hace.
 
 El lector puede explorar los comandos restantes, pues son sencillos y siguen la
 dinámica habitual de Aletheia.
-
-
-
 
 
 

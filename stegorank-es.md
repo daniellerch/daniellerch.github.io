@@ -7,6 +7,7 @@ meta-title: "StegoRank — Daniel Lerch"
 meta-description: "Comparativa de técnicas y herramientas de esteganografía en imágenes"
 lang-suffix: "-es"
 comments: false
+schema_type: "Article"
 ---
 
 <style>

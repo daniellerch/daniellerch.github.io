@@ -8,6 +8,17 @@ meta-description: "FAQ sobre esteganografía"
 meta-keywords: "esteganografía, faq, preguntas frecuentes"
 lang-suffix: "-es"
 comments: false
+faq_schema:
+  - question: "¿Qué es la esteganografía?"
+    answer: "La esteganografía es la práctica de ocultar un mensaje o información dentro de otra información de forma que la existencia del mensaje no sea perceptible."
+  - question: "¿Qué es el estegoanálisis?"
+    answer: "El estegoanálisis es el proceso de detectar y, en algunos casos, extraer información oculta mediante técnicas de esteganografía."
+  - question: "¿Qué son cover, stego y payload?"
+    answer: "El cover es el objeto original usado como portador, el stego es el resultado tras incrustar el mensaje y el payload es la cantidad de información oculta."
+  - question: "¿Qué es la esteganografía LSB?"
+    answer: "La esteganografía LSB oculta información modificando los bits menos significativos de muestras como píxeles de una imagen o muestras de audio."
+  - question: "¿Qué es el Cover Source Mismatch?"
+    answer: "El Cover Source Mismatch aparece cuando un detector de estegoanálisis se entrena con imágenes de una fuente y se aplica a imágenes de otra fuente, reduciendo a menudo su fiabilidad."
 ---
 
 

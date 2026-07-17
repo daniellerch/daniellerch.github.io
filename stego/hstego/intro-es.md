@@ -8,6 +8,15 @@ meta-description: "Artículo introductorio a la herramienta de esteganografía H
 meta-keywords: "esteganografía, imágenes"
 lang-suffix: "-es"
 comments: false
+software_schema:
+  name: "HStego"
+  description: "Herramienta de esteganografía para ocultar información en imágenes bitmap y JPEG usando métodos adaptativos y límites de payload orientados a reducir la detectabilidad."
+  author: "Daniel Lerch Hostalot"
+  applicationCategory: "SecurityApplication"
+  operatingSystem: "Linux, Windows"
+  programmingLanguage: "Python"
+  codeRepository: "https://github.com/daniellerch/hstego"
+  keywords: "esteganografía, HStego, S-UNIWARD, J-UNIWARD, Syndrome Trellis Codes, esteganografía de imágenes"
 ---
 
 > En este artículo vamos a ver cómo incrustar información en imágenes 
@@ -50,8 +59,5 @@ xxx
 ![efficiency](/stego/hstego/resources/hstego-1E.png?style=centerme)
 ![efficiency](/stego/hstego/resources/hstego-2E.png?style=centerme)
 ![efficiency](/stego/hstego/resources/hstego-3E.png?style=centerme)
-
-
-
 
 

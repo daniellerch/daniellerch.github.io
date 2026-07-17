@@ -8,6 +8,17 @@ meta-description: "FAQ about steganography"
 meta-keywords: "steganography, faq, frequently asked questions"
 lang-suffix: "-en"
 comments: false
+faq_schema:
+  - question: "What is steganography?"
+    answer: "Steganography is the practice of hiding a message or information inside other information so that the existence of the message is not noticeable."
+  - question: "What is steganalysis?"
+    answer: "Steganalysis is the process of detecting, and sometimes extracting, information hidden using steganographic techniques."
+  - question: "What are cover, stego, and payload?"
+    answer: "The cover is the original carrier object, the stego object is the result after embedding a secret message, and the payload is the amount of hidden information."
+  - question: "What is LSB steganography?"
+    answer: "LSB steganography hides information by modifying the least significant bits of samples such as image pixels or audio samples."
+  - question: "What is Cover Source Mismatch?"
+    answer: "Cover Source Mismatch occurs when a steganalysis detector is trained on images from one source and then applied to images from a different source, often reducing reliability."
 ---
 
 

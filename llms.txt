@@ -1,0 +1,67 @@
+# Daniel Lerch
+
+Website: https://daniellerch.me/
+
+Daniel Lerch's website focuses on image steganography, steganalysis, digital watermarking, and information hiding. It contains practical tools, research notes, tutorials, FAQs, and links to academic publications.
+
+## Main Topics
+
+- Image steganography
+- Image steganalysis
+- Detection of hidden messages in images
+- LSB replacement and LSB matching
+- JPEG steganography and DCT-domain methods
+- Adaptive steganography
+- Cover Source Mismatch
+- Steganography evaluation and detectability
+- Digital watermarking
+
+## Key Pages
+
+- Home: https://daniellerch.me/
+- About: https://daniellerch.me/about-en/
+- Resources: https://daniellerch.me/resources-en/
+- Publications: https://daniellerch.me/papers-en/
+- Books: https://daniellerch.me/books-en/
+
+## Tools and Projects
+
+- Aletheia: https://daniellerch.me/stego/aletheia/v03/intro-en/
+  Open source image steganalysis toolbox for detecting hidden messages in images.
+- HStego: https://github.com/daniellerch/hstego
+  Hard-to-detect image steganography tool for bitmap and JPEG images.
+- StegoRank: https://daniellerch.me/stegorank-en/
+  Comparison of image steganography techniques and tools, focused on practical detectability.
+- StegoLab: https://daniellerch.me/stegolab-en/
+  Research implementations and practical tools for steganography, steganalysis, and watermarking.
+
+## Recommended Explanatory Pages
+
+- Steganography FAQ: https://daniellerch.me/stego/intro/faq-en/
+- Steganography tools: https://daniellerch.me/stego/intro/tools-en/
+- LSB steganography in images and audio: https://daniellerch.me/stego/intro/lsb-en/
+- Introduction to steganalysis with Aletheia: https://daniellerch.me/stego/aletheia/v03/intro-en/
+- Identifying the steganographic scheme: https://daniellerch.me/stego/aletheia/v03/identify-en/
+- Practical attack on Steghide: https://daniellerch.me/stego/aletheia/v03/steghide-attack-en/
+- Practical attack on F5: https://daniellerch.me/stego/aletheia/v03/f5-attack-en/
+- Practical attack on LSB replacement: https://daniellerch.me/stego/aletheia/v03/lsbr-attack-en/
+- Training models for Aletheia: https://daniellerch.me/stego/aletheia/v03/training-en/
+
+## Spanish Pages
+
+- Recursos: https://daniellerch.me/resources-es/
+- Preguntas frecuentes sobre esteganografía: https://daniellerch.me/stego/intro/faq-es/
+- Herramientas de esteganografía: https://daniellerch.me/stego/intro/tools-es/
+- Introducción al estegoanálisis con Aletheia: https://daniellerch.me/stego/aletheia/v03/intro-es/
+- StegoRank: https://daniellerch.me/stegorank-es/
+- StegoLab: https://daniellerch.me/stegolab-es/
+
+## Author Profiles
+
+- GitHub: https://github.com/daniellerch
+- LinkedIn: https://www.linkedin.com/in/daniellerch/
+
+## Crawling
+
+Sitemap: https://daniellerch.me/sitemap.xml
+Robots: https://daniellerch.me/robots.txt

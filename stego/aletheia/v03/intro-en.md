@@ -8,6 +8,15 @@ meta-description: "Blog post about the basic usage of the Aletheia steganalysis 
 meta-keywords: "steganography, steganalysis, images"
 lang-suffix: "-en"
 comments: false
+software_schema:
+  name: "Aletheia"
+  description: "Open source image steganalysis toolbox for detecting hidden messages in images."
+  author: "Daniel Lerch Hostalot"
+  applicationCategory: "SecurityApplication"
+  operatingSystem: "Linux, Windows, macOS"
+  programmingLanguage: "Python"
+  codeRepository: "https://github.com/daniellerch/aletheia"
+  keywords: "steganography, steganalysis, image steganalysis, hidden message detection"
 ---
 
 <center style='margin-bottom:30px'>Aletheia <a href='https://github.com/daniellerch/aletheia/tree/v0.3'>v0.3</a></center>
@@ -590,8 +599,5 @@ steganography tool and we do not know exactly what it does.
 
 The reader can explore the remaining commands, as they are simple and work 
 as usual.
-
-
-
 
 

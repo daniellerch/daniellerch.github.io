@@ -1,0 +1,107 @@
+{% assign schema_url = page.canonical | default: page.url | absolute_url | strip_index %}
+{% assign schema_title = page.meta-title | default: page.title | default: site.title %}
+{% assign schema_description = page.meta-description | default: page.subtitle | default: site.description %}
+
+{% if page.url == "/" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Daniel Lerch",
+  "url": {{ "/" | absolute_url | jsonify }},
+  "description": {{ site.description | jsonify }},
+  "inLanguage": ["en", "es"],
+  "publisher": {
+    "@type": "Person",
+    "name": "Daniel Lerch Hostalot",
+    "url": {{ "/" | absolute_url | jsonify }},
+    "sameAs": [
+      "https://github.com/daniellerch",
+      "https://www.linkedin.com/in/daniellerch/"
+    ],
+    "knowsAbout": [
+      "Image steganography",
+      "Steganalysis",
+      "Digital watermarking",
+      "Information hiding"
+    ]
+  }
+}
+</script>
+{% endif %}
+
+{% if page.faq_schema %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": {{ schema_title | jsonify }},
+  "url": {{ schema_url | jsonify }},
+  "inLanguage": {% if page.lang-suffix == "-es" %}"es"{% else %}"en"{% endif %},
+  "mainEntity": [
+    {% for item in page.faq_schema %}
+    {
+      "@type": "Question",
+      "name": {{ item.question | jsonify }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ item.answer | jsonify }}
+      }
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
+{% elsif page.software_schema %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": {{ page.software_schema.name | jsonify }},
+  "url": {{ schema_url | jsonify }},
+  "description": {{ page.software_schema.description | default: schema_description | jsonify }},
+  "applicationCategory": {{ page.software_schema.applicationCategory | default: "SecurityApplication" | jsonify }},
+  "operatingSystem": {{ page.software_schema.operatingSystem | default: "Linux, Windows, macOS" | jsonify }},
+  "programmingLanguage": {{ page.software_schema.programmingLanguage | default: "Python" | jsonify }},
+  "license": {{ page.software_schema.license | default: "https://opensource.org/licenses/MIT" | jsonify }},
+  "codeRepository": {{ page.software_schema.codeRepository | jsonify }},
+  "author": {
+    "@type": "Person",
+    "name": {{ page.software_schema.author | default: "Daniel Lerch Hostalot" | jsonify }},
+    "url": {{ "/" | absolute_url | jsonify }}
+  },
+  "creator": {
+    "@type": "Person",
+    "name": {{ page.software_schema.author | default: "Daniel Lerch Hostalot" | jsonify }},
+    "url": {{ "/" | absolute_url | jsonify }}
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": {{ page.software_schema.author | default: "Daniel Lerch Hostalot" | jsonify }},
+    "url": {{ "/" | absolute_url | jsonify }}
+  },
+  "keywords": {{ page.software_schema.keywords | default: page.meta-keywords | default: "steganography, steganalysis" | jsonify }}
+}
+</script>
+{% elsif page.schema_type == "Article" or page.layout == "post" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": {{ schema_title | jsonify }},
+  "description": {{ schema_description | jsonify }},
+  "url": {{ schema_url | jsonify }},
+  "inLanguage": {% if page.lang-suffix == "-es" %}"es"{% else %}"en"{% endif %},
+  "author": {
+    "@type": "Person",
+    "name": "Daniel Lerch Hostalot",
+    "url": {{ "/" | absolute_url | jsonify }}
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Daniel Lerch Hostalot",
+    "url": {{ "/" | absolute_url | jsonify }}
+  }
+}
+</script>
+{% endif %}

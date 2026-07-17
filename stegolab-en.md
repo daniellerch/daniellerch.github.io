@@ -7,6 +7,7 @@ meta-title: "StegoLab"
 meta-description: "Steganography, Steganalysis and Watermarking Laboratory"
 lang-suffix: "-en"
 comments: false
+schema_type: "Article"
 ---
 
 <style>
