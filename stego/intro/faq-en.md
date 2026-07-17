@@ -46,6 +46,10 @@ comments: false
 - [What are wet paper codes?](#what-are-wet-paper-codes)
 - [What are syndrome-trellis codes (STC)?](#what-are-syndrome-trellis-codes-stc)
 - [What are false positives and false negatives?](#what-are-false-positives-and-false-negatives)
+- [What are ROC and AUC?](#what-are-roc-and-auc)
+- [What is the difference between accuracy and balanced accuracy?](#what-is-the-difference-between-accuracy-and-balanced-accuracy)
+- [What is payload estimation?](#what-is-payload-estimation)
+- [What is multi-class steganalysis?](#what-is-multi-class-steganalysis)
 - [What does low detectability mean?](#what-does-low-detectability-mean)
 - [What is detectability?](#what-is-detectability)
 - [What is distortion?](#what-is-distortion)
@@ -58,6 +62,8 @@ comments: false
 - [What is the difference between robust and fragile steganography?](#what-is-the-difference-between-robust-and-fragile-steganography)
 - [What are rich models?](#what-are-rich-models)
 - [What is CNN-based steganalysis?](#what-is-cnn-based-steganalysis)
+- [What is batch steganalysis?](#what-is-batch-steganalysis)
+- [What is generative steganography?](#what-is-generative-steganography)
 - [What is calibration in JPEG steganalysis?](#what-is-calibration-in-jpeg-steganalysis)
 - [What is Aletheia?](#what-is-aletheia)
 - [What is StegoRank?](#what-is-stegorank)
@@ -232,6 +238,11 @@ so a model trained with one image database may not function correctly with
 images from another image database, possibly due to different statistical 
 characteristics.
 
+For example, a detector trained with images from a specific camera, development
+pipeline, or compression level may degrade when analyzing images from another
+device or processed in another way. This is why detectors should be evaluated
+with data that is as close as possible to the real target scenario.
+
 ## What are cover, stego, and payload?
 
 In steganography, the **cover** is the original object used as the carrier: for
@@ -340,6 +351,45 @@ occurs when a stego file goes undetected and is classified as cover.
 
 Both errors matter. A very aggressive detector may produce many false positives,
 whereas a very conservative detector may allow too many false negatives.
+
+## What are ROC and AUC?
+
+The **ROC** curve shows the relationship between the true positive rate and the
+false positive rate as the decision threshold of a detector changes. It is useful
+because it shows how the detector behaves at different operating points.
+
+The **AUC** is the area under the ROC curve. An AUC close to 1 indicates good
+separation between covers and stegos; an AUC close to 0.5 indicates performance
+similar to random guessing.
+
+## What is the difference between accuracy and balanced accuracy?
+
+**Accuracy** measures the overall percentage of correct decisions made by a
+detector. It can be misleading when the classes are imbalanced, for example when
+there are many more cover images than stego images.
+
+**Balanced accuracy** measures performance while giving both classes a more equal
+weight. In steganalysis, it is often more informative when the number of covers
+and stegos is not similar.
+
+## What is payload estimation?
+
+Payload estimation tries to estimate how much information has been hidden in a
+stego file. It is different from binary detection, where the goal is only to
+decide whether hidden information is present or not.
+
+Estimating the payload is harder because it requires relating the strength of
+statistical traces to the amount of embedded message. Even so, it can be useful
+for forensic analysis or for comparing the detectability of different methods.
+
+## What is multi-class steganalysis?
+
+Multi-class steganalysis tries to identify not only whether a file contains
+steganography, but also which method or family of methods may have been used.
+
+This problem is more complex than binary detection because different techniques
+can produce similar traces, and a detector trained on some methods may not
+recognize other methods that were not seen during training.
 
 ## What does low detectability mean?
 
@@ -467,6 +517,29 @@ data.
 These methods can be powerful, but they depend heavily on the quality and
 representativeness of the data. Problems such as Cover Source Mismatch can
 strongly affect their performance.
+
+## What is batch steganalysis?
+
+Batch steganalysis analyzes a large set of files instead of studying a single
+image in isolation. It can be used to prioritize cases, search for repeated
+patterns, or estimate whether a collection contains an unusual proportion of
+stego files.
+
+This approach is useful in forensic and monitoring contexts, but false positives
+must be controlled carefully: even a small error rate can produce many alerts
+when thousands or millions of files are analyzed.
+
+## What is generative steganography?
+
+Generative steganography hides information during the content generation process,
+instead of starting from an existing cover and modifying it. For example, a
+system may generate an image, text, or audio conditioned on a secret message, so
+that the produced content encodes that information.
+
+The main difference from cover-modification steganography is that there may be no
+original file to compare with the result. This changes the detection problem:
+steganalysis must look for traces of coding or distributional anomalies in the
+generated content, not only for evidence that a previous cover was altered.
 
 ## What is calibration in JPEG steganalysis?
 

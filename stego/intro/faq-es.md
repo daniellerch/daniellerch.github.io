@@ -46,6 +46,10 @@ comments: false
 - [¿Qué son los wet paper codes?](#qué-son-los-wet-paper-codes)
 - [¿Qué son los syndrome-trellis codes (STC)?](#qué-son-los-syndrome-trellis-codes-stc)
 - [¿Qué son los falsos positivos y falsos negativos?](#qué-son-los-falsos-positivos-y-falsos-negativos)
+- [¿Qué son ROC y AUC?](#qué-son-roc-y-auc)
+- [¿Qué diferencia hay entre accuracy y balanced accuracy?](#qué-diferencia-hay-entre-accuracy-y-balanced-accuracy)
+- [¿Qué es la estimación de payload?](#qué-es-la-estimación-de-payload)
+- [¿Qué es el estegoanálisis multi-clase?](#qué-es-el-estegoanálisis-multi-clase)
 - [¿Qué significa que un método tenga baja detectabilidad?](#qué-significa-que-un-método-tenga-baja-detectabilidad)
 - [¿Qué es la detectabilidad?](#qué-es-la-detectabilidad)
 - [¿Qué es la distorsión?](#qué-es-la-distorsión)
@@ -58,6 +62,8 @@ comments: false
 - [¿Qué diferencia hay entre esteganografía robusta y frágil?](#qué-diferencia-hay-entre-esteganografía-robusta-y-frágil)
 - [¿Qué son los rich models?](#qué-son-los-rich-models)
 - [¿Qué es el estegoanálisis basado en CNN?](#qué-es-el-estegoanálisis-basado-en-cnn)
+- [¿Qué es el estegoanálisis por lotes?](#qué-es-el-estegoanálisis-por-lotes)
+- [¿Qué es la esteganografía generativa?](#qué-es-la-esteganografía-generativa)
 - [¿Qué es la calibración en estegoanálisis JPEG?](#qué-es-la-calibración-en-estegoanálisis-jpeg)
 - [¿Qué es Aletheia?](#qué-es-aletheia)
 - [¿Qué es StegoRank?](#qué-es-stegorank)
@@ -278,6 +284,12 @@ datos de imágenes puede no funcionar correctamente con imágenes que proceden d
 otra base de datos de imágenes, posiblemente, con unas características
 estadísticas diferentes.
 
+Por ejemplo, un detector entrenado con imágenes de una cámara concreta, un flujo
+de revelado específico o un nivel de compresión determinado puede degradarse al
+analizar imágenes procedentes de otro dispositivo o procesadas de otra forma. Por
+eso es importante evaluar los detectores con datos lo más parecidos posible al
+escenario real de uso.
+
 ## ¿Qué son cover, stego y payload?
 
 En esteganografía, el **cover** es el objeto original que se usa como portador:
@@ -391,6 +403,47 @@ clasifica como cover.
 Ambos errores son importantes. Un detector muy agresivo puede producir muchos
 falsos positivos, mientras que un detector demasiado conservador puede dejar
 pasar demasiados falsos negativos.
+
+## ¿Qué son ROC y AUC?
+
+La curva **ROC** muestra la relación entre la tasa de verdaderos positivos y la
+tasa de falsos positivos cuando se cambia el umbral de decisión de un detector.
+Es útil porque permite ver cómo se comporta el detector en distintos puntos de
+operación.
+
+El **AUC** es el área bajo la curva ROC. Un AUC cercano a 1 indica buena
+separación entre covers y stegos; un AUC cercano a 0.5 indica un rendimiento
+similar al azar.
+
+## ¿Qué diferencia hay entre accuracy y balanced accuracy?
+
+La **accuracy** mide el porcentaje total de aciertos de un detector. Puede ser
+engañosa cuando las clases están desbalanceadas, por ejemplo si hay muchas más
+imágenes cover que stego.
+
+La **balanced accuracy** calcula el rendimiento teniendo en cuenta ambas clases
+de forma más equilibrada. En estegoanálisis suele ser más informativa cuando el
+número de covers y stegos no es similar.
+
+## ¿Qué es la estimación de payload?
+
+La estimación de payload intenta calcular cuánta información se ha ocultado en un
+archivo stego. Es un problema distinto de la detección binaria, donde solo se
+intenta decidir si hay o no información oculta.
+
+Estimar el payload es más difícil, porque requiere relacionar la intensidad de
+las huellas estadísticas con la cantidad de mensaje incrustado. Aun así, puede
+ser útil para análisis forense o para comparar la detectabilidad de distintos
+métodos.
+
+## ¿Qué es el estegoanálisis multi-clase?
+
+El estegoanálisis multi-clase intenta identificar no solo si un archivo contiene
+esteganografía, sino también qué método o familia de métodos pudo haberse usado.
+
+Este problema es más complejo que la detección binaria, porque distintas técnicas
+pueden producir huellas parecidas, y un detector entrenado con algunos métodos
+puede no reconocer bien otros métodos no vistos durante el entrenamiento.
 
 ## ¿Qué significa que un método tenga baja detectabilidad?
 
@@ -521,6 +574,30 @@ representaciones útiles a partir de datos de entrenamiento.
 Estos métodos pueden ser muy potentes, pero dependen mucho de la calidad y
 representatividad de los datos. Problemas como el Cover Source Mismatch pueden
 afectar de forma importante a su rendimiento.
+
+## ¿Qué es el estegoanálisis por lotes?
+
+El estegoanálisis por lotes consiste en analizar un conjunto grande de archivos
+en lugar de estudiar una única imagen aislada. Puede usarse para priorizar casos,
+buscar patrones repetidos o estimar si un conjunto contiene una proporción
+anómala de archivos stego.
+
+Este enfoque es útil en contextos forenses y de monitorización, pero requiere
+controlar bien los falsos positivos: incluso una tasa pequeña de error puede
+producir muchas alertas cuando se analizan miles o millones de archivos.
+
+## ¿Qué es la esteganografía generativa?
+
+La esteganografía generativa oculta información durante el proceso de generación
+del contenido, en lugar de partir de un cover existente y modificarlo. Por
+ejemplo, un sistema puede generar una imagen, texto o audio condicionado por un
+mensaje secreto, de forma que el contenido producido codifique esa información.
+
+La diferencia principal frente a la esteganografía por modificación de cover es
+que no existe necesariamente un archivo original que comparar con el resultado.
+Esto cambia el problema de detección: el estegoanálisis debe buscar si el
+contenido generado tiene huellas de codificación o distribución anómalas, no solo
+si un cover previo ha sido alterado.
 
 ## ¿Qué es la calibración en estegoanálisis JPEG?
 
