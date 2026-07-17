@@ -25,46 +25,57 @@ comments: false
 
 ## Contenido
 
+### Primeros conceptos
 - [¿Qué es la esteganografía?](#qué-es-la-esteganografía)
 - [¿Qué es el estegoanálisis?](#qué-es-el-estegoanálisis)
+- [¿Qué son cover, stego y payload?](#qué-son-cover-stego-y-payload)
+- [¿Qué son embedding y extraction?](#qué-son-embedding-y-extraction)
+- [¿Qué es una clave esteganográfica?](#qué-es-una-clave-esteganográfica)
+- [¿Cuál es la diferencia entre criptografía y esteganografía?](#cuál-es-la-diferencia-entre-criptografía-y-esteganografía)
+- [¿Cuál es la diferencia entre watermarking y esteganografía?](#cuál-es-la-diferencia-entre-watermarking-y-esteganografía)
+
+### Ocultación de información
+- [¿En qué medios se puede usar esteganografía?](#en-qué-medios-se-puede-usar-esteganografía)
+- [¿Qué diferencia hay entre esteganografía espacial y esteganografía JPEG?](#qué-diferencia-hay-entre-esteganografía-espacial-y-esteganografía-jpeg)
+- [¿Qué es la DCT?](#qué-es-la-dct)
 - [¿Qué es el LSB? / ¿Qué es la esteganografía LSB?](#qué-es-el-lsb--qué-es-la-esteganografía-lsb)
 - [¿Qué es el LSB replacement?](#qué-es-el-lsb-replacement)
 - [¿Qué es el LSB matching?](#qué-es-el-lsb-matching)
 - [¿Qué es la esteganografía F5?](#qué-es-la-esteganografía-f5)
 - [¿Qué es StegHide?](#qué-es-steghide)
-- [¿En qué medios se puede usar esteganografía?](#en-qué-medios-se-puede-usar-esteganografía)
-- [¿Qué son los ataques estructurales?](#qué-son-los-ataques-estructurales)
-- [¿Qué es el Cover Source Mismatch?](#qué-es-el-cover-source-mismatch)
-- [¿Qué son cover, stego y payload?](#qué-son-cover-stego-y-payload)
-- [¿Qué son embedding y extraction?](#qué-son-embedding-y-extraction)
-- [¿Qué es una clave esteganográfica?](#qué-es-una-clave-esteganográfica)
-- [¿Qué diferencia hay entre esteganografía espacial y esteganografía JPEG?](#qué-diferencia-hay-entre-esteganografía-espacial-y-esteganografía-jpeg)
-- [¿Qué es la DCT?](#qué-es-la-dct)
 - [¿Qué es la esteganografía adaptativa?](#qué-es-la-esteganografía-adaptativa)
 - [¿Qué es una función de coste?](#qué-es-una-función-de-coste)
+- [¿Qué es la distorsión?](#qué-es-la-distorsión)
+- [¿Qué relación hay entre capacidad y detectabilidad?](#qué-relación-hay-entre-capacidad-y-detectabilidad)
+- [¿Qué es cover selection?](#qué-es-cover-selection)
+- [¿Qué diferencia hay entre esteganografía robusta y frágil?](#qué-diferencia-hay-entre-esteganografía-robusta-y-frágil)
+- [¿Por qué la recompresión o el redimensionado pueden romper un mensaje oculto?](#por-qué-la-recompresión-o-el-redimensionado-pueden-romper-un-mensaje-oculto)
+
+### Detección y estegoanálisis
+- [¿Qué es la detectabilidad?](#qué-es-la-detectabilidad)
+- [¿Qué significa que un método tenga baja detectabilidad?](#qué-significa-que-un-método-tenga-baja-detectabilidad)
+- [¿Qué son los ataques estructurales?](#qué-son-los-ataques-estructurales)
+- [¿Qué es un ataque known-cover?](#qué-es-un-ataque-known-cover)
+- [¿Qué es el Cover Source Mismatch?](#qué-es-el-cover-source-mismatch)
+- [¿Qué son los rich models?](#qué-son-los-rich-models)
+- [¿Qué es el estegoanálisis basado en CNN?](#qué-es-el-estegoanálisis-basado-en-cnn)
+- [¿Qué es la calibración en estegoanálisis JPEG?](#qué-es-la-calibración-en-estegoanálisis-jpeg)
+- [¿Qué es el estegoanálisis por lotes?](#qué-es-el-estegoanálisis-por-lotes)
+
+### Métodos modernos
 - [¿Qué es matrix encoding?](#qué-es-matrix-encoding)
 - [¿Qué son los wet paper codes?](#qué-son-los-wet-paper-codes)
 - [¿Qué son los syndrome-trellis codes (STC)?](#qué-son-los-syndrome-trellis-codes-stc)
+- [¿Qué es la esteganografía generativa?](#qué-es-la-esteganografía-generativa)
+
+### Evaluación de resultados
 - [¿Qué son los falsos positivos y falsos negativos?](#qué-son-los-falsos-positivos-y-falsos-negativos)
 - [¿Qué son ROC y AUC?](#qué-son-roc-y-auc)
 - [¿Qué diferencia hay entre accuracy y balanced accuracy?](#qué-diferencia-hay-entre-accuracy-y-balanced-accuracy)
 - [¿Qué es la estimación de payload?](#qué-es-la-estimación-de-payload)
 - [¿Qué es el estegoanálisis multi-clase?](#qué-es-el-estegoanálisis-multi-clase)
-- [¿Qué significa que un método tenga baja detectabilidad?](#qué-significa-que-un-método-tenga-baja-detectabilidad)
-- [¿Qué es la detectabilidad?](#qué-es-la-detectabilidad)
-- [¿Qué es la distorsión?](#qué-es-la-distorsión)
-- [¿Qué relación hay entre capacidad y detectabilidad?](#qué-relación-hay-entre-capacidad-y-detectabilidad)
-- [¿Qué es cover selection?](#qué-es-cover-selection)
-- [¿Qué es un ataque known-cover?](#qué-es-un-ataque-known-cover)
-- [¿Por qué la recompresión o el redimensionado pueden romper un mensaje oculto?](#por-qué-la-recompresión-o-el-redimensionado-pueden-romper-un-mensaje-oculto)
-- [¿Cuál es la diferencia entre watermarking y esteganografía?](#cuál-es-la-diferencia-entre-watermarking-y-esteganografía)
-- [¿Cuál es la diferencia entre criptografía y esteganografía?](#cuál-es-la-diferencia-entre-criptografía-y-esteganografía)
-- [¿Qué diferencia hay entre esteganografía robusta y frágil?](#qué-diferencia-hay-entre-esteganografía-robusta-y-frágil)
-- [¿Qué son los rich models?](#qué-son-los-rich-models)
-- [¿Qué es el estegoanálisis basado en CNN?](#qué-es-el-estegoanálisis-basado-en-cnn)
-- [¿Qué es el estegoanálisis por lotes?](#qué-es-el-estegoanálisis-por-lotes)
-- [¿Qué es la esteganografía generativa?](#qué-es-la-esteganografía-generativa)
-- [¿Qué es la calibración en estegoanálisis JPEG?](#qué-es-la-calibración-en-estegoanálisis-jpeg)
+
+### Herramientas
 - [¿Qué es Aletheia?](#qué-es-aletheia)
 - [¿Qué es StegoRank?](#qué-es-stegorank)
 
@@ -97,7 +108,6 @@ integridad y confidencialidad de un mensaje, la esteganografía se enfoca en
 mantener en secreto la existencia del mensaje. En algunas ocasiones, ambas 
 técnicas se pueden combinar para proporcionar una capa adicional de seguridad.
 
-
 ## ¿Qué es el estegoanálisis?
 
 El estegoanálisis es el proceso de detectar y, posiblemente, extraer 
@@ -125,93 +135,57 @@ En resumen, el estegoanálisis es esencialmente la contramedida a la
 esteganografía, permitiendo la detección y potencial extracción de datos 
 ocultos en medios que, a simple vista, parecerían normales o no alterados.
 
+## ¿Qué son cover, stego y payload?
 
-## ¿Qué es el LSB? / ¿Qué es la esteganografía LSB?
+En esteganografía, el **cover** es el objeto original que se usa como portador:
+por ejemplo, una imagen, un audio o un documento sin información oculta. El
+**stego** es el objeto resultante después de incrustar el mensaje secreto.
 
-LSB se refiere a "Least Significant Bit", que en español se traduce como 
-"Bit Menos Significativo". Es el bit de menor peso en una representación 
-binaria de un número. En términos simples, en un byte (que consta de 8 bits), 
-el LSB es el bit más a la derecha.
+El **payload** es la cantidad de información que se oculta. Suele medirse como
+bits por píxel, bits por coeficiente, o como porcentaje de la capacidad del
+medio. En general, cuanto mayor es el payload, más fácil es detectar que el
+archivo ha sido modificado.
 
-La técnica LSB es ampliamente utilizada en esteganografía, especialmente en 
-la esteganografía de imágenes. Consiste en modificar el bit menos significativo 
-de los píxeles de una imagen para insertar un mensaje secreto. Dado que el LSB 
-tiene un impacto mínimo en el valor numérico total de cada píxel, los cambios 
-realizados en la imagen suelen ser imperceptibles al ojo humano, lo que la 
-convierte en una técnica efectiva para ocultar información.
+## ¿Qué son embedding y extraction?
 
-Por ejemplo, considera el siguiente byte que representa un valor de un píxel 
-en una imagen en escala de grises: 10010101. Si quisieras esconder el bit 
-"1" usando la técnica LSB, el byte quedaría igual, ya que el LSB ya es "1".
-Pero si quisieras esconder el bit "0", se podría cambiar el LSB de "1" a "0",
-resultando en 10010100. Aunque ha habido un cambio, la diferencia en el valor 
-del píxel es mínima y, por lo tanto, difícilmente perceptible en la imagen.
+**Embedding** es el proceso de incrustar un mensaje secreto dentro de un cover
+para obtener un objeto stego. **Extraction** es el proceso inverso: recuperar el
+mensaje oculto a partir del objeto stego.
 
-Existen dos formas comunes de modificar el LSB de un valor: el 
-[LSB replacement](#qué-es-el-lsb-replacement) y el 
-[LSB matching](#qué-es-el-lsb-matching).
+En algunos métodos la extracción requiere conocer una clave, una contraseña o
+parámetros específicos. Sin esa información, el mensaje puede no ser recuperable
+aunque se sepa que el archivo contiene datos ocultos.
 
-## ¿Qué es el LSB replacement?
+## ¿Qué es una clave esteganográfica?
 
-El LSB replacement (o "Reemplazo de Bit Menos Significativo") es una técnica de 
-[esteganografía LSB](#qué-es-el-lsb--qué-es-la-esteganografía-lsb)
-que consiste en sustituir el LSB por el bit del mensaje que se desea ocultar.
+Una clave esteganográfica es un valor secreto que controla cómo se incrusta o se
+extrae el mensaje. Por ejemplo, puede determinar qué píxeles, coeficientes o
+posiciones se usan para ocultar la información.
 
-Es importante destacar que, aunque el LSB Replacement es una técnica efectiva y 
-fácil de implementar, no es la más segura. Las herramientas modernas de 
-estegoanálisis pueden detectar la presencia de esteganografía realizada con 
-este método.
+La clave no debe confundirse con una clave criptográfica, aunque ambas pueden
+combinarse. Es habitual cifrar primero el mensaje y después incrustarlo mediante
+un método esteganográfico controlado por una clave.
 
+## ¿Cuál es la diferencia entre criptografía y esteganografía?
 
-## ¿Qué es el LSB matching?
+La criptografía protege el contenido del mensaje: transforma la información para
+que no pueda leerse sin la clave adecuada. Sin embargo, normalmente no oculta que
+existe una comunicación cifrada.
 
-El LSB Matching es una técnica de
-[esteganografía LSB](#qué-es-el-lsb--qué-es-la-esteganografía-lsb)
-que, al igual que el 
-[LSB Replacement](#qué-es-el-lsb-replacement), 
-se utiliza para ocultar información en los bits menos significativos de un 
-archivo multimedia, como una imagen. 
+La esteganografía intenta ocultar la existencia del mensaje. Ambas técnicas se
+pueden combinar: primero se cifra el mensaje y después se incrusta en un cover
+mediante esteganografía.
 
-Sin embargo, hay una diferencia clave en la forma en que se introduce la 
-información secreta. Mientras que el "LSB Replacement" simplemente reemplaza 
-el LSB de un píxel con un bit del mensaje secreto, el "LSB Matching" adopta 
-un enfoque un poco más sofisticado: si el bit del mensaje secreto coincide con 
-el LSB del píxel, el píxel permanece sin cambios. Si no coinciden, el valor del 
-píxel se ajusta aleatoriamente sumando o restando uno a su valor.
+## ¿Cuál es la diferencia entre watermarking y esteganografía?
 
-Este método tiene la ventaja de introducir cambios menos sistemáticos en la 
-imagen, lo que puede hacer que la detección de la esteganografía sea un poco 
-más difícil en comparación con el simple reemplazo de LSB. Al introducir 
-cambios aleatorios, el "LSB Matching" puede reducir las anomalías estadísticas 
-introducidas por "LSB replacement", que pueden ser detectadas por 
-herramientas de estegoanálisis.
+El **watermarking** busca insertar una marca asociada al contenido, normalmente
+para identificar autoría, propiedad, procedencia o integridad. La marca puede
+ser visible o invisible, y a menudo se diseña para resistir ciertas
+transformaciones.
 
-
-## ¿Qué es la esteganografía F5?
-
-La esteganografía F5 es una técnica de esteganografía diseñada para ocultar 
-información en imágenes en formato JPEG. Esta técnica fue desarrollada por 
-Andreas Westfeld en 2001.
-
-En lugar de trabajar con píxeles directamente, la esteganografía F5 se centra 
-en los coeficientes de la Transformada Discreta de Coseno (DCT) de una imagen 
-JPEG, que representan la información de frecuencia de la imagen. 
-
-Para mejorar la eficiencia y reducir la cantidad de cambios requeridos en los 
-coeficientes, F5 utiliza una técnica llamada "matrix encoding" o codificación 
-matricial. 
-
-## ¿Qué es StegHide?
-
-StegHide es una herramienta libre de esteganografía desarrollada por 
-Stefan Hetzl en 2003. Su principal objetivo es ocultar información, como 
-mensajes de texto o archivos, dentro de imágenes o archivos de audio sin causar 
-una pérdida perceptible o alteraciones evidentes en el archivo portador. 
-StegHide trabaja con imágenes en formato JPEG y archivos de audio.
-
-StegHide usa la Teoría de Grafos para encontrar pares de valores que se 
-pueden intercambiar, incrustando un mensaje, pero manteniendo la estadística
-global del archivo. Esto le permite eludir algunos ataques de estegoanálisis.
+La **esteganografía** busca ocultar la existencia de una comunicación. Lo más
+importante no es demostrar propiedad del archivo, sino que un observador no
+pueda distinguir fácilmente si contiene o no un mensaje oculto.
 
 ## ¿En qué medios se puede usar esteganografía?
 
@@ -253,74 +227,6 @@ información.
 información en metadatos, espacios en blanco, o mediante el uso de colores de 
 texto casi invisibles.
 
-
-## ¿Qué son los ataques estructurales?
-
-Aunque la esteganografía intenta ocultar información de manera imperceptible, 
-el proceso de incrustación de datos puede introducir cambios en las 
-características estructurales del objeto portador. Estos cambios, aunque pueden 
-ser invisibles o inaudibles para el observador humano, pueden ser detectados 
-mediante análisis estadístico.
-
-Cuando se usan técnicas de [LSB replacement](/stego/intro/faq-es/#qué-es-el-lsb-replacement),
-aparecen anomalías estadísticas importantes. La sustitución directa del LSB
-solo puede convertir un valor par en el impar consecutivo, o un valor impar en
-el par consecutivo. Por eso tiende a igualar las frecuencias dentro de pares de
-valores consecutivos (por ejemplo, 0/1, 2/3, 4/5), alterando la distribución
-natural de los píxeles.
-
-Estas anomalías son aprovechadas por toda una familia de ataques conocidos
-como "ataques estructurales", entre los que destacan el ataque SPA, el ataque RS
-o el ataque WS.
-
-
-## ¿Qué es el Cover Source Mismatch?
-
-El Cover Source Mismatch (CSM) es un problema muy importante en estegoanálisis
-que se produce al usar *machine learning* para crear modelos de detección 
-de imágenes que usan esteganografía.  El problema se produce debido a que los 
-modelos aprenden de los datos, por lo que un modelo entrenado con una base de 
-datos de imágenes puede no funcionar correctamente con imágenes que proceden de
-otra base de datos de imágenes, posiblemente, con unas características
-estadísticas diferentes.
-
-Por ejemplo, un detector entrenado con imágenes de una cámara concreta, un flujo
-de revelado específico o un nivel de compresión determinado puede degradarse al
-analizar imágenes procedentes de otro dispositivo o procesadas de otra forma. Por
-eso es importante evaluar los detectores con datos lo más parecidos posible al
-escenario real de uso.
-
-## ¿Qué son cover, stego y payload?
-
-En esteganografía, el **cover** es el objeto original que se usa como portador:
-por ejemplo, una imagen, un audio o un documento sin información oculta. El
-**stego** es el objeto resultante después de incrustar el mensaje secreto.
-
-El **payload** es la cantidad de información que se oculta. Suele medirse como
-bits por píxel, bits por coeficiente, o como porcentaje de la capacidad del
-medio. En general, cuanto mayor es el payload, más fácil es detectar que el
-archivo ha sido modificado.
-
-## ¿Qué son embedding y extraction?
-
-**Embedding** es el proceso de incrustar un mensaje secreto dentro de un cover
-para obtener un objeto stego. **Extraction** es el proceso inverso: recuperar el
-mensaje oculto a partir del objeto stego.
-
-En algunos métodos la extracción requiere conocer una clave, una contraseña o
-parámetros específicos. Sin esa información, el mensaje puede no ser recuperable
-aunque se sepa que el archivo contiene datos ocultos.
-
-## ¿Qué es una clave esteganográfica?
-
-Una clave esteganográfica es un valor secreto que controla cómo se incrusta o se
-extrae el mensaje. Por ejemplo, puede determinar qué píxeles, coeficientes o
-posiciones se usan para ocultar la información.
-
-La clave no debe confundirse con una clave criptográfica, aunque ambas pueden
-combinarse. Es habitual cifrar primero el mensaje y después incrustarlo mediante
-un método esteganográfico controlado por una clave.
-
 ## ¿Qué diferencia hay entre esteganografía espacial y esteganografía JPEG?
 
 La esteganografía espacial modifica directamente los valores de los píxeles de
@@ -341,6 +247,91 @@ En esteganografía JPEG, muchos métodos modifican coeficientes DCT en lugar de
 píxeles. Técnicas como F5, nsF5, J-UNIWARD o StegHide incrustan directamente el
 mensaje en el dominio transformado.
 
+## ¿Qué es el LSB? / ¿Qué es la esteganografía LSB?
+
+LSB se refiere a "Least Significant Bit", que en español se traduce como 
+"Bit Menos Significativo". Es el bit de menor peso en una representación 
+binaria de un número. En términos simples, en un byte (que consta de 8 bits), 
+el LSB es el bit más a la derecha.
+
+La técnica LSB es ampliamente utilizada en esteganografía, especialmente en 
+la esteganografía de imágenes. Consiste en modificar el bit menos significativo 
+de los píxeles de una imagen para insertar un mensaje secreto. Dado que el LSB 
+tiene un impacto mínimo en el valor numérico total de cada píxel, los cambios 
+realizados en la imagen suelen ser imperceptibles al ojo humano, lo que la 
+convierte en una técnica efectiva para ocultar información.
+
+Por ejemplo, considera el siguiente byte que representa un valor de un píxel 
+en una imagen en escala de grises: 10010101. Si quisieras esconder el bit 
+"1" usando la técnica LSB, el byte quedaría igual, ya que el LSB ya es "1".
+Pero si quisieras esconder el bit "0", se podría cambiar el LSB de "1" a "0",
+resultando en 10010100. Aunque ha habido un cambio, la diferencia en el valor 
+del píxel es mínima y, por lo tanto, difícilmente perceptible en la imagen.
+
+Existen dos formas comunes de modificar el LSB de un valor: el 
+[LSB replacement](#qué-es-el-lsb-replacement) y el 
+[LSB matching](#qué-es-el-lsb-matching).
+
+## ¿Qué es el LSB replacement?
+
+El LSB replacement (o "Reemplazo de Bit Menos Significativo") es una técnica de 
+[esteganografía LSB](#qué-es-el-lsb--qué-es-la-esteganografía-lsb)
+que consiste en sustituir el LSB por el bit del mensaje que se desea ocultar.
+
+Es importante destacar que, aunque el LSB Replacement es una técnica efectiva y 
+fácil de implementar, no es la más segura. Las herramientas modernas de 
+estegoanálisis pueden detectar la presencia de esteganografía realizada con 
+este método.
+
+## ¿Qué es el LSB matching?
+
+El LSB Matching es una técnica de
+[esteganografía LSB](#qué-es-el-lsb--qué-es-la-esteganografía-lsb)
+que, al igual que el 
+[LSB Replacement](#qué-es-el-lsb-replacement), 
+se utiliza para ocultar información en los bits menos significativos de un 
+archivo multimedia, como una imagen. 
+
+Sin embargo, hay una diferencia clave en la forma en que se introduce la 
+información secreta. Mientras que el "LSB Replacement" simplemente reemplaza 
+el LSB de un píxel con un bit del mensaje secreto, el "LSB Matching" adopta 
+un enfoque un poco más sofisticado: si el bit del mensaje secreto coincide con 
+el LSB del píxel, el píxel permanece sin cambios. Si no coinciden, el valor del 
+píxel se ajusta aleatoriamente sumando o restando uno a su valor.
+
+Este método tiene la ventaja de introducir cambios menos sistemáticos en la 
+imagen, lo que puede hacer que la detección de la esteganografía sea un poco 
+más difícil en comparación con el simple reemplazo de LSB. Al introducir 
+cambios aleatorios, el "LSB Matching" puede reducir las anomalías estadísticas 
+introducidas por "LSB replacement", que pueden ser detectadas por 
+herramientas de estegoanálisis.
+
+## ¿Qué es la esteganografía F5?
+
+La esteganografía F5 es una técnica de esteganografía diseñada para ocultar 
+información en imágenes en formato JPEG. Esta técnica fue desarrollada por 
+Andreas Westfeld en 2001.
+
+En lugar de trabajar con píxeles directamente, la esteganografía F5 se centra 
+en los coeficientes de la Transformada Discreta de Coseno (DCT) de una imagen 
+JPEG, que representan la información de frecuencia de la imagen. 
+
+Para mejorar la eficiencia y reducir la cantidad de cambios requeridos en los 
+coeficientes, F5 utiliza una técnica llamada "matrix encoding" o codificación 
+matricial.
+
+## ¿Qué es StegHide?
+
+StegHide es una herramienta libre de esteganografía desarrollada por 
+Stefan Hetzl en 2003. Su principal objetivo es ocultar información, como 
+mensajes de texto o archivos, dentro de imágenes o archivos de audio sin causar 
+una pérdida perceptible o alteraciones evidentes en el archivo portador. 
+StegHide trabaja con imágenes en formato JPEG y archivos de audio.
+
+StegHide usa la Teoría de Grafos para encontrar pares de valores que se 
+pueden intercambiar, incrustando un mensaje, pero manteniendo la estadística
+global del archivo. Esto le permite eludir algunos ataques de estegoanálisis.
+
 ## ¿Qué es la esteganografía adaptativa?
 
 La esteganografía adaptativa intenta ocultar información en las partes del cover
@@ -360,6 +351,172 @@ el cambio podría dejar una huella estadística más clara.
 Métodos como HILL, S-UNIWARD o J-UNIWARD se basan en funciones de coste para
 decidir dónde conviene modificar la imagen. La calidad de esa función influye
 directamente en la detectabilidad del método.
+
+## ¿Qué es la distorsión?
+
+La distorsión es el cambio introducido en el cover al incrustar un mensaje. En
+una imagen, puede medirse como diferencias en píxeles, coeficientes JPEG,
+histogramas u otras características estadísticas.
+
+Los métodos modernos no intentan simplemente minimizar el número de cambios,
+sino colocar esos cambios donde sean menos detectables. Por eso la distorsión se
+suele modelar mediante funciones de coste.
+
+## ¿Qué relación hay entre capacidad y detectabilidad?
+
+La capacidad indica cuánta información puede ocultarse en un cover. La
+detectabilidad indica lo fácil o difícil que es detectar que se ha ocultado
+información. Normalmente hay una tensión entre ambas: al aumentar el payload,
+aumentan los cambios y también la probabilidad de detección.
+
+Por eso, en esteganografía práctica no basta con preguntar cuánto cabe en una
+imagen. También hay que preguntar cuánto puede ocultarse sin que el resultado
+sea fácilmente detectable.
+
+## ¿Qué es cover selection?
+
+**Cover selection** consiste en elegir cuidadosamente qué archivos se usarán
+como covers. En lugar de incrustar datos en cualquier imagen disponible, se
+seleccionan aquellas que son más adecuadas para ocultar información con menor
+riesgo de detección.
+
+Por ejemplo, una imagen con mucha textura puede ser mejor candidata que una
+imagen con grandes zonas lisas, porque ciertos cambios quedan más disimulados
+en regiones complejas.
+
+## ¿Qué diferencia hay entre esteganografía robusta y frágil?
+
+La esteganografía **robusta** intenta que el mensaje sobreviva a transformaciones
+como recompresión, redimensionado, ruido o recorte. Es más cercana a algunos
+escenarios de watermarking, donde la marca debe seguir presente aunque el
+archivo cambie.
+
+La esteganografía **frágil** puede perder el mensaje ante cambios pequeños del
+archivo. Muchos métodos diseñados para baja detectabilidad son frágiles, porque
+dependen de valores concretos de píxeles o coeficientes.
+
+## ¿Por qué la recompresión o el redimensionado pueden romper un mensaje oculto?
+
+Muchas técnicas de esteganografía dependen de valores concretos de píxeles o
+coeficientes. Si una plataforma recomprime, redimensiona o elimina metadatos de
+un archivo, esos valores pueden cambiar y el mensaje oculto puede corromperse o
+desaparecer.
+
+Esto es especialmente importante en redes sociales, servicios de mensajería y
+plataformas que optimizan imágenes automáticamente. Que un mensaje se pueda
+extraer localmente no garantiza que sobreviva después de subir el archivo a un
+servicio externo.
+
+## ¿Qué es la detectabilidad?
+
+La detectabilidad es la facilidad con la que un estegoanalista o una herramienta
+puede distinguir entre covers y archivos stego. Si un método produce cambios
+estadísticamente visibles, su detectabilidad será alta.
+
+La detectabilidad no depende solo del algoritmo. También influyen el tamaño del
+mensaje, el tipo de imagen, la compresión, el origen de los covers y el conjunto
+de datos usado para entrenar o evaluar el detector.
+
+## ¿Qué significa que un método tenga baja detectabilidad?
+
+Un método tiene baja detectabilidad cuando consigue ocultar la existencia del
+mensaje sin dejar huellas estadísticas claras en el archivo stego. No basta con
+que el mensaje pueda extraerse correctamente; el archivo resultante también debe
+parecer un cover normal.
+
+En la práctica, la detectabilidad depende del método, del payload, del tipo de
+cover, de la clave usada y del detector al que se enfrenta. Por eso es más claro
+hablar de baja o alta detectabilidad que de seguridad en sentido genérico.
+
+## ¿Qué son los ataques estructurales?
+
+Aunque la esteganografía intenta ocultar información de manera imperceptible, 
+el proceso de incrustación de datos puede introducir cambios en las 
+características estructurales del objeto portador. Estos cambios, aunque pueden 
+ser invisibles o inaudibles para el observador humano, pueden ser detectados 
+mediante análisis estadístico.
+
+Cuando se usan técnicas de [LSB replacement](/stego/intro/faq-es/#qué-es-el-lsb-replacement),
+aparecen anomalías estadísticas importantes. La sustitución directa del LSB
+solo puede convertir un valor par en el impar consecutivo, o un valor impar en
+el par consecutivo. Por eso tiende a igualar las frecuencias dentro de pares de
+valores consecutivos (por ejemplo, 0/1, 2/3, 4/5), alterando la distribución
+natural de los píxeles.
+
+Estas anomalías son aprovechadas por toda una familia de ataques conocidos
+como "ataques estructurales", entre los que destacan el ataque SPA, el ataque RS
+o el ataque WS.
+
+## ¿Qué es un ataque known-cover?
+
+Un ataque **known-cover** ocurre cuando el atacante dispone tanto del cover
+original como del archivo stego. Al comparar ambos archivos, puede observar
+exactamente qué posiciones han cambiado.
+
+Este no es el escenario normal en estegoanálisis práctico, porque el cover
+original normalmente no está disponible. Es útil sobre todo como escenario
+experimental o forense para estudiar cómo modifica un algoritmo el cover y qué
+patrones deja.
+
+## ¿Qué es el Cover Source Mismatch?
+
+El Cover Source Mismatch (CSM) es un problema muy importante en estegoanálisis
+que se produce al usar *machine learning* para crear modelos de detección 
+de imágenes que usan esteganografía.  El problema se produce debido a que los 
+modelos aprenden de los datos, por lo que un modelo entrenado con una base de 
+datos de imágenes puede no funcionar correctamente con imágenes que proceden de
+otra base de datos de imágenes, posiblemente, con unas características
+estadísticas diferentes.
+
+Por ejemplo, un detector entrenado con imágenes de una cámara concreta, un flujo
+de revelado específico o un nivel de compresión determinado puede degradarse al
+analizar imágenes procedentes de otro dispositivo o procesadas de otra forma. Por
+eso es importante evaluar los detectores con datos lo más parecidos posible al
+escenario real de uso.
+
+## ¿Qué son los rich models?
+
+Los **rich models** son modelos de estegoanálisis basados en extraer muchas
+características estadísticas del archivo y usarlas para entrenar un clasificador.
+En imágenes espaciales, el ejemplo clásico es SRM (*Spatial Rich Model*); en JPEG
+existen modelos relacionados como JRM.
+
+Estos modelos fueron durante años una de las bases del estegoanálisis moderno y
+siguen siendo importantes para entender cómo se detectan pequeñas alteraciones
+estadísticas producidas por la esteganografía.
+
+## ¿Qué es el estegoanálisis basado en CNN?
+
+El estegoanálisis basado en **CNN** usa redes neuronales convolucionales para
+aprender directamente patrones que diferencian covers y stegos. En lugar de
+diseñar manualmente todas las características estadísticas, el modelo aprende
+representaciones útiles a partir de datos de entrenamiento.
+
+Estos métodos pueden ser muy potentes, pero dependen mucho de la calidad y
+representatividad de los datos. Problemas como el Cover Source Mismatch pueden
+afectar de forma importante a su rendimiento.
+
+## ¿Qué es la calibración en estegoanálisis JPEG?
+
+La calibración es una técnica clásica de estegoanálisis JPEG que intenta estimar
+cómo habría sido una imagen antes de la incrustación. Una forma habitual consiste
+en descomprimir la imagen, recortarla ligeramente y volver a comprimirla para
+obtener una versión de referencia.
+
+Comparando características de la imagen sospechosa con las de la versión
+calibrada, algunos ataques pueden detectar anomalías introducidas por métodos de
+esteganografía JPEG.
+
+## ¿Qué es el estegoanálisis por lotes?
+
+El estegoanálisis por lotes consiste en analizar un conjunto grande de archivos
+en lugar de estudiar una única imagen aislada. Puede usarse para priorizar casos,
+buscar patrones repetidos o estimar si un conjunto contiene una proporción
+anómala de archivos stego.
+
+Este enfoque es útil en contextos forenses y de monitorización, pero requiere
+controlar bien los falsos positivos: incluso una tasa pequeña de error puede
+producir muchas alertas cuando se analizan miles o millones de archivos.
 
 ## ¿Qué es matrix encoding?
 
@@ -392,6 +549,19 @@ solución de baja distorsión.
 En términos simples, los STC ayudan a decidir qué cambios realizar para codificar
 el mensaje produciendo la menor huella estadística posible según el modelo de
 costes elegido.
+
+## ¿Qué es la esteganografía generativa?
+
+La esteganografía generativa oculta información durante el proceso de generación
+del contenido, en lugar de partir de un cover existente y modificarlo. Por
+ejemplo, un sistema puede generar una imagen, texto o audio condicionado por un
+mensaje secreto, de forma que el contenido producido codifique esa información.
+
+La diferencia principal frente a la esteganografía por modificación de cover es
+que no existe necesariamente un archivo original que comparar con el resultado.
+Esto cambia el problema de detección: el estegoanálisis debe buscar si el
+contenido generado tiene huellas de codificación o distribución anómalas, no solo
+si un cover previo ha sido alterado.
 
 ## ¿Qué son los falsos positivos y falsos negativos?
 
@@ -444,171 +614,6 @@ esteganografía, sino también qué método o familia de métodos pudo haberse u
 Este problema es más complejo que la detección binaria, porque distintas técnicas
 pueden producir huellas parecidas, y un detector entrenado con algunos métodos
 puede no reconocer bien otros métodos no vistos durante el entrenamiento.
-
-## ¿Qué significa que un método tenga baja detectabilidad?
-
-Un método tiene baja detectabilidad cuando consigue ocultar la existencia del
-mensaje sin dejar huellas estadísticas claras en el archivo stego. No basta con
-que el mensaje pueda extraerse correctamente; el archivo resultante también debe
-parecer un cover normal.
-
-En la práctica, la detectabilidad depende del método, del payload, del tipo de
-cover, de la clave usada y del detector al que se enfrenta. Por eso es más claro
-hablar de baja o alta detectabilidad que de seguridad en sentido genérico.
-
-## ¿Qué es la detectabilidad?
-
-La detectabilidad es la facilidad con la que un estegoanalista o una herramienta
-puede distinguir entre covers y archivos stego. Si un método produce cambios
-estadísticamente visibles, su detectabilidad será alta.
-
-La detectabilidad no depende solo del algoritmo. También influyen el tamaño del
-mensaje, el tipo de imagen, la compresión, el origen de los covers y el conjunto
-de datos usado para entrenar o evaluar el detector.
-
-## ¿Qué es la distorsión?
-
-La distorsión es el cambio introducido en el cover al incrustar un mensaje. En
-una imagen, puede medirse como diferencias en píxeles, coeficientes JPEG,
-histogramas u otras características estadísticas.
-
-Los métodos modernos no intentan simplemente minimizar el número de cambios,
-sino colocar esos cambios donde sean menos detectables. Por eso la distorsión se
-suele modelar mediante funciones de coste.
-
-## ¿Qué relación hay entre capacidad y detectabilidad?
-
-La capacidad indica cuánta información puede ocultarse en un cover. La
-detectabilidad indica lo fácil o difícil que es detectar que se ha ocultado
-información. Normalmente hay una tensión entre ambas: al aumentar el payload,
-aumentan los cambios y también la probabilidad de detección.
-
-Por eso, en esteganografía práctica no basta con preguntar cuánto cabe en una
-imagen. También hay que preguntar cuánto puede ocultarse sin que el resultado
-sea fácilmente detectable.
-
-## ¿Qué es cover selection?
-
-**Cover selection** consiste en elegir cuidadosamente qué archivos se usarán
-como covers. En lugar de incrustar datos en cualquier imagen disponible, se
-seleccionan aquellas que son más adecuadas para ocultar información con menor
-riesgo de detección.
-
-Por ejemplo, una imagen con mucha textura puede ser mejor candidata que una
-imagen con grandes zonas lisas, porque ciertos cambios quedan más disimulados
-en regiones complejas.
-
-## ¿Qué es un ataque known-cover?
-
-Un ataque **known-cover** ocurre cuando el atacante dispone tanto del cover
-original como del archivo stego. Al comparar ambos archivos, puede observar
-exactamente qué posiciones han cambiado.
-
-Este no es el escenario normal en estegoanálisis práctico, porque el cover
-original normalmente no está disponible. Es útil sobre todo como escenario
-experimental o forense para estudiar cómo modifica un algoritmo el cover y qué
-patrones deja.
-
-## ¿Por qué la recompresión o el redimensionado pueden romper un mensaje oculto?
-
-Muchas técnicas de esteganografía dependen de valores concretos de píxeles o
-coeficientes. Si una plataforma recomprime, redimensiona o elimina metadatos de
-un archivo, esos valores pueden cambiar y el mensaje oculto puede corromperse o
-desaparecer.
-
-Esto es especialmente importante en redes sociales, servicios de mensajería y
-plataformas que optimizan imágenes automáticamente. Que un mensaje se pueda
-extraer localmente no garantiza que sobreviva después de subir el archivo a un
-servicio externo.
-
-## ¿Cuál es la diferencia entre watermarking y esteganografía?
-
-El **watermarking** busca insertar una marca asociada al contenido, normalmente
-para identificar autoría, propiedad, procedencia o integridad. La marca puede
-ser visible o invisible, y a menudo se diseña para resistir ciertas
-transformaciones.
-
-La **esteganografía** busca ocultar la existencia de una comunicación. Lo más
-importante no es demostrar propiedad del archivo, sino que un observador no
-pueda distinguir fácilmente si contiene o no un mensaje oculto.
-
-## ¿Cuál es la diferencia entre criptografía y esteganografía?
-
-La criptografía protege el contenido del mensaje: transforma la información para
-que no pueda leerse sin la clave adecuada. Sin embargo, normalmente no oculta que
-existe una comunicación cifrada.
-
-La esteganografía intenta ocultar la existencia del mensaje. Ambas técnicas se
-pueden combinar: primero se cifra el mensaje y después se incrusta en un cover
-mediante esteganografía.
-
-## ¿Qué diferencia hay entre esteganografía robusta y frágil?
-
-La esteganografía **robusta** intenta que el mensaje sobreviva a transformaciones
-como recompresión, redimensionado, ruido o recorte. Es más cercana a algunos
-escenarios de watermarking, donde la marca debe seguir presente aunque el
-archivo cambie.
-
-La esteganografía **frágil** puede perder el mensaje ante cambios pequeños del
-archivo. Muchos métodos diseñados para baja detectabilidad son frágiles, porque
-dependen de valores concretos de píxeles o coeficientes.
-
-## ¿Qué son los rich models?
-
-Los **rich models** son modelos de estegoanálisis basados en extraer muchas
-características estadísticas del archivo y usarlas para entrenar un clasificador.
-En imágenes espaciales, el ejemplo clásico es SRM (*Spatial Rich Model*); en JPEG
-existen modelos relacionados como JRM.
-
-Estos modelos fueron durante años una de las bases del estegoanálisis moderno y
-siguen siendo importantes para entender cómo se detectan pequeñas alteraciones
-estadísticas producidas por la esteganografía.
-
-## ¿Qué es el estegoanálisis basado en CNN?
-
-El estegoanálisis basado en **CNN** usa redes neuronales convolucionales para
-aprender directamente patrones que diferencian covers y stegos. En lugar de
-diseñar manualmente todas las características estadísticas, el modelo aprende
-representaciones útiles a partir de datos de entrenamiento.
-
-Estos métodos pueden ser muy potentes, pero dependen mucho de la calidad y
-representatividad de los datos. Problemas como el Cover Source Mismatch pueden
-afectar de forma importante a su rendimiento.
-
-## ¿Qué es el estegoanálisis por lotes?
-
-El estegoanálisis por lotes consiste en analizar un conjunto grande de archivos
-en lugar de estudiar una única imagen aislada. Puede usarse para priorizar casos,
-buscar patrones repetidos o estimar si un conjunto contiene una proporción
-anómala de archivos stego.
-
-Este enfoque es útil en contextos forenses y de monitorización, pero requiere
-controlar bien los falsos positivos: incluso una tasa pequeña de error puede
-producir muchas alertas cuando se analizan miles o millones de archivos.
-
-## ¿Qué es la esteganografía generativa?
-
-La esteganografía generativa oculta información durante el proceso de generación
-del contenido, en lugar de partir de un cover existente y modificarlo. Por
-ejemplo, un sistema puede generar una imagen, texto o audio condicionado por un
-mensaje secreto, de forma que el contenido producido codifique esa información.
-
-La diferencia principal frente a la esteganografía por modificación de cover es
-que no existe necesariamente un archivo original que comparar con el resultado.
-Esto cambia el problema de detección: el estegoanálisis debe buscar si el
-contenido generado tiene huellas de codificación o distribución anómalas, no solo
-si un cover previo ha sido alterado.
-
-## ¿Qué es la calibración en estegoanálisis JPEG?
-
-La calibración es una técnica clásica de estegoanálisis JPEG que intenta estimar
-cómo habría sido una imagen antes de la incrustación. Una forma habitual consiste
-en descomprimir la imagen, recortarla ligeramente y volver a comprimirla para
-obtener una versión de referencia.
-
-Comparando características de la imagen sospechosa con las de la versión
-calibrada, algunos ataques pueden detectar anomalías introducidas por métodos de
-esteganografía JPEG.
 
 ## ¿Qué es Aletheia?
 
