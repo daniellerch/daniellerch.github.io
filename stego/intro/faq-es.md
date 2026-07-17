@@ -35,6 +35,19 @@ comments: false
 - [¿En qué medios se puede usar esteganografía?](#en-qué-medios-se-puede-usar-esteganografía)
 - [¿Qué son los ataques estructurales?](#qué-son-los-ataques-estructurales)
 - [¿Qué es el Cover Source Mismatch?](#qué-es-el-cover-source-mismatch)
+- [¿Qué son cover, stego y payload?](#qué-son-cover-stego-y-payload)
+- [¿Qué son embedding y extraction?](#qué-son-embedding-y-extraction)
+- [¿Qué es una clave esteganográfica?](#qué-es-una-clave-esteganográfica)
+- [¿Qué diferencia hay entre esteganografía espacial y esteganografía JPEG?](#qué-diferencia-hay-entre-esteganografía-espacial-y-esteganografía-jpeg)
+- [¿Qué es la DCT?](#qué-es-la-dct)
+- [¿Qué es la esteganografía adaptativa?](#qué-es-la-esteganografía-adaptativa)
+- [¿Qué es una función de coste?](#qué-es-una-función-de-coste)
+- [¿Qué es matrix encoding?](#qué-es-matrix-encoding)
+- [¿Qué son los wet paper codes?](#qué-son-los-wet-paper-codes)
+- [¿Qué son los syndrome-trellis codes (STC)?](#qué-son-los-syndrome-trellis-codes-stc)
+- [¿Qué son los falsos positivos y falsos negativos?](#qué-son-los-falsos-positivos-y-falsos-negativos)
+- [¿Qué es Aletheia?](#qué-es-aletheia)
+- [¿Qué es StegoRank?](#qué-es-stegorank)
 
 <br>
 ## ¿Qué es la esteganografía?
@@ -252,7 +265,139 @@ datos de imágenes puede no funcionar correctamente con imágenes que proceden d
 otra base de datos de imágenes, posiblemente, con unas características
 estadísticas diferentes.
 
+## ¿Qué son cover, stego y payload?
 
+En esteganografía, el **cover** es el objeto original que se usa como portador:
+por ejemplo, una imagen, un audio o un documento sin información oculta. El
+**stego** es el objeto resultante después de incrustar el mensaje secreto.
+
+El **payload** es la cantidad de información que se oculta. Suele medirse como
+bits por píxel, bits por coeficiente, o como porcentaje de la capacidad del
+medio. En general, cuanto mayor es el payload, más fácil es detectar que el
+archivo ha sido modificado.
+
+## ¿Qué son embedding y extraction?
+
+**Embedding** es el proceso de incrustar un mensaje secreto dentro de un cover
+para obtener un objeto stego. **Extraction** es el proceso inverso: recuperar el
+mensaje oculto a partir del objeto stego.
+
+En algunos métodos la extracción requiere conocer una clave, una contraseña o
+parámetros específicos. Sin esa información, el mensaje puede no ser recuperable
+aunque se sepa que el archivo contiene datos ocultos.
+
+## ¿Qué es una clave esteganográfica?
+
+Una clave esteganográfica es un valor secreto que controla cómo se incrusta o se
+extrae el mensaje. Por ejemplo, puede determinar qué píxeles, coeficientes o
+posiciones se usan para ocultar la información.
+
+La clave no debe confundirse con una clave criptográfica, aunque ambas pueden
+combinarse. Es habitual cifrar primero el mensaje y después incrustarlo mediante
+un método esteganográfico controlado por una clave.
+
+## ¿Qué diferencia hay entre esteganografía espacial y esteganografía JPEG?
+
+La esteganografía espacial modifica directamente los valores de los píxeles de
+una imagen, como ocurre con técnicas LSB sobre imágenes BMP o PNG sin pérdida.
+
+La esteganografía JPEG trabaja sobre los coeficientes de la Transformada
+Discreta de Coseno (DCT) que usa el formato JPEG. Esta diferencia es importante
+porque JPEG es un formato con pérdida: recomprimir la imagen puede alterar o
+destruir la información oculta.
+
+## ¿Qué es la DCT?
+
+La DCT, o Transformada Discreta de Coseno, es una transformación matemática que
+representa una señal o imagen en términos de frecuencias. JPEG usa la DCT para
+separar la información visual en componentes de baja y alta frecuencia.
+
+En esteganografía JPEG, muchos métodos modifican coeficientes DCT en lugar de
+píxeles. Técnicas como F5, nsF5, J-UNIWARD o StegHide incrustan directamente el
+mensaje en el dominio transformado.
+
+## ¿Qué es la esteganografía adaptativa?
+
+La esteganografía adaptativa intenta ocultar información en las partes del cover
+donde las modificaciones son menos detectables. En imágenes, esto suele implicar
+preferir zonas con textura, bordes o ruido, y evitar regiones lisas donde un
+cambio pequeño puede ser más evidente estadísticamente.
+
+Los métodos adaptativos modernos suelen asignar un coste a cada posible cambio y
+después incrustan el mensaje minimizando el coste total.
+
+## ¿Qué es una función de coste?
+
+Una función de coste asigna un valor a cada posible modificación del cover. Un
+coste bajo indica que el cambio parece poco detectable; un coste alto indica que
+el cambio podría dejar una huella estadística más clara.
+
+Métodos como HILL, S-UNIWARD o J-UNIWARD se basan en funciones de coste para
+decidir dónde conviene modificar la imagen. La calidad de esa función influye
+directamente en la seguridad esteganográfica del método.
+
+## ¿Qué es matrix encoding?
+
+**Matrix encoding** es una técnica que permite incrustar varios bits de mensaje
+realizando menos cambios en el cover. En lugar de modificar un elemento por cada
+bit, se usa una estructura algebraica para elegir un cambio que codifique varios
+bits a la vez.
+
+F5 utiliza matrix encoding para reducir el número de modificaciones necesarias
+en los coeficientes JPEG, lo que mejora su eficiencia y dificulta algunos tipos
+de detección.
+
+## ¿Qué son los wet paper codes?
+
+Los **wet paper codes** son códigos usados en esteganografía cuando el emisor
+puede elegir qué posiciones modificar, pero el receptor no necesita saber cuáles
+eran modificables. La metáfora es la de escribir sobre un papel con zonas
+"secas" y "mojadas": solo algunas posiciones pueden tocarse.
+
+Este concepto es útil en esteganografía adaptativa, porque permite evitar
+posiciones delicadas del cover y concentrar los cambios en zonas más seguras.
+
+## ¿Qué son los syndrome-trellis codes (STC)?
+
+Los **syndrome-trellis codes** (STC) son códigos prácticos para incrustar un
+mensaje minimizando una función de coste. Se usan ampliamente en métodos
+modernos de esteganografía porque permiten aproximarse de forma eficiente a una
+solución de baja distorsión.
+
+En términos simples, los STC ayudan a decidir qué cambios realizar para codificar
+el mensaje produciendo la menor huella estadística posible según el modelo de
+costes elegido.
+
+## ¿Qué son los falsos positivos y falsos negativos?
+
+En estegoanálisis, un **falso positivo** ocurre cuando una herramienta clasifica
+como stego un archivo que en realidad no contiene información oculta. Un
+**falso negativo** ocurre cuando un archivo stego pasa desapercibido y se
+clasifica como cover.
+
+Ambos errores son importantes. Un detector muy agresivo puede producir muchos
+falsos positivos, mientras que un detector demasiado conservador puede dejar
+pasar demasiados falsos negativos.
+
+## ¿Qué es Aletheia?
+
+**Aletheia** es una herramienta de estegoanálisis desarrollada para detectar y
+analizar técnicas de esteganografía en imágenes. Incluye ataques contra métodos
+clásicos y funciones para entrenar o aplicar modelos de detección.
+
+Es especialmente útil como entorno práctico para experimentar con imágenes cover
+y stego, evaluar detectabilidad y estudiar cómo funcionan distintos ataques.
+
+## ¿Qué es StegoRank?
+
+**StegoRank** es una clasificación de métodos y herramientas de esteganografía
+centrada en su detectabilidad práctica. Su objetivo es ayudar a comparar técnicas
+no solo por si permiten ocultar información, sino por lo fáciles o difíciles que
+son de detectar con estegoanálisis.
+
+La idea principal es que una herramienta esteganográfica no debería evaluarse
+solo por su capacidad o facilidad de uso, sino también por la huella estadística
+que deja en los archivos generados.
 
 
 

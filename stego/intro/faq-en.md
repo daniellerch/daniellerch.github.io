@@ -35,6 +35,19 @@ comments: false
 - [In what media can steganography be used?](#in-what-media-can-steganography-be-used)
 - [What are structural attacks?](#what-are-structural-attacks)
 - [What is the Cover Source Mismatch?](#what-is-the-cover-source-mismatch)
+- [What are cover, stego, and payload?](#what-are-cover-stego-and-payload)
+- [What are embedding and extraction?](#what-are-embedding-and-extraction)
+- [What is a steganographic key?](#what-is-a-steganographic-key)
+- [What is the difference between spatial and JPEG steganography?](#what-is-the-difference-between-spatial-and-jpeg-steganography)
+- [What is the DCT?](#what-is-the-dct)
+- [What is adaptive steganography?](#what-is-adaptive-steganography)
+- [What is a cost function?](#what-is-a-cost-function)
+- [What is matrix encoding?](#what-is-matrix-encoding)
+- [What are wet paper codes?](#what-are-wet-paper-codes)
+- [What are syndrome-trellis codes (STC)?](#what-are-syndrome-trellis-codes-stc)
+- [What are false positives and false negatives?](#what-are-false-positives-and-false-negatives)
+- [What is Aletheia?](#what-is-aletheia)
+- [What is StegoRank?](#what-is-stegorank)
 
 
 <br>
@@ -205,3 +218,133 @@ use steganography. The problem arises because the models learn from data,
 so a model trained with one image database may not function correctly with 
 images from another image database, possibly due to different statistical 
 characteristics.
+
+## What are cover, stego, and payload?
+
+In steganography, the **cover** is the original object used as the carrier: for
+example, an image, audio file, or document with no hidden information. The
+**stego** object is the result after embedding the secret message.
+
+The **payload** is the amount of information being hidden. It is often measured
+as bits per pixel, bits per coefficient, or as a percentage of the medium's
+capacity. In general, the larger the payload, the easier it becomes to detect
+that the file has been modified.
+
+## What are embedding and extraction?
+
+**Embedding** is the process of inserting a secret message into a cover to
+produce a stego object. **Extraction** is the reverse process: recovering the
+hidden message from the stego object.
+
+Some methods require a key, password, or specific parameters during extraction.
+Without that information, the message may not be recoverable even if one knows
+that the file contains hidden data.
+
+## What is a steganographic key?
+
+A steganographic key is a secret value that controls how the message is embedded
+or extracted. For example, it may determine which pixels, coefficients, or
+positions are used to hide the information.
+
+It should not be confused with a cryptographic key, although both can be
+combined. A common approach is to encrypt the message first and then embed it
+using a steganographic method controlled by a key.
+
+## What is the difference between spatial and JPEG steganography?
+
+Spatial steganography directly modifies pixel values, as in LSB techniques
+applied to lossless BMP or PNG images.
+
+JPEG steganography works on the Discrete Cosine Transform (DCT) coefficients
+used by the JPEG format. This distinction matters because JPEG is lossy:
+recompressing the image can alter or destroy the hidden information.
+
+## What is the DCT?
+
+The DCT, or Discrete Cosine Transform, is a mathematical transform that
+represents a signal or image in terms of frequencies. JPEG uses the DCT to
+separate visual information into low- and high-frequency components.
+
+In JPEG steganography, many methods modify DCT coefficients instead of pixels.
+Techniques such as F5, nsF5, J-UNIWARD, or StegHide embed the message directly
+in the transformed domain.
+
+## What is adaptive steganography?
+
+Adaptive steganography tries to hide information in the parts of the cover where
+changes are less detectable. In images, this often means preferring textured
+areas, edges, or noise, and avoiding smooth regions where small changes may be
+more statistically visible.
+
+Modern adaptive methods usually assign a cost to each possible change and then
+embed the message while minimizing the total cost.
+
+## What is a cost function?
+
+A cost function assigns a value to each possible modification of the cover. A
+low cost means that the change appears less detectable; a high cost means that
+the change may leave a clearer statistical trace.
+
+Methods such as HILL, S-UNIWARD, or J-UNIWARD rely on cost functions to decide
+where the image should be modified. The quality of the cost function directly
+affects the steganographic security of the method.
+
+## What is matrix encoding?
+
+**Matrix encoding** is a technique that embeds several message bits while
+requiring fewer changes in the cover. Instead of modifying one element for each
+bit, it uses an algebraic structure to choose a change that encodes several bits
+at once.
+
+F5 uses matrix encoding to reduce the number of required modifications in JPEG
+coefficients, improving efficiency and making some types of detection harder.
+
+## What are wet paper codes?
+
+**Wet paper codes** are codes used in steganography when the sender can choose
+which positions may be modified, but the receiver does not need to know which
+positions were modifiable. The metaphor is writing on paper with "dry" and
+"wet" spots: only some positions can be touched.
+
+This concept is useful in adaptive steganography because it allows delicate
+positions in the cover to be avoided while concentrating changes in safer areas.
+
+## What are syndrome-trellis codes (STC)?
+
+**Syndrome-trellis codes** (STC) are practical codes for embedding a message
+while minimizing a cost function. They are widely used in modern steganography
+because they provide an efficient approximation to a low-distortion solution.
+
+In simple terms, STC help decide which changes should be made to encode the
+message while producing the smallest statistical trace according to the chosen
+cost model.
+
+## What are false positives and false negatives?
+
+In steganalysis, a **false positive** occurs when a tool classifies a file as
+stego even though it does not contain hidden information. A **false negative**
+occurs when a stego file goes undetected and is classified as cover.
+
+Both errors matter. A very aggressive detector may produce many false positives,
+whereas a very conservative detector may allow too many false negatives.
+
+## What is Aletheia?
+
+**Aletheia** is a steganalysis tool developed to detect and analyze image
+steganography techniques. It includes attacks against classical methods and
+features for training or applying detection models.
+
+It is especially useful as a practical environment for experimenting with cover
+and stego images, evaluating detectability, and studying how different attacks
+work.
+
+## What is StegoRank?
+
+**StegoRank** is a ranking of steganographic methods and tools focused on their
+practical detectability. Its goal is to help compare techniques not only by
+whether they can hide information, but by how easy or difficult they are to
+detect with steganalysis.
+
+The main idea is that a steganographic tool should not be evaluated only by its
+capacity or ease of use, but also by the statistical trace it leaves in the
+files it produces.
