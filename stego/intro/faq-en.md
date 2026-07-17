@@ -53,6 +53,12 @@ comments: false
 - [What is cover selection?](#what-is-cover-selection)
 - [What is a known-cover attack?](#what-is-a-known-cover-attack)
 - [Why can recompression or resizing break a hidden message?](#why-can-recompression-or-resizing-break-a-hidden-message)
+- [What is the difference between watermarking and steganography?](#what-is-the-difference-between-watermarking-and-steganography)
+- [What is the difference between cryptography and steganography?](#what-is-the-difference-between-cryptography-and-steganography)
+- [What is the difference between robust and fragile steganography?](#what-is-the-difference-between-robust-and-fragile-steganography)
+- [What are rich models?](#what-are-rich-models)
+- [What is CNN-based steganalysis?](#what-is-cnn-based-steganalysis)
+- [What is calibration in JPEG steganalysis?](#what-is-calibration-in-jpeg-steganalysis)
 - [What is Aletheia?](#what-is-aletheia)
 - [What is StegoRank?](#what-is-stegorank)
 
@@ -409,6 +415,69 @@ This is especially important for social networks, messaging services, and
 platforms that automatically optimize images. Being able to extract a message
 locally does not guarantee that it will survive after uploading the file to an
 external service.
+
+## What is the difference between watermarking and steganography?
+
+**Watermarking** aims to insert a mark associated with the content, usually to
+identify authorship, ownership, provenance, or integrity. The mark may be visible
+or invisible, and it is often designed to survive certain transformations.
+
+**Steganography** aims to hide the existence of a communication. The main goal is
+not to prove ownership of the file, but to prevent an observer from easily
+distinguishing whether it contains a hidden message.
+
+## What is the difference between cryptography and steganography?
+
+Cryptography protects the content of the message: it transforms the information
+so that it cannot be read without the appropriate key. However, it usually does
+not hide the fact that encrypted communication exists.
+
+Steganography tries to hide the existence of the message. Both techniques can be
+combined: first the message is encrypted, and then it is embedded into a cover
+using steganography.
+
+## What is the difference between robust and fragile steganography?
+
+**Robust** steganography tries to make the message survive transformations such
+as recompression, resizing, noise, or cropping. It is closer to some watermarking
+scenarios, where the mark should remain present even after the file changes.
+
+**Fragile** steganography may lose the message after small changes to the file.
+Many methods designed for low detectability are fragile because they depend on
+specific pixel values or coefficients.
+
+## What are rich models?
+
+**Rich models** are steganalysis models based on extracting many statistical
+features from the file and using them to train a classifier. For spatial images,
+the classic example is SRM (*Spatial Rich Model*); for JPEG images, related
+models include JRM.
+
+These models were one of the foundations of modern steganalysis for years and
+remain important for understanding how small statistical changes introduced by
+steganography can be detected.
+
+## What is CNN-based steganalysis?
+
+**CNN-based steganalysis** uses convolutional neural networks to learn patterns
+that distinguish covers from stegos. Instead of manually designing all
+statistical features, the model learns useful representations from training
+data.
+
+These methods can be powerful, but they depend heavily on the quality and
+representativeness of the data. Problems such as Cover Source Mismatch can
+strongly affect their performance.
+
+## What is calibration in JPEG steganalysis?
+
+Calibration is a classical JPEG steganalysis technique that tries to estimate
+what an image may have looked like before embedding. A common approach is to
+decompress the image, crop it slightly, and recompress it to obtain a reference
+version.
+
+By comparing features from the suspicious image with features from the
+calibrated version, some attacks can detect anomalies introduced by JPEG
+steganography methods.
 
 ## What is Aletheia?
 

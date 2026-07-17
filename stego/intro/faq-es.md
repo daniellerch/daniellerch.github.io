@@ -53,6 +53,12 @@ comments: false
 - [¿Qué es cover selection?](#qué-es-cover-selection)
 - [¿Qué es un ataque known-cover?](#qué-es-un-ataque-known-cover)
 - [¿Por qué la recompresión o el redimensionado pueden romper un mensaje oculto?](#por-qué-la-recompresión-o-el-redimensionado-pueden-romper-un-mensaje-oculto)
+- [¿Cuál es la diferencia entre watermarking y esteganografía?](#cuál-es-la-diferencia-entre-watermarking-y-esteganografía)
+- [¿Cuál es la diferencia entre criptografía y esteganografía?](#cuál-es-la-diferencia-entre-criptografía-y-esteganografía)
+- [¿Qué diferencia hay entre esteganografía robusta y frágil?](#qué-diferencia-hay-entre-esteganografía-robusta-y-frágil)
+- [¿Qué son los rich models?](#qué-son-los-rich-models)
+- [¿Qué es el estegoanálisis basado en CNN?](#qué-es-el-estegoanálisis-basado-en-cnn)
+- [¿Qué es la calibración en estegoanálisis JPEG?](#qué-es-la-calibración-en-estegoanálisis-jpeg)
 - [¿Qué es Aletheia?](#qué-es-aletheia)
 - [¿Qué es StegoRank?](#qué-es-stegorank)
 
@@ -461,6 +467,71 @@ Esto es especialmente importante en redes sociales, servicios de mensajería y
 plataformas que optimizan imágenes automáticamente. Que un mensaje se pueda
 extraer localmente no garantiza que sobreviva después de subir el archivo a un
 servicio externo.
+
+## ¿Cuál es la diferencia entre watermarking y esteganografía?
+
+El **watermarking** busca insertar una marca asociada al contenido, normalmente
+para identificar autoría, propiedad, procedencia o integridad. La marca puede
+ser visible o invisible, y a menudo se diseña para resistir ciertas
+transformaciones.
+
+La **esteganografía** busca ocultar la existencia de una comunicación. Lo más
+importante no es demostrar propiedad del archivo, sino que un observador no
+pueda distinguir fácilmente si contiene o no un mensaje oculto.
+
+## ¿Cuál es la diferencia entre criptografía y esteganografía?
+
+La criptografía protege el contenido del mensaje: transforma la información para
+que no pueda leerse sin la clave adecuada. Sin embargo, normalmente no oculta que
+existe una comunicación cifrada.
+
+La esteganografía intenta ocultar la existencia del mensaje. Ambas técnicas se
+pueden combinar: primero se cifra el mensaje y después se incrusta en un cover
+mediante esteganografía.
+
+## ¿Qué diferencia hay entre esteganografía robusta y frágil?
+
+La esteganografía **robusta** intenta que el mensaje sobreviva a transformaciones
+como recompresión, redimensionado, ruido o recorte. Es más cercana a algunos
+escenarios de watermarking, donde la marca debe seguir presente aunque el
+archivo cambie.
+
+La esteganografía **frágil** puede perder el mensaje ante cambios pequeños del
+archivo. Muchos métodos diseñados para baja detectabilidad son frágiles, porque
+dependen de valores concretos de píxeles o coeficientes.
+
+## ¿Qué son los rich models?
+
+Los **rich models** son modelos de estegoanálisis basados en extraer muchas
+características estadísticas del archivo y usarlas para entrenar un clasificador.
+En imágenes espaciales, el ejemplo clásico es SRM (*Spatial Rich Model*); en JPEG
+existen modelos relacionados como JRM.
+
+Estos modelos fueron durante años una de las bases del estegoanálisis moderno y
+siguen siendo importantes para entender cómo se detectan pequeñas alteraciones
+estadísticas producidas por la esteganografía.
+
+## ¿Qué es el estegoanálisis basado en CNN?
+
+El estegoanálisis basado en **CNN** usa redes neuronales convolucionales para
+aprender directamente patrones que diferencian covers y stegos. En lugar de
+diseñar manualmente todas las características estadísticas, el modelo aprende
+representaciones útiles a partir de datos de entrenamiento.
+
+Estos métodos pueden ser muy potentes, pero dependen mucho de la calidad y
+representatividad de los datos. Problemas como el Cover Source Mismatch pueden
+afectar de forma importante a su rendimiento.
+
+## ¿Qué es la calibración en estegoanálisis JPEG?
+
+La calibración es una técnica clásica de estegoanálisis JPEG que intenta estimar
+cómo habría sido una imagen antes de la incrustación. Una forma habitual consiste
+en descomprimir la imagen, recortarla ligeramente y volver a comprimirla para
+obtener una versión de referencia.
+
+Comparando características de la imagen sospechosa con las de la versión
+calibrada, algunos ataques pueden detectar anomalías introducidas por métodos de
+esteganografía JPEG.
 
 ## ¿Qué es Aletheia?
 
