@@ -27,6 +27,10 @@ software_schema:
 > In this article we are going to talk about how to use the commands offered by 
 > the [Aletheia](https://github.com/daniellerch/aletheia) tool for image stegaanalysis.
 
+For a broader overview of the detection problem, see
+[image steganalysis](/image-steganalysis-en/) and the companion page on
+[image steganography](/image-steganography-en/).
+
 
 
 <style>
@@ -599,5 +603,3 @@ steganography tool and we do not know exactly what it does.
 
 The reader can explore the remaining commands, as they are simple and work 
 as usual.
-
-

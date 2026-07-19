@@ -16,6 +16,8 @@ También puedes consultar [StegoRank](/stegorank-es/) para métodos y herramient
 
 ## Guías y referencias
 
+- [Esteganografía en imágenes](/image-steganography-es/)
+- [Estegoanálisis en imágenes](/image-steganalysis-es/)
 - [Preguntas frecuentes sobre esteganografía](/stego/intro/faq-es/)
 - [Herramientas de esteganografía](/stego/intro/tools-es/)
 - [Esteganografía en texto con ChatGPT](/stego/text/chatgpt-es/)

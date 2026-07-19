@@ -16,6 +16,10 @@ comments: false
 > [Aletheia](https://github.com/daniellerch/aletheia) to determine which tools
 > are harder to detect.
 
+For background on formats, payload and embedding domains, see
+[image steganography](/image-steganography-en/). For the detection side, see
+[image steganalysis](/image-steganalysis-en/).
+
 <style>
     [id]::before {
         content: '';

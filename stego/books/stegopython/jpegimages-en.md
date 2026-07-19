@@ -14,6 +14,9 @@ comments: false
 [ &nbsp; <a href='/resources-en/#online-book-steganography-for-python-programmers'>Index</a> ]
 </center>
 
+This chapter focuses on JPEG-domain embedding. For a broader overview, see
+[image steganography](/image-steganography-en/) and
+[image steganalysis](/image-steganalysis-en/).
 
 
 
@@ -533,6 +536,4 @@ Many social networks, messaging apps, and forums automatically apply lossy compr
 If a message is embedded in an uncompressed image (e.g., PNG or BMP) and the platform converts it to JPEG, LSB‑based hidden data is lost. The transform to the DCT domain followed by quantization alters the data completely. Even if the image is already JPEG, recompression can still destroy hidden content whenever the platform’s quality setting differs from the sender’s; re‑quantization changes the DCT coefficients, eliminating or distorting embedded bits.
 
 To mitigate this, a simple yet effective tactic is to pre‑compress with the same quality the platform will apply. If the platform’s JPEG quality is known, compress the image accordingly and then apply a JPEG‑domain steganographic method such as nsF5 [[Fridrich:2007:nsF5](/stego/books/stegopython/references-en/#fridrich2007nsf5)] or J‑UNIWARD [[Holub:2014:uniward](/stego/books/stegopython/references-en/#holub2014uniward)]. The platform’s compression will then leave the original coefficients unchanged and the hidden message intact. For example, if a platform uses ≈85% JPEG quality, first convert your image to JPEG at ≈85% and only then embed using nsF5 or J‑UNIWARD. 
-
-
 

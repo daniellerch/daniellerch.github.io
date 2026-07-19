@@ -28,10 +28,24 @@ redirect: "/"
   </figure>
 
   <p>The images above look identical, but one contains hidden information. This illustrates the central problem behind image steganography and steganalysis: how to conceal information without revealing its presence, and how to detect the traces it may leave behind.</p>
+
+  <p>Start with the reference pages on <a href="/image-steganography-en/">image steganography</a> and <a href="/image-steganalysis-en/">image steganalysis</a> for an overview of techniques, tools, payload, formats and detectability.</p>
 </section>
 
 <section class="home-work" aria-labelledby="explore">
   <h2 id="explore">Explore</h2>
+
+  <article class="home-work-item">
+    <h3>Image steganography</h3>
+    <p>A practical overview of spatial methods, JPEG-domain embedding, adaptive steganography, payload limits and tools for hiding information in images.</p>
+    <a href="/image-steganography-en/">Read the guide <span aria-hidden="true">→</span></a>
+  </article>
+
+  <article class="home-work-item">
+    <h3>Image steganalysis</h3>
+    <p>A reference on detecting hidden messages in images, from simple LSB attacks to JPEG steganalysis, machine learning and Cover Source Mismatch.</p>
+    <a href="/image-steganalysis-en/">Read the guide <span aria-hidden="true">→</span></a>
+  </article>
 
   <article class="home-work-item">
     <h3>StegoRank</h3>

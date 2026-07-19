@@ -47,8 +47,8 @@
                       href="/index-es/">es</a>)
                 {% else %}
                   (<a {% if page.lang-suffix == "-en" %}class="lang-sel"{% endif %}
-                      href="{{ page.url | replace: "-es", "-en" | replace: "-ca", "-en" | absolute_url }}">en</a>|<a {% if page.lang-suffix == "-es" %}class="lang-sel"{% endif %}
-                      href="{{ page.url | replace: "-en", "-es" | replace: "-ca", "-en" | absolute_url }}">es</a>)
+                      href="{{ page.url | replace: "-es", "-en" | replace: "-ca", "-en" | relative_url }}">en</a>|<a {% if page.lang-suffix == "-es" %}class="lang-sel"{% endif %}
+                      href="{{ page.url | replace: "-en", "-es" | replace: "-ca", "-en" | relative_url }}">es</a>)
                 {%- endif -%}
                  </div>
               </li>

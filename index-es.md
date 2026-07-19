@@ -27,10 +27,24 @@ alternate-es: "/index-es/"
   </figure>
 
   <p>Las imágenes anteriores parecen idénticas, pero una contiene información oculta. Esto ilustra el problema central de la esteganografía y el estegoanálisis de imágenes: cómo ocultar información sin revelar su presencia y cómo detectar las trazas que puede dejar.</p>
+
+  <p>Empieza por las páginas de referencia sobre <a href="/image-steganography-es/">esteganografía en imágenes</a> y <a href="/image-steganalysis-es/">estegoanálisis en imágenes</a> para una visión general de técnicas, herramientas, payload, formatos y detectabilidad.</p>
 </section>
 
 <section class="home-work" aria-labelledby="explore">
   <h2 id="explore">Explora</h2>
+
+  <article class="home-work-item">
+    <h3>Esteganografía en imágenes</h3>
+    <p>Una introducción práctica a métodos espaciales, incrustación en JPEG, esteganografía adaptativa, límites de payload y herramientas para ocultar información en imágenes.</p>
+    <a href="/image-steganography-es/">Leer la guía <span aria-hidden="true">→</span></a>
+  </article>
+
+  <article class="home-work-item">
+    <h3>Estegoanálisis en imágenes</h3>
+    <p>Una referencia sobre detección de mensajes ocultos en imágenes, desde ataques LSB hasta estegoanálisis JPEG, aprendizaje automático y Cover Source Mismatch.</p>
+    <a href="/image-steganalysis-es/">Leer la guía <span aria-hidden="true">→</span></a>
+  </article>
 
   <article class="home-work-item">
     <h3>StegoRank</h3>

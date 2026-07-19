@@ -126,7 +126,7 @@ schema_type: "Article"
 </style>
 
 
-StegoRank sigue el estado actual de las técnicas y herramientas de esteganografía en imágenes, con especial atención a cómo de detectables son frente al estegoanálisis práctico.
+StegoRank sigue el estado actual de las técnicas y herramientas de [esteganografía en imágenes](/image-steganography-es/), con especial atención a cómo de detectables son frente al [estegoanálisis en imágenes](/image-steganalysis-es/) práctico.
 
 La comparación se organiza alrededor de las técnicas de incrustación subyacentes, porque muchas herramientas implementan los mismos métodos, o métodos muy cercanos. Esto facilita entender qué se está evaluando realmente: la herramienta, la técnica que utiliza, la carga insertada y el detector empleado para analizarla.
 

@@ -16,10 +16,11 @@ You can also see [StegoRank](/stegorank-en/) for methods and tools, [StegoLab](/
 
 ## Guides and References
 
+- [Image steganography](/image-steganography-en/)
+- [Image steganalysis](/image-steganalysis-en/)
 - [Steganography FAQ](/stego/intro/faq-en/)
 - [Steganography tools](/stego/intro/tools-en/)
 - [Text steganography with ChatGPT](/stego/text/chatgpt-en/)
-- [LSB steganography in images and audio](/stego/intro/lsb-en/)
 
 ## Message Encoding
 

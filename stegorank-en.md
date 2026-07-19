@@ -126,7 +126,7 @@ schema_type: "Article"
 </style>
 
 
-StegoRank tracks the current state of image steganography techniques and tools, with a particular focus on how detectable they are under practical steganalysis.
+StegoRank tracks the current state of [image steganography](/image-steganography-en/) techniques and tools, with a particular focus on how detectable they are under practical [image steganalysis](/image-steganalysis-en/).
 
 The comparison is organized around the underlying embedding techniques, because many tools implement the same or closely related methods. This makes it easier to understand what is actually being evaluated: the tool, the technique behind it, the payload, and the detector used to analyze it.
 

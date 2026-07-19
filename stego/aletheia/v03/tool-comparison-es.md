@@ -16,6 +16,10 @@ comments: false
 > [Aletheia](https://github.com/daniellerch/aletheia) para ver qué herramientas
 > son más difíciles de detectar.
 
+Para contexto sobre formatos, payload y dominios de incrustación, consulta
+[esteganografía en imágenes](/image-steganography-es/). Para la parte de
+detección, consulta [estegoanálisis en imágenes](/image-steganalysis-es/).
+
 <style>
     [id]::before {
         content: '';
@@ -233,6 +237,5 @@ que varía el *payload*.
 En la gráfica se presentan dos versiones diferentes de HStego, la 0.3 y la
 0.4. La versión 0.4 introduce diferentes mejoras que la hacen más difícil de
 detectar en el escenario evaluado.
-
 
 

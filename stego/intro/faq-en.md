@@ -34,6 +34,9 @@ faq_schema:
 
 <div class='menu' style='margin-top:50px'></div>
 
+For a more structured introduction, start with [image steganography](/image-steganography-en/)
+and [image steganalysis](/image-steganalysis-en/).
+
 ## Content
 
 ### First concepts

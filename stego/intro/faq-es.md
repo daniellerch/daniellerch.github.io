@@ -34,6 +34,9 @@ faq_schema:
 
 <div class='menu' style='margin-top:50px'></div>
 
+Para una introducción más estructurada, empieza por [esteganografía en imágenes](/image-steganography-es/)
+y [estegoanálisis en imágenes](/image-steganalysis-es/).
+
 ## Contenido
 
 ### Primeros conceptos

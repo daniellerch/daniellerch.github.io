@@ -13,6 +13,9 @@ comments: false
 > En este artículo vamos a ver cómo incrustar información en imágenes y
 > en audio usando el bit menos significativo (LSB) de cada byte. 
 
+Para una visión más amplia, consulta [esteganografía en imágenes](/image-steganography-es/)
+y [estegoanálisis en imágenes](/image-steganalysis-es/).
+
 
 
 <style>
@@ -871,7 +874,6 @@ Hello World¡GhÓ
 
 Igual que en los casos anteriores, podemos ver algunos caracteres extraños al 
 final de la cadena extraída, debido a que hemos extraído bits que no se usan.
-
 
 
 

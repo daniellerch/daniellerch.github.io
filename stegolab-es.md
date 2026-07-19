@@ -39,7 +39,7 @@ schema_type: "Article"
 </style>
 
 
-> StegoLab reúne herramientas prácticas, librerías de apoyo e implementaciones de investigación para trabajar en esteganografía, estegoanálisis y *watermarking*.
+> StegoLab reúne herramientas prácticas, librerías de apoyo e implementaciones de investigación para trabajar en [esteganografía en imágenes](/image-steganography-es/), [estegoanálisis en imágenes](/image-steganalysis-es/) y *watermarking*.
 
 
 <center style='margin-bottom:30px'>

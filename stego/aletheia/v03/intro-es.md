@@ -27,6 +27,10 @@ software_schema:
 > En este artículo vamos a ver cómo usar los comandos que ofrece la herramienta 
 > [Aletheia](https://github.com/daniellerch/aletheia) para el estegoanálisis de imágenes.
 
+Para una visión más general del problema de detección, consulta
+[estegoanálisis en imágenes](/image-steganalysis-es/) y la página complementaria
+sobre [esteganografía en imágenes](/image-steganography-es/).
+
 
 
 <style>
@@ -619,7 +623,6 @@ exactamente lo que hace.
 
 El lector puede explorar los comandos restantes, pues son sencillos y siguen la
 dinámica habitual de Aletheia.
-
 
 
 

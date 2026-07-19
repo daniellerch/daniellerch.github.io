@@ -14,6 +14,9 @@ comments: false
 [ &nbsp; <a href='/resources-es/#libro-online-esteganografía-para-programadores-python'>Índice</a> ]
 </center>
 
+Este capítulo se centra en la incrustación en dominio JPEG. Para una visión más
+amplia, consulta [esteganografía en imágenes](/image-steganography-es/) y
+[estegoanálisis en imágenes](/image-steganalysis-es/).
 
 
 
@@ -533,6 +536,5 @@ Muchas redes sociales, aplicaciones de mensajería, foros, etc., aplican automá
 Cuando se incrusta un mensaje en una imagen sin comprimir —por ejemplo, en un archivo PNG o BMP—, y dicha imagen es transformada automáticamente a JPEG por la plataforma, se pierde la información oculta en el LSB de los píxeles. La transformación al dominio DCT, seguida de la cuantización, altera completamente los datos sobre los que se realizó la incrustación, destruyendo el mensaje. Pero incluso si la imagen ya estaba en formato JPEG, la recompresión puede igualmente arruinar el contenido oculto. Esto ocurre si la calidad JPEG aplicada por la plataforma es diferente de la utilizada por el emisor al crear la imagen. En ese caso, los coeficientes DCT serán alterados por una nueva cuantización, eliminando o distorsionando los bits que contenían el mensaje.
 
 Para mitigar este problema, una técnica sencilla pero eficaz consiste en aplicar de antemano la misma compresión que la plataforma aplicará. Si se conoce la calidad JPEG que emplea una red social determinada, es posible comprimir previamente la imagen con esa misma configuración. A continuación, se puede aplicar sobre ella cualquier técnica de esteganografía diseñada para imágenes JPEG, como las descritas en los apartados anteriores. De este modo, la compresión aplicada por la plataforma no afectará a los coeficientes originales y, por tanto, el mensaje oculto permanecerá. Por ejemplo, si se ha determinado experimentalmente que una plataforma concreta utiliza una calidad JPEG cercana al 85\%, el usuario puede convertir primero su imagen a JPEG con esa calidad, y luego aplicar sobre el archivo resultante un método como nsF5 [[Fridrich:2007:nsF5](/stego/books/stegopython/references-es/#fridrich2007nsf5)] o J-UNIWARD [[Holub:2014:uniward](/stego/books/stegopython/references-es/#holub2014uniward)]. 
-
 
 

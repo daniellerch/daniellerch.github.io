@@ -39,7 +39,7 @@ schema_type: "Article"
 </style>
 
 
-> StegoLab brings together practical tools, supporting software libraries, and research implementations for work on steganography, steganalysis, and watermarking.
+> StegoLab brings together practical tools, supporting software libraries, and research implementations for work on [image steganography](/image-steganography-en/), [image steganalysis](/image-steganalysis-en/), and watermarking.
 
 
 <center style='margin-bottom:30px'>
