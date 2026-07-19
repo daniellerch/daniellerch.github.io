@@ -31,19 +31,7 @@ Para una visión más general del problema de detección, consulta
 [estegoanálisis en imágenes](/image-steganalysis-es/) y la página complementaria
 sobre [esteganografía en imágenes](/image-steganography-es/).
 
-
-
-<style>
-    [id]::before {
-        content: '';
-        display: block;
-        height:      70px;
-        margin-top: -70px;
-        visibility: hidden;
-    }
-</style>
-
-<div class='menu' style='margin-top:50px'></div>
+<div class='menu'></div>
 
 ## Contenido
 

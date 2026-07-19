@@ -19,14 +19,7 @@ comments: false
 
 
 <style>
-    [id]::before {
-        content: '';
-        display: block;
-        height:      70px;
-        margin-top: -70px;
-        visibility: hidden;
-    }
-    .separator {
+.separator {
         height: 10px;
     } 
     hr {
@@ -34,7 +27,7 @@ comments: false
     }
 </style>
 
-<div class='menu' style='margin-top:50px'></div>
+<div class='menu'></div>
 
 
 

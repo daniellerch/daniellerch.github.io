@@ -16,19 +16,7 @@ comments: false
 > En este artículo vamos a ver cómo HStego realiza la incrustación de
 > información mediante Syndrome Trellis Codes (STC).
 
-
-
-<style>
-    [id]::before {
-        content: '';
-        display: block;
-        height:      70px;
-        margin-top: -70px;
-        visibility: hidden;
-    }
-</style>
-
-<div class='menu' style='margin-top:50px'></div>
+<div class='menu'></div>
 
 ## Contenido
 

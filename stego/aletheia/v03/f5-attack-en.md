@@ -19,17 +19,7 @@ comments: false
 > scheme for **JPEG images** known as **F5**. To do this, we are going to 
 > use the steganalysis tool [Aletheia](https://github.com/daniellerch/aletheia).
 
-<style>
-    [id]::before {
-        content: '';
-        display: block;
-        height:      70px;
-        margin-top: -70px;
-        visibility: hidden;
-    }
-</style>
-
-<div class='menu' style='margin-top:50px'></div>
+<div class='menu'></div>
 
 1. [How F5 and nsF5 work](#how-f5-and-nsf5-work)
 2. [Initial exploration](#initial-exploration)

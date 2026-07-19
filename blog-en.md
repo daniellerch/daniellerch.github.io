@@ -11,14 +11,7 @@ sitemap: false
 ---
 
 <style>
-    [id]::before {
-        content: '';
-        display: block;
-        height:      70px;
-        margin-top: -70px;
-        visibility: hidden;
-    }
-   li > span {
+li > span {
       display:none;
    }
 </style>

@@ -11,15 +11,7 @@ schema_type: "Article"
 ---
 
 <style>
-    [id]::before {
-        content: '';
-        display: block;
-        height:      70px;
-        margin-top: -70px;
-        visibility: hidden;
-    }
-
-    .stegolab-section {
+.stegolab-section {
         margin: 3.5rem 0 2rem;
         padding: 1.5rem 1.75rem;
         border-left: 4px solid #0074D9;

@@ -14,18 +14,7 @@ sitemap: false
 > In this article we are going to see how to embed information in images and 
 > audio using the least significant bit (LSB) of each byte.
 
-
-<style>
-    [id]::before {
-        content: '';
-        display: block;
-        height:      70px;
-        margin-top: -70px;
-        visibility: hidden;
-    }
-</style>
-
-<div class='menu' style='margin-top:50px'></div>
+<div class='menu'></div>
 
 ## Content
 

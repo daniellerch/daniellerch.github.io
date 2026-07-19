@@ -18,19 +18,7 @@ comments: false
 > [Aletheia](https://github.com/daniellerch/aletheia) para entrenar modelos
 > EfficientNet-b0
 
-
-
-<style>
-    [id]::before {
-        content: '';
-        display: block;
-        height:      70px;
-        margin-top: -70px;
-        visibility: hidden;
-    }
-</style>
-
-<div class='menu' style='margin-top:50px'></div>
+<div class='menu'></div>
 
 ## Contenido
 

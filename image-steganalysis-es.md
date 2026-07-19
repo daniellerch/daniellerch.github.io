@@ -13,16 +13,6 @@ comments: false
 schema_type: "Article"
 ---
 
-<style>
-    [id]::before {
-        content: '';
-        display: block;
-        height: 70px;
-        margin-top: -70px;
-        visibility: hidden;
-    }
-</style>
-
 El estegoanálisis en imágenes estudia cómo inferir si una imagen ha sido
 modificada para ocultar información. En un caso realista no se dispone de la
 imagen cover original, de modo que el análisis no consiste en comparar dos
@@ -34,7 +24,7 @@ esteganográfica.
 Para la parte de incrustación, consulta [esteganografía en imágenes](/image-steganography-es/).
 Para definiciones breves, consulta la [FAQ de esteganografía](/stego/intro/faq-es/).
 
-<div class='menu' style='margin-top:50px'></div>
+<div class='menu'></div>
 
 ## Contenido
 

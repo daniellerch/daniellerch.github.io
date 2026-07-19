@@ -18,17 +18,7 @@ comments: false
 > LSB *replacement* en imágenes sin comprimir. Para ello, usaremos la herramienta 
 > de estegoanálisis [Aletheia](https://github.com/daniellerch/aletheia).
 
-<style>
-    [id]::before {
-        content: '';
-        display: block;
-        height:      70px;
-        margin-top: -70px;
-        visibility: hidden;
-    }
-</style>
-
-<div class='menu' style='margin-top:50px'></div>
+<div class='menu'></div>
 
 1. [Cómo funciona la técnica del LSB replacement](#cómo-funciona-la-técnica-del-lsb-replacement)
 2. [OpenStego](#openstego)

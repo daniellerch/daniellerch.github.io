@@ -18,19 +18,7 @@ comments: false
 > scheme that has been used to hide information. To do this, we will use the 
 > [Aletheia](https://github.com/daniellerch/aletheia) steganalysis tool.
 
-
-
-<style>
-    [id]::before {
-        content: '';
-        display: block;
-        height:      70px;
-        margin-top: -70px;
-        visibility: hidden;
-    }
-</style>
-
-<div class='menu' style='margin-top:50px'></div>
+<div class='menu'></div>
 
 1. [Options to consider](#options-to-consider)
 2. [JPEG images](#jpeg-images)

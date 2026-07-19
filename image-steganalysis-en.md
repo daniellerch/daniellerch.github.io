@@ -13,16 +13,6 @@ comments: false
 schema_type: "Article"
 ---
 
-<style>
-    [id]::before {
-        content: '';
-        display: block;
-        height: 70px;
-        margin-top: -70px;
-        visibility: hidden;
-    }
-</style>
-
 Image steganalysis is the study of inferring whether an image has been modified
 to hide information. In a realistic case, the analyst does not have the original
 cover image, so the analysis is not a direct comparison between two files. The
@@ -33,7 +23,7 @@ with a steganographic technique.
 For the embedding side of the problem, see [image steganography](/image-steganography-en/).
 For short definitions, see the [steganography FAQ](/stego/intro/faq-en/).
 
-<div class='menu' style='margin-top:50px'></div>
+<div class='menu'></div>
 
 ## Contents
 

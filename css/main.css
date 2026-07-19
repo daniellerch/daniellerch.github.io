@@ -85,6 +85,101 @@ h3 {
 	}
 }
 
+.markdown-content {
+  line-height: 1.6;
+}
+
+.markdown-content [id],
+.blog-post [id] {
+  scroll-margin-top: 85px;
+}
+
+.markdown-content > .menu {
+  margin-top: 50px;
+}
+
+.markdown-content > p:first-child,
+.blog-post > p:first-child {
+  margin-top: 0;
+}
+
+.markdown-content h2,
+.blog-post h2 {
+  line-height: 1.35;
+  margin-bottom: 16px;
+  margin-top: 56px;
+}
+
+.markdown-content h3,
+.blog-post h3 {
+  line-height: 1.4;
+  margin-bottom: 12px;
+  margin-top: 42px;
+}
+
+.markdown-content h4,
+.blog-post h4 {
+  line-height: 1.4;
+  margin-bottom: 10px;
+  margin-top: 34px;
+}
+
+.markdown-content h2:first-child,
+.markdown-content h3:first-child,
+.markdown-content h4:first-child,
+.blog-post h2:first-child,
+.blog-post h3:first-child,
+.blog-post h4:first-child {
+  margin-top: 0;
+}
+
+.markdown-content h2 + p,
+.markdown-content h3 + p,
+.markdown-content h4 + p,
+.markdown-content h2 + ul,
+.markdown-content h3 + ul,
+.markdown-content h4 + ul,
+.markdown-content h2 + ol,
+.markdown-content h3 + ol,
+.markdown-content h4 + ol,
+.blog-post h2 + p,
+.blog-post h3 + p,
+.blog-post h4 + p,
+.blog-post h2 + ul,
+.blog-post h3 + ul,
+.blog-post h4 + ul,
+.blog-post h2 + ol,
+.blog-post h3 + ol,
+.blog-post h4 + ol {
+  margin-top: 0;
+}
+
+.markdown-content ul,
+.markdown-content ol,
+.blog-post ul,
+.blog-post ol {
+  margin-bottom: 30px;
+  margin-top: 16px;
+}
+
+.markdown-content li,
+.blog-post li {
+  line-height: 1.55;
+  margin: 6px 0;
+}
+
+.markdown-content table,
+.blog-post table {
+  margin-bottom: 34px;
+  margin-top: 24px;
+}
+
+.markdown-content pre,
+.blog-post pre {
+  margin-bottom: 34px;
+  margin-top: 24px;
+}
+
 .image-center {
   display: block;
   margin-left: auto;

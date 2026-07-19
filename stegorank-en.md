@@ -11,15 +11,7 @@ schema_type: "Article"
 ---
 
 <style>
-    [id]::before {
-        content: '';
-        display: block;
-        height: 70px;
-        margin-top: -70px;
-        visibility: hidden;
-    }
-
-    .stegorank-updated {
+.stegorank-updated {
         margin: 1.5rem 0 2rem;
         padding: 0.85rem 1rem;
         border-left: 4px solid #0074D9;
@@ -153,7 +145,7 @@ The comparison is organized around the underlying embedding techniques, because 
   </div>
 </div>
 
-<div class='menu' style='margin-top:50px'></div>
+<div class='menu'></div>
 
 1. [Comparison charts](#comparison-charts)
 2. [Techniques and tools](#techniques-and-tools)

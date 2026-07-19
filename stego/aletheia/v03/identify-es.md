@@ -18,18 +18,7 @@ comments: false
 > que se ha usado para ocultar información. Para ello, usaremos la herramienta 
 > de estegoanálisis [Aletheia](https://github.com/daniellerch/aletheia).
 
-
-<style>
-    [id]::before {
-        content: '';
-        display: block;
-        height:      70px;
-        margin-top: -70px;
-        visibility: hidden;
-    }
-</style>
-
-<div class='menu' style='margin-top:50px'></div>
+<div class='menu'></div>
 
 1. [Opciones a considerar](#opciones-a-considerar)
 2. [Imágenes JPEG](#imágenes-jpeg)

@@ -18,17 +18,7 @@ comments: false
 or LSB replacement technique in uncompressed images. To do this, we are going to use the 
 steganalysis tool [Aletheia](https://github.com/daniellerch/aletheia).
 
-<style>
-    [id]::before {
-        content: '';
-        display: block;
-        height:      70px;
-        margin-top: -70px;
-        visibility: hidden;
-    }
-</style>
-
-<div class='menu' style='margin-top:50px'></div>
+<div class='menu'></div>
 
 1. [How LSB replacement works](#how-lsb-replacement-works)
 2. [OpenStego](#openstego)

@@ -16,18 +16,7 @@ sitemap: false
 > In this article we are going to see how to use ChatGPT to perform 
 > steganography on text.
 
-
-<style>
-    [id]::before {
-        content: '';
-        display: block;
-        height:      70px;
-        margin-top: -70px;
-        visibility: hidden;
-    }
-</style>
-
-<div class='menu' style='margin-top:50px'></div>
+<div class='menu'></div>
 
 
 1. [Introduction](#introduction)

@@ -22,19 +22,12 @@ comments: false
 
 
 <style>
-    [id]::before {
-        content: '';
-        display: block;
-        height:      70px;
-        margin-top: -70px;
-        visibility: hidden;
-    }
-    p{
+p{
         margin: 10px 0px 50px 0px !important;
     }
 </style>
 
-<div class='menu' style='margin-top:50px'></div>
+<div class='menu'></div>
 
 
 

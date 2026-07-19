@@ -13,16 +13,6 @@ comments: false
 schema_type: "Article"
 ---
 
-<style>
-    [id]::before {
-        content: '';
-        display: block;
-        height: 70px;
-        margin-top: -70px;
-        visibility: hidden;
-    }
-</style>
-
 La esteganografía en imágenes consiste en ocultar información dentro de una
 imagen intentando que el resultado siga siendo visual y estadísticamente
 plausible. La imagen original es la **cover**, la imagen modificada es la
@@ -36,7 +26,7 @@ redimensionada, recomprimida o subida a una plataforma que la modifique.
 Para definiciones breves, consulta la [FAQ de esteganografía](/stego/intro/faq-es/).
 Para la parte de detección, consulta [estegoanálisis en imágenes](/image-steganalysis-es/).
 
-<div class='menu' style='margin-top:50px'></div>
+<div class='menu'></div>
 
 ## Contenido
 

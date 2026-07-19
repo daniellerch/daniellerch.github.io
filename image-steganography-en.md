@@ -13,16 +13,6 @@ comments: false
 schema_type: "Article"
 ---
 
-<style>
-    [id]::before {
-        content: '';
-        display: block;
-        height: 70px;
-        margin-top: -70px;
-        visibility: hidden;
-    }
-</style>
-
 Image steganography hides information inside an image while trying to keep the
 result visually and statistically plausible. The original image is the
 **cover**, the modified image is the **stego image**, and the hidden data is the
@@ -37,7 +27,7 @@ platform that modifies it.
 For short definitions, see the [steganography FAQ](/stego/intro/faq-en/). For
 the detection side of the same problem, see [image steganalysis](/image-steganalysis-en/).
 
-<div class='menu' style='margin-top:50px'></div>
+<div class='menu'></div>
 
 ## Contents
 

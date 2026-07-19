@@ -20,17 +20,7 @@ For background on formats, payload and embedding domains, see
 [image steganography](/image-steganography-en/). For the detection side, see
 [image steganalysis](/image-steganalysis-en/).
 
-<style>
-    [id]::before {
-        content: '';
-        display: block;
-        height:      70px;
-        margin-top: -70px;
-        visibility: hidden;
-    }
-</style>
-
-<div class='menu' style='margin-top:50px'></div>
+<div class='menu'></div>
 
 1. [Comparative chart](#comparative-chart)
 2. [Experiment description](#experiment-description)

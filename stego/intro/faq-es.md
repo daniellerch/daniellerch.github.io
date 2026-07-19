@@ -21,18 +21,7 @@ faq_schema:
     answer: "El Cover Source Mismatch aparece cuando un detector de estegoanálisis se entrena con imágenes de una fuente y se aplica a imágenes de otra fuente, reduciendo a menudo su fiabilidad."
 ---
 
-
-<style>
-    [id]::before {
-        content: '';
-        display: block;
-        height:      70px;
-        margin-top: -70px;
-        visibility: hidden;
-    }
-</style>
-
-<div class='menu' style='margin-top:50px'></div>
+<div class='menu'></div>
 
 Para una introducción más estructurada, empieza por [esteganografía en imágenes](/image-steganography-es/)
 y [estegoanálisis en imágenes](/image-steganalysis-es/).

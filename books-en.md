@@ -11,12 +11,6 @@ sitemap: false
 ---
 
 <style>
-    [id]::before {
-        content: '';
-        display: block;
-        height:      70px;
-        margin-top: -70px;
-    }
    .todo {
         display: none;
    }

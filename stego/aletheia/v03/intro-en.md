@@ -31,19 +31,7 @@ For a broader overview of the detection problem, see
 [image steganalysis](/image-steganalysis-en/) and the companion page on
 [image steganography](/image-steganography-en/).
 
-
-
-<style>
-    [id]::before {
-        content: '';
-        display: block;
-        height:      70px;
-        margin-top: -70px;
-        visibility: hidden;
-    }
-</style>
-
-<div class='menu' style='margin-top:50px'></div>
+<div class='menu'></div>
 
 1. [Aletheia commands](#aletheia-commands)
 2. [Automated tools](#automated-tools)

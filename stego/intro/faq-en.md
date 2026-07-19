@@ -21,18 +21,7 @@ faq_schema:
     answer: "Cover Source Mismatch occurs when a steganalysis detector is trained on images from one source and then applied to images from a different source, often reducing reliability."
 ---
 
-
-<style>
-     [id]::before {
-         content: '';
-         display: block;
-         height: 70px;
-         margin-top: -70px;
-         visibility: hidden;
-     }
-</style>
-
-<div class='menu' style='margin-top:50px'></div>
+<div class='menu'></div>
 
 For a more structured introduction, start with [image steganography](/image-steganography-en/)
 and [image steganalysis](/image-steganalysis-en/).

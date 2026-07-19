@@ -17,19 +17,7 @@ comments: false
 > In this article, we will see how to use the commands offered by 
 > [Aletheia](https://github.com/daniellerch/aletheia) to train EfficientNet-b0 models
 
-
-
-<style>
-    [id]::before {
-        content: '';
-        display: block;
-        height: 70px;
-        margin-top: -70px;
-        visibility: hidden;
-    }
-</style>
-
-<div class='menu' style='margin-top:50px'></div>
+<div class='menu'></div>
 
 ## Contents
 

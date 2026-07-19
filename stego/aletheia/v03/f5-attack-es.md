@@ -19,17 +19,7 @@ comments: false
 > imágenes JPEG conocido como F5. Para ello, usaremos la herramienta 
 > de estegoanálisis [Aletheia](https://github.com/daniellerch/aletheia).
 
-<style>
-    [id]::before {
-        content: '';
-        display: block;
-        height:      70px;
-        margin-top: -70px;
-        visibility: hidden;
-    }
-</style>
-
-<div class='menu' style='margin-top:50px'></div>
+<div class='menu'></div>
 
 1. [Cómo funcionan F5 y nsF5](#como-funcionan-f5-y-nsF5)
 2. [Exploración inicial](#exploración-inicial)

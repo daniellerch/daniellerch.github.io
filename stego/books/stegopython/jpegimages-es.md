@@ -18,20 +18,7 @@ Este capítulo se centra en la incrustación en dominio JPEG. Para una visión m
 amplia, consulta [esteganografía en imágenes](/image-steganography-es/) y
 [estegoanálisis en imágenes](/image-steganalysis-es/).
 
-
-
-
-<style>
-    [id]::before {
-        content: '';
-        display: block;
-        height:      70px;
-        margin-top: -70px;
-        visibility: hidden;
-    }
-</style>
-
-<div class='menu' style='margin-top:50px'></div>
+<div class='menu'></div>
 
 ## Contenido
 

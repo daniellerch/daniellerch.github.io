@@ -15,17 +15,7 @@ comments: false
 > En este artículo vamos a ver cómo usar ChatGPT para realizar esteganografía
 > en texto.
 
-<style>
-    [id]::before {
-        content: '';
-        display: block;
-        height:      70px;
-        margin-top: -70px;
-        visibility: hidden;
-    }
-</style>
-
-<div class='menu' style='margin-top:50px'></div>
+<div class='menu'></div>
 
 1. [Introducción](#introducción)
 2. [ChatGPT y la esteganografía en texto](#chatgpt-y-la-esteganografía-en-texto)
