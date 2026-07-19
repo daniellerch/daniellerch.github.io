@@ -21,6 +21,7 @@ You can also see [StegoRank](/stegorank-en/) for methods and tools, [StegoLab](/
 - [Steganography FAQ](/stego/intro/faq-en/)
 - [Steganography tools](/stego/intro/tools-en/)
 - [Text steganography with ChatGPT](/stego/text/chatgpt-en/)
+- [Embedding steganographic images inside videos](/stego/video/stego-image-in-video-en/)
 
 ## Message Encoding
 

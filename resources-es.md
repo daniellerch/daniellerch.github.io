@@ -22,6 +22,7 @@ También puedes consultar [StegoRank](/stegorank-es/) para métodos y herramient
 - [Herramientas de esteganografía](/stego/intro/tools-es/)
 - [Esteganografía en texto con ChatGPT](/stego/text/chatgpt-es/)
 - [Esteganografía LSB en imágenes y audio](/stego/intro/lsb-es/)
+- [Incrustar imágenes con esteganografía dentro de vídeos](/stego/video/stego-image-in-video-es/)
 
 ## Codificación del mensaje
 
