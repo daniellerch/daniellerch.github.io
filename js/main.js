@@ -66,6 +66,87 @@ var main = {
 
     // show the big header image
     main.initImgs();
+
+    main.initCodeCopy();
+  },
+
+  initCodeCopy : function() {
+    var codeBlocks = document.querySelectorAll(".highlight");
+    if (!codeBlocks.length) {
+      return;
+    }
+
+    var pageLang = document.documentElement.getAttribute("lang") || "en";
+    var copyLabel = pageLang === "es" ? "Copiar código" : "Copy code";
+    var copiedLabel = pageLang === "es" ? "Copiado" : "Copied";
+
+    Array.prototype.forEach.call(codeBlocks, function(block) {
+      if (block.classList.contains("code-copy-ready")) {
+        return;
+      }
+
+      var pre = block.querySelector("pre");
+      if (!pre || block.querySelector(".language-mermaid")) {
+        return;
+      }
+
+      var wrapper = document.createElement("div");
+      wrapper.className = "code-copy-wrapper";
+      block.parentNode.insertBefore(wrapper, block);
+      wrapper.appendChild(block);
+      block.classList.add("code-copy-ready");
+
+      var button = document.createElement("button");
+      button.className = "code-copy-button";
+      button.type = "button";
+      button.setAttribute("aria-label", copyLabel);
+      button.setAttribute("title", copyLabel);
+      button.innerHTML = '<i class="fa fa-clipboard" aria-hidden="true"></i>';
+      wrapper.appendChild(button);
+
+      button.addEventListener("click", function() {
+        main.copyCodeBlock(pre).then(function() {
+          button.classList.add("code-copy-button-copied");
+          button.setAttribute("aria-label", copiedLabel);
+          button.setAttribute("title", copiedLabel);
+          button.innerHTML = '<i class="fa fa-check" aria-hidden="true"></i>';
+
+          window.setTimeout(function() {
+            button.classList.remove("code-copy-button-copied");
+            button.setAttribute("aria-label", copyLabel);
+            button.setAttribute("title", copyLabel);
+            button.innerHTML = '<i class="fa fa-clipboard" aria-hidden="true"></i>';
+          }, 1600);
+        });
+      });
+    });
+  },
+
+  copyCodeBlock : function(pre) {
+    var clone = pre.cloneNode(true);
+    var lineNumbers = clone.querySelectorAll(".lineno");
+    Array.prototype.forEach.call(lineNumbers, function(lineNumber) {
+      lineNumber.parentNode.removeChild(lineNumber);
+    });
+
+    var text = clone.innerText.replace(/\n$/, "");
+
+    if (navigator.clipboard && window.isSecureContext) {
+      return navigator.clipboard.writeText(text);
+    }
+
+    return new Promise(function(resolve) {
+      var textarea = document.createElement("textarea");
+      textarea.value = text;
+      textarea.setAttribute("readonly", "");
+      textarea.style.position = "fixed";
+      textarea.style.left = "-9999px";
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand("copy");
+      document.body.removeChild(textarea);
+      resolve();
+    });
   },
 
   initImgs : function() {
